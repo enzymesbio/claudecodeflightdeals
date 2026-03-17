@@ -1,0 +1,267 @@
+{
+  "research_date": "2026-03-16",
+  "subject": "Sichuan Airlines (3U) Direct Pricing Research: CTU/TFU to LAX",
+  "research_method": "Web scraping and aggregator data collection",
+
+  "website_analysis": {
+    "main_site": {
+      "url": "https://www.sichuanair.com",
+      "technology": "jQuery 3.6.0, Prototype.js, custom IBE (Intelligent Booking Engine)",
+      "booking_engine_subdomain": "flights.sichuanair.com",
+      "mobile_site": "m.sichuanair.com (Flutter web app - heavily obfuscated)",
+      "global_english_site": "global.sichuanair.com/US-EN",
+      "global_site_framework": "ASP.NET MVC (based on URL patterns like /Home/SearchFlight, /OutB2C/)",
+      "payment_integrations": ["Alipay", "WeChat Pay", "UnionPay", "Apple Pay"],
+      "security": "rcs.sichuanair.com device fingerprinting, captcha protection"
+    },
+    "api_endpoints_discovered": {
+      "airport_autocomplete": "/hierarchylocationsearch.do",
+      "authentication": "/common/login.do",
+      "office_id": "/OutB2C/Home/GetOfficeId/{locale}",
+      "partner_validation": "/common/allChannelExtractPartnerAlter.do",
+      "device_id": "rcs.sichuanair.com/udid/c1",
+      "note": "Flight search endpoint is JavaScript-generated and not statically discoverable. The IBE processes search via JS validation before submitting to server. Likely requires session cookies and CSRF tokens."
+    },
+    "direct_api_scraping_status": "FAILED - The booking engine requires full JavaScript execution, session management, and anti-bot protections (device fingerprinting via Tencent Cloud). Direct API calls to guessed endpoints returned 404. A headless browser approach (Playwright/Puppeteer) would be needed to interact with the booking engine.",
+    "regional_sites": ["China", "Global", "Australia", "Canada", "Hong Kong", "Japan", "Korea", "Russia", "Singapore", "Taiwan", "Thailand", "UAE", "USA", "Vietnam"]
+  },
+
+  "route_information": {
+    "flight_number_outbound": "3U3837",
+    "flight_number_return": "3U3838",
+    "operator": "Sichuan Airlines (IATA: 3U, ICAO: CSC)",
+    "departure_airport": "Chengdu Tianfu International Airport (TFU), Terminal 1",
+    "arrival_airport": "Los Angeles International Airport (LAX), Terminal B",
+    "distance_km": 11590,
+    "aircraft": {
+      "type": "Airbus A350-900",
+      "age_as_of_march_2026": "1 year 10 months",
+      "total_seats": 337,
+      "economy_config": "3-3-3",
+      "economy_legroom_cm": 79,
+      "business_config": "1-2-1 reverse herringbone",
+      "business_legroom_cm": 152,
+      "business_seats": 28
+    },
+    "schedule": {
+      "frequency": "3 times weekly (Tuesday, Friday, Sunday)",
+      "outbound_3U3837": {
+        "depart_TFU": "22:35 (local, UTC+8)",
+        "arrive_LAX": "19:05 (local, UTC-7)",
+        "duration": "12h 30m",
+        "note": "Some dates show 22:00 or 23:00 departure with slight schedule variations"
+      },
+      "return_3U3838": {
+        "depart_LAX": "21:30 (local, UTC-7)",
+        "arrive_TFU": "05:50+2 (local, UTC+8)",
+        "duration": "15h 45m",
+        "note": "Some sources show 23:15 departure"
+      },
+      "effective_date": "January 2, 2026 (nonstop; previously routed via Hangzhou as technical stop)",
+      "checkin_counters": {
+        "economy": "B20-B30",
+        "business_first": "B31-B34"
+      },
+      "punctuality": {
+        "on_time_departure": "93%",
+        "on_time_arrival": "70%"
+      }
+    },
+    "important_note": "Route now operates from TFU (Chengdu Tianfu), NOT CTU (Chengdu Shuangliu). Some booking engines still reference CTU but the actual airport is TFU."
+  },
+
+  "fare_classes": {
+    "business": {
+      "classes": ["Business Flex", "Business"],
+      "seat_type": "Lie-flat reverse herringbone (A350)",
+      "note": "28 seats in 1-2-1 configuration. Described as 'crazy cheap' by some travelers relative to competitors."
+    },
+    "economy": {
+      "classes": ["Economy", "Economy Flex", "Economy Saver", "Economy Restricted"],
+      "policies": {
+        "Economy_Flex": "Changes and cancellations allowed",
+        "Economy": "Changes allowed, cancellation with fee",
+        "Economy_Saver": "Changes with fee, non-refundable",
+        "Economy_Restricted": "No changes, non-refundable"
+      }
+    }
+  },
+
+  "pricing_data": {
+    "data_quality_note": "Prices collected from Trip.com, web search snippets, and aggregator landing pages. These are indicative/recent prices, not guaranteed live quotes for specific future dates. Sichuan Airlines' own booking engine could not be scraped directly.",
+
+    "economy_class": {
+      "one_way_TFU_to_LAX": {
+        "nonstop_lowest_found": {
+          "price_usd": 522,
+          "source": "Trip.com",
+          "sample_dates": ["2026-04-26", "2026-03-22"],
+          "fare_type": "Economy (likely Economy Saver or Restricted)"
+        },
+        "nonstop_typical_range": {
+          "low_usd": 500,
+          "high_usd": 700,
+          "note": "Varies significantly by season and advance purchase"
+        },
+        "one_way_from_LAX_to_TFU": {
+          "price_usd": 1229,
+          "source": "Trip.com",
+          "note": "16% discount from $1,464 base. One-way originating from US is typically much more expensive."
+        }
+      },
+      "round_trip_TFU_to_LAX": {
+        "nonstop_lowest_found": {
+          "price_usd": 879,
+          "source": "Trip.com",
+          "sample_dates": ["2026-04-03 to 2026-04-07", "2026-04-24 to 2026-04-26"]
+        },
+        "general_range": {
+          "low_usd": 850,
+          "high_usd": 1200,
+          "note": "Baseline around $850-879 for nonstop Sichuan Airlines. Higher in peak summer (June)."
+        }
+      },
+      "round_trip_LAX_to_TFU": {
+        "from_aggregators": {
+          "starting_price_usd": 850,
+          "source": "Multiple aggregators (KAYAK, Expedia, Skyscanner)",
+          "note": "Sichuan Airlines described as 'one of the cheapest airlines offering nonstop flights' on this route"
+        }
+      }
+    },
+
+    "seasonal_estimates": {
+      "may_2026": {
+        "one_way_economy_estimate_usd": "520-650",
+        "round_trip_economy_estimate_usd": "880-1100",
+        "confidence": "MEDIUM - Based on April pricing trends and seasonal patterns. May is shoulder season, slightly above spring low.",
+        "notes": "May is between spring low and summer peak. Expect prices 5-15% above spring baseline."
+      },
+      "june_2026": {
+        "one_way_economy_estimate_usd": "600-800",
+        "round_trip_economy_estimate_usd": "1000-1400",
+        "confidence": "MEDIUM - June is identified as the MOST EXPENSIVE month for this route.",
+        "notes": "Peak summer travel. Aggregators explicitly note June as highest-priced month for LAX-CTU."
+      },
+      "september_2026": {
+        "one_way_economy_estimate_usd": "480-600",
+        "round_trip_economy_estimate_usd": "800-950",
+        "confidence": "MEDIUM-HIGH - September identified as one of the best value months.",
+        "notes": "Average RT price around $855. Post-summer shoulder season with lower demand. Good value window.",
+        "average_round_trip_usd": 855
+      }
+    },
+
+    "business_class": {
+      "pricing_status": "NOT DIRECTLY OBTAINED",
+      "estimates_from_context": {
+        "round_trip_estimate_usd": "2500-4500",
+        "note": "Based on forum reports of 'crazy cheap' fares relative to competitors, and a reference to ~AUD $3,200 for Europe routes. US-China business class on 3U is typically 2.5-4x economy.",
+        "seat_product": "Lie-flat 1-2-1 reverse herringbone on A350. Service is Sichuan cuisine focused, no meal choice."
+      }
+    },
+
+    "competitor_comparison_on_route": {
+      "note": "These are connecting flight prices, not nonstop",
+      "air_china_one_way_1stop": "$417-429",
+      "xiamen_airlines_one_way_1stop": "$421-424",
+      "china_southern_round_trip": "$691-774",
+      "china_eastern_round_trip": "$738-753",
+      "asiana_cheapest_round_trip": "$796",
+      "cathay_pacific_round_trip": "$875",
+      "sichuan_nonstop_advantage": "Only airline with nonstop TFU-LAX service. Premium of ~$100-200 over cheapest connecting options is typical."
+    }
+  },
+
+  "scraping_approaches_attempted": [
+    {
+      "approach": "Direct sichuanair.com homepage scraping",
+      "result": "SUCCESS - Extracted site structure, subdomains, API endpoint hints",
+      "endpoints_found": ["/hierarchylocationsearch.do", "/common/login.do", "/OutB2C/Home/GetOfficeId/{locale}"]
+    },
+    {
+      "approach": "global.sichuanair.com/US-EN English site",
+      "result": "PARTIAL - Page structure extracted, search form fields identified, but JS-rendered content not accessible",
+      "search_form_fields": ["tripType", "depCity", "arrCity", "depDate", "retDate", "adultNum", "childNum", "infantNum", "cabinType", "country"]
+    },
+    {
+      "approach": "Direct API endpoint guessing on global.sichuanair.com",
+      "result": "FAILED - Tried /Home/SearchFlight, /Booking/Search, /OutB2C/Home/GetOfficeId - all returned 404",
+      "reason": "Endpoints require proper session, CSRF tokens, and JavaScript execution"
+    },
+    {
+      "approach": "flights.sichuanair.com booking engine subdomain",
+      "result": "PARTIAL - Confirmed OpenJaw commerce platform, IBE.js framework, but search requires JS execution"
+    },
+    {
+      "approach": "m.sichuanair.com mobile site",
+      "result": "FAILED - Flutter web app, fully compiled/obfuscated JavaScript, no static API discovery possible"
+    },
+    {
+      "approach": "Trip.com aggregator scraping",
+      "result": "SUCCESS - Best data source. Extracted specific Sichuan Airlines prices for nonstop flights"
+    },
+    {
+      "approach": "Skyscanner scraping",
+      "result": "FAILED - JS-only app, returns 'enable JavaScript' message"
+    },
+    {
+      "approach": "KAYAK/Momondo scraping",
+      "result": "FAILED - Bot detection blocked access"
+    },
+    {
+      "approach": "Expedia scraping",
+      "result": "PARTIAL first attempt, then rate limited (429)"
+    },
+    {
+      "approach": "Google Flights",
+      "result": "FAILED - Consent redirect wall"
+    },
+    {
+      "approach": "FlightsFrom.com / FlightConnections.com",
+      "result": "FAILED - 403 Forbidden"
+    },
+    {
+      "approach": "AeroRoutes schedule data",
+      "result": "SUCCESS - Confirmed Q1 2026 schedule change to nonstop service"
+    },
+    {
+      "approach": "Airportia flight status",
+      "result": "FAILED - 403 Forbidden"
+    },
+    {
+      "approach": "Trip.com flight status page",
+      "result": "SUCCESS - Detailed aircraft, terminal, gate, check-in, and punctuality data"
+    }
+  ],
+
+  "recommended_scraping_approach": {
+    "for_live_prices": {
+      "method": "Headless browser (Playwright/Puppeteer) on global.sichuanair.com",
+      "steps": [
+        "1. Navigate to https://global.sichuanair.com/US-EN",
+        "2. Wait for page load and JavaScript execution",
+        "3. Select trip type (one-way or round-trip)",
+        "4. Enter departure: TFU, arrival: LAX",
+        "5. Select dates",
+        "6. Submit search and wait for results",
+        "7. Parse the results DOM for flight prices and fare classes"
+      ],
+      "challenges": ["Anti-bot device fingerprinting via rcs.sichuanair.com", "Possible CAPTCHA", "Rate limiting", "Session management"],
+      "alternative": "Use Trip.com or Skyscanner with Playwright - more reliable and aggregates multiple fare classes"
+    },
+    "for_bulk_monitoring": {
+      "method": "Google Flights API via SerpApi ($50/mo) or Amadeus Flight Offers Search API (free tier available)",
+      "note": "These provide structured JSON responses with Sichuan Airlines pricing when available on GDS"
+    }
+  },
+
+  "booking_tips": {
+    "best_value_months": ["September", "October", "November"],
+    "most_expensive_month": "June",
+    "advance_purchase_savings": "Book 2+ months ahead for ~10% savings on international",
+    "day_of_week_savings": "Sunday bookings 6-13% cheaper than Friday",
+    "airport_note": "Book to/from TFU (Tianfu), not CTU (Shuangliu). Some engines still show CTU but actual operations are from TFU.",
+    "nonstop_premium": "Sichuan Airlines is the ONLY nonstop carrier on this route. Connecting options on Air China, China Southern etc. are $100-200 cheaper but add 5-15 hours of travel."
+  }
+}

@@ -1,0 +1,452 @@
+{
+  "generated": "2026-03-16T22:52:22.253913",
+  "sources": {
+    "google_flights": 243,
+    "ita_matrix": 386,
+    "ctrip": 168,
+    "sichuan_direct": 0
+  },
+  "total_deals": 797,
+  "top20": [
+    {
+      "rank": 1,
+      "route": "ICN-SFO",
+      "airline": "Air Canada",
+      "price_pp": 568,
+      "price_3pax": 1562,
+      "stops": 1,
+      "nonstop": false,
+      "depart_date": "2026-09-15",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 2,
+      "route": "ICN-SFO",
+      "airline": "Air Canada and United",
+      "price_pp": 568,
+      "price_3pax": 1562,
+      "stops": 1,
+      "nonstop": false,
+      "depart_date": "2026-09-15",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 3,
+      "route": "ICN-LAX",
+      "airline": "United",
+      "price_pp": 573,
+      "price_3pax": 1576,
+      "stops": 1,
+      "nonstop": false,
+      "depart_date": "2026-09-01",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 4,
+      "route": "ICN-LAX",
+      "airline": "Alaska",
+      "price_pp": 585,
+      "price_3pax": 1609,
+      "stops": 1,
+      "nonstop": false,
+      "depart_date": "2026-09-10",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 5,
+      "route": "ICN-SFO",
+      "airline": "Air Canada and United",
+      "price_pp": 585,
+      "price_3pax": 1609,
+      "stops": 2,
+      "nonstop": false,
+      "depart_date": "2026-05-05",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 6,
+      "route": "ICN-LAX",
+      "airline": "Alaska",
+      "price_pp": 593,
+      "price_3pax": 1631,
+      "stops": 1,
+      "nonstop": false,
+      "depart_date": "2026-05-01",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 7,
+      "route": "HKG-SFO",
+      "airline": "Philippine Airlines",
+      "price_pp": 593,
+      "price_3pax": 1631,
+      "stops": 1,
+      "nonstop": false,
+      "depart_date": "2026-09-15",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 8,
+      "route": "ICN-LAX",
+      "airline": "Air Premia",
+      "price_pp": 601,
+      "price_3pax": 1653,
+      "stops": 0,
+      "nonstop": true,
+      "depart_date": "2026-05-15",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 9,
+      "route": "ICN-SEA",
+      "airline": "Air Canada",
+      "price_pp": 605,
+      "price_3pax": 1664,
+      "stops": 1,
+      "nonstop": false,
+      "depart_date": "2026-09-15",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 10,
+      "route": "ICN-LAX",
+      "airline": "Air Canada and United",
+      "price_pp": 607,
+      "price_3pax": 1669,
+      "stops": 1,
+      "nonstop": false,
+      "depart_date": "2026-09-15",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 11,
+      "route": "ICN-LAX",
+      "airline": "Air Canada",
+      "price_pp": 607,
+      "price_3pax": 1669,
+      "stops": 1,
+      "nonstop": false,
+      "depart_date": "2026-09-15",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 12,
+      "route": "ICN-SEA",
+      "airline": "Air Canada",
+      "price_pp": 610,
+      "price_3pax": 1678,
+      "stops": 1,
+      "nonstop": false,
+      "depart_date": "2026-05-05",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 13,
+      "route": "ICN-SFO",
+      "airline": "Air Premia",
+      "price_pp": 635,
+      "price_3pax": 1746,
+      "stops": 0,
+      "nonstop": true,
+      "depart_date": "2026-09-05",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 14,
+      "route": "HKG-LAX",
+      "airline": "Delta",
+      "price_pp": 638,
+      "price_3pax": 1754,
+      "stops": 0,
+      "nonstop": true,
+      "depart_date": "2026-09-05",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 15,
+      "route": "HKG-SFO",
+      "airline": "Korean Air and Asiana Airlines",
+      "price_pp": 640,
+      "price_3pax": 1760,
+      "stops": 1,
+      "nonstop": false,
+      "depart_date": "2026-09-01",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 16,
+      "route": "HKG-SEA",
+      "airline": "Korean Air and Asiana Airlines",
+      "price_pp": 640,
+      "price_3pax": 1760,
+      "stops": 1,
+      "nonstop": false,
+      "depart_date": "2026-09-05",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 17,
+      "route": "HKG-LAX",
+      "airline": "Asiana Airlines",
+      "price_pp": 643,
+      "price_3pax": 1768,
+      "stops": 1,
+      "nonstop": false,
+      "depart_date": "2026-09-01",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 18,
+      "route": "HKG-LAX",
+      "airline": "Korean Air",
+      "price_pp": 644,
+      "price_3pax": 1771,
+      "stops": 1,
+      "nonstop": false,
+      "depart_date": "2026-09-05",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 19,
+      "route": "HKG-SFO",
+      "airline": "Asiana Airlines",
+      "price_pp": 646,
+      "price_3pax": 1776,
+      "stops": 1,
+      "nonstop": false,
+      "depart_date": "2026-05-05",
+      "source": "Google Flights"
+    },
+    {
+      "rank": 20,
+      "route": "HKG-LAX",
+      "airline": "Cathay Pacific",
+      "price_pp": 653,
+      "price_3pax": 1796,
+      "stops": 0,
+      "nonstop": true,
+      "depart_date": "2026-09-01",
+      "source": "Google Flights"
+    }
+  ],
+  "best_by_route": {
+    "CAN-LAX": {
+      "price": 960,
+      "source": "ITA Matrix"
+    },
+    "CAN-SFO": {
+      "price": 1640,
+      "source": "ITA Matrix"
+    },
+    "CTU-LAX": {
+      "price": 806,
+      "source": "ITA Matrix"
+    },
+    "HGH-LAX": {
+      "price": 4057,
+      "source": "ITA Matrix"
+    },
+    "HKG-LAX": {
+      "price": 638,
+      "source": "Google Flights"
+    },
+    "HKG-SEA": {
+      "price": 640,
+      "source": "Google Flights"
+    },
+    "HKG-SFO": {
+      "price": 593,
+      "source": "Google Flights"
+    },
+    "ICN-LAX": {
+      "price": 573,
+      "source": "Google Flights"
+    },
+    "ICN-SEA": {
+      "price": 605,
+      "source": "Google Flights"
+    },
+    "ICN-SFO": {
+      "price": 568,
+      "source": "Google Flights"
+    },
+    "KIX-SEA": {
+      "price": 677,
+      "source": "Google Flights"
+    },
+    "NRT-SEA": {
+      "price": 683,
+      "source": "Google Flights"
+    },
+    "PEK-LAX": {
+      "price": 1667,
+      "source": "ITA Matrix"
+    },
+    "PVG-LAX": {
+      "price": 702,
+      "source": "Google Flights"
+    },
+    "PVG-SFO": {
+      "price": 720,
+      "source": "Google Flights"
+    },
+    "XMN-LAX": {
+      "price": 1626,
+      "source": "ITA Matrix"
+    }
+  },
+  "true_costs_from_jiaxing": [
+    {
+      "route": "PVG-SFO",
+      "true_pp": 697,
+      "true_3pax": 1917,
+      "base_pp": 682,
+      "positioning": "1.5h train, ~$15",
+      "source": "Ctrip (OW x2)",
+      "airline": "?",
+      "depart": "2026-09-01"
+    },
+    {
+      "route": "HKG-SFO",
+      "true_pp": 713,
+      "true_3pax": 1961,
+      "base_pp": 593,
+      "positioning": "2h flight, ~$120",
+      "source": "Google Flights",
+      "airline": "Philippine Airlines",
+      "depart": "2026-09-15"
+    },
+    {
+      "route": "PVG-LAX",
+      "true_pp": 717,
+      "true_3pax": 1972,
+      "base_pp": 702,
+      "positioning": "1.5h train, ~$15",
+      "source": "Google Flights",
+      "airline": "Philippine Airlines",
+      "depart": "2026-09-10"
+    },
+    {
+      "route": "ICN-SFO",
+      "true_pp": 718,
+      "true_3pax": 1974,
+      "base_pp": 568,
+      "positioning": "2h flight, ~$150",
+      "source": "Google Flights",
+      "airline": "Air Canada",
+      "depart": "2026-09-15"
+    },
+    {
+      "route": "ICN-LAX",
+      "true_pp": 723,
+      "true_3pax": 1988,
+      "base_pp": 573,
+      "positioning": "2h flight, ~$150",
+      "source": "Google Flights",
+      "airline": "United",
+      "depart": "2026-09-01"
+    },
+    {
+      "route": "ICN-SEA",
+      "true_pp": 755,
+      "true_3pax": 2076,
+      "base_pp": 605,
+      "positioning": "2h flight, ~$150",
+      "source": "Google Flights",
+      "airline": "Air Canada",
+      "depart": "2026-09-15"
+    },
+    {
+      "route": "HKG-LAX",
+      "true_pp": 758,
+      "true_3pax": 2084,
+      "base_pp": 638,
+      "positioning": "2h flight, ~$120",
+      "source": "Google Flights",
+      "airline": "Delta",
+      "depart": "2026-09-05"
+    },
+    {
+      "route": "HKG-SEA",
+      "true_pp": 760,
+      "true_3pax": 2090,
+      "base_pp": 640,
+      "positioning": "2h flight, ~$120",
+      "source": "Google Flights",
+      "airline": "Korean Air and Asiana Airlines",
+      "depart": "2026-09-05"
+    },
+    {
+      "route": "CAN-LAX",
+      "true_pp": 816,
+      "true_3pax": 2244,
+      "base_pp": 736,
+      "positioning": "2h flight, ~$80",
+      "source": "Ctrip (OW x2)",
+      "airline": "?",
+      "depart": "2026-05-29"
+    },
+    {
+      "route": "KIX-SEA",
+      "true_pp": 827,
+      "true_3pax": 2274,
+      "base_pp": 677,
+      "positioning": "2.5h flight, ~$150",
+      "source": "Google Flights",
+      "airline": "Korean Air and Asiana Airlines",
+      "depart": "2026-05-15"
+    }
+  ],
+  "under_budget": [
+    {
+      "route": "PVG-SFO",
+      "true_pp": 697,
+      "true_3pax": 1917,
+      "base_pp": 682,
+      "positioning": "1.5h train, ~$15",
+      "source": "Ctrip (OW x2)",
+      "airline": "?",
+      "depart": "2026-09-01"
+    },
+    {
+      "route": "HKG-SFO",
+      "true_pp": 713,
+      "true_3pax": 1961,
+      "base_pp": 593,
+      "positioning": "2h flight, ~$120",
+      "source": "Google Flights",
+      "airline": "Philippine Airlines",
+      "depart": "2026-09-15"
+    },
+    {
+      "route": "PVG-LAX",
+      "true_pp": 717,
+      "true_3pax": 1972,
+      "base_pp": 702,
+      "positioning": "1.5h train, ~$15",
+      "source": "Google Flights",
+      "airline": "Philippine Airlines",
+      "depart": "2026-09-10"
+    },
+    {
+      "route": "ICN-SFO",
+      "true_pp": 718,
+      "true_3pax": 1974,
+      "base_pp": 568,
+      "positioning": "2h flight, ~$150",
+      "source": "Google Flights",
+      "airline": "Air Canada",
+      "depart": "2026-09-15"
+    },
+    {
+      "route": "ICN-LAX",
+      "true_pp": 723,
+      "true_3pax": 1988,
+      "base_pp": 573,
+      "positioning": "2h flight, ~$150",
+      "source": "Google Flights",
+      "airline": "United",
+      "depart": "2026-09-01"
+    }
+  ]
+}

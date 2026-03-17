@@ -1,0 +1,1288 @@
+[
+  {
+    "origin": "ICN",
+    "dest": "LAX",
+    "dep": "2026-09-01",
+    "ret": "2026-09-30",
+    "weeks": 4.1,
+    "cheapest_pp": 573,
+    "cheapest_3pax": 1575,
+    "airline": "United",
+    "stops": 1,
+    "duration": "15 hr 5 min",
+    "top_5": [
+      {
+        "price_pp": 573,
+        "price_3pax": 1575,
+        "airline": "United",
+        "stops": 1,
+        "duration": "15 hr 5 min",
+        "layovers": [
+          "San Francisco"
+        ]
+      },
+      {
+        "price_pp": 573,
+        "price_3pax": 1575,
+        "airline": "United",
+        "stops": 1,
+        "duration": "14 hr 45 min",
+        "layovers": [
+          "San Francisco"
+        ]
+      },
+      {
+        "price_pp": 715,
+        "price_3pax": 1966,
+        "airline": "Air Premia",
+        "stops": 0,
+        "duration": "11 hr 20 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 788,
+        "price_3pax": 2167,
+        "airline": "Asiana Airlines",
+        "stops": 0,
+        "duration": "11 hr 10 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 788,
+        "price_3pax": 2167,
+        "airline": "Asiana Airlines",
+        "stops": 0,
+        "duration": "11 hr 30 min",
+        "layovers": []
+      }
+    ]
+  },
+  {
+    "origin": "ICN",
+    "dest": "LAX",
+    "dep": "2026-09-10",
+    "ret": "2026-10-10",
+    "weeks": 4.3,
+    "cheapest_pp": 573,
+    "cheapest_3pax": 1575,
+    "airline": "United",
+    "stops": 1,
+    "duration": "15 hr 5 min",
+    "top_5": [
+      {
+        "price_pp": 573,
+        "price_3pax": 1575,
+        "airline": "United",
+        "stops": 1,
+        "duration": "15 hr 5 min",
+        "layovers": [
+          "San Francisco"
+        ]
+      },
+      {
+        "price_pp": 585,
+        "price_3pax": 1608,
+        "airline": "Alaska",
+        "stops": 1,
+        "duration": "15 hr 34 min",
+        "layovers": [
+          "Seattle"
+        ]
+      },
+      {
+        "price_pp": 601,
+        "price_3pax": 1652,
+        "airline": "Air Premia",
+        "stops": 0,
+        "duration": "11 hr 20 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 755,
+        "price_3pax": 2076,
+        "airline": "Asiana Airlines",
+        "stops": 0,
+        "duration": "11 hr 30 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 776,
+        "price_3pax": 2134,
+        "airline": "Korean Air",
+        "stops": 0,
+        "duration": "11 hr 10 min",
+        "layovers": []
+      }
+    ]
+  },
+  {
+    "origin": "ICN",
+    "dest": "LAX",
+    "dep": "2026-05-15",
+    "ret": "2026-06-15",
+    "weeks": 4.4,
+    "cheapest_pp": 601,
+    "cheapest_3pax": 1652,
+    "airline": "Air Premia",
+    "stops": 0,
+    "duration": "11 hr 20 min",
+    "top_5": [
+      {
+        "price_pp": 601,
+        "price_3pax": 1652,
+        "airline": "Air Premia",
+        "stops": 0,
+        "duration": "11 hr 20 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 601,
+        "price_3pax": 1652,
+        "airline": "Air Premia",
+        "stops": 0,
+        "duration": "11 hr 15 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 1013,
+        "price_3pax": 2785,
+        "airline": "Asiana Airlines",
+        "stops": 0,
+        "duration": "11 hr 30 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 1070,
+        "price_3pax": 2942,
+        "airline": "Korean Air",
+        "stops": 0,
+        "duration": "11 hr 10 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 1047,
+        "price_3pax": 2879,
+        "airline": "Korean Air",
+        "stops": 0,
+        "duration": "11 hr 10 min",
+        "layovers": []
+      }
+    ]
+  },
+  {
+    "origin": "HKG",
+    "dest": "LAX",
+    "dep": "2026-09-01",
+    "ret": "2026-09-30",
+    "weeks": 4.1,
+    "cheapest_pp": 643,
+    "cheapest_3pax": 1768,
+    "airline": "Asiana Airlines",
+    "stops": 1,
+    "duration": "18 hr 50 min",
+    "top_5": [
+      {
+        "price_pp": 643,
+        "price_3pax": 1768,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "18 hr 50 min",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      {
+        "price_pp": 653,
+        "price_3pax": 1795,
+        "airline": "Cathay Pacific",
+        "stops": 0,
+        "duration": "13 hr 30 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 745,
+        "price_3pax": 2048,
+        "airline": "United",
+        "stops": 0,
+        "duration": "13 hr 35 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 822,
+        "price_3pax": 2260,
+        "airline": "Delta",
+        "stops": 0,
+        "duration": "13 hr 35 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 643,
+        "price_3pax": 1768,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "21 hr 10 min",
+        "layovers": [
+          "Seoul"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "HKG",
+    "dest": "SFO",
+    "dep": "2026-09-01",
+    "ret": "2026-09-30",
+    "weeks": 4.1,
+    "cheapest_pp": 657,
+    "cheapest_3pax": 1806,
+    "airline": "United",
+    "stops": 0,
+    "duration": "13 hr 5 min",
+    "top_5": [
+      {
+        "price_pp": 657,
+        "price_3pax": 1806,
+        "airline": "United",
+        "stops": 0,
+        "duration": "13 hr 5 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 658,
+        "price_3pax": 1809,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "17 hr 20 min",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      {
+        "price_pp": 804,
+        "price_3pax": 2211,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "16 hr",
+        "layovers": [
+          "Tokyo"
+        ]
+      },
+      {
+        "price_pp": 640,
+        "price_3pax": 1760,
+        "airline": "Korean Air and Asiana Airlines",
+        "stops": 1,
+        "duration": "18 hr",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      {
+        "price_pp": 876,
+        "price_3pax": 2409,
+        "airline": "United",
+        "stops": 0,
+        "duration": "13 hr 5 min",
+        "layovers": []
+      }
+    ]
+  },
+  {
+    "origin": "ICN",
+    "dest": "LAX",
+    "dep": "2026-05-20",
+    "ret": "2026-06-20",
+    "weeks": 4.4,
+    "cheapest_pp": 756,
+    "cheapest_3pax": 2079,
+    "airline": "Air Premia",
+    "stops": 0,
+    "duration": "11 hr 20 min",
+    "top_5": [
+      {
+        "price_pp": 756,
+        "price_3pax": 2079,
+        "airline": "Air Premia",
+        "stops": 0,
+        "duration": "11 hr 20 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 756,
+        "price_3pax": 2079,
+        "airline": "Air Premia",
+        "stops": 0,
+        "duration": "11 hr 15 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 845,
+        "price_3pax": 2323,
+        "airline": "Alaska",
+        "stops": 1,
+        "duration": "15 hr 38 min",
+        "layovers": [
+          "Seattle"
+        ]
+      },
+      {
+        "price_pp": 902,
+        "price_3pax": 2480,
+        "airline": "Korean Air",
+        "stops": 0,
+        "duration": "11 hr 10 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 1080,
+        "price_3pax": 2970,
+        "airline": "Asiana Airlines",
+        "stops": 0,
+        "duration": "11 hr 30 min",
+        "layovers": []
+      }
+    ]
+  },
+  {
+    "origin": "ICN",
+    "dest": "LAX",
+    "dep": "2026-05-20",
+    "ret": "2026-07-01",
+    "weeks": 6.0,
+    "cheapest_pp": 756,
+    "cheapest_3pax": 2079,
+    "airline": "Air Premia",
+    "stops": 0,
+    "duration": "11 hr 20 min",
+    "top_5": [
+      {
+        "price_pp": 756,
+        "price_3pax": 2079,
+        "airline": "Air Premia",
+        "stops": 0,
+        "duration": "11 hr 20 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 756,
+        "price_3pax": 2079,
+        "airline": "Air Premia",
+        "stops": 0,
+        "duration": "11 hr 15 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 845,
+        "price_3pax": 2323,
+        "airline": "Alaska",
+        "stops": 1,
+        "duration": "15 hr 38 min",
+        "layovers": [
+          "Seattle"
+        ]
+      },
+      {
+        "price_pp": 902,
+        "price_3pax": 2480,
+        "airline": "Korean Air",
+        "stops": 0,
+        "duration": "11 hr 10 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 1080,
+        "price_3pax": 2970,
+        "airline": "Asiana Airlines",
+        "stops": 0,
+        "duration": "11 hr 30 min",
+        "layovers": []
+      }
+    ]
+  },
+  {
+    "origin": "ICN",
+    "dest": "LAX",
+    "dep": "2026-06-01",
+    "ret": "2026-07-01",
+    "weeks": 4.3,
+    "cheapest_pp": 776,
+    "cheapest_3pax": 2134,
+    "airline": "Air Premia",
+    "stops": 0,
+    "duration": "11 hr 20 min",
+    "top_5": [
+      {
+        "price_pp": 776,
+        "price_3pax": 2134,
+        "airline": "Air Premia",
+        "stops": 0,
+        "duration": "11 hr 20 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 776,
+        "price_3pax": 2134,
+        "airline": "Air Premia",
+        "stops": 0,
+        "duration": "11 hr 15 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 924,
+        "price_3pax": 2541,
+        "airline": "Korean Air",
+        "stops": 0,
+        "duration": "11 hr 10 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 1013,
+        "price_3pax": 2785,
+        "airline": "Asiana Airlines",
+        "stops": 0,
+        "duration": "11 hr 30 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 855,
+        "price_3pax": 2351,
+        "airline": "Alaska",
+        "stops": 1,
+        "duration": "15 hr",
+        "layovers": [
+          "Seattle"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "ICN",
+    "dest": "LAX",
+    "dep": "2026-06-09",
+    "ret": "2026-06-29",
+    "weeks": 2.9,
+    "cheapest_pp": 802,
+    "cheapest_3pax": 2205,
+    "airline": "Air Premia",
+    "stops": 0,
+    "duration": "11 hr 20 min",
+    "top_5": [
+      {
+        "price_pp": 802,
+        "price_3pax": 2205,
+        "airline": "Air Premia",
+        "stops": 0,
+        "duration": "11 hr 20 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 997,
+        "price_3pax": 2741,
+        "airline": "Korean Air",
+        "stops": 0,
+        "duration": "11 hr 10 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 1080,
+        "price_3pax": 2970,
+        "airline": "Asiana Airlines",
+        "stops": 0,
+        "duration": "11 hr 30 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 769,
+        "price_3pax": 2114,
+        "airline": "Air Canada and United",
+        "stops": 1,
+        "duration": "15 hr 55 min",
+        "layovers": [
+          "Vancouver"
+        ]
+      },
+      {
+        "price_pp": 997,
+        "price_3pax": 2741,
+        "airline": "Korean Air",
+        "stops": 0,
+        "duration": "11 hr 10 min",
+        "layovers": []
+      }
+    ]
+  },
+  {
+    "origin": "ICN",
+    "dest": "SFO",
+    "dep": "2026-09-01",
+    "ret": "2026-09-30",
+    "weeks": 4.1,
+    "cheapest_pp": 835,
+    "cheapest_3pax": 2296,
+    "airline": "Asiana Airlines",
+    "stops": 0,
+    "duration": "10 hr 30 min",
+    "top_5": [
+      {
+        "price_pp": 835,
+        "price_3pax": 2296,
+        "airline": "Asiana Airlines",
+        "stops": 0,
+        "duration": "10 hr 30 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 856,
+        "price_3pax": 2354,
+        "airline": "Korean Air",
+        "stops": 0,
+        "duration": "10 hr 40 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 993,
+        "price_3pax": 2730,
+        "airline": "United",
+        "stops": 0,
+        "duration": "11 hr 10 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 839,
+        "price_3pax": 2307,
+        "airline": "Korean Air and Delta",
+        "stops": 1,
+        "duration": "24 hr 42 min",
+        "layovers": [
+          "Los Angeles"
+        ]
+      },
+      {
+        "price_pp": 993,
+        "price_3pax": 2730,
+        "airline": "United",
+        "stops": 0,
+        "duration": "11 hr",
+        "layovers": []
+      }
+    ]
+  },
+  {
+    "origin": "ICN",
+    "dest": "SFO",
+    "dep": "2026-06-01",
+    "ret": "2026-07-01",
+    "weeks": 4.3,
+    "cheapest_pp": 840,
+    "cheapest_3pax": 2310,
+    "airline": "Korean Air",
+    "stops": 0,
+    "duration": "10 hr 40 min",
+    "top_5": [
+      {
+        "price_pp": 840,
+        "price_3pax": 2310,
+        "airline": "Korean Air",
+        "stops": 0,
+        "duration": "10 hr 40 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 844,
+        "price_3pax": 2321,
+        "airline": "Delta",
+        "stops": 1,
+        "duration": "13 hr 57 min",
+        "layovers": [
+          "Seattle"
+        ]
+      },
+      {
+        "price_pp": 849,
+        "price_3pax": 2334,
+        "airline": "Air Premia",
+        "stops": 0,
+        "duration": "11 hr",
+        "layovers": []
+      },
+      {
+        "price_pp": 857,
+        "price_3pax": 2356,
+        "airline": "Alaska",
+        "stops": 1,
+        "duration": "14 hr 27 min",
+        "layovers": [
+          "Seattle"
+        ]
+      },
+      {
+        "price_pp": 844,
+        "price_3pax": 2321,
+        "airline": "Korean Air and Delta",
+        "stops": 1,
+        "duration": "16 hr 17 min",
+        "layovers": [
+          "Seattle"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "NRT",
+    "dest": "SFO",
+    "dep": "2026-05-10",
+    "ret": "2026-06-10",
+    "weeks": 4.4,
+    "cheapest_pp": 853,
+    "cheapest_3pax": 2345,
+    "airline": "Asiana Airlines",
+    "stops": 1,
+    "duration": "18 hr 30 min",
+    "top_5": [
+      {
+        "price_pp": 853,
+        "price_3pax": 2345,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "18 hr 30 min",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      {
+        "price_pp": 1278,
+        "price_3pax": 3514,
+        "airline": "Cathay Pacific",
+        "stops": 1,
+        "duration": "28 hr 55 min",
+        "layovers": [
+          "Hong Kong"
+        ]
+      },
+      {
+        "price_pp": 1391,
+        "price_3pax": 3825,
+        "airline": "Hong Kong Express and Cathay Pacific",
+        "stops": 1,
+        "duration": "18 hr 55 min",
+        "layovers": [
+          "Hong Kong"
+        ]
+      },
+      {
+        "price_pp": 1910,
+        "price_3pax": 5252,
+        "airline": "JAL",
+        "stops": 0,
+        "duration": "9 hr 15 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 2034,
+        "price_3pax": 5593,
+        "airline": "Asiana Airlines and Korean Air",
+        "stops": 1,
+        "duration": "17 hr 40 min",
+        "layovers": [
+          "Seoul"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "PVG",
+    "dest": "LAX",
+    "dep": "2026-09-01",
+    "ret": "2026-09-15",
+    "weeks": 2.0,
+    "cheapest_pp": 875,
+    "cheapest_3pax": 2406,
+    "airline": "Korean Air",
+    "stops": 1,
+    "duration": "15 hr 50 min",
+    "top_5": [
+      {
+        "price_pp": 875,
+        "price_3pax": 2406,
+        "airline": "Korean Air",
+        "stops": 1,
+        "duration": "15 hr 50 min",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      {
+        "price_pp": 875,
+        "price_3pax": 2406,
+        "airline": "Korean Air",
+        "stops": 1,
+        "duration": "16 hr 10 min",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      {
+        "price_pp": 1004,
+        "price_3pax": 2761,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "14 hr 15 min",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      {
+        "price_pp": 949,
+        "price_3pax": 2609,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "36 hr 45 min",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      {
+        "price_pp": 1004,
+        "price_3pax": 2761,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "15 hr 30 min",
+        "layovers": [
+          "Seoul"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "PVG",
+    "dest": "SFO",
+    "dep": "2026-05-10",
+    "ret": "2026-05-24",
+    "weeks": 2.0,
+    "cheapest_pp": 879,
+    "cheapest_3pax": 2417,
+    "airline": "Asiana Airlines",
+    "stops": 1,
+    "duration": "14 hr",
+    "top_5": [
+      {
+        "price_pp": 879,
+        "price_3pax": 2417,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "14 hr",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      {
+        "price_pp": 1060,
+        "price_3pax": 2915,
+        "airline": "Cathay Pacific",
+        "stops": 1,
+        "duration": "16 hr 20 min",
+        "layovers": [
+          "Hong Kong"
+        ]
+      },
+      {
+        "price_pp": 1254,
+        "price_3pax": 3448,
+        "airline": "Korean Air",
+        "stops": 1,
+        "duration": "14 hr 30 min",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      {
+        "price_pp": 1060,
+        "price_3pax": 2915,
+        "airline": "Cathay Pacific",
+        "stops": 1,
+        "duration": "18 hr 35 min",
+        "layovers": [
+          "Hong Kong"
+        ]
+      },
+      {
+        "price_pp": 1206,
+        "price_3pax": 3316,
+        "airline": "Korean Air",
+        "stops": 1,
+        "duration": "16 hr 50 min",
+        "layovers": [
+          "Seoul"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "NRT",
+    "dest": "LAX",
+    "dep": "2026-09-01",
+    "ret": "2026-09-30",
+    "weeks": 4.1,
+    "cheapest_pp": 891,
+    "cheapest_3pax": 2450,
+    "airline": "Asiana Airlines",
+    "stops": 1,
+    "duration": "14 hr 50 min",
+    "top_5": [
+      {
+        "price_pp": 891,
+        "price_3pax": 2450,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "14 hr 50 min",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      {
+        "price_pp": 891,
+        "price_3pax": 2450,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "28 hr 5 min",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      {
+        "price_pp": 925,
+        "price_3pax": 2543,
+        "airline": "Korean Air and Asiana Airlines",
+        "stops": 1,
+        "duration": "15 hr 30 min",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      {
+        "price_pp": 958,
+        "price_3pax": 2634,
+        "airline": "Cathay Pacific",
+        "stops": 1,
+        "duration": "20 hr 5 min",
+        "layovers": [
+          "Hong Kong"
+        ]
+      },
+      {
+        "price_pp": 1414,
+        "price_3pax": 3888,
+        "airline": "Singapore Airlines",
+        "stops": 0,
+        "duration": "10 hr 10 min",
+        "layovers": []
+      }
+    ]
+  },
+  {
+    "origin": "NRT",
+    "dest": "LAX",
+    "dep": "2026-05-10",
+    "ret": "2026-06-10",
+    "weeks": 4.4,
+    "cheapest_pp": 920,
+    "cheapest_3pax": 2530,
+    "airline": "United",
+    "stops": 0,
+    "duration": "10 hr",
+    "top_5": [
+      {
+        "price_pp": 920,
+        "price_3pax": 2530,
+        "airline": "United",
+        "stops": 0,
+        "duration": "10 hr",
+        "layovers": []
+      },
+      {
+        "price_pp": 1365,
+        "price_3pax": 3753,
+        "airline": "Singapore Airlines",
+        "stops": 0,
+        "duration": "10 hr 10 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 912,
+        "price_3pax": 2508,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "37 hr 5 min",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      {
+        "price_pp": 1095,
+        "price_3pax": 3011,
+        "airline": "Korean Air and Asiana Airlines",
+        "stops": 1,
+        "duration": "15 hr 30 min",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      {
+        "price_pp": 1121,
+        "price_3pax": 3082,
+        "airline": "Cathay Pacific",
+        "stops": 1,
+        "duration": "20 hr 45 min",
+        "layovers": [
+          "Hong Kong"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "PVG",
+    "dest": "LAX",
+    "dep": "2026-05-10",
+    "ret": "2026-05-24",
+    "weeks": 2.0,
+    "cheapest_pp": 937,
+    "cheapest_3pax": 2576,
+    "airline": "Cathay Pacific",
+    "stops": 1,
+    "duration": "17 hr 10 min",
+    "top_5": [
+      {
+        "price_pp": 937,
+        "price_3pax": 2576,
+        "airline": "Cathay Pacific",
+        "stops": 1,
+        "duration": "17 hr 10 min",
+        "layovers": [
+          "Hong Kong"
+        ]
+      },
+      {
+        "price_pp": 987,
+        "price_3pax": 2714,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "15 hr 30 min",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      {
+        "price_pp": 1190,
+        "price_3pax": 3272,
+        "airline": "United",
+        "stops": 0,
+        "duration": "11 hr 45 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 937,
+        "price_3pax": 2576,
+        "airline": "Cathay Pacific",
+        "stops": 1,
+        "duration": "17 hr",
+        "layovers": [
+          "Hong Kong"
+        ]
+      },
+      {
+        "price_pp": 1106,
+        "price_3pax": 3041,
+        "airline": "Qatar Airways",
+        "stops": 1,
+        "duration": "28 hr 25 min",
+        "layovers": [
+          "Doha"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "HKG",
+    "dest": "LAX",
+    "dep": "2026-05-15",
+    "ret": "2026-06-15",
+    "weeks": 4.4,
+    "cheapest_pp": 961,
+    "cheapest_3pax": 2642,
+    "airline": "United",
+    "stops": 0,
+    "duration": "13 hr 15 min",
+    "top_5": [
+      {
+        "price_pp": 961,
+        "price_3pax": 2642,
+        "airline": "United",
+        "stops": 0,
+        "duration": "13 hr 15 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 974,
+        "price_3pax": 2678,
+        "airline": "United",
+        "stops": 1,
+        "duration": "16 hr 51 min",
+        "layovers": [
+          "San Francisco"
+        ]
+      },
+      {
+        "price_pp": 1017,
+        "price_3pax": 2796,
+        "airline": "Cathay Pacific",
+        "stops": 0,
+        "duration": "12 hr 55 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 961,
+        "price_3pax": 2642,
+        "airline": "United",
+        "stops": 0,
+        "duration": "13 hr 15 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 1017,
+        "price_3pax": 2796,
+        "airline": "Cathay Pacific",
+        "stops": 0,
+        "duration": "13 hr 5 min",
+        "layovers": []
+      }
+    ]
+  },
+  {
+    "origin": "NRT",
+    "dest": "LAX",
+    "dep": "2026-06-01",
+    "ret": "2026-06-29",
+    "weeks": 4.0,
+    "cheapest_pp": 997,
+    "cheapest_3pax": 2741,
+    "airline": "Asiana Airlines",
+    "stops": 1,
+    "duration": "14 hr 50 min",
+    "top_5": [
+      {
+        "price_pp": 997,
+        "price_3pax": 2741,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "14 hr 50 min",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      {
+        "price_pp": 997,
+        "price_3pax": 2741,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "20 hr",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      {
+        "price_pp": 1672,
+        "price_3pax": 4598,
+        "airline": "United",
+        "stops": 0,
+        "duration": "10 hr 10 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 1855,
+        "price_3pax": 5101,
+        "airline": "JAL",
+        "stops": 0,
+        "duration": "9 hr 45 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 1886,
+        "price_3pax": 5186,
+        "airline": "Singapore Airlines",
+        "stops": 0,
+        "duration": "10 hr 10 min",
+        "layovers": []
+      }
+    ]
+  },
+  {
+    "origin": "ICN",
+    "dest": "SFO",
+    "dep": "2026-05-15",
+    "ret": "2026-06-15",
+    "weeks": 4.4,
+    "cheapest_pp": 1010,
+    "cheapest_3pax": 2777,
+    "airline": "United",
+    "stops": 0,
+    "duration": "10 hr 45 min",
+    "top_5": [
+      {
+        "price_pp": 1010,
+        "price_3pax": 2777,
+        "airline": "United",
+        "stops": 0,
+        "duration": "10 hr 45 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 1010,
+        "price_3pax": 2777,
+        "airline": "United",
+        "stops": 0,
+        "duration": "10 hr 45 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 1115,
+        "price_3pax": 3066,
+        "airline": "Korean Air",
+        "stops": 0,
+        "duration": "10 hr 40 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 1154,
+        "price_3pax": 3173,
+        "airline": "Delta",
+        "stops": 1,
+        "duration": "13 hr 57 min",
+        "layovers": [
+          "Seattle"
+        ]
+      },
+      {
+        "price_pp": 1154,
+        "price_3pax": 3173,
+        "airline": "Korean Air and Delta",
+        "stops": 1,
+        "duration": "15 hr 40 min",
+        "layovers": [
+          "Los Angeles"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "PVG",
+    "dest": "SFO",
+    "dep": "2026-05-15",
+    "ret": "2026-06-15",
+    "weeks": 4.4,
+    "cheapest_pp": 1060,
+    "cheapest_3pax": 2915,
+    "airline": "Cathay Pacific",
+    "stops": 1,
+    "duration": "16 hr 20 min",
+    "top_5": [
+      {
+        "price_pp": 1060,
+        "price_3pax": 2915,
+        "airline": "Cathay Pacific",
+        "stops": 1,
+        "duration": "16 hr 20 min",
+        "layovers": [
+          "Hong Kong"
+        ]
+      },
+      {
+        "price_pp": 1060,
+        "price_3pax": 2915,
+        "airline": "Cathay Pacific",
+        "stops": 1,
+        "duration": "18 hr 35 min",
+        "layovers": [
+          "Hong Kong"
+        ]
+      },
+      {
+        "price_pp": 1229,
+        "price_3pax": 3379,
+        "airline": "Air Canada",
+        "stops": 1,
+        "duration": "17 hr 37 min",
+        "layovers": [
+          "Vancouver"
+        ]
+      },
+      {
+        "price_pp": 1358,
+        "price_3pax": 3734,
+        "airline": "Korean Air",
+        "stops": 1,
+        "duration": "16 hr 50 min",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      {
+        "price_pp": 1210,
+        "price_3pax": 3327,
+        "airline": "Air Canada",
+        "stops": 1,
+        "duration": "22 hr 11 min",
+        "layovers": [
+          "Vancouver"
+        ]
+      }
+    ]
+  },
+  {
+    "origin": "NRT",
+    "dest": "SFO",
+    "dep": "2026-09-01",
+    "ret": "2026-09-30",
+    "weeks": 4.1,
+    "cheapest_pp": 1184,
+    "cheapest_3pax": 3256,
+    "airline": "Hong Kong Express and Cathay Pacific",
+    "stops": 1,
+    "duration": "19 hr 25 min",
+    "top_5": [
+      {
+        "price_pp": 1184,
+        "price_3pax": 3256,
+        "airline": "Hong Kong Express and Cathay Pacific",
+        "stops": 1,
+        "duration": "19 hr 25 min",
+        "layovers": [
+          "Hong Kong"
+        ]
+      },
+      {
+        "price_pp": 1534,
+        "price_3pax": 4218,
+        "airline": "JAL",
+        "stops": 0,
+        "duration": "9 hr 40 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 1582,
+        "price_3pax": 4350,
+        "airline": "United",
+        "stops": 0,
+        "duration": "9 hr 35 min",
+        "layovers": []
+      },
+      {
+        "price_pp": 1720,
+        "price_3pax": 4730,
+        "airline": "ANA",
+        "stops": 0,
+        "duration": "9 hr 30 min",
+        "layovers": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,150 @@
+{
+  "crawl_time": "2026-03-16T22:38:50.191113",
+  "config": {
+    "captcha_service": "capmonster",
+    "captcha_key_set": true,
+    "proxy_set": false
+  },
+  "sichuan_airlines": [
+    {
+      "airline": "Sichuan Airlines (3U)",
+      "route": "TFU-LAX",
+      "date": "2026-05-15",
+      "source": "sichuanair.com",
+      "status": "no_flights_found",
+      "flights": [],
+      "error": null,
+      "page_title": "sichuanair",
+      "page_accessible": true,
+      "note": "Page loaded but no flight data extracted"
+    },
+    {
+      "airline": "Sichuan Airlines (3U)",
+      "route": "CTU-LAX",
+      "date": "2026-05-15",
+      "source": "sichuanair.com",
+      "status": "no_flights_found",
+      "flights": [],
+      "error": null,
+      "page_title": "sichuanair",
+      "page_accessible": true,
+      "note": "Page loaded but no flight data extracted"
+    }
+  ],
+  "china_southern": [
+    {
+      "airline": "China Southern Airlines (CZ)",
+      "route": "CAN-LAX",
+      "date": "2026-05-15",
+      "source": "csair.com",
+      "status": "no_flight_content",
+      "flights": [],
+      "error": null,
+      "api_info": {
+        "ndc_level": "Level 4 (partner-only)",
+        "b2c_search": "https://b2c.csair.com/B2C40/newTrips/static/main/page/search/index.html",
+        "search_js": "searchInit.js -> bussinessLogic.searchFlight()"
+      },
+      "ip_locator": {
+        "id": "4jvkCvws/JM9dhC6MWhaqA==",
+        "site": "EU",
+        "region": [
+          "DE",
+          ""
+        ],
+        "city": [
+          "",
+          "Falkenstein"
+        ]
+      },
+      "page_title": "China Southern Airlines - Online Ticket Ordering System",
+      "page_accessible": true,
+      "note": "csair.com B2C system uses heavy JS rendering. The search requires completing the full booking flow in-browser including any CAPTCHA challenges."
+    },
+    {
+      "airline": "China Southern Airlines (CZ)",
+      "route": "CTU-LAX",
+      "date": "2026-05-15",
+      "source": "csair.com",
+      "status": "no_flight_content",
+      "flights": [],
+      "error": null,
+      "api_info": {
+        "ndc_level": "Level 4 (partner-only)",
+        "b2c_search": "https://b2c.csair.com/B2C40/newTrips/static/main/page/search/index.html",
+        "search_js": "searchInit.js -> bussinessLogic.searchFlight()"
+      },
+      "ip_locator": {
+        "id": "4jvkCvws/JM9dhC6MWhaqA==",
+        "site": "EU",
+        "region": [
+          "DE",
+          ""
+        ],
+        "city": [
+          "",
+          "Falkenstein"
+        ]
+      },
+      "page_title": "China Southern Airlines - Online Ticket Ordering System",
+      "page_accessible": true,
+      "note": "csair.com B2C system uses heavy JS rendering. The search requires completing the full booking flow in-browser including any CAPTCHA challenges."
+    }
+  ],
+  "china_eastern": [
+    {
+      "airline": "China Eastern Airlines (MU)",
+      "route": "PVG-LAX",
+      "date": "2026-05-15",
+      "source": "ceair.com",
+      "status": "geo_restricted",
+      "flights": [],
+      "error": "Page is password-gated for this region",
+      "page_title": "Ticket booking_ticket search_ticket price search_discounted ticket"
+    },
+    {
+      "airline": "China Eastern Airlines (MU)",
+      "route": "PVG-SFO",
+      "date": "2026-05-15",
+      "source": "ceair.com",
+      "status": "success",
+      "flights": [
+        {
+          "flight_number": "MU565",
+          "airline": "China Eastern",
+          "airline_code": "MU",
+          "route": "PVG-SFO",
+          "date": "2026-05-15",
+          "source": "ceair.com (DOM)"
+        },
+        {
+          "flight_number": "MU341",
+          "airline": "China Eastern",
+          "airline_code": "MU",
+          "route": "PVG-SFO",
+          "date": "2026-05-15",
+          "source": "ceair.com (DOM)"
+        }
+      ],
+      "error": null,
+      "page_title": "中国东方航空",
+      "page_accessible": true,
+      "api_interceptions": 1
+    }
+  ],
+  "summary": {
+    "total_searches": 6,
+    "total_flights_found": 2,
+    "airlines_searched": [
+      "Sichuan Airlines (3U)",
+      "China Southern (CZ)",
+      "China Eastern (MU)"
+    ],
+    "captcha_info": {
+      "sichuan_air": "Image text CAPTCHA (solvable via 2Captcha image recognition)",
+      "china_southern": "Slider CAPTCHA (solvable via 2Captcha slider/coordinates)",
+      "china_eastern": "Custom verification (partially solvable)"
+    },
+    "note": "Airline direct sites require browser automation with CAPTCHA solving. For best results, use a Chinese residential proxy and set CAPTCHA_API_KEY. The Ctrip crawler (ctrip_crawler.py) is often more effective since it aggregates all airlines in one search."
+  }
+}

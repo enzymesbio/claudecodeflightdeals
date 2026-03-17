@@ -1,0 +1,6 @@
+__pycache__/
+node_modules/
+.env
+ita_screenshots/
+qunar_screenshots/
+*.pyc

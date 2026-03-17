@@ -1,0 +1,2827 @@
+{
+  "timestamp": "2026-03-16T22:09:01.327074",
+  "version": 3,
+  "searches": [
+    {
+      "search": {
+        "origin": "ICN",
+        "destination": "LAX",
+        "depart": "5/15/2026",
+        "return": "6/15/2026",
+        "label": "ICN-LAX"
+      },
+      "success": true,
+      "flights": [
+        {
+          "price": "$1,121",
+          "airline": "$1,121",
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "Stops"
+        },
+        {
+          "price": "$1,009",
+          "airline": "Asiana Airlines",
+          "outbound": {
+            "depart": "9:20 PM",
+            "arrive": "4:50 PM",
+            "duration": "11h 30m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "5:00 AM",
+            "duration": "13h 30m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,076",
+          "airline": "Asiana Airlines",
+          "outbound": {
+            "depart": "9:20 PM",
+            "arrive": "4:50 PM",
+            "duration": "11h 30m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "3:20 PM",
+            "duration": "13h 10m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,121",
+          "airline": "Delta",
+          "outbound": {
+            "depart": "12:25 PM",
+            "arrive": "7:35 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "5:50 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,121",
+          "airline": "Korean Air",
+          "outbound": {
+            "depart": "12:25 PM",
+            "arrive": "7:35 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "5:50 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,121",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "12:25 PM",
+            "arrive": "7:35 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "5:50 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,121",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "12:25 PM",
+            "arrive": "7:35 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "5:50 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,144",
+          "airline": "Delta",
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "9:40 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "5:50 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,144",
+          "airline": "Korean Air",
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "9:40 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "5:50 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,144",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "9:40 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "5:50 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,144",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "9:40 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "5:50 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,144",
+          "airline": "Delta",
+          "outbound": {
+            "depart": "7:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "5:50 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,144",
+          "airline": "Korean Air",
+          "outbound": {
+            "depart": "7:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "5:50 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,144",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "7:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "5:50 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,144",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "7:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "5:50 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,355",
+          "airline": "Delta",
+          "outbound": {
+            "depart": "12:25 PM",
+            "arrive": "7:35 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "3:20 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,355",
+          "airline": "Korean Air",
+          "outbound": {
+            "depart": "12:25 PM",
+            "arrive": "7:35 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "3:20 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,355",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "12:25 PM",
+            "arrive": "7:35 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "3:20 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,355",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "12:25 PM",
+            "arrive": "7:35 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "3:20 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,355",
+          "airline": "Delta",
+          "outbound": {
+            "depart": "12:25 PM",
+            "arrive": "7:35 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "5:00 AM",
+            "duration": "13h 10m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,355",
+          "airline": "Korean Air",
+          "outbound": {
+            "depart": "12:25 PM",
+            "arrive": "7:35 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "5:00 AM",
+            "duration": "13h 10m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,355",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "12:25 PM",
+            "arrive": "7:35 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "5:00 AM",
+            "duration": "13h 10m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,355",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "12:25 PM",
+            "arrive": "7:35 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "5:00 AM",
+            "duration": "13h 10m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,378",
+          "airline": "Delta",
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "9:40 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "3:20 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,378",
+          "airline": "Korean Air",
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "9:40 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "3:20 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,378",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "9:40 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "3:20 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,121",
+          "airline": "$1,121",
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "Stops"
+        },
+        {
+          "price": "$1,378",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "9:40 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "3:20 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,378",
+          "airline": "Delta",
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "9:40 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "5:00 AM",
+            "duration": "13h 10m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,378",
+          "airline": "Korean Air",
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "9:40 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "5:00 AM",
+            "duration": "13h 10m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,378",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "9:40 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "5:00 AM",
+            "duration": "13h 10m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,378",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "9:40 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "5:00 AM",
+            "duration": "13h 10m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,378",
+          "airline": "Delta",
+          "outbound": {
+            "depart": "7:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "3:20 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,378",
+          "airline": "Korean Air",
+          "outbound": {
+            "depart": "7:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "3:20 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,378",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "7:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "3:20 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,378",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "7:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "3:20 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,378",
+          "airline": "Delta",
+          "outbound": {
+            "depart": "7:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "5:00 AM",
+            "duration": "13h 10m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,378",
+          "airline": "Korean Air",
+          "outbound": {
+            "depart": "7:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "5:00 AM",
+            "duration": "13h 10m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,378",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "7:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "5:00 AM",
+            "duration": "13h 10m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,378",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "7:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "5:00 AM",
+            "duration": "13h 10m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$2,532",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "9:20 PM",
+            "arrive": "4:50 PM",
+            "duration": "11h 30m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "3:20 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$2,532",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "9:20 PM",
+            "arrive": "4:50 PM",
+            "duration": "11h 30m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "5:50 PM",
+            "duration": "13h 20m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$2,532",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "9:20 PM",
+            "arrive": "4:50 PM",
+            "duration": "11h 30m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "5:00 AM",
+            "duration": "13h 10m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$2,533",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "12:25 PM",
+            "arrive": "7:35 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "3:20 PM",
+            "duration": "13h 10m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$2,533",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "12:25 PM",
+            "arrive": "7:35 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "5:00 AM",
+            "duration": "13h 30m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$2,533",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "9:40 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "3:20 PM",
+            "duration": "13h 10m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$2,533",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "9:40 AM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "5:00 AM",
+            "duration": "13h 30m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$2,533",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "7:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "3:20 PM",
+            "duration": "13h 10m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$2,533",
+          "airline": "Multiple Airlines",
+          "outbound": {
+            "depart": "7:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "11h 10m",
+            "route": "ICN to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "5:00 AM",
+            "duration": "13h 30m",
+            "route": "LAX to ICN"
+          },
+          "stops": ""
+        }
+      ],
+      "matrix_summary": {
+        "airlines": [
+          "Asiana Airlines",
+          "Delta",
+          "Multiple Carriers",
+          "Korean Air"
+        ],
+        "matrix": {
+          "Nonstops": {
+            "Asiana Airlines": "$1,009",
+            "Delta": "$1,121",
+            "Multiple Carriers": "$1,121",
+            "Korean Air": "$1,121"
+          }
+        }
+      },
+      "total_results": 47,
+      "error": null
+    },
+    {
+      "search": {
+        "origin": "CTU",
+        "destination": "LAX",
+        "depart": "5/15/2026",
+        "return": "6/15/2026",
+        "label": "CTU-LAX"
+      },
+      "success": true,
+      "flights": [
+        {
+          "price": "$4,331",
+          "airline": "2 stops",
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "2 stops"
+        },
+        {
+          "price": "$3,355",
+          "airline": "- -",
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "Stops"
+        },
+        {
+          "price": "$960",
+          "airline": "Korean Air, Asiana Airlines",
+          "outbound": {
+            "depart": "12:10 AM",
+            "arrive": "7:35 AM",
+            "duration": "22h 25m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:00 PM",
+            "duration": "19h 30m",
+            "route": "LAX to TFU"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$960",
+          "airline": "Korean Air, Asiana Airlines",
+          "outbound": {
+            "depart": "12:10 AM",
+            "arrive": "9:40 AM",
+            "duration": "24h 30m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:00 PM",
+            "duration": "19h 30m",
+            "route": "LAX to TFU"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$960",
+          "airline": "Korean Air, Asiana Airlines",
+          "outbound": {
+            "depart": "12:10 AM",
+            "arrive": "2:50 PM",
+            "duration": "29h 40m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:00 PM",
+            "duration": "19h 30m",
+            "route": "LAX to TFU"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air, Asiana Airlines",
+          "outbound": {
+            "depart": "12:10 AM",
+            "arrive": "7:35 AM",
+            "duration": "22h 25m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "11:00 PM",
+            "duration": "22h 0m",
+            "route": "LAX to TFU"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air, Asiana Airlines",
+          "outbound": {
+            "depart": "12:10 AM",
+            "arrive": "9:40 AM",
+            "duration": "24h 30m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "11:00 PM",
+            "duration": "22h 0m",
+            "route": "LAX to TFU"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air, Asiana Airlines",
+          "outbound": {
+            "depart": "12:10 AM",
+            "arrive": "2:50 PM",
+            "duration": "29h 40m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "11:00 PM",
+            "duration": "22h 0m",
+            "route": "LAX to TFU"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air, Asiana Airlines",
+          "outbound": {
+            "depart": "12:10 AM",
+            "arrive": "7:35 AM",
+            "duration": "22h 25m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "11:00 PM",
+            "duration": "32h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air, Asiana Airlines",
+          "outbound": {
+            "depart": "12:10 AM",
+            "arrive": "9:40 AM",
+            "duration": "24h 30m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "11:00 PM",
+            "duration": "32h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air, Asiana Airlines",
+          "outbound": {
+            "depart": "12:10 AM",
+            "arrive": "2:50 PM",
+            "duration": "29h 40m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "11:00 PM",
+            "duration": "32h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,105",
+          "airline": "Asiana Airlines",
+          "outbound": {
+            "depart": "12:10 AM",
+            "arrive": "4:50 PM",
+            "duration": "31h 40m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "11:00 PM",
+            "duration": "21h 50m",
+            "route": "LAX to TFU"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,105",
+          "airline": "Asiana Airlines",
+          "outbound": {
+            "depart": "12:10 AM",
+            "arrive": "4:50 PM",
+            "duration": "31h 40m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "11:00 PM",
+            "duration": "32h 30m",
+            "route": "LAX to TFU"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "6:55 AM",
+            "arrive": "10:05 AM",
+            "duration": "18h 10m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:40 PM",
+            "duration": "20h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "6:55 AM",
+            "arrive": "10:05 AM",
+            "duration": "18h 10m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:55 PM",
+            "duration": "20h 25m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "6:55 AM",
+            "arrive": "10:05 AM",
+            "duration": "18h 10m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:55 AM",
+            "duration": "21h 25m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "9:00 AM",
+            "arrive": "10:05 AM",
+            "duration": "16h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:40 PM",
+            "duration": "20h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "9:00 AM",
+            "arrive": "10:05 AM",
+            "duration": "16h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:55 PM",
+            "duration": "20h 25m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "9:00 AM",
+            "arrive": "10:05 AM",
+            "duration": "16h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:55 AM",
+            "duration": "21h 25m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,259",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "4:00 PM",
+            "arrive": "10:05 AM",
+            "duration": "33h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:40 PM",
+            "duration": "20h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,259",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "4:00 PM",
+            "arrive": "10:05 AM",
+            "duration": "33h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:55 PM",
+            "duration": "20h 25m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,259",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "4:00 PM",
+            "arrive": "10:05 AM",
+            "duration": "33h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:55 AM",
+            "duration": "21h 25m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,259",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "6:00 PM",
+            "arrive": "10:05 AM",
+            "duration": "31h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:40 PM",
+            "duration": "20h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,259",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "6:00 PM",
+            "arrive": "10:05 AM",
+            "duration": "31h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:55 PM",
+            "duration": "20h 25m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,259",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "6:00 PM",
+            "arrive": "10:05 AM",
+            "duration": "31h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:55 AM",
+            "duration": "21h 25m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,259",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "6:10 PM",
+            "arrive": "10:05 AM",
+            "duration": "30h 55m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:40 PM",
+            "duration": "20h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,259",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "6:10 PM",
+            "arrive": "10:05 AM",
+            "duration": "30h 55m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:55 PM",
+            "duration": "20h 25m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$4,331",
+          "airline": "2 stops",
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "2 stops"
+        },
+        {
+          "price": "$3,355",
+          "airline": "- -",
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "Stops"
+        },
+        {
+          "price": "$1,259",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "6:10 PM",
+            "arrive": "10:05 AM",
+            "duration": "30h 55m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:55 AM",
+            "duration": "21h 25m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,259",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "7:00 PM",
+            "arrive": "10:05 AM",
+            "duration": "30h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:40 PM",
+            "duration": "20h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,259",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "7:00 PM",
+            "arrive": "10:05 AM",
+            "duration": "30h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:55 PM",
+            "duration": "20h 25m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,259",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "7:00 PM",
+            "arrive": "10:05 AM",
+            "duration": "30h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:55 AM",
+            "duration": "21h 25m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,259",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "7:50 PM",
+            "arrive": "10:05 AM",
+            "duration": "29h 15m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:40 PM",
+            "duration": "20h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,259",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "7:50 PM",
+            "arrive": "10:05 AM",
+            "duration": "29h 15m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:55 PM",
+            "duration": "20h 25m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,259",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "7:50 PM",
+            "arrive": "10:05 AM",
+            "duration": "29h 15m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:55 AM",
+            "duration": "21h 25m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,259",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "9:20 PM",
+            "arrive": "10:05 AM",
+            "duration": "27h 45m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:40 PM",
+            "duration": "20h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,259",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "9:20 PM",
+            "arrive": "10:05 AM",
+            "duration": "27h 45m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:55 PM",
+            "duration": "20h 25m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,259",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "9:20 PM",
+            "arrive": "10:05 AM",
+            "duration": "27h 45m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:55 AM",
+            "duration": "21h 25m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,391",
+          "airline": "Cathay Pacific",
+          "outbound": {
+            "depart": "1:55 PM",
+            "arrive": "4:30 PM",
+            "duration": "17h 35m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "12:35 PM",
+            "duration": "21h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,391",
+          "airline": "Cathay Pacific",
+          "outbound": {
+            "depart": "1:55 PM",
+            "arrive": "4:30 PM",
+            "duration": "17h 35m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:05 PM",
+            "duration": "24h 40m",
+            "route": "LAX to TFU"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,391",
+          "airline": "Cathay Pacific",
+          "outbound": {
+            "depart": "1:55 PM",
+            "arrive": "4:30 PM",
+            "duration": "17h 35m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "8:15 PM",
+            "duration": "28h 50m",
+            "route": "LAX to TFU"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,391",
+          "airline": "Cathay Pacific",
+          "outbound": {
+            "depart": "1:55 PM",
+            "arrive": "10:00 PM",
+            "duration": "23h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "12:35 PM",
+            "duration": "21h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,391",
+          "airline": "Cathay Pacific",
+          "outbound": {
+            "depart": "1:55 PM",
+            "arrive": "10:00 PM",
+            "duration": "23h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:05 PM",
+            "duration": "24h 40m",
+            "route": "LAX to TFU"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,391",
+          "airline": "Cathay Pacific",
+          "outbound": {
+            "depart": "1:55 PM",
+            "arrive": "10:00 PM",
+            "duration": "23h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "8:15 PM",
+            "duration": "28h 50m",
+            "route": "LAX to TFU"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,422",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "6:55 AM",
+            "arrive": "10:05 AM",
+            "duration": "18h 10m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "1:20 AM",
+            "duration": "21h 50m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,422",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "9:00 AM",
+            "arrive": "10:05 AM",
+            "duration": "16h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "1:20 AM",
+            "duration": "21h 50m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,442",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "4:00 PM",
+            "arrive": "10:05 AM",
+            "duration": "33h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "1:20 AM",
+            "duration": "21h 50m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,442",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "6:00 PM",
+            "arrive": "10:05 AM",
+            "duration": "31h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "1:20 AM",
+            "duration": "21h 50m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,442",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "6:10 PM",
+            "arrive": "10:05 AM",
+            "duration": "30h 55m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "1:20 AM",
+            "duration": "21h 50m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,442",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "7:00 PM",
+            "arrive": "10:05 AM",
+            "duration": "30h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "1:20 AM",
+            "duration": "21h 50m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,442",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "7:50 PM",
+            "arrive": "10:05 AM",
+            "duration": "29h 15m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "1:20 AM",
+            "duration": "21h 50m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,442",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "9:20 PM",
+            "arrive": "10:05 AM",
+            "duration": "27h 45m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "1:20 AM",
+            "duration": "21h 50m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,610",
+          "airline": "EVA Air, Air China",
+          "outbound": {
+            "depart": "7:20 PM",
+            "arrive": "8:55 PM",
+            "duration": "16h 35m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:50 AM",
+            "arrive": "9:40 PM",
+            "duration": "29h 50m",
+            "route": "LAX to TFU"
+          },
+          "stops": "TPE"
+        }
+      ],
+      "matrix_summary": {
+        "airlines": [
+          "Korean Air",
+          "Asiana Airlines",
+          "China Eastern",
+          "Cathay Pacific",
+          "EVA Air",
+          "Air China",
+          "China Southern",
+          "Singapore Airlines",
+          "United",
+          "Delta",
+          "Multiple Carriers",
+          "Turkish Airlines",
+          "Lufthansa"
+        ],
+        "matrix": {
+          "1 stop": {
+            "Korean Air": "$960",
+            "Asiana Airlines": "$1,105",
+            "China Eastern": "$1,239",
+            "Cathay Pacific": "$1,391",
+            "EVA Air": "$1,610",
+            "Air China": "$1,758",
+            "China Southern": "$1,760",
+            "Singapore Airlines": "$2,413",
+            "United": "$2,540",
+            "Delta": "$3,094",
+            "Multiple Carriers": "$3,136",
+            "Turkish Airlines": "$4,331"
+          },
+          "2 stops": {
+            "Korean Air": "$2,137",
+            "Asiana Airlines": "$2,410",
+            "China Eastern": "$3,355"
+          }
+        }
+      },
+      "total_results": 500,
+      "error": null
+    },
+    {
+      "search": {
+        "origin": "PVG",
+        "destination": "SFO",
+        "depart": "5/15/2026",
+        "return": "6/15/2026",
+        "label": "PVG-SFO"
+      },
+      "success": true,
+      "flights": [
+        {
+          "price": "$1,712",
+          "airline": "- -",
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": ""
+        },
+        {
+          "price": "$4,677",
+          "airline": "$18,545",
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "Stops"
+        },
+        {
+          "price": "$1,143",
+          "airline": "EVA Air",
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "4:10 PM",
+            "duration": "18h 0m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "12:50 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 15m",
+            "route": "SFO to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$1,143",
+          "airline": "EVA Air",
+          "outbound": {
+            "depart": "4:00 PM",
+            "arrive": "4:10 PM",
+            "duration": "15h 10m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "12:50 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 15m",
+            "route": "SFO to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$1,143",
+          "airline": "EVA Air",
+          "outbound": {
+            "depart": "8:05 PM",
+            "arrive": "8:10 PM",
+            "duration": "15h 5m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "12:50 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 15m",
+            "route": "SFO to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$1,332",
+          "airline": "EVA Air",
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "4:10 PM",
+            "duration": "18h 0m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "1:15 AM",
+            "arrive": "12:05 PM",
+            "duration": "19h 50m",
+            "route": "SFO to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$1,332",
+          "airline": "EVA Air",
+          "outbound": {
+            "depart": "4:00 PM",
+            "arrive": "4:10 PM",
+            "duration": "15h 10m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "1:15 AM",
+            "arrive": "12:05 PM",
+            "duration": "19h 50m",
+            "route": "SFO to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$1,332",
+          "airline": "EVA Air",
+          "outbound": {
+            "depart": "8:05 PM",
+            "arrive": "8:10 PM",
+            "duration": "15h 5m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "1:15 AM",
+            "arrive": "12:05 PM",
+            "duration": "19h 50m",
+            "route": "SFO to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$1,455",
+          "airline": "Air Canada",
+          "outbound": {
+            "depart": "3:55 PM",
+            "arrive": "6:32 PM",
+            "duration": "17h 37m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "8:51 PM",
+            "arrive": "2:05 PM",
+            "duration": "26h 14m",
+            "route": "SFO to PVG"
+          },
+          "stops": "YVR"
+        },
+        {
+          "price": "$1,576",
+          "airline": "Asiana Airlines, Korean Air",
+          "outbound": {
+            "depart": "11:40 AM",
+            "arrive": "3:20 PM",
+            "duration": "18h 40m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "9:40 AM",
+            "duration": "18h 50m",
+            "route": "SFO to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,576",
+          "airline": "Asiana Airlines",
+          "outbound": {
+            "depart": "11:40 AM",
+            "arrive": "3:20 PM",
+            "duration": "18h 40m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "10:05 AM",
+            "duration": "19h 15m",
+            "route": "SFO to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,576",
+          "airline": "Asiana Airlines",
+          "outbound": {
+            "depart": "11:40 AM",
+            "arrive": "3:20 PM",
+            "duration": "18h 40m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "11:45 AM",
+            "duration": "20h 55m",
+            "route": "SFO to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,585",
+          "airline": "Air Canada",
+          "outbound": {
+            "depart": "3:55 PM",
+            "arrive": "3:22 PM",
+            "duration": "14h 27m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "8:51 PM",
+            "arrive": "2:05 PM",
+            "duration": "26h 14m",
+            "route": "SFO to PVG"
+          },
+          "stops": "YVR"
+        },
+        {
+          "price": "$1,585",
+          "airline": "Air Canada",
+          "outbound": {
+            "depart": "3:55 PM",
+            "arrive": "5:36 PM",
+            "duration": "16h 41m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "8:51 PM",
+            "arrive": "2:05 PM",
+            "duration": "26h 14m",
+            "route": "SFO to PVG"
+          },
+          "stops": "YVR"
+        },
+        {
+          "price": "$1,605",
+          "airline": "China Airlines",
+          "outbound": {
+            "depart": "7:50 PM",
+            "arrive": "7:55 PM",
+            "duration": "15h 5m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "1:05 AM",
+            "arrive": "10:50 AM",
+            "duration": "18h 45m",
+            "route": "SFO to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$1,605",
+          "airline": "China Airlines",
+          "outbound": {
+            "depart": "7:50 PM",
+            "arrive": "7:55 PM",
+            "duration": "15h 5m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "1:05 AM",
+            "arrive": "6:35 PM",
+            "duration": "26h 30m",
+            "route": "SFO to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$1,607",
+          "airline": "Air Canada",
+          "outbound": {
+            "depart": "3:55 PM",
+            "arrive": "6:32 PM",
+            "duration": "17h 37m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "6:15 AM",
+            "arrive": "2:05 PM",
+            "duration": "16h 50m",
+            "route": "SFO to PVG"
+          },
+          "stops": "YVR"
+        },
+        {
+          "price": "$1,611",
+          "airline": "Cathay Pacific",
+          "outbound": {
+            "depart": "7:20 AM",
+            "arrive": "10:55 AM",
+            "duration": "18h 35m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "11:05 AM",
+            "duration": "18h 45m",
+            "route": "SFO to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,611",
+          "airline": "Cathay Pacific",
+          "outbound": {
+            "depart": "7:20 AM",
+            "arrive": "10:55 AM",
+            "duration": "18h 35m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "12:05 PM",
+            "duration": "19h 45m",
+            "route": "SFO to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,611",
+          "airline": "Cathay Pacific",
+          "outbound": {
+            "depart": "7:20 AM",
+            "arrive": "10:55 AM",
+            "duration": "18h 35m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "2:00 PM",
+            "arrive": "11:55 PM",
+            "duration": "18h 55m",
+            "route": "SFO to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,611",
+          "airline": "Cathay Pacific",
+          "outbound": {
+            "depart": "9:35 AM",
+            "arrive": "10:55 AM",
+            "duration": "16h 20m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "11:05 AM",
+            "duration": "18h 45m",
+            "route": "SFO to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,611",
+          "airline": "Cathay Pacific",
+          "outbound": {
+            "depart": "9:35 AM",
+            "arrive": "10:55 AM",
+            "duration": "16h 20m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "12:05 PM",
+            "duration": "19h 45m",
+            "route": "SFO to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,611",
+          "airline": "Cathay Pacific",
+          "outbound": {
+            "depart": "9:35 AM",
+            "arrive": "10:55 AM",
+            "duration": "16h 20m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "2:00 PM",
+            "arrive": "11:55 PM",
+            "duration": "18h 55m",
+            "route": "SFO to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,611",
+          "airline": "Cathay Pacific",
+          "outbound": {
+            "depart": "7:05 PM",
+            "arrive": "10:40 PM",
+            "duration": "18h 35m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "11:05 AM",
+            "duration": "18h 45m",
+            "route": "SFO to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,611",
+          "airline": "Cathay Pacific",
+          "outbound": {
+            "depart": "7:05 PM",
+            "arrive": "10:40 PM",
+            "duration": "18h 35m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "12:05 PM",
+            "duration": "19h 45m",
+            "route": "SFO to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,611",
+          "airline": "Cathay Pacific",
+          "outbound": {
+            "depart": "7:05 PM",
+            "arrive": "10:40 PM",
+            "duration": "18h 35m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "2:00 PM",
+            "arrive": "11:55 PM",
+            "duration": "18h 55m",
+            "route": "SFO to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,631",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "3:56 PM",
+            "duration": "17h 46m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "8:55 AM",
+            "arrive": "5:15 PM",
+            "duration": "17h 20m",
+            "route": "SFO to PVG"
+          },
+          "stops": "LAX"
+        },
+        {
+          "price": "$1,712",
+          "airline": "- -",
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": ""
+        },
+        {
+          "price": "$4,677",
+          "airline": "$18,545",
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "Stops"
+        },
+        {
+          "price": "$1,631",
+          "airline": "China Eastern",
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "3:56 PM",
+            "duration": "17h 46m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "1:00 PM",
+            "arrive": "5:15 PM",
+            "duration": "37h 15m",
+            "route": "SFO to PVG"
+          },
+          "stops": "LAX"
+        },
+        {
+          "price": "$1,634",
+          "airline": "China Eastern, Delta",
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "3:56 PM",
+            "duration": "17h 46m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "8:55 AM",
+            "arrive": "5:15 PM",
+            "duration": "17h 20m",
+            "route": "SFO to PVG"
+          },
+          "stops": "LAX"
+        },
+        {
+          "price": "$1,634",
+          "airline": "China Eastern, Delta",
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "3:56 PM",
+            "duration": "17h 46m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "1:00 PM",
+            "arrive": "5:15 PM",
+            "duration": "37h 15m",
+            "route": "SFO to PVG"
+          },
+          "stops": "LAX"
+        },
+        {
+          "price": "$1,681",
+          "airline": "Philippine Airlines",
+          "outbound": {
+            "depart": "4:00 PM",
+            "arrive": "9:10 PM",
+            "duration": "44h 10m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "12:30 AM",
+            "arrive": "2:30 PM",
+            "duration": "23h 0m",
+            "route": "SFO to PVG"
+          },
+          "stops": "MNL"
+        },
+        {
+          "price": "$1,688",
+          "airline": "Philippine Airlines",
+          "outbound": {
+            "depart": "4:00 PM",
+            "arrive": "9:10 PM",
+            "duration": "44h 10m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "12:30 AM",
+            "arrive": "2:30 PM",
+            "duration": "47h 0m",
+            "route": "SFO to PVG"
+          },
+          "stops": "MNL"
+        },
+        {
+          "price": "$1,689",
+          "airline": "American",
+          "outbound": {
+            "depart": "5:20 PM",
+            "arrive": "10:00 PM",
+            "duration": "19h 40m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "12:26 AM",
+            "arrive": "3:20 PM",
+            "duration": "23h 54m",
+            "route": "SFO to PVG"
+          },
+          "stops": "DFW"
+        },
+        {
+          "price": "$1,689",
+          "airline": "American",
+          "outbound": {
+            "depart": "5:20 PM",
+            "arrive": "10:59 PM",
+            "duration": "20h 39m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "12:26 AM",
+            "arrive": "3:20 PM",
+            "duration": "23h 54m",
+            "route": "SFO to PVG"
+          },
+          "stops": "DFW"
+        },
+        {
+          "price": "$1,689",
+          "airline": "American",
+          "outbound": {
+            "depart": "5:20 PM",
+            "arrive": "11:54 PM",
+            "duration": "21h 34m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "12:26 AM",
+            "arrive": "3:20 PM",
+            "duration": "23h 54m",
+            "route": "SFO to PVG"
+          },
+          "stops": "DFW"
+        },
+        {
+          "price": "$1,689",
+          "airline": "American",
+          "outbound": {
+            "depart": "5:20 PM",
+            "arrive": "10:00 PM",
+            "duration": "19h 40m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "5:01 PM",
+            "arrive": "3:20 PM",
+            "duration": "31h 19m",
+            "route": "SFO to PVG"
+          },
+          "stops": "DFW"
+        },
+        {
+          "price": "$1,689",
+          "airline": "American",
+          "outbound": {
+            "depart": "5:20 PM",
+            "arrive": "10:59 PM",
+            "duration": "20h 39m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "5:01 PM",
+            "arrive": "3:20 PM",
+            "duration": "31h 19m",
+            "route": "SFO to PVG"
+          },
+          "stops": "DFW"
+        },
+        {
+          "price": "$1,689",
+          "airline": "American",
+          "outbound": {
+            "depart": "5:20 PM",
+            "arrive": "11:54 PM",
+            "duration": "21h 34m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "5:01 PM",
+            "arrive": "3:20 PM",
+            "duration": "31h 19m",
+            "route": "SFO to PVG"
+          },
+          "stops": "DFW"
+        },
+        {
+          "price": "$1,689",
+          "airline": "American",
+          "outbound": {
+            "depart": "5:20 PM",
+            "arrive": "10:00 PM",
+            "duration": "19h 40m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "11:29 PM",
+            "arrive": "3:20 PM",
+            "duration": "24h 51m",
+            "route": "SFO to PVG"
+          },
+          "stops": "DFW"
+        },
+        {
+          "price": "$1,689",
+          "airline": "American",
+          "outbound": {
+            "depart": "5:20 PM",
+            "arrive": "10:59 PM",
+            "duration": "20h 39m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "11:29 PM",
+            "arrive": "3:20 PM",
+            "duration": "24h 51m",
+            "route": "SFO to PVG"
+          },
+          "stops": "DFW"
+        },
+        {
+          "price": "$1,689",
+          "airline": "American",
+          "outbound": {
+            "depart": "5:20 PM",
+            "arrive": "11:54 PM",
+            "duration": "21h 34m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "11:29 PM",
+            "arrive": "3:20 PM",
+            "duration": "24h 51m",
+            "route": "SFO to PVG"
+          },
+          "stops": "DFW"
+        },
+        {
+          "price": "$1,712",
+          "airline": "United",
+          "outbound": {
+            "depart": "12:10 PM",
+            "arrive": "8:40 AM",
+            "duration": "11h 30m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "1:30 PM",
+            "arrive": "5:25 PM",
+            "duration": "12h 55m",
+            "route": "SFO to PVG"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,715",
+          "airline": "Air Canada",
+          "outbound": {
+            "depart": "3:55 PM",
+            "arrive": "6:32 PM",
+            "duration": "17h 37m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "6:30 AM",
+            "arrive": "2:05 PM",
+            "duration": "16h 35m",
+            "route": "SFO to PVG"
+          },
+          "stops": "YVR"
+        },
+        {
+          "price": "$1,718",
+          "airline": "United",
+          "outbound": {
+            "depart": "8:10 PM",
+            "arrive": "8:49 PM",
+            "duration": "15h 39m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "1:30 PM",
+            "arrive": "5:25 PM",
+            "duration": "12h 55m",
+            "route": "SFO to PVG"
+          },
+          "stops": "LAX"
+        },
+        {
+          "price": "$1,718",
+          "airline": "United",
+          "outbound": {
+            "depart": "8:10 PM",
+            "arrive": "9:34 PM",
+            "duration": "16h 24m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "1:30 PM",
+            "arrive": "5:25 PM",
+            "duration": "12h 55m",
+            "route": "SFO to PVG"
+          },
+          "stops": "LAX"
+        },
+        {
+          "price": "$1,718",
+          "airline": "United",
+          "outbound": {
+            "depart": "8:10 PM",
+            "arrive": "11:02 PM",
+            "duration": "17h 52m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "1:30 PM",
+            "arrive": "5:25 PM",
+            "duration": "12h 55m",
+            "route": "SFO to PVG"
+          },
+          "stops": "LAX"
+        },
+        {
+          "price": "$1,721",
+          "airline": "Asiana Airlines, Korean Air",
+          "outbound": {
+            "depart": "8:35 AM",
+            "arrive": "11:35 AM",
+            "duration": "18h 0m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "9:40 AM",
+            "duration": "18h 50m",
+            "route": "SFO to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,721",
+          "airline": "Asiana Airlines",
+          "outbound": {
+            "depart": "8:35 AM",
+            "arrive": "11:35 AM",
+            "duration": "18h 0m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "10:05 AM",
+            "duration": "19h 15m",
+            "route": "SFO to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,721",
+          "airline": "Asiana Airlines",
+          "outbound": {
+            "depart": "8:35 AM",
+            "arrive": "11:35 AM",
+            "duration": "18h 0m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "11:45 AM",
+            "duration": "20h 55m",
+            "route": "SFO to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,721",
+          "airline": "Asiana Airlines, Korean Air",
+          "outbound": {
+            "depart": "11:40 AM",
+            "arrive": "11:35 AM",
+            "duration": "14h 55m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "9:40 AM",
+            "duration": "18h 50m",
+            "route": "SFO to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,721",
+          "airline": "Asiana Airlines",
+          "outbound": {
+            "depart": "11:40 AM",
+            "arrive": "11:35 AM",
+            "duration": "14h 55m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "10:05 AM",
+            "duration": "19h 15m",
+            "route": "SFO to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,721",
+          "airline": "Asiana Airlines",
+          "outbound": {
+            "depart": "11:40 AM",
+            "arrive": "11:35 AM",
+            "duration": "14h 55m",
+            "route": "PVG to SFO"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "11:45 AM",
+            "duration": "20h 55m",
+            "route": "SFO to PVG"
+          },
+          "stops": "ICN"
+        }
+      ],
+      "matrix_summary": {
+        "airlines": [
+          "EVA Air",
+          "Air Canada",
+          "Asiana Airlines",
+          "China Airlines",
+          "Cathay Pacific",
+          "China Eastern",
+          "Philippine Airlines",
+          "American",
+          "United",
+          "Multiple Carriers",
+          "Korean Air",
+          "Lufthansa",
+          "ANA",
+          "Emirates",
+          "Air France",
+          "KLM",
+          "Delta",
+          "Turkish Airlines",
+          "Singapore Airlines",
+          "British Airways",
+          "STARLUX Airlines",
+          "Air China"
+        ],
+        "matrix": {
+          "Nonstops": {
+            "EVA Air": "$1,712",
+            "Air Canada": "$18,535"
+          },
+          "1 stop": {
+            "EVA Air": "$1,143",
+            "Air Canada": "$1,455",
+            "Asiana Airlines": "$1,576",
+            "China Airlines": "$1,605",
+            "Cathay Pacific": "$1,611",
+            "China Eastern": "$1,631",
+            "Philippine Airlines": "$1,681",
+            "American": "$1,689",
+            "United": "$1,718",
+            "Multiple Carriers": "$1,791",
+            "Korean Air": "$1,818",
+            "Lufthansa": "$1,846",
+            "ANA": "$1,981",
+            "Emirates": "$2,014",
+            "Air France": "$2,046",
+            "KLM": "$2,049",
+            "Delta": "$2,170",
+            "Turkish Airlines": "$2,412",
+            "Singapore Airlines": "$3,110",
+            "British Airways": "$3,477",
+            "STARLUX Airlines": "$4,677",
+            "Air China": "$18,545"
+          }
+        }
+      },
+      "total_results": 500,
+      "error": null
+    }
+  ]
+}

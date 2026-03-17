@@ -1,0 +1,6792 @@
+{
+  "timestamp": "2026-03-16T22:18:31.113850",
+  "version": "chinese_v1",
+  "focus": "Chinese airlines to US West Coast",
+  "searches": [
+    {
+      "search": {
+        "origin": "CAN",
+        "destination": "LAX",
+        "depart": "5/15/2026",
+        "return": "6/15/2026",
+        "label": "CAN-LAX_May",
+        "note": "Guangzhou - China Southern hub"
+      },
+      "success": true,
+      "flights": [
+        {
+          "price": "$1,597",
+          "airline": "- -",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "1 stop"
+        },
+        {
+          "price": "$3,590",
+          "airline": "$8,003",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "Stops"
+        },
+        {
+          "price": "$960",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:15 AM",
+            "arrive": "7:35 AM",
+            "duration": "21h 20m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:05 AM",
+            "duration": "20h 35m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$960",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:15 AM",
+            "arrive": "9:40 AM",
+            "duration": "23h 25m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:05 AM",
+            "duration": "20h 35m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$960",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:15 AM",
+            "arrive": "2:50 PM",
+            "duration": "28h 35m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:05 AM",
+            "duration": "20h 35m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$960",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "12:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "17h 10m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:05 AM",
+            "duration": "20h 35m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:15 AM",
+            "arrive": "7:35 AM",
+            "duration": "21h 20m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "12:05 AM",
+            "duration": "23h 5m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:15 AM",
+            "arrive": "9:40 AM",
+            "duration": "23h 25m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "12:05 AM",
+            "duration": "23h 5m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:15 AM",
+            "arrive": "2:50 PM",
+            "duration": "28h 35m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "12:05 AM",
+            "duration": "23h 5m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "12:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "17h 10m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "12:05 AM",
+            "duration": "23h 5m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "12:40 PM",
+            "arrive": "9:40 AM",
+            "duration": "36h 0m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:05 AM",
+            "duration": "20h 35m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,057",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "12:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "41h 10m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:05 AM",
+            "duration": "20h 35m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,063",
+          "airline": "China Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "5:30 PM",
+            "arrive": "8:45 PM",
+            "duration": "18h 15m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:05 AM",
+            "arrive": "4:15 PM",
+            "duration": "25h 10m",
+            "route": "LAX to CAN"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$1,105",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:15 AM",
+            "arrive": "4:50 PM",
+            "duration": "30h 35m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "12:05 AM",
+            "duration": "22h 55m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,105",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:15 AM",
+            "arrive": "4:50 PM",
+            "duration": "30h 35m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "11:15 AM",
+            "duration": "34h 5m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,105",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:15 AM",
+            "arrive": "4:50 PM",
+            "duration": "30h 35m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "11:15 AM",
+            "duration": "20h 45m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,105",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "12:25 PM",
+            "arrive": "4:50 PM",
+            "duration": "19h 25m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "12:05 AM",
+            "duration": "22h 55m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,105",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "12:25 PM",
+            "arrive": "4:50 PM",
+            "duration": "19h 25m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "11:15 AM",
+            "duration": "34h 5m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,105",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "12:25 PM",
+            "arrive": "4:50 PM",
+            "duration": "19h 25m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "11:15 AM",
+            "duration": "20h 45m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,105",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "12:40 PM",
+            "arrive": "9:40 AM",
+            "duration": "36h 0m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "12:05 AM",
+            "duration": "23h 5m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,130",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "12:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "41h 10m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "12:05 AM",
+            "duration": "23h 5m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,202",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:50 AM",
+            "arrive": "4:30 PM",
+            "duration": "23h 40m",
+            "route": "ZTI to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,202",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:50 AM",
+            "arrive": "4:30 PM",
+            "duration": "23h 40m",
+            "route": "ZTI to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,202",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:50 AM",
+            "arrive": "10:00 PM",
+            "duration": "29h 10m",
+            "route": "ZTI to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,202",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:50 AM",
+            "arrive": "10:00 PM",
+            "duration": "29h 10m",
+            "route": "ZTI to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,202",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:00 PM",
+            "arrive": "4:30 PM",
+            "duration": "19h 30m",
+            "route": "ZTI to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,202",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:00 PM",
+            "arrive": "4:30 PM",
+            "duration": "19h 30m",
+            "route": "ZTI to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,597",
+          "airline": "- -",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "1 stop"
+        },
+        {
+          "price": "$3,590",
+          "airline": "$8,003",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "Stops"
+        },
+        {
+          "price": "$1,202",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:00 PM",
+            "arrive": "10:00 PM",
+            "duration": "25h 0m",
+            "route": "ZTI to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,202",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:00 PM",
+            "arrive": "10:00 PM",
+            "duration": "25h 0m",
+            "route": "ZTI to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,236",
+          "airline": "Asiana Airlines, Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:15 AM",
+            "arrive": "4:50 PM",
+            "duration": "30h 35m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "11:30 AM",
+            "duration": "21h 0m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,236",
+          "airline": "Asiana Airlines, Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "12:25 PM",
+            "arrive": "4:50 PM",
+            "duration": "19h 25m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "11:30 AM",
+            "duration": "21h 0m",
+            "route": "LAX to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:30 AM",
+            "arrive": "10:05 AM",
+            "duration": "17h 35m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:30 PM",
+            "duration": "20h 0m",
+            "route": "LAX to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:30 AM",
+            "arrive": "10:05 AM",
+            "duration": "17h 35m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:10 AM",
+            "duration": "20h 40m",
+            "route": "LAX to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:30 AM",
+            "arrive": "10:05 AM",
+            "duration": "17h 35m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:50 AM",
+            "duration": "21h 20m",
+            "route": "LAX to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:30 AM",
+            "arrive": "10:05 AM",
+            "duration": "17h 35m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:30 AM",
+            "duration": "32h 0m",
+            "route": "LAX to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:00 AM",
+            "arrive": "10:05 AM",
+            "duration": "16h 5m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:30 PM",
+            "duration": "20h 0m",
+            "route": "LAX to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:00 AM",
+            "arrive": "10:05 AM",
+            "duration": "16h 5m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:10 AM",
+            "duration": "20h 40m",
+            "route": "LAX to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:00 AM",
+            "arrive": "10:05 AM",
+            "duration": "16h 5m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:50 AM",
+            "duration": "21h 20m",
+            "route": "LAX to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:00 AM",
+            "arrive": "10:05 AM",
+            "duration": "16h 5m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:30 AM",
+            "duration": "32h 0m",
+            "route": "LAX to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:20 AM",
+            "arrive": "4:30 PM",
+            "duration": "22h 10m",
+            "route": "NSZ to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:20 AM",
+            "arrive": "4:30 PM",
+            "duration": "22h 10m",
+            "route": "NSZ to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:00 PM",
+            "arrive": "4:30 PM",
+            "duration": "19h 30m",
+            "route": "PFT to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:00 PM",
+            "arrive": "4:30 PM",
+            "duration": "19h 30m",
+            "route": "PFT to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:00 PM",
+            "arrive": "10:00 PM",
+            "duration": "25h 0m",
+            "route": "PFT to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:00 PM",
+            "arrive": "10:00 PM",
+            "duration": "25h 0m",
+            "route": "PFT to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:30 PM",
+            "arrive": "4:30 PM",
+            "duration": "19h 0m",
+            "route": "NSZ to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:30 PM",
+            "arrive": "4:30 PM",
+            "duration": "19h 0m",
+            "route": "NSZ to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:30 PM",
+            "arrive": "10:00 PM",
+            "duration": "24h 30m",
+            "route": "NSZ to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:30 PM",
+            "arrive": "10:00 PM",
+            "duration": "24h 30m",
+            "route": "NSZ to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:50 PM",
+            "arrive": "10:00 PM",
+            "duration": "21h 10m",
+            "route": "NSZ to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:50 PM",
+            "arrive": "10:00 PM",
+            "duration": "21h 10m",
+            "route": "NSZ to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "6:00 PM",
+            "arrive": "10:00 PM",
+            "duration": "19h 0m",
+            "route": "PFT to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        }
+      ],
+      "chinese_airline_flights": [
+        {
+          "price": "$1,063",
+          "airline": "China Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "5:30 PM",
+            "arrive": "8:45 PM",
+            "duration": "18h 15m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:05 AM",
+            "arrive": "4:15 PM",
+            "duration": "25h 10m",
+            "route": "LAX to CAN"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$1,202",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:50 AM",
+            "arrive": "4:30 PM",
+            "duration": "23h 40m",
+            "route": "ZTI to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,202",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:50 AM",
+            "arrive": "4:30 PM",
+            "duration": "23h 40m",
+            "route": "ZTI to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,202",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:50 AM",
+            "arrive": "10:00 PM",
+            "duration": "29h 10m",
+            "route": "ZTI to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,202",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:50 AM",
+            "arrive": "10:00 PM",
+            "duration": "29h 10m",
+            "route": "ZTI to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,202",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:00 PM",
+            "arrive": "4:30 PM",
+            "duration": "19h 30m",
+            "route": "ZTI to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,202",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:00 PM",
+            "arrive": "4:30 PM",
+            "duration": "19h 30m",
+            "route": "ZTI to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,202",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:00 PM",
+            "arrive": "10:00 PM",
+            "duration": "25h 0m",
+            "route": "ZTI to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,202",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:00 PM",
+            "arrive": "10:00 PM",
+            "duration": "25h 0m",
+            "route": "ZTI to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:30 AM",
+            "arrive": "10:05 AM",
+            "duration": "17h 35m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:30 PM",
+            "duration": "20h 0m",
+            "route": "LAX to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:30 AM",
+            "arrive": "10:05 AM",
+            "duration": "17h 35m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:10 AM",
+            "duration": "20h 40m",
+            "route": "LAX to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:30 AM",
+            "arrive": "10:05 AM",
+            "duration": "17h 35m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:50 AM",
+            "duration": "21h 20m",
+            "route": "LAX to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:30 AM",
+            "arrive": "10:05 AM",
+            "duration": "17h 35m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:30 AM",
+            "duration": "32h 0m",
+            "route": "LAX to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:00 AM",
+            "arrive": "10:05 AM",
+            "duration": "16h 5m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:30 PM",
+            "duration": "20h 0m",
+            "route": "LAX to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:00 AM",
+            "arrive": "10:05 AM",
+            "duration": "16h 5m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:10 AM",
+            "duration": "20h 40m",
+            "route": "LAX to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:00 AM",
+            "arrive": "10:05 AM",
+            "duration": "16h 5m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "12:50 AM",
+            "duration": "21h 20m",
+            "route": "LAX to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,239",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:00 AM",
+            "arrive": "10:05 AM",
+            "duration": "16h 5m",
+            "route": "CAN to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:30 AM",
+            "duration": "32h 0m",
+            "route": "LAX to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:20 AM",
+            "arrive": "4:30 PM",
+            "duration": "22h 10m",
+            "route": "NSZ to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:20 AM",
+            "arrive": "4:30 PM",
+            "duration": "22h 10m",
+            "route": "NSZ to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:00 PM",
+            "arrive": "4:30 PM",
+            "duration": "19h 30m",
+            "route": "PFT to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:00 PM",
+            "arrive": "4:30 PM",
+            "duration": "19h 30m",
+            "route": "PFT to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:00 PM",
+            "arrive": "10:00 PM",
+            "duration": "25h 0m",
+            "route": "PFT to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:00 PM",
+            "arrive": "10:00 PM",
+            "duration": "25h 0m",
+            "route": "PFT to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:30 PM",
+            "arrive": "4:30 PM",
+            "duration": "19h 0m",
+            "route": "NSZ to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:30 PM",
+            "arrive": "4:30 PM",
+            "duration": "19h 0m",
+            "route": "NSZ to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:30 PM",
+            "arrive": "10:00 PM",
+            "duration": "24h 30m",
+            "route": "NSZ to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:30 PM",
+            "arrive": "10:00 PM",
+            "duration": "24h 30m",
+            "route": "NSZ to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:50 PM",
+            "arrive": "10:00 PM",
+            "duration": "21h 10m",
+            "route": "NSZ to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:50 PM",
+            "arrive": "10:00 PM",
+            "duration": "21h 10m",
+            "route": "NSZ to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "4:00 PM",
+            "duration": "24h 35m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,250",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "6:00 PM",
+            "arrive": "10:00 PM",
+            "duration": "19h 0m",
+            "route": "PFT to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 55m",
+            "route": "LAX to ZTI"
+          },
+          "stops": "HKG"
+        }
+      ],
+      "matrix_summary": {
+        "airlines": [
+          "Korean Air",
+          "China Airlines",
+          "Asiana Airlines",
+          "Cathay Pacific",
+          "China Eastern",
+          "JAL",
+          "EVA Air",
+          "ANA",
+          "China Southern",
+          "Air China",
+          "Saudia",
+          "United",
+          "Emirates",
+          "Qatar Airways",
+          "Multiple Carriers",
+          "Turkish Airlines",
+          "Delta",
+          "Philippine Airlines",
+          "American"
+        ],
+        "matrix": {
+          "Nonstops": {
+            "Korean Air": "$1,597"
+          },
+          "1 stop": {
+            "Korean Air": "$960",
+            "China Airlines": "$1,063",
+            "Asiana Airlines": "$1,105",
+            "Cathay Pacific": "$1,202",
+            "China Eastern": "$1,239",
+            "JAL": "$1,311",
+            "EVA Air": "$1,351",
+            "ANA": "$1,494",
+            "China Southern": "$1,668",
+            "Air China": "$1,879",
+            "Saudia": "$1,898",
+            "United": "$2,014",
+            "Emirates": "$2,155",
+            "Qatar Airways": "$2,588",
+            "Multiple Carriers": "$2,652",
+            "Turkish Airlines": "$2,742",
+            "Delta": "$3,590",
+            "Philippine Airlines": "$8,003"
+          }
+        }
+      },
+      "total_results": 500,
+      "error": null
+    },
+    {
+      "search": {
+        "origin": "CAN",
+        "destination": "SFO",
+        "depart": "5/15/2026",
+        "return": "6/15/2026",
+        "label": "CAN-SFO_May",
+        "note": "Guangzhou - China Southern hub"
+      },
+      "success": true,
+      "flights": [
+        {
+          "price": "$1,640",
+          "airline": "$2,283",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "2 stops"
+        },
+        {
+          "price": "$2,323",
+          "airline": "$4,087",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "Stops"
+        },
+        {
+          "price": "$1,640",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:10 AM",
+            "arrive": "10:55 AM",
+            "duration": "15h 45m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "8:55 AM",
+            "duration": "16h 35m",
+            "route": "SFO to CAN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,640",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:10 AM",
+            "arrive": "10:55 AM",
+            "duration": "15h 45m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "2:00 PM",
+            "arrive": "9:05 PM",
+            "duration": "16h 5m",
+            "route": "SFO to CAN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,640",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:20 PM",
+            "arrive": "10:40 PM",
+            "duration": "15h 20m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "8:55 AM",
+            "duration": "16h 35m",
+            "route": "SFO to CAN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,640",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:20 PM",
+            "arrive": "10:40 PM",
+            "duration": "15h 20m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "2:00 PM",
+            "arrive": "9:05 PM",
+            "duration": "16h 5m",
+            "route": "SFO to CAN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,668",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:20 AM",
+            "arrive": "10:55 AM",
+            "duration": "16h 35m",
+            "route": "NSZ to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "11:15 AM",
+            "duration": "18h 55m",
+            "route": "SFO to PFT"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,668",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:20 AM",
+            "arrive": "10:55 AM",
+            "duration": "16h 35m",
+            "route": "NSZ to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "12:10 PM",
+            "duration": "19h 50m",
+            "route": "SFO to NSZ"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,740",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:20 AM",
+            "arrive": "10:55 AM",
+            "duration": "16h 35m",
+            "route": "NSZ to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 0m",
+            "route": "SFO to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$2,283",
+          "airline": "United, China Eastern, Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:30 AM",
+            "arrive": "8:40 AM",
+            "duration": "16h 10m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "1:45 PM",
+            "arrive": "9:05 PM",
+            "duration": "16h 20m",
+            "route": "SFO to CAN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$2,283",
+          "airline": "United, Air China, Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:40 AM",
+            "arrive": "8:40 AM",
+            "duration": "16h 0m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "1:45 PM",
+            "arrive": "9:05 PM",
+            "duration": "16h 20m",
+            "route": "SFO to CAN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$2,323",
+          "airline": "Air Canada",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:30 AM",
+            "arrive": "6:32 PM",
+            "duration": "23h 2m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "8:20 AM",
+            "arrive": "12:20 AM",
+            "duration": "25h 0m",
+            "route": "SFO to CAN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$2,323",
+          "airline": "Air Canada",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:40 PM",
+            "arrive": "6:32 PM",
+            "duration": "20h 52m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "8:20 AM",
+            "arrive": "12:20 AM",
+            "duration": "25h 0m",
+            "route": "SFO to CAN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$2,458",
+          "airline": "Air Canada",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:30 AM",
+            "arrive": "6:32 PM",
+            "duration": "23h 2m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "8:20 AM",
+            "arrive": "12:20 AM",
+            "duration": "25h 0m",
+            "route": "SFO to CAN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$2,458",
+          "airline": "Air Canada",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:40 PM",
+            "arrive": "6:32 PM",
+            "duration": "20h 52m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "8:20 AM",
+            "arrive": "12:20 AM",
+            "duration": "25h 0m",
+            "route": "SFO to CAN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$4,087",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:30 AM",
+            "arrive": "6:32 PM",
+            "duration": "23h 2m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "8:55 AM",
+            "duration": "16h 35m",
+            "route": "SFO to CAN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$4,087",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:30 AM",
+            "arrive": "6:32 PM",
+            "duration": "23h 2m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "2:00 PM",
+            "arrive": "9:05 PM",
+            "duration": "16h 5m",
+            "route": "SFO to CAN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$4,087",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:40 PM",
+            "arrive": "6:32 PM",
+            "duration": "20h 52m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "8:55 AM",
+            "duration": "16h 35m",
+            "route": "SFO to CAN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$4,087",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:40 PM",
+            "arrive": "6:32 PM",
+            "duration": "20h 52m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "2:00 PM",
+            "arrive": "9:05 PM",
+            "duration": "16h 5m",
+            "route": "SFO to CAN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$4,858",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:10 AM",
+            "arrive": "10:55 AM",
+            "duration": "15h 45m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "8:20 AM",
+            "arrive": "12:20 AM",
+            "duration": "25h 0m",
+            "route": "SFO to CAN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,858",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:20 PM",
+            "arrive": "10:40 PM",
+            "duration": "15h 20m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "8:20 AM",
+            "arrive": "12:20 AM",
+            "duration": "25h 0m",
+            "route": "SFO to CAN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$5,351",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:50 AM",
+            "arrive": "11:35 AM",
+            "duration": "15h 45m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "8:20 AM",
+            "arrive": "12:20 AM",
+            "duration": "25h 0m",
+            "route": "SFO to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$10,220",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:30 AM",
+            "arrive": "8:40 AM",
+            "duration": "16h 10m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "8:20 AM",
+            "arrive": "12:20 AM",
+            "duration": "25h 0m",
+            "route": "SFO to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$10,220",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:40 AM",
+            "arrive": "8:40 AM",
+            "duration": "16h 0m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "8:20 AM",
+            "arrive": "12:20 AM",
+            "duration": "25h 0m",
+            "route": "SFO to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "YVR,",
+          "airline": "Items per page:",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": ""
+        }
+      ],
+      "chinese_airline_flights": [
+        {
+          "price": "$1,640",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:10 AM",
+            "arrive": "10:55 AM",
+            "duration": "15h 45m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "8:55 AM",
+            "duration": "16h 35m",
+            "route": "SFO to CAN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,640",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:10 AM",
+            "arrive": "10:55 AM",
+            "duration": "15h 45m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "2:00 PM",
+            "arrive": "9:05 PM",
+            "duration": "16h 5m",
+            "route": "SFO to CAN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,640",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:20 PM",
+            "arrive": "10:40 PM",
+            "duration": "15h 20m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "8:55 AM",
+            "duration": "16h 35m",
+            "route": "SFO to CAN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,640",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:20 PM",
+            "arrive": "10:40 PM",
+            "duration": "15h 20m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "2:00 PM",
+            "arrive": "9:05 PM",
+            "duration": "16h 5m",
+            "route": "SFO to CAN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,668",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:20 AM",
+            "arrive": "10:55 AM",
+            "duration": "16h 35m",
+            "route": "NSZ to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "11:15 AM",
+            "duration": "18h 55m",
+            "route": "SFO to PFT"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,668",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:20 AM",
+            "arrive": "10:55 AM",
+            "duration": "16h 35m",
+            "route": "NSZ to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "12:10 PM",
+            "duration": "19h 50m",
+            "route": "SFO to NSZ"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,740",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:20 AM",
+            "arrive": "10:55 AM",
+            "duration": "16h 35m",
+            "route": "NSZ to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "11:20 AM",
+            "duration": "19h 0m",
+            "route": "SFO to ZTI"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$2,283",
+          "airline": "United, China Eastern, Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:30 AM",
+            "arrive": "8:40 AM",
+            "duration": "16h 10m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "1:45 PM",
+            "arrive": "9:05 PM",
+            "duration": "16h 20m",
+            "route": "SFO to CAN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$2,283",
+          "airline": "United, Air China, Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:40 AM",
+            "arrive": "8:40 AM",
+            "duration": "16h 0m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "1:45 PM",
+            "arrive": "9:05 PM",
+            "duration": "16h 20m",
+            "route": "SFO to CAN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$2,323",
+          "airline": "Air Canada",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:30 AM",
+            "arrive": "6:32 PM",
+            "duration": "23h 2m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "8:20 AM",
+            "arrive": "12:20 AM",
+            "duration": "25h 0m",
+            "route": "SFO to CAN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$2,323",
+          "airline": "Air Canada",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:40 PM",
+            "arrive": "6:32 PM",
+            "duration": "20h 52m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "8:20 AM",
+            "arrive": "12:20 AM",
+            "duration": "25h 0m",
+            "route": "SFO to CAN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$2,458",
+          "airline": "Air Canada",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:30 AM",
+            "arrive": "6:32 PM",
+            "duration": "23h 2m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "8:20 AM",
+            "arrive": "12:20 AM",
+            "duration": "25h 0m",
+            "route": "SFO to CAN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$2,458",
+          "airline": "Air Canada",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:40 PM",
+            "arrive": "6:32 PM",
+            "duration": "20h 52m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "8:20 AM",
+            "arrive": "12:20 AM",
+            "duration": "25h 0m",
+            "route": "SFO to CAN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$4,087",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:30 AM",
+            "arrive": "6:32 PM",
+            "duration": "23h 2m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "8:55 AM",
+            "duration": "16h 35m",
+            "route": "SFO to CAN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$4,087",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:30 AM",
+            "arrive": "6:32 PM",
+            "duration": "23h 2m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "2:00 PM",
+            "arrive": "9:05 PM",
+            "duration": "16h 5m",
+            "route": "SFO to CAN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$4,087",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:40 PM",
+            "arrive": "6:32 PM",
+            "duration": "20h 52m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "1:20 AM",
+            "arrive": "8:55 AM",
+            "duration": "16h 35m",
+            "route": "SFO to CAN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$4,087",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:40 PM",
+            "arrive": "6:32 PM",
+            "duration": "20h 52m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "2:00 PM",
+            "arrive": "9:05 PM",
+            "duration": "16h 5m",
+            "route": "SFO to CAN"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$4,858",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:10 AM",
+            "arrive": "10:55 AM",
+            "duration": "15h 45m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "8:20 AM",
+            "arrive": "12:20 AM",
+            "duration": "25h 0m",
+            "route": "SFO to CAN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,858",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:20 PM",
+            "arrive": "10:40 PM",
+            "duration": "15h 20m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "8:20 AM",
+            "arrive": "12:20 AM",
+            "duration": "25h 0m",
+            "route": "SFO to CAN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$5,351",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:50 AM",
+            "arrive": "11:35 AM",
+            "duration": "15h 45m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "8:20 AM",
+            "arrive": "12:20 AM",
+            "duration": "25h 0m",
+            "route": "SFO to CAN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$10,220",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:30 AM",
+            "arrive": "8:40 AM",
+            "duration": "16h 10m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "8:20 AM",
+            "arrive": "12:20 AM",
+            "duration": "25h 0m",
+            "route": "SFO to CAN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$10,220",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:40 AM",
+            "arrive": "8:40 AM",
+            "duration": "16h 0m",
+            "route": "CAN to SFO"
+          },
+          "return": {
+            "depart": "8:20 AM",
+            "arrive": "12:20 AM",
+            "duration": "25h 0m",
+            "route": "SFO to CAN"
+          },
+          "stops": "PVG"
+        }
+      ],
+      "matrix_summary": {
+        "airlines": [
+          "Cathay Pacific",
+          "United",
+          "Air Canada",
+          "Multiple Carriers"
+        ],
+        "matrix": {
+          "1 stop": {
+            "Cathay Pacific": "$1,640",
+            "United": "$2,283"
+          },
+          "2 stops": {
+            "Cathay Pacific": "$2,323",
+            "United": "$4,087"
+          }
+        }
+      },
+      "total_results": 22,
+      "error": null
+    },
+    {
+      "search": {
+        "origin": "PVG",
+        "destination": "LAX",
+        "depart": "5/15/2026",
+        "return": "6/15/2026",
+        "label": "PVG-LAX_May",
+        "note": "Shanghai Pudong - China Eastern hub"
+      },
+      "success": true,
+      "flights": [
+        {
+          "price": "$1,638",
+          "airline": "- -",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "1 stop"
+        },
+        {
+          "price": "$8,280",
+          "airline": "$8,739",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "Stops"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:50 AM",
+            "arrive": "9:40 AM",
+            "duration": "15h 50m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "10:05 AM",
+            "duration": "19h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "11:10 AM",
+            "arrive": "2:50 PM",
+            "duration": "18h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "10:05 AM",
+            "duration": "19h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "16h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "10:05 AM",
+            "duration": "19h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,084",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:50 AM",
+            "arrive": "9:40 AM",
+            "duration": "15h 50m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "8:55 PM",
+            "duration": "19h 55m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,084",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:50 AM",
+            "arrive": "9:40 AM",
+            "duration": "15h 50m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "8:55 PM",
+            "duration": "17h 25m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,084",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "11:10 AM",
+            "arrive": "2:50 PM",
+            "duration": "18h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "8:55 PM",
+            "duration": "19h 55m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,084",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "11:10 AM",
+            "arrive": "2:50 PM",
+            "duration": "18h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "8:55 PM",
+            "duration": "17h 25m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,084",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "16h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "8:55 PM",
+            "duration": "19h 55m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,084",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "16h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "8:55 PM",
+            "duration": "17h 25m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,105",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "11:40 AM",
+            "arrive": "4:50 PM",
+            "duration": "20h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "8:55 PM",
+            "duration": "19h 45m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,105",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "11:40 AM",
+            "arrive": "4:50 PM",
+            "duration": "20h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "10:05 AM",
+            "duration": "19h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,105",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "11:40 AM",
+            "arrive": "4:50 PM",
+            "duration": "20h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "11:45 AM",
+            "duration": "21h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,105",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "4:50 PM",
+            "duration": "18h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "8:55 PM",
+            "duration": "19h 45m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,105",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "4:50 PM",
+            "duration": "18h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "10:05 AM",
+            "duration": "19h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,105",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "4:50 PM",
+            "duration": "18h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "11:45 AM",
+            "duration": "21h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,105",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "4:20 PM",
+            "arrive": "4:50 PM",
+            "duration": "15h 30m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "8:55 PM",
+            "duration": "19h 45m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,105",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "4:20 PM",
+            "arrive": "4:50 PM",
+            "duration": "15h 30m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "10:05 AM",
+            "duration": "19h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,105",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "4:20 PM",
+            "arrive": "4:50 PM",
+            "duration": "15h 30m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "11:45 AM",
+            "duration": "21h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,143",
+          "airline": "EVA Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "4:40 PM",
+            "duration": "18h 30m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:15 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 50m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$1,143",
+          "airline": "EVA Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "4:40 PM",
+            "duration": "18h 30m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:50 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$1,143",
+          "airline": "EVA Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "4:00 PM",
+            "arrive": "4:40 PM",
+            "duration": "15h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:15 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 50m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$1,143",
+          "airline": "EVA Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "4:00 PM",
+            "arrive": "4:40 PM",
+            "duration": "15h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:50 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$1,143",
+          "airline": "EVA Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:05 PM",
+            "arrive": "8:55 PM",
+            "duration": "15h 50m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:15 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 50m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$1,143",
+          "airline": "EVA Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:05 PM",
+            "arrive": "8:55 PM",
+            "duration": "15h 50m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:50 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$1,154",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:20 PM",
+            "arrive": "4:30 PM",
+            "duration": "18h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:05 AM",
+            "duration": "19h 40m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,638",
+          "airline": "- -",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "1 stop"
+        },
+        {
+          "price": "$8,280",
+          "airline": "$8,739",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "Stops"
+        },
+        {
+          "price": "$1,154",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:20 PM",
+            "arrive": "4:30 PM",
+            "duration": "18h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 40m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,156",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:35 AM",
+            "arrive": "9:40 AM",
+            "duration": "16h 5m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "10:05 AM",
+            "duration": "19h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,207",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:35 AM",
+            "arrive": "9:40 AM",
+            "duration": "16h 5m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "8:55 PM",
+            "duration": "19h 55m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,207",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:35 AM",
+            "arrive": "9:40 AM",
+            "duration": "16h 5m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "8:55 PM",
+            "duration": "17h 25m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,221",
+          "airline": "Qatar Airways",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "12:35 AM",
+            "arrive": "2:00 PM",
+            "duration": "28h 25m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "4:20 PM",
+            "arrive": "4:20 PM",
+            "duration": "33h 0m",
+            "route": "LAX to PVG"
+          },
+          "stops": "DOH"
+        },
+        {
+          "price": "$1,224",
+          "airline": "Qatar Airways",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "12:35 AM",
+            "arrive": "2:00 PM",
+            "duration": "28h 25m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "4:20 PM",
+            "arrive": "10:35 PM",
+            "duration": "39h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "DOH"
+        },
+        {
+          "price": "$1,236",
+          "airline": "Asiana Airlines, Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "11:40 AM",
+            "arrive": "4:50 PM",
+            "duration": "20h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "9:40 AM",
+            "duration": "19h 10m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,236",
+          "airline": "Asiana Airlines, Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "4:50 PM",
+            "duration": "18h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "9:40 AM",
+            "duration": "19h 10m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,236",
+          "airline": "Asiana Airlines, Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "4:20 PM",
+            "arrive": "4:50 PM",
+            "duration": "15h 30m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "9:40 AM",
+            "duration": "19h 10m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,286",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "11:40 AM",
+            "arrive": "2:50 PM",
+            "duration": "18h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "10:05 AM",
+            "duration": "19h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,336",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:20 PM",
+            "arrive": "4:30 PM",
+            "duration": "18h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "1:20 PM",
+            "arrive": "11:55 PM",
+            "duration": "19h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,336",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "4:30 PM",
+            "duration": "17h 0m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:05 AM",
+            "duration": "19h 40m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,336",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "4:30 PM",
+            "duration": "17h 0m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 40m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,336",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:05 PM",
+            "arrive": "10:00 PM",
+            "duration": "17h 55m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:05 AM",
+            "duration": "19h 40m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,336",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:05 PM",
+            "arrive": "10:00 PM",
+            "duration": "17h 55m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 40m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,337",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "11:40 AM",
+            "arrive": "2:50 PM",
+            "duration": "18h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "10:00 AM",
+            "arrive": "8:55 PM",
+            "duration": "19h 55m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,337",
+          "airline": "Korean Air, Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "11:40 AM",
+            "arrive": "2:50 PM",
+            "duration": "18h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "8:55 PM",
+            "duration": "17h 25m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,344",
+          "airline": "Asiana Airlines, Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "11:40 AM",
+            "arrive": "4:50 PM",
+            "duration": "20h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "8:10 PM",
+            "duration": "19h 0m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,344",
+          "airline": "Asiana Airlines, Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "4:50 PM",
+            "duration": "18h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "8:10 PM",
+            "duration": "19h 0m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,344",
+          "airline": "Asiana Airlines, Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "4:20 PM",
+            "arrive": "4:50 PM",
+            "duration": "15h 30m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "8:10 PM",
+            "duration": "19h 0m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,386",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "5:20 PM",
+            "arrive": "10:00 PM",
+            "duration": "19h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:15 PM",
+            "arrive": "7:45 PM",
+            "duration": "16h 30m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HND"
+        },
+        {
+          "price": "$1,386",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "5:20 PM",
+            "arrive": "10:48 PM",
+            "duration": "20h 28m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:15 PM",
+            "arrive": "7:45 PM",
+            "duration": "16h 30m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HND"
+        },
+        {
+          "price": "$1,386",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "5:20 PM",
+            "arrive": "11:59 PM",
+            "duration": "21h 39m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:15 PM",
+            "arrive": "7:45 PM",
+            "duration": "16h 30m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HND"
+        },
+        {
+          "price": "$1,418",
+          "airline": "China Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:50 PM",
+            "arrive": "8:45 PM",
+            "duration": "15h 55m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:05 AM",
+            "arrive": "6:35 PM",
+            "duration": "27h 30m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$1,438",
+          "airline": "Philippine Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "4:00 PM",
+            "arrive": "8:40 PM",
+            "duration": "43h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:25 PM",
+            "arrive": "2:30 PM",
+            "duration": "35h 5m",
+            "route": "LAX to PVG"
+          },
+          "stops": "MNL"
+        }
+      ],
+      "chinese_airline_flights": [
+        {
+          "price": "$1,154",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:20 PM",
+            "arrive": "4:30 PM",
+            "duration": "18h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:05 AM",
+            "duration": "19h 40m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,154",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:20 PM",
+            "arrive": "4:30 PM",
+            "duration": "18h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 40m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,336",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:20 PM",
+            "arrive": "4:30 PM",
+            "duration": "18h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "1:20 PM",
+            "arrive": "11:55 PM",
+            "duration": "19h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,336",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "4:30 PM",
+            "duration": "17h 0m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:05 AM",
+            "duration": "19h 40m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,336",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "4:30 PM",
+            "duration": "17h 0m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 40m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,336",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:05 PM",
+            "arrive": "10:00 PM",
+            "duration": "17h 55m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "11:05 AM",
+            "duration": "19h 40m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,336",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:05 PM",
+            "arrive": "10:00 PM",
+            "duration": "17h 55m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 40m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$1,386",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "5:20 PM",
+            "arrive": "10:00 PM",
+            "duration": "19h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:15 PM",
+            "arrive": "7:45 PM",
+            "duration": "16h 30m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HND"
+        },
+        {
+          "price": "$1,386",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "5:20 PM",
+            "arrive": "10:48 PM",
+            "duration": "20h 28m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:15 PM",
+            "arrive": "7:45 PM",
+            "duration": "16h 30m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HND"
+        },
+        {
+          "price": "$1,386",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "5:20 PM",
+            "arrive": "11:59 PM",
+            "duration": "21h 39m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:15 PM",
+            "arrive": "7:45 PM",
+            "duration": "16h 30m",
+            "route": "LAX to PVG"
+          },
+          "stops": "HND"
+        },
+        {
+          "price": "$1,418",
+          "airline": "China Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "7:50 PM",
+            "arrive": "8:45 PM",
+            "duration": "15h 55m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:05 AM",
+            "arrive": "6:35 PM",
+            "duration": "27h 30m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TPE"
+        }
+      ],
+      "matrix_summary": {
+        "airlines": [
+          "Korean Air",
+          "Asiana Airlines",
+          "EVA Air",
+          "Cathay Pacific",
+          "Qatar Airways",
+          "Multiple Carriers",
+          "China Airlines",
+          "Philippine Airlines",
+          "Air Canada",
+          "United",
+          "China Southern",
+          "Delta",
+          "China Eastern",
+          "American",
+          "Lufthansa",
+          "JAL",
+          "ANA",
+          "Emirates",
+          "Austrian",
+          "Air France",
+          "KLM",
+          "Turkish Airlines",
+          "British Airways",
+          "STARLUX Airlines",
+          "Singapore Airlines",
+          "Air China"
+        ],
+        "matrix": {
+          "Nonstops": {
+            "Korean Air": "$1,463",
+            "Asiana Airlines": "$1,638"
+          },
+          "1 stop": {
+            "Korean Air": "$1,033",
+            "Asiana Airlines": "$1,105",
+            "EVA Air": "$1,143",
+            "Cathay Pacific": "$1,154",
+            "Qatar Airways": "$1,221",
+            "Multiple Carriers": "$1,386",
+            "China Airlines": "$1,418",
+            "Philippine Airlines": "$1,438",
+            "Air Canada": "$1,453",
+            "United": "$1,469",
+            "China Southern": "$1,479",
+            "Delta": "$1,631",
+            "China Eastern": "$1,851",
+            "American": "$1,675",
+            "Lufthansa": "$1,773",
+            "JAL": "$1,818",
+            "ANA": "$1,987",
+            "Emirates": "$2,014",
+            "Austrian": "$2,020",
+            "Air France": "$2,046",
+            "KLM": "$2,049",
+            "Turkish Airlines": "$2,533",
+            "British Airways": "$2,939",
+            "STARLUX Airlines": "$4,677",
+            "Singapore Airlines": "$8,280",
+            "Air China": "$8,739"
+          }
+        }
+      },
+      "total_results": 500,
+      "error": null
+    },
+    {
+      "search": {
+        "origin": "CTU",
+        "destination": "LAX",
+        "depart": "9/1/2026",
+        "return": "9/29/2026",
+        "label": "CTU-LAX_Sep",
+        "note": "Chengdu Shuangliu - Sichuan Airlines hub"
+      },
+      "success": true,
+      "flights": [
+        {
+          "price": "$1,020",
+          "airline": "- -",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "1 stop"
+        },
+        {
+          "price": "$3,095",
+          "airline": "$12,886",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "Stops"
+        },
+        {
+          "price": "$806",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:00 AM",
+            "arrive": "10:05 AM",
+            "duration": "16h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:40 PM",
+            "duration": "20h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,020",
+          "airline": "Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:10 PM",
+            "arrive": "8:30 PM",
+            "duration": "13h 20m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "11:15 PM",
+            "arrive": "6:00 AM",
+            "duration": "15h 45m",
+            "route": "LAX to TFU"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,058",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "6:55 AM",
+            "arrive": "10:05 AM",
+            "duration": "18h 10m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:40 PM",
+            "duration": "20h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$2,223",
+          "airline": "EVA Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:30 PM",
+            "arrive": "4:40 PM",
+            "duration": "18h 10m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:10 PM",
+            "arrive": "9:40 PM",
+            "duration": "42h 30m",
+            "route": "LAX to TFU"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$2,223",
+          "airline": "EVA Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:30 PM",
+            "arrive": "8:55 PM",
+            "duration": "22h 25m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:10 PM",
+            "arrive": "9:40 PM",
+            "duration": "42h 30m",
+            "route": "LAX to TFU"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$2,473",
+          "airline": "United, Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:20 PM",
+            "arrive": "5:20 PM",
+            "duration": "17h 0m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:55 PM",
+            "arrive": "10:35 PM",
+            "duration": "18h 40m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$2,826",
+          "airline": "United, Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:00 PM",
+            "arrive": "5:20 PM",
+            "duration": "17h 20m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:55 PM",
+            "arrive": "10:35 PM",
+            "duration": "18h 40m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$2,826",
+          "airline": "United, Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:20 PM",
+            "arrive": "5:20 PM",
+            "duration": "17h 0m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:55 PM",
+            "arrive": "11:10 PM",
+            "duration": "19h 15m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$3,095",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:00 AM",
+            "arrive": "10:05 AM",
+            "duration": "16h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:40 PM",
+            "arrive": "11:00 PM",
+            "duration": "19h 20m",
+            "route": "LAX to TFU"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$3,180",
+          "airline": "United, Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:00 PM",
+            "arrive": "5:20 PM",
+            "duration": "17h 20m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:55 PM",
+            "arrive": "11:10 PM",
+            "duration": "19h 15m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$3,373",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "6:55 AM",
+            "arrive": "10:05 AM",
+            "duration": "18h 10m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:40 PM",
+            "arrive": "11:00 PM",
+            "duration": "19h 20m",
+            "route": "LAX to TFU"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$4,811",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:30 PM",
+            "arrive": "4:40 PM",
+            "duration": "18h 10m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "11:15 PM",
+            "arrive": "6:00 AM",
+            "duration": "15h 45m",
+            "route": "LAX to TFU"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$4,811",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:30 PM",
+            "arrive": "8:55 PM",
+            "duration": "22h 25m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "11:15 PM",
+            "arrive": "6:00 AM",
+            "duration": "15h 45m",
+            "route": "LAX to TFU"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$7,019",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "8:20 AM",
+            "arrive": "9:40 AM",
+            "duration": "16h 20m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:40 PM",
+            "duration": "20h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$12,886",
+          "airline": "Korean Air, Air China, Asiana Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "8:20 AM",
+            "arrive": "9:40 AM",
+            "duration": "16h 20m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:40 PM",
+            "arrive": "11:00 PM",
+            "duration": "19h 20m",
+            "route": "LAX to TFU"
+          },
+          "stops": "ICN"
+        }
+      ],
+      "chinese_airline_flights": [
+        {
+          "price": "$806",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:00 AM",
+            "arrive": "10:05 AM",
+            "duration": "16h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:40 PM",
+            "duration": "20h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$1,020",
+          "airline": "Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "10:10 PM",
+            "arrive": "8:30 PM",
+            "duration": "13h 20m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "11:15 PM",
+            "arrive": "6:00 AM",
+            "duration": "15h 45m",
+            "route": "LAX to TFU"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,058",
+          "airline": "China Eastern",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "6:55 AM",
+            "arrive": "10:05 AM",
+            "duration": "18h 10m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:40 PM",
+            "duration": "20h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$2,473",
+          "airline": "United, Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:20 PM",
+            "arrive": "5:20 PM",
+            "duration": "17h 0m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:55 PM",
+            "arrive": "10:35 PM",
+            "duration": "18h 40m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$2,826",
+          "airline": "United, Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:00 PM",
+            "arrive": "5:20 PM",
+            "duration": "17h 20m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:55 PM",
+            "arrive": "10:35 PM",
+            "duration": "18h 40m",
+            "route": "LAX to CTU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$2,826",
+          "airline": "United, Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:20 PM",
+            "arrive": "5:20 PM",
+            "duration": "17h 0m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:55 PM",
+            "arrive": "11:10 PM",
+            "duration": "19h 15m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$3,095",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:00 AM",
+            "arrive": "10:05 AM",
+            "duration": "16h 5m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:40 PM",
+            "arrive": "11:00 PM",
+            "duration": "19h 20m",
+            "route": "LAX to TFU"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$3,180",
+          "airline": "United, Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:00 PM",
+            "arrive": "5:20 PM",
+            "duration": "17h 20m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:55 PM",
+            "arrive": "11:10 PM",
+            "duration": "19h 15m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$3,373",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "6:55 AM",
+            "arrive": "10:05 AM",
+            "duration": "18h 10m",
+            "route": "CTU to LAX"
+          },
+          "return": {
+            "depart": "12:40 PM",
+            "arrive": "11:00 PM",
+            "duration": "19h 20m",
+            "route": "LAX to TFU"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$4,811",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:30 PM",
+            "arrive": "4:40 PM",
+            "duration": "18h 10m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "11:15 PM",
+            "arrive": "6:00 AM",
+            "duration": "15h 45m",
+            "route": "LAX to TFU"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$4,811",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:30 PM",
+            "arrive": "8:55 PM",
+            "duration": "22h 25m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "11:15 PM",
+            "arrive": "6:00 AM",
+            "duration": "15h 45m",
+            "route": "LAX to TFU"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$7,019",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "8:20 AM",
+            "arrive": "9:40 AM",
+            "duration": "16h 20m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:30 PM",
+            "arrive": "11:40 PM",
+            "duration": "20h 10m",
+            "route": "LAX to TFU"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$12,886",
+          "airline": "Korean Air, Air China, Asiana Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "8:20 AM",
+            "arrive": "9:40 AM",
+            "duration": "16h 20m",
+            "route": "TFU to LAX"
+          },
+          "return": {
+            "depart": "12:40 PM",
+            "arrive": "11:00 PM",
+            "duration": "19h 20m",
+            "route": "LAX to TFU"
+          },
+          "stops": "ICN"
+        }
+      ],
+      "matrix_summary": {
+        "airlines": [
+          "China Eastern",
+          "Sichuan Airlines",
+          "EVA Air",
+          "United",
+          "Multiple Carriers",
+          "Korean Air"
+        ],
+        "matrix": {
+          "Nonstops": {
+            "China Eastern": "$1,020"
+          },
+          "1 stop": {
+            "China Eastern": "$806",
+            "Sichuan Airlines": "$2,223",
+            "EVA Air": "$2,473",
+            "United": "$3,095",
+            "Multiple Carriers": "$12,886"
+          }
+        }
+      },
+      "total_results": 15,
+      "error": null
+    },
+    {
+      "search": {
+        "origin": "PEK",
+        "destination": "LAX",
+        "depart": "5/15/2026",
+        "return": "6/15/2026",
+        "label": "PEK-LAX_May",
+        "note": "Beijing Capital - Air China hub"
+      },
+      "success": true,
+      "flights": [
+        {
+          "price": "$1,667",
+          "airline": "- -",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "1 stop"
+        },
+        {
+          "price": "$1,802",
+          "airline": "$4,358",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "Stops"
+        },
+        {
+          "price": "$1,667",
+          "airline": "Air China",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:55 PM",
+            "arrive": "8:10 PM",
+            "duration": "13h 15m",
+            "route": "PEK to LAX"
+          },
+          "return": {
+            "depart": "11:25 PM",
+            "arrive": "5:30 AM",
+            "duration": "15h 5m",
+            "route": "LAX to PEK"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,802",
+          "airline": "United",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "5:25 PM",
+            "arrive": "5:55 PM",
+            "duration": "15h 30m",
+            "route": "PEK to LAX"
+          },
+          "return": {
+            "depart": "7:30 AM",
+            "arrive": "3:25 PM",
+            "duration": "16h 55m",
+            "route": "LAX to PEK"
+          },
+          "stops": "SFO"
+        },
+        {
+          "price": "$2,999",
+          "airline": "United, ANA",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "5:25 PM",
+            "arrive": "5:55 PM",
+            "duration": "15h 30m",
+            "route": "PEK to LAX"
+          },
+          "return": {
+            "depart": "11:40 AM",
+            "arrive": "8:15 PM",
+            "duration": "17h 35m",
+            "route": "LAX to PEK"
+          },
+          "stops": "HND"
+        },
+        {
+          "price": "$4,358",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "4:50 PM",
+            "arrive": "4:50 PM",
+            "duration": "15h 0m",
+            "route": "PEK to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "5:00 PM",
+            "duration": "19h 25m",
+            "route": "LAX to PEK"
+          },
+          "stops": "YVR"
+        },
+        {
+          "price": "$4,416",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:30 PM",
+            "arrive": "2:50 PM",
+            "duration": "14h 20m",
+            "route": "PEK to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "5:00 PM",
+            "duration": "19h 25m",
+            "route": "LAX to PEK"
+          },
+          "stops": "YVR"
+        },
+        {
+          "price": "$5,291",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:10 PM",
+            "arrive": "3:15 PM",
+            "duration": "15h 5m",
+            "route": "PEK to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "5:00 PM",
+            "duration": "19h 25m",
+            "route": "LAX to PEK"
+          },
+          "stops": "YVR"
+        },
+        {
+          "price": "$6,864",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "5:25 PM",
+            "arrive": "5:55 PM",
+            "duration": "15h 30m",
+            "route": "PEK to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "5:00 PM",
+            "duration": "19h 25m",
+            "route": "LAX to PEK"
+          },
+          "stops": "YVR"
+        },
+        {
+          "price": "$9,229",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:10 PM",
+            "arrive": "3:15 PM",
+            "duration": "15h 5m",
+            "route": "PEK to LAX"
+          },
+          "return": {
+            "depart": "11:40 AM",
+            "arrive": "8:15 PM",
+            "duration": "17h 35m",
+            "route": "LAX to PEK"
+          },
+          "stops": "HND"
+        }
+      ],
+      "chinese_airline_flights": [
+        {
+          "price": "$1,667",
+          "airline": "Air China",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:55 PM",
+            "arrive": "8:10 PM",
+            "duration": "13h 15m",
+            "route": "PEK to LAX"
+          },
+          "return": {
+            "depart": "11:25 PM",
+            "arrive": "5:30 AM",
+            "duration": "15h 5m",
+            "route": "LAX to PEK"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$4,358",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "4:50 PM",
+            "arrive": "4:50 PM",
+            "duration": "15h 0m",
+            "route": "PEK to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "5:00 PM",
+            "duration": "19h 25m",
+            "route": "LAX to PEK"
+          },
+          "stops": "YVR"
+        },
+        {
+          "price": "$4,416",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:30 PM",
+            "arrive": "2:50 PM",
+            "duration": "14h 20m",
+            "route": "PEK to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "5:00 PM",
+            "duration": "19h 25m",
+            "route": "LAX to PEK"
+          },
+          "stops": "YVR"
+        },
+        {
+          "price": "$5,291",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:10 PM",
+            "arrive": "3:15 PM",
+            "duration": "15h 5m",
+            "route": "PEK to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "5:00 PM",
+            "duration": "19h 25m",
+            "route": "LAX to PEK"
+          },
+          "stops": "YVR"
+        },
+        {
+          "price": "$6,864",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "5:25 PM",
+            "arrive": "5:55 PM",
+            "duration": "15h 30m",
+            "route": "PEK to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "5:00 PM",
+            "duration": "19h 25m",
+            "route": "LAX to PEK"
+          },
+          "stops": "YVR"
+        },
+        {
+          "price": "$9,229",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:10 PM",
+            "arrive": "3:15 PM",
+            "duration": "15h 5m",
+            "route": "PEK to LAX"
+          },
+          "return": {
+            "depart": "11:40 AM",
+            "arrive": "8:15 PM",
+            "duration": "17h 35m",
+            "route": "LAX to PEK"
+          },
+          "stops": "HND"
+        }
+      ],
+      "matrix_summary": {
+        "airlines": [
+          "Air China",
+          "United",
+          "Multiple Carriers"
+        ],
+        "matrix": {
+          "Nonstops": {
+            "Air China": "$1,667"
+          },
+          "1 stop": {
+            "Air China": "$1,802",
+            "United": "$4,358"
+          }
+        }
+      },
+      "total_results": 8,
+      "error": null
+    },
+    {
+      "search": {
+        "origin": "XMN",
+        "destination": "LAX",
+        "depart": "5/15/2026",
+        "return": "6/15/2026",
+        "label": "XMN-LAX_May",
+        "note": "Xiamen - Xiamen Airlines hub"
+      },
+      "success": true,
+      "flights": [
+        {
+          "price": "$4,650",
+          "airline": "Price",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "Stops"
+        },
+        {
+          "price": "$1,626",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "8:35 PM",
+            "arrive": "10:00 PM",
+            "duration": "16h 25m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "1:25 AM",
+            "arrive": "11:05 AM",
+            "duration": "18h 40m",
+            "route": "LAX to XMN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$2,855",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "8:05 AM",
+            "arrive": "10:05 AM",
+            "duration": "17h 0m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "1:25 AM",
+            "arrive": "11:05 AM",
+            "duration": "18h 40m",
+            "route": "LAX to XMN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$2,988",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:10 PM",
+            "arrive": "8:30 PM",
+            "duration": "23h 20m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "8:55 AM",
+            "duration": "18h 5m",
+            "route": "LAX to XMN"
+          },
+          "stops": "CAN"
+        },
+        {
+          "price": "$4,093",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "16h 10m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "1:25 AM",
+            "arrive": "11:05 AM",
+            "duration": "18h 40m",
+            "route": "LAX to XMN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,444",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "8:35 PM",
+            "arrive": "10:00 PM",
+            "duration": "16h 25m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "8:55 AM",
+            "duration": "18h 5m",
+            "route": "LAX to XMN"
+          },
+          "stops": "CAN"
+        },
+        {
+          "price": "$4,650",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "16h 10m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "11:10 PM",
+            "duration": "25h 35m",
+            "route": "LAX to XMN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$4,799",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "8:35 PM",
+            "arrive": "10:00 PM",
+            "duration": "16h 25m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "11:10 PM",
+            "duration": "25h 35m",
+            "route": "LAX to XMN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$7,401",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "2:25 PM",
+            "arrive": "4:55 PM",
+            "duration": "17h 30m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "11:10 PM",
+            "duration": "25h 35m",
+            "route": "LAX to XMN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$14,587",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "8:30 AM",
+            "arrive": "9:40 AM",
+            "duration": "16h 10m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "1:25 AM",
+            "arrive": "11:05 AM",
+            "duration": "18h 40m",
+            "route": "LAX to XMN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$15,144",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "8:30 AM",
+            "arrive": "9:40 AM",
+            "duration": "16h 10m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "11:10 PM",
+            "duration": "25h 35m",
+            "route": "LAX to XMN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "YVR,",
+          "airline": "Items per page:",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": ""
+        }
+      ],
+      "chinese_airline_flights": [
+        {
+          "price": "$1,626",
+          "airline": "Cathay Pacific",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "8:35 PM",
+            "arrive": "10:00 PM",
+            "duration": "16h 25m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "1:25 AM",
+            "arrive": "11:05 AM",
+            "duration": "18h 40m",
+            "route": "LAX to XMN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$2,855",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "8:05 AM",
+            "arrive": "10:05 AM",
+            "duration": "17h 0m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "1:25 AM",
+            "arrive": "11:05 AM",
+            "duration": "18h 40m",
+            "route": "LAX to XMN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$2,988",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "12:10 PM",
+            "arrive": "8:30 PM",
+            "duration": "23h 20m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "8:55 AM",
+            "duration": "18h 5m",
+            "route": "LAX to XMN"
+          },
+          "stops": "CAN"
+        },
+        {
+          "price": "$4,093",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "16h 10m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "1:25 AM",
+            "arrive": "11:05 AM",
+            "duration": "18h 40m",
+            "route": "LAX to XMN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,444",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "8:35 PM",
+            "arrive": "10:00 PM",
+            "duration": "16h 25m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "8:55 AM",
+            "duration": "18h 5m",
+            "route": "LAX to XMN"
+          },
+          "stops": "CAN"
+        },
+        {
+          "price": "$4,650",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "16h 10m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "11:10 PM",
+            "duration": "25h 35m",
+            "route": "LAX to XMN"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$4,799",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "8:35 PM",
+            "arrive": "10:00 PM",
+            "duration": "16h 25m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "11:10 PM",
+            "duration": "25h 35m",
+            "route": "LAX to XMN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$7,401",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "2:25 PM",
+            "arrive": "4:55 PM",
+            "duration": "17h 30m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "11:10 PM",
+            "duration": "25h 35m",
+            "route": "LAX to XMN"
+          },
+          "stops": "PVG"
+        },
+        {
+          "price": "$14,587",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "8:30 AM",
+            "arrive": "9:40 AM",
+            "duration": "16h 10m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "1:25 AM",
+            "arrive": "11:05 AM",
+            "duration": "18h 40m",
+            "route": "LAX to XMN"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$15,144",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "8:30 AM",
+            "arrive": "9:40 AM",
+            "duration": "16h 10m",
+            "route": "XMN to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "11:10 PM",
+            "duration": "25h 35m",
+            "route": "LAX to XMN"
+          },
+          "stops": "ICN"
+        }
+      ],
+      "matrix_summary": {
+        "airlines": [
+          "Cathay Pacific",
+          "Multiple Carriers"
+        ],
+        "matrix": {
+          "1 stop": {
+            "Cathay Pacific": "$1,626",
+            "Multiple Carriers": "$2,855"
+          },
+          "2 stops": {
+            "Cathay Pacific": "$4,650"
+          }
+        }
+      },
+      "total_results": 10,
+      "error": null
+    },
+    {
+      "search": {
+        "origin": "HGH",
+        "destination": "LAX",
+        "depart": "5/15/2026",
+        "return": "6/15/2026",
+        "label": "HGH-LAX_May",
+        "note": "Hangzhou"
+      },
+      "success": true,
+      "flights": [
+        {
+          "price": "$4,553",
+          "airline": "Price",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "Stops"
+        },
+        {
+          "price": "$4,057",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "2:50 PM",
+            "duration": "15h 20m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "18h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,057",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "2:50 PM",
+            "duration": "15h 20m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "1:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "17h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,132",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:10 AM",
+            "arrive": "9:40 AM",
+            "duration": "15h 30m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "18h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,132",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:10 AM",
+            "arrive": "9:40 AM",
+            "duration": "15h 30m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "1:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "17h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,155",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "2:50 PM",
+            "duration": "15h 20m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "18h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,155",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "2:50 PM",
+            "duration": "15h 20m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "1:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "17h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,343",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:10 PM",
+            "arrive": "2:50 PM",
+            "duration": "14h 40m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "18h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,343",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:10 PM",
+            "arrive": "2:50 PM",
+            "duration": "14h 40m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "1:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "17h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,553",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "2:50 PM",
+            "duration": "15h 20m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "9:55 PM",
+            "duration": "24h 20m",
+            "route": "LAX to HGH"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$4,630",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:10 AM",
+            "arrive": "9:40 AM",
+            "duration": "15h 30m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "9:55 PM",
+            "duration": "24h 20m",
+            "route": "LAX to HGH"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$4,768",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:10 PM",
+            "arrive": "2:50 PM",
+            "duration": "14h 40m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "9:55 PM",
+            "duration": "24h 20m",
+            "route": "LAX to HGH"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$4,840",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:10 PM",
+            "arrive": "2:50 PM",
+            "duration": "14h 40m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "9:55 PM",
+            "duration": "24h 20m",
+            "route": "LAX to HGH"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$4,912",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:10 PM",
+            "arrive": "2:50 PM",
+            "duration": "14h 40m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "18h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,912",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:10 PM",
+            "arrive": "2:50 PM",
+            "duration": "14h 40m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "1:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "17h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        }
+      ],
+      "chinese_airline_flights": [
+        {
+          "price": "$4,057",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "2:50 PM",
+            "duration": "15h 20m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "18h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,057",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "2:50 PM",
+            "duration": "15h 20m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "1:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "17h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,132",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:10 AM",
+            "arrive": "9:40 AM",
+            "duration": "15h 30m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "18h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,132",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:10 AM",
+            "arrive": "9:40 AM",
+            "duration": "15h 30m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "1:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "17h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,155",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "2:50 PM",
+            "duration": "15h 20m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "18h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,155",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "2:50 PM",
+            "duration": "15h 20m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "1:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "17h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,343",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:10 PM",
+            "arrive": "2:50 PM",
+            "duration": "14h 40m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "18h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,343",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:10 PM",
+            "arrive": "2:50 PM",
+            "duration": "14h 40m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "1:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "17h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,553",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "2:30 PM",
+            "arrive": "2:50 PM",
+            "duration": "15h 20m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "9:55 PM",
+            "duration": "24h 20m",
+            "route": "LAX to HGH"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$4,630",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "9:10 AM",
+            "arrive": "9:40 AM",
+            "duration": "15h 30m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "9:55 PM",
+            "duration": "24h 20m",
+            "route": "LAX to HGH"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$4,768",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:10 PM",
+            "arrive": "2:50 PM",
+            "duration": "14h 40m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "9:55 PM",
+            "duration": "24h 20m",
+            "route": "LAX to HGH"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$4,840",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:10 PM",
+            "arrive": "2:50 PM",
+            "duration": "14h 40m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "6:35 AM",
+            "arrive": "9:55 PM",
+            "duration": "24h 20m",
+            "route": "LAX to HGH"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$4,912",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:10 PM",
+            "arrive": "2:50 PM",
+            "duration": "14h 40m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "12:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "18h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        },
+        {
+          "price": "$4,912",
+          "airline": "Multiple Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "3:10 PM",
+            "arrive": "2:50 PM",
+            "duration": "14h 40m",
+            "route": "HGH to LAX"
+          },
+          "return": {
+            "depart": "1:25 AM",
+            "arrive": "10:10 AM",
+            "duration": "17h 45m",
+            "route": "LAX to HGH"
+          },
+          "stops": "HKG"
+        }
+      ],
+      "matrix_summary": {
+        "airlines": [
+          "Multiple Carriers"
+        ],
+        "matrix": {
+          "1 stop": {
+            "Multiple Carriers": "$4,057"
+          },
+          "2 stops": {
+            "Multiple Carriers": "$4,553"
+          }
+        }
+      },
+      "total_results": 14,
+      "error": null
+    },
+    {
+      "search": {
+        "origin": "PVG",
+        "destination": "LAX",
+        "depart": "9/1/2026",
+        "return": "9/29/2026",
+        "label": "PVG-LAX_Sep",
+        "note": "Shanghai Pudong - September dates"
+      },
+      "success": true,
+      "flights": [
+        {
+          "price": "$1,023",
+          "airline": "- -",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,159",
+          "airline": "- -",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "1 stop"
+        },
+        {
+          "price": "$6,091",
+          "airline": "Price",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "Stops"
+        },
+        {
+          "price": "$827",
+          "airline": "Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "11:55 AM",
+            "arrive": "8:30 PM",
+            "duration": "23h 35m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:15 PM",
+            "arrive": "10:40 AM",
+            "duration": "20h 25m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TFU"
+        },
+        {
+          "price": "$827",
+          "airline": "Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "11:55 AM",
+            "arrive": "8:30 PM",
+            "duration": "23h 35m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:15 PM",
+            "arrive": "5:35 PM",
+            "duration": "27h 20m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TFU"
+        },
+        {
+          "price": "$827",
+          "airline": "Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "11:55 AM",
+            "arrive": "8:30 PM",
+            "duration": "23h 35m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:15 PM",
+            "arrive": "6:05 PM",
+            "duration": "27h 50m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TFU"
+        },
+        {
+          "price": "$827",
+          "airline": "Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "8:30 PM",
+            "duration": "22h 20m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:15 PM",
+            "arrive": "10:40 AM",
+            "duration": "20h 25m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TFU"
+        },
+        {
+          "price": "$827",
+          "airline": "Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "8:30 PM",
+            "duration": "22h 20m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:15 PM",
+            "arrive": "5:35 PM",
+            "duration": "27h 20m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TFU"
+        },
+        {
+          "price": "$827",
+          "airline": "Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "8:30 PM",
+            "duration": "22h 20m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:15 PM",
+            "arrive": "6:05 PM",
+            "duration": "27h 50m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TFU"
+        },
+        {
+          "price": "$846",
+          "airline": "EVA Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "4:40 PM",
+            "duration": "18h 30m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:30 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$846",
+          "airline": "EVA Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "4:40 PM",
+            "duration": "18h 30m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "1:05 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 0m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$846",
+          "airline": "EVA Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:05 PM",
+            "arrive": "8:55 PM",
+            "duration": "15h 50m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:30 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$846",
+          "airline": "EVA Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:05 PM",
+            "arrive": "8:55 PM",
+            "duration": "15h 50m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "1:05 AM",
+            "arrive": "12:05 PM",
+            "duration": "20h 0m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TPE"
+        },
+        {
+          "price": "$939",
+          "airline": "Philippine Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "4:00 PM",
+            "arrive": "1:45 PM",
+            "duration": "36h 45m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:55 PM",
+            "arrive": "2:30 PM",
+            "duration": "47h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "MNL"
+        },
+        {
+          "price": "$956",
+          "airline": "Philippine Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "4:00 PM",
+            "arrive": "1:45 PM",
+            "duration": "36h 45m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:25 PM",
+            "arrive": "2:30 PM",
+            "duration": "35h 5m",
+            "route": "LAX to PVG"
+          },
+          "stops": "MNL"
+        },
+        {
+          "price": "$956",
+          "airline": "Philippine Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "4:00 PM",
+            "arrive": "1:45 PM",
+            "duration": "36h 45m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:55 PM",
+            "arrive": "2:30 PM",
+            "duration": "23h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "MNL"
+        },
+        {
+          "price": "$1,023",
+          "airline": "United",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:10 PM",
+            "arrive": "5:20 PM",
+            "duration": "12h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:55 PM",
+            "arrive": "5:45 PM",
+            "duration": "13h 50m",
+            "route": "LAX to PVG"
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,029",
+          "airline": "United",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "12:10 PM",
+            "arrive": "2:04 PM",
+            "duration": "16h 54m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:55 PM",
+            "arrive": "5:45 PM",
+            "duration": "13h 50m",
+            "route": "LAX to PVG"
+          },
+          "stops": "SFO"
+        },
+        {
+          "price": "$1,029",
+          "airline": "United",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "12:10 PM",
+            "arrive": "3:35 PM",
+            "duration": "18h 25m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:55 PM",
+            "arrive": "5:45 PM",
+            "duration": "13h 50m",
+            "route": "LAX to PVG"
+          },
+          "stops": "SFO"
+        },
+        {
+          "price": "$1,029",
+          "airline": "Delta",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "5:30 PM",
+            "arrive": "9:44 PM",
+            "duration": "19h 14m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "7:35 AM",
+            "arrive": "7:50 PM",
+            "duration": "21h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "SEA"
+        },
+        {
+          "price": "$1,029",
+          "airline": "Delta",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "5:30 PM",
+            "arrive": "10:50 PM",
+            "duration": "20h 20m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "7:35 AM",
+            "arrive": "7:50 PM",
+            "duration": "21h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "SEA"
+        },
+        {
+          "price": "$1,029",
+          "airline": "Delta",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "5:30 PM",
+            "arrive": "9:44 PM",
+            "duration": "19h 14m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "9:59 AM",
+            "arrive": "7:50 PM",
+            "duration": "18h 51m",
+            "route": "LAX to PVG"
+          },
+          "stops": "SEA"
+        },
+        {
+          "price": "$1,029",
+          "airline": "Delta",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "5:30 PM",
+            "arrive": "10:50 PM",
+            "duration": "20h 20m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "9:59 AM",
+            "arrive": "7:50 PM",
+            "duration": "18h 51m",
+            "route": "LAX to PVG"
+          },
+          "stops": "SEA"
+        },
+        {
+          "price": "$1,029",
+          "airline": "Delta",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "5:30 PM",
+            "arrive": "9:44 PM",
+            "duration": "19h 14m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:45 AM",
+            "arrive": "7:50 PM",
+            "duration": "17h 5m",
+            "route": "LAX to PVG"
+          },
+          "stops": "SEA"
+        },
+        {
+          "price": "$1,029",
+          "airline": "Delta",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "5:30 PM",
+            "arrive": "10:50 PM",
+            "duration": "20h 20m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:45 AM",
+            "arrive": "7:50 PM",
+            "duration": "17h 5m",
+            "route": "LAX to PVG"
+          },
+          "stops": "SEA"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:35 AM",
+            "arrive": "7:50 AM",
+            "duration": "14h 15m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "8:55 PM",
+            "duration": "19h 45m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:35 AM",
+            "arrive": "7:50 AM",
+            "duration": "14h 15m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "10:05 AM",
+            "duration": "19h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:35 AM",
+            "arrive": "7:50 AM",
+            "duration": "14h 15m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "11:45 AM",
+            "duration": "21h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,023",
+          "airline": "- -",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": ""
+        },
+        {
+          "price": "$1,159",
+          "airline": "- -",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "1 stop"
+        },
+        {
+          "price": "$6,091",
+          "airline": "Price",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "return": {
+            "depart": "",
+            "arrive": "",
+            "duration": "",
+            "route": ""
+          },
+          "stops": "Stops"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:50 AM",
+            "arrive": "9:40 AM",
+            "duration": "15h 50m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:40 PM",
+            "arrive": "8:10 PM",
+            "duration": "16h 30m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:50 AM",
+            "arrive": "2:50 PM",
+            "duration": "21h 0m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:40 PM",
+            "arrive": "8:10 PM",
+            "duration": "16h 30m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:50 AM",
+            "arrive": "9:40 AM",
+            "duration": "15h 50m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "9:40 AM",
+            "duration": "18h 50m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:50 AM",
+            "arrive": "9:40 AM",
+            "duration": "15h 50m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "12:25 PM",
+            "duration": "21h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:50 AM",
+            "arrive": "2:50 PM",
+            "duration": "21h 0m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "9:40 AM",
+            "duration": "18h 50m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "8:50 AM",
+            "arrive": "2:50 PM",
+            "duration": "21h 0m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "12:25 PM",
+            "duration": "21h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "11:10 AM",
+            "arrive": "2:50 PM",
+            "duration": "18h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:40 PM",
+            "arrive": "8:10 PM",
+            "duration": "16h 30m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "11:10 AM",
+            "arrive": "2:50 PM",
+            "duration": "18h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "9:40 AM",
+            "duration": "18h 50m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "11:10 AM",
+            "arrive": "2:50 PM",
+            "duration": "18h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "12:25 PM",
+            "duration": "21h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "11:40 AM",
+            "arrive": "4:50 PM",
+            "duration": "20h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "8:55 PM",
+            "duration": "19h 45m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "11:40 AM",
+            "arrive": "4:50 PM",
+            "duration": "20h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "10:05 AM",
+            "duration": "19h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "11:40 AM",
+            "arrive": "4:50 PM",
+            "duration": "20h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "11:45 AM",
+            "duration": "21h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "4:50 PM",
+            "duration": "18h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "8:55 PM",
+            "duration": "19h 45m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "4:50 PM",
+            "duration": "18h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "10:05 AM",
+            "duration": "19h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "4:50 PM",
+            "duration": "18h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "11:45 AM",
+            "duration": "21h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Asiana Airlines, Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:40 PM",
+            "arrive": "4:50 PM",
+            "duration": "18h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "8:55 PM",
+            "duration": "19h 45m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "16h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "12:40 PM",
+            "arrive": "8:10 PM",
+            "duration": "16h 30m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Asiana Airlines, Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:40 PM",
+            "arrive": "4:50 PM",
+            "duration": "18h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "10:05 AM",
+            "duration": "19h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Asiana Airlines, Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:40 PM",
+            "arrive": "4:50 PM",
+            "duration": "18h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "11:45 AM",
+            "duration": "21h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "16h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "9:40 AM",
+            "duration": "18h 50m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Korean Air",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "1:40 PM",
+            "arrive": "2:50 PM",
+            "duration": "16h 10m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:50 PM",
+            "arrive": "12:25 PM",
+            "duration": "21h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "4:20 PM",
+            "arrive": "4:50 PM",
+            "duration": "15h 30m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "10:10 AM",
+            "arrive": "8:55 PM",
+            "duration": "19h 45m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "4:20 PM",
+            "arrive": "4:50 PM",
+            "duration": "15h 30m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "10:05 AM",
+            "duration": "19h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,033",
+          "airline": "Asiana Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "4:20 PM",
+            "arrive": "4:50 PM",
+            "duration": "15h 30m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:30 PM",
+            "arrive": "11:45 AM",
+            "duration": "21h 15m",
+            "route": "LAX to PVG"
+          },
+          "stops": "ICN"
+        },
+        {
+          "price": "$1,044",
+          "airline": "Philippine Airlines",
+          "is_chinese_airline": false,
+          "outbound": {
+            "depart": "4:00 PM",
+            "arrive": "8:40 PM",
+            "duration": "19h 40m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:55 PM",
+            "arrive": "2:30 PM",
+            "duration": "47h 35m",
+            "route": "LAX to PVG"
+          },
+          "stops": "MNL"
+        }
+      ],
+      "chinese_airline_flights": [
+        {
+          "price": "$827",
+          "airline": "Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "11:55 AM",
+            "arrive": "8:30 PM",
+            "duration": "23h 35m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:15 PM",
+            "arrive": "10:40 AM",
+            "duration": "20h 25m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TFU"
+        },
+        {
+          "price": "$827",
+          "airline": "Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "11:55 AM",
+            "arrive": "8:30 PM",
+            "duration": "23h 35m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:15 PM",
+            "arrive": "5:35 PM",
+            "duration": "27h 20m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TFU"
+        },
+        {
+          "price": "$827",
+          "airline": "Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "11:55 AM",
+            "arrive": "8:30 PM",
+            "duration": "23h 35m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:15 PM",
+            "arrive": "6:05 PM",
+            "duration": "27h 50m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TFU"
+        },
+        {
+          "price": "$827",
+          "airline": "Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "8:30 PM",
+            "duration": "22h 20m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:15 PM",
+            "arrive": "10:40 AM",
+            "duration": "20h 25m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TFU"
+        },
+        {
+          "price": "$827",
+          "airline": "Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "8:30 PM",
+            "duration": "22h 20m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:15 PM",
+            "arrive": "5:35 PM",
+            "duration": "27h 20m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TFU"
+        },
+        {
+          "price": "$827",
+          "airline": "Sichuan Airlines",
+          "is_chinese_airline": true,
+          "outbound": {
+            "depart": "1:10 PM",
+            "arrive": "8:30 PM",
+            "duration": "22h 20m",
+            "route": "PVG to LAX"
+          },
+          "return": {
+            "depart": "11:15 PM",
+            "arrive": "6:05 PM",
+            "duration": "27h 50m",
+            "route": "LAX to PVG"
+          },
+          "stops": "TFU"
+        }
+      ],
+      "matrix_summary": {
+        "airlines": [
+          "Sichuan Airlines",
+          "EVA Air",
+          "Philippine Airlines",
+          "United",
+          "Delta",
+          "Korean Air",
+          "Asiana Airlines",
+          "American",
+          "China Eastern",
+          "Multiple Carriers",
+          "JAL",
+          "China Airlines",
+          "Singapore Airlines",
+          "Air Canada",
+          "Qatar Airways",
+          "ANA",
+          "Cathay Pacific",
+          "Austrian",
+          "Lufthansa",
+          "Emirates",
+          "Air France",
+          "KLM",
+          "British Airways",
+          "Turkish Airlines",
+          "STARLUX Airlines",
+          "Air China"
+        ],
+        "matrix": {
+          "Nonstops": {
+            "Sichuan Airlines": "$1,023",
+            "EVA Air": "$1,159"
+          },
+          "1 stop": {
+            "Sichuan Airlines": "$827",
+            "EVA Air": "$846",
+            "Philippine Airlines": "$939",
+            "United": "$1,029",
+            "Delta": "$1,029",
+            "Korean Air": "$1,033",
+            "Asiana Airlines": "$1,033",
+            "American": "$1,119",
+            "China Eastern": "$1,198",
+            "Multiple Carriers": "$1,224",
+            "JAL": "$1,237",
+            "China Airlines": "$1,285",
+            "Singapore Airlines": "$1,295",
+            "Air Canada": "$1,330",
+            "Qatar Airways": "$1,364",
+            "ANA": "$1,481",
+            "Cathay Pacific": "$1,629",
+            "Austrian": "$1,655",
+            "Lufthansa": "$2,014",
+            "Emirates": "$2,046",
+            "Air France": "$2,049",
+            "KLM": "$2,374",
+            "British Airways": "$2,412",
+            "Turkish Airlines": "$4,677",
+            "STARLUX Airlines": "$6,091"
+          }
+        }
+      },
+      "total_results": 500,
+      "error": null
+    }
+  ]
+}

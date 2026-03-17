@@ -1,0 +1,8118 @@
+{
+  "outbound": [
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-10",
+      "price_pp": 573,
+      "price_3pax": 1575,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "15 hr 50 min",
+      "dep_time": "8:50 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-10",
+      "price_pp": 595,
+      "price_3pax": 1636,
+      "airline": "United",
+      "stops": 0,
+      "duration": "11 hr 45 min",
+      "dep_time": "8:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-10",
+      "price_pp": 617,
+      "price_3pax": 1696,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "15 hr 30 min",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-10",
+      "price_pp": 621,
+      "price_3pax": 1707,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "17 hr",
+      "dep_time": "2:30 PM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-10",
+      "price_pp": 573,
+      "price_3pax": 1575,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "18 hr 40 min",
+      "dep_time": "11:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-10",
+      "price_pp": 575,
+      "price_3pax": 1581,
+      "airline": "Air Canada and United",
+      "stops": 2,
+      "duration": "19 hr 49 min",
+      "dep_time": "3:55 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-10",
+      "price_pp": 575,
+      "price_3pax": 1581,
+      "airline": "American",
+      "stops": 1,
+      "duration": "19 hr 40 min",
+      "dep_time": "5:20 PM",
+      "layovers": [
+        "Dallas"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-10",
+      "price_pp": 601,
+      "price_3pax": 1652,
+      "airline": "United",
+      "stops": 1,
+      "duration": "16 hr 33 min",
+      "dep_time": "12:10 PM",
+      "layovers": [
+        "San Francisco"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-10",
+      "price_pp": 621,
+      "price_3pax": 1707,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "17 hr 10 min",
+      "dep_time": "8:35 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-10",
+      "price_pp": 811,
+      "price_3pax": 2230,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "1:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-10",
+      "price_pp": 1018,
+      "price_3pax": 2799,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "15 hr 4 min",
+      "dep_time": "3:55 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-20",
+      "price_pp": 471,
+      "price_3pax": 1295,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "17 hr 35 min",
+      "dep_time": "8:25 AM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-20",
+      "price_pp": 481,
+      "price_3pax": 1322,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "15 hr 50 min",
+      "dep_time": "8:50 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-20",
+      "price_pp": 552,
+      "price_3pax": 1518,
+      "airline": "United",
+      "stops": 0,
+      "duration": "11 hr 45 min",
+      "dep_time": "8:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-20",
+      "price_pp": 436,
+      "price_3pax": 1199,
+      "airline": "China Southern",
+      "stops": 1,
+      "duration": "28 hr 5 min",
+      "dep_time": "6:55 AM",
+      "layovers": [
+        "Guangzhou"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-20",
+      "price_pp": 461,
+      "price_3pax": 1267,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "25 hr 25 min",
+      "dep_time": "8:25 AM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-20",
+      "price_pp": 470,
+      "price_3pax": 1292,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "20 hr 50 min",
+      "dep_time": "1:00 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-20",
+      "price_pp": 527,
+      "price_3pax": 1449,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "1:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-20",
+      "price_pp": 557,
+      "price_3pax": 1531,
+      "airline": "United",
+      "stops": 1,
+      "duration": "14 hr 32 min",
+      "dep_time": "12:10 PM",
+      "layovers": [
+        "San Francisco"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-20",
+      "price_pp": 617,
+      "price_3pax": 1696,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "15 hr 30 min",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-20",
+      "price_pp": 621,
+      "price_3pax": 1707,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "17 hr 10 min",
+      "dep_time": "8:35 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-20",
+      "price_pp": 621,
+      "price_3pax": 1707,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "19 hr 10 min",
+      "dep_time": "12:20 PM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-20",
+      "price_pp": 765,
+      "price_3pax": 2103,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "15 hr 4 min",
+      "dep_time": "3:55 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-30",
+      "price_pp": 595,
+      "price_3pax": 1636,
+      "airline": "Delta",
+      "stops": 0,
+      "duration": "12 hr",
+      "dep_time": "6:25 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-30",
+      "price_pp": 621,
+      "price_3pax": 1707,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "17 hr 10 min",
+      "dep_time": "8:35 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-30",
+      "price_pp": 752,
+      "price_3pax": 2068,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 10 min",
+      "dep_time": "8:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-30",
+      "price_pp": 575,
+      "price_3pax": 1581,
+      "airline": "American",
+      "stops": 1,
+      "duration": "19 hr 56 min",
+      "dep_time": "5:20 PM",
+      "layovers": [
+        "Dallas"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-30",
+      "price_pp": 665,
+      "price_3pax": 1828,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "18 hr 40 min",
+      "dep_time": "11:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-05-30",
+      "price_pp": 811,
+      "price_3pax": 2230,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "15 hr 50 min",
+      "dep_time": "8:50 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-01",
+      "price_pp": 466,
+      "price_3pax": 1281,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "14 hr 15 min",
+      "dep_time": "8:35 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-01",
+      "price_pp": 466,
+      "price_3pax": 1281,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "15 hr 30 min",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-01",
+      "price_pp": 481,
+      "price_3pax": 1322,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "15 hr 50 min",
+      "dep_time": "8:50 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-01",
+      "price_pp": 552,
+      "price_3pax": 1518,
+      "airline": "Delta",
+      "stops": 0,
+      "duration": "11 hr 54 min",
+      "dep_time": "6:25 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-01",
+      "price_pp": 552,
+      "price_3pax": 1518,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 10 min",
+      "dep_time": "8:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-01",
+      "price_pp": 436,
+      "price_3pax": 1199,
+      "airline": "China Southern",
+      "stops": 1,
+      "duration": "28 hr 5 min",
+      "dep_time": "6:55 AM",
+      "layovers": [
+        "Guangzhou"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-01",
+      "price_pp": 438,
+      "price_3pax": 1204,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "30 hr 30 min",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-01",
+      "price_pp": 527,
+      "price_3pax": 1449,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "1:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-01",
+      "price_pp": 557,
+      "price_3pax": 1531,
+      "airline": "United",
+      "stops": 1,
+      "duration": "14 hr 47 min",
+      "dep_time": "12:10 PM",
+      "layovers": [
+        "San Francisco"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-10",
+      "price_pp": 438,
+      "price_3pax": 1204,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "14 hr 15 min",
+      "dep_time": "8:35 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-10",
+      "price_pp": 466,
+      "price_3pax": 1281,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "15 hr 30 min",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-10",
+      "price_pp": 481,
+      "price_3pax": 1322,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "15 hr 50 min",
+      "dep_time": "8:50 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-10",
+      "price_pp": 552,
+      "price_3pax": 1518,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 10 min",
+      "dep_time": "8:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-10",
+      "price_pp": 436,
+      "price_3pax": 1199,
+      "airline": "China Southern",
+      "stops": 1,
+      "duration": "28 hr 5 min",
+      "dep_time": "6:55 AM",
+      "layovers": [
+        "Guangzhou"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-10",
+      "price_pp": 527,
+      "price_3pax": 1449,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "1:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-10",
+      "price_pp": 557,
+      "price_3pax": 1531,
+      "airline": "United",
+      "stops": 1,
+      "duration": "16 hr 45 min",
+      "dep_time": "12:10 PM",
+      "layovers": [
+        "San Francisco"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-20",
+      "price_pp": 521,
+      "price_3pax": 1432,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "14 hr 15 min",
+      "dep_time": "8:35 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-20",
+      "price_pp": 595,
+      "price_3pax": 1636,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 10 min",
+      "dep_time": "8:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-20",
+      "price_pp": 610,
+      "price_3pax": 1677,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "15 hr 30 min",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-20",
+      "price_pp": 521,
+      "price_3pax": 1432,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "30 hr 30 min",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-20",
+      "price_pp": 565,
+      "price_3pax": 1553,
+      "airline": "China Southern",
+      "stops": 1,
+      "duration": "28 hr 5 min",
+      "dep_time": "6:55 AM",
+      "layovers": [
+        "Guangzhou"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-20",
+      "price_pp": 811,
+      "price_3pax": 2230,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "1:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-06-20",
+      "price_pp": 972,
+      "price_3pax": 2673,
+      "airline": "Delta",
+      "stops": 0,
+      "duration": "11 hr 54 min",
+      "dep_time": "6:25 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-01",
+      "price_pp": 999,
+      "price_3pax": 2747,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 10 min",
+      "dep_time": "8:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-01",
+      "price_pp": 1030,
+      "price_3pax": 2832,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 40 min",
+      "dep_time": "1:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-01",
+      "price_pp": 1478,
+      "price_3pax": 4064,
+      "airline": "Delta",
+      "stops": 0,
+      "duration": "12 hr 35 min",
+      "dep_time": "6:25 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-01",
+      "price_pp": 741,
+      "price_3pax": 2037,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "36 hr 45 min",
+      "dep_time": "4:00 PM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-01",
+      "price_pp": 858,
+      "price_3pax": 2359,
+      "airline": "Turkish Airlines",
+      "stops": 1,
+      "duration": "42 hr 45 min",
+      "dep_time": "7:55 AM",
+      "layovers": [
+        "Istanbul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-01",
+      "price_pp": 959,
+      "price_3pax": 2637,
+      "airline": "Turkish Airlines",
+      "stops": 1,
+      "duration": "28 hr 15 min",
+      "dep_time": "10:25 PM",
+      "layovers": [
+        "Istanbul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-01",
+      "price_pp": 993,
+      "price_3pax": 2730,
+      "airline": "JAL",
+      "stops": 1,
+      "duration": "34 hr 45 min",
+      "dep_time": "4:00 PM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-01",
+      "price_pp": 1122,
+      "price_3pax": 3085,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "8:50 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-01",
+      "price_pp": 1282,
+      "price_3pax": 3525,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "17 hr 40 min",
+      "dep_time": "8:35 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-15",
+      "price_pp": 670,
+      "price_3pax": 1842,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "8:50 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-15",
+      "price_pp": 670,
+      "price_3pax": 1842,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "19 hr 10 min",
+      "dep_time": "11:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-15",
+      "price_pp": 1089,
+      "price_3pax": 2994,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 10 min",
+      "dep_time": "8:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-15",
+      "price_pp": 670,
+      "price_3pax": 1842,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "35 hr 30 min",
+      "dep_time": "1:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-15",
+      "price_pp": 741,
+      "price_3pax": 2037,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "36 hr 45 min",
+      "dep_time": "4:00 PM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-15",
+      "price_pp": 832,
+      "price_3pax": 2288,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "19 hr 40 min",
+      "dep_time": "4:00 PM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-15",
+      "price_pp": 858,
+      "price_3pax": 2359,
+      "airline": "Turkish Airlines",
+      "stops": 1,
+      "duration": "42 hr 45 min",
+      "dep_time": "7:55 AM",
+      "layovers": [
+        "Istanbul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-15",
+      "price_pp": 885,
+      "price_3pax": 2433,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 40 min",
+      "dep_time": "1:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-15",
+      "price_pp": 1125,
+      "price_3pax": 3093,
+      "airline": "JAL",
+      "stops": 1,
+      "duration": "17 hr 25 min",
+      "dep_time": "9:05 AM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-15",
+      "price_pp": 1478,
+      "price_3pax": 4064,
+      "airline": "Delta",
+      "stops": 0,
+      "duration": "12 hr 35 min",
+      "dep_time": "6:25 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-25",
+      "price_pp": 629,
+      "price_3pax": 1729,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "14 hr 45 min",
+      "dep_time": "8:35 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-25",
+      "price_pp": 629,
+      "price_3pax": 1729,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "8:50 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-25",
+      "price_pp": 629,
+      "price_3pax": 1729,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 40 min",
+      "dep_time": "1:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-25",
+      "price_pp": 629,
+      "price_3pax": 1729,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "16 hr",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-25",
+      "price_pp": 779,
+      "price_3pax": 2142,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 10 min",
+      "dep_time": "8:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-25",
+      "price_pp": 494,
+      "price_3pax": 1358,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "36 hr 45 min",
+      "dep_time": "4:00 PM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-25",
+      "price_pp": 773,
+      "price_3pax": 2125,
+      "airline": "JAL",
+      "stops": 1,
+      "duration": "17 hr 25 min",
+      "dep_time": "9:05 AM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-08-25",
+      "price_pp": 785,
+      "price_3pax": 2158,
+      "airline": "United",
+      "stops": 1,
+      "duration": "14 hr 51 min",
+      "dep_time": "12:10 PM",
+      "layovers": [
+        "San Francisco"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-01",
+      "price_pp": 552,
+      "price_3pax": 1518,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 10 min",
+      "dep_time": "8:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-01",
+      "price_pp": 561,
+      "price_3pax": 1542,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "15 hr 50 min",
+      "dep_time": "8:50 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-01",
+      "price_pp": 629,
+      "price_3pax": 1729,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "14 hr 15 min",
+      "dep_time": "8:35 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-01",
+      "price_pp": 494,
+      "price_3pax": 1358,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "36 hr 45 min",
+      "dep_time": "4:00 PM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-01",
+      "price_pp": 561,
+      "price_3pax": 1542,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "1:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-01",
+      "price_pp": 629,
+      "price_3pax": 1729,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "15 hr 30 min",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-10",
+      "price_pp": 481,
+      "price_3pax": 1322,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "14 hr 15 min",
+      "dep_time": "8:35 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-10",
+      "price_pp": 552,
+      "price_3pax": 1518,
+      "airline": "Delta",
+      "stops": 0,
+      "duration": "12 hr",
+      "dep_time": "6:25 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-10",
+      "price_pp": 552,
+      "price_3pax": 1518,
+      "airline": "United",
+      "stops": 0,
+      "duration": "11 hr 50 min",
+      "dep_time": "8:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-10",
+      "price_pp": 461,
+      "price_3pax": 1267,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "25 hr 20 min",
+      "dep_time": "8:25 AM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-10",
+      "price_pp": 470,
+      "price_3pax": 1292,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "20 hr 45 min",
+      "dep_time": "1:00 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-10",
+      "price_pp": 471,
+      "price_3pax": 1295,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "17 hr 35 min",
+      "dep_time": "8:25 AM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-10",
+      "price_pp": 481,
+      "price_3pax": 1322,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "15 hr 50 min",
+      "dep_time": "8:50 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-10",
+      "price_pp": 481,
+      "price_3pax": 1322,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "18 hr 40 min",
+      "dep_time": "1:10 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-10",
+      "price_pp": 527,
+      "price_3pax": 1449,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "1:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-10",
+      "price_pp": 557,
+      "price_3pax": 1531,
+      "airline": "United",
+      "stops": 1,
+      "duration": "14 hr 51 min",
+      "dep_time": "12:10 PM",
+      "layovers": [
+        "San Francisco"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-20",
+      "price_pp": 561,
+      "price_3pax": 1542,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "14 hr 15 min",
+      "dep_time": "8:35 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-20",
+      "price_pp": 561,
+      "price_3pax": 1542,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "1:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-20",
+      "price_pp": 561,
+      "price_3pax": 1542,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "15 hr 30 min",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-20",
+      "price_pp": 494,
+      "price_3pax": 1358,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "36 hr 45 min",
+      "dep_time": "4:00 PM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-20",
+      "price_pp": 561,
+      "price_3pax": 1542,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "15 hr 50 min",
+      "dep_time": "8:50 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-20",
+      "price_pp": 601,
+      "price_3pax": 1652,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "20 hr 20 min",
+      "dep_time": "5:30 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "LAX",
+      "date": "2026-09-20",
+      "price_pp": 819,
+      "price_3pax": 2252,
+      "airline": "United",
+      "stops": 0,
+      "duration": "11 hr 50 min",
+      "dep_time": "8:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-10",
+      "price_pp": 617,
+      "price_3pax": 1696,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "14 hr",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-10",
+      "price_pp": 621,
+      "price_3pax": 1707,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "9:35 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-10",
+      "price_pp": 621,
+      "price_3pax": 1707,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "18 hr 35 min",
+      "dep_time": "7:05 PM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-10",
+      "price_pp": 665,
+      "price_3pax": 1828,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 50 min",
+      "dep_time": "8:50 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-10",
+      "price_pp": 811,
+      "price_3pax": 2230,
+      "airline": "United",
+      "stops": 0,
+      "duration": "11 hr 30 min",
+      "dep_time": "12:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-10",
+      "price_pp": 816,
+      "price_3pax": 2244,
+      "airline": "Asiana Airlines and Korean Air",
+      "stops": 1,
+      "duration": "14 hr",
+      "dep_time": "11:40 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-20",
+      "price_pp": 462,
+      "price_3pax": 1270,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "14 hr 30 min",
+      "dep_time": "11:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-20",
+      "price_pp": 466,
+      "price_3pax": 1281,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "14 hr",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-20",
+      "price_pp": 471,
+      "price_3pax": 1295,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "17 hr 10 min",
+      "dep_time": "8:25 AM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-20",
+      "price_pp": 438,
+      "price_3pax": 1204,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "18 hr 40 min",
+      "dep_time": "11:40 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-20",
+      "price_pp": 621,
+      "price_3pax": 1707,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "17 hr 20 min",
+      "dep_time": "8:35 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-20",
+      "price_pp": 811,
+      "price_3pax": 2230,
+      "airline": "United",
+      "stops": 0,
+      "duration": "11 hr 30 min",
+      "dep_time": "12:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-20",
+      "price_pp": 1027,
+      "price_3pax": 2824,
+      "airline": "Asiana Airlines and Korean Air",
+      "stops": 1,
+      "duration": "14 hr",
+      "dep_time": "11:40 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-30",
+      "price_pp": 573,
+      "price_3pax": 1575,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "14 hr 30 min",
+      "dep_time": "11:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-30",
+      "price_pp": 617,
+      "price_3pax": 1696,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "14 hr",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-30",
+      "price_pp": 621,
+      "price_3pax": 1707,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "23 hr 10 min",
+      "dep_time": "2:30 PM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-30",
+      "price_pp": 731,
+      "price_3pax": 2010,
+      "airline": "Asiana Airlines and Korean Air",
+      "stops": 1,
+      "duration": "14 hr",
+      "dep_time": "11:40 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-30",
+      "price_pp": 779,
+      "price_3pax": 2142,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "9:35 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-05-30",
+      "price_pp": 811,
+      "price_3pax": 2230,
+      "airline": "United",
+      "stops": 0,
+      "duration": "11 hr 45 min",
+      "dep_time": "12:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-01",
+      "price_pp": 438,
+      "price_3pax": 1204,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "14 hr",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-01",
+      "price_pp": 462,
+      "price_3pax": 1270,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "14 hr 30 min",
+      "dep_time": "11:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-01",
+      "price_pp": 492,
+      "price_3pax": 1353,
+      "airline": "China Southern",
+      "stops": 1,
+      "duration": "18 hr 20 min",
+      "dep_time": "5:20 PM",
+      "layovers": [
+        "Wuhan"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-01",
+      "price_pp": 621,
+      "price_3pax": 1707,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "19 hr 10 min",
+      "dep_time": "7:05 PM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-01",
+      "price_pp": 691,
+      "price_3pax": 1900,
+      "airline": "Asiana Airlines and Korean Air",
+      "stops": 1,
+      "duration": "14 hr",
+      "dep_time": "11:40 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-01",
+      "price_pp": 811,
+      "price_3pax": 2230,
+      "airline": "United",
+      "stops": 0,
+      "duration": "11 hr 45 min",
+      "dep_time": "12:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-10",
+      "price_pp": 462,
+      "price_3pax": 1270,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "14 hr 30 min",
+      "dep_time": "11:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-10",
+      "price_pp": 464,
+      "price_3pax": 1276,
+      "airline": "Asiana Airlines and Air Canada",
+      "stops": 2,
+      "duration": "17 hr 12 min",
+      "dep_time": "1:10 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-10",
+      "price_pp": 617,
+      "price_3pax": 1696,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "14 hr",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-10",
+      "price_pp": 462,
+      "price_3pax": 1270,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "36 hr",
+      "dep_time": "1:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-10",
+      "price_pp": 463,
+      "price_3pax": 1273,
+      "airline": "Air Canada and United",
+      "stops": 2,
+      "duration": "18 hr 58 min",
+      "dep_time": "3:55 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-10",
+      "price_pp": 464,
+      "price_3pax": 1276,
+      "airline": "Asiana Airlines, Air Canada and United",
+      "stops": 2,
+      "duration": "19 hr 29 min",
+      "dep_time": "1:10 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-10",
+      "price_pp": 616,
+      "price_3pax": 1694,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "14 hr 27 min",
+      "dep_time": "3:55 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-10",
+      "price_pp": 691,
+      "price_3pax": 1900,
+      "airline": "Asiana Airlines and Korean Air",
+      "stops": 1,
+      "duration": "14 hr",
+      "dep_time": "11:40 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-10",
+      "price_pp": 811,
+      "price_3pax": 2230,
+      "airline": "United",
+      "stops": 0,
+      "duration": "11 hr 45 min",
+      "dep_time": "12:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-20",
+      "price_pp": 610,
+      "price_3pax": 1677,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "14 hr",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-20",
+      "price_pp": 811,
+      "price_3pax": 2230,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "14 hr 30 min",
+      "dep_time": "11:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-20",
+      "price_pp": 910,
+      "price_3pax": 2502,
+      "airline": "United",
+      "stops": 0,
+      "duration": "11 hr 45 min",
+      "dep_time": "12:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-20",
+      "price_pp": 706,
+      "price_3pax": 1941,
+      "airline": "American",
+      "stops": 1,
+      "duration": "20 hr 18 min",
+      "dep_time": "5:20 PM",
+      "layovers": [
+        "Dallas"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-20",
+      "price_pp": 731,
+      "price_3pax": 2010,
+      "airline": "Asiana Airlines and Korean Air",
+      "stops": 1,
+      "duration": "14 hr",
+      "dep_time": "11:40 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-06-20",
+      "price_pp": 851,
+      "price_3pax": 2340,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "17 hr 50 min",
+      "dep_time": "8:35 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-01",
+      "price_pp": 1030,
+      "price_3pax": 2832,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "14 hr 50 min",
+      "dep_time": "11:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-01",
+      "price_pp": 1055,
+      "price_3pax": 2901,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "20 hr 10 min",
+      "dep_time": "4:00 PM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-01",
+      "price_pp": 1088,
+      "price_3pax": 2992,
+      "airline": "United",
+      "stops": 0,
+      "duration": "11 hr 45 min",
+      "dep_time": "12:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-01",
+      "price_pp": 996,
+      "price_3pax": 2739,
+      "airline": "United",
+      "stops": 1,
+      "duration": "26 hr 25 min",
+      "dep_time": "8:10 PM",
+      "layovers": [
+        "Los Angeles"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-01",
+      "price_pp": 1043,
+      "price_3pax": 2868,
+      "airline": "Korean Air and Alaska",
+      "stops": 2,
+      "duration": "25 hr 19 min",
+      "dep_time": "1:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-01",
+      "price_pp": 1198,
+      "price_3pax": 3294,
+      "airline": "Asiana Airlines and Korean Air",
+      "stops": 1,
+      "duration": "14 hr 20 min",
+      "dep_time": "11:40 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-01",
+      "price_pp": 1303,
+      "price_3pax": 3583,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "14 hr 27 min",
+      "dep_time": "3:55 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-01",
+      "price_pp": 1319,
+      "price_3pax": 3627,
+      "airline": "United",
+      "stops": 1,
+      "duration": "15 hr",
+      "dep_time": "8:10 PM",
+      "layovers": [
+        "Los Angeles"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-01",
+      "price_pp": 1341,
+      "price_3pax": 3687,
+      "airline": "China Southern",
+      "stops": 1,
+      "duration": "17 hr 20 min",
+      "dep_time": "6:20 PM",
+      "layovers": [
+        "Guangzhou"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-15",
+      "price_pp": 829,
+      "price_3pax": 2279,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "14 hr 50 min",
+      "dep_time": "11:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-15",
+      "price_pp": 995,
+      "price_3pax": 2736,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "17 hr 50 min",
+      "dep_time": "8:35 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-15",
+      "price_pp": 1058,
+      "price_3pax": 2909,
+      "airline": "United",
+      "stops": 0,
+      "duration": "11 hr 45 min",
+      "dep_time": "12:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-15",
+      "price_pp": 959,
+      "price_3pax": 2637,
+      "airline": "Korean Air and Alaska",
+      "stops": 2,
+      "duration": "19 hr 26 min",
+      "dep_time": "1:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-15",
+      "price_pp": 995,
+      "price_3pax": 2736,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "19 hr 10 min",
+      "dep_time": "7:05 PM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-15",
+      "price_pp": 1055,
+      "price_3pax": 2901,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "20 hr 10 min",
+      "dep_time": "4:00 PM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-15",
+      "price_pp": 1154,
+      "price_3pax": 3173,
+      "airline": "China Southern",
+      "stops": 1,
+      "duration": "17 hr 20 min",
+      "dep_time": "6:20 PM",
+      "layovers": [
+        "Guangzhou"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-15",
+      "price_pp": 1198,
+      "price_3pax": 3294,
+      "airline": "Asiana Airlines and Korean Air",
+      "stops": 1,
+      "duration": "14 hr 20 min",
+      "dep_time": "11:40 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-25",
+      "price_pp": 629,
+      "price_3pax": 1729,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "14 hr 30 min",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-25",
+      "price_pp": 636,
+      "price_3pax": 1749,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "14 hr 50 min",
+      "dep_time": "11:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-25",
+      "price_pp": 811,
+      "price_3pax": 2230,
+      "airline": "United",
+      "stops": 0,
+      "duration": "11 hr 45 min",
+      "dep_time": "12:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-25",
+      "price_pp": 637,
+      "price_3pax": 1751,
+      "airline": "Korean Air and Asiana Airlines",
+      "stops": 1,
+      "duration": "17 hr 10 min",
+      "dep_time": "1:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-25",
+      "price_pp": 741,
+      "price_3pax": 2037,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "20 hr 10 min",
+      "dep_time": "4:00 PM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-25",
+      "price_pp": 803,
+      "price_3pax": 2208,
+      "airline": "Asiana Airlines and Korean Air",
+      "stops": 1,
+      "duration": "14 hr 20 min",
+      "dep_time": "11:40 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-25",
+      "price_pp": 816,
+      "price_3pax": 2244,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "21 hr 16 min",
+      "dep_time": "5:30 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-25",
+      "price_pp": 816,
+      "price_3pax": 2244,
+      "airline": "United",
+      "stops": 1,
+      "duration": "15 hr 7 min",
+      "dep_time": "8:10 PM",
+      "layovers": [
+        "Los Angeles"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-08-25",
+      "price_pp": 2029,
+      "price_3pax": 5579,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "14 hr 27 min",
+      "dep_time": "3:55 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-09-01",
+      "price_pp": 629,
+      "price_3pax": 1729,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "14 hr",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-09-01",
+      "price_pp": 636,
+      "price_3pax": 1749,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "14 hr 30 min",
+      "dep_time": "11:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-09-01",
+      "price_pp": 651,
+      "price_3pax": 1790,
+      "airline": "China Southern",
+      "stops": 1,
+      "duration": "17 hr 20 min",
+      "dep_time": "6:20 PM",
+      "layovers": [
+        "Guangzhou"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-09-01",
+      "price_pp": 803,
+      "price_3pax": 2208,
+      "airline": "Asiana Airlines and Korean Air",
+      "stops": 1,
+      "duration": "14 hr",
+      "dep_time": "11:40 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-09-01",
+      "price_pp": 811,
+      "price_3pax": 2230,
+      "airline": "United",
+      "stops": 0,
+      "duration": "11 hr 45 min",
+      "dep_time": "12:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-09-10",
+      "price_pp": 471,
+      "price_3pax": 1295,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "17 hr 5 min",
+      "dep_time": "8:25 AM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-09-10",
+      "price_pp": 527,
+      "price_3pax": 1449,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "14 hr 30 min",
+      "dep_time": "11:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-09-10",
+      "price_pp": 527,
+      "price_3pax": 1449,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "17 hr 10 min",
+      "dep_time": "1:10 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-09-10",
+      "price_pp": 461,
+      "price_3pax": 1267,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "23 hr 5 min",
+      "dep_time": "8:25 AM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-09-10",
+      "price_pp": 470,
+      "price_3pax": 1292,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "18 hr 30 min",
+      "dep_time": "1:00 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-09-10",
+      "price_pp": 586,
+      "price_3pax": 1611,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "14 hr",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-09-10",
+      "price_pp": 685,
+      "price_3pax": 1883,
+      "airline": "Asiana Airlines and Korean Air",
+      "stops": 1,
+      "duration": "14 hr",
+      "dep_time": "11:40 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-09-10",
+      "price_pp": 811,
+      "price_3pax": 2230,
+      "airline": "United",
+      "stops": 0,
+      "duration": "11 hr 25 min",
+      "dep_time": "12:10 PM",
+      "layovers": []
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-09-20",
+      "price_pp": 636,
+      "price_3pax": 1749,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "14 hr",
+      "dep_time": "4:20 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-09-20",
+      "price_pp": 682,
+      "price_3pax": 1875,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "14 hr 30 min",
+      "dep_time": "11:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-09-20",
+      "price_pp": 477,
+      "price_3pax": 1311,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "36 hr 30 min",
+      "dep_time": "1:00 PM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-09-20",
+      "price_pp": 843,
+      "price_3pax": 2318,
+      "airline": "Asiana Airlines and Korean Air",
+      "stops": 1,
+      "duration": "14 hr",
+      "dep_time": "11:40 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "PVG",
+      "dest": "SFO",
+      "date": "2026-09-20",
+      "price_pp": 910,
+      "price_3pax": 2502,
+      "airline": "United",
+      "stops": 0,
+      "duration": "11 hr 25 min",
+      "dep_time": "12:10 PM",
+      "layovers": []
+    }
+  ],
+  "return": [
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-01",
+      "price_pp": 648,
+      "price_3pax": 1782,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "30 hr",
+      "dep_time": "5:05 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-01",
+      "price_pp": 973,
+      "price_3pax": 2675,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "16 hr 38 min",
+      "dep_time": "12:12 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-01",
+      "price_pp": 1117,
+      "price_3pax": 3071,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 30 min",
+      "dep_time": "1:15 PM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-01",
+      "price_pp": 658,
+      "price_3pax": 1809,
+      "airline": "United and Air Canada",
+      "stops": 1,
+      "duration": "27 hr 39 min",
+      "dep_time": "7:26 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-01",
+      "price_pp": 704,
+      "price_3pax": 1936,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "31 hr 45 min",
+      "dep_time": "9:05 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-01",
+      "price_pp": 1183,
+      "price_3pax": 3253,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 30 min",
+      "dep_time": "6:35 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-01",
+      "price_pp": 1244,
+      "price_3pax": 3421,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 35 min",
+      "dep_time": "11:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-01",
+      "price_pp": 1246,
+      "price_3pax": 3426,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "19 hr 35 min",
+      "dep_time": "1:20 PM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-01",
+      "price_pp": 1344,
+      "price_3pax": 3696,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "16 hr 30 min",
+      "dep_time": "5:15 PM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-01",
+      "price_pp": 1346,
+      "price_3pax": 3701,
+      "airline": "American and JAL",
+      "stops": 1,
+      "duration": "16 hr 30 min",
+      "dep_time": "12:15 PM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 786,
+      "price_3pax": 2161,
+      "airline": "American and JAL",
+      "stops": 1,
+      "duration": "22 hr 10 min",
+      "dep_time": "12:50 AM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 969,
+      "price_3pax": 2664,
+      "airline": "Delta",
+      "stops": 0,
+      "duration": "13 hr 35 min",
+      "dep_time": "11:30 AM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 973,
+      "price_3pax": 2675,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "17 hr 5 min",
+      "dep_time": "11:45 AM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 1151,
+      "price_3pax": 3165,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 30 min",
+      "dep_time": "1:15 PM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 723,
+      "price_3pax": 1988,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "30 hr",
+      "dep_time": "5:05 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 772,
+      "price_3pax": 2123,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "32 hr 40 min",
+      "dep_time": "10:00 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 1028,
+      "price_3pax": 2827,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "20 hr 40 min",
+      "dep_time": "12:25 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-20",
+      "price_pp": 731,
+      "price_3pax": 2010,
+      "airline": "American",
+      "stops": 1,
+      "duration": "24 hr 25 min",
+      "dep_time": "11:55 PM",
+      "layovers": [
+        "Dallas"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-20",
+      "price_pp": 1008,
+      "price_3pax": 2772,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 45 min",
+      "dep_time": "10:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-20",
+      "price_pp": 1068,
+      "price_3pax": 2937,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 30 min",
+      "dep_time": "1:15 PM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-20",
+      "price_pp": 754,
+      "price_3pax": 2073,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "31 hr 30 min",
+      "dep_time": "9:20 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-20",
+      "price_pp": 870,
+      "price_3pax": 2392,
+      "airline": "Korean Air and Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 15 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-20",
+      "price_pp": 1023,
+      "price_3pax": 2813,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "21 hr 15 min",
+      "dep_time": "7:35 AM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-20",
+      "price_pp": 1088,
+      "price_3pax": 2992,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "18 hr 50 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-20",
+      "price_pp": 1088,
+      "price_3pax": 2992,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "20 hr 40 min",
+      "dep_time": "12:25 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-20",
+      "price_pp": 1221,
+      "price_3pax": 3357,
+      "airline": "American and JAL",
+      "stops": 1,
+      "duration": "16 hr 30 min",
+      "dep_time": "12:15 PM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-20",
+      "price_pp": 1304,
+      "price_3pax": 3586,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 35 min",
+      "dep_time": "11:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-20",
+      "price_pp": 1306,
+      "price_3pax": 3591,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "18 hr 40 min",
+      "dep_time": "1:25 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-20",
+      "price_pp": 1787,
+      "price_3pax": 4914,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "16 hr 30 min",
+      "dep_time": "5:15 PM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-29",
+      "price_pp": 633,
+      "price_3pax": 1740,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 45 min",
+      "dep_time": "10:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-29",
+      "price_pp": 633,
+      "price_3pax": 1740,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "18 hr 50 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-29",
+      "price_pp": 848,
+      "price_3pax": 2332,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 30 min",
+      "dep_time": "1:15 PM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-29",
+      "price_pp": 617,
+      "price_3pax": 1696,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "32 hr 55 min",
+      "dep_time": "10:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-29",
+      "price_pp": 639,
+      "price_3pax": 1757,
+      "airline": "Asiana Airlines and Korean Air",
+      "stops": 1,
+      "duration": "32 hr 30 min",
+      "dep_time": "10:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-29",
+      "price_pp": 721,
+      "price_3pax": 1982,
+      "airline": "American and JAL",
+      "stops": 1,
+      "duration": "22 hr 10 min",
+      "dep_time": "12:50 AM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-29",
+      "price_pp": 772,
+      "price_3pax": 2123,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 40 min",
+      "dep_time": "12:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-29",
+      "price_pp": 783,
+      "price_3pax": 2153,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 35 min",
+      "dep_time": "11:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-06-29",
+      "price_pp": 1659,
+      "price_3pax": 4562,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "6:45 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-01",
+      "price_pp": 633,
+      "price_3pax": 1740,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "18 hr 50 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-01",
+      "price_pp": 648,
+      "price_3pax": 1782,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "6:45 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-01",
+      "price_pp": 689,
+      "price_3pax": 1894,
+      "airline": "Delta",
+      "stops": 0,
+      "duration": "13 hr 20 min",
+      "dep_time": "11:45 AM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-01",
+      "price_pp": 848,
+      "price_3pax": 2332,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 30 min",
+      "dep_time": "1:15 PM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-01",
+      "price_pp": 575,
+      "price_3pax": 1581,
+      "airline": "American",
+      "stops": 1,
+      "duration": "29 hr 35 min",
+      "dep_time": "6:45 PM",
+      "layovers": [
+        "Dallas"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-01",
+      "price_pp": 638,
+      "price_3pax": 1754,
+      "airline": "JAL",
+      "stops": 1,
+      "duration": "29 hr 45 min",
+      "dep_time": "3:00 PM",
+      "layovers": [
+        "Osaka"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-01",
+      "price_pp": 772,
+      "price_3pax": 2123,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "1:00 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-01",
+      "price_pp": 856,
+      "price_3pax": 2354,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "18 hr 40 min",
+      "dep_time": "1:25 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-01",
+      "price_pp": 996,
+      "price_3pax": 2739,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "16 hr 30 min",
+      "dep_time": "5:15 PM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 617,
+      "price_3pax": 1696,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 15 min",
+      "dep_time": "10:40 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 633,
+      "price_3pax": 1740,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "1:00 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 637,
+      "price_3pax": 1751,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "6:45 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 873,
+      "price_3pax": 2400,
+      "airline": "Delta",
+      "stops": 0,
+      "duration": "13 hr 20 min",
+      "dep_time": "11:45 AM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 873,
+      "price_3pax": 2400,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 30 min",
+      "dep_time": "1:15 PM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 598,
+      "price_3pax": 1644,
+      "airline": "Alaska and JAL",
+      "stops": 2,
+      "duration": "22 hr 45 min",
+      "dep_time": "6:00 AM",
+      "layovers": [
+        "San Francisco"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 627,
+      "price_3pax": 1724,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "32 hr 30 min",
+      "dep_time": "2:35 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 633,
+      "price_3pax": 1740,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "18 hr 50 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 688,
+      "price_3pax": 1892,
+      "airline": "JAL",
+      "stops": 1,
+      "duration": "29 hr 45 min",
+      "dep_time": "3:00 PM",
+      "layovers": [
+        "Osaka"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 756,
+      "price_3pax": 2079,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "23 hr 35 min",
+      "dep_time": "11:55 PM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 798,
+      "price_3pax": 2194,
+      "airline": "China Southern",
+      "stops": 1,
+      "duration": "22 hr 10 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Guangzhou"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 916,
+      "price_3pax": 2519,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "18 hr 40 min",
+      "dep_time": "1:25 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 592,
+      "price_3pax": 1628,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "6:45 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 617,
+      "price_3pax": 1696,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 35 min",
+      "dep_time": "11:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 633,
+      "price_3pax": 1740,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "1:00 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 709,
+      "price_3pax": 1949,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "16 hr 30 min",
+      "dep_time": "5:15 PM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 848,
+      "price_3pax": 2332,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 30 min",
+      "dep_time": "1:15 PM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 556,
+      "price_3pax": 1529,
+      "airline": "JAL",
+      "stops": 1,
+      "duration": "38 hr 45 min",
+      "dep_time": "2:00 PM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 606,
+      "price_3pax": 1666,
+      "airline": "United and Air Canada",
+      "stops": 2,
+      "duration": "25 hr 31 min",
+      "dep_time": "9:34 PM",
+      "layovers": [
+        "San Francisco"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 617,
+      "price_3pax": 1696,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 15 min",
+      "dep_time": "10:40 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 633,
+      "price_3pax": 1740,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "18 hr 50 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 636,
+      "price_3pax": 1749,
+      "airline": "American and JAL",
+      "stops": 1,
+      "duration": "21 hr 35 min",
+      "dep_time": "1:25 AM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 638,
+      "price_3pax": 1754,
+      "airline": "JAL",
+      "stops": 1,
+      "duration": "29 hr 45 min",
+      "dep_time": "3:00 PM",
+      "layovers": [
+        "Osaka"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 698,
+      "price_3pax": 1919,
+      "airline": "China Southern",
+      "stops": 1,
+      "duration": "22 hr 10 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Guangzhou"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 852,
+      "price_3pax": 2343,
+      "airline": "United",
+      "stops": 1,
+      "duration": "15 hr 30 min",
+      "dep_time": "10:55 AM",
+      "layovers": [
+        "San Francisco"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 512,
+      "price_3pax": 1408,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 15 min",
+      "dep_time": "10:40 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 512,
+      "price_3pax": 1408,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 35 min",
+      "dep_time": "11:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 533,
+      "price_3pax": 1465,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "18 hr 50 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 563,
+      "price_3pax": 1548,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "19 hr 40 min",
+      "dep_time": "12:25 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 627,
+      "price_3pax": 1724,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "6:45 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 517,
+      "price_3pax": 1421,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "30 hr",
+      "dep_time": "5:05 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 633,
+      "price_3pax": 1740,
+      "airline": "American",
+      "stops": 1,
+      "duration": "23 hr 10 min",
+      "dep_time": "1:10 AM",
+      "layovers": [
+        "Dallas"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 661,
+      "price_3pax": 1817,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "19 hr 40 min",
+      "dep_time": "1:25 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 873,
+      "price_3pax": 2400,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 30 min",
+      "dep_time": "1:15 PM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 958,
+      "price_3pax": 2634,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "1:00 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 406,
+      "price_3pax": 1116,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 15 min",
+      "dep_time": "10:40 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 406,
+      "price_3pax": 1116,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 35 min",
+      "dep_time": "11:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 453,
+      "price_3pax": 1245,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "19 hr 40 min",
+      "dep_time": "12:25 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 499,
+      "price_3pax": 1372,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "6:45 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 464,
+      "price_3pax": 1276,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "30 hr",
+      "dep_time": "5:05 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 483,
+      "price_3pax": 1328,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "23 hr 35 min",
+      "dep_time": "11:55 PM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 551,
+      "price_3pax": 1515,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "20 hr 50 min",
+      "dep_time": "1:25 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 723,
+      "price_3pax": 1988,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 30 min",
+      "dep_time": "1:15 PM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 727,
+      "price_3pax": 1999,
+      "airline": "United",
+      "stops": 1,
+      "duration": "15 hr 30 min",
+      "dep_time": "10:55 AM",
+      "layovers": [
+        "San Francisco"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 828,
+      "price_3pax": 2277,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "1:00 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 388,
+      "price_3pax": 1067,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "19 hr 40 min",
+      "dep_time": "12:25 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 406,
+      "price_3pax": 1116,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 15 min",
+      "dep_time": "10:40 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 433,
+      "price_3pax": 1190,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "1:00 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 406,
+      "price_3pax": 1116,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 35 min",
+      "dep_time": "11:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 433,
+      "price_3pax": 1190,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "18 hr 50 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 444,
+      "price_3pax": 1221,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "23 hr 35 min",
+      "dep_time": "11:55 PM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 464,
+      "price_3pax": 1276,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "6:45 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 486,
+      "price_3pax": 1336,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "18 hr 40 min",
+      "dep_time": "1:25 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 708,
+      "price_3pax": 1947,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 30 min",
+      "dep_time": "1:15 PM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 388,
+      "price_3pax": 1067,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "19 hr 40 min",
+      "dep_time": "12:25 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 406,
+      "price_3pax": 1116,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 45 min",
+      "dep_time": "10:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 406,
+      "price_3pax": 1116,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 35 min",
+      "dep_time": "11:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 433,
+      "price_3pax": 1190,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 30 min",
+      "dep_time": "12:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 464,
+      "price_3pax": 1276,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "6:45 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 486,
+      "price_3pax": 1336,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "18 hr 40 min",
+      "dep_time": "1:25 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 543,
+      "price_3pax": 1493,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "17 hr 5 min",
+      "dep_time": "11:45 AM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 708,
+      "price_3pax": 1947,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 30 min",
+      "dep_time": "1:15 PM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 388,
+      "price_3pax": 1067,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "19 hr 40 min",
+      "dep_time": "12:25 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 406,
+      "price_3pax": 1116,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 45 min",
+      "dep_time": "10:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 406,
+      "price_3pax": 1116,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 35 min",
+      "dep_time": "11:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 433,
+      "price_3pax": 1190,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 30 min",
+      "dep_time": "12:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 464,
+      "price_3pax": 1276,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "6:45 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 486,
+      "price_3pax": 1336,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "18 hr 40 min",
+      "dep_time": "1:25 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 543,
+      "price_3pax": 1493,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "17 hr 5 min",
+      "dep_time": "11:45 AM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 708,
+      "price_3pax": 1947,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 50 min",
+      "dep_time": "12:55 PM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 406,
+      "price_3pax": 1116,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 45 min",
+      "dep_time": "10:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 433,
+      "price_3pax": 1190,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 30 min",
+      "dep_time": "12:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 589,
+      "price_3pax": 1619,
+      "airline": "Delta",
+      "stops": 0,
+      "duration": "13 hr 40 min",
+      "dep_time": "11:25 AM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 353,
+      "price_3pax": 970,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "30 hr 35 min",
+      "dep_time": "4:55 PM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 406,
+      "price_3pax": 1116,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "21 hr 15 min",
+      "dep_time": "11:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 413,
+      "price_3pax": 1135,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 35 min",
+      "dep_time": "11:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 435,
+      "price_3pax": 1196,
+      "airline": "Asiana Airlines and Korean Air",
+      "stops": 1,
+      "duration": "19 hr 10 min",
+      "dep_time": "11:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 438,
+      "price_3pax": 1204,
+      "airline": "China Southern",
+      "stops": 1,
+      "duration": "22 hr 10 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Guangzhou"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 444,
+      "price_3pax": 1221,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "23 hr 35 min",
+      "dep_time": "11:55 PM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 464,
+      "price_3pax": 1276,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "6:45 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 593,
+      "price_3pax": 1630,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "17 hr 5 min",
+      "dep_time": "11:45 AM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 723,
+      "price_3pax": 1988,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 50 min",
+      "dep_time": "12:55 PM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 406,
+      "price_3pax": 1116,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 45 min",
+      "dep_time": "10:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 433,
+      "price_3pax": 1190,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 30 min",
+      "dep_time": "12:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 539,
+      "price_3pax": 1482,
+      "airline": "Delta",
+      "stops": 0,
+      "duration": "13 hr 40 min",
+      "dep_time": "11:25 AM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 353,
+      "price_3pax": 970,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "30 hr 35 min",
+      "dep_time": "4:55 PM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 413,
+      "price_3pax": 1135,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "21 hr 15 min",
+      "dep_time": "11:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 438,
+      "price_3pax": 1204,
+      "airline": "China Southern",
+      "stops": 1,
+      "duration": "22 hr 5 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Guangzhou"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 443,
+      "price_3pax": 1218,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 35 min",
+      "dep_time": "11:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 464,
+      "price_3pax": 1276,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "6:45 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 543,
+      "price_3pax": 1493,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "17 hr 5 min",
+      "dep_time": "11:45 AM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 708,
+      "price_3pax": 1947,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 50 min",
+      "dep_time": "12:55 PM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-10",
+      "price_pp": 561,
+      "price_3pax": 1542,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "23 hr 35 min",
+      "dep_time": "11:55 PM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-10",
+      "price_pp": 675,
+      "price_3pax": 1856,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "6:45 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-10",
+      "price_pp": 873,
+      "price_3pax": 2400,
+      "airline": "Delta",
+      "stops": 0,
+      "duration": "14 hr 5 min",
+      "dep_time": "11:00 AM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-10",
+      "price_pp": 728,
+      "price_3pax": 2002,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "21 hr 15 min",
+      "dep_time": "11:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-10",
+      "price_pp": 748,
+      "price_3pax": 2057,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 35 min",
+      "dep_time": "11:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-10",
+      "price_pp": 877,
+      "price_3pax": 2411,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "17 hr 5 min",
+      "dep_time": "11:45 AM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-10",
+      "price_pp": 1431,
+      "price_3pax": 3935,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 50 min",
+      "dep_time": "12:55 PM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 406,
+      "price_3pax": 1116,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 45 min",
+      "dep_time": "10:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 568,
+      "price_3pax": 1562,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 30 min",
+      "dep_time": "12:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 708,
+      "price_3pax": 1947,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 50 min",
+      "dep_time": "12:55 PM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 435,
+      "price_3pax": 1196,
+      "airline": "Asiana Airlines and Korean Air",
+      "stops": 1,
+      "duration": "32 hr 30 min",
+      "dep_time": "10:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 553,
+      "price_3pax": 1520,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 35 min",
+      "dep_time": "11:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 554,
+      "price_3pax": 1523,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "31 hr 30 min",
+      "dep_time": "9:20 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 595,
+      "price_3pax": 1636,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "6:45 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 733,
+      "price_3pax": 2015,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "16 hr 55 min",
+      "dep_time": "4:50 PM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 848,
+      "price_3pax": 2332,
+      "airline": "Delta",
+      "stops": 0,
+      "duration": "14 hr 5 min",
+      "dep_time": "11:00 AM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-31",
+      "price_pp": 406,
+      "price_3pax": 1116,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 55 min",
+      "dep_time": "10:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-31",
+      "price_pp": 406,
+      "price_3pax": 1116,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 35 min",
+      "dep_time": "11:30 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-31",
+      "price_pp": 435,
+      "price_3pax": 1196,
+      "airline": "Asiana Airlines and Korean Air",
+      "stops": 1,
+      "duration": "19 hr 15 min",
+      "dep_time": "10:10 AM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-31",
+      "price_pp": 723,
+      "price_3pax": 1988,
+      "airline": "Delta",
+      "stops": 0,
+      "duration": "13 hr 55 min",
+      "dep_time": "12:30 PM",
+      "layovers": []
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-31",
+      "price_pp": 555,
+      "price_3pax": 1526,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "18 hr",
+      "dep_time": "7:00 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-31",
+      "price_pp": 593,
+      "price_3pax": 1630,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "17 hr 10 min",
+      "dep_time": "11:45 AM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-31",
+      "price_pp": 633,
+      "price_3pax": 1740,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "18 hr 55 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "LAX",
+      "dest": "PVG",
+      "date": "2026-10-31",
+      "price_pp": 723,
+      "price_3pax": 1988,
+      "airline": "United",
+      "stops": 0,
+      "duration": "14 hr 10 min",
+      "dep_time": "1:45 PM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-01",
+      "price_pp": 1117,
+      "price_3pax": 3071,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "18 hr 21 min",
+      "dep_time": "10:29 AM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-01",
+      "price_pp": 1322,
+      "price_3pax": 3635,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 55 min",
+      "dep_time": "1:30 PM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-01",
+      "price_pp": 854,
+      "price_3pax": 2348,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "27 hr 35 min",
+      "dep_time": "7:30 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-01",
+      "price_pp": 988,
+      "price_3pax": 2717,
+      "airline": "United and ANA",
+      "stops": 2,
+      "duration": "22 hr 58 min",
+      "dep_time": "10:47 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-01",
+      "price_pp": 1016,
+      "price_3pax": 2794,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "23 hr",
+      "dep_time": "12:30 AM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-01",
+      "price_pp": 1347,
+      "price_3pax": 3704,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 35 min",
+      "dep_time": "6:30 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-01",
+      "price_pp": 1608,
+      "price_3pax": 4422,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 30 min",
+      "dep_time": "12:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 1117,
+      "price_3pax": 3071,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "8:55 AM",
+      "layovers": [
+        "Los Angeles"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 1339,
+      "price_3pax": 3682,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 55 min",
+      "dep_time": "1:30 PM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 890,
+      "price_3pax": 2447,
+      "airline": "Alaska and Asiana Airlines",
+      "stops": 2,
+      "duration": "22 hr 55 min",
+      "dep_time": "7:00 AM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 928,
+      "price_3pax": 2552,
+      "airline": "Alaska and Asiana Airlines",
+      "stops": 2,
+      "duration": "21 hr 34 min",
+      "dep_time": "8:21 AM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 960,
+      "price_3pax": 2640,
+      "airline": "Alaska and Asiana Airlines",
+      "stops": 2,
+      "duration": "19 hr 39 min",
+      "dep_time": "10:16 AM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 972,
+      "price_3pax": 2673,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "27 hr 35 min",
+      "dep_time": "7:30 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 1016,
+      "price_3pax": 2794,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "23 hr",
+      "dep_time": "12:30 AM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 1117,
+      "price_3pax": 3071,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "15 hr 45 min",
+      "dep_time": "1:05 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 1275,
+      "price_3pax": 3506,
+      "airline": "United",
+      "stops": 1,
+      "duration": "17 hr 55 min",
+      "dep_time": "8:50 AM",
+      "layovers": [
+        "Los Angeles"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 1318,
+      "price_3pax": 3624,
+      "airline": "United",
+      "stops": 1,
+      "duration": "16 hr 26 min",
+      "dep_time": "10:19 AM",
+      "layovers": [
+        "Los Angeles"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 1347,
+      "price_3pax": 3704,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 35 min",
+      "dep_time": "6:30 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-10",
+      "price_pp": 2383,
+      "price_3pax": 6553,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 30 min",
+      "dep_time": "12:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-20",
+      "price_pp": 1167,
+      "price_3pax": 3209,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "15 hr 45 min",
+      "dep_time": "1:05 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-20",
+      "price_pp": 1180,
+      "price_3pax": 3245,
+      "airline": "JAL",
+      "stops": 1,
+      "duration": "16 hr 50 min",
+      "dep_time": "11:55 AM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-20",
+      "price_pp": 1205,
+      "price_3pax": 3313,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 55 min",
+      "dep_time": "1:30 PM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-20",
+      "price_pp": 851,
+      "price_3pax": 2340,
+      "airline": "American",
+      "stops": 1,
+      "duration": "24 hr 51 min",
+      "dep_time": "11:29 PM",
+      "layovers": [
+        "Dallas"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-20",
+      "price_pp": 886,
+      "price_3pax": 2436,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "47 hr",
+      "dep_time": "12:30 AM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-20",
+      "price_pp": 1161,
+      "price_3pax": 3192,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 15 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-29",
+      "price_pp": 985,
+      "price_3pax": 2708,
+      "airline": "JAL",
+      "stops": 1,
+      "duration": "16 hr 50 min",
+      "dep_time": "11:55 AM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-29",
+      "price_pp": 999,
+      "price_3pax": 2747,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 55 min",
+      "dep_time": "1:30 PM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-29",
+      "price_pp": 763,
+      "price_3pax": 2098,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "23 hr",
+      "dep_time": "12:30 AM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-29",
+      "price_pp": 812,
+      "price_3pax": 2233,
+      "airline": "Korean Air and Asiana Airlines",
+      "stops": 1,
+      "duration": "32 hr 5 min",
+      "dep_time": "12:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-29",
+      "price_pp": 814,
+      "price_3pax": 2238,
+      "airline": "JAL",
+      "stops": 1,
+      "duration": "35 hr 5 min",
+      "dep_time": "11:55 AM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-29",
+      "price_pp": 917,
+      "price_3pax": 2521,
+      "airline": "United",
+      "stops": 1,
+      "duration": "20 hr 45 min",
+      "dep_time": "6:00 AM",
+      "layovers": [
+        "Los Angeles"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-29",
+      "price_pp": 1007,
+      "price_3pax": 2769,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "18 hr 55 min",
+      "dep_time": "1:45 AM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-29",
+      "price_pp": 1028,
+      "price_3pax": 2827,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "18 hr 55 min",
+      "dep_time": "2:00 PM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-06-29",
+      "price_pp": 1117,
+      "price_3pax": 3071,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "15 hr 45 min",
+      "dep_time": "1:05 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-01",
+      "price_pp": 720,
+      "price_3pax": 1980,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "18 hr 55 min",
+      "dep_time": "1:45 AM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-01",
+      "price_pp": 913,
+      "price_3pax": 2510,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 55 min",
+      "dep_time": "1:30 PM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-01",
+      "price_pp": 709,
+      "price_3pax": 1949,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "32 hr",
+      "dep_time": "1:45 AM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-01",
+      "price_pp": 718,
+      "price_3pax": 1974,
+      "airline": "Alaska and Asiana Airlines",
+      "stops": 2,
+      "duration": "22 hr 55 min",
+      "dep_time": "7:00 AM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-01",
+      "price_pp": 772,
+      "price_3pax": 2123,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "29 hr 30 min",
+      "dep_time": "1:10 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-01",
+      "price_pp": 825,
+      "price_3pax": 2268,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "27 hr 55 min",
+      "dep_time": "1:45 AM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-01",
+      "price_pp": 1023,
+      "price_3pax": 2813,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr",
+      "dep_time": "1:10 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-01",
+      "price_pp": 1117,
+      "price_3pax": 3071,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "8:55 AM",
+      "layovers": [
+        "Los Angeles"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-01",
+      "price_pp": 1117,
+      "price_3pax": 3071,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "15 hr 45 min",
+      "dep_time": "1:05 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 772,
+      "price_3pax": 2123,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr",
+      "dep_time": "1:10 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 864,
+      "price_3pax": 2376,
+      "airline": "JAL",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "12:25 PM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 963,
+      "price_3pax": 2648,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 55 min",
+      "dep_time": "1:30 PM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 604,
+      "price_3pax": 1661,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "27 hr 35 min",
+      "dep_time": "7:30 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 618,
+      "price_3pax": 1699,
+      "airline": "United and Air Canada",
+      "stops": 2,
+      "duration": "24 hr 6 min",
+      "dep_time": "10:59 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 665,
+      "price_3pax": 1828,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "23 hr",
+      "dep_time": "12:30 AM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 710,
+      "price_3pax": 1952,
+      "airline": "Alaska and Asiana Airlines",
+      "stops": 2,
+      "duration": "19 hr 39 min",
+      "dep_time": "10:16 AM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 812,
+      "price_3pax": 2233,
+      "airline": "Korean Air and Asiana Airlines",
+      "stops": 1,
+      "duration": "16 hr 45 min",
+      "dep_time": "1:10 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 887,
+      "price_3pax": 2439,
+      "airline": "China Southern",
+      "stops": 1,
+      "duration": "18 hr 25 min",
+      "dep_time": "12:35 AM",
+      "layovers": [
+        "Wuhan"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 916,
+      "price_3pax": 2519,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "18 hr 55 min",
+      "dep_time": "2:00 PM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 936,
+      "price_3pax": 2574,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "8:55 AM",
+      "layovers": [
+        "Los Angeles"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 936,
+      "price_3pax": 2574,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "15 hr 45 min",
+      "dep_time": "1:05 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-10",
+      "price_pp": 977,
+      "price_3pax": 2686,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 30 min",
+      "dep_time": "6:35 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 569,
+      "price_3pax": 1564,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 30 min",
+      "dep_time": "6:35 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 772,
+      "price_3pax": 2123,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr",
+      "dep_time": "1:10 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 814,
+      "price_3pax": 2238,
+      "airline": "JAL",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "12:25 PM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 913,
+      "price_3pax": 2510,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 55 min",
+      "dep_time": "1:30 PM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 569,
+      "price_3pax": 1564,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "27 hr 35 min",
+      "dep_time": "7:30 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 583,
+      "price_3pax": 1603,
+      "airline": "United and Air Canada",
+      "stops": 2,
+      "duration": "24 hr 6 min",
+      "dep_time": "10:59 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 626,
+      "price_3pax": 1721,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "23 hr",
+      "dep_time": "12:30 AM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 772,
+      "price_3pax": 2123,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 15 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 856,
+      "price_3pax": 2354,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "18 hr 45 min",
+      "dep_time": "1:20 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-07-20",
+      "price_pp": 898,
+      "price_3pax": 2469,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "15 hr 45 min",
+      "dep_time": "1:05 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 604,
+      "price_3pax": 1661,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 25 min",
+      "dep_time": "6:40 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 698,
+      "price_3pax": 1919,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr",
+      "dep_time": "1:10 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 963,
+      "price_3pax": 2648,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 55 min",
+      "dep_time": "1:30 PM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 569,
+      "price_3pax": 1564,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "27 hr 35 min",
+      "dep_time": "7:30 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 583,
+      "price_3pax": 1603,
+      "airline": "United and Air Canada",
+      "stops": 2,
+      "duration": "24 hr 6 min",
+      "dep_time": "10:59 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 653,
+      "price_3pax": 1795,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "47 hr",
+      "dep_time": "12:30 AM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 678,
+      "price_3pax": 1864,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "23 hr",
+      "dep_time": "12:30 AM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 698,
+      "price_3pax": 1919,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 15 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 763,
+      "price_3pax": 2098,
+      "airline": "Korean Air and Asiana Airlines",
+      "stops": 1,
+      "duration": "16 hr 45 min",
+      "dep_time": "1:10 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-01",
+      "price_pp": 936,
+      "price_3pax": 2574,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "15 hr 45 min",
+      "dep_time": "1:05 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 568,
+      "price_3pax": 1562,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 15 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 596,
+      "price_3pax": 1639,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 25 min",
+      "dep_time": "6:40 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 863,
+      "price_3pax": 2373,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 55 min",
+      "dep_time": "1:30 PM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 561,
+      "price_3pax": 1542,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "27 hr 35 min",
+      "dep_time": "7:30 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 575,
+      "price_3pax": 1581,
+      "airline": "United and Air Canada",
+      "stops": 2,
+      "duration": "24 hr 15 min",
+      "dep_time": "10:50 PM",
+      "layovers": [
+        "Los Angeles"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 614,
+      "price_3pax": 1688,
+      "airline": "Korean Air and Asiana Airlines",
+      "stops": 1,
+      "duration": "16 hr 45 min",
+      "dep_time": "1:10 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 678,
+      "price_3pax": 1864,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "23 hr",
+      "dep_time": "12:30 AM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 828,
+      "price_3pax": 2277,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr",
+      "dep_time": "1:10 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 856,
+      "price_3pax": 2354,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "18 hr 55 min",
+      "dep_time": "2:00 PM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-15",
+      "price_pp": 936,
+      "price_3pax": 2574,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "15 hr 45 min",
+      "dep_time": "1:05 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 469,
+      "price_3pax": 1289,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 25 min",
+      "dep_time": "6:40 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 568,
+      "price_3pax": 1562,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr",
+      "dep_time": "1:10 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 813,
+      "price_3pax": 2235,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 55 min",
+      "dep_time": "1:30 PM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 469,
+      "price_3pax": 1289,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "27 hr 35 min",
+      "dep_time": "7:30 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 483,
+      "price_3pax": 1328,
+      "airline": "United and Air Canada",
+      "stops": 2,
+      "duration": "24 hr 15 min",
+      "dep_time": "10:50 PM",
+      "layovers": [
+        "Los Angeles"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 490,
+      "price_3pax": 1347,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "23 hr",
+      "dep_time": "12:30 AM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 527,
+      "price_3pax": 1449,
+      "airline": "China Southern",
+      "stops": 1,
+      "duration": "18 hr 25 min",
+      "dep_time": "12:35 AM",
+      "layovers": [
+        "Wuhan"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 543,
+      "price_3pax": 1493,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "18 hr 55 min",
+      "dep_time": "2:00 PM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 568,
+      "price_3pax": 1562,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 15 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 633,
+      "price_3pax": 1740,
+      "airline": "Korean Air and Asiana Airlines",
+      "stops": 1,
+      "duration": "16 hr 45 min",
+      "dep_time": "1:10 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-08-25",
+      "price_pp": 898,
+      "price_3pax": 2469,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "15 hr 45 min",
+      "dep_time": "1:05 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 469,
+      "price_3pax": 1289,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "16 hr 25 min",
+      "dep_time": "6:40 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 568,
+      "price_3pax": 1562,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "12:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 813,
+      "price_3pax": 2235,
+      "airline": "United",
+      "stops": 0,
+      "duration": "12 hr 55 min",
+      "dep_time": "1:30 PM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 469,
+      "price_3pax": 1289,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "27 hr 35 min",
+      "dep_time": "7:30 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 483,
+      "price_3pax": 1328,
+      "airline": "United and Air Canada",
+      "stops": 2,
+      "duration": "26 hr",
+      "dep_time": "9:05 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 527,
+      "price_3pax": 1449,
+      "airline": "China Southern",
+      "stops": 1,
+      "duration": "18 hr 25 min",
+      "dep_time": "12:35 AM",
+      "layovers": [
+        "Wuhan"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 568,
+      "price_3pax": 1562,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 15 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 633,
+      "price_3pax": 1740,
+      "airline": "Korean Air and Asiana Airlines",
+      "stops": 1,
+      "duration": "17 hr 5 min",
+      "dep_time": "12:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 641,
+      "price_3pax": 1762,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "18 hr 55 min",
+      "dep_time": "2:00 PM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 801,
+      "price_3pax": 2202,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "15 hr 45 min",
+      "dep_time": "1:05 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-01",
+      "price_pp": 814,
+      "price_3pax": 2238,
+      "airline": "JAL",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "12:25 PM",
+      "layovers": [
+        "Tokyo"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 568,
+      "price_3pax": 1562,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "12:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 569,
+      "price_3pax": 1564,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "15 hr 55 min",
+      "dep_time": "7:10 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 813,
+      "price_3pax": 2235,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 25 min",
+      "dep_time": "1:00 PM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 486,
+      "price_3pax": 1336,
+      "airline": "Air Canada and Asiana Airlines",
+      "stops": 2,
+      "duration": "22 hr 45 min",
+      "dep_time": "7:10 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 490,
+      "price_3pax": 1347,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "23 hr",
+      "dep_time": "12:30 AM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 506,
+      "price_3pax": 1391,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "27 hr 30 min",
+      "dep_time": "7:35 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 568,
+      "price_3pax": 1562,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 15 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 633,
+      "price_3pax": 1740,
+      "airline": "Korean Air and Asiana Airlines",
+      "stops": 1,
+      "duration": "17 hr 5 min",
+      "dep_time": "12:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 641,
+      "price_3pax": 1762,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "18 hr 55 min",
+      "dep_time": "2:00 PM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 796,
+      "price_3pax": 2189,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "18 hr 45 min",
+      "dep_time": "1:20 AM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-10",
+      "price_pp": 801,
+      "price_3pax": 2202,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "15 hr 45 min",
+      "dep_time": "1:05 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 377,
+      "price_3pax": 1036,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "23 hr",
+      "dep_time": "12:30 AM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 506,
+      "price_3pax": 1391,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "15 hr 55 min",
+      "dep_time": "7:10 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 568,
+      "price_3pax": 1562,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "12:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 469,
+      "price_3pax": 1289,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "27 hr 30 min",
+      "dep_time": "7:35 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 483,
+      "price_3pax": 1328,
+      "airline": "United and Air Canada",
+      "stops": 2,
+      "duration": "25 hr 40 min",
+      "dep_time": "9:25 PM",
+      "layovers": [
+        "Los Angeles"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 528,
+      "price_3pax": 1452,
+      "airline": "China Southern",
+      "stops": 1,
+      "duration": "21 hr 20 min",
+      "dep_time": "12:35 AM",
+      "layovers": [
+        "Guangzhou"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 568,
+      "price_3pax": 1562,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 15 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 633,
+      "price_3pax": 1740,
+      "airline": "Korean Air and Asiana Airlines",
+      "stops": 1,
+      "duration": "17 hr 5 min",
+      "dep_time": "12:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 706,
+      "price_3pax": 1941,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "19 hr 55 min",
+      "dep_time": "1:00 PM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 838,
+      "price_3pax": 2304,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "8:55 AM",
+      "layovers": [
+        "Los Angeles"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 838,
+      "price_3pax": 2304,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "15 hr 45 min",
+      "dep_time": "1:05 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 863,
+      "price_3pax": 2373,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 25 min",
+      "dep_time": "1:00 PM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-20",
+      "price_pp": 1188,
+      "price_3pax": 3267,
+      "airline": "United and ANA",
+      "stops": 1,
+      "duration": "15 hr 35 min",
+      "dep_time": "10:45 AM",
+      "layovers": [
+        "Osaka"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 469,
+      "price_3pax": 1289,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "15 hr 55 min",
+      "dep_time": "7:10 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 568,
+      "price_3pax": 1562,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "12:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 813,
+      "price_3pax": 2235,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 25 min",
+      "dep_time": "1:00 PM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 469,
+      "price_3pax": 1289,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "27 hr 30 min",
+      "dep_time": "7:35 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 522,
+      "price_3pax": 1435,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "23 hr",
+      "dep_time": "12:30 AM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 568,
+      "price_3pax": 1562,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 15 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 598,
+      "price_3pax": 1644,
+      "airline": "China Southern",
+      "stops": 1,
+      "duration": "21 hr 25 min",
+      "dep_time": "12:35 AM",
+      "layovers": [
+        "Guangzhou"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 614,
+      "price_3pax": 1688,
+      "airline": "Korean Air and Asiana Airlines",
+      "stops": 1,
+      "duration": "17 hr 5 min",
+      "dep_time": "12:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 801,
+      "price_3pax": 2202,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "dep_time": "8:55 AM",
+      "layovers": [
+        "Los Angeles"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-09-30",
+      "price_pp": 801,
+      "price_3pax": 2202,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "15 hr 45 min",
+      "dep_time": "1:05 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-10",
+      "price_pp": 614,
+      "price_3pax": 1688,
+      "airline": "Korean Air and Asiana Airlines",
+      "stops": 1,
+      "duration": "17 hr 5 min",
+      "dep_time": "12:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-10",
+      "price_pp": 828,
+      "price_3pax": 2277,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "12:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-10",
+      "price_pp": 856,
+      "price_3pax": 2354,
+      "airline": "Cathay Pacific",
+      "stops": 1,
+      "duration": "19 hr 55 min",
+      "dep_time": "1:00 PM",
+      "layovers": [
+        "Hong Kong"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-10",
+      "price_pp": 936,
+      "price_3pax": 2574,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "18 hr 5 min",
+      "dep_time": "7:00 AM",
+      "layovers": [
+        "Los Angeles"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-10",
+      "price_pp": 936,
+      "price_3pax": 2574,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "18 hr 19 min",
+      "dep_time": "10:31 AM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-10",
+      "price_pp": 1032,
+      "price_3pax": 2838,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "15 hr 55 min",
+      "dep_time": "7:10 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-10",
+      "price_pp": 1422,
+      "price_3pax": 3910,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 25 min",
+      "dep_time": "1:00 PM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 568,
+      "price_3pax": 1562,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 20 min",
+      "dep_time": "12:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 813,
+      "price_3pax": 2235,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 25 min",
+      "dep_time": "1:00 PM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 494,
+      "price_3pax": 1358,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "27 hr 30 min",
+      "dep_time": "7:35 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 508,
+      "price_3pax": 1397,
+      "airline": "United and Air Canada",
+      "stops": 2,
+      "duration": "26 hr",
+      "dep_time": "9:05 PM",
+      "layovers": [
+        "Seattle"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 511,
+      "price_3pax": 1405,
+      "airline": "Air Canada and Asiana Airlines",
+      "stops": 2,
+      "duration": "22 hr 45 min",
+      "dep_time": "7:10 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 511,
+      "price_3pax": 1405,
+      "airline": "United, Air Canada and Asiana Airlines",
+      "stops": 2,
+      "duration": "21 hr 42 min",
+      "dep_time": "8:13 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 568,
+      "price_3pax": 1562,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 15 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 597,
+      "price_3pax": 1641,
+      "airline": "China Southern",
+      "stops": 1,
+      "duration": "18 hr 25 min",
+      "dep_time": "12:35 AM",
+      "layovers": [
+        "Wuhan"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 614,
+      "price_3pax": 1688,
+      "airline": "Korean Air and Asiana Airlines",
+      "stops": 1,
+      "duration": "17 hr 5 min",
+      "dep_time": "12:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 639,
+      "price_3pax": 1757,
+      "airline": "Philippine Airlines",
+      "stops": 1,
+      "duration": "23 hr",
+      "dep_time": "12:30 AM",
+      "layovers": [
+        "Manila"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 660,
+      "price_3pax": 1815,
+      "airline": "ANA",
+      "stops": 1,
+      "duration": "19 hr 30 min",
+      "dep_time": "1:10 AM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-20",
+      "price_pp": 887,
+      "price_3pax": 2439,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "15 hr 55 min",
+      "dep_time": "7:10 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-31",
+      "price_pp": 566,
+      "price_3pax": 1556,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "17 hr 30 min",
+      "dep_time": "7:30 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-31",
+      "price_pp": 568,
+      "price_3pax": 1562,
+      "airline": "Korean Air",
+      "stops": 1,
+      "duration": "16 hr 45 min",
+      "dep_time": "12:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-31",
+      "price_pp": 568,
+      "price_3pax": 1562,
+      "airline": "Asiana Airlines",
+      "stops": 1,
+      "duration": "19 hr 15 min",
+      "dep_time": "11:50 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-31",
+      "price_pp": 863,
+      "price_3pax": 2373,
+      "airline": "United",
+      "stops": 0,
+      "duration": "13 hr 50 min",
+      "dep_time": "1:55 PM",
+      "layovers": []
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-31",
+      "price_pp": 531,
+      "price_3pax": 1460,
+      "airline": "Air Canada",
+      "stops": 1,
+      "duration": "32 hr 25 min",
+      "dep_time": "4:35 PM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-31",
+      "price_pp": 545,
+      "price_3pax": 1498,
+      "airline": "United and Air Canada",
+      "stops": 2,
+      "duration": "26 hr 16 min",
+      "dep_time": "10:44 PM",
+      "layovers": [
+        "Los Angeles"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-31",
+      "price_pp": 548,
+      "price_3pax": 1507,
+      "airline": "Air Canada and Asiana Airlines",
+      "stops": 2,
+      "duration": "22 hr 35 min",
+      "dep_time": "7:30 AM",
+      "layovers": [
+        "Vancouver"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-31",
+      "price_pp": 614,
+      "price_3pax": 1688,
+      "airline": "Korean Air and Asiana Airlines",
+      "stops": 1,
+      "duration": "17 hr 25 min",
+      "dep_time": "12:40 PM",
+      "layovers": [
+        "Seoul"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-31",
+      "price_pp": 838,
+      "price_3pax": 2304,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "17 hr 30 min",
+      "dep_time": "8:55 AM",
+      "layovers": [
+        "Los Angeles"
+      ]
+    },
+    {
+      "origin": "SFO",
+      "dest": "PVG",
+      "date": "2026-10-31",
+      "price_pp": 838,
+      "price_3pax": 2304,
+      "airline": "Delta",
+      "stops": 1,
+      "duration": "18 hr 24 min",
+      "dep_time": "10:31 AM",
+      "layovers": [
+        "Seattle"
+      ]
+    }
+  ],
+  "best_combos": [
+    {
+      "total": 2237,
+      "pp": 746,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-09-10",
+        "price_pp": 461,
+        "price_3pax": 1267,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "25 hr 20 min",
+        "dep_time": "8:25 AM",
+        "layovers": [
+          "Tokyo"
+        ]
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 353,
+        "price_3pax": 970,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "30 hr 35 min",
+        "dep_time": "4:55 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "days": 20,
+      "weeks": 2.9
+    },
+    {
+      "total": 2237,
+      "pp": 746,
+      "out": {
+        "origin": "PVG",
+        "dest": "SFO",
+        "date": "2026-09-10",
+        "price_pp": 461,
+        "price_3pax": 1267,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "23 hr 5 min",
+        "dep_time": "8:25 AM",
+        "layovers": [
+          "Tokyo"
+        ]
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 353,
+        "price_3pax": 970,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "30 hr 35 min",
+        "dep_time": "4:55 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "days": 20,
+      "weeks": 2.9
+    },
+    {
+      "total": 2262,
+      "pp": 754,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-09-10",
+        "price_pp": 470,
+        "price_3pax": 1292,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "20 hr 45 min",
+        "dep_time": "1:00 PM",
+        "layovers": []
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 353,
+        "price_3pax": 970,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "30 hr 35 min",
+        "dep_time": "4:55 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "days": 20,
+      "weeks": 2.9
+    },
+    {
+      "total": 2262,
+      "pp": 754,
+      "out": {
+        "origin": "PVG",
+        "dest": "SFO",
+        "date": "2026-09-10",
+        "price_pp": 470,
+        "price_3pax": 1292,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "18 hr 30 min",
+        "dep_time": "1:00 PM",
+        "layovers": []
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 353,
+        "price_3pax": 970,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "30 hr 35 min",
+        "dep_time": "4:55 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "days": 20,
+      "weeks": 2.9
+    },
+    {
+      "total": 2265,
+      "pp": 755,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-09-10",
+        "price_pp": 471,
+        "price_3pax": 1295,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "17 hr 35 min",
+        "dep_time": "8:25 AM",
+        "layovers": []
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 353,
+        "price_3pax": 970,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "30 hr 35 min",
+        "dep_time": "4:55 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "days": 20,
+      "weeks": 2.9
+    },
+    {
+      "total": 2265,
+      "pp": 755,
+      "out": {
+        "origin": "PVG",
+        "dest": "SFO",
+        "date": "2026-09-10",
+        "price_pp": 471,
+        "price_3pax": 1295,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "17 hr 5 min",
+        "dep_time": "8:25 AM",
+        "layovers": []
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 353,
+        "price_3pax": 970,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "30 hr 35 min",
+        "dep_time": "4:55 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "days": 20,
+      "weeks": 2.9
+    },
+    {
+      "total": 2292,
+      "pp": 764,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-09-10",
+        "price_pp": 481,
+        "price_3pax": 1322,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "14 hr 15 min",
+        "dep_time": "8:35 AM",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 353,
+        "price_3pax": 970,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "30 hr 35 min",
+        "dep_time": "4:55 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "days": 20,
+      "weeks": 2.9
+    },
+    {
+      "total": 2292,
+      "pp": 764,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-09-10",
+        "price_pp": 481,
+        "price_3pax": 1322,
+        "airline": "Korean Air",
+        "stops": 1,
+        "duration": "15 hr 50 min",
+        "dep_time": "8:50 AM",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 353,
+        "price_3pax": 970,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "30 hr 35 min",
+        "dep_time": "4:55 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "days": 20,
+      "weeks": 2.9
+    },
+    {
+      "total": 2292,
+      "pp": 764,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-09-10",
+        "price_pp": 481,
+        "price_3pax": 1322,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "18 hr 40 min",
+        "dep_time": "1:10 PM",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 353,
+        "price_3pax": 970,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "30 hr 35 min",
+        "dep_time": "4:55 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "days": 20,
+      "weeks": 2.9
+    },
+    {
+      "total": 2328,
+      "pp": 776,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-08-25",
+        "price_pp": 494,
+        "price_3pax": 1358,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "36 hr 45 min",
+        "dep_time": "4:00 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-20",
+        "price_pp": 353,
+        "price_3pax": 970,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "30 hr 35 min",
+        "dep_time": "4:55 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "days": 26,
+      "weeks": 3.7
+    },
+    {
+      "total": 2328,
+      "pp": 776,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-08-25",
+        "price_pp": 494,
+        "price_3pax": 1358,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "36 hr 45 min",
+        "dep_time": "4:00 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 353,
+        "price_3pax": 970,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "30 hr 35 min",
+        "dep_time": "4:55 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "days": 36,
+      "weeks": 5.1
+    },
+    {
+      "total": 2328,
+      "pp": 776,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-09-01",
+        "price_pp": 494,
+        "price_3pax": 1358,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "36 hr 45 min",
+        "dep_time": "4:00 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-20",
+        "price_pp": 353,
+        "price_3pax": 970,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "30 hr 35 min",
+        "dep_time": "4:55 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "days": 19,
+      "weeks": 2.7
+    },
+    {
+      "total": 2328,
+      "pp": 776,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-09-01",
+        "price_pp": 494,
+        "price_3pax": 1358,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "36 hr 45 min",
+        "dep_time": "4:00 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 353,
+        "price_3pax": 970,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "30 hr 35 min",
+        "dep_time": "4:55 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "days": 29,
+      "weeks": 4.1
+    },
+    {
+      "total": 2383,
+      "pp": 794,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-09-10",
+        "price_pp": 461,
+        "price_3pax": 1267,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "25 hr 20 min",
+        "dep_time": "8:25 AM",
+        "layovers": [
+          "Tokyo"
+        ]
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 406,
+        "price_3pax": 1116,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "19 hr 45 min",
+        "dep_time": "10:10 AM",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      "days": 20,
+      "weeks": 2.9
+    },
+    {
+      "total": 2383,
+      "pp": 794,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-09-10",
+        "price_pp": 461,
+        "price_3pax": 1267,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "25 hr 20 min",
+        "dep_time": "8:25 AM",
+        "layovers": [
+          "Tokyo"
+        ]
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-10-20",
+        "price_pp": 406,
+        "price_3pax": 1116,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "19 hr 45 min",
+        "dep_time": "10:10 AM",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      "days": 40,
+      "weeks": 5.7
+    },
+    {
+      "total": 2383,
+      "pp": 794,
+      "out": {
+        "origin": "PVG",
+        "dest": "SFO",
+        "date": "2026-09-10",
+        "price_pp": 461,
+        "price_3pax": 1267,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "23 hr 5 min",
+        "dep_time": "8:25 AM",
+        "layovers": [
+          "Tokyo"
+        ]
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 406,
+        "price_3pax": 1116,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "19 hr 45 min",
+        "dep_time": "10:10 AM",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      "days": 20,
+      "weeks": 2.9
+    },
+    {
+      "total": 2383,
+      "pp": 794,
+      "out": {
+        "origin": "PVG",
+        "dest": "SFO",
+        "date": "2026-09-10",
+        "price_pp": 461,
+        "price_3pax": 1267,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "23 hr 5 min",
+        "dep_time": "8:25 AM",
+        "layovers": [
+          "Tokyo"
+        ]
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-10-20",
+        "price_pp": 406,
+        "price_3pax": 1116,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "19 hr 45 min",
+        "dep_time": "10:10 AM",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      "days": 40,
+      "weeks": 5.7
+    },
+    {
+      "total": 2394,
+      "pp": 798,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-08-25",
+        "price_pp": 494,
+        "price_3pax": 1358,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "36 hr 45 min",
+        "dep_time": "4:00 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "ret": {
+        "origin": "SFO",
+        "dest": "PVG",
+        "date": "2026-09-20",
+        "price_pp": 377,
+        "price_3pax": 1036,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "23 hr",
+        "dep_time": "12:30 AM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "days": 26,
+      "weeks": 3.7
+    },
+    {
+      "total": 2394,
+      "pp": 798,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-09-01",
+        "price_pp": 494,
+        "price_3pax": 1358,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "36 hr 45 min",
+        "dep_time": "4:00 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "ret": {
+        "origin": "SFO",
+        "dest": "PVG",
+        "date": "2026-09-20",
+        "price_pp": 377,
+        "price_3pax": 1036,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "23 hr",
+        "dep_time": "12:30 AM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "days": 19,
+      "weeks": 2.7
+    },
+    {
+      "total": 2402,
+      "pp": 801,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-09-10",
+        "price_pp": 461,
+        "price_3pax": 1267,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "25 hr 20 min",
+        "dep_time": "8:25 AM",
+        "layovers": [
+          "Tokyo"
+        ]
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 413,
+        "price_3pax": 1135,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "21 hr 15 min",
+        "dep_time": "11:30 PM",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      "days": 20,
+      "weeks": 2.9
+    },
+    {
+      "total": 2402,
+      "pp": 801,
+      "out": {
+        "origin": "PVG",
+        "dest": "SFO",
+        "date": "2026-09-10",
+        "price_pp": 461,
+        "price_3pax": 1267,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "23 hr 5 min",
+        "dep_time": "8:25 AM",
+        "layovers": [
+          "Tokyo"
+        ]
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 413,
+        "price_3pax": 1135,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "21 hr 15 min",
+        "dep_time": "11:30 PM",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      "days": 20,
+      "weeks": 2.9
+    },
+    {
+      "total": 2408,
+      "pp": 803,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-09-10",
+        "price_pp": 470,
+        "price_3pax": 1292,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "20 hr 45 min",
+        "dep_time": "1:00 PM",
+        "layovers": []
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 406,
+        "price_3pax": 1116,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "19 hr 45 min",
+        "dep_time": "10:10 AM",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      "days": 20,
+      "weeks": 2.9
+    },
+    {
+      "total": 2408,
+      "pp": 803,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-09-10",
+        "price_pp": 470,
+        "price_3pax": 1292,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "20 hr 45 min",
+        "dep_time": "1:00 PM",
+        "layovers": []
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-10-20",
+        "price_pp": 406,
+        "price_3pax": 1116,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "19 hr 45 min",
+        "dep_time": "10:10 AM",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      "days": 40,
+      "weeks": 5.7
+    },
+    {
+      "total": 2408,
+      "pp": 803,
+      "out": {
+        "origin": "PVG",
+        "dest": "SFO",
+        "date": "2026-09-10",
+        "price_pp": 470,
+        "price_3pax": 1292,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "18 hr 30 min",
+        "dep_time": "1:00 PM",
+        "layovers": []
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 406,
+        "price_3pax": 1116,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "19 hr 45 min",
+        "dep_time": "10:10 AM",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      "days": 20,
+      "weeks": 2.9
+    },
+    {
+      "total": 2408,
+      "pp": 803,
+      "out": {
+        "origin": "PVG",
+        "dest": "SFO",
+        "date": "2026-09-10",
+        "price_pp": 470,
+        "price_3pax": 1292,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "18 hr 30 min",
+        "dep_time": "1:00 PM",
+        "layovers": []
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-10-20",
+        "price_pp": 406,
+        "price_3pax": 1116,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "19 hr 45 min",
+        "dep_time": "10:10 AM",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      "days": 40,
+      "weeks": 5.7
+    },
+    {
+      "total": 2411,
+      "pp": 804,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-09-10",
+        "price_pp": 471,
+        "price_3pax": 1295,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "17 hr 35 min",
+        "dep_time": "8:25 AM",
+        "layovers": []
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 406,
+        "price_3pax": 1116,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "19 hr 45 min",
+        "dep_time": "10:10 AM",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      "days": 20,
+      "weeks": 2.9
+    },
+    {
+      "total": 2411,
+      "pp": 804,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-09-10",
+        "price_pp": 471,
+        "price_3pax": 1295,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "17 hr 35 min",
+        "dep_time": "8:25 AM",
+        "layovers": []
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-10-20",
+        "price_pp": 406,
+        "price_3pax": 1116,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "19 hr 45 min",
+        "dep_time": "10:10 AM",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      "days": 40,
+      "weeks": 5.7
+    },
+    {
+      "total": 2411,
+      "pp": 804,
+      "out": {
+        "origin": "PVG",
+        "dest": "SFO",
+        "date": "2026-09-10",
+        "price_pp": 471,
+        "price_3pax": 1295,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "17 hr 5 min",
+        "dep_time": "8:25 AM",
+        "layovers": []
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 406,
+        "price_3pax": 1116,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "19 hr 45 min",
+        "dep_time": "10:10 AM",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      "days": 20,
+      "weeks": 2.9
+    },
+    {
+      "total": 2411,
+      "pp": 804,
+      "out": {
+        "origin": "PVG",
+        "dest": "SFO",
+        "date": "2026-09-10",
+        "price_pp": 471,
+        "price_3pax": 1295,
+        "airline": "ANA",
+        "stops": 1,
+        "duration": "17 hr 5 min",
+        "dep_time": "8:25 AM",
+        "layovers": []
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-10-20",
+        "price_pp": 406,
+        "price_3pax": 1116,
+        "airline": "Asiana Airlines",
+        "stops": 1,
+        "duration": "19 hr 45 min",
+        "dep_time": "10:10 AM",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      "days": 40,
+      "weeks": 5.7
+    },
+    {
+      "total": 2419,
+      "pp": 806,
+      "out": {
+        "origin": "PVG",
+        "dest": "LAX",
+        "date": "2026-09-10",
+        "price_pp": 527,
+        "price_3pax": 1449,
+        "airline": "Korean Air",
+        "stops": 1,
+        "duration": "16 hr 10 min",
+        "dep_time": "1:40 PM",
+        "layovers": [
+          "Seoul"
+        ]
+      },
+      "ret": {
+        "origin": "LAX",
+        "dest": "PVG",
+        "date": "2026-09-30",
+        "price_pp": 353,
+        "price_3pax": 970,
+        "airline": "Philippine Airlines",
+        "stops": 1,
+        "duration": "30 hr 35 min",
+        "dep_time": "4:55 PM",
+        "layovers": [
+          "Manila"
+        ]
+      },
+      "days": 20,
+      "weeks": 2.9
+    }
+  ],
+  "search_count": 58,
+  "errors": 0
+}

@@ -1,0 +1,268 @@
+{
+  "search": {
+    "departure": "PVG",
+    "arrival": "LAX",
+    "date": "2026-05-15",
+    "departure_city": "上海",
+    "arrival_city": "洛杉矶"
+  },
+  "timestamp": "2026-03-16T22:47:25.282317",
+  "strategies": {
+    "ctrip_mobile_api": {
+      "strategy": "ctrip_mobile_api",
+      "endpoint": "https://m.ctrip.com/restapi/soa2/14022/flightListSearch",
+      "status": "no_flight_data",
+      "attempts": [
+        {
+          "format": 1,
+          "http_status": 200,
+          "response_length": 587,
+          "parsed": true,
+          "rlt_code": 510,
+          "flight_count": 0,
+          "airport_count": 0,
+          "airline_count": 0,
+          "is_complete": false,
+          "ack": "Success",
+          "errors": []
+        },
+        {
+          "format": 2,
+          "http_status": 200,
+          "response_length": 586,
+          "parsed": true,
+          "rlt_code": 510,
+          "flight_count": 0,
+          "airport_count": 0,
+          "airline_count": 0,
+          "is_complete": false,
+          "ack": "Success",
+          "errors": []
+        },
+        {
+          "format": 3,
+          "http_status": 200,
+          "response_length": 587,
+          "parsed": true,
+          "rlt_code": 510,
+          "flight_count": 0,
+          "airport_count": 0,
+          "airline_count": 0,
+          "is_complete": false,
+          "ack": "Success",
+          "errors": []
+        }
+      ],
+      "analysis": "Ctrip mobile API responds to requests but returns empty flight lists. The rlt=510 code and iscomplete=false suggest the API needs either: (a) valid session cookies from a browser session, or (b) a specific request signing mechanism, or (c) a preceding token-exchange call. The API structure is valid and operational, just requires auth context."
+    },
+    "ctrip_lowest_price": {
+      "strategy": "ctrip_lowest_price",
+      "endpoint": "https://flights.ctrip.com/itinerary/api/12808/lowestPrice",
+      "status": "api_defunct",
+      "attempts": [
+        {
+          "route": "PVG-LAX",
+          "http_status": 200,
+          "msg": "success",
+          "oneWayPrice": null,
+          "roundTripPrice": null,
+          "has_data": false
+        },
+        {
+          "route": "SHA-PEK",
+          "http_status": 200,
+          "msg": "success",
+          "oneWayPrice": null,
+          "roundTripPrice": null,
+          "has_data": false
+        }
+      ],
+      "analysis": "The Ctrip lowestPrice API returns null for all routes tested (both domestic SHA-PEK and international PVG-LAX). Combined with the old /products endpoint being officially offline ('接口下线'), Ctrip has deprecated these unauthenticated API endpoints. Their newer architecture uses Next.js SSR with the runtime server at online.flight.ctripcorp.com, and the partner API uses protobuf+ZSTD via soa2/16427."
+    },
+    "ctrip_old_api": {
+      "strategy": "ctrip_old_products_api",
+      "endpoint": "https://flights.ctrip.com/itinerary/api/12808/products",
+      "status": "confirmed_offline",
+      "response": {
+        "status": 0,
+        "data": {
+          "error": {
+            "code": "",
+            "msg": "接口下线"
+          }
+        }
+      },
+      "error_msg": "接口下线",
+      "analysis": "The old Ctrip /itinerary/api/12808/products endpoint officially returns '接口下线' (interface offline). This was the primary endpoint used by scrapers like github.com/zhuang1108/Ctrip-Crawler. It accepted POST with JSON body containing flightWay, classType, airportParams, etc. Ctrip has migrated to SSR (Next.js) and partner protobuf APIs."
+    },
+    "fliggy_mtop": {
+      "strategy": "fliggy_mtop",
+      "status": "auth_wall",
+      "endpoints_tested": [
+        {
+          "name": "Taobao H5 API",
+          "url": "https://h5api.m.taobao.com/h5/mtop.trip.flight.search/1.0/",
+          "http_status": 200,
+          "response_length": 72,
+          "response_preview": "{\"api\":\"\",\"v\":\"\",\"ret\":[\"FAIL_SYS_API_NOT_FOUNDED::请求API不存在\"],\"data\":{}}"
+        },
+        {
+          "name": "Fliggy H5 API",
+          "url": "https://h5api.m.fliggy.com/h5/mtop.trip.flight.search/1.0/",
+          "http_status": 200,
+          "response_length": 72,
+          "response_preview": "{\"api\":\"\",\"v\":\"\",\"ret\":[\"FAIL_SYS_API_NOT_FOUNDED::请求API不存在\"],\"data\":{}}"
+        },
+        {
+          "name": "Fliggy Main Site",
+          "url": "https://www.fliggy.com/",
+          "http_status": 200,
+          "final_url": "https://market.m.taobao.com/app/trip/rx-home/pages/home",
+          "response_length": 4221
+        },
+        {
+          "name": "Fliggy H5 Mobile (expired cert expected)",
+          "url": "https://h5.m.fliggy.com/trip/domestic/search-flight",
+          "http_status": 200,
+          "final_url": "https://h5.m.fliggy.com/trip/domestic/search-flight",
+          "response_length": 97
+        }
+      ],
+      "analysis": "Fliggy uses Alibaba's mtop protocol for all API calls. Every request requires: appKey, OAuth token, HMAC signature, timestamp. Without a Chinese phone number, you cannot create an Alibaba account to get OAuth credentials. The H5 mobile site (h5.m.fliggy.com) has an expired SSL certificate as of March 2026. The main site (fliggy.com) loads but flight search requires authentication. NCMS CAPTCHA blocks automated access even with valid credentials."
+    },
+    "qunar_playwright": {
+      "strategy": "qunar_playwright",
+      "status": "partial_success",
+      "page_length": 232208,
+      "found_elements": {
+        "[class*='flight']": 2,
+        "[class*='price']": 1
+      },
+      "content_text_length": 213,
+      "content_preview": "提示:您已进入网站预订区,本区域含有3个模块,按下Tab键浏览信息\n【登录APP活动】\n登录APP购票可尊享更多优惠活动，享惊喜价格。\n【登录优惠活动】\n登录购票可享受更多优惠活动，享受惊喜价格\n【优惠活动】\n受产品规则限制，不同端展示机票产品不同\n提示:您已离开网站预订区\n提示:您已进入网站产品区,按下Tab键浏览信息\n\n\n\n\n价格日历\n起飞时间价格排序\n暂无符合条件的机票信息，请重新搜索\n提示:您已离开网站产品区",
+      "captcha_detected": [
+        "verify",
+        "security"
+      ],
+      "intercepted_responses": [
+        {
+          "url": "https://q.qunarzz.com/flight_qzz/prd/lib@0b8ac3ae654839e6443f.js",
+          "status": 200,
+          "content_type": "application/javascript; charset=UTF-8",
+          "body_length": 335397,
+          "body_preview": "(function(e){function i(t){if(n[t])return n[t].exports;var r=n[t]={exports:{},id:t,loaded:false};e[t].call(r.exports,r,r.exports,i);r.loaded=true;return r.exports}var t=window[\"webpackJsonp\"];window[\"webpackJsonp\"]=function(o,u){var a,f,l=0,c=[];for(;l<o.length;l++){f=o[l];if(r[f])c.push.apply(c,r[f]);r[f]=0}for(a in u){e[a]=u[a]}if(t)t(o,u);while(c.length)c.shift().call(null,i);if(u[0]){n[0]=0;return i(0)}};var n={};var r={10:0};i.e=function(t,n){if(r[t]===0)return n.call(null,i);if(r[t]!==undefined){r[t].push(n)}else{r[t]=[n];var s=document.getElementsByTagName(\"head\")[0];var o=document.createElement(\"script\");o.type=\"text/javascript\";o.charset=\"utf-8\";o.async=true;o.src=i.p+\"\"+t+\".chunk@\"+{0:\"12c63fa8af62b1d60d21\",1:\"d4f28c66204a6dce3258\",2:\"b9c67a2d58d00a02dbd7\",3:\"13c88e2651631e88a467\",4:\"853e3bb07d7eb17eef9c\",5:\"24f468e20c46cb1b61fd\",6:\"0125a7d5e582cf8f8c42\",7:\"60d05c735c490765f7e7\",8:\"211e5d8ff92ccef0740c\",9:\"7f4b29a94765072f6d94\",11:\"2701e5a78b3db14a193e\"}[t]+\".js\";s.appendChil"
+        },
+        {
+          "url": "https://q.qunarzz.com/flight_qzz/prd/header@0125a7d5e582cf8f8c42.js",
+          "status": 200,
+          "content_type": "application/javascript; charset=UTF-8",
+          "body_length": 216407,
+          "body_preview": "webpackJsonp([6],{0:function(e,t,n){\"use strict\";function p(e){return e&&e.__esModule?e:{\"default\":e}}var r=n(1);var i=p(r);var s=n(153);var o=n(154);var u=n(750);var a=p(u);var f=n(778);var l=p(f);var c=n(537);var h=p(c);h[\"default\"].polyfill();window.pageHeader={dispatch:l[\"default\"].dispatch,getState:l[\"default\"].getState};window.displayAssistEntry&&window.displayAssistEntry();(0,s.render)(i[\"default\"].createElement(o.Provider,{store:l[\"default\"]},i[\"default\"].createElement(a[\"default\"],null)),document.getElementById(\"header\"))},213:function(e,t,n){var r;(function(e){(function(){var i,s,o,u,a,f,l,c;o=function(e){return window.document.createElement(e)};u=window.encodeURIComponent;l=Math.random;i=function(e){var t,n,r,i,u,f,l;if(e==null){e={}}f={data:e.data||{},error:e.error||a,success:e.success||a,beforeSend:e.beforeSend||a,complete:e.complete||a,url:e.url||\"\"};f.computedUrl=s(f);if(f.url.length===0){throw new Error(\"MissingUrl\")}i=false;if(f.beforeSend({},f)!==false){r=e.callbackNa"
+        },
+        {
+          "url": "https://q.qunarzz.com/flight_qzz/prd/domestic_oneway_new@b9c67a2d58d00a02dbd7.js",
+          "status": 200,
+          "content_type": "application/javascript; charset=UTF-8",
+          "body_length": 444677,
+          "body_preview": "webpackJsonp([2],[function(e,t,n){\"use strict\";function x(e){return e&&e.__esModule?e:{\"default\":e}}var r=n(539);var i=x(r);var s=n(1);var o=x(s);var u=n(153);var a=n(154);var f=n(540);var l=x(f);var c=n(644);var h=x(c);var p=n(554);var d=n(572);var v=n(583);var m=n(605);var g=n(648);var y=x(g);var b=n(537);var w=x(b);n(678);n(679);var E=n(558);var S=x(E);w[\"default\"].polyfill();var T=(0,h[\"default\"])(y[\"default\"]);S[\"default\"].init(T);T.dispatch((0,p.getFlightData)());T.dispatch((0,v.fetchNearData)());(0,u.render)(o[\"default\"].createElement(a.Provider,{store:T},o[\"default\"].createElement(l[\"default\"],null)),document.getElementById(\"content\"));(function(){function i(){if(n){return}var e=document.createElement(\"script\");e.id=\"boomr-scr-as\";e.src=window.BOOMR.url;e.async=true;t.appendChild(e);n=true}function s(e){n=true;var r=void 0;var i=document;var s=void 0;var o=void 0;var u=void 0;var a=window;window.BOOMR.snippetMethod=e?\"if\":\"i\";s=function(t,n){var r=i.createElement(\"script\");r.id"
+        },
+        {
+          "url": "https://q.qunarzz.com/flight_qzz/prd/rightSidebar@2701e5a78b3db14a193e.js",
+          "status": 200,
+          "content_type": "application/javascript; charset=UTF-8",
+          "body_length": 97524,
+          "body_preview": "webpackJsonp([11],{0:function(e,t,n){\"use strict\";function p(e){return e&&e.__esModule?e:{\"default\":e}}var r=n(1);var i=p(r);var s=n(153);var o=n(154);var u=n(1236);var a=p(u);var f=n(778);var l=p(f);var c=n(537);var h=p(c);h[\"default\"].polyfill();window.pageRight={dispatch:l[\"default\"].dispatch,getState:l[\"default\"].getState};(0,s.render)(i[\"default\"].createElement(o.Provider,{store:l[\"default\"]},i[\"default\"].createElement(a[\"default\"],null)),document.getElementById(\"right-sidebar\"))},206:function(e,t){},213:function(e,t,n){var r;(function(e){(function(){var i,s,o,u,a,f,l,c;o=function(e){return window.document.createElement(e)};u=window.encodeURIComponent;l=Math.random;i=function(e){var t,n,r,i,u,f,l;if(e==null){e={}}f={data:e.data||{},error:e.error||a,success:e.success||a,beforeSend:e.beforeSend||a,complete:e.complete||a,url:e.url||\"\"};f.computedUrl=s(f);if(f.url.length===0){throw new Error(\"MissingUrl\")}i=false;if(f.beforeSend({},f)!==false){r=e.callbackName||\"callback\";n=e.callback"
+        },
+        {
+          "url": "https://q.qunarzz.com/flight_qzz/prd/footer@853e3bb07d7eb17eef9c.js",
+          "status": 200,
+          "content_type": "application/javascript; charset=UTF-8",
+          "body_length": 84955,
+          "body_preview": "webpackJsonp([4],{0:function(e,t,n){\"use strict\";function p(e){return e&&e.__esModule?e:{\"default\":e}}var r=n(1);var i=p(r);var s=n(153);var o=n(154);var u=n(717);var a=p(u);var f=n(734);var l=p(f);var c=n(537);var h=p(c);h[\"default\"].polyfill();window.pageFooter={dispatch:l[\"default\"].dispatch,getState:l[\"default\"].getState};(0,s.render)(i[\"default\"].createElement(o.Provider,{store:l[\"default\"]},i[\"default\"].createElement(a[\"default\"],null)),document.getElementById(\"footer\"))},213:function(e,t,n){var r;(function(e){(function(){var i,s,o,u,a,f,l,c;o=function(e){return window.document.createElement(e)};u=window.encodeURIComponent;l=Math.random;i=function(e){var t,n,r,i,u,f,l;if(e==null){e={}}f={data:e.data||{},error:e.error||a,success:e.success||a,beforeSend:e.beforeSend||a,complete:e.complete||a,url:e.url||\"\"};f.computedUrl=s(f);if(f.url.length===0){throw new Error(\"MissingUrl\")}i=false;if(f.beforeSend({},f)!==false){r=e.callbackName||\"callback\";n=e.callbackFunc||\"jsonp_\"+c(15);t=f.dat"
+        },
+        {
+          "url": "https://flight.qunar.com/touch/api/domestic/wbdflightlist",
+          "status": 200,
+          "content_type": "application/json; charset=utf-8",
+          "body_length": 117,
+          "body_preview": "{\"ret\":true,\"code\":-1,\"msg\":\"请求成功\",\"data\":{\"allFilter\":[],\"min_flight\":{},\"flights\":[],\"total\":0,\"geographyInfo\":{}}}"
+        },
+        {
+          "url": "https://flight.qunar.com/gw/f/flight/unified/tip",
+          "status": 200,
+          "content_type": "application/json;charset=UTF-8",
+          "body_length": 2191,
+          "body_preview": "{\"code\":0,\"des\":\"成功\",\"data\":{\"timeStamp\":1773398889120,\"abTestGroup\":{\"250709_fl_gn_pickchildshownbanner\":\"\"},\"abTestResult\":{\"250709_fl_gn_pickchildshownbanner\":\"false\",\"available_coupons_ab\":\"false\",\"unified_tip_spread_ab\":\"false\"},\"redTip\":{\"ext\":{\"toMoreColor\":\"#F2200A\",\"floatTitle\":\"重要公告\",\"floatTitleColor\":\"#21212\",\"outTitleColor\":\"#FF0000\"},\"outTitle\":\"出行公告(3条):登录APP活动·登录优惠活动·优惠活动\",\"tips\":[{\"backgroundColorStr\":null,\"innerTips\":[],\"updateTime\":\"更新时间：2022-04-19\",\"tipExt\":{\"voucherOverdue\":\"false\",\"icon\":null,\"apolloVoucher\":\"false\",\"supportOfficial\":\"false\",\"url\":null,\"order\":\"-9999\"},\"title\":{\"floatColor\":\"#212121\",\"color\":\"#F2200A\",\"text\":\"登录APP活动\"},\"labelUrl\":null,\"layerContent\":null,\"content\":{\"floatColor\":\"#616161\",\"color\":\"#616161\",\"text\":\"登录APP购票可尊享更多优惠活动，享惊喜价格。\"},\"jumpUrl\":null,\"jumpUrlText\":null,\"subTitle\":{\"floatColor\":\"#333f\",\"color\":\"#333f\",\"text\":null},\"backgroundColorList\":null,\"backgroundPicture\":null,\"rowKey\":\"AA70\"},{\"backgroundColorStr\":null,\"innerTips\":[],\"updat"
+        },
+        {
+          "url": "https://flight.qunar.com/gw/f/flight/list/whitetip",
+          "status": 200,
+          "content_type": "application/json;charset=UTF-8",
+          "body_length": 24,
+          "body_preview": "{\"tip\":null,\"status\":-2}"
+        },
+        {
+          "url": "https://gw.flight.qunar.com/api/f/priceCalendar?dep=%E4%B8%8A%E6%B5%B7&arr=%E6%B4%9B%E6%9D%89%E7%9F%B6&days=&priceType=1&callback=jsonp_ii2gmls5jituwyw",
+          "status": 200,
+          "content_type": "application/json;charset=UTF-8",
+          "body_length": 146178,
+          "body_preview": "jsonp_ii2gmls5jituwyw({\"bstatus\":{\"code\":0,\"des\":\"成功\"},\"data\":{\"showDirectButton\":0,\"bflights\":[{\"date\":\"2026-03-17\",\"code\":\"\",\"originalPrice\":null,\"backFlight\":\"\",\"sourceDesc\":null,\"price\":\"\",\"backDate\":\"\",\"directPriceDesc\":\"查价\",\"disabled\":false,\"goFlight\":\"\",\"directPrice\":\"\",\"priceDesc\":\"查价\"},{\"date\":\"2026-03-18\",\"code\":\"\",\"originalPrice\":null,\"backFlight\":\"\",\"sourceDesc\":null,\"price\":\"\",\"backDate\":\"\",\"directPriceDesc\":\"查价\",\"disabled\":false,\"goFlight\":\"\",\"directPrice\":\"\",\"priceDesc\":\"查价\"},{\"date\":\"2026-03-19\",\"code\":\"\",\"originalPrice\":null,\"backFlight\":\"\",\"sourceDesc\":null,\"price\":\"\",\"backDate\":\"\",\"directPriceDesc\":\"查价\",\"disabled\":false,\"goFlight\":\"\",\"directPrice\":\"\",\"priceDesc\":\"查价\"},{\"date\":\"2026-03-20\",\"code\":\"\",\"originalPrice\":null,\"backFlight\":\"\",\"sourceDesc\":null,\"price\":\"\",\"backDate\":\"\",\"directPriceDesc\":\"查价\",\"disabled\":false,\"goFlight\":\"\",\"directPrice\":\"\",\"priceDesc\":\"查价\"},{\"date\":\"2026-03-21\",\"code\":\"\",\"originalPrice\":null,\"backFlight\":\"\",\"sourceDesc\":null,\"price\":\"\",\"backDa"
+        },
+        {
+          "url": "https://m.flight.qunar.com/flightConfig/calendar/www?callback=getHoliday",
+          "status": 200,
+          "content_type": "text/javascript; charset=utf-8",
+          "body_length": 7352,
+          "body_preview": "/**/ typeof getHoliday === 'function' && getHoliday(\"{\\\"HolidayData\\\":{\\\"2022-01-01\\\":{\\\"afterTime\\\":3,\\\"beforeTime\\\":3,\\\"dayindex\\\":0,\\\"holidayName\\\":\\\"元旦\\\",\\\"holidayClass\\\":\\\"yuandan\\\"},\\\"2022-01-31\\\":{\\\"afterTime\\\":3,\\\"beforeTime\\\":3,\\\"dayindex\\\":0,\\\"holidayName\\\":\\\"除夕\\\",\\\"holidayClass\\\":\\\"chuxi\\\"},\\\"2022-02-01\\\":{\\\"afterTime\\\":3,\\\"beforeTime\\\":3,\\\"dayindex\\\":0,\\\"holidayName\\\":\\\"春节\\\",\\\"holidayClass\\\":\\\"chuenjie\\\"},\\\"2022-02-14\\\":{\\\"afterTime\\\":3,\\\"beforeTime\\\":3,\\\"dayindex\\\":0,\\\"holidayName\\\":\\\"情人节\\\",\\\"holidayClass\\\":\\\"qingrenjie\\\"},\\\"2022-02-15\\\":{\\\"afterTime\\\":3,\\\"beforeTime\\\":3,\\\"dayindex\\\":0,\\\"holidayName\\\":\\\"元宵节\\\",\\\"holidayClass\\\":\\\"yuanxiaojie\\\"},\\\"2022-03-08\\\":{\\\"afterTime\\\":3,\\\"beforeTime\\\":3,\\\"dayindex\\\":0,\\\"holidayName\\\":\\\"妇女节\\\",\\\"holidayClass\\\":\\\"funvjie\\\"},\\\"2022-04-05\\\":{\\\"afterTime\\\":3,\\\"beforeTime\\\":3,\\\"dayindex\\\":0,\\\"holidayName\\\":\\\"清明节\\\",\\\"holidayClass\\\":\\\"qingmingjie\\\"},\\\"2022-05-01\\\":{\\\"afterTime\\\":3,\\\"beforeTime\\\":3,\\\"dayindex\\\":0,\\\"holidayName\\\":\\\"劳动节\\\",\\\"holida"
+        }
+      ],
+      "screenshot": "D:\\claude\\flights\\qunar_screenshot.png",
+      "analysis": "Qunar rendered some content via Playwright. Flight data may be available through network interception of XHR responses."
+    }
+  },
+  "findings": [
+    "1. FLIGGY (飞猪):",
+    "   - Status: NOT ACCESSIBLE without Alibaba OAuth credentials",
+    "   - The mtop protocol requires appKey + OAuth token + HMAC signature",
+    "   - Account creation requires a Chinese phone number",
+    "   - h5.m.fliggy.com has an expired SSL certificate",
+    "   - fliggy.hk redirects to an error page",
+    "   - NCMS (Non-Critical Mode Security) CAPTCHA blocks automation",
+    "",
+    "2. CTRIP (携程):",
+    "   - Old /itinerary/api/12808/products: OFFICIALLY OFFLINE ('接口下线')",
+    "   - lowestPrice API: Returns null for all routes (deprecated)",
+    "   - Mobile API (soa2/14022/flightListSearch): Responds but needs",
+    "     session cookies or signing (returns empty arrays without auth)",
+    "   - Partner API (soa2/16427): Requires protobuf+ZSTD + partner auth",
+    "   - New architecture: Next.js SSR via online.flight.ctripcorp.com",
+    "   - BEST APPROACH: Browser automation with existing ctrip_crawler.py",
+    "",
+    "3. QUNAR (去哪儿):",
+    "   - All flight data is JS-rendered (empty HTML shells)",
+    "   - Mobile site returns 403 to non-browser requests",
+    "   - No public API endpoints found (all return 404 or redirect)",
+    "   - Playwright scraping possible but needs anti-bot evasion",
+    "   - Heavy obfuscation in JS bundles from q.qunarzz.com",
+    "",
+    "4. TRIP.COM (携程国际版):",
+    "   - Developer portal requires sign-in at developers.trip.com",
+    "   - Same backend as Ctrip with additional Akamai 428 protection",
+    "",
+    "5. LY.COM (同程):",
+    "   - Vue.js SPA, requires JS rendering for all content",
+    "   - No public API endpoints exposed in page source",
+    "",
+    "RECOMMENDATION:",
+    "   For Chinese OTA flight data, use the existing ctrip_crawler.py",
+    "   which uses Playwright stealth + CAPTCHA solving. That approach",
+    "   intercepts XHR responses during browser rendering, which is the",
+    "   only reliable method since all Chinese OTAs have moved to:",
+    "   (a) SSR/SPA architectures requiring full JS rendering",
+    "   (b) Authenticated API endpoints with session cookies",
+    "   (c) Anti-bot systems (GeeTest, NCMS, Akamai)",
+    "",
+    "   Fliggy prices are within 5-10% of Ctrip for the same routes.",
+    "   Both pull from the same airline GDS inventory."
+  ]
+}

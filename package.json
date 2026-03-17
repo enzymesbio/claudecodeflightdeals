@@ -1,0 +1,19 @@
+{
+  "name": "flights",
+  "version": "1.0.0",
+  "description": "Flight deal tracker - Asia to USA",
+  "main": "import_to_convex.js",
+  "scripts": {
+    "convex:login": "npx convex login",
+    "convex:dev": "npx convex dev",
+    "convex:deploy": "npx convex deploy",
+    "import": "node import_to_convex.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "convex": "^1.33.1"
+  }
+}

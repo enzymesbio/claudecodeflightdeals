@@ -1,0 +1,4331 @@
+{
+  "crawl_timestamp": "2026-03-16T22:45:37.823011",
+  "crawler_version": "1.0.0",
+  "config": {
+    "captcha_service": "capmonster",
+    "captcha_key_set": true,
+    "proxy_set": false,
+    "headless": true,
+    "routes_searched": [
+      "CTU-LAX",
+      "PVG-LAX",
+      "PVG-SFO",
+      "CAN-LAX",
+      "ICN-LAX"
+    ],
+    "dates_searched": [
+      "2026-05-01",
+      "2026-05-08",
+      "2026-05-15",
+      "2026-05-22",
+      "2026-05-29",
+      "2026-06-01",
+      "2026-06-08",
+      "2026-06-15",
+      "2026-06-22",
+      "2026-06-29",
+      "2026-09-01",
+      "2026-09-08",
+      "2026-09-15",
+      "2026-09-22",
+      "2026-09-29"
+    ]
+  },
+  "results_count": 168,
+  "results": [
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 5357,
+      "currency": "CNY",
+      "departure_time": "22:10",
+      "arrival_time": "20:30",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "CZ3472",
+      "airline": "",
+      "price": 3527,
+      "currency": "CNY",
+      "departure_time": "17:00",
+      "arrival_time": "20:00",
+      "duration": "2h15m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "CZ3444",
+      "airline": "",
+      "price": 3527,
+      "currency": "CNY",
+      "departure_time": "15:00",
+      "arrival_time": "20:00",
+      "duration": "4h15m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "CZ3438",
+      "airline": "",
+      "price": 3527,
+      "currency": "CNY",
+      "departure_time": "13:00",
+      "arrival_time": "20:00",
+      "duration": "6h15m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "CZ3402",
+      "airline": "",
+      "price": 3527,
+      "currency": "CNY",
+      "departure_time": "12:00",
+      "arrival_time": "20:00",
+      "duration": "7h10m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "CZ3476",
+      "airline": "",
+      "price": 3527,
+      "currency": "CNY",
+      "departure_time": "21:00",
+      "arrival_time": "20:00",
+      "duration": "22h25m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3610,
+      "currency": "CNY",
+      "departure_time": "13:15",
+      "arrival_time": "20:20",
+      "duration": "5h50m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3610,
+      "currency": "CNY",
+      "departure_time": "09:10",
+      "arrival_time": "20:20",
+      "duration": "9h55m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3677,
+      "currency": "CNY",
+      "departure_time": "09:00",
+      "arrival_time": "10:05",
+      "duration": "1h20m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3677,
+      "currency": "CNY",
+      "departure_time": "06:55",
+      "arrival_time": "10:05",
+      "duration": "3h15m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3879,
+      "currency": "CNY",
+      "departure_time": "17:00",
+      "arrival_time": "20:10",
+      "duration": "1h55m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3879,
+      "currency": "CNY",
+      "departure_time": "16:40",
+      "arrival_time": "20:10",
+      "duration": "2h30m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 4657,
+      "currency": "CNY",
+      "departure_time": "22:10",
+      "arrival_time": "20:30",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "MU9184",
+      "airline": "",
+      "price": 3027,
+      "currency": "CNY",
+      "departure_time": "21:20",
+      "arrival_time": "10:05",
+      "duration": "13h30m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "MU5404",
+      "airline": "",
+      "price": 3027,
+      "currency": "CNY",
+      "departure_time": "19:00",
+      "arrival_time": "10:05",
+      "duration": "15h05m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "MU5416",
+      "airline": "",
+      "price": 3027,
+      "currency": "CNY",
+      "departure_time": "16:00",
+      "arrival_time": "10:05",
+      "duration": "18h25m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3027,
+      "currency": "CNY",
+      "departure_time": "16:00",
+      "arrival_time": "10:05",
+      "duration": "18h35m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "MF8432",
+      "airline": "",
+      "price": 3527,
+      "currency": "CNY",
+      "departure_time": "17:05",
+      "arrival_time": "20:00",
+      "duration": "2h25m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "MF8402",
+      "airline": "",
+      "price": 3527,
+      "currency": "CNY",
+      "departure_time": "12:00",
+      "arrival_time": "20:00",
+      "duration": "7h50m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3677,
+      "currency": "CNY",
+      "departure_time": "09:00",
+      "arrival_time": "10:05",
+      "duration": "1h20m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3677,
+      "currency": "CNY",
+      "departure_time": "18:10",
+      "arrival_time": "10:05",
+      "duration": "16h15m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3677,
+      "currency": "CNY",
+      "departure_time": "14:00",
+      "arrival_time": "10:05",
+      "duration": "20h45m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 4169,
+      "currency": "CNY",
+      "departure_time": "13:25",
+      "arrival_time": "18:40",
+      "duration": "4h15m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 4169,
+      "currency": "CNY",
+      "departure_time": "13:25",
+      "arrival_time": "21:35",
+      "duration": "6h55m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "CTU-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "MU583",
+      "airline": "",
+      "price": 5127,
+      "currency": "CNY",
+      "departure_time": "13:10",
+      "arrival_time": "10:05",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "UA199",
+      "airline": "",
+      "price": 7861,
+      "currency": "CNY",
+      "departure_time": "20:10",
+      "arrival_time": "16:55",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "BR751",
+      "airline": "",
+      "price": 3416,
+      "currency": "CNY",
+      "departure_time": "16:00",
+      "arrival_time": "16:40",
+      "duration": "1h40m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "BR721",
+      "airline": "",
+      "price": 3416,
+      "currency": "CNY",
+      "departure_time": "20:05",
+      "arrival_time": "20:55",
+      "duration": "1h55m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "BR711",
+      "airline": "",
+      "price": 3416,
+      "currency": "CNY",
+      "departure_time": "13:10",
+      "arrival_time": "16:40",
+      "duration": "4h35m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "BR751",
+      "airline": "",
+      "price": 3416,
+      "currency": "CNY",
+      "departure_time": "16:00",
+      "arrival_time": "20:55",
+      "duration": "5h55m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "CA1884",
+      "airline": "",
+      "price": 3879,
+      "currency": "CNY",
+      "departure_time": "16:20",
+      "arrival_time": "20:10",
+      "duration": "2h55m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 4699,
+      "currency": "CNY",
+      "departure_time": "17:20",
+      "arrival_time": "22:00",
+      "duration": "2h34m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 4699,
+      "currency": "CNY",
+      "departure_time": "17:20",
+      "arrival_time": "00:15",
+      "duration": "4h54m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 4699,
+      "currency": "CNY",
+      "departure_time": "17:20",
+      "arrival_time": "11:04",
+      "duration": "15h35m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 4699,
+      "currency": "CNY",
+      "departure_time": "17:20",
+      "arrival_time": "12:33",
+      "duration": "17h09m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 4699,
+      "currency": "CNY",
+      "departure_time": "17:20",
+      "arrival_time": "13:35",
+      "duration": "18h11m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "UA199",
+      "airline": "",
+      "price": 4276,
+      "currency": "CNY",
+      "departure_time": "20:10",
+      "arrival_time": "17:20",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "MU583",
+      "airline": "",
+      "price": 4637,
+      "currency": "CNY",
+      "departure_time": "13:10",
+      "arrival_time": "10:05",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3077,
+      "currency": "CNY",
+      "departure_time": "13:10",
+      "arrival_time": "20:30",
+      "duration": "5h45m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3077,
+      "currency": "CNY",
+      "departure_time": "11:55",
+      "arrival_time": "20:30",
+      "duration": "7h20m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "BR751",
+      "airline": "",
+      "price": 3416,
+      "currency": "CNY",
+      "departure_time": "16:00",
+      "arrival_time": "16:40",
+      "duration": "1h40m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "BR721",
+      "airline": "",
+      "price": 3416,
+      "currency": "CNY",
+      "departure_time": "20:05",
+      "arrival_time": "20:55",
+      "duration": "1h55m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "BR711",
+      "airline": "",
+      "price": 3416,
+      "currency": "CNY",
+      "departure_time": "13:10",
+      "arrival_time": "16:40",
+      "duration": "4h35m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3507,
+      "currency": "CNY",
+      "departure_time": "20:05",
+      "arrival_time": "20:55",
+      "duration": "1h55m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3507,
+      "currency": "CNY",
+      "departure_time": "16:00",
+      "arrival_time": "20:55",
+      "duration": "5h55m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3507,
+      "currency": "CNY",
+      "departure_time": "13:10",
+      "arrival_time": "20:55",
+      "duration": "8h50m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3600,
+      "currency": "CNY",
+      "departure_time": "08:50",
+      "arrival_time": "09:40",
+      "duration": "2h35m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3600,
+      "currency": "CNY",
+      "departure_time": "13:40",
+      "arrival_time": "14:50",
+      "duration": "2h55m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "UA199",
+      "airline": "",
+      "price": 3932,
+      "currency": "CNY",
+      "departure_time": "20:10",
+      "arrival_time": "17:20",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "MU583",
+      "airline": "",
+      "price": 4637,
+      "currency": "CNY",
+      "departure_time": "13:10",
+      "arrival_time": "10:05",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 2996,
+      "currency": "CNY",
+      "departure_time": "13:10",
+      "arrival_time": "20:30",
+      "duration": "5h45m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 2996,
+      "currency": "CNY",
+      "departure_time": "11:55",
+      "arrival_time": "20:30",
+      "duration": "7h20m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3139,
+      "currency": "CNY",
+      "departure_time": "02:15",
+      "arrival_time": "08:55",
+      "duration": "8h15m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "PR337",
+      "airline": "",
+      "price": 3166,
+      "currency": "CNY",
+      "departure_time": "16:00",
+      "arrival_time": "13:45",
+      "duration": "19h35m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3388,
+      "currency": "CNY",
+      "departure_time": "20:05",
+      "arrival_time": "20:55",
+      "duration": "1h55m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3388,
+      "currency": "CNY",
+      "departure_time": "13:10",
+      "arrival_time": "16:40",
+      "duration": "4h35m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3476,
+      "currency": "CNY",
+      "departure_time": "20:05",
+      "arrival_time": "20:55",
+      "duration": "1h55m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3786,
+      "currency": "CNY",
+      "departure_time": "08:15",
+      "arrival_time": "18:40",
+      "duration": "10h55m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3900,
+      "currency": "CNY",
+      "departure_time": "08:50",
+      "arrival_time": "09:40",
+      "duration": "2h35m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3900,
+      "currency": "CNY",
+      "departure_time": "13:40",
+      "arrival_time": "14:50",
+      "duration": "2h55m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "UA858",
+      "airline": "",
+      "price": 5894,
+      "currency": "CNY",
+      "departure_time": "12:10",
+      "arrival_time": "08:40",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "CA7209",
+      "airline": "",
+      "price": 64009,
+      "currency": "CNY",
+      "departure_time": "12:10",
+      "arrival_time": "08:40",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "BR721",
+      "airline": "",
+      "price": 3416,
+      "currency": "CNY",
+      "departure_time": "20:05",
+      "arrival_time": "20:10",
+      "duration": "1h40m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "BR751",
+      "airline": "",
+      "price": 3416,
+      "currency": "CNY",
+      "departure_time": "16:00",
+      "arrival_time": "20:10",
+      "duration": "5h40m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "BR711",
+      "airline": "",
+      "price": 3416,
+      "currency": "CNY",
+      "departure_time": "13:10",
+      "arrival_time": "20:10",
+      "duration": "8h35m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "KE888",
+      "airline": "",
+      "price": 4210,
+      "currency": "CNY",
+      "departure_time": "13:40",
+      "arrival_time": "10:40",
+      "duration": "23h15m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 4579,
+      "currency": "CNY",
+      "departure_time": "21:10",
+      "arrival_time": "10:30",
+      "duration": "13h25m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 4579,
+      "currency": "CNY",
+      "departure_time": "18:50",
+      "arrival_time": "10:30",
+      "duration": "15h25m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 5416,
+      "currency": "CNY",
+      "departure_time": "14:30",
+      "arrival_time": "22:40",
+      "duration": "7h45m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 5416,
+      "currency": "CNY",
+      "departure_time": "19:05",
+      "arrival_time": "10:55",
+      "duration": "15h35m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 5416,
+      "currency": "CNY",
+      "departure_time": "17:40",
+      "arrival_time": "10:55",
+      "duration": "16h55m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 5416,
+      "currency": "CNY",
+      "departure_time": "13:20",
+      "arrival_time": "10:55",
+      "duration": "21h10m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "UA858",
+      "airline": "",
+      "price": 5894,
+      "currency": "CNY",
+      "departure_time": "12:10",
+      "arrival_time": "08:55",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "CA7209",
+      "airline": "",
+      "price": 64009,
+      "currency": "CNY",
+      "departure_time": "12:10",
+      "arrival_time": "08:55",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "VN525",
+      "airline": "",
+      "price": 2840,
+      "currency": "CNY",
+      "departure_time": "15:10",
+      "arrival_time": "17:55",
+      "duration": "23h10m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "BR721",
+      "airline": "",
+      "price": 3416,
+      "currency": "CNY",
+      "departure_time": "20:05",
+      "arrival_time": "20:10",
+      "duration": "1h40m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "BR751",
+      "airline": "",
+      "price": 3416,
+      "currency": "CNY",
+      "departure_time": "16:00",
+      "arrival_time": "16:10",
+      "duration": "1h40m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "BR711",
+      "airline": "",
+      "price": 3416,
+      "currency": "CNY",
+      "departure_time": "13:10",
+      "arrival_time": "16:10",
+      "duration": "4h35m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3507,
+      "currency": "CNY",
+      "departure_time": "20:05",
+      "arrival_time": "20:10",
+      "duration": "1h40m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3507,
+      "currency": "CNY",
+      "departure_time": "16:00",
+      "arrival_time": "20:10",
+      "duration": "5h40m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3507,
+      "currency": "CNY",
+      "departure_time": "13:10",
+      "arrival_time": "20:10",
+      "duration": "8h35m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3507,
+      "currency": "CNY",
+      "departure_time": "20:05",
+      "arrival_time": "06:45",
+      "duration": "12h15m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3929,
+      "currency": "CNY",
+      "departure_time": "21:10",
+      "arrival_time": "10:30",
+      "duration": "13h25m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3929,
+      "currency": "CNY",
+      "departure_time": "18:50",
+      "arrival_time": "10:30",
+      "duration": "15h25m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "UA858",
+      "airline": "",
+      "price": 5836,
+      "currency": "CNY",
+      "departure_time": "12:10",
+      "arrival_time": "08:55",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "CA7209",
+      "airline": "",
+      "price": 64009,
+      "currency": "CNY",
+      "departure_time": "12:10",
+      "arrival_time": "08:55",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 2479,
+      "currency": "CNY",
+      "departure_time": "10:10",
+      "arrival_time": "15:15",
+      "duration": "7h20m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "VN525",
+      "airline": "",
+      "price": 2845,
+      "currency": "CNY",
+      "departure_time": "15:10",
+      "arrival_time": "17:55",
+      "duration": "23h10m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "PR337",
+      "airline": "",
+      "price": 3166,
+      "currency": "CNY",
+      "departure_time": "16:00",
+      "arrival_time": "21:10",
+      "duration": "3h35m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3388,
+      "currency": "CNY",
+      "departure_time": "20:05",
+      "arrival_time": "20:10",
+      "duration": "1h40m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3388,
+      "currency": "CNY",
+      "departure_time": "13:10",
+      "arrival_time": "16:10",
+      "duration": "4h35m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3476,
+      "currency": "CNY",
+      "departure_time": "20:05",
+      "arrival_time": "20:10",
+      "duration": "1h40m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3476,
+      "currency": "CNY",
+      "departure_time": "20:05",
+      "arrival_time": "06:45",
+      "duration": "12h15m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 4308,
+      "currency": "CNY",
+      "departure_time": "16:20",
+      "arrival_time": "15:20",
+      "duration": "1h30m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 4308,
+      "currency": "CNY",
+      "departure_time": "13:10",
+      "arrival_time": "15:20",
+      "duration": "4h50m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 4308,
+      "currency": "CNY",
+      "departure_time": "11:40",
+      "arrival_time": "15:20",
+      "duration": "6h20m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "PVG-SFO",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "CZ327",
+      "airline": "",
+      "price": 6957,
+      "currency": "CNY",
+      "departure_time": "21:50",
+      "arrival_time": "20:00",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "BR708",
+      "airline": "",
+      "price": 3712,
+      "currency": "CNY",
+      "departure_time": "13:10",
+      "arrival_time": "16:40",
+      "duration": "4h20m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "BR708",
+      "airline": "",
+      "price": 3712,
+      "currency": "CNY",
+      "departure_time": "13:10",
+      "arrival_time": "07:10",
+      "duration": "18h50m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "CX9842",
+      "airline": "",
+      "price": 3851,
+      "currency": "CNY",
+      "departure_time": "09:20",
+      "arrival_time": "10:45",
+      "duration": "2h15m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "CX9844",
+      "airline": "",
+      "price": 3851,
+      "currency": "CNY",
+      "departure_time": "12:30",
+      "arrival_time": "16:30",
+      "duration": "4h45m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "CX9878",
+      "airline": "",
+      "price": 3851,
+      "currency": "CNY",
+      "departure_time": "18:00",
+      "arrival_time": "22:00",
+      "duration": "3h50m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "CX9846",
+      "airline": "",
+      "price": 3851,
+      "currency": "CNY",
+      "departure_time": "15:50",
+      "arrival_time": "22:00",
+      "duration": "7h05m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3851,
+      "currency": "CNY",
+      "departure_time": "09:20",
+      "arrival_time": "16:30",
+      "duration": "7h55m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3851,
+      "currency": "CNY",
+      "departure_time": "12:30",
+      "arrival_time": "22:00",
+      "duration": "10h25m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3851,
+      "currency": "CNY",
+      "departure_time": "18:00",
+      "arrival_time": "10:45",
+      "duration": "16h30m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3851,
+      "currency": "CNY",
+      "departure_time": "15:50",
+      "arrival_time": "10:45",
+      "duration": "19h45m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3857,
+      "currency": "CNY",
+      "departure_time": "21:30",
+      "arrival_time": "10:05",
+      "duration": "13h15m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "CZ327",
+      "airline": "",
+      "price": 4557,
+      "currency": "CNY",
+      "departure_time": "21:50",
+      "arrival_time": "20:00",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 2677,
+      "currency": "CNY",
+      "departure_time": "17:25",
+      "arrival_time": "20:30",
+      "duration": "2h45m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 2677,
+      "currency": "CNY",
+      "departure_time": "12:00",
+      "arrival_time": "20:30",
+      "duration": "8h05m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 2677,
+      "currency": "CNY",
+      "departure_time": "07:05",
+      "arrival_time": "20:30",
+      "duration": "12h50m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "CX983",
+      "airline": "",
+      "price": 3516,
+      "currency": "CNY",
+      "departure_time": "10:10",
+      "arrival_time": "10:45",
+      "duration": "1h10m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "CX953",
+      "airline": "",
+      "price": 3516,
+      "currency": "CNY",
+      "departure_time": "05:00",
+      "arrival_time": "10:45",
+      "duration": "6h20m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "CX983",
+      "airline": "",
+      "price": 3516,
+      "currency": "CNY",
+      "departure_time": "10:10",
+      "arrival_time": "16:30",
+      "duration": "6h40m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3516,
+      "currency": "CNY",
+      "departure_time": "05:00",
+      "arrival_time": "16:30",
+      "duration": "12h16m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3516,
+      "currency": "CNY",
+      "departure_time": "10:10",
+      "arrival_time": "22:00",
+      "duration": "12h20m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3516,
+      "currency": "CNY",
+      "departure_time": "05:00",
+      "arrival_time": "22:00",
+      "duration": "17h40m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3516,
+      "currency": "CNY",
+      "departure_time": "22:20",
+      "arrival_time": "16:30",
+      "duration": "18h45m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3632,
+      "currency": "CNY",
+      "departure_time": "09:00",
+      "arrival_time": "10:05",
+      "duration": "2h05m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "MU5320",
+      "airline": "",
+      "price": 3027,
+      "currency": "CNY",
+      "departure_time": "20:30",
+      "arrival_time": "10:05",
+      "duration": "14h25m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "MU5318",
+      "airline": "",
+      "price": 3027,
+      "currency": "CNY",
+      "departure_time": "20:00",
+      "arrival_time": "10:05",
+      "duration": "14h50m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3027,
+      "currency": "CNY",
+      "departure_time": "13:00",
+      "arrival_time": "10:05",
+      "duration": "21h30m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "MU8417",
+      "airline": "",
+      "price": 3027,
+      "currency": "CNY",
+      "departure_time": "13:00",
+      "arrival_time": "10:05",
+      "duration": "21h30m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3527,
+      "currency": "CNY",
+      "departure_time": "17:25",
+      "arrival_time": "20:30",
+      "duration": "2h45m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3527,
+      "currency": "CNY",
+      "departure_time": "12:00",
+      "arrival_time": "20:30",
+      "duration": "8h05m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3527,
+      "currency": "CNY",
+      "departure_time": "07:05",
+      "arrival_time": "20:30",
+      "duration": "12h50m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3677,
+      "currency": "CNY",
+      "departure_time": "09:00",
+      "arrival_time": "10:05",
+      "duration": "2h05m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3677,
+      "currency": "CNY",
+      "departure_time": "21:30",
+      "arrival_time": "10:05",
+      "duration": "13h15m",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3965,
+      "currency": "CNY",
+      "departure_time": "17:30",
+      "arrival_time": "18:40",
+      "duration": "1h30m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3965,
+      "currency": "CNY",
+      "departure_time": "17:30",
+      "arrival_time": "21:35",
+      "duration": "4h10m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 4308,
+      "currency": "CNY",
+      "departure_time": "12:25",
+      "arrival_time": "16:50",
+      "duration": "4h20m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "CAN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "YP103",
+      "airline": "",
+      "price": 4061,
+      "currency": "CNY",
+      "departure_time": "22:05",
+      "arrival_time": "17:20",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "KE8015",
+      "airline": "",
+      "price": 4282,
+      "currency": "CNY",
+      "departure_time": "12:25",
+      "arrival_time": "07:35",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "KE011",
+      "airline": "",
+      "price": 4282,
+      "currency": "CNY",
+      "departure_time": "19:40",
+      "arrival_time": "14:50",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "DL7848",
+      "airline": "",
+      "price": 4527,
+      "currency": "CNY",
+      "departure_time": "12:25",
+      "arrival_time": "07:35",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "DL7833",
+      "airline": "",
+      "price": 4527,
+      "currency": "CNY",
+      "departure_time": "19:40",
+      "arrival_time": "14:50",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "YP101",
+      "airline": "",
+      "price": 4674,
+      "currency": "CNY",
+      "departure_time": "13:00",
+      "arrival_time": "08:20",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "KE017",
+      "airline": "",
+      "price": 4735,
+      "currency": "CNY",
+      "departure_time": "14:30",
+      "arrival_time": "09:40",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 4794,
+      "currency": "CNY",
+      "departure_time": "21:20",
+      "arrival_time": "16:50",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 4966,
+      "currency": "CNY",
+      "departure_time": "14:30",
+      "arrival_time": "09:40",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 2944,
+      "currency": "CNY",
+      "departure_time": "19:35",
+      "arrival_time": "21:57",
+      "duration": "5h31m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 2944,
+      "currency": "CNY",
+      "departure_time": "19:35",
+      "arrival_time": "23:02",
+      "duration": "6h32m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 2944,
+      "currency": "CNY",
+      "departure_time": "19:35",
+      "arrival_time": "23:58",
+      "duration": "7h31m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-01"
+    },
+    {
+      "flight_number": "YP103",
+      "airline": "",
+      "price": 2951,
+      "currency": "CNY",
+      "departure_time": "22:05",
+      "arrival_time": "17:20",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "YP101",
+      "airline": "",
+      "price": 2951,
+      "currency": "CNY",
+      "departure_time": "13:00",
+      "arrival_time": "08:20",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "OZ204",
+      "airline": "",
+      "price": 3939,
+      "currency": "CNY",
+      "departure_time": "21:20",
+      "arrival_time": "16:50",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "KE8015",
+      "airline": "",
+      "price": 4282,
+      "currency": "CNY",
+      "departure_time": "12:25",
+      "arrival_time": "07:35",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "KE017",
+      "airline": "",
+      "price": 4282,
+      "currency": "CNY",
+      "departure_time": "14:30",
+      "arrival_time": "09:40",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "KE011",
+      "airline": "",
+      "price": 4282,
+      "currency": "CNY",
+      "departure_time": "19:40",
+      "arrival_time": "14:50",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "DL7848",
+      "airline": "",
+      "price": 4561,
+      "currency": "CNY",
+      "departure_time": "12:25",
+      "arrival_time": "07:35",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 4561,
+      "currency": "CNY",
+      "departure_time": "14:30",
+      "arrival_time": "09:40",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 4561,
+      "currency": "CNY",
+      "departure_time": "19:40",
+      "arrival_time": "14:50",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3069,
+      "currency": "CNY",
+      "departure_time": "19:35",
+      "arrival_time": "19:13",
+      "duration": "2h53m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3069,
+      "currency": "CNY",
+      "departure_time": "19:35",
+      "arrival_time": "20:12",
+      "duration": "3h53m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3069,
+      "currency": "CNY",
+      "departure_time": "19:35",
+      "arrival_time": "22:02",
+      "duration": "5h41m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-05-29"
+    },
+    {
+      "flight_number": "YP101",
+      "airline": "",
+      "price": 3566,
+      "currency": "CNY",
+      "departure_time": "13:00",
+      "arrival_time": "08:20",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "KE017",
+      "airline": "",
+      "price": 4877,
+      "currency": "CNY",
+      "departure_time": "14:30",
+      "arrival_time": "09:40",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "KE011",
+      "airline": "",
+      "price": 4877,
+      "currency": "CNY",
+      "departure_time": "19:40",
+      "arrival_time": "14:50",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "OZ202",
+      "airline": "",
+      "price": 4935,
+      "currency": "CNY",
+      "departure_time": "12:40",
+      "arrival_time": "07:50",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "OZ204",
+      "airline": "",
+      "price": 4935,
+      "currency": "CNY",
+      "departure_time": "21:20",
+      "arrival_time": "16:50",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "DL7835",
+      "airline": "",
+      "price": 5146,
+      "currency": "CNY",
+      "departure_time": "14:30",
+      "arrival_time": "09:40",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "DL7833",
+      "airline": "",
+      "price": 5146,
+      "currency": "CNY",
+      "departure_time": "19:40",
+      "arrival_time": "14:50",
+      "duration": "",
+      "stops": 0,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3207,
+      "currency": "CNY",
+      "departure_time": "12:45",
+      "arrival_time": "18:40",
+      "duration": "6h50m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3207,
+      "currency": "CNY",
+      "departure_time": "20:05",
+      "arrival_time": "18:40",
+      "duration": "23h20m",
+      "stops": 2,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3496,
+      "currency": "CNY",
+      "departure_time": "13:30",
+      "arrival_time": "20:00",
+      "duration": "7h20m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3623,
+      "currency": "CNY",
+      "departure_time": "19:45",
+      "arrival_time": "20:55",
+      "duration": "2h30m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-09-01"
+    },
+    {
+      "flight_number": "",
+      "airline": "",
+      "price": 3623,
+      "currency": "CNY",
+      "departure_time": "12:00",
+      "arrival_time": "20:55",
+      "duration": "10h20m",
+      "stops": 1,
+      "source": "Ctrip DOM",
+      "search_route": "ICN-LAX",
+      "search_date": "2026-09-01"
+    }
+  ],
+  "intercepted_api_calls": [
+    {
+      "url": "https://flights.ctrip.com/international/search/api/user/getUserStarInfo?v=0.14592539790562786",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:41:51.684155"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/notify/getSearchPageHornContent?v=0.8330163778775712",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:41:51.704077"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/batchSearch?v=0.6956244725068612",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:41:52.085568"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/nearDateDirect/getAdjacentDateDirectFlights?v=0.10324296825575663",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:41:52.389629"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getAdjacentRecommendInfo?v=0.3056641159091025",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:41:52.404572"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/page/getSearchPageFooter?departureCityCode=CTU&arrivalCityCode=LAX&v=0.0876924944660391",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:41:52.650303"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.13870883212665064",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:41:52.750894"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getThemeRecommmend?v=0.9951523959598139",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:41:53.179752"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/base/getHoliday?v=0.783050425511226",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:41:53.526134"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.6493437389877048",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:41:53.883358"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/notify/getSearchPageHornContent?v=0.4047588489214765",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:06.909981"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/user/getUserStarInfo?v=0.011069652983458744",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:07.058837"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/batchSearch?v=0.6857135555166728",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:07.426541"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.35096909024230494",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.006498"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.7772107746670517",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.006549"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.0852150243608607",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.006578"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.20818505725572478",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.175290"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.7357778279017321",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.297993"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.10223342766296228",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.304572"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.6179757335048234",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.310733"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.9208851327411994",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.366181"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.2502763021075657",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.366230"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.16614887718034677",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.370661"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.9719534675936697",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.370703"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.26748309271596815",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.394701"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.07637365074073943",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.468535"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.8669494807760292",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.478696"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/page/getSearchPageFooter?departureCityCode=CTU&arrivalCityCode=LAX&v=0.9353741368214599",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.555544"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getThemeRecommmend?v=0.16127521939770384",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.678275"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.6389213076961872",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.714236"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.9331585454811607",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.749146"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.3330755894838876",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.749230"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.3870468640804483",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:08.749277"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/base/getHoliday?v=0.46913093463927225",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:09.105543"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.9328589120742434",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:09.179411"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j10244926-1773726126779-29150Mi-1?v=0.6105493607968828",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:09.847949"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/guideline/getGuideline?v=0.6396594052092238",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:10.273533"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getAdjacentRecommendInfo?v=0.5636501984384789",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:10.347799"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.017477460466922556",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:10.347871"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.9497635122096246",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:10.347978"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.24726854908539475",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:10.384991"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.8796866908133775",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:10.654395"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/batchSearch?v=0.13612228020433037",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:22.937306"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/notify/getSearchPageHornContent?v=0.6650517854214478",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:23.156099"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/user/getUserStarInfo?v=0.13772958162031623",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:23.270888"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.1534859792244564",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:23.397699"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.42831682939747984",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:23.547794"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.7154482240225443",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:23.875310"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.8859256125261892",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:23.891548"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.807477659622013",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:23.898102"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.8845742257787388",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:23.910858"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.34611719105208694",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:23.911992"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.12392845425906662",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:23.914726"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.4017631299485356",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:23.930725"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.12027227655262895",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:23.930776"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.8938962674510914",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:23.932650"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.06603226941414297",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:23.932970"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.5330095650815951",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:23.935622"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.7152984380954365",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:23.990332"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.8695695273547648",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:23.990406"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/page/getSearchPageFooter?departureCityCode=CTU&arrivalCityCode=LAX&v=0.22540249211494812",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:24.022895"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getThemeRecommmend?v=0.2538336174463023",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:24.252379"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.3317477900201561",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:24.315712"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.2123485733287236",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:24.326304"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.9719494668382308",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:24.355730"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/base/getHoliday?v=0.5782028982387241",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:24.395467"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.03377873120026864",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:24.748645"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j10112105171-1773726142398-989259yZ-1?v=0.8797446673945417",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:25.169703"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j10112105171-1773726142398-989259yZ-1?v=0.020358303012482093",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:26.439201"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j10112105171-1773726142398-989259yZ-1?v=0.3352014161881527",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:27.707411"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j10112105171-1773726142398-989259yZ-1?v=0.59370301578284",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:28.980526"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j10112105171-1773726142398-989259yZ-1?v=0.07500168358713011",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:30.531685"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/guideline/getGuideline?v=0.25680839823243695",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:30.877465"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getAdjacentRecommendInfo?v=0.36861665651931774",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:31.006395"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/user/getUserStarInfo?v=0.3273888548553716",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:37.824584"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/notify/getSearchPageHornContent?v=0.22685481149013798",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:37.840393"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/batchSearch?v=0.44390531600877836",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:38.940597"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.592328783375491",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:39.713198"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.49096520148089406",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:39.713257"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.29992643433170263",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:39.717330"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.5474246477691204",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:39.730871"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.5577639198912611",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:39.730931"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.33496326190966597",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:39.730993"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.37413000406122976",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:39.731049"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.8831764705140099",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:39.731084"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.5895395696794071",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:39.743916"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.49510521781991834",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:39.743987"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/page/getSearchPageFooter?departureCityCode=SHA&arrivalCityCode=LAX&v=0.8554688062357668",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:39.750361"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.20469261446113474",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:39.750474"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/base/getHoliday?v=0.8674490251705034",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:39.755587"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getThemeRecommmend?v=0.4594810008027961",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:40.005537"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.038084204684687095",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:40.108139"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.04391358539946366",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:40.137301"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.08913461146039936",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:40.142868"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.032928795229081764",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:40.170479"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.8725670365739436",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:40.482756"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.5103353586877191",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:40.484146"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.9128691467478017",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:40.492143"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j101154824-1773726157696-599949pu-1?v=0.7344038460947407",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:41.439919"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/guideline/getGuideline?v=0.18865196169705578",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:41.828719"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getAdjacentRecommendInfo?v=0.0735157246966851",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:41.966439"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/notify/getSearchPageHornContent?v=0.44089218033198685",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:53.036553"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/user/getUserStarInfo?v=0.4205815627615408",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:53.036610"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/batchSearch?v=0.3678655975106311",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:54.229027"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.7243038422530197",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:54.962708"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.6202847766166121",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:54.962782"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.877218943646107",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:54.978998"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.8160739217803045",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:54.979080"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.8770226419740766",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:54.979142"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.5795269366174235",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:54.979203"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.3880082744329646",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:54.979253"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.7970779745389136",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:55.075639"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.6801360045088319",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:55.075692"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.03481004320896286",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:55.200963"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getThemeRecommmend?v=0.9350502949344092",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:55.256150"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/base/getHoliday?v=0.6070730567425797",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:55.288008"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.910374923266832",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:55.301207"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.20734811870656344",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:55.360630"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.038142029195039284",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:55.361083"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.3805344484480351",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:55.385018"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.20259852092677133",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:55.388257"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.1926807383254301",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:55.389855"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.35788288325258255",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:55.406626"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/page/getSearchPageFooter?departureCityCode=SHA&arrivalCityCode=LAX&v=0.3579162993004621",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:55.414630"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.9411815735096918",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:55.715269"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j1014119194-1773726172909-932441ba-1?v=0.3756780853084325",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:56.351992"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j1014119194-1773726172909-932441ba-1?v=0.038353422176100604",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:57.993833"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/guideline/getGuideline?v=0.3900082580932571",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:58.377802"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getAdjacentRecommendInfo?v=0.36608476081846086",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:42:58.613120"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/user/getUserStarInfo?v=0.020922794008154444",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:08.198236"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/notify/getSearchPageHornContent?v=0.5698241053437122",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:08.204796"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/batchSearch?v=0.7810872100474942",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:09.143237"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.061690664127231565",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:09.648562"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.9048623877223658",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:09.820040"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.36855514819603985",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:09.820142"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.0399253806242883",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:09.830069"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.9857489642533811",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:09.830450"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.4695093414181024",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:09.830568"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.188619953038194",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:09.876661"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.522051425723356",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:09.877598"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.37354823467581844",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:09.918089"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/page/getSearchPageFooter?departureCityCode=SHA&arrivalCityCode=LAX&v=0.41680694157690934",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:09.926561"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.5124306974597571",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:09.929580"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.506984684041923",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:09.930354"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/base/getHoliday?v=0.8232095070291238",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:10.150168"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getThemeRecommmend?v=0.12152148835730403",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:10.185222"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.6441691741315951",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:10.404613"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.013398136962719631",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:10.404777"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.3819749641349357",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:10.404918"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.26385410817440835",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:10.405063"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.7252641987786587",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:10.417918"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.8972380579015282",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:10.417972"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.5363327252386013",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:10.589273"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j109632139-1773726188073-223ng-1?v=0.5603359076264941",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:12.283607"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.7323164340658985",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:12.790673"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getAdjacentRecommendInfo?v=0.2297276409061063",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:12.795249"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/guideline/getGuideline?v=0.005457871083898946",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:12.795316"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.5844176106838985",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:13.125056"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.4927951514553516",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:13.125446"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.6552128868942396",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:13.209573"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/user/getUserStarInfo?v=0.6750436027408825",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:23.477545"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/notify/getSearchPageHornContent?v=0.5364102479351667",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:23.587519"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/batchSearch?v=0.6577778617927567",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:24.106034"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.5075013072490852",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:24.756801"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.7785821600250342",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:24.756871"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.7815781047325808",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:24.756931"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.8074291513399705",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:24.756971"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.6918566176021056",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:24.757559"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.27942365779360734",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:24.774445"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.5809760257655672",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:24.775534"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.9912255488209539",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:24.775592"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.3448713771437406",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:24.775630"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.0730305253585245",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:24.780764"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getThemeRecommmend?v=0.19253687783377782",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:25.056997"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.25485354963787243",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:25.253936"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.9169471628278976",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:25.278819"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.40628136947344917",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:25.278897"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.3672119914295875",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:25.279005"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.9867431373606579",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:25.307725"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.6653721208882744",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:25.312047"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.7018060801606912",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:25.312126"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/page/getSearchPageFooter?departureCityCode=SHA&arrivalCityCode=SFO&v=0.8194880221588831",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:25.312247"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/base/getHoliday?v=0.9583033590266906",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:25.383790"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.18670207898565372",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:25.913809"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j105646148-1773726203353-22391NS-1?v=0.4012711348762541",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:26.484407"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/guideline/getGuideline?v=0.4965506095672947",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:26.879265"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getAdjacentRecommendInfo?v=0.3389017469259874",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:27.086184"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/user/getUserStarInfo?v=0.06330949831912402",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:38.693552"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/notify/getSearchPageHornContent?v=0.4396165594075142",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:38.807802"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/batchSearch?v=0.36658044804558054",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:39.981414"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.6251982498904899",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:40.652616"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.023494692319979582",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:40.802159"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.8179187404738326",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:40.802246"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.04000964208089297",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:40.802309"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.11928382162748385",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:40.802367"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.9601577426491594",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:40.802408"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/base/getHoliday?v=0.7231143715660285",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:40.978555"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.5607772828196745",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:40.980416"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.031902283179875535",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:40.989894"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.3517788225738434",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:41.016702"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.05297203413332863",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:41.031203"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.4172761448362212",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:41.033213"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.3155986103956252",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:41.065017"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.05668600054455708",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:41.069339"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.22130009543667328",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:41.069411"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.2572964959961267",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:41.069470"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.44746946167802315",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:41.069552"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/page/getSearchPageFooter?departureCityCode=SHA&arrivalCityCode=SFO&v=0.5836912173742668",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:41.147798"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.5414179963742322",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:41.147857"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.7393143653878967",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:41.433111"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getThemeRecommmend?v=0.013448787280531227",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:41.476749"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j1045231131-1773726218649-16287gh-1?v=0.4046000618990855",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:42.114643"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j1045231131-1773726218649-16287gh-1?v=0.5267408831926635",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:43.388384"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j1045231131-1773726218649-16287gh-1?v=0.06455389439324077",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:44.691268"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j1045231131-1773726218649-16287gh-1?v=0.5278604739342477",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:46.074673"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j1045231131-1773726218649-16287gh-1?v=0.7943551904965584",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:47.341668"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j1045231131-1773726218649-16287gh-1?v=0.8510428589568101",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:48.628731"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/user/getUserStarInfo?v=0.6294947995107608",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:53.911625"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/notify/getSearchPageHornContent?v=0.9570093192130071",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:53.923660"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/batchSearch?v=0.17542073324599716",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:55.113074"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.6570192404856843",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:55.608791"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.671150277446412",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:55.621803"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.7069517380560991",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:55.630092"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.9710883797627633",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:55.790242"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.15681036010300575",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:55.790408"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.597328275229075",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:55.790476"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.23206372368706385",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:55.790519"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.6503861096378999",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:55.803891"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/page/getSearchPageFooter?departureCityCode=SHA&arrivalCityCode=SFO&v=0.298284655867478",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:55.811889"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.8515735652510098",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:55.812812"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.17597738131683727",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:55.929565"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.7563854535888721",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:55.929632"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.9702337861163686",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:56.201612"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.9213383698820367",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:56.222429"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.853068301121124",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:56.232734"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.582342107725881",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:56.238761"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.02500999552925076",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:56.238909"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.10482667157358394",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:56.238980"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.3239586847524001",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:56.239056"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/base/getHoliday?v=0.5001786188081841",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:56.297666"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getThemeRecommmend?v=0.09437295991432615",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:56.559042"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j109766235-1773726233792-229iq-1?v=0.5791490004381148",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:57.464580"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.5521809295753282",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:57.883855"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/guideline/getGuideline?v=0.0315367527533168",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:57.884130"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.03202116060515492",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:57.924979"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getAdjacentRecommendInfo?v=0.6130326440608941",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:43:57.966725"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/user/getUserStarInfo?v=0.26721875923577243",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:08.804165"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/notify/getSearchPageHornContent?v=0.24504115578626595",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:08.804642"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/batchSearch?v=0.8602381700457162",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:09.302743"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.36330386155996586",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:09.972758"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.985861185097782",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:09.972833"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.7004240114427396",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:09.972895"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.6236558129935922",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:09.972933"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.18863894124376712",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:10.014942"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.6144608435682011",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:10.015033"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.047600331974592014",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:10.015103"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.46216248296027773",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:10.015167"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.533589255619312",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:10.015216"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.3595366813452401",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:10.019102"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.9453190839984655",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:10.020779"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.9064894821147178",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:10.020824"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getThemeRecommmend?v=0.3910961526206279",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:10.409836"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.5583782110534592",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:10.427023"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.573122574760857",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:10.517786"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/page/getSearchPageFooter?departureCityCode=CAN&arrivalCityCode=LAX&v=0.23073348860455645",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:10.517980"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.7375275680977909",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:10.518035"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/base/getHoliday?v=0.7577333857550343",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:10.688091"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.33849255027669145",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:10.991600"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j1014119194-1773726248638-932506qS-1?v=0.45126669618279247",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:12.019985"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/guideline/getGuideline?v=0.8362236936631592",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:12.395557"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getAdjacentRecommendInfo?v=0.112682558305224",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:12.459652"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/user/getUserStarInfo?v=0.023138051756150135",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:24.003470"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/notify/getSearchPageHornContent?v=0.8437316888709114",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:24.085848"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/batchSearch?v=0.8353872252946234",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:25.137837"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.18717160331744465",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:25.789421"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.7685158997923435",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:25.789491"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.8750505970391577",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:25.789531"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.38577954631225464",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:25.879078"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.21599772065440603",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:25.961526"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/base/getHoliday?v=0.6274910210812588",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:25.997330"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.18613272086899812",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:26.020237"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.531036823608323",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:26.020699"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.22693294524168517",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:26.026975"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.21078720474631185",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:26.073774"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.7098721977065815",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:26.089824"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.9906787101518376",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:26.089948"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.3413248612364602",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:26.090059"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/page/getSearchPageFooter?departureCityCode=CAN&arrivalCityCode=LAX&v=0.11716410957533752",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:26.124060"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.029153559417014807",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:26.163563"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.22125952690533823",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:26.193353"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.23967431184192867",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:26.196353"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.6690859134079591",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:26.196404"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.9239194462897985",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:26.344050"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getThemeRecommmend?v=0.14094553693730094",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:26.350028"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.28942735657610874",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:26.456140"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.6414724277568797",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:26.513658"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j10112105171-1773726263878-989412GN-1?v=0.46884027603884126",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:27.284909"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j10112105171-1773726263878-989412GN-1?v=0.7585421063370016",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:28.912170"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/guideline/getGuideline?v=0.8568498424989802",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:29.260116"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getAdjacentRecommendInfo?v=0.03142330020012318",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:29.386104"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/user/getUserStarInfo?v=0.5881084978030212",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:39.124911"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/notify/getSearchPageHornContent?v=0.35366996372847004",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:39.297444"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/batchSearch?v=0.526852752816852",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:39.668081"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.6200323829761224",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.203489"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.5290576201627167",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.203557"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.08738651773849526",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.204024"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.6553117878704333",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.359112"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.7816114457752109",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.359182"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.4052046929456391",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.359238"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.2655685253707921",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.359300"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.5366135270252222",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.359334"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.2618095330397231",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.372221"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/page/getSearchPageFooter?departureCityCode=CAN&arrivalCityCode=LAX&v=0.15559689588080916",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.375978"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.2750688886523226",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.376058"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.13666446495269635",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.376133"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.3997758419837786",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.377257"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.7729005342242864",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.472724"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getThemeRecommmend?v=0.17191262058058332",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.645099"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.6680727824027716",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.747937"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.3958096865529587",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.797368"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.9806507563844088",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.799802"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.3542139024688451",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.799884"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.33644863041764816",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.799931"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.622029636037702",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.821635"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/base/getHoliday?v=0.614986958411942",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:40.959316"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.8279060240415661",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:41.356985"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j1045231131-1773726279135-16368xm-1?v=0.5980013200219866",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:41.923004"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j1045231131-1773726279135-16368xm-1?v=0.2499834624447037",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:43.186034"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j1045231131-1773726279135-16368xm-1?v=0.6333767992252655",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:44.455442"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j1045231131-1773726279135-16368xm-1?v=0.12440342728694342",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:45.982690"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/guideline/getGuideline?v=0.1014311472828614",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:46.403398"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.029396714205503716",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:46.483527"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/nearDateDirect/getAdjacentDateDirectFlights?v=0.3385546926908918",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:46.496771"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getAdjacentRecommendInfo?v=0.07593148648077308",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:46.545959"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/user/getUserStarInfo?v=0.3872923086279968",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:54.201366"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/notify/getSearchPageHornContent?v=0.3118791950232227",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:54.368334"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/batchSearch?v=0.7400148061398681",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:54.944743"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.38227719392436166",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:55.528540"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.587947646321037",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:55.528626"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.9679102405971782",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:55.528696"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/page/getSearchPageFooter?departureCityCode=SEL&arrivalCityCode=LAX&v=0.8051015166878435",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:55.629273"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.051962304990532227",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:55.636945"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getThemeRecommmend?v=0.6265971187539432",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:55.820859"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.09047173208661574",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:55.941846"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.5503882608034594",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:55.949773"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.22677921217992947",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:55.950988"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.8728614779055445",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:55.959542"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.45405544572770684",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:55.959681"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.9428245497644571",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:55.959956"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.893309983997927",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:55.985669"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/base/getHoliday?v=0.11719857893377705",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:56.211423"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.40335821874701105",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:56.500555"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j1020247191-1773726294069-2618BR-1?v=0.8089447709302168",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:57.200644"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j1020247191-1773726294069-2618BR-1?v=0.8562398878533902",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:58.499427"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j1020247191-1773726294069-2618BR-1?v=0.3136355838897177",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:44:59.828927"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.1160019076028147",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:00.333202"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.1501257781517129",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:00.338831"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/guideline/getGuideline?v=0.4730831257128024",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:00.347643"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.660582799348636",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:00.358228"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getAdjacentRecommendInfo?v=0.23652777834213035",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:00.433706"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.45377438460973507",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:00.483900"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.09848305916263589",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:00.752892"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.26416838271892396",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:00.753022"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/user/getUserStarInfo?v=0.07850816734508714",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:09.247522"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/notify/getSearchPageHornContent?v=0.7745046990962552",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:09.353258"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/batchSearch?v=0.3053694065923638",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:09.979033"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.4733010831981138",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:10.542078"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.9636951482476894",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:10.543871"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.7947043464598965",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:10.543916"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.15263181031876727",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:10.544992"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/page/getSearchPageFooter?departureCityCode=SEL&arrivalCityCode=LAX&v=0.5584996843770832",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:10.684255"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.822561801812723",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:10.922237"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.7324083358696639",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:10.949630"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.8570630577233216",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:10.949814"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.6706391589898595",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:10.949870"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.7705859441235542",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:10.950160"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.05865234919141593",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:10.952777"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getThemeRecommmend?v=0.08844276292590147",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:11.055560"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.07018272125808367",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:11.066772"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/base/getHoliday?v=0.7841579714941668",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:11.164178"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.8935492311953518",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:11.532380"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j10213145-1773726309113-3181UQ-1?v=0.2896726315203568",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:12.237509"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j10213145-1773726309113-3181UQ-1?v=0.8170653018321634",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:13.526788"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j10213145-1773726309113-3181UQ-1?v=0.24407734981927842",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:14.856834"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/guideline/getGuideline?v=0.37531459148296664",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:15.219213"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getAdjacentRecommendInfo?v=0.7848193356646695",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:15.294092"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/user/getUserStarInfo?v=0.6406958623370087",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:24.215479"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/notify/getSearchPageHornContent?v=0.8100154864656831",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:24.283458"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/batchSearch?v=0.602308998524112",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:24.923448"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.2063115558197528",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:25.504793"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.24879764616274558",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:25.504836"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.2013524238509652",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:25.523616"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.55652918768204",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:25.619679"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.7827120182557399",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:25.619796"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flightinfo/getVisaLuggageDirectInfo?v=0.7452472002507573",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:25.619834"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/page/getSearchPageFooter?departureCityCode=SEL&arrivalCityCode=LAX&v=0.3205335597569946",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:25.652184"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getThemeRecommmend?v=0.7666498260115946",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:25.781016"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.40157779014075545",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:25.873102"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.5947305402876709",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:25.923540"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.48101387487404135",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:25.925610"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.21586120499868688",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:25.934225"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.11912278476246552",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:25.934291"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.2698431164587273",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:25.936793"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/comfort/getFlightComfort?v=0.6404888554658789",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:25.940857"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/base/getHoliday?v=0.7149779033536422",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:26.119860"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.5861273531918983",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:26.463968"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j102148222-1773726324109-16330la-1?v=0.4611102470667492",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:27.165337"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j102148222-1773726324109-16330la-1?v=0.3975232396783369",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:28.568127"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j102148222-1773726324109-16330la-1?v=0.9562767046811372",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:29.985423"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/search/pull/j102148222-1773726324109-16330la-1?v=0.3822860388081746",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:31.559180"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getAdjacentRecommendInfo?v=0.5954128186191",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:32.006741"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/flight/guideline/getGuideline?v=0.3917924148718923",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:32.041356"
+    },
+    {
+      "url": "https://flights.ctrip.com/international/search/api/recommend/getDestinationRecommend?v=0.10299579431793571",
+      "flight_count": 0,
+      "timestamp": "2026-03-16T22:45:32.083389"
+    }
+  ],
+  "captcha_service_info": {
+    "2captcha": {
+      "signup_url": "https://2captcha.com",
+      "pricing": "$0.50-$2.99 per 1000 solves",
+      "python_sdk": "pip install 2captcha-python",
+      "geetest_rate": "$1.45/1000 (reduced from $2.99 in May 2025)",
+      "env_var": "CAPTCHA_API_KEY"
+    },
+    "anticaptcha": {
+      "signup_url": "https://anti-captcha.com",
+      "pricing": "$0.50-$2.00 per 1000 solves",
+      "python_sdk": "pip install anticaptchaofficial",
+      "env_var": "CAPTCHA_API_KEY"
+    },
+    "capsolver": {
+      "signup_url": "https://capsolver.com",
+      "pricing": "$0.40-$2.00 per 1000 solves",
+      "python_sdk": "pip install capsolver",
+      "geetest_rate": "$0.80/1000",
+      "env_var": "CAPTCHA_API_KEY",
+      "note": "Fastest solver (1-5 seconds average)"
+    }
+  },
+  "proxy_service_info": {
+    "iproyal": {
+      "url": "https://iproyal.com",
+      "china_ips": "2,532,825+",
+      "pricing": "$1.75/GB residential",
+      "protocols": "HTTP/HTTPS/SOCKS5"
+    },
+    "brightdata": {
+      "url": "https://brightdata.com",
+      "china_ips": "72M+ (global pool)",
+      "pricing": "From $5.04/GB",
+      "protocols": "HTTP/HTTPS/SOCKS5"
+    },
+    "soax": {
+      "url": "https://soax.com",
+      "china_ips": "31,800",
+      "pricing": "From $99/month",
+      "protocols": "HTTP/HTTPS/SOCKS5"
+    }
+  }
+}

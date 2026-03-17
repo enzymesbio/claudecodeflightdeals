@@ -1,0 +1,3343 @@
+{
+  "search_timestamp": "2026-03-17T04:41:30.483920+00:00",
+  "total_searches": 19,
+  "searches": [
+    {
+      "label": "CTU-LAX RT May 1-15 (2wk)",
+      "trip_type": "round_trip",
+      "origin": "CTU",
+      "destination": "LAX",
+      "depart_date": "2026-05-01",
+      "return_date": "2026-05-15",
+      "status": "success",
+      "results_count": 8,
+      "flights": [
+        {
+          "price": 1411,
+          "airline": "Air China and Air Canada",
+          "stops": 2,
+          "duration": "24 hr 49 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "9:34 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 35 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 1839,
+          "airline": "Air China and United",
+          "stops": 2,
+          "duration": "19 hr 45 min",
+          "dep_time": "7:20 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "12:05 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 1954,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "17 hr",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "4:55 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 10 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 3683,
+          "airline": "Air China and ANA",
+          "stops": 2,
+          "duration": "33 hr 15 min",
+          "dep_time": "9:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "3:15 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "15 hr 25 min overnight",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 4472,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "19 hr 55 min",
+          "dep_time": "5:05 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "10:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 55 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            }
+          ]
+        },
+        {
+          "price": 4648,
+          "airline": "China Southern",
+          "stops": 1,
+          "duration": "26 hr",
+          "dep_time": "9:00 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "10 hr 10 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 5452,
+          "airline": "China Southern and ANA",
+          "stops": 2,
+          "duration": "21 hr 15 min",
+          "dep_time": "9:00 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "3:15 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr 35 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 5585,
+          "airline": "China Southern",
+          "stops": 1,
+          "duration": "18 hr",
+          "dep_time": "5:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 15 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "3 hr 15 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "1 hr 55 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        }
+      ],
+      "sichuan_flights": []
+    },
+    {
+      "label": "CTU-LAX RT May 15-29 (2wk)",
+      "trip_type": "round_trip",
+      "origin": "CTU",
+      "destination": "LAX",
+      "depart_date": "2026-05-15",
+      "return_date": "2026-05-29",
+      "status": "success",
+      "results_count": 8,
+      "flights": [
+        {
+          "price": 1129,
+          "airline": "China Southern",
+          "stops": 1,
+          "duration": "18 hr",
+          "dep_time": "5:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 15 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 1315,
+          "airline": "Air China and Air Canada",
+          "stops": 2,
+          "duration": "24 hr 49 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "9:34 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 35 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 1911,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "17 hr",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "4:55 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 10 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 1916,
+          "airline": "Air China and United",
+          "stops": 2,
+          "duration": "19 hr 45 min",
+          "dep_time": "7:20 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "12:05 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 2150,
+          "airline": "China Southern and United",
+          "stops": 1,
+          "duration": "26 hr 20 min",
+          "dep_time": "9:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:50 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": []
+        },
+        {
+          "price": 4261,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "19 hr 55 min",
+          "dep_time": "5:05 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "10:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 55 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            }
+          ]
+        },
+        {
+          "price": 5451,
+          "airline": "China Southern and ANA",
+          "stops": 2,
+          "duration": "21 hr 15 min",
+          "dep_time": "9:00 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "3:15 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr 35 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 6570,
+          "airline": "Air China and Lufthansa",
+          "stops": 2,
+          "duration": "30 hr 10 min",
+          "dep_time": "10:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "1:10 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 45 min overnight",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "3 hr 15 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "1 hr 55 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        }
+      ],
+      "sichuan_flights": []
+    },
+    {
+      "label": "CTU-LAX RT May 10-Jun 7 (4wk)",
+      "trip_type": "round_trip",
+      "origin": "CTU",
+      "destination": "LAX",
+      "depart_date": "2026-05-10",
+      "return_date": "2026-06-07",
+      "status": "success",
+      "results_count": 8,
+      "flights": [
+        {
+          "price": 1411,
+          "airline": "Air China and Air Canada",
+          "stops": 2,
+          "duration": "24 hr 49 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "9:34 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 40 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 1719,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "17 hr",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "4:55 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 10 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 1724,
+          "airline": "Air China and United",
+          "stops": 2,
+          "duration": "21 hr 23 min",
+          "dep_time": "7:20 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "1:43 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 1974,
+          "airline": "China Southern and United",
+          "stops": 1,
+          "duration": "26 hr 20 min",
+          "dep_time": "9:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:50 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": []
+        },
+        {
+          "price": 3325,
+          "airline": "China Southern",
+          "stops": 1,
+          "duration": "26 hr",
+          "dep_time": "9:00 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "10 hr 10 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 4262,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "23 hr 25 min",
+          "dep_time": "8:05 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "4:30 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 40 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            }
+          ]
+        },
+        {
+          "price": 5452,
+          "airline": "China Southern and ANA",
+          "stops": 2,
+          "duration": "21 hr 15 min",
+          "dep_time": "9:00 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "3:15 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr 35 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 5585,
+          "airline": "China Southern",
+          "stops": 1,
+          "duration": "18 hr",
+          "dep_time": "5:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 15 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "3 hr 15 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "1 hr 50 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        }
+      ],
+      "sichuan_flights": []
+    },
+    {
+      "label": "CTU-LAX RT Jun 1-22 (3wk)",
+      "trip_type": "round_trip",
+      "origin": "CTU",
+      "destination": "LAX",
+      "depart_date": "2026-06-01",
+      "return_date": "2026-06-22",
+      "status": "success",
+      "results_count": 8,
+      "flights": [
+        {
+          "price": 1471,
+          "airline": "China Southern",
+          "stops": 1,
+          "duration": "18 hr",
+          "dep_time": "5:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 15 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 2513,
+          "airline": "China Southern",
+          "stops": 2,
+          "duration": "22 hr 30 min",
+          "dep_time": "12:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 15 min",
+              "airport": "Beijing Daxing International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 2523,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "17 hr 25 min",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "5:20 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 10 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 2529,
+          "airline": "Air China and United",
+          "stops": 2,
+          "duration": "19 hr 37 min",
+          "dep_time": "7:20 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:57 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 2614,
+          "airline": "Air China and Air Canada",
+          "stops": 2,
+          "duration": "24 hr 49 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "9:34 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 40 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 4118,
+          "airline": "China Southern and WestJet",
+          "stops": 2,
+          "duration": "52 hr 20 min",
+          "dep_time": "10:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:20 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "24 hr 10 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 4471,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "20 hr 30 min",
+          "dep_time": "5:05 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "10:35 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 55 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            }
+          ]
+        },
+        {
+          "price": 4837,
+          "airline": "Air China and Lufthansa",
+          "stops": 2,
+          "duration": "30 hr 10 min",
+          "dep_time": "10:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "1:10 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 45 min overnight",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "3 hr 15 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        }
+      ],
+      "sichuan_flights": []
+    },
+    {
+      "label": "CTU-LAX RT Jun 15-Jul 27 (6wk)",
+      "trip_type": "round_trip",
+      "origin": "CTU",
+      "destination": "LAX",
+      "depart_date": "2026-06-15",
+      "return_date": "2026-07-27",
+      "status": "success",
+      "results_count": 10,
+      "flights": [
+        {
+          "price": 1545,
+          "airline": "China Southern",
+          "stops": 1,
+          "duration": "18 hr",
+          "dep_time": "5:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 15 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 2523,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "17 hr 25 min",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "5:20 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 10 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 2529,
+          "airline": "Air China and United",
+          "stops": 2,
+          "duration": "19 hr 37 min",
+          "dep_time": "7:20 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:57 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 2998,
+          "airline": "Air China and Air Canada",
+          "stops": 2,
+          "duration": "38 hr 34 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:19 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 40 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 3036,
+          "airline": "Air China and Air Canada",
+          "stops": 2,
+          "duration": "24 hr 49 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "9:34 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 40 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 3222,
+          "airline": "Air China and Lufthansa",
+          "stops": 2,
+          "duration": "30 hr 10 min",
+          "dep_time": "10:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "1:10 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 45 min overnight",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 4471,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "20 hr 30 min",
+          "dep_time": "5:05 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "10:35 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 55 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            }
+          ]
+        },
+        {
+          "price": 6405,
+          "airline": "China Southern and WestJet",
+          "stops": 2,
+          "duration": "52 hr 20 min",
+          "dep_time": "10:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:20 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "24 hr 10 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 8873,
+          "airline": "Air China and ANA",
+          "stops": 2,
+          "duration": "29 hr",
+          "dep_time": "9:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:00 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "8 hr 35 min overnight",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 8926,
+          "airline": "Air China and ANA",
+          "stops": 2,
+          "duration": "33 hr 15 min",
+          "dep_time": "9:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "3:15 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "15 hr 25 min overnight",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "3 hr 15 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        }
+      ],
+      "sichuan_flights": []
+    },
+    {
+      "label": "CTU-LAX RT Sep 1-15 (2wk)",
+      "trip_type": "round_trip",
+      "origin": "CTU",
+      "destination": "LAX",
+      "depart_date": "2026-09-01",
+      "return_date": "2026-09-15",
+      "status": "success",
+      "results_count": 0,
+      "flights": [],
+      "sichuan_flights": []
+    },
+    {
+      "label": "CTU-LAX RT Sep 10-Oct 8 (4wk)",
+      "trip_type": "round_trip",
+      "origin": "CTU",
+      "destination": "LAX",
+      "depart_date": "2026-09-10",
+      "return_date": "2026-10-08",
+      "status": "success",
+      "results_count": 0,
+      "flights": [],
+      "sichuan_flights": []
+    },
+    {
+      "label": "CTU-SFO RT May 15-29 (2wk)",
+      "trip_type": "round_trip",
+      "origin": "CTU",
+      "destination": "SFO",
+      "depart_date": "2026-05-15",
+      "return_date": "2026-05-29",
+      "status": "success",
+      "results_count": 9,
+      "flights": [
+        {
+          "price": 1168,
+          "airline": "Air China and Air Canada",
+          "stops": 2,
+          "duration": "21 hr 47 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "6:32 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 35 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 1857,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "16 hr 20 min",
+          "dep_time": "7:20 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:40 AM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 1857,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "16 hr 25 min",
+          "dep_time": "12:40 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "2:05 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "1 hr 55 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 1862,
+          "airline": "Air China and United",
+          "stops": 2,
+          "duration": "20 hr 54 min",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:49 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr 10 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 1371,
+          "airline": "Air China, Air Canada and United",
+          "stops": 2,
+          "duration": "36 hr 39 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "9:24 AM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 35 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 1701,
+          "airline": "Air China, Air Canada and United",
+          "stops": 2,
+          "duration": "25 hr 1 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "9:46 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 35 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 1995,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "32 hr 45 min",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:40 AM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "18 hr 10 min overnight",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 3121,
+          "airline": "China Southern",
+          "stops": 1,
+          "duration": "37 hr 40 min",
+          "dep_time": "10:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:40 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "22 hr 40 min overnight",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 4262,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "20 hr 35 min",
+          "dep_time": "5:05 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "10:40 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 55 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            },
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 15 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "27 hr 45 min overnight",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        }
+      ],
+      "sichuan_flights": []
+    },
+    {
+      "label": "CTU-SFO RT Jun 1-22 (3wk)",
+      "trip_type": "round_trip",
+      "origin": "CTU",
+      "destination": "SFO",
+      "depart_date": "2026-06-01",
+      "return_date": "2026-06-22",
+      "status": "success",
+      "results_count": 9,
+      "flights": [
+        {
+          "price": 1612,
+          "airline": "China Southern",
+          "stops": 2,
+          "duration": "20 hr 40 min",
+          "dep_time": "3:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:40 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 45 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 2567,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "16 hr 35 min",
+          "dep_time": "7:20 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:55 AM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 2572,
+          "airline": "Air China and United",
+          "stops": 2,
+          "duration": "20 hr 15 min",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:10 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr 10 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 2222,
+          "airline": "China Southern",
+          "stops": 2,
+          "duration": "22 hr 10 min",
+          "dep_time": "1:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:40 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 20 min",
+              "airport": "Beijing Daxing International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 2465,
+          "airline": "Air China, Air Canada and United",
+          "stops": 2,
+          "duration": "23 hr 4 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "7:49 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 40 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 2495,
+          "airline": "Air China and Air Canada",
+          "stops": 2,
+          "duration": "21 hr 47 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "6:32 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 40 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 2567,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "33 hr",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:55 AM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "18 hr 10 min overnight",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 3325,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "16 hr 40 min",
+          "dep_time": "12:40 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "2:20 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 3636,
+          "airline": "China Southern and Alaska",
+          "stops": 2,
+          "duration": "29 hr 27 min",
+          "dep_time": "5:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "7:27 AM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr 15 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 35 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        }
+      ],
+      "sichuan_flights": []
+    },
+    {
+      "label": "CTU-SFO RT Sep 1-15 (2wk)",
+      "trip_type": "round_trip",
+      "origin": "CTU",
+      "destination": "SFO",
+      "depart_date": "2026-09-01",
+      "return_date": "2026-09-15",
+      "status": "success",
+      "results_count": 0,
+      "flights": [],
+      "sichuan_flights": []
+    },
+    {
+      "label": "CTU-LAX OW May 1",
+      "trip_type": "one_way",
+      "origin": "CTU",
+      "destination": "LAX",
+      "depart_date": "2026-05-01",
+      "return_date": null,
+      "status": "success",
+      "results_count": 10,
+      "flights": [
+        {
+          "price": 777,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "35 hr 10 min",
+          "dep_time": "12:40 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:50 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "20 hr 30 min overnight",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 983,
+          "airline": "Air China and Air Canada",
+          "stops": 2,
+          "duration": "24 hr 49 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "9:34 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 35 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 1005,
+          "airline": "China Southern",
+          "stops": 1,
+          "duration": "18 hr",
+          "dep_time": "5:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 15 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 1155,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "17 hr",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "4:55 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 10 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 1161,
+          "airline": "Air China and United",
+          "stops": 2,
+          "duration": "19 hr 45 min",
+          "dep_time": "7:20 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "12:05 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 1206,
+          "airline": "China Southern",
+          "stops": 1,
+          "duration": "37 hr",
+          "dep_time": "10:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "21 hr 10 min overnight",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 1846,
+          "airline": "China Eastern and Air France",
+          "stops": 2,
+          "duration": "38 hr 25 min",
+          "dep_time": "1:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "12:55 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "5 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 1849,
+          "airline": "China Southern and Air France",
+          "stops": 2,
+          "duration": "38 hr 25 min",
+          "dep_time": "1:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "12:55 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "6 hr 50 min layover in Beijing. Transfer here from Beijing Daxing International Airport to Beijing Capital International Airport. Layover (2 of 2) is a 4 hr 25 min",
+              "airport": "Paris Charles de Gaulle Airport",
+              "city": "Paris"
+            }
+          ]
+        },
+        {
+          "price": 2674,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "23 hr 25 min",
+          "dep_time": "8:05 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "4:30 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr 35 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            }
+          ]
+        },
+        {
+          "price": 2674,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "19 hr 55 min",
+          "dep_time": "5:05 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "10:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 55 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "3 hr 15 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "1 hr 55 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        }
+      ],
+      "sichuan_flights": []
+    },
+    {
+      "label": "CTU-LAX OW May 15",
+      "trip_type": "one_way",
+      "origin": "CTU",
+      "destination": "LAX",
+      "depart_date": "2026-05-15",
+      "return_date": null,
+      "status": "success",
+      "results_count": 10,
+      "flights": [
+        {
+          "price": 508,
+          "airline": "China Southern",
+          "stops": 1,
+          "duration": "18 hr",
+          "dep_time": "5:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 15 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 777,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "17 hr",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "4:55 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 10 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 783,
+          "airline": "Air China and United",
+          "stops": 2,
+          "duration": "19 hr 45 min",
+          "dep_time": "7:20 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "12:05 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 761,
+          "airline": "China Southern",
+          "stops": 1,
+          "duration": "37 hr",
+          "dep_time": "10:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "21 hr 10 min overnight",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 921,
+          "airline": "Air China and Air Canada",
+          "stops": 2,
+          "duration": "24 hr 49 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "9:34 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 35 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 1096,
+          "airline": "China Southern and United",
+          "stops": 1,
+          "duration": "26 hr 20 min",
+          "dep_time": "9:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:50 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": []
+        },
+        {
+          "price": 1500,
+          "airline": "China Eastern and Air France",
+          "stops": 2,
+          "duration": "37 hr 10 min",
+          "dep_time": "1:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:40 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "5 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 2458,
+          "airline": "China Southern and Cathay Pacific",
+          "stops": 2,
+          "duration": "27 hr 45 min",
+          "dep_time": "10:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "10:45 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "9 hr 30 min overnight",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 2674,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "23 hr 25 min",
+          "dep_time": "8:05 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "4:30 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr 35 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            }
+          ]
+        },
+        {
+          "price": 2674,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "19 hr 55 min",
+          "dep_time": "5:05 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "10:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 55 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "3 hr 15 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "1 hr 55 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        }
+      ],
+      "sichuan_flights": []
+    },
+    {
+      "label": "CTU-LAX OW Jun 1",
+      "trip_type": "one_way",
+      "origin": "CTU",
+      "destination": "LAX",
+      "depart_date": "2026-06-01",
+      "return_date": null,
+      "status": "success",
+      "results_count": 11,
+      "flights": [
+        {
+          "price": 464,
+          "airline": "China Southern",
+          "stops": 1,
+          "duration": "18 hr",
+          "dep_time": "5:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 15 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 743,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "17 hr 25 min",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "5:20 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 10 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 748,
+          "airline": "Air China and United",
+          "stops": 2,
+          "duration": "19 hr 37 min",
+          "dep_time": "7:20 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:57 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 1293,
+          "airline": "Air China and Air Canada",
+          "stops": 2,
+          "duration": "24 hr 49 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "9:34 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 40 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 1500,
+          "airline": "China Eastern and Air France",
+          "stops": 2,
+          "duration": "37 hr 10 min",
+          "dep_time": "1:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:40 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "5 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 1848,
+          "airline": "Shenzhen and United",
+          "stops": 2,
+          "duration": "20 hr 35 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "5:20 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 35 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 1935,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "17 hr 30 min",
+          "dep_time": "7:00 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "9:30 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 20 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 2674,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "23 hr 50 min",
+          "dep_time": "8:05 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "4:55 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 40 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            }
+          ]
+        },
+        {
+          "price": 2674,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "20 hr 30 min",
+          "dep_time": "5:05 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "10:35 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 55 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            }
+          ]
+        },
+        {
+          "price": 3187,
+          "airline": "Shenzhen and EVA Air",
+          "stops": 2,
+          "duration": "22 hr 15 min",
+          "dep_time": "9:30 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "4:45 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr 30 min",
+              "airport": "Shenzhen Bao&#39;an International Airport",
+              "city": "Shenzhen"
+            }
+          ]
+        },
+        {
+          "price": 3487,
+          "airline": "China Southern and ANA",
+          "stops": 2,
+          "duration": "21 hr 15 min",
+          "dep_time": "9:00 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "3:15 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr 35 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "3 hr 15 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        }
+      ],
+      "sichuan_flights": []
+    },
+    {
+      "label": "CTU-LAX OW Jun 15",
+      "trip_type": "one_way",
+      "origin": "CTU",
+      "destination": "LAX",
+      "depart_date": "2026-06-15",
+      "return_date": null,
+      "status": "success",
+      "results_count": 11,
+      "flights": [
+        {
+          "price": 436,
+          "airline": "China Southern",
+          "stops": 1,
+          "duration": "18 hr",
+          "dep_time": "5:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 15 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 743,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "17 hr 25 min",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "5:20 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 10 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 748,
+          "airline": "Air China and United",
+          "stops": 2,
+          "duration": "19 hr 37 min",
+          "dep_time": "7:20 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:57 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 1186,
+          "airline": "Air China and Air Canada",
+          "stops": 2,
+          "duration": "24 hr 49 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "9:34 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 40 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 1500,
+          "airline": "China Eastern and Air France",
+          "stops": 2,
+          "duration": "37 hr 10 min",
+          "dep_time": "1:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:40 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "5 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 1848,
+          "airline": "Shenzhen and United",
+          "stops": 2,
+          "duration": "20 hr 35 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "5:20 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 35 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 1935,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "17 hr 30 min",
+          "dep_time": "7:00 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "9:30 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 20 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 2447,
+          "airline": "Air China and Lufthansa",
+          "stops": 2,
+          "duration": "30 hr 10 min",
+          "dep_time": "10:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "1:10 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 45 min overnight",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 2576,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "30 hr 45 min",
+          "dep_time": "7:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:15 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "11 hr 55 min overnight",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 2674,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "23 hr 50 min",
+          "dep_time": "8:05 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "4:55 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 40 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            }
+          ]
+        },
+        {
+          "price": 2674,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "20 hr 30 min",
+          "dep_time": "5:05 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "10:35 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 55 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "3 hr 15 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        }
+      ],
+      "sichuan_flights": []
+    },
+    {
+      "label": "CTU-LAX OW Sep 1",
+      "trip_type": "one_way",
+      "origin": "CTU",
+      "destination": "LAX",
+      "depart_date": "2026-09-01",
+      "return_date": null,
+      "status": "success",
+      "results_count": 11,
+      "flights": [
+        {
+          "price": 1704,
+          "airline": "Shenzhen and XiamenAir",
+          "stops": 2,
+          "duration": "23 hr 15 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "4 hr 15 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 1762,
+          "airline": "China Southern and Alaska",
+          "stops": 2,
+          "duration": "27 hr 32 min",
+          "dep_time": "7:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "7:32 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 45 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 1935,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "17 hr 25 min",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "5:20 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 10 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 1940,
+          "airline": "Air China and United",
+          "stops": 2,
+          "duration": "19 hr 41 min",
+          "dep_time": "7:20 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "12:01 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 1926,
+          "airline": "China Southern and WestJet",
+          "stops": 2,
+          "duration": "31 hr 20 min",
+          "dep_time": "7:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:20 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 15 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 1986,
+          "airline": "Air China and Air Canada",
+          "stops": 2,
+          "duration": "24 hr 52 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "9:37 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 40 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 2057,
+          "airline": "China Eastern and Air France",
+          "stops": 2,
+          "duration": "37 hr 10 min",
+          "dep_time": "1:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:40 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "5 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 2576,
+          "airline": "China Southern and Cathay Pacific",
+          "stops": 2,
+          "duration": "28 hr 15 min",
+          "dep_time": "10:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:15 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "9 hr 30 min overnight",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 2674,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "23 hr 50 min",
+          "dep_time": "8:05 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "4:55 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr 35 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            }
+          ]
+        },
+        {
+          "price": 2674,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "20 hr 30 min",
+          "dep_time": "5:05 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "10:35 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 55 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            }
+          ]
+        },
+        {
+          "price": 3494,
+          "airline": "Air China and ANA",
+          "stops": 2,
+          "duration": "29 hr",
+          "dep_time": "9:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:00 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "8 hr 40 min overnight",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "3 hr 15 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "4 hr 20 min",
+              "airport": "Shenzhen Bao&#39;an International Airport",
+              "city": "Shenzhen"
+            }
+          ]
+        }
+      ],
+      "sichuan_flights": []
+    },
+    {
+      "label": "CTU-LAX OW Sep 15",
+      "trip_type": "one_way",
+      "origin": "CTU",
+      "destination": "LAX",
+      "depart_date": "2026-09-15",
+      "return_date": null,
+      "status": "success",
+      "results_count": 10,
+      "flights": [
+        {
+          "price": 1328,
+          "airline": "Air China and Air Canada",
+          "stops": 2,
+          "duration": "24 hr 50 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "9:35 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 40 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 1704,
+          "airline": "Shenzhen and XiamenAir",
+          "stops": 2,
+          "duration": "23 hr 15 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "4 hr 15 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 1762,
+          "airline": "China Southern and Alaska",
+          "stops": 2,
+          "duration": "27 hr 32 min",
+          "dep_time": "7:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "7:32 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 45 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 1935,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "17 hr 5 min",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "5:00 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 10 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 1940,
+          "airline": "Air China and United",
+          "stops": 2,
+          "duration": "19 hr 41 min",
+          "dep_time": "7:20 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "12:01 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 2057,
+          "airline": "China Eastern and Air France",
+          "stops": 2,
+          "duration": "37 hr 10 min",
+          "dep_time": "1:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:40 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "5 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 2575,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "30 hr 15 min",
+          "dep_time": "7:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "10:45 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "11 hr 55 min overnight",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 2575,
+          "airline": "China Southern and Cathay Pacific",
+          "stops": 2,
+          "duration": "27 hr 45 min",
+          "dep_time": "10:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "10:45 AM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "9 hr 30 min overnight",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 2673,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "23 hr 50 min",
+          "dep_time": "8:05 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "4:55 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr 35 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            }
+          ]
+        },
+        {
+          "price": 2814,
+          "airline": "China Eastern, Etihad and JetBlue",
+          "stops": 3,
+          "duration": "47 hr 14 min",
+          "dep_time": "6:55 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "3:09 PM",
+          "arr_airport": "Los Angeles International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 3,
+              "duration": "5 hr 5 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "3 hr 15 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "4 hr 20 min",
+              "airport": "Shenzhen Bao&#39;an International Airport",
+              "city": "Shenzhen"
+            }
+          ]
+        }
+      ],
+      "sichuan_flights": []
+    },
+    {
+      "label": "CTU-SFO OW May 15",
+      "trip_type": "one_way",
+      "origin": "CTU",
+      "destination": "SFO",
+      "depart_date": "2026-05-15",
+      "return_date": null,
+      "status": "success",
+      "results_count": 11,
+      "flights": [
+        {
+          "price": 843,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "16 hr 20 min",
+          "dep_time": "7:20 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:40 AM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 843,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "16 hr 25 min",
+          "dep_time": "12:40 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "2:05 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "1 hr 55 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 849,
+          "airline": "Air China and United",
+          "stops": 2,
+          "duration": "20 hr 54 min",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:49 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr 10 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 872,
+          "airline": "Air China and Air Canada",
+          "stops": 2,
+          "duration": "21 hr 47 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "6:32 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 35 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 1071,
+          "airline": "China Southern and United",
+          "stops": 1,
+          "duration": "31 hr 35 min",
+          "dep_time": "9:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "2:05 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": []
+        },
+        {
+          "price": 1150,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "32 hr 45 min",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:40 AM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "18 hr 10 min overnight",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 1500,
+          "airline": "China Eastern and Air France",
+          "stops": 2,
+          "duration": "38 hr 20 min",
+          "dep_time": "1:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "12:50 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "5 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 1501,
+          "airline": "China Eastern and Air France",
+          "stops": 2,
+          "duration": "44 hr 55 min",
+          "dep_time": "6:55 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "12:50 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "11 hr 35 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 2458,
+          "airline": "China Southern and Cathay Pacific",
+          "stops": 2,
+          "duration": "27 hr 55 min",
+          "dep_time": "10:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "10:55 AM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "9 hr 30 min overnight",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 2576,
+          "airline": "China Southern and Cathay Pacific",
+          "stops": 2,
+          "duration": "24 hr 40 min",
+          "dep_time": "1:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "10:40 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "6 hr 45 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 2674,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "20 hr 35 min",
+          "dep_time": "5:05 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "10:40 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 55 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            },
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 15 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "12 hr 10 min overnight",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        }
+      ],
+      "sichuan_flights": []
+    },
+    {
+      "label": "CTU-SFO OW Jun 1",
+      "trip_type": "one_way",
+      "origin": "CTU",
+      "destination": "SFO",
+      "depart_date": "2026-06-01",
+      "return_date": null,
+      "status": "success",
+      "results_count": 10,
+      "flights": [
+        {
+          "price": 493,
+          "airline": "China Southern",
+          "stops": 2,
+          "duration": "20 hr 40 min",
+          "dep_time": "3:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:40 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 45 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 614,
+          "airline": "China Southern and Alaska",
+          "stops": 2,
+          "duration": "31 hr 27 min",
+          "dep_time": "3:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "7:27 AM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "4 hr 15 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 809,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "16 hr 35 min",
+          "dep_time": "7:20 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:55 AM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 815,
+          "airline": "Air China and United",
+          "stops": 2,
+          "duration": "20 hr 15 min",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:10 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr 10 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 809,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "33 hr",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:55 AM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "18 hr 10 min overnight",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 919,
+          "airline": "China Southern",
+          "stops": 1,
+          "duration": "40 hr 40 min",
+          "dep_time": "7:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:40 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "25 hr 45 min overnight",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 1295,
+          "airline": "Air China and Air Canada",
+          "stops": 2,
+          "duration": "21 hr 47 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "6:32 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 40 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 1354,
+          "airline": "Air China, Air Canada and United",
+          "stops": 2,
+          "duration": "23 hr 4 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "7:49 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 40 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 1500,
+          "airline": "China Eastern and Air France",
+          "stops": 2,
+          "duration": "38 hr 20 min",
+          "dep_time": "1:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "12:50 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "5 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 2674,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "21 hr 10 min",
+          "dep_time": "5:05 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:15 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 55 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            },
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr 35 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        }
+      ],
+      "sichuan_flights": []
+    },
+    {
+      "label": "CTU-SFO OW Sep 1",
+      "trip_type": "one_way",
+      "origin": "CTU",
+      "destination": "SFO",
+      "depart_date": "2026-09-01",
+      "return_date": null,
+      "status": "success",
+      "results_count": 10,
+      "flights": [
+        {
+          "price": 748,
+          "airline": "China Southern",
+          "stops": 2,
+          "duration": "22 hr 10 min",
+          "dep_time": "1:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:40 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr 15 min",
+              "airport": "Beijing Daxing International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 832,
+          "airline": "China Southern",
+          "stops": 1,
+          "duration": "16 hr 40 min",
+          "dep_time": "7:00 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:40 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "1 hr 45 min",
+              "airport": "Guangzhou Baiyun International Airport",
+              "city": "Guangzhou"
+            }
+          ]
+        },
+        {
+          "price": 1946,
+          "airline": "Air China, Air Canada and United",
+          "stops": 2,
+          "duration": "23 hr 4 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "7:49 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 40 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 1996,
+          "airline": "Air China and Air Canada",
+          "stops": 2,
+          "duration": "21 hr 47 min",
+          "dep_time": "11:45 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "6:32 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 40 min",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 2057,
+          "airline": "China Eastern and Air France",
+          "stops": 2,
+          "duration": "38 hr 20 min",
+          "dep_time": "1:30 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "12:50 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "5 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 2059,
+          "airline": "China Eastern and Air France",
+          "stops": 2,
+          "duration": "44 hr 55 min",
+          "dep_time": "6:55 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "12:50 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "11 hr 35 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 2144,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "16 hr 35 min",
+          "dep_time": "7:20 AM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:55 AM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 2144,
+          "airline": "Air China and United",
+          "stops": 1,
+          "duration": "16 hr 40 min",
+          "dep_time": "12:40 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "2:20 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 1,
+              "duration": "2 hr",
+              "airport": "Beijing Capital International Airport",
+              "city": "Beijing"
+            }
+          ]
+        },
+        {
+          "price": 2150,
+          "airline": "Air China and United",
+          "stops": 2,
+          "duration": "20 hr 22 min",
+          "dep_time": "2:55 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "8:17 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "2 hr 10 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        },
+        {
+          "price": 2673,
+          "airline": "Air China and Cathay Pacific",
+          "stops": 2,
+          "duration": "21 hr 10 min",
+          "dep_time": "5:05 PM",
+          "dep_airport": "Chengdu Shuangliu International Airport",
+          "arr_time": "11:15 PM",
+          "arr_airport": "San Francisco International Airport",
+          "layovers": [
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "1 hr 55 min",
+              "airport": "Wuhan Tianhe International Airport",
+              "city": "Wuhan"
+            },
+            {
+              "index": 1,
+              "total": 2,
+              "duration": "3 hr 15 min",
+              "airport": "Shanghai Pudong International Airport",
+              "city": "Shanghai"
+            }
+          ]
+        }
+      ],
+      "sichuan_flights": []
+    }
+  ],
+  "sichuan_flights_summary": [],
+  "all_flights_count": 154,
+  "sichuan_flights_count": 0
+}
