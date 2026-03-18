@@ -1,6 +1,6 @@
 # Bug Fare Scanner - Verification Dashboard
 
-> **Scan time:** 2026-03-17T16:44:26 | **Updated:** 2026-03-17 19:44 | All prices USD, round-trip, per person
+> **Scan time:** 2026-03-17T20:16:57 | **Updated:** 2026-03-17 20:18 | All prices USD, round-trip, per person
 
 > **Interactive HTML version:** [bug_fare_verify.html](https://enzymesbio.github.io/claudecodeflightdeals/bug_fare_verify.html)
 
@@ -21,10 +21,10 @@
 
 | Metric | Value |
 |--------|-------|
-| Total bug fares | **38** |
-| Total cheap fares | **19** |
+| Total bug fares | **40** |
+| Total cheap fares | **80** |
 | Lowest Business RT | **$839** (KUL-Denver) |
-| Lowest First RT | **$6434** (KUL-Chicago) |
+| Lowest First RT | **$4336** (KUL-Chicago) |
 | Lowest Premium Eco RT | **$651** (KUL-Denver) |
 
 ---
@@ -69,14 +69,14 @@
 | Atlanta | **$884** | $2431 | May 29 – Jun 6 | 3 stops | BUG | -- |
 | Tampa | **$884** | $2431 | Apr 3 – 9 | 3 stops | BUG | -- |
 | Fort Lauderdale | **$884** | $2431 | May 24 – 30 | 3 stops | BUG | -- |
-| Pittsburgh | **$884** | $2431 | May 8 – 15 | 3 stops | BUG | -- |
 | Detroit | **$884** | $2431 | May 15 – 23 | 3 stops | BUG | -- |
-| Los Angeles | **$889** | $2445 | Jul 16 – 22 | 2 stops | BUG | [Flights](https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA3LTE2agwIAxIIL20vMDQ0cnZyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDctMjJqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDQ0cnZAAUgDUgNVU0RwAXp4Q2pSSVdUbFZVVFkzWVVkeFZEaEJRVk5mUkhkQ1J5MHRMUzB0TFMwdExYZGlZbUppT1VGQlFVRkJSMjAxTlRrd1EyWXRPQzFCRWc1VVJ6UXpObnhQVXpoOFQxTTFNUm9MQ1BLMUJSQUNHZ05WVTBRNEhIRHl0UVU9mAEBsgEUGAEgASoOCAISCi9tLzAzMHFiM3Q&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCIjc_I6PqJMDFQAAAAAdAAAAABBq) |
-| New York | **$893** | $2456 | Apr 4 – 11 | 2 stops | BUG | [Flights](https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA0LTA0agwIAxIIL20vMDQ0cnZyDQgCEgkvbS8wMl8yODYaKRIKMjAyNi0wNC0xMWoNCAISCS9tLzAyXzI4NnIMCAMSCC9tLzA0NHJ2QAFIA1IDVVNEcAF6eENqUklMVTE2UWtoNlZUaDBhR2RCUVdzeE5VRkNSeTB0TFMwdExTMHRMWGRtWVhneE5VRkJRVUZCUjIwMU5TMDBUSFpDZVRoQkVnNVVSelF6Tm54UFV6aDhUMU16TnhvTENKQzVCUkFDR2dOVlUwUTRISENRdVFVPZgBAbIBExgBIAEqDQgCEgkvbS8wMl8yODY&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCLD0nZePqJMDFQAAAAAdAAAAABBn) |
+| Los Angeles | **$889** | $2445 | Jul 16 – 22 | 2 stops | BUG | [Flights](https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA3LTE2agwIAxIIL20vMDQ0cnZyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDctMjJqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDQ0cnZAAUgDUgNVU0RwAXp4Q2pSSWRHcHNTRVJvVFU5cGJtOUJRVzAwVldkQ1J5MHRMUzB0TFMwdGQySmlabU14TjBGQlFVRkJSMjAyUjB0blMxWmhWVzlCRWc1VVJ6UXpObnhQVXpoOFQxTTFNUm9MQ09pMUJSQUNHZ05WVTBRNEhIRG90UVU9mAEBsgEUGAEgASoOCAISCi9tLzAzMHFiM3Q&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCMCKptO9qJMDFQAAAAAdAAAAABBq) |
+| New York | **$893** | $2456 | Apr 4 – 11 | 2 stops | BUG | [Flights](https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA0LTA0agwIAxIIL20vMDQ0cnZyDQgCEgkvbS8wMl8yODYaKRIKMjAyNi0wNC0xMWoNCAISCS9tLzAyXzI4NnIMCAMSCC9tLzA0NHJ2QAFIA1IDVVNEcAF6eENqUklhMFpzWXpST1RIWXlPVGhCUVhoeVVrRkNSeTB0TFMwdExTMHRkMkppWTJFeE1FRkJRVUZCUjIwMlIweGpUbFIzYTNOQkVnNVVSelF6Tm54UFV6aDhUMU16TnhvTENJYTVCUkFDR2dOVlUwUTRISENHdVFVPZgBAbIBExgBIAEqDQgCEgkvbS8wMl8yODY&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCIjRxdq9qJMDFQAAAAAdAAAAABBn) |
 | Chicago | **$893** | $2456 | Apr 4 – 11 | 2 stops | BUG | -- |
 | Seattle | **$894** | $2458 | Jul 4 – 10 | 3 stops | BUG | -- |
-| San Francisco | **$897** | $2467 | Jun 4 – 10 | 2 stops | BUG | [Flights](https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA2LTA0agwIAxIIL20vMDQ0cnZyDAgCEggvbS8wZDZscBooEgoyMDI2LTA2LTEwagwIAhIIL20vMGQ2bHByDAgDEggvbS8wNDRydkABSANSA1VTRHABenxDalJJZVdrMVZWTlJSRWxRV2tGQlFrZEJYM2RDUnkwdExTMHRMUzB0ZDJaaWMyRXhNa0ZCUVVGQlIyMDFOVjh3VFRsWVYwbEJFaEJUVVRrMk5YeE1XREUzTjN4TVdETTRHZ3NJcGJ3RkVBSWFBMVZUUkRnY2NLVzhCUT09mAEBsgESGAEgASoMCAISCC9tLzBkNmxw&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCOjvu56PqJMDFQAAAAAdAAAAABBq) |
+| San Francisco | **$897** | $2467 | Jun 4 – 10 | 2 stops | BUG | [Flights](https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA2LTA0agwIAxIIL20vMDQ0cnZyDAgCEggvbS8wZDZscBooEgoyMDI2LTA2LTEwagwIAhIIL20vMGQ2bHByDAgDEggvbS8wNDRydkABSANSA1VTRHABenxDalJJT1dkclRHMUJOVkJQYVRCQlFuWkxTRUZDUnkwdExTMHRMUzB0TFhkbWFHNHhPVUZCUVVGQlIyMDJSMDB3U21aaVlsZEJFaEJUVVRrMk5YeE1XREUzTjN4TVdETTRHZ3NJbXJ3RkVBSWFBMVZUUkRnY2NKcThCUT09mAEBsgESGAEgASoMCAISCC9tLzBkNmxw&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAIQtY0DKABqFwoTCIig6uG9qJMDFQAAAAAdAAAAABBn) |
 | San Diego | **$898** | $2470 | May 9 – 15 | 3 stops | BUG | -- |
+| Pittsburgh | **$898** | $2470 | May 7 – 14 | 3 stops | BUG | -- |
 | Charlotte | **$898** | $2470 | Apr 27 – May 3 | 3 stops | BUG | -- |
 | Portland | **$902** | $2480 | Apr 3 – 9 | 3 stops | BUG | -- |
 | Philadelphia | **$903** | $2483 | May 15 – 21 | 3 stops | BUG | -- |
@@ -92,13 +92,12 @@
 |-------------|------:|----------:|-------|-------|------|--------|
 | Houston | **$651** | $1790 | Jun 18 – 24 | 3 stops | BUG | -- |
 | Boston | **$666** | $1832 | Jul 16 – 23 | 2 stops | BUG | -- |
-| Los Angeles | **$675** | $1856 | Jul 16 – 22 | 2 stops | BUG | [Flights](https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA3LTE2agwIAxIIL20vMDQ0cnZyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDctMjJqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDQ0cnZAAUgCUgNVU0RwAXp4Q2pSSWIxTTJRa2N0VVRCMFVGbEJRa1F4TTJkQ1J5MHRMUzB0TFMwdExTMTNabWRuTTBGQlFVRkJSMjAxTlROVlIxWXljVFpCRWc1VVJ6UXpObnhQVXpoOFQxTTFNUm9MQ095T0JCQUNHZ05WVTBRNEhIRHNqZ1E9mAEBsgEUGAEgASoOCAISCi9tLzAzMHFiM3Q&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAIQtY0DKABqFwoTCJDBq92OqJMDFQAAAAAdAAAAABBm) |
-| Washington, D.C. | **$675** | $1856 | May 23 – Jun 1 | 2 stops | BUG | [Flights](https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA1LTIzagwIAxIIL20vMDQ0cnZyDAgCEggvbS8wcmg2axooEgoyMDI2LTA2LTAxagwIAhIIL20vMHJoNmtyDAgDEggvbS8wNDRydkABSAJSA1VTRHABenhDalJJTFUxNlFraDZWVGgwYUdkQlFXdHVVMUZDUnkwdExTMHRMUzB0TFhkbVlYZ3hOVUZCUVVGQlIyMDFOVGRqUjJ0clVXOUJFZzVVUnpRek5ueFBVemg4VDFNME1Sb0xDT3lPQkJBQ0dnTlZVMFE0SEhEc2pnUT2YAQGyARIYASABKgwIAhIIL20vMHJoNms&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAIQtY0DKABqFwoTCLiXo_qOqJMDFQAAAAAdAAAAABBm) |
+| Los Angeles | **$675** | $1856 | Jul 16 – 22 | 2 stops | BUG | [Flights](https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA3LTE2agwIAxIIL20vMDQ0cnZyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDctMjJqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDQ0cnZAAUgCUgNVU0RwAXp4Q2pSSVgyVlFjVlZwZDFWemVEQkJRbTQ1ZFdkQ1J5MHRMUzB0TFMwdExYZG1ZWFV5TkVGQlFVRkJSMjAyUjBaWlFqbG5WMVZCRWc1VVJ6UXpObnhQVXpoOFQxTTFNUm9MQ09XT0JCQUNHZ05WVTBRNEhIRGxqZ1E9mAEBsgEUGAEgASoOCAISCi9tLzAzMHFiM3Q&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAIQtY0DKABqFwoTCMD_96u9qJMDFQAAAAAdAAAAABBm) |
+| Washington, D.C. | **$675** | $1856 | May 23 – Jun 1 | 2 stops | BUG | [Flights](https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA1LTIzagwIAxIIL20vMDQ0cnZyDAgCEggvbS8wcmg2axooEgoyMDI2LTA2LTAxagwIAhIIL20vMHJoNmtyDAgDEggvbS8wNDRydkABSAJSA1VTRHABenhDalJJVVU5WVFrOWZjRXhKY2tWQlFtbzRWV2RDUnkwdExTMHRMUzB0TFhkbWFHc3lNRUZCUVVGQlIyMDJSMGs0U25kaFduZEJFZzVVUnpRek5ueFBVemg4VDFNME1Sb0xDT1dPQkJBQ0dnTlZVMFE0SEhEbGpnUT2YAQGyARIYASABKgwIAhIIL20vMHJoNms&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAIQtY0DKABqFwoTCNjV3sW9qJMDFQAAAAAdAAAAABBm) |
 | 1h drive from Miami | **$675** | $1856 | May 23 – Jun 1 | 2 stops | BUG | -- |
-| New York | **$678** | $1864 | Jun 11 – 20 | 3 stops | BUG | [Flights](https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA2LTExagwIAxIIL20vMDQ0cnZyDQgCEgkvbS8wMl8yODYaKRIKMjAyNi0wNi0yMGoNCAISCS9tLzAyXzI4NnIMCAMSCC9tLzA0NHJ2QAFIAlIDVVNEcAF6hAFDalJJVVhkVFlrSTRVRXAzVHpSQlFWUnRTbmRDUnkwdExTMHRMUzB0TFhkaVltSm1PVUZCUVVGQlIyMDFOVFF3UVVaeGRUSkJFaFpUVVRrMk5YeE1XREUzTjN4TVdEZ3dmRUZETnpFMkdnc0lpSkVFRUFJYUExVlRSRGdjY0lpUkJBPT2YAQGyARMYASABKg0IAhIJL20vMDJfMjg2&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAIQtY0DKABqFwoTCJjljueOqJMDFQAAAAAdAAAAABBj) |
+| New York | **$678** | $1864 | Jun 11 – 20 | 3 stops | BUG | [Flights](https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA2LTExagwIAxIIL20vMDQ0cnZyDQgCEgkvbS8wMl8yODYaKRIKMjAyNi0wNi0yMGoNCAISCS9tLzAyXzI4NnIMCAMSCC9tLzA0NHJ2QAFIAlIDVVNEcAF6hAFDalJJWVRBeGMyODFNa0V5VmpCQlFYaFhSbWRDUnkwdExTMHRMUzB0TFMxM1luWnVNVUZCUVVGQlIyMDJSMGRqVGw5bWRFOUJFaFpUVVRrMk5YeE1XREUzTjN4TVdEZ3dmRUZETnpFMkdnc0lnSkVFRUFJYUExVlRSRGdjY0lDUkJBPT2YAQGyARMYASABKg0IAhIJL20vMDJfMjg2&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAIQtY0DKABqFwoTCKCvnLO9qJMDFQAAAAAdAAAAABBj) |
 | Las Vegas | **$678** | $1864 | Jun 14 – 20 | 2 stops | BUG | -- |
 | Seattle | **$678** | $1864 | Jul 3 – 12 | 3 stops | BUG | -- |
-| San Diego | **$680** | $1870 | May 9 – 16 | 3 stops | BUG | -- |
 | Miami | **$683** | $1878 | May 25 – 31 | 2 stops | BUG | -- |
 | Fort Lauderdale | **$683** | $1878 | May 25 – 31 | 2 stops | BUG | -- |
 | Portland | **$685** | $1884 | May 3 – 9 | 3 stops | BUG | -- |
@@ -118,16 +117,16 @@
 | Destination | Price | 2A+1C Est. | Dates | Stops | Type | Verify |
 |-------------|------:|----------:|-------|-------|------|--------|
 | New York | **$6434** | $17694 | Aug 27 – Sep 2 | 2 stops | CHEAP | -- |
-| Boston | **$6555** | $18026 | Sep 3 – 12 | 1 stop | CHEAP | -- |
+| Boston | **$6554** | $18024 | Sep 3 – 12 | 1 stop | CHEAP | -- |
 | Washington, D.C. | **$6678** | $18364 | May 28 – Jun 3 | 1 stop | CHEAP | -- |
 | Baltimore | **$6678** | $18364 | May 28 – Jun 3 | 1 stop | CHEAP | -- |
-| Chicago | **$6713** | $18461 | Jun 11 – 17 | 1 stop | CHEAP | -- |
-| Houston | **$6713** | $18461 | May 7 – 16 | 1 stop | CHEAP | -- |
-| San Francisco | **$6853** | $18846 | Aug 28 – Sep 3 | 1 stop | CHEAP | -- |
-| Los Angeles | **$7061** | $19418 | Sep 3 – 9 | 1 stop | CHEAP | -- |
-| Orlando | **$7257** | $19957 | May 14 – 20 | 1 stop | CHEAP | -- |
-| Dallas | **$7619** | $20952 | May 22 – 28 | 1 stop | CHEAP | -- |
-| Portland | **$7685** | $21134 | Apr 23 – 29 | 2 stops | CHEAP | -- |
+| Chicago | **$6712** | $18458 | Jun 11 – 17 | 1 stop | CHEAP | -- |
+| Houston | **$6712** | $18458 | May 7 – 16 | 1 stop | CHEAP | -- |
+| San Francisco | **$6852** | $18843 | Aug 28 – Sep 3 | 1 stop | CHEAP | -- |
+| Los Angeles | **$7061** | $19418 | Sep 10 – 16 | 1 stop | CHEAP | -- |
+| Orlando | **$7256** | $19954 | May 14 – 20 | 1 stop | CHEAP | -- |
+| Dallas | **$7618** | $20950 | May 22 – 28 | 1 stop | CHEAP | -- |
+| Portland | **$7684** | $21131 | Apr 23 – 29 | 2 stops | CHEAP | -- |
 
 ---
 
@@ -137,12 +136,8 @@
 
 | Destination | Price | 2A+1C Est. | Dates | Stops | Type | Verify |
 |-------------|------:|----------:|-------|-------|------|--------|
-| Washington, D.C. | **$6671** | $18345 | Apr 2 – 9 | 2 stops | CHEAP | -- |
-| Key West | **$6671** | $18345 | Mar 19 – 25 | 2 stops | CHEAP | -- |
-| Boston | **$6798** | $18694 | Apr 2 – 8 | 2 stops | CHEAP | -- |
-| New York | **$7190** | $19772 | Apr 4 – 10 | 2 stops | CHEAP | -- |
-| Dallas | **$7798** | $21444 | Apr 5 – 12 | 2 stops | CHEAP | -- |
-| Nashville | **$7843** | $21568 | Apr 9 – 15 | 2 stops | CHEAP | -- |
+| Honolulu | **$7600** | $20900 | Apr 17 – 23 | 1 stop | CHEAP | -- |
+| New York | **$7837** | $21552 | Apr 2 – 8 | 1 stop | CHEAP | -- |
 
 ---
 
