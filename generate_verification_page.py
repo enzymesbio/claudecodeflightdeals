@@ -409,6 +409,40 @@ try:
 except Exception as e:
     print(f"Note: no HK verify results yet: {e}")
 
+# Deep verify ALL results (50 fares under $2000 family)
+deep_verify_lookup = {}  # (origin, dest, dates) -> result, for fare table linking
+try:
+    with open('D:/claude/flights/deep_verify_all_results.json', encoding='utf-8') as f:
+        deep_all_data = json.load(f)
+    for r in deep_all_data.get('results', []):
+        if not r.get('booking_url') or not r.get('has_booking_page'):
+            continue
+        origin = r.get('origin', '')
+        dest = r.get('city', '')
+        airline = r.get('airline') or ''
+        dates = r.get('dates', '')
+        price = r.get('price', 0)
+        if dest in EXCLUDE_DESTINATIONS:
+            continue
+        if any(excl.lower() in airline.lower() for excl in EXCLUDE_AIRLINES):
+            continue
+        # Add to lookup for fare table
+        deep_verify_lookup[(origin, dest, dates)] = r
+        # Add to verified deals if not already present (avoid duplicates with Tokyo/Seoul/HK)
+        already = any(d['origin'] == origin and d['dest'] == dest for d in verified_deals)
+        if not already:
+            verified_deals.append({
+                'origin': origin,
+                'dest': dest,
+                'cabin': r.get('cabin', 'Economy'),
+                'price': price or r.get('explore_price', 0),
+                'airline': airline or 'Unknown',
+                'booking_url': r['booking_url'],
+                'has_booking': True,
+            })
+except Exception as e:
+    print(f"Warning: could not load deep_verify_all results: {e}")
+
 # Sort by price
 verified_deals.sort(key=lambda x: x['price'])
 
@@ -525,7 +559,7 @@ def build_expedia_url(origin_iata, dest_iata, depart_date, return_date, cabin_nu
     cabin_name = EXPEDIA_CABIN.get(cabin_num, 'economy')
     return f'https://www.expedia.com/Flights-search/{origin_iata}-{dest_iata}/{depart_date}/{return_date}/?cabinclass={cabin_name}'
 
-def render_fare_row(fare, origin_cid, cabin_num):
+def render_fare_row(fare, origin_cid, cabin_num, deep_lookup=None):
     """Render a single fare table row."""
     dest = fare['destination']
     price = fare['price_usd']
@@ -571,8 +605,18 @@ def render_fare_row(fare, origin_cid, cabin_num):
     explore_url_dated = build_explore_url(origin_cid, US_CITY_ID, date=depart, cabin=cabin_num)
     verify_links += f'<a href="{explore_url_dated}" target="_blank" rel="noopener" class="verify-btn explore-btn">Explore</a> '
 
-    # Trip.com and Expedia removed — both block automated access (CAPTCHA/redirect)
-    # Only verified Google Flights links are shown
+    # Deep verified booking link (under $2000 family)
+    if deep_lookup:
+        dv = deep_lookup.get((origin_city, dest, dates))
+        if dv and dv.get('booking_url'):
+            dv_airline = (dv.get('airline') or '')[:20]
+            dv_price = dv.get('price', '')
+            label = f'Booking Page'
+            if dv_price:
+                label = f'Book ${dv_price}'
+            if dv_airline:
+                label += f' ({dv_airline})'
+            verify_links += f'<a href="{dv["booking_url"]}" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none;font-size:11px">{label}</a> '
 
     # Row text style for NORMAL fares
     row_style = ' style="color:#a0aec0"' if cls == 'NORMAL' else ''
@@ -623,7 +667,7 @@ html += render_fare_table_header()
 for fare in affordable_fares:
     origin_info = ORIGINS.get(fare['origin_city'], {})
     origin_cid = origin_info.get('city_id', '')
-    html += render_fare_row(fare, origin_cid, fare['cabin_num'])
+    html += render_fare_row(fare, origin_cid, fare['cabin_num'], deep_lookup=deep_verify_lookup)
 html += """</table>
 </div>
 """
