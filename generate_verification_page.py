@@ -300,65 +300,96 @@ a.verify-btn:hover {{ opacity: 0.75; }}
 # Stats
 bug_count = len([b for b in bugs if b['classification'] == 'BUG_FARE'])
 cheap_count = len([b for b in bugs if b['classification'] == 'CHEAP'])
-origins_with_bugs = len(set(b['origin_city'] for b in bugs if b['classification'] == 'BUG_FARE'))
-lowest_biz = min((b['price_usd'] for b in bugs if b['cabin_num'] == 3), default=0)
-lowest_first = min((b['price_usd'] for b in bugs if b['cabin_num'] == 4), default=0)
+all_count = len(data['destinations'])
 
-# Build highlight summary rows from actual bug fare data
-from collections import defaultdict as dd2
-highlight_groups = dd2(lambda: {'prices': [], 'dests': set()})
-for b in bugs:
-    if b['classification'] == 'BUG_FARE':
-        key = (b['origin_city'], b.get('origin_code', ''), b['cabin'])
-        highlight_groups[key]['prices'].append(b['price_usd'])
-        highlight_groups[key]['dests'].add(b['destination'])
-
-highlight_rows = ''
-for (origin, code, cabin), info in sorted(highlight_groups.items(), key=lambda x: min(x[1]['prices'])):
-    prices = sorted(info['prices'])
-    n_dests = len(info['dests'])
-    lo, hi = prices[0], prices[-1]
-    fam_lo, fam_hi = lo * 2.75, hi * 2.75
-    price_str = f'${lo:,.0f}' if lo == hi else f'${lo:,.0f}-${hi:,.0f}'
-    fam_str = f'${fam_lo:,.0f}' if lo == hi else f'${fam_lo:,.0f}-${fam_hi:,.0f}'
-    dest_str = list(info['dests'])[0] if n_dests == 1 else f'{n_dests} US cities'
-    highlight_rows += f'''<tr>
-<td><strong>{origin} ({code})</strong></td>
-<td>{cabin}</td>
-<td style="color:#b91c1c;font-weight:700">{price_str}</td>
-<td>{fam_str}</td>
-<td>{dest_str}</td>
-</tr>
-'''
-
-# Find the winner
-winner_key = min(highlight_groups.keys(), key=lambda k: min(highlight_groups[k]['prices']))
-winner_origin = winner_key[0]
-winner_code = winner_key[1]
-
-html += f"""
-<div class="section" style="border:2px solid #805ad5;background:#faf5ff">
-<div class="section-header" style="background:#f3e8ff;border-bottom:2px solid #d6bcfa">
-<h2 style="color:#6b21a8">{bug_count} Bug Fares Found</h2>
-<span style="color:#718096;font-size:13px">All prices per person, round-trip</span>
+# --- VERIFIED BOOKABLE DEALS (from deep verification) ---
+html += """
+<div class="section" style="border:2px solid #276749;background:#f0fff4">
+<div class="section-header" style="background:#c6f6d5;border-bottom:2px solid #9ae6b4">
+<h2 style="color:#276749">CONFIRMED BOOKABLE — Deep Verified</h2>
+<span style="color:#276749;font-size:13px">Clicked through to booking page, real "Book with" links found</span>
 </div>
 <table class="fare-table">
-<tr>
-<th>Origin</th><th>Cabin</th><th>Price Range</th><th>Family (2A+1C)</th><th>Destinations</th>
+<tr><th>Route</th><th>Cabin</th><th>Price</th><th>Family (2A+1C)</th><th>Book With</th><th>Book Now</th></tr>
+<tr style="background:#f0fff4">
+<td><strong>Tokyo &rarr; Honolulu</strong></td><td>Economy</td>
+<td class="price" style="color:#276749">$426</td><td>$1,172</td>
+<td>ZIPAIR Tokyo (nonstop NRT-HNL)</td>
+<td><a href="https://www.zipair.net" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">ZIPAIR</a>
+<a href="https://www.google.com/travel/flights?q=Flights+from+NRT+to+HNL+on+2026-08-27+return+2026-09-03&curr=USD&hl=en" target="_blank" rel="noopener" class="verify-btn search-btn">Google</a></td>
 </tr>
-{highlight_rows}
+<tr style="background:#f0fff4">
+<td><strong>Seoul &rarr; Honolulu</strong></td><td>Economy</td>
+<td class="price" style="color:#276749">$437</td><td>$1,202</td>
+<td>Air Premia (nonstop ICN-HNL)</td>
+<td><a href="https://www.airpremia.com" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">Air Premia</a>
+<a href="https://www.google.com/travel/flights?q=Flights+from+ICN+to+HNL+on+2026-04-05+return+2026-04-13&curr=USD&hl=en" target="_blank" rel="noopener" class="verify-btn search-btn">Google</a></td>
+</tr>
+<tr>
+<td><strong>Seoul &rarr; Los Angeles</strong></td><td>Premium Eco</td>
+<td class="price" style="color:#276749">$1,121</td><td>$3,083</td>
+<td>Air Premia</td>
+<td><a href="https://www.airpremia.com" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">Air Premia</a>
+<a href="https://www.google.com/travel/flights?q=Flights+from+ICN+to+LAX+on+2026-09-11+return+2026-09-17+premium+economy&curr=USD&hl=en" target="_blank" rel="noopener" class="verify-btn search-btn">Google</a></td>
+</tr>
+<tr>
+<td><strong>Seoul &rarr; San Francisco</strong></td><td>Premium Eco</td>
+<td class="price" style="color:#276749">$1,128</td><td>$3,102</td>
+<td>Air Premia</td>
+<td><a href="https://www.airpremia.com" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">Air Premia</a></td>
+</tr>
+<tr>
+<td><strong>Seoul &rarr; Honolulu</strong></td><td>Premium Eco</td>
+<td class="price" style="color:#276749">$1,143</td><td>$3,143</td>
+<td>Air Premia</td>
+<td><a href="https://www.airpremia.com" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">Air Premia</a></td>
+</tr>
+<tr>
+<td><strong>Seoul &rarr; Seattle</strong></td><td>Premium Eco</td>
+<td class="price" style="color:#276749">$1,185</td><td>$3,259</td>
+<td>JAL</td>
+<td><a href="https://www.jal.co.jp/en/" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">JAL</a></td>
+</tr>
+<tr>
+<td><strong>Tokyo &rarr; Honolulu</strong></td><td>Business</td>
+<td class="price" style="color:#276749">$1,438</td><td>$3,955</td>
+<td>ZIPAIR Tokyo</td>
+<td><a href="https://www.zipair.net" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">ZIPAIR</a></td>
+</tr>
+<tr>
+<td><strong>Seoul &rarr; Honolulu</strong></td><td>Business</td>
+<td class="price" style="color:#276749">$2,134</td><td>$5,869</td>
+<td>Asiana Airlines + Gotogate</td>
+<td><a href="https://flyasiana.com" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">Asiana</a></td>
+</tr>
+<tr>
+<td><strong>Seoul &rarr; Seattle</strong></td><td>Business</td>
+<td class="price" style="color:#276749">$2,539</td><td>$6,982</td>
+<td>Alaska Airlines</td>
+<td><a href="https://www.alaskaair.com" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">Alaska</a></td>
+</tr>
 </table>
-<div style="padding:14px 20px;color:#4a5568;font-size:14px;border-top:1px solid #e9d8fd;background:#faf5ff">
-<strong style="color:#6b21a8">{winner_origin} is the clear winner</strong> &mdash; scan found bug fares across multiple cabin classes to dozens of US cities. Premium Economy under $2,000 and Business under $2,600 for your family of 3.
+<div style="padding:14px 20px;color:#276749;font-size:14px;border-top:1px solid #9ae6b4;background:#f0fff4">
+<strong>Best family deals under $3,000:</strong> Tokyo&rarr;Honolulu Economy $1,172 (ZIPAIR) and Seoul&rarr;Honolulu Economy $1,202 (Air Premia). These are legitimate low-cost carrier fares, not pricing errors.
+</div>
+</div>
+
+<div class="section" style="border:2px solid #c53030;background:#fff5f5">
+<div class="section-header" style="background:#fed7d7;border-bottom:2px solid #feb2b2">
+<h2 style="color:#c53030">GHOST FARES — Jakarta (NOT Bookable)</h2>
+<span style="color:#c53030;font-size:13px">Shows in search results but "We can't find booking options" on booking page</span>
+</div>
+<div style="padding:14px 20px;color:#742a2a;font-size:14px">
+<strong>Jakarta Business $839-$946 to 20 US cities</strong> — prices display on Explore map and flight search, but final booking page returns "We can't find booking options for this itinerary." Verified via Playwright click-through on 5 routes (Houston, LA, Boston, Washington, New York). All ghost fares.<br><br>
+<strong>Jakarta Premium Economy $651-$712 to 17 US cities</strong> — same pattern. Airlines: THAI/Austrian/Singapore Airlines routing via BKK/VIE. The fare was likely real briefly but booking partners pulled it.
 </div>
 </div>
 
 <div class="stats">
-<div class="stat-card"><div class="num" style="color:#b91c1c">{bug_count}</div><div class="label">Bug Fares Found</div></div>
+<div class="stat-card"><div class="num" style="color:#276749">9</div><div class="label">Verified Bookable</div></div>
+<div class="stat-card"><div class="num" style="color:#c53030">37</div><div class="label">Ghost Fares (Jakarta)</div></div>
 <div class="stat-card"><div class="num" style="color:#92400e">{cheap_count}</div><div class="label">Cheap Fares</div></div>
-<div class="stat-card"><div class="num" style="color:#6b21a8">${lowest_biz:.0f}</div><div class="label">Lowest Business RT</div></div>
-<div class="stat-card"><div class="num" style="color:#c2410c">${lowest_first:.0f}</div><div class="label">Lowest First RT</div></div>
-<div class="stat-card"><div class="num" style="color:#2b6cb0">{origins_with_bugs}</div><div class="label">Origin Cities w/ Bugs</div></div>
+<div class="stat-card"><div class="num" style="color:#718096">{all_count}</div><div class="label">Total Destinations</div></div>
 </div>
 """
 
@@ -469,7 +500,14 @@ def render_fare_row(fare, origin_cid, cabin_num):
     origin_city = fare.get('origin_city', '')
     cabin_label = CABIN_LABELS.get(cabin_num, '?')
 
-    if cls == 'BUG_FARE':
+    # Jakarta bug fares are ghost fares (verified: no booking options)
+    is_ghost = (origin_city == 'Jakarta' and cls == 'BUG_FARE')
+
+    if is_ghost:
+        price_class = ''
+        type_style = 'color:#a0aec0;font-weight:600;text-decoration:line-through'
+        type_label = 'GHOST'
+    elif cls == 'BUG_FARE':
         price_class = 'price-bug'
         type_style = 'color:#b91c1c;font-weight:700'
         type_label = 'BUG'
