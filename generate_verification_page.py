@@ -117,7 +117,7 @@ CABIN_COLORS = {1: '#276749', 2: '#2b6cb0', 3: '#6b21a8', 4: '#c2410c'}
 CABIN_EMOJI = {1: '', 2: '', 3: '', 4: ''}
 
 # --- Load scan results ---
-with open('D:/claude/flights/scanner_results.json') as f:
+with open('D:/claude/flights/scanner_results.json', encoding='utf-8') as f:
     data = json.load(f)
 
 bugs = [d for d in data['destinations'] if d['classification'] in ('BUG_FARE', 'CHEAP')]
@@ -138,6 +138,7 @@ def parse_dates(date_str):
     """Parse 'Jul 16 – 22' or 'May 23 – Jun 1' into (depart, return) date strings."""
     if not date_str:
         return None, None
+    date_str = date_str.replace('\u2009', ' ').replace('\u200a', ' ')
     parts = date_str.replace('\u2013', '-').replace('–', '-').split('-')
     if len(parts) != 2:
         return None, None
@@ -319,12 +320,16 @@ html += """
 FAMILY_BUDGET = 3000  # USD total for 2A+1C
 PP_BUDGET = FAMILY_BUDGET / 2.75  # ~$1091 per person
 
+def clean_dates(s):
+    """Replace thin spaces (U+2009) and en-dashes (U+2013) with plain ASCII."""
+    return s.replace('\u2009', ' ').replace('\u2013', '-').replace('\u200a', ' ')
+
 def render_fare_row(fare, origin_cid, cabin_num):
     """Render a single fare table row."""
     dest = fare['destination']
     price = fare['price_usd']
     family_price = price * 2.75
-    dates = fare.get('dates', '')
+    dates = clean_dates(fare.get('dates', ''))
     stops = fare.get('stops', '')
     cls = fare['classification']
     origin_code = fare.get('origin_code', '')
@@ -342,10 +347,9 @@ def render_fare_row(fare, origin_cid, cabin_num):
     if detail_url and detail_url != 'none' and origin_code == 'CGK':
         verify_links += f'<a href="{detail_url}" target="_blank" rel="noopener" class="verify-btn search-btn">View Flights</a> '
 
-    # Explore URL with departure date (always works for all cities)
-    if depart:
-        explore_url_dated = build_explore_url(origin_cid, US_CITY_ID, date=depart, cabin=cabin_num)
-        verify_links += f'<a href="{explore_url_dated}" target="_blank" rel="noopener" class="verify-btn explore-btn">Explore</a>'
+    # Explore URL — always generate one (use departure date if available, else default)
+    explore_url_dated = build_explore_url(origin_cid, US_CITY_ID, date=depart, cabin=cabin_num)
+    verify_links += f'<a href="{explore_url_dated}" target="_blank" rel="noopener" class="verify-btn explore-btn">Explore</a>'
 
     return f"""<tr>
 <td><strong>{dest}</strong></td>
