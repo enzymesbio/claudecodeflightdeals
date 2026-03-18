@@ -86,6 +86,9 @@ ORIGINS = {
     'Qingdao': {'city_id': '/m/01l3s0', 'code': 'TAO'},
     'Dalian': {'city_id': '/m/01l3k6', 'code': 'DLC'},
     'Wuhan': {'city_id': '/m/0l3cy', 'code': 'WUH'},
+    'Xiamen': {'city_id': '/m/0126c3', 'code': 'XMN'},
+    'Tianjin': {'city_id': '/m/0df4y', 'code': 'TSN'},
+    'Fuzhou': {'city_id': '/m/01jzm9', 'code': 'FOC'},
 }
 
 # Airport IDs for direct search URLs (Freebase format)
@@ -308,6 +311,7 @@ all_count = len(data['destinations'])
 # Load real booking URLs from deep verify results
 verified_deals = []
 EXCLUDE_DESTINATIONS = ['Honolulu', 'Kauai', '1.5h drive from Washington', '1h drive from Miami', '1h drive from Washington']
+EXCLUDE_ORIGINS = {'Taipei'}  # Taiwan excluded — transit visa complications
 EXCLUDE_AIRLINES = ['ZIPAIR', 'Philippine Airlines', 'Malaysia Airlines', 'Cebu Pacific']
 
 # HK results
@@ -375,8 +379,56 @@ try:
 except Exception as e:
     print(f"Warning: could not load deep_verify_all results: {e}")
 
+# Load trend lookup (from archive_run.py — price deltas vs previous run)
+trend_lookup = {}  # fare_key_str → delta_pct or None (new) or 999 (gone)
+trend_prev_date = ''
+try:
+    with open('D:/claude/flights/trend_lookup.json', encoding='utf-8') as f:
+        tl = json.load(f)
+    trend_lookup = tl.get('lookup', {})
+    trend_prev_date = tl.get('prev_date', '')
+    if trend_lookup:
+        print(f"Loaded trend data vs {trend_prev_date} ({len(trend_lookup)} routes tracked)")
+except Exception:
+    pass
+
+# Load drill results (Phase 2 — duration / open-jaw / stopover data)
+# keyed by (origin, dest) -> drill result dict
+drill_lookup = {}
+try:
+    with open('D:/claude/flights/drill_results.json', encoding='utf-8') as f:
+        drill_data = json.load(f)
+    for r in drill_data.get('results', []):
+        key = (r['origin'], r['dest'])
+        drill_lookup[key] = r
+    print(f"Loaded {len(drill_lookup)} drill results")
+except Exception as e:
+    pass  # drill_results.json is optional — only exists after drill_promising.py runs
+
 # Sort by price
 verified_deals.sort(key=lambda x: x['price'])
+
+# --- Trend summary banner (shown when trend data exists) ---
+if trend_lookup:
+    # Count categories
+    n_new    = sum(1 for v in trend_lookup.values() if v is None)
+    n_cheap  = sum(1 for v in trend_lookup.values() if isinstance(v,(int,float)) and v < -3)
+    n_pricey = sum(1 for v in trend_lookup.values() if isinstance(v,(int,float)) and v > 3 and v != 999)
+    n_gone   = sum(1 for v in trend_lookup.values() if v == 999)
+    parts = []
+    if n_new:    parts.append(f'<span style="color:#90cdf4">✦ {n_new} new routes</span>')
+    if n_cheap:  parts.append(f'<span style="color:#68d391">↓ {n_cheap} got cheaper</span>')
+    if n_pricey: parts.append(f'<span style="color:#fc8181">↑ {n_pricey} got pricier</span>')
+    if n_gone:   parts.append(f'<span style="color:#a0aec0">✕ {n_gone} disappeared</span>')
+    banner_content = ' &nbsp;|&nbsp; '.join(parts) if parts else 'No changes'
+    html += f"""
+<div style="background:#1a202c;border:1px solid #2d3748;border-radius:6px;
+            padding:10px 18px;margin:0 0 16px;font-size:13px">
+  <strong style="color:#a0aec0">Trend vs {trend_prev_date}:</strong> &nbsp;
+  {banner_content}
+  &nbsp;— <em style="color:#718096">arrows shown inline in fare table</em>
+</div>
+"""
 
 html += """
 <div class="section" style="border:2px solid #276749;background:#f0fff4">
@@ -491,7 +543,28 @@ def build_expedia_url(origin_iata, dest_iata, depart_date, return_date, cabin_nu
     cabin_name = EXPEDIA_CABIN.get(cabin_num, 'economy')
     return f'https://www.expedia.com/Flights-search/{origin_iata}-{dest_iata}/{depart_date}/{return_date}/?cabinclass={cabin_name}'
 
-def render_fare_row(fare, origin_cid, cabin_num, deep_lookup=None):
+def fare_trend_badge(origin_city, dest, cabin_label):
+    """Return HTML trend badge for a fare row, using the global trend_lookup."""
+    key = f"{origin_city}|{dest}|{cabin_label}"
+    if key not in trend_lookup:
+        return ''
+    delta = trend_lookup[key]
+    if delta is None:
+        return '<span style="background:#1a365d;color:#90cdf4;border-radius:3px;padding:1px 5px;font-size:10px;font-weight:700">NEW</span>'
+    if delta == 999:
+        return ''
+    if delta < -10:
+        return f'<span style="color:#68d391;font-weight:700;font-size:12px">↓↓{delta:+.0f}%</span>'
+    elif delta < -3:
+        return f'<span style="color:#9ae6b4;font-size:12px">↓{delta:+.0f}%</span>'
+    elif delta > 10:
+        return f'<span style="color:#fc8181;font-weight:700;font-size:12px">↑↑{delta:+.0f}%</span>'
+    elif delta > 3:
+        return f'<span style="color:#feb2b2;font-size:12px">↑{delta:+.0f}%</span>'
+    return ''
+
+
+def render_fare_row(fare, origin_cid, cabin_num, deep_lookup=None, drill_lookup=None):
     """Render a single fare table row."""
     dest = fare['destination']
     price = fare['price_usd']
@@ -550,6 +623,35 @@ def render_fare_row(fare, origin_cid, cabin_num, deep_lookup=None):
                 label += f' ({dv_airline})'
             verify_links += f'<a href="{dv["booking_url"]}" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none;font-size:11px">{label}</a> '
 
+    # Drill data badges (duration range, open-jaw, stopover)
+    if drill_lookup:
+        dr = drill_lookup.get((origin_city, dest))
+        if dr:
+            dmin = dr.get('valid_duration_min')
+            dmax = dr.get('valid_duration_max')
+            if dmin and dmax:
+                verify_links += (f'<span style="background:#2d3748;color:#e2e8f0;'
+                                 f'border-radius:4px;padding:2px 6px;font-size:10px;'
+                                 f'margin-right:3px">Stay {dmin}-{dmax}d</span> ')
+            oj_price = dr.get('open_jaw_price')
+            oj_url   = dr.get('open_jaw_url', '')
+            if oj_price and oj_url:
+                verify_links += (f'<a href="{oj_url}" target="_blank" rel="noopener" '
+                                 f'class="verify-btn" style="background:#744210;color:#fef3c7;'
+                                 f'border:none;font-size:10px">↩Shanghai ${oj_price}</a> ')
+            stopover = dr.get('stopover', {})
+            if stopover:
+                best_key = min(stopover, key=lambda k: stopover[k]['total_outbound_pp'])
+                sv = stopover[best_key]
+                hub = sv.get('hub', '')
+                total = sv.get('total_outbound_pp', 0)
+                verify_links += (f'<span style="background:#1e3a5f;color:#bfdbfe;'
+                                 f'border-radius:4px;padding:2px 6px;font-size:10px;'
+                                 f'margin-right:3px">Stopover {hub} {best_key} ${total}/pp OW</span> ')
+
+    # Trend badge (vs previous run)
+    tbadge = fare_trend_badge(origin_city, dest, cabin_label)
+
     # Row text style for NORMAL fares
     row_style = ' style="color:#a0aec0"' if cls == 'NORMAL' else ''
 
@@ -557,7 +659,7 @@ def render_fare_row(fare, origin_cid, cabin_num, deep_lookup=None):
 <td><strong>{origin_city}</strong></td>
 <td>{dest}</td>
 <td>{cabin_label}</td>
-<td class="price {price_class}">${price:.0f}</td>
+<td class="price {price_class}">${price:.0f}&nbsp;{tbadge}</td>
 <td style="color:#718096">${family_price:.0f}</td>
 <td>{dates}</td>
 <td>{stops}</td>
@@ -584,8 +686,12 @@ def render_fare_table_header():
 # --- Global fare tables sorted by price ---
 # Split all fares into affordable (family <= $3000) and expensive (family > $3000)
 all_fares_sorted = sorted(all_fares, key=lambda x: x['price_usd'])
-affordable_fares = [f for f in all_fares_sorted if f['price_usd'] * 2.75 <= FAMILY_BUDGET]
-expensive_fares = [f for f in all_fares_sorted if f['price_usd'] * 2.75 > FAMILY_BUDGET]
+affordable_fares = [f for f in all_fares_sorted
+                    if f['price_usd'] * 2.75 <= FAMILY_BUDGET
+                    and f.get('origin_city') not in EXCLUDE_ORIGINS]
+expensive_fares  = [f for f in all_fares_sorted
+                    if f['price_usd'] * 2.75 > FAMILY_BUDGET
+                    and f.get('origin_city') not in EXCLUDE_ORIGINS]
 
 # --- Affordable fares table ---
 html += f"""
@@ -599,7 +705,8 @@ html += render_fare_table_header()
 for fare in affordable_fares:
     origin_info = ORIGINS.get(fare['origin_city'], {})
     origin_cid = origin_info.get('city_id', '')
-    html += render_fare_row(fare, origin_cid, fare['cabin_num'], deep_lookup=deep_verify_lookup)
+    html += render_fare_row(fare, origin_cid, fare['cabin_num'],
+                            deep_lookup=deep_verify_lookup, drill_lookup=drill_lookup)
 html += """</table>
 </div>
 """

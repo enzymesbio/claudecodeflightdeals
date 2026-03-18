@@ -37,9 +37,24 @@ ORIGIN_CITIES = {
     'kuala_lumpur':  {'code': 'KUL', 'city_id': '/m/049d1',  'name': 'Kuala Lumpur'},
     'ho_chi_minh':   {'code': 'SGN', 'city_id': '/m/0hn4h',  'name': 'Ho Chi Minh City'},
     'hong_kong':     {'code': 'HKG', 'city_id': '/m/03h64',  'name': 'Hong Kong'},
-    'taipei':        {'code': 'TPE', 'city_id': '/m/0ftkx',  'name': 'Taipei'},
     'seoul':         {'code': 'ICN', 'city_id': '/m/0hsqf',  'name': 'Seoul'},
     'tokyo':         {'code': 'TYO', 'city_id': '/m/07dfk',  'name': 'Tokyo'},
+    # Chinese cities
+    'shanghai':      {'code': 'PVG', 'city_id': '/m/06wjf',  'name': 'Shanghai'},
+    'hangzhou':      {'code': 'HGH', 'city_id': '/m/014vm4', 'name': 'Hangzhou'},
+    'ningbo':        {'code': 'NGB', 'city_id': '/m/01l33l', 'name': 'Ningbo'},
+    'qingdao':       {'code': 'TAO', 'city_id': '/m/01l3s0', 'name': 'Qingdao'},
+    'dalian':        {'code': 'DLC', 'city_id': '/m/01l3k6', 'name': 'Dalian'},
+    'beijing':       {'code': 'PEK', 'city_id': '/m/01914',  'name': 'Beijing'},
+    'wuhan':         {'code': 'WUH', 'city_id': '/m/0l3cy',  'name': 'Wuhan'},
+    'guangzhou':     {'code': 'CAN', 'city_id': '/m/0393g',  'name': 'Guangzhou'},
+    'chongqing':     {'code': 'CKG', 'city_id': '/m/017236', 'name': 'Chongqing'},
+    'chengdu':       {'code': 'CTU', 'city_id': '/m/016v46', 'name': 'Chengdu'},
+    'shenzhen':      {'code': 'SZX', 'city_id': '/m/0lbmv',  'name': 'Shenzhen'},
+    'nanjing':       {'code': 'NKG', 'city_id': '/m/05gqy',  'name': 'Nanjing'},
+    'xiamen':        {'code': 'XMN', 'city_id': '/m/0126c3', 'name': 'Xiamen'},
+    'tianjin':       {'code': 'TSN', 'city_id': '/m/0df4y',  'name': 'Tianjin'},
+    'fuzhou':        {'code': 'FOC', 'city_id': '/m/01jzm9', 'name': 'Fuzhou'},
 }
 
 # United States destination city ID
@@ -435,7 +450,7 @@ def verify_bug_fare(page, dest_city, origin_info, cabin):
 # ---------------------------------------------------------------------------
 # Main scanner
 # ---------------------------------------------------------------------------
-def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None):
+def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file=None):
     """Run the bug fare scanner across specified cities and cabin classes."""
 
     scan_timestamp = datetime.now().isoformat()
@@ -635,9 +650,10 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None):
     }
 
     # Save results
-    with open(RESULTS_FILE, 'w', encoding='utf-8') as f:
+    out = output_file or RESULTS_FILE
+    with open(out, 'w', encoding='utf-8') as f:
         json.dump(all_results, f, indent=2, ensure_ascii=False)
-    print(f"\nResults saved to {RESULTS_FILE}")
+    print(f"\nResults saved to {out}")
 
     # Print summary
     print("\n" + "=" * 80)
@@ -694,6 +710,10 @@ def main():
         '--date', type=str, default=None,
         help='Departure date YYYY-MM-DD (default: flexible/next 6 months)'
     )
+    parser.add_argument(
+        '--output', type=str, default=None,
+        help='Output JSON file path (default: scanner_results.json)'
+    )
     args = parser.parse_args()
 
     # Parse cities
@@ -731,7 +751,18 @@ def main():
             print(f"Error: invalid date format '{args.date}'. Use YYYY-MM-DD.")
             sys.exit(1)
 
-    run_scanner(cities_to_scan, cabins_to_scan, departure_date=args.date)
+    # Partial runs (--cities or --cabins specified) write to a separate file
+    # to avoid overwriting the full scan results.
+    is_partial = bool(args.cities or (args.cabins and args.cabins != '1,2,3,4'))
+    if args.output:
+        output_file = args.output
+    elif is_partial:
+        tag = (args.cities or 'partial').replace(',', '_').replace(' ', '_')[:30]
+        output_file = os.path.join(os.path.dirname(RESULTS_FILE), f'scanner_partial_{tag}.json')
+        print(f"[Partial run] Results → {output_file}  (full results preserved)")
+    else:
+        output_file = RESULTS_FILE
+    run_scanner(cities_to_scan, cabins_to_scan, departure_date=args.date, output_file=output_file)
 
 
 if __name__ == '__main__':

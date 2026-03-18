@@ -29,10 +29,11 @@ ORIGINS = {
     'Jakarta': '/m/044rv', 'Kuala Lumpur': '/m/049d1', 'Bangkok': '/m/0fn2g',
     'Singapore': '/m/06t2t', 'Manila': '/m/0195pd', 'Ho Chi Minh City': '/m/0hn4h',
     'Hong Kong': '/m/03h64', 'Seoul': '/m/0hsqf', 'Tokyo': '/m/07dfk',
-    'Taipei': '/m/0ftkx', 'Shanghai': '/m/06wjf', 'Hangzhou': '/m/014vm4',
+    'Shanghai': '/m/06wjf', 'Hangzhou': '/m/014vm4',
     'Ningbo': '/m/01l33l', 'Beijing': '/m/01914', 'Guangzhou': '/m/0393g',
     'Chengdu': '/m/016v46', 'Chongqing': '/m/017236', 'Shenzhen': '/m/0lbmv',
     'Nanjing': '/m/05gqy', 'Qingdao': '/m/01l3s0', 'Dalian': '/m/01l3k6', 'Wuhan': '/m/0l3cy',
+    'Xiamen': '/m/0126c3', 'Tianjin': '/m/0df4y', 'Fuzhou': '/m/01jzm9',
 }
 US_DEST = {
     'Los Angeles': '/m/030qb3t', 'Houston': '/m/03l2n', 'New York': '/m/02_286',
@@ -48,12 +49,28 @@ US_DEST = {
 }
 US_CITY_ID = '/m/09c7w0'
 
-def build_search_url(origin_cid, dest_cid, depart, ret_date):
+def build_search_url(origin_cid, dest_cid, depart, ret_date=None,
+                     duration_days=14, return_to_cid=None):
+    """Build Google Flights round-trip search URL.
+
+    Args:
+        origin_cid:    Freebase city ID for departure city
+        dest_cid:      Freebase city ID for US destination
+        depart:        Departure date 'YYYY-MM-DD'
+        ret_date:      Return date; if None, computed as depart + duration_days
+        duration_days: Default trip length when ret_date is None (default 14)
+        return_to_cid: If set, return leg goes to this city (open-jaw).
+                       E.g. '/m/06wjf' to fly back to Shanghai instead of origin.
+    """
+    if ret_date is None:
+        dt = datetime.strptime(depart, '%Y-%m-%d')
+        ret_date = (dt + timedelta(days=duration_days)).strftime('%Y-%m-%d')
     o = _fv(1, 3) + _fb(2, origin_cid)
     d = _fv(1, 2) + _fb(2, dest_cid)
+    # For open-jaw: return destination differs from outbound origin
+    ret_home = _fv(1, 3) + _fb(2, return_to_cid) if return_to_cid else o
     l1 = _fb(2, depart) + _fb(13, o) + _fb(14, d)
-    l2 = _fb(2, ret_date) + _fb(13, d) + _fb(14, o)
-    # Minimal TFS — matches working scanner format (no extra fields)
+    l2 = _fb(2, ret_date) + _fb(13, d) + _fb(14, ret_home)
     msg = _fv(1, 27) + _fv(2, 2) + _fb(3, l1) + _fb(3, l2)
     tfs = base64.urlsafe_b64encode(msg).rstrip(b'=').decode('ascii')
     return f'https://www.google.com/travel/flights?tfs={tfs}&hl=en&gl=hk&curr=USD'
@@ -240,7 +257,7 @@ async def main():
     fares = [d for d in data['destinations']
              if d['price_usd'] <= PP_BUDGET
              and d['destination'] not in EXCLUDE_DESTS
-             and d['origin_city'] != 'Jakarta']
+             and d['origin_city'] != 'Taipei']
     fares.sort(key=lambda x: x['price_usd'])
 
     print('=' * 65)
