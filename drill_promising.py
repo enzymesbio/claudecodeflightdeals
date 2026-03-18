@@ -116,20 +116,42 @@ def build_oneway_url(origin_cid, dest_cid, depart):
 # Price extraction
 # ---------------------------------------------------------------------------
 async def get_price_from_url(context, url, label=''):
-    """Load a search URL and extract the 'from $X' price. Returns int or None."""
+    """Load a search URL and extract the cheapest flight price. Returns int or None."""
     page = await context.new_page()
     try:
         await page.goto(url, timeout=30000)
         await page.wait_for_load_state('domcontentloaded')
-        await asyncio.sleep(10)
-        text = (await page.inner_text('body'))[:4000]
-        m = re.search(r'from \$([0-9,]+)', text)
+        # Dismiss cookie popup if present
+        try:
+            btn = page.get_by_role('button', name='Reject all')
+            if await btn.count() > 0:
+                await btn.first.click()
+                await asyncio.sleep(2)
+        except: pass
+        await asyncio.sleep(14)
+        text = await page.inner_text('body')
+        # "From $X" / "from $X" (case-insensitive) — shown on search result header
+        m = re.search(r'[Ff]rom \$([0-9,]+)', text)
         if m:
             return int(m.group(1).replace(',', ''))
-        # Fallback: first $ amount in results area
-        m2 = re.search(r'\$([0-9,]{3,})', text)
+        # Individual round-trip prices shown in results list ("$482 round trip", "$482")
+        # Search page shows prices like "$482 round trip" or just "$482" in list items
+        m2 = re.search(r'\$([0-9,]+)\s*round\s*trip', text, re.IGNORECASE)
         if m2:
             return int(m2.group(1).replace(',', ''))
+        # Try clicking first flight to reveal price
+        try:
+            first_li = page.locator('li').first
+            if await first_li.count() > 0:
+                await first_li.click()
+                await asyncio.sleep(4)
+                text2 = (await page.inner_text('body'))[:5000]
+                m3 = re.search(r'\$([0-9,]+(?:\.[0-9]+)?)', text2)
+                if m3:
+                    v = int(m3.group(1).replace(',', '').split('.')[0])
+                    if 50 <= v <= 5000:
+                        return v
+        except: pass
         return None
     except Exception as e:
         return None

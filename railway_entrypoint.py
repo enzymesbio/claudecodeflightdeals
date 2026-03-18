@@ -30,7 +30,16 @@ def ts():
 
 
 def symlink_data_paths():
-    """Point all data files to /data volume so they persist across deploys."""
+    """Point all data files to /data volume so they persist across deploys.
+    If DATA_DIR == APP_DIR or /data is not a real mount, skip symlinking."""
+    # If data dir is same as app, or /data is not a real mounted volume, skip symlinks
+    if DATA_DIR == APP_DIR or not os.path.ismount(DATA_DIR):
+        # Just ensure logs and archive dirs exist in /app
+        os.makedirs(os.path.join(APP_DIR, 'archive'), exist_ok=True)
+        os.makedirs(os.path.join(APP_DIR, 'logs'), exist_ok=True)
+        print(f"[{ts()}] No volume mount detected — using {APP_DIR} for data (ephemeral)")
+        return
+
     os.makedirs(DATA_DIR, exist_ok=True)
     os.makedirs(os.path.join(DATA_DIR, 'archive'), exist_ok=True)
     os.makedirs(os.path.join(DATA_DIR, 'logs'), exist_ok=True)
