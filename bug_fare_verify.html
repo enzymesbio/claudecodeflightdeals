@@ -76,7 +76,7 @@ a.verify-btn:hover { opacity: 0.75; }
 <div class="container">
 
 <h1>Bug Fare Scanner</h1>
-<p class="subtitle">Scan: 2026-03-17T20:16:57 | Updated: 2026-03-17 20:18 UTC+8 | All prices USD, round-trip, per person</p>
+<p class="subtitle">Scan: 2026-03-17T20:16:57 | Updated: 2026-03-17 20:31 UTC+8 | All prices USD, round-trip, per person</p>
 
 <div class="alert">
 <h3>How to verify fares are LIVE</h3>
@@ -93,6 +93,57 @@ a.verify-btn:hover { opacity: 0.75; }
 <li>If the price persists on booking page, <strong>fare is confirmed live</strong></li>
 <li>For 2A+1C pricing, multiply 1-adult price by <strong>2.75</strong></li>
 </ol>
+</div>
+
+<div class="section" style="border:2px solid #805ad5;background:#faf5ff">
+<div class="section-header" style="background:#f3e8ff;border-bottom:2px solid #d6bcfa">
+<h2 style="color:#6b21a8">40 Bug Fares Found</h2>
+<span style="color:#718096;font-size:13px">All prices per person, round-trip</span>
+</div>
+<table class="fare-table">
+<tr>
+<th>Origin</th><th>Cabin</th><th>Price Range</th><th>Family (2A+1C)</th><th>Destinations</th>
+</tr>
+<tr>
+<td><strong>Jakarta (CGK)</strong></td>
+<td>Premium Economy</td>
+<td style="color:#b91c1c;font-weight:700">$651-$712</td>
+<td>$1,790-$1,958</td>
+<td>17 US cities</td>
+</tr>
+<tr>
+<td><strong>Jakarta (CGK)</strong></td>
+<td>Business</td>
+<td style="color:#b91c1c;font-weight:700">$839-$946</td>
+<td>$2,307-$2,602</td>
+<td>20 US cities</td>
+</tr>
+<tr>
+<td><strong>Tokyo (TYO)</strong></td>
+<td>Business</td>
+<td style="color:#b91c1c;font-weight:700">$1,437</td>
+<td>$3,952</td>
+<td>Honolulu</td>
+</tr>
+<tr>
+<td><strong>Tokyo (TYO)</strong></td>
+<td>First</td>
+<td style="color:#b91c1c;font-weight:700">$4,336</td>
+<td>$11,924</td>
+<td>Kauai</td>
+</tr>
+<tr>
+<td><strong>Manila (MNL)</strong></td>
+<td>First</td>
+<td style="color:#b91c1c;font-weight:700">$4,784</td>
+<td>$13,156</td>
+<td>Houston</td>
+</tr>
+
+</table>
+<div style="padding:14px 20px;color:#4a5568;font-size:14px;border-top:1px solid #e9d8fd;background:#faf5ff">
+<strong style="color:#6b21a8">Jakarta is the clear winner</strong> &mdash; scan found bug fares across multiple cabin classes to dozens of US cities. Premium Economy under $2,000 and Business under $2,600 for your family of 3.
+</div>
 </div>
 
 <div class="stats">
@@ -1295,7 +1346,7 @@ a.verify-btn:hover { opacity: 0.75; }
 </div>
 
 <p class="timestamp">
-Scanner: bug_fare_scanner.py | Data: scanner_results.json | Generated: 2026-03-17 20:18 UTC+8<br>
+Scanner: bug_fare_scanner.py | Data: scanner_results.json | Generated: 2026-03-17 20:31 UTC+8<br>
 Normal price ranges (RT): Economy $800-2000 | Premium Eco $1200-3000 | Business $3000-8000 | First $8000-20000<br>
 Bug fare threshold: below 60% of normal minimum
 </p>

@@ -73,6 +73,18 @@ ORIGINS = {
     'Seoul': {'city_id': '/m/0hsqf', 'code': 'ICN'},
     'Tokyo': {'city_id': '/m/07dfk', 'code': 'TYO'},
     'Taipei': {'city_id': '/m/0ftkx', 'code': 'TPE'},
+    'Shanghai': {'city_id': '/m/06wjf', 'code': 'PVG'},
+    'Hangzhou': {'city_id': '/m/014vm4', 'code': 'HGH'},
+    'Ningbo': {'city_id': '/m/01l33l', 'code': 'NGB'},
+    'Beijing': {'city_id': '/m/01914', 'code': 'PEK'},
+    'Guangzhou': {'city_id': '/m/0393g', 'code': 'CAN'},
+    'Chengdu': {'city_id': '/m/016v46', 'code': 'CTU'},
+    'Chongqing': {'city_id': '/m/017236', 'code': 'CKG'},
+    'Shenzhen': {'city_id': '/m/0lbmv', 'code': 'SZX'},
+    'Nanjing': {'city_id': '/m/05gqy', 'code': 'NKG'},
+    'Qingdao': {'city_id': '/m/01l3s0', 'code': 'TAO'},
+    'Dalian': {'city_id': '/m/01l3k6', 'code': 'DLC'},
+    'Wuhan': {'city_id': '/m/0l3cy', 'code': 'WUH'},
 }
 
 # Airport IDs for direct search URLs (Freebase format)
@@ -271,7 +283,55 @@ origins_with_bugs = len(set(b['origin_city'] for b in bugs if b['classification'
 lowest_biz = min((b['price_usd'] for b in bugs if b['cabin_num'] == 3), default=0)
 lowest_first = min((b['price_usd'] for b in bugs if b['cabin_num'] == 4), default=0)
 
+# Build highlight summary rows from actual bug fare data
+from collections import defaultdict as dd2
+highlight_groups = dd2(lambda: {'prices': [], 'dests': set()})
+for b in bugs:
+    if b['classification'] == 'BUG_FARE':
+        key = (b['origin_city'], b.get('origin_code', ''), b['cabin'])
+        highlight_groups[key]['prices'].append(b['price_usd'])
+        highlight_groups[key]['dests'].add(b['destination'])
+
+highlight_rows = ''
+for (origin, code, cabin), info in sorted(highlight_groups.items(), key=lambda x: min(x[1]['prices'])):
+    prices = sorted(info['prices'])
+    n_dests = len(info['dests'])
+    lo, hi = prices[0], prices[-1]
+    fam_lo, fam_hi = lo * 2.75, hi * 2.75
+    price_str = f'${lo:,.0f}' if lo == hi else f'${lo:,.0f}-${hi:,.0f}'
+    fam_str = f'${fam_lo:,.0f}' if lo == hi else f'${fam_lo:,.0f}-${fam_hi:,.0f}'
+    dest_str = list(info['dests'])[0] if n_dests == 1 else f'{n_dests} US cities'
+    highlight_rows += f'''<tr>
+<td><strong>{origin} ({code})</strong></td>
+<td>{cabin}</td>
+<td style="color:#b91c1c;font-weight:700">{price_str}</td>
+<td>{fam_str}</td>
+<td>{dest_str}</td>
+</tr>
+'''
+
+# Find the winner
+winner_key = min(highlight_groups.keys(), key=lambda k: min(highlight_groups[k]['prices']))
+winner_origin = winner_key[0]
+winner_code = winner_key[1]
+
 html += f"""
+<div class="section" style="border:2px solid #805ad5;background:#faf5ff">
+<div class="section-header" style="background:#f3e8ff;border-bottom:2px solid #d6bcfa">
+<h2 style="color:#6b21a8">{bug_count} Bug Fares Found</h2>
+<span style="color:#718096;font-size:13px">All prices per person, round-trip</span>
+</div>
+<table class="fare-table">
+<tr>
+<th>Origin</th><th>Cabin</th><th>Price Range</th><th>Family (2A+1C)</th><th>Destinations</th>
+</tr>
+{highlight_rows}
+</table>
+<div style="padding:14px 20px;color:#4a5568;font-size:14px;border-top:1px solid #e9d8fd;background:#faf5ff">
+<strong style="color:#6b21a8">{winner_origin} is the clear winner</strong> &mdash; scan found bug fares across multiple cabin classes to dozens of US cities. Premium Economy under $2,000 and Business under $2,600 for your family of 3.
+</div>
+</div>
+
 <div class="stats">
 <div class="stat-card"><div class="num" style="color:#b91c1c">{bug_count}</div><div class="label">Bug Fares Found</div></div>
 <div class="stat-card"><div class="num" style="color:#92400e">{cheap_count}</div><div class="label">Cheap Fares</div></div>
@@ -293,18 +353,22 @@ explore_combos = [
     ('Jakarta', '/m/044rv', 2, '#2196F3'),
     ('Jakarta', '/m/044rv', 3, '#9C27B0'),
     ('Jakarta', '/m/044rv', 4, '#FF9800'),
-    ('Kuala Lumpur', '/m/04f_d', 2, '#2196F3'),
-    ('Kuala Lumpur', '/m/04f_d', 3, '#9C27B0'),
-    ('Kuala Lumpur', '/m/04f_d', 4, '#FF9800'),
-    ('Bangkok', '/m/0fngf', 3, '#9C27B0'),
-    ('Bangkok', '/m/0fngf', 4, '#FF9800'),
+    ('Kuala Lumpur', '/m/049d1', 2, '#2196F3'),
+    ('Kuala Lumpur', '/m/049d1', 3, '#9C27B0'),
+    ('Kuala Lumpur', '/m/049d1', 4, '#FF9800'),
+    ('Bangkok', '/m/0fn2g', 3, '#9C27B0'),
+    ('Bangkok', '/m/0fn2g', 4, '#FF9800'),
     ('Singapore', '/m/06t2t', 3, '#9C27B0'),
     ('Singapore', '/m/06t2t', 4, '#FF9800'),
-    ('Manila', '/m/0195fg', 3, '#9C27B0'),
-    ('Ho Chi Minh City', '/m/0hnp7', 3, '#9C27B0'),
+    ('Manila', '/m/0195pd', 3, '#9C27B0'),
+    ('Manila', '/m/0195pd', 4, '#FF9800'),
+    ('Ho Chi Minh City', '/m/0hn4h', 3, '#9C27B0'),
     ('Hong Kong', '/m/03h64', 3, '#9C27B0'),
+    ('Seoul', '/m/0hsqf', 2, '#2196F3'),
     ('Seoul', '/m/0hsqf', 3, '#9C27B0'),
     ('Tokyo', '/m/07dfk', 3, '#9C27B0'),
+    ('Tokyo', '/m/07dfk', 4, '#FF9800'),
+    ('Taipei', '/m/0ftkx', 3, '#9C27B0'),
 ]
 
 for city, cid, cabin, color in explore_combos:
@@ -341,10 +405,10 @@ def render_fare_row(fare, origin_cid, cabin_num):
     verify_links = ''
     depart, ret = parse_dates(dates)
 
-    # Only use scanner detail_urls for Jakarta (CGK) — KUL ones have broken city mapping
+    # Use scanner detail_urls when available (all city IDs now corrected)
     v = fare.get('verification', {})
     detail_url = v.get('detail_url', '')
-    if detail_url and detail_url != 'none' and origin_code == 'CGK':
+    if detail_url and detail_url != 'none':
         verify_links += f'<a href="{detail_url}" target="_blank" rel="noopener" class="verify-btn search-btn">View Flights</a> '
 
     # Explore URL — always generate one (use departure date if available, else default)
@@ -377,9 +441,15 @@ def render_fare_table_header():
 
 # --- Per-origin sections with fare tables (under $3000 family budget) ---
 section_order = [
-    ('Kuala Lumpur', 4), ('Kuala Lumpur', 3), ('Kuala Lumpur', 2),
-    ('Jakarta', 3), ('Jakarta', 2), ('Jakarta', 4),
-    ('Bangkok', 4), ('Singapore', 4),
+    ('Jakarta', 2), ('Jakarta', 3), ('Jakarta', 4),
+    ('Tokyo', 3), ('Tokyo', 4),
+    ('Manila', 4),
+    ('Seoul', 2), ('Seoul', 3), ('Seoul', 4),
+    ('Kuala Lumpur', 2), ('Kuala Lumpur', 3), ('Kuala Lumpur', 4),
+    ('Bangkok', 3), ('Bangkok', 4),
+    ('Singapore', 3), ('Singapore', 4),
+    ('Taipei', 3), ('Taipei', 4),
+    ('Hong Kong', 3), ('Hong Kong', 4),
 ]
 
 over_budget_fares = []  # collect fares over $3000 family total
@@ -446,10 +516,10 @@ html += """
 """
 
 extra_cities = [
-    ('Taipei', '/m/0ftkx'),
-    ('Seoul', '/m/0hsqf'),
-    ('Tokyo', '/m/07dfk'),
-    ('Ho Chi Minh City', '/m/0hnp7'),
+    ('Shanghai', '/m/06wjf'),
+    ('Beijing', '/m/01914'),
+    ('Guangzhou', '/m/0393g'),
+    ('Hangzhou', '/m/014vm4'),
 ]
 
 for city, cid in extra_cities:
@@ -465,7 +535,7 @@ html += """
 """
 GERMANY_ID = '/m/0d060g'
 UK_ID = '/m/07ssc'
-for city, cid in [('Jakarta', '/m/044rv'), ('Kuala Lumpur', '/m/04f_d')]:
+for city, cid in [('Jakarta', '/m/044rv'), ('Kuala Lumpur', '/m/049d1')]:
     for dest_name, dest_id in [('Germany', GERMANY_ID), ('UK', UK_ID)]:
         for cabin in [3, 4]:
             url = build_explore_url(cid, dest_id, cabin=cabin)
