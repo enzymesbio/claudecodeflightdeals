@@ -508,30 +508,27 @@ if over_budget_fares:
 </div>
 """
 
-# --- Additional explore links for cities not in scan results yet ---
-html += """
-<div class="section">
-<div class="section-header"><h2>Scan More Cities (Not Yet Scanned or Partial)</h2></div>
-<div class="explore-links">
+# --- Scanned cities with no bug fares (summary) ---
+scanned_cities = sorted(set(d['origin_city'] for d in data['destinations']))
+cities_with_fares = sorted(set(b['origin_city'] for b in bugs))
+no_bugs = [c for c in scanned_cities if c not in cities_with_fares]
+
+html += f"""
+<div class="section" style="opacity:0.6">
+<div class="section-header" style="background:#f7fafc">
+<h2 style="color:#a0aec0">Scanned &mdash; No Bug Fares ({len(no_bugs)} cities)</h2>
+</div>
+<div style="padding:14px 20px;color:#718096;font-size:13px">
+{', '.join(no_bugs)}. All showed normal market pricing.
+</div>
+</div>
 """
 
-extra_cities = [
-    ('Shanghai', '/m/06wjf'),
-    ('Beijing', '/m/01914'),
-    ('Guangzhou', '/m/0393g'),
-    ('Hangzhou', '/m/014vm4'),
-]
-
-for city, cid in extra_cities:
-    for cabin in [2, 3, 4]:
-        url = build_explore_url(cid, US_CITY_ID, cabin=cabin)
-        color = CABIN_COLORS[cabin]
-        label = f'{city} {CABIN_LABELS[cabin]}'
-        html += f'<a href="{url}" target="_blank" style="background:{color}11;color:{color};border:1px solid {color}44">{label}</a>\n'
-
-# Also add Europe destinations
+# --- Europe explore links ---
 html += """
-<br><br><strong style="color:#718096;font-size:13px">Europe destinations (for Trip 3 planning):</strong><br>
+<div class="section">
+<div class="section-header"><h2>Europe Explore Links (Trip 3 Planning)</h2></div>
+<div class="explore-links">
 """
 GERMANY_ID = '/m/0d060g'
 UK_ID = '/m/07ssc'
