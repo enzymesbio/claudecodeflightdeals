@@ -306,6 +306,8 @@ all_count = len(data['destinations'])
 # --- VERIFIED BOOKABLE DEALS (from deep verification JSON files) ---
 # Load real booking URLs from deep verify results
 verified_deals = []
+EXCLUDE_DESTINATIONS = ['Honolulu', 'Kauai']  # Not practical (need another flight to mainland)
+EXCLUDE_AIRLINES = ['ZIPAIR', 'Philippine Airlines', 'Malaysia Airlines', 'Cebu Pacific']
 
 # Tokyo results
 try:
@@ -328,9 +330,17 @@ try:
             # Detect origin from route field (Seoul fares may be in Tokyo file)
             route = r.get('route', '')
             origin = 'Seoul' if 'Seoul' in route else 'Tokyo'
+            dest = r['city']
+            # Skip excluded destinations
+            if dest in EXCLUDE_DESTINATIONS:
+                continue
+            # Flag excluded airlines
+            is_excluded = any(excl.lower() in (airline or '').lower() for excl in EXCLUDE_AIRLINES)
+            if is_excluded:
+                continue
             verified_deals.append({
                 'origin': origin,
-                'dest': r['city'],
+                'dest': dest,
                 'cabin': cabin,
                 'price': booking_price or r.get('search_price', 0),
                 'airline': airline or 'Unknown',
@@ -357,9 +367,15 @@ try:
                     booking_price = int(price_match.group(1).replace(',', ''))
             cabin_raw = r.get('cabin', 'BIZ')
             cabin = {'PE': 'Premium Eco', 'BIZ': 'Business', 'ECO': 'Economy'}.get(cabin_raw, cabin_raw)
+            dest = r['city']
+            if dest in EXCLUDE_DESTINATIONS:
+                continue
+            is_excluded = any(excl.lower() in (airline or '').lower() for excl in EXCLUDE_AIRLINES)
+            if is_excluded:
+                continue
             verified_deals.append({
                 'origin': 'Seoul',
-                'dest': r['city'],
+                'dest': dest,
                 'cabin': cabin,
                 'price': booking_price or r.get('search_price', 0),
                 'airline': airline or 'Unknown',
@@ -368,6 +384,30 @@ try:
             })
 except Exception as e:
     print(f"Warning: could not load Seoul verify results: {e}")
+
+# HK results
+try:
+    with open('D:/claude/flights/deep_verify_hk_results.json', encoding='utf-8') as f:
+        hk_data = json.load(f)
+    for r in hk_data.get('results', []):
+        if r.get('booking_url') and r.get('status') == 'BOOKABLE':
+            dest = r.get('city', '')
+            airline = r.get('airline') or 'Unknown'
+            if dest in EXCLUDE_DESTINATIONS:
+                continue
+            if any(excl.lower() in airline.lower() for excl in EXCLUDE_AIRLINES):
+                continue
+            verified_deals.append({
+                'origin': 'Hong Kong',
+                'dest': dest,
+                'cabin': r.get('cabin', 'Economy'),
+                'price': r.get('price', 0),
+                'airline': airline,
+                'booking_url': r['booking_url'],
+                'has_booking': True,
+            })
+except Exception as e:
+    print(f"Note: no HK verify results yet: {e}")
 
 # Sort by price
 verified_deals.sort(key=lambda x: x['price'])
@@ -485,40 +525,6 @@ def build_expedia_url(origin_iata, dest_iata, depart_date, return_date, cabin_nu
     cabin_name = EXPEDIA_CABIN.get(cabin_num, 'economy')
     return f'https://www.expedia.com/Flights-search/{origin_iata}-{dest_iata}/{depart_date}/{return_date}/?cabinclass={cabin_name}'
 
-# Airline direct booking URL builders
-AIRLINE_CABIN = {
-    'united': {1: '7', 2: '7', 3: '7', 4: '7'},  # United uses sc=7 for all, cabin selected on page
-    'singapore': {1: 'Y', 2: 'W', 3: 'J', 4: 'F'},
-    'ana': {1: 'Economy', 2: 'PremiumEconomy', 3: 'Business', 4: 'First'},
-    'thai': {1: 'Economy', 2: 'PremiumEconomy', 3: 'Business', 4: 'First'},
-}
-
-def build_airline_urls(origin_iata, dest_iata, depart_date, return_date, cabin_num, airlines=None):
-    """Build direct airline booking URLs. Returns list of (name, url) tuples."""
-    urls = []
-    dep = depart_date.replace('-', '')  # YYYYMMDD
-    dep_d = depart_date  # YYYY-MM-DD
-    ret_d = return_date
-    ret = return_date.replace('-', '')
-
-    # Google Flights search (most reliable)
-    urls.append(('Google', f'https://www.google.com/travel/flights?q=Flights+from+{origin_iata}+to+{dest_iata}+on+{dep_d}+return+{ret_d}&curr=USD&hl=en'))
-
-    # United Airlines
-    urls.append(('United', f'https://www.united.com/ual/en/us/flight-search/book-a-flight/results/rev?f={origin_iata}&t={dest_iata}&d={dep_d}&r={ret_d}&sc=7&px=1&taxng=1&newHP=True&clm=7'))
-
-    # Singapore Airlines
-    sq_cabin = AIRLINE_CABIN['singapore'].get(cabin_num, 'J')
-    dep_dmy = dep[6:8] + dep[4:6] + dep[:4]  # DDMMYYYY
-    ret_dmy = ret[6:8] + ret[4:6] + ret[:4]
-    urls.append(('SQ', f'https://www.singaporeair.com/en_UK/plan-and-book/book-flight/?cabinClass={sq_cabin}&origin={origin_iata}&destination={dest_iata}&departDate={dep_dmy}&returnDate={ret_dmy}&tripType=R&adults=1'))
-
-    # ANA
-    ana_cabin = AIRLINE_CABIN['ana'].get(cabin_num, 'Business')
-    urls.append(('ANA', f'https://www.ana.co.jp/en/us/book-plan/reservation/international/search/?itineryType=round_trip&adultNum=1&departureAirportCode={origin_iata}&arrivalAirportCode={dest_iata}&departureDate={dep}&returnDate={ret}&cabinType={ana_cabin}'))
-
-    return urls
-
 def render_fare_row(fare, origin_cid, cabin_num):
     """Render a single fare table row."""
     dest = fare['destination']
@@ -572,10 +578,6 @@ def render_fare_row(fare, origin_cid, cabin_num):
         expedia_url = build_expedia_url(origin_code, dest_iata, depart, ret, cabin_num)
         verify_links += f'<a href="{trip_url}" target="_blank" rel="noopener" class="verify-btn trip-btn">Trip.com</a> '
         verify_links += f'<a href="{expedia_url}" target="_blank" rel="noopener" class="verify-btn expedia-btn">Expedia</a> '
-        # Airline direct booking links
-        airline_urls = build_airline_urls(origin_code, dest_iata, depart, ret, cabin_num)
-        for name, url in airline_urls:
-            verify_links += f'<a href="{url}" target="_blank" rel="noopener" class="verify-btn" style="background:#f0f0f0;color:#333;border:1px solid #ccc">{name}</a> '
 
     # Row text style for NORMAL fares
     row_style = ' style="color:#a0aec0"' if cls == 'NORMAL' else ''
