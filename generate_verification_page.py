@@ -217,9 +217,29 @@ a.verify-btn:hover {{ opacity: 0.75; }}
   .fare-table th, .fare-table td {{ padding: 8px 8px; font-size: 13px; }}
   .section-header {{ flex-wrap: wrap; }}
 }}
+#login-gate {{ display: flex; justify-content: center; align-items: center; height: 100vh; }}
+#login-gate form {{ border: 1px solid #d0d5dd; border-radius: 6px; padding: 30px 40px; text-align: center; }}
+#login-gate h2 {{ margin-bottom: 12px; font-size: 20px; color: #1a202c; }}
+#login-gate input {{ padding: 8px 14px; border: 1px solid #d0d5dd; border-radius: 4px; font-size: 14px; width: 200px; }}
+#login-gate button {{ padding: 8px 20px; background: #2b6cb0; color: #fff; border: none; border-radius: 4px; font-size: 14px; cursor: pointer; margin-left: 8px; }}
+#login-gate button:hover {{ background: #2c5282; }}
+#login-gate .error {{ color: #b91c1c; font-size: 13px; margin-top: 8px; display: none; }}
+#main-content {{ display: none; }}
 </style>
 </head>
 <body>
+
+<div id="login-gate">
+<form onsubmit="return checkPass()">
+<h2>Bug Fare Scanner</h2>
+<p style="color:#718096;font-size:13px;margin-bottom:14px">Enter access key to continue</p>
+<input type="password" id="access-key" placeholder="Access key" autofocus>
+<button type="submit">Enter</button>
+<p class="error" id="login-error">Invalid key</p>
+</form>
+</div>
+
+<div id="main-content">
 <div class="container">
 
 <h1>Bug Fare Scanner</h1>
@@ -325,7 +345,7 @@ for origin, cabin_num in section_order:
 <div class="section-header">
 <h2>{origin} ({origin_code}) &mdash; {cabin_label} to USA</h2>
 <span class="badge" style="background:{cabin_color}15;color:{cabin_color};border:1px solid {cabin_color}33">{len(fares)} fares</span>
-<a href="{explore_url}" target="_blank" class="verify-btn explore-btn">Open Explore Map</a>
+<a href="{explore_url}" target="_blank" rel="noopener" class="verify-btn explore-btn">Open Explore Map</a>
 </div>
 <table class="fare-table">
 <tr>
@@ -350,25 +370,20 @@ for origin, cabin_num in section_order:
         price_class = 'price-bug' if cls == 'BUG_FARE' else 'price-cheap'
         type_label = 'BUG' if cls == 'BUG_FARE' else 'CHEAP'
 
-        # Build verify links
+        # Build verify links — only use verified detail URLs from scanner
         verify_links = ''
+        depart, ret = parse_dates(dates)
 
-        # If we have a verified detail_url from the scan, use it
+        # Verified "View flights" URL from the scanner (confirmed working)
         v = fare.get('verification', {})
         detail_url = v.get('detail_url', '')
         if detail_url and detail_url != 'none':
-            verify_links += f'<a href="{detail_url}" target="_blank" class="verify-btn search-btn">Flights</a> '
+            verify_links += f'<a href="{detail_url}" target="_blank" rel="noopener" class="verify-btn search-btn">View Flights</a> '
 
-        # Also try to build a direct search URL
-        depart, ret = parse_dates(dates)
-        if depart and ret and dest in US_DEST:
-            search_url = build_search_url(origin_cid, US_DEST[dest], depart, ret, cabin=cabin_num)
-            verify_links += f'<a href="{search_url}" target="_blank" class="verify-btn search-btn">Search</a> '
-
-        # Build explore URL for this specific route (with date)
+        # Explore URL with departure date (always works — opens map)
         if depart:
             explore_url_dated = build_explore_url(origin_cid, US_CITY_ID, date=depart, cabin=cabin_num)
-            verify_links += f'<a href="{explore_url_dated}" target="_blank" class="verify-btn explore-btn">Explore</a>'
+            verify_links += f'<a href="{explore_url_dated}" target="_blank" rel="noopener" class="verify-btn explore-btn">Explore</a>'
 
         html += f"""<tr>
 <td><strong>{dest}</strong></td>
@@ -434,6 +449,26 @@ Bug fare threshold: below 60% of normal minimum
 </p>
 
 </div>
+</div>
+
+<script>
+var KEY_HASH = 'bugfare2026';
+function checkPass() {{
+  var k = document.getElementById('access-key').value;
+  if (k === KEY_HASH) {{
+    document.getElementById('login-gate').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+    sessionStorage.setItem('bf_auth', '1');
+    return false;
+  }}
+  document.getElementById('login-error').style.display = 'block';
+  return false;
+}}
+if (sessionStorage.getItem('bf_auth') === '1') {{
+  document.getElementById('login-gate').style.display = 'none';
+  document.getElementById('main-content').style.display = 'block';
+}}
+</script>
 </body>
 </html>
 """
