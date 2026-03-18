@@ -688,10 +688,12 @@ def render_fare_table_header():
 all_fares_sorted = sorted(all_fares, key=lambda x: x['price_usd'])
 affordable_fares = [f for f in all_fares_sorted
                     if f['price_usd'] * 2.75 <= FAMILY_BUDGET
-                    and f.get('origin_city') not in EXCLUDE_ORIGINS]
+                    and f.get('origin_city') not in EXCLUDE_ORIGINS
+                    and f.get('destination') not in EXCLUDE_DESTINATIONS]
 expensive_fares  = [f for f in all_fares_sorted
                     if f['price_usd'] * 2.75 > FAMILY_BUDGET
-                    and f.get('origin_city') not in EXCLUDE_ORIGINS]
+                    and f.get('origin_city') not in EXCLUDE_ORIGINS
+                    and f.get('destination') not in EXCLUDE_DESTINATIONS]
 
 # --- Affordable fares table ---
 html += f"""

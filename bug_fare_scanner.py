@@ -60,6 +60,12 @@ ORIGIN_CITIES = {
 # United States destination city ID
 US_CITY_ID = '/m/09c7w0'
 
+# Destinations to exclude (Hawaii requires a connecting mainland US flight — not practical)
+EXCLUDE_DESTINATIONS = {
+    'Honolulu', 'Kauai', 'Maui', 'Hilo',
+    '1.5h drive from Washington', '1h drive from Miami', '1h drive from Washington',
+}
+
 # Cabin class labels and normal price ranges (RT, in HKD roughly)
 CABIN_INFO = {
     1: {'label': 'Economy',         'normal_min_usd': 800,   'normal_max_usd': 2000},
@@ -546,6 +552,8 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
                         print(f"  Found {len(destinations)} destinations (currency: {page_currency}):")
 
                     for dest in destinations:
+                        if dest['city'] in EXCLUDE_DESTINATIONS:
+                            continue
                         price_raw = dest['price_numeric']
                         price_usd = convert_price_to_usd(price_raw, page_currency)
                         classification, threshold = classify_fare(price_usd, cabin)
