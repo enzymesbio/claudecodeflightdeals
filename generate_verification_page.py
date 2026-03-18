@@ -1,5 +1,6 @@
 """Generate an HTML page with clickable Google Flights verification links for all bug fares found."""
 import json
+import re
 import base64
 from datetime import datetime, timedelta, timezone
 
@@ -302,91 +303,121 @@ bug_count = len([b for b in bugs if b['classification'] == 'BUG_FARE'])
 cheap_count = len([b for b in bugs if b['classification'] == 'CHEAP'])
 all_count = len(data['destinations'])
 
-# --- VERIFIED BOOKABLE DEALS (from deep verification) ---
+# --- VERIFIED BOOKABLE DEALS (from deep verification JSON files) ---
+# Load real booking URLs from deep verify results
+verified_deals = []
+
+# Tokyo results
+try:
+    with open('D:/claude/flights/deep_verify_tokyo_results.json', encoding='utf-8') as f:
+        tokyo_data = json.load(f)
+    for r in tokyo_data.get('results', []):
+        if r.get('booking_url') and r.get('status') in ('BOOKABLE', 'BOOKABLE_NO_PRICE'):
+            btext = r.get('booking_section_text', '')
+            airline = ''
+            if 'Book with ' in btext:
+                airline = btext.split('Book with ')[1].split('Airline')[0].strip()
+            cabin = 'Business' if 'Business' in r.get('route', '') else 'Economy'
+            if 'Economy' in r.get('route', ''):
+                cabin = 'Economy'
+            booking_price = None
+            if btext and 'Book with' in btext:
+                price_match = re.search(r'\$([\d,]+)', btext.split('Book with')[1])
+                if price_match:
+                    booking_price = int(price_match.group(1).replace(',', ''))
+            # Detect origin from route field (Seoul fares may be in Tokyo file)
+            route = r.get('route', '')
+            origin = 'Seoul' if 'Seoul' in route else 'Tokyo'
+            verified_deals.append({
+                'origin': origin,
+                'dest': r['city'],
+                'cabin': cabin,
+                'price': booking_price or r.get('search_price', 0),
+                'airline': airline or 'Unknown',
+                'booking_url': r['booking_url'],
+                'has_booking': r.get('has_book_with_links', False),
+            })
+except Exception as e:
+    print(f"Warning: could not load Tokyo verify results: {e}")
+
+# Seoul results
+try:
+    with open('D:/claude/flights/deep_verify_seoul_results.json', encoding='utf-8') as f:
+        seoul_data = json.load(f)
+    for r in seoul_data.get('results', []):
+        if r.get('booking_url') and r.get('has_booking_page'):
+            btext = r.get('booking_text', '')
+            airline = ''
+            if 'Book with ' in btext:
+                airline = btext.split('Book with ')[1].split('Airline')[0].strip()
+            booking_price = None
+            if btext and 'Book with' in btext:
+                price_match = re.search(r'\$([\d,]+)', btext.split('Book with')[1])
+                if price_match:
+                    booking_price = int(price_match.group(1).replace(',', ''))
+            cabin_raw = r.get('cabin', 'BIZ')
+            cabin = {'PE': 'Premium Eco', 'BIZ': 'Business', 'ECO': 'Economy'}.get(cabin_raw, cabin_raw)
+            verified_deals.append({
+                'origin': 'Seoul',
+                'dest': r['city'],
+                'cabin': cabin,
+                'price': booking_price or r.get('search_price', 0),
+                'airline': airline or 'Unknown',
+                'booking_url': r['booking_url'],
+                'has_booking': 'Book with' in btext,
+            })
+except Exception as e:
+    print(f"Warning: could not load Seoul verify results: {e}")
+
+# Sort by price
+verified_deals.sort(key=lambda x: x['price'])
+
 html += """
 <div class="section" style="border:2px solid #276749;background:#f0fff4">
 <div class="section-header" style="background:#c6f6d5;border-bottom:2px solid #9ae6b4">
-<h2 style="color:#276749">CONFIRMED BOOKABLE — Deep Verified</h2>
-<span style="color:#276749;font-size:13px">Clicked through to booking page, real "Book with" links found</span>
+<h2 style="color:#276749">CONFIRMED BOOKABLE \u2014 Deep Verified</h2>
+<span style="color:#276749;font-size:13px">Clicked through Google Flights booking page \u2014 real "Book with" links extracted</span>
 </div>
 <table class="fare-table">
-<tr><th>Route</th><th>Cabin</th><th>Price</th><th>Family (2A+1C)</th><th>Book With</th><th>Book Now</th></tr>
-<tr style="background:#f0fff4">
-<td><strong>Tokyo &rarr; Honolulu</strong></td><td>Economy</td>
-<td class="price" style="color:#276749">$426</td><td>$1,172</td>
-<td>ZIPAIR Tokyo (nonstop NRT-HNL)</td>
-<td><a href="https://www.zipair.net" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">ZIPAIR</a>
-<a href="https://www.google.com/travel/flights?q=Flights+from+NRT+to+HNL+on+2026-08-27+return+2026-09-03&curr=USD&hl=en" target="_blank" rel="noopener" class="verify-btn search-btn">Google</a></td>
-</tr>
-<tr style="background:#f0fff4">
-<td><strong>Seoul &rarr; Honolulu</strong></td><td>Economy</td>
-<td class="price" style="color:#276749">$437</td><td>$1,202</td>
-<td>Air Premia (nonstop ICN-HNL)</td>
-<td><a href="https://www.airpremia.com" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">Air Premia</a>
-<a href="https://www.google.com/travel/flights?q=Flights+from+ICN+to+HNL+on+2026-04-05+return+2026-04-13&curr=USD&hl=en" target="_blank" rel="noopener" class="verify-btn search-btn">Google</a></td>
-</tr>
-<tr>
-<td><strong>Seoul &rarr; Los Angeles</strong></td><td>Premium Eco</td>
-<td class="price" style="color:#276749">$1,121</td><td>$3,083</td>
-<td>Air Premia</td>
-<td><a href="https://www.airpremia.com" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">Air Premia</a>
-<a href="https://www.google.com/travel/flights?q=Flights+from+ICN+to+LAX+on+2026-09-11+return+2026-09-17+premium+economy&curr=USD&hl=en" target="_blank" rel="noopener" class="verify-btn search-btn">Google</a></td>
-</tr>
-<tr>
-<td><strong>Seoul &rarr; San Francisco</strong></td><td>Premium Eco</td>
-<td class="price" style="color:#276749">$1,128</td><td>$3,102</td>
-<td>Air Premia</td>
-<td><a href="https://www.airpremia.com" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">Air Premia</a></td>
-</tr>
-<tr>
-<td><strong>Seoul &rarr; Honolulu</strong></td><td>Premium Eco</td>
-<td class="price" style="color:#276749">$1,143</td><td>$3,143</td>
-<td>Air Premia</td>
-<td><a href="https://www.airpremia.com" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">Air Premia</a></td>
-</tr>
-<tr>
-<td><strong>Seoul &rarr; Seattle</strong></td><td>Premium Eco</td>
-<td class="price" style="color:#276749">$1,185</td><td>$3,259</td>
-<td>JAL</td>
-<td><a href="https://www.jal.co.jp/en/" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">JAL</a></td>
-</tr>
-<tr>
-<td><strong>Tokyo &rarr; Honolulu</strong></td><td>Business</td>
-<td class="price" style="color:#276749">$1,438</td><td>$3,955</td>
-<td>ZIPAIR Tokyo</td>
-<td><a href="https://www.zipair.net" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">ZIPAIR</a></td>
-</tr>
-<tr>
-<td><strong>Seoul &rarr; Honolulu</strong></td><td>Business</td>
-<td class="price" style="color:#276749">$2,134</td><td>$5,869</td>
-<td>Asiana Airlines + Gotogate</td>
-<td><a href="https://flyasiana.com" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">Asiana</a></td>
-</tr>
-<tr>
-<td><strong>Seoul &rarr; Seattle</strong></td><td>Business</td>
-<td class="price" style="color:#276749">$2,539</td><td>$6,982</td>
-<td>Alaska Airlines</td>
-<td><a href="https://www.alaskaair.com" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">Alaska</a></td>
-</tr>
-</table>
-<div style="padding:14px 20px;color:#276749;font-size:14px;border-top:1px solid #9ae6b4;background:#f0fff4">
-<strong>Best family deals under $3,000:</strong> Tokyo&rarr;Honolulu Economy $1,172 (ZIPAIR) and Seoul&rarr;Honolulu Economy $1,202 (Air Premia). These are legitimate low-cost carrier fares, not pricing errors.
-</div>
-</div>
+<tr><th>Route</th><th>Cabin</th><th>Price</th><th>Family (2A+1C)</th><th>Book With</th><th>Verified Booking Link</th></tr>
+"""
 
+for deal in verified_deals:
+    fam = deal['price'] * 2.75
+    bg = ' style="background:#f0fff4"' if fam <= 3000 else ''
+    html += f"""<tr{bg}>
+<td><strong>{deal['origin']} &rarr; {deal['dest']}</strong></td><td>{deal['cabin']}</td>
+<td class="price" style="color:#276749">${deal['price']:,}</td><td>${fam:,.0f}</td>
+<td>{deal['airline']}</td>
+<td><a href="{deal['booking_url']}" target="_blank" rel="noopener" class="verify-btn" style="background:#276749;color:#fff;border:none">Google Booking Page</a></td>
+</tr>
+"""
+
+html += """</table>
+<div style="padding:14px 20px;color:#276749;font-size:14px;border-top:1px solid #9ae6b4;background:#f0fff4">
+<strong>All "Google Booking Page" links go to the real Google Flights booking page with live prices.</strong> These URLs were extracted by clicking through the full Explore &rarr; View Flights &rarr; Select Flights &rarr; Booking flow. Links may expire after ~24 hours.
+</div>
+</div>
+"""
+
+# --- GHOST FARES WARNING ---
+html += """
 <div class="section" style="border:2px solid #c53030;background:#fff5f5">
 <div class="section-header" style="background:#fed7d7;border-bottom:2px solid #feb2b2">
-<h2 style="color:#c53030">GHOST FARES — Jakarta (NOT Bookable)</h2>
+<h2 style="color:#c53030">GHOST FARES &mdash; Jakarta (NOT Bookable)</h2>
 <span style="color:#c53030;font-size:13px">Shows in search results but "We can't find booking options" on booking page</span>
 </div>
 <div style="padding:14px 20px;color:#742a2a;font-size:14px">
-<strong>Jakarta Business $839-$946 to 20 US cities</strong> — prices display on Explore map and flight search, but final booking page returns "We can't find booking options for this itinerary." Verified via Playwright click-through on 5 routes (Houston, LA, Boston, Washington, New York). All ghost fares.<br><br>
-<strong>Jakarta Premium Economy $651-$712 to 17 US cities</strong> — same pattern. Airlines: THAI/Austrian/Singapore Airlines routing via BKK/VIE. The fare was likely real briefly but booking partners pulled it.
+<strong>Jakarta Business $839-$946 to 20 US cities</strong> &mdash; prices display on Explore map and flight search, but final booking page returns "We can't find booking options for this itinerary." Verified via Playwright click-through on 5 routes (Houston, LA, Boston, Washington, New York). All ghost fares.<br><br>
+<strong>Jakarta Premium Economy $651-$712 to 17 US cities</strong> &mdash; same pattern. Airlines: THAI/Austrian/Singapore Airlines routing via BKK/VIE. The fare was likely real briefly but booking partners pulled it.
 </div>
 </div>
+"""
 
+# --- Stats ---
+html += f"""
 <div class="stats">
-<div class="stat-card"><div class="num" style="color:#276749">9</div><div class="label">Verified Bookable</div></div>
+<div class="stat-card"><div class="num" style="color:#276749">{len(verified_deals)}</div><div class="label">Verified Bookable</div></div>
 <div class="stat-card"><div class="num" style="color:#c53030">37</div><div class="label">Ghost Fares (Jakarta)</div></div>
 <div class="stat-card"><div class="num" style="color:#92400e">{cheap_count}</div><div class="label">Cheap Fares</div></div>
 <div class="stat-card"><div class="num" style="color:#718096">{all_count}</div><div class="label">Total Destinations</div></div>
