@@ -31,11 +31,11 @@ from playwright.sync_api import sync_playwright
 # ---------------------------------------------------------------------------
 ORIGIN_CITIES = {
     'jakarta':       {'code': 'CGK', 'city_id': '/m/044rv',  'name': 'Jakarta'},
-    'bangkok':       {'code': 'BKK', 'city_id': '/m/0fngf',  'name': 'Bangkok'},
+    'bangkok':       {'code': 'BKK', 'city_id': '/m/0fn2g',  'name': 'Bangkok'},
     'singapore':     {'code': 'SIN', 'city_id': '/m/06t2t',  'name': 'Singapore'},
-    'manila':        {'code': 'MNL', 'city_id': '/m/0195fg',  'name': 'Manila'},
-    'kuala_lumpur':  {'code': 'KUL', 'city_id': '/m/04f_d',  'name': 'Kuala Lumpur'},
-    'ho_chi_minh':   {'code': 'SGN', 'city_id': '/m/0hnp7',  'name': 'Ho Chi Minh City'},
+    'manila':        {'code': 'MNL', 'city_id': '/m/0195pd',  'name': 'Manila'},
+    'kuala_lumpur':  {'code': 'KUL', 'city_id': '/m/049d1',  'name': 'Kuala Lumpur'},
+    'ho_chi_minh':   {'code': 'SGN', 'city_id': '/m/0hn4h',  'name': 'Ho Chi Minh City'},
     'hong_kong':     {'code': 'HKG', 'city_id': '/m/03h64',  'name': 'Hong Kong'},
     'taipei':        {'code': 'TPE', 'city_id': '/m/0ftkx',  'name': 'Taipei'},
     'seoul':         {'code': 'ICN', 'city_id': '/m/0hsqf',  'name': 'Seoul'},

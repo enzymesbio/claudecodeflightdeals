@@ -1784,7 +1784,8 @@
       "stops": "2 stops",
       "duration": "25 hr 55 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -1799,7 +1800,8 @@
       "stops": "2 stops",
       "duration": "32 hr 25 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -1814,7 +1816,8 @@
       "stops": "2 stops",
       "duration": "26 hr 35 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -1829,7 +1832,8 @@
       "stops": "2 stops",
       "duration": "26 hr 55 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -1844,7 +1848,8 @@
       "stops": "2 stops",
       "duration": "27 hr 45 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -1859,7 +1864,8 @@
       "stops": "2 stops",
       "duration": "37 hr 15 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -1874,7 +1880,8 @@
       "stops": "2 stops",
       "duration": "37 hr 5 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -1889,7 +1896,8 @@
       "stops": "2 stops",
       "duration": "36 hr 25 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -1904,7 +1912,8 @@
       "stops": "2 stops",
       "duration": "35 hr 50 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -1919,7 +1928,8 @@
       "stops": "2 stops",
       "duration": "31 hr",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -1934,7 +1944,8 @@
       "stops": "2 stops",
       "duration": "37 hr 50 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -1949,7 +1960,8 @@
       "stops": "2 stops",
       "duration": "37 hr 15 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -1964,7 +1976,8 @@
       "stops": "2 stops",
       "duration": "26 hr 55 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -1979,7 +1992,8 @@
       "stops": "3 stops",
       "duration": "23 hr 40 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -1994,7 +2008,8 @@
       "stops": "2 stops",
       "duration": "35 hr 30 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2009,7 +2024,8 @@
       "stops": "3 stops",
       "duration": "37 hr 15 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2024,7 +2040,8 @@
       "stops": "2 stops",
       "duration": "24 hr 10 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2039,7 +2056,8 @@
       "stops": "3 stops",
       "duration": "34 hr 35 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2054,7 +2072,8 @@
       "stops": "3 stops",
       "duration": "33 hr 2 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2069,7 +2088,8 @@
       "stops": "2 stops",
       "duration": "33 hr 25 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2084,7 +2104,8 @@
       "stops": "3 stops",
       "duration": "29 hr 40 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2099,7 +2120,8 @@
       "stops": "2 stops",
       "duration": "28 hr 25 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2114,7 +2136,8 @@
       "stops": "2 stops",
       "duration": "27 hr 18 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2129,7 +2152,8 @@
       "stops": "2 stops",
       "duration": "24 hr 51 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2144,7 +2168,8 @@
       "stops": "2 stops",
       "duration": "33 hr 45 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2159,7 +2184,8 @@
       "stops": "3 stops",
       "duration": "29 hr",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2174,7 +2200,8 @@
       "stops": "2 stops",
       "duration": "35 hr 20 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2189,7 +2216,8 @@
       "stops": "2 stops",
       "duration": "35 hr",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2204,7 +2232,8 @@
       "stops": "2 stops",
       "duration": "32 hr 50 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2219,7 +2248,8 @@
       "stops": "3 stops",
       "duration": "30 hr 51 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2234,7 +2264,8 @@
       "stops": "2 stops",
       "duration": "26 hr",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2249,7 +2280,8 @@
       "stops": "3 stops",
       "duration": "26 hr 14 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2264,7 +2296,8 @@
       "stops": "3 stops",
       "duration": "36 hr 50 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2279,7 +2312,8 @@
       "stops": "2 stops",
       "duration": "27 hr 24 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2294,7 +2328,8 @@
       "stops": "2 stops",
       "duration": "34 hr 15 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2309,7 +2344,8 @@
       "stops": "3 stops",
       "duration": "26 hr 45 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2324,7 +2360,8 @@
       "stops": "3 stops",
       "duration": "28 hr 15 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2339,7 +2376,8 @@
       "stops": "3 stops",
       "duration": "29 hr 40 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2354,7 +2392,8 @@
       "stops": "3 stops",
       "duration": "27 hr 3 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2369,7 +2408,8 @@
       "stops": "3 stops",
       "duration": "36 hr 16 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2384,7 +2424,8 @@
       "stops": "3 stops",
       "duration": "27 hr 56 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2399,7 +2440,8 @@
       "stops": "3 stops",
       "duration": "31 hr 27 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2414,7 +2456,8 @@
       "stops": "3 stops",
       "duration": "34 hr 35 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2429,7 +2472,8 @@
       "stops": "3 stops",
       "duration": "30 hr 32 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2444,7 +2488,8 @@
       "stops": "3 stops",
       "duration": "30 hr 30 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2459,7 +2504,8 @@
       "stops": "3 stops",
       "duration": "33 hr 3 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2474,7 +2520,8 @@
       "stops": "2 stops",
       "duration": "27 hr 28 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2489,7 +2536,8 @@
       "stops": "3 stops",
       "duration": "29 hr 6 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2504,7 +2552,8 @@
       "stops": "2 stops",
       "duration": "31 hr 15 min",
       "classification": "CHEAP",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2519,7 +2568,8 @@
       "stops": "2 stops",
       "duration": "35 hr 30 min",
       "classification": "EXPENSIVE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2534,7 +2584,8 @@
       "stops": "2 stops",
       "duration": "35 hr 10 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2549,7 +2600,8 @@
       "stops": "2 stops",
       "duration": "32 hr 10 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2564,7 +2616,8 @@
       "stops": "2 stops",
       "duration": "40 hr 30 min",
       "classification": "CHEAP",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2579,7 +2632,8 @@
       "stops": "2 stops",
       "duration": "34 hr 15 min",
       "classification": "CHEAP",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2594,7 +2648,8 @@
       "stops": "2 stops",
       "duration": "31 hr 10 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2609,7 +2664,8 @@
       "stops": "2 stops",
       "duration": "37 hr",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2624,7 +2680,8 @@
       "stops": "2 stops",
       "duration": "36 hr 40 min",
       "classification": "CHEAP",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2639,7 +2696,8 @@
       "stops": "2 stops",
       "duration": "35 hr 25 min",
       "classification": "CHEAP",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2654,7 +2712,8 @@
       "stops": "2 stops",
       "duration": "31 hr 10 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Bangkok",
@@ -2669,7 +2728,8 @@
       "stops": "2 stops",
       "duration": "40 hr 30 min",
       "classification": "CHEAP",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
+      "scan_timestamp": "2026-03-17T16:44:26.597810",
+      "city_id_note": "WARNING: city ID was wrong in original scan, results may be for wrong city"
     },
     {
       "origin_city": "Singapore",
@@ -4349,2111 +4409,6 @@
       "stops": "2 stops",
       "duration": "27 hr 50 min",
       "classification": "NORMAL",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Las Vegas",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 369.0,
-      "price_currency": "USD",
-      "price_usd": 369.0,
-      "dates": "May 2 – 8",
-      "stops": "1 stop",
-      "duration": "7 hr 20 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810",
-      "verification": {
-        "verified": true,
-        "airlines": [
-          "Delta",
-          "United"
-        ],
-        "prices_found": [
-          369,
-          541,
-          580,
-          720
-        ],
-        "detail_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA1LTAyagwIAxIIL20vMDRmX2RyDAgCEggvbS8wY3YzdxooEgoyMDI2LTA1LTA4agwIAhIIL20vMGN2M3dyDAgDEggvbS8wNGZfZEABSAJSA1VTRHABenhDalJJYm5CNFpubFJTRGxQYkc5QlFWVkxPRkZDUnkwdExTMHRMUzB0TFhkaVltRjZPRUZCUVVGQlIyMDFOazUzUm5OSlkxbEJFZzFHT1RNek56VjhSamt4TnpZMUdnc0lvS0FDRUFJYUExVlRSRGdjY0tDZ0FnPT2YAQGyARIYASABKgwIAhIIL20vMGN2M3c&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAIQtY0DKABqFwoTCIDvyIiQqJMDFQAAAAAdAAAAABBr",
-        "sample_lines": [
-          "Stops",
-          "Airlines",
-          "from $369",
-          "Top departing flights",
-          "7 hr 20 min",
-          "1 stop",
-          "3 hr 10 min DEN",
-          "$369",
-          "6 hr 53 min",
-          "1 stop",
-          "1 hr 52 min MSP",
-          "$541",
-          "7 hr 26 min",
-          "1 stop",
-          "3 hr 11 min SLC"
-        ]
-      }
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Denver",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 226.0,
-      "price_currency": "USD",
-      "price_usd": 226.0,
-      "dates": "May 2 – 9",
-      "stops": "Nonstop",
-      "duration": "2 hr 4 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810",
-      "verification": {
-        "verified": true,
-        "airlines": [
-          "Delta",
-          "United"
-        ],
-        "prices_found": [
-          226,
-          448,
-          498,
-          548
-        ],
-        "detail_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA1LTAyagwIAxIIL20vMDRmX2RyDAgCEggvbS8wMmNsMRooEgoyMDI2LTA1LTA5agwIAhIIL20vMDJjbDFyDAgDEggvbS8wNGZfZEABSAJSA1VTRHABemxDalJJTFVoclEweEtabGhMYUZsQlFVODROMUZDUnkwdExTMHRMUzB0TFhkaVltWm9OVUZCUVVGQlIyMDFOazl6UzJ4TWJWbEJFZ1pHT1RNek56VWFDd2pFc0FFUUFob0RWVk5FT0J4d3hMQUKYAQGyARIYASABKgwIAhIIL20vMDJjbDE&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAIQtY0DKABqFwoTCNju74-QqJMDFQAAAAAdAAAAABBr",
-        "sample_lines": [
-          "Stops",
-          "Airlines",
-          "from $226",
-          "Track prices from Kansas City to Denver departing 2026-05-02 and returning 2026-05-09",
-          "Departing flights",
-          "2 hr 4 min",
-          "Nonstop",
-          "$226",
-          "5 hr 42 min",
-          "1 stop",
-          "1 hr 56 min MSP",
-          "$448",
-          "5 hr 33 min",
-          "1 stop",
-          "1 hr 47 min MSP"
-        ]
-      }
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Los Angeles",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 348.0,
-      "price_currency": "USD",
-      "price_usd": 348.0,
-      "dates": "Apr 24 – May 2",
-      "stops": "1 stop",
-      "duration": "12 hr 26 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810",
-      "verification": {
-        "verified": true,
-        "airlines": [
-          "Delta",
-          "United"
-        ],
-        "prices_found": [
-          348,
-          493,
-          577,
-          647,
-          737,
-          827,
-          847
-        ],
-        "detail_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA0LTI0agwIAxIIL20vMDRmX2RyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDUtMDJqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDRmX2RAAUgCUgNVU0RwAXp4Q2pSSWJHUTBOMk00ZDA1dGRIZEJRa0kyUm1kQ1J5MHRMUzB0TFMwdExYZG1ZMlJqTjBGQlFVRkJSMjAxTmxCdlJubG9YMVZCRWcxR09UTTFNREI4Umprek1qRTFHZ3NJN0k4Q0VBSWFBMVZUUkRnY2NPeVBBZz09mAEBsgEUGAEgASoOCAISCi9tLzAzMHFiM3Q&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAIQtY0DKABqFwoTCLDj8JaQqJMDFQAAAAAdAAAAABBr",
-        "sample_lines": [
-          "Stops",
-          "Airlines",
-          "from $348",
-          "Top departing flights",
-          "12 hr 26 min",
-          "1 stop",
-          "4 hr 59 min ATL",
-          "$348",
-          "3 hr 44 min",
-          "Nonstop",
-          "$577",
-          "3 hr 40 min",
-          "Nonstop",
-          "$647",
-          "Track prices from Kansas City to Los Angeles departing 2026-04-24 and returning 2026-05-02"
-        ]
-      }
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Seattle",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 378.0,
-      "price_currency": "USD",
-      "price_usd": 378.0,
-      "dates": "Apr 30 – May 8",
-      "stops": "1 stop",
-      "duration": "21 hr 37 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Atlanta",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 318.0,
-      "price_currency": "USD",
-      "price_usd": 318.0,
-      "dates": "May 2 – 8",
-      "stops": "1 stop",
-      "duration": "13 hr 20 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "San Diego",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 378.0,
-      "price_currency": "USD",
-      "price_usd": 378.0,
-      "dates": "Apr 30 – May 9",
-      "stops": "1 stop",
-      "duration": "11 hr 44 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Boston",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 398.0,
-      "price_currency": "USD",
-      "price_usd": 398.0,
-      "dates": "May 29 – Jun 6",
-      "stops": "1 stop",
-      "duration": "6 hr",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "San Francisco",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 378.0,
-      "price_currency": "USD",
-      "price_usd": 378.0,
-      "dates": "May 2 – 9",
-      "stops": "1 stop",
-      "duration": "10 hr 34 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "New Orleans",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 349.0,
-      "price_currency": "USD",
-      "price_usd": 349.0,
-      "dates": "May 2 – 8",
-      "stops": "1 stop",
-      "duration": "23 hr 53 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Chicago",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 318.0,
-      "price_currency": "USD",
-      "price_usd": 318.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "1 stop",
-      "duration": "7 hr 38 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "New York",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 338.0,
-      "price_currency": "USD",
-      "price_usd": 338.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "1 stop",
-      "duration": "8 hr 6 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Orlando",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 344.0,
-      "price_currency": "USD",
-      "price_usd": 344.0,
-      "dates": "Apr 25 – May 1",
-      "stops": "1 stop",
-      "duration": "13 hr 52 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Washington, D.C.",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 318.0,
-      "price_currency": "USD",
-      "price_usd": 318.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "1 stop",
-      "duration": "5 hr 49 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Miami",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 348.0,
-      "price_currency": "USD",
-      "price_usd": 348.0,
-      "dates": "Apr 23 – 30",
-      "stops": "1 stop",
-      "duration": "11 hr 51 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Austin",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 337.0,
-      "price_currency": "USD",
-      "price_usd": 337.0,
-      "dates": "Jun 11 – 17",
-      "stops": "Nonstop",
-      "duration": "2 hr",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Nashville",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 349.0,
-      "price_currency": "USD",
-      "price_usd": 349.0,
-      "dates": "May 2 – 8",
-      "stops": "1 stop",
-      "duration": "26 hr 37 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Philadelphia",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 338.0,
-      "price_currency": "USD",
-      "price_usd": 338.0,
-      "dates": "Apr 25 – May 3",
-      "stops": "1 stop",
-      "duration": "13 hr 44 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Portland",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 428.0,
-      "price_currency": "USD",
-      "price_usd": 428.0,
-      "dates": "Apr 17 – 24",
-      "stops": "1 stop",
-      "duration": "23 hr 27 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Houston",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 318.0,
-      "price_currency": "USD",
-      "price_usd": 318.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "1 stop",
-      "duration": "10 hr 57 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Charleston",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 623.0,
-      "price_currency": "USD",
-      "price_usd": 623.0,
-      "dates": "Jul 16 – 22",
-      "stops": "1 stop",
-      "duration": "4 hr 30 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Dallas",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 318.0,
-      "price_currency": "USD",
-      "price_usd": 318.0,
-      "dates": "Apr 23 – 30",
-      "stops": "1 stop",
-      "duration": "7 hr 38 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "San Antonio",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 349.0,
-      "price_currency": "USD",
-      "price_usd": 349.0,
-      "dates": "Apr 30 – May 8",
-      "stops": "1 stop",
-      "duration": "24 hr",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Phoenix",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 338.0,
-      "price_currency": "USD",
-      "price_usd": 338.0,
-      "dates": "Apr 24 – May 1",
-      "stops": "1 stop",
-      "duration": "12 hr 5 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Tampa",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 338.0,
-      "price_currency": "USD",
-      "price_usd": 338.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "1 stop",
-      "duration": "11 hr 33 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Honolulu",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 942.0,
-      "price_currency": "USD",
-      "price_usd": 942.0,
-      "dates": "Apr 20 – 29",
-      "stops": "1 stop",
-      "duration": "10 hr 46 min",
-      "classification": "CHEAP",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Savannah",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 565.0,
-      "price_currency": "USD",
-      "price_usd": 565.0,
-      "dates": "May 2 – 9",
-      "stops": "1 stop",
-      "duration": "5 hr 43 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Asheville",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 429.0,
-      "price_currency": "USD",
-      "price_usd": 429.0,
-      "dates": "Aug 3 – 11",
-      "stops": "1 stop",
-      "duration": "4 hr 1 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Fort Lauderdale",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 348.0,
-      "price_currency": "USD",
-      "price_usd": 348.0,
-      "dates": "Apr 23 – 30",
-      "stops": "1 stop",
-      "duration": "11 hr 51 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "St. Louis",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 379.0,
-      "price_currency": "USD",
-      "price_usd": 379.0,
-      "dates": "Apr 30 – May 8",
-      "stops": "1 stop",
-      "duration": "5 hr 6 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Palm Springs",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 535.0,
-      "price_currency": "USD",
-      "price_usd": 535.0,
-      "dates": "May 9 – 16",
-      "stops": "1 stop",
-      "duration": "8 hr 16 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Key West",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 571.0,
-      "price_currency": "USD",
-      "price_usd": 571.0,
-      "dates": "Aug 13 – 19",
-      "stops": "1 stop",
-      "duration": "5 hr 32 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Kauai",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 1122.0,
-      "price_currency": "USD",
-      "price_usd": 1122.0,
-      "dates": "Sep 18 – 24",
-      "stops": "2 stops",
-      "duration": "17 hr 40 min",
-      "classification": "CHEAP",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Baltimore",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 318.0,
-      "price_currency": "USD",
-      "price_usd": 318.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "1 stop",
-      "duration": "5 hr 49 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "1.5h drive from Washington",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 349.0,
-      "price_currency": "USD",
-      "price_usd": 349.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "1 stop",
-      "duration": "18 hr 46 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Santa Barbara",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 581.0,
-      "price_currency": "USD",
-      "price_usd": 581.0,
-      "dates": "Jul 23 – 29",
-      "stops": "1 stop",
-      "duration": "7 hr 38 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Pittsburgh",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 472.0,
-      "price_currency": "USD",
-      "price_usd": 472.0,
-      "dates": "May 4 – 12",
-      "stops": "1 stop",
-      "duration": "4 hr 10 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Minneapolis",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 361.0,
-      "price_currency": "USD",
-      "price_usd": 361.0,
-      "dates": "Apr 30 – May 8",
-      "stops": "1 stop",
-      "duration": "9 hr 43 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Detroit",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 349.0,
-      "price_currency": "USD",
-      "price_usd": 349.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "1 stop",
-      "duration": "6 hr 2 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Charlotte",
-      "cabin": "Premium Economy",
-      "cabin_num": 2,
-      "price_raw": 403.0,
-      "price_currency": "USD",
-      "price_usd": 403.0,
-      "dates": "Apr 17 – 25",
-      "stops": "1 stop",
-      "duration": "25 hr 41 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Las Vegas",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 459.0,
-      "price_currency": "USD",
-      "price_usd": 459.0,
-      "dates": "May 2 – 9",
-      "stops": "1 stop",
-      "duration": "7 hr 20 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810",
-      "verification": {
-        "verified": true,
-        "airlines": [
-          "Delta",
-          "United",
-          "American"
-        ],
-        "prices_found": [
-          435,
-          459,
-          771,
-          941,
-          950,
-          961,
-          1008,
-          1012,
-          1019,
-          1040
-        ],
-        "detail_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA1LTAyagwIAxIIL20vMDRmX2RyDAgCEggvbS8wY3YzdxooEgoyMDI2LTA1LTA5agwIAhIIL20vMGN2M3dyDAgDEggvbS8wNGZfZEABSANSA1VTRHABenhDalJJTldoTVVVUlZkbTFxVTAxQlFWWmlTMEZDUnkwdExTMHRMUzB0TFMxM1ltOXZPRUZCUVVGQlIyMDFObFIzVEUxaWEwRkJFZzFHT1RNek56VjhSamt4TnpZMUdnc0l5T1lDRUFJYUExVlRSRGdjY01qbUFnPT2YAQGyARIYASABKgwIAhIIL20vMGN2M3c&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCNCY-6yQqJMDFQAAAAAdAAAAABBw",
-        "sample_lines": [
-          "Stops",
-          "Airlines",
-          "from $459",
-          "Top departing flights",
-          "7 hr 20 min",
-          "1 stop",
-          "3 hr 10 min DEN",
-          "$459",
-          "7 hr 26 min",
-          "1 stop",
-          "3 hr 11 min SLC",
-          "$771",
-          "5 hr 9 min",
-          "1 stop",
-          "1 hr 1 min DEN"
-        ]
-      }
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Denver",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 306.0,
-      "price_currency": "USD",
-      "price_usd": 306.0,
-      "dates": "May 2 – 9",
-      "stops": "Nonstop",
-      "duration": "2 hr 4 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810",
-      "verification": {
-        "verified": true,
-        "airlines": [
-          "United",
-          "Delta",
-          "American"
-        ],
-        "prices_found": [
-          161,
-          306,
-          467,
-          541,
-          553,
-          597,
-          627,
-          648,
-          698,
-          721
-        ],
-        "detail_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA1LTAyagwIAxIIL20vMDRmX2RyDAgCEggvbS8wMmNsMRooEgoyMDI2LTA1LTA5agwIAhIIL20vMDJjbDFyDAgDEggvbS8wNGZfZEABSANSA1VTRHABemxDalJJVEhORmJ6UXdTSFZ6WkhkQlFUZG1SMmRDUnkwdExTMHRMUzB0ZDJaalpHOHhNa0ZCUVVGQlIyMDFObFpGUjA5TFJHdEJFZ1pHT1RNek56VWFDd2lFN3dFUUFob0RWVk5FT0J4d2hPOEKYAQGyARIYASABKgwIAhIIL20vMDJjbDE&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCPi__L2QqJMDFQAAAAAdAAAAABBx",
-        "sample_lines": [
-          "Stops",
-          "Airlines",
-          "from $306",
-          "Top departing flights",
-          "2 hr 4 min",
-          "Nonstop",
-          "$306",
-          "1 hr 59 min",
-          "Nonstop",
-          "$467",
-          "2 hr 7 min",
-          "Nonstop",
-          "$467",
-          "2 hr",
-          "Nonstop"
-        ]
-      }
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Los Angeles",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 448.0,
-      "price_currency": "USD",
-      "price_usd": 448.0,
-      "dates": "Apr 25 – May 2",
-      "stops": "1 stop",
-      "duration": "10 hr 23 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810",
-      "verification": {
-        "verified": true,
-        "airlines": [
-          "United",
-          "Delta",
-          "American"
-        ],
-        "prices_found": [
-          448,
-          469,
-          837,
-          847,
-          906,
-          950,
-          957,
-          997
-        ],
-        "detail_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA0LTI1agwIAxIIL20vMDRmX2RyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDUtMDJqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDRmX2RAAUgDUgNVU0RwAXp4Q2pSSVlUQXhjMjgxTWtFeVZqQkJRVk5GUlVGQ1J5MHRMUzB0TFMwdExTMTNZblp1TVVGQlFVRkJSMjAxTmxkQlIxWndha1ZCRWcxR09UTXpOelY4Umprek1UVTFHZ3NJL04wQ0VBSWFBMVZUUkRnY2NQemRBZz09mAEBsgEUGAEgASoOCAISCi9tLzAzMHFiM3Q&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCMigxMeQqJMDFQAAAAAdAAAAABBx",
-        "sample_lines": [
-          "Stops",
-          "Airlines",
-          "from $448",
-          "Top departing flights",
-          "10 hr 23 min",
-          "1 stop",
-          "5 hr 35 min DEN",
-          "$448",
-          "3 hr 53 min",
-          "Nonstop",
-          "$837",
-          "3 hr 40 min",
-          "Nonstop",
-          "$957",
-          "Prices are currently low — $469 cheaper than usual for your search"
-        ]
-      }
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Seattle",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 468.0,
-      "price_currency": "USD",
-      "price_usd": 468.0,
-      "dates": "May 4 – 12",
-      "stops": "1 stop",
-      "duration": "21 hr 34 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Atlanta",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 416.0,
-      "price_currency": "USD",
-      "price_usd": 416.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "Nonstop",
-      "duration": "2 hr 14 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "San Diego",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 468.0,
-      "price_currency": "USD",
-      "price_usd": 468.0,
-      "dates": "Apr 30 – May 9",
-      "stops": "1 stop",
-      "duration": "11 hr 44 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Boston",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 458.0,
-      "price_currency": "USD",
-      "price_usd": 458.0,
-      "dates": "May 11 – 20",
-      "stops": "1 stop",
-      "duration": "6 hr",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "San Francisco",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 468.0,
-      "price_currency": "USD",
-      "price_usd": 468.0,
-      "dates": "May 2 – 9",
-      "stops": "1 stop",
-      "duration": "20 hr 22 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "New Orleans",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 449.0,
-      "price_currency": "USD",
-      "price_usd": 449.0,
-      "dates": "May 2 – 8",
-      "stops": "1 stop",
-      "duration": "23 hr 53 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Chicago",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 438.0,
-      "price_currency": "USD",
-      "price_usd": 438.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "Nonstop",
-      "duration": "1 hr 43 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "New York",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 598.0,
-      "price_currency": "USD",
-      "price_usd": 598.0,
-      "dates": "Aug 13 – 19",
-      "stops": "1 stop",
-      "duration": "5 hr 12 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Orlando",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 469.0,
-      "price_currency": "USD",
-      "price_usd": 469.0,
-      "dates": "Apr 27 – May 5",
-      "stops": "1 stop",
-      "duration": "14 hr 28 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Washington, D.C.",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 438.0,
-      "price_currency": "USD",
-      "price_usd": 438.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "1 stop",
-      "duration": "5 hr 49 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Miami",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 448.0,
-      "price_currency": "USD",
-      "price_usd": 448.0,
-      "dates": "May 11 – 20",
-      "stops": "1 stop",
-      "duration": "14 hr 4 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Austin",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 427.0,
-      "price_currency": "USD",
-      "price_usd": 427.0,
-      "dates": "Jun 11 – 17",
-      "stops": "Nonstop",
-      "duration": "2 hr",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Nashville",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 492.0,
-      "price_currency": "USD",
-      "price_usd": 492.0,
-      "dates": "Apr 20 – 28",
-      "stops": "1 stop",
-      "duration": "4 hr 9 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Philadelphia",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 438.0,
-      "price_currency": "USD",
-      "price_usd": 438.0,
-      "dates": "Apr 25 – May 3",
-      "stops": "1 stop",
-      "duration": "13 hr 44 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Portland",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 508.0,
-      "price_currency": "USD",
-      "price_usd": 508.0,
-      "dates": "Apr 20 – 29",
-      "stops": "1 stop",
-      "duration": "23 hr 37 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Houston",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 428.0,
-      "price_currency": "USD",
-      "price_usd": 428.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "1 stop",
-      "duration": "10 hr 57 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Charleston",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 659.0,
-      "price_currency": "USD",
-      "price_usd": 659.0,
-      "dates": "Sep 14 – 22",
-      "stops": "1 stop",
-      "duration": "5 hr 56 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Dallas",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 418.0,
-      "price_currency": "USD",
-      "price_usd": 418.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "1 stop",
-      "duration": "6 hr 14 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "San Antonio",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 439.0,
-      "price_currency": "USD",
-      "price_usd": 439.0,
-      "dates": "May 2 – 11",
-      "stops": "1 stop",
-      "duration": "23 hr 22 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Phoenix",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 448.0,
-      "price_currency": "USD",
-      "price_usd": 448.0,
-      "dates": "Apr 25 – May 1",
-      "stops": "1 stop",
-      "duration": "7 hr 19 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Tampa",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 448.0,
-      "price_currency": "USD",
-      "price_usd": 448.0,
-      "dates": "May 2 – 8",
-      "stops": "1 stop",
-      "duration": "13 hr 41 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Honolulu",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 1873.0,
-      "price_currency": "USD",
-      "price_usd": 1873.0,
-      "dates": "Aug 24 – 31",
-      "stops": "2 stops",
-      "duration": "13 hr 45 min",
-      "classification": "CHEAP",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Savannah",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 641.0,
-      "price_currency": "USD",
-      "price_usd": 641.0,
-      "dates": "May 9 – 16",
-      "stops": "1 stop",
-      "duration": "5 hr",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Asheville",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 616.0,
-      "price_currency": "USD",
-      "price_usd": 616.0,
-      "dates": "May 2 – 8",
-      "stops": "1 stop",
-      "duration": "4 hr 33 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Fort Lauderdale",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 448.0,
-      "price_currency": "USD",
-      "price_usd": 448.0,
-      "dates": "May 11 – 20",
-      "stops": "1 stop",
-      "duration": "14 hr 4 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "1h drive from Miami",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 489.0,
-      "price_currency": "USD",
-      "price_usd": 489.0,
-      "dates": "Apr 30 – May 8",
-      "stops": "1 stop",
-      "duration": "5 hr 6 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Palm Springs",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 966.0,
-      "price_currency": "USD",
-      "price_usd": 966.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "1 stop",
-      "duration": "5 hr 31 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Key West",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 951.0,
-      "price_currency": "USD",
-      "price_usd": 951.0,
-      "dates": "Aug 13 – 19",
-      "stops": "1 stop",
-      "duration": "5 hr 32 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Kauai",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 1739.0,
-      "price_currency": "USD",
-      "price_usd": 1739.0,
-      "dates": "Aug 24 – 31",
-      "stops": "1 stop",
-      "duration": "24 hr 26 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Baltimore",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 438.0,
-      "price_currency": "USD",
-      "price_usd": 438.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "1 stop",
-      "duration": "5 hr 49 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "1.5h drive from Washington",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 439.0,
-      "price_currency": "USD",
-      "price_usd": 439.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "1 stop",
-      "duration": "18 hr 46 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Santa Barbara",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 821.0,
-      "price_currency": "USD",
-      "price_usd": 821.0,
-      "dates": "May 9 – 16",
-      "stops": "1 stop",
-      "duration": "7 hr 7 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Pittsburgh",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 510.0,
-      "price_currency": "USD",
-      "price_usd": 510.0,
-      "dates": "Apr 25 – May 2",
-      "stops": "1 stop",
-      "duration": "4 hr 31 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Minneapolis",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 451.0,
-      "price_currency": "USD",
-      "price_usd": 451.0,
-      "dates": "May 4 – 12",
-      "stops": "1 stop",
-      "duration": "19 hr 4 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Santa Fe",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 642.0,
-      "price_currency": "USD",
-      "price_usd": 642.0,
-      "dates": "May 7 – 13",
-      "stops": "1 stop",
-      "duration": "4 hr 24 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Detroit",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 439.0,
-      "price_currency": "USD",
-      "price_usd": 439.0,
-      "dates": "May 2 – 11",
-      "stops": "1 stop",
-      "duration": "19 hr 7 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Charlotte",
-      "cabin": "Business",
-      "cabin_num": 3,
-      "price_raw": 504.0,
-      "price_currency": "USD",
-      "price_usd": 504.0,
-      "dates": "Apr 30 – May 7",
-      "stops": "1 stop",
-      "duration": "26 hr 20 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Las Vegas",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 771.0,
-      "price_currency": "USD",
-      "price_usd": 771.0,
-      "dates": "May 1 – 7",
-      "stops": "1 stop",
-      "duration": "5 hr 38 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810",
-      "verification": {
-        "verified": true,
-        "airlines": [
-          "Delta",
-          "American",
-          "United"
-        ],
-        "prices_found": [
-          126,
-          771,
-          950,
-          961,
-          1008,
-          1030,
-          1040,
-          1065,
-          1084,
-          1430
-        ],
-        "detail_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA1LTAxagwIAxIIL20vMDRmX2RyDAgCEggvbS8wY3YzdxooEgoyMDI2LTA1LTA3agwIAhIIL20vMGN2M3dyDAgDEggvbS8wNGZfZEABSARSA1VTRHABenhDalJJWDNGUFozWnNabEJKUjBWQlFWZFhRV2RDUnkwdExTMHRMUzB0TFhkaWRtSXhNVUZCUVVGQlIyMDFObGxCU1ZoUVptdEJFZzFFVERJNU1ETjhSRXd4TmpZeUdnc0k3OWtFRUFJYUExVlRSRGdjY08vWkJBPT2YAQGyARIYASABKgwIAhIIL20vMGN2M3c&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCJDupdSQqJMDFQAAAAAdAAAAABBx",
-        "sample_lines": [
-          "Stops",
-          "Airlines",
-          "from $771",
-          "Top departing flights",
-          "5 hr 38 min",
-          "1 stop",
-          "1 hr 23 min SLC",
-          "$771",
-          "7 hr 2 min",
-          "1 stop",
-          "$961",
-          "5 hr 8 min",
-          "1 stop",
-          "1 hr 1 min DEN",
-          "$1,084"
-        ]
-      }
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Denver",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 467.0,
-      "price_currency": "USD",
-      "price_usd": 467.0,
-      "dates": "May 2 – 9",
-      "stops": "Nonstop",
-      "duration": "1 hr 59 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810",
-      "verification": {
-        "verified": true,
-        "airlines": [
-          "United",
-          "Delta",
-          "American"
-        ],
-        "prices_found": [
-          467,
-          541,
-          553,
-          597,
-          627,
-          648,
-          698,
-          711,
-          721
-        ],
-        "detail_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA1LTAyagwIAxIIL20vMDRmX2RyDAgCEggvbS8wMmNsMRooEgoyMDI2LTA1LTA5agwIAhIIL20vMDJjbDFyDAgDEggvbS8wNGZfZEABSARSA1VTRHABemxDalJJTTA1blkxZFpXRlpoTjBsQlFrOW1jM2RDUnkwdExTMHRMUzB0TFhkbVkyc3lNRUZCUVVGQlIyMDFObHBCUkVoRFdqQkJFZ1ZWUVRNMU5Sb0xDTmpzQWhBQ0dnTlZVMFE0SEhEWTdBST2YAQGyARIYASABKgwIAhIIL20vMDJjbDE&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCKiGp96QqJMDFQAAAAAdAAAAABBx",
-        "sample_lines": [
-          "Stops",
-          "Airlines",
-          "from $467",
-          "Top departing flights",
-          "1 hr 59 min",
-          "Nonstop",
-          "$467",
-          "2 hr 7 min",
-          "Nonstop",
-          "$467",
-          "2 hr",
-          "Nonstop",
-          "$541",
-          "2 hr 1 min",
-          "Nonstop"
-        ]
-      }
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Los Angeles",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 837.0,
-      "price_currency": "USD",
-      "price_usd": 837.0,
-      "dates": "Apr 30 – May 9",
-      "stops": "Nonstop",
-      "duration": "3 hr 53 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810",
-      "verification": {
-        "verified": true,
-        "airlines": [
-          "United",
-          "Delta",
-          "American"
-        ],
-        "prices_found": [
-          102,
-          837,
-          847,
-          957,
-          997,
-          1140,
-          1147,
-          1237,
-          1717
-        ],
-        "detail_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA0LTMwagwIAxIIL20vMDRmX2RyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDUtMDlqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDRmX2RAAUgEUgNVU0RwAXpsQ2pSSWNVdGhkVGRIUlRWUE5YZEJRVlpTVEhkQ1J5MHRMUzB0TFMwdExTMHRkMkp4T1VGQlFVRkJSMjAxTmxvNFMwSmFOMVZCRWdaVlFUVXlNak1hQ3dqZmpRVVFBaG9EVlZORU9CeHczNDBGmAEBsgEUGAEgASoOCAISCi9tLzAzMHFiM3Q&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCPjA1-WQqJMDFQAAAAAdAAAAABBx",
-        "sample_lines": [
-          "Stops",
-          "Airlines",
-          "from $837",
-          "Top departing flights",
-          "3 hr 53 min",
-          "Nonstop",
-          "$837",
-          "5 hr 36 min",
-          "1 stop",
-          "1 hr 1 min DEN",
-          "$847",
-          "3 hr 40 min",
-          "Nonstop",
-          "$957",
-          "Prices are currently low — $102 cheaper than usual for your search"
-        ]
-      }
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Seattle",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 668.0,
-      "price_currency": "USD",
-      "price_usd": 668.0,
-      "dates": "Apr 3 – 11",
-      "stops": "Nonstop",
-      "duration": "4 hr 5 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Atlanta",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 607.0,
-      "price_currency": "USD",
-      "price_usd": 607.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "Nonstop",
-      "duration": "2 hr 5 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "San Diego",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 797.0,
-      "price_currency": "USD",
-      "price_usd": 797.0,
-      "dates": "Aug 13 – 19",
-      "stops": "1 stop",
-      "duration": "5 hr 35 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Boston",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 682.0,
-      "price_currency": "USD",
-      "price_usd": 682.0,
-      "dates": "Apr 16 – 22",
-      "stops": "1 stop",
-      "duration": "6 hr 8 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "San Francisco",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 899.0,
-      "price_currency": "USD",
-      "price_usd": 899.0,
-      "dates": "Aug 15 – 22",
-      "stops": "Nonstop",
-      "duration": "3 hr 54 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "New Orleans",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 637.0,
-      "price_currency": "USD",
-      "price_usd": 637.0,
-      "dates": "Aug 6 – 12",
-      "stops": "1 stop",
-      "duration": "5 hr 5 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Chicago",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 423.0,
-      "price_currency": "USD",
-      "price_usd": 423.0,
-      "dates": "Apr 9 – 15",
-      "stops": "Nonstop",
-      "duration": "1 hr 53 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "New York",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 598.0,
-      "price_currency": "USD",
-      "price_usd": 598.0,
-      "dates": "Aug 13 – 19",
-      "stops": "1 stop",
-      "duration": "5 hr 12 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Orlando",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 737.0,
-      "price_currency": "USD",
-      "price_usd": 737.0,
-      "dates": "May 7 – 13",
-      "stops": "1 stop",
-      "duration": "5 hr 17 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Washington, D.C.",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 494.0,
-      "price_currency": "USD",
-      "price_usd": 494.0,
-      "dates": "Apr 25 – May 2",
-      "stops": "1 stop",
-      "duration": "4 hr 38 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Miami",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 985.0,
-      "price_currency": "USD",
-      "price_usd": 985.0,
-      "dates": "Aug 6 – 12",
-      "stops": "Nonstop",
-      "duration": "3 hr 15 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Austin",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 427.0,
-      "price_currency": "USD",
-      "price_usd": 427.0,
-      "dates": "Jun 11 – 17",
-      "stops": "Nonstop",
-      "duration": "2 hr",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Nashville",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 492.0,
-      "price_currency": "USD",
-      "price_usd": 492.0,
-      "dates": "Apr 20 – 28",
-      "stops": "1 stop",
-      "duration": "4 hr 9 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Philadelphia",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 676.0,
-      "price_currency": "USD",
-      "price_usd": 676.0,
-      "dates": "Apr 18 – 25",
-      "stops": "Nonstop",
-      "duration": "2 hr 48 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Portland",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 597.0,
-      "price_currency": "USD",
-      "price_usd": 597.0,
-      "dates": "Apr 25 – May 2",
-      "stops": "Nonstop",
-      "duration": "3 hr 52 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Houston",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 544.0,
-      "price_currency": "USD",
-      "price_usd": 544.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "Nonstop",
-      "duration": "2 hr 17 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Charleston",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 659.0,
-      "price_currency": "USD",
-      "price_usd": 659.0,
-      "dates": "Sep 14 – 22",
-      "stops": "1 stop",
-      "duration": "5 hr 56 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Dallas",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 499.0,
-      "price_currency": "USD",
-      "price_usd": 499.0,
-      "dates": "May 11 – 19",
-      "stops": "1 stop",
-      "duration": "5 hr 18 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "San Antonio",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 629.0,
-      "price_currency": "USD",
-      "price_usd": 629.0,
-      "dates": "May 9 – 16",
-      "stops": "1 stop",
-      "duration": "5 hr 44 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Phoenix",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 756.0,
-      "price_currency": "USD",
-      "price_usd": 756.0,
-      "dates": "May 4 – 12",
-      "stops": "1 stop",
-      "duration": "5 hr 39 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Tampa",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 747.0,
-      "price_currency": "USD",
-      "price_usd": 747.0,
-      "dates": "Jul 23 – 29",
-      "stops": "1 stop",
-      "duration": "5 hr 40 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Honolulu",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 1873.0,
-      "price_currency": "USD",
-      "price_usd": 1873.0,
-      "dates": "Aug 24 – 31",
-      "stops": "2 stops",
-      "duration": "13 hr 45 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Savannah",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 641.0,
-      "price_currency": "USD",
-      "price_usd": 641.0,
-      "dates": "May 9 – 16",
-      "stops": "1 stop",
-      "duration": "5 hr",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Asheville",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 616.0,
-      "price_currency": "USD",
-      "price_usd": 616.0,
-      "dates": "May 2 – 8",
-      "stops": "1 stop",
-      "duration": "4 hr 33 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Fort Lauderdale",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 985.0,
-      "price_currency": "USD",
-      "price_usd": 985.0,
-      "dates": "Aug 6 – 12",
-      "stops": "Nonstop",
-      "duration": "3 hr 15 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "1h drive from Miami",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 528.0,
-      "price_currency": "USD",
-      "price_usd": 528.0,
-      "dates": "Apr 18 – 25",
-      "stops": "1 stop",
-      "duration": "5 hr 33 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Palm Springs",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 966.0,
-      "price_currency": "USD",
-      "price_usd": 966.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "1 stop",
-      "duration": "5 hr 31 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Key West",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 951.0,
-      "price_currency": "USD",
-      "price_usd": 951.0,
-      "dates": "Aug 13 – 19",
-      "stops": "1 stop",
-      "duration": "5 hr 32 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Kauai",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 1739.0,
-      "price_currency": "USD",
-      "price_usd": 1739.0,
-      "dates": "Aug 24 – 31",
-      "stops": "1 stop",
-      "duration": "24 hr 26 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Baltimore",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 494.0,
-      "price_currency": "USD",
-      "price_usd": 494.0,
-      "dates": "Apr 25 – May 2",
-      "stops": "1 stop",
-      "duration": "4 hr 38 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Salt Lake City",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 778.0,
-      "price_currency": "USD",
-      "price_usd": 778.0,
-      "dates": "Apr 17 – 24",
-      "stops": "1 stop",
-      "duration": "7 hr",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Santa Barbara",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 821.0,
-      "price_currency": "USD",
-      "price_usd": 821.0,
-      "dates": "May 9 – 16",
-      "stops": "1 stop",
-      "duration": "7 hr 7 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Pittsburgh",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 510.0,
-      "price_currency": "USD",
-      "price_usd": 510.0,
-      "dates": "Apr 25 – May 2",
-      "stops": "1 stop",
-      "duration": "4 hr 31 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Minneapolis",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 535.0,
-      "price_currency": "USD",
-      "price_usd": 535.0,
-      "dates": "Apr 30 – May 6",
-      "stops": "1 stop",
-      "duration": "4 hr 9 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Santa Fe",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 642.0,
-      "price_currency": "USD",
-      "price_usd": 642.0,
-      "dates": "May 7 – 13",
-      "stops": "1 stop",
-      "duration": "4 hr 24 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Detroit",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 616.0,
-      "price_currency": "USD",
-      "price_usd": 616.0,
-      "dates": "Apr 16 – 22",
-      "stops": "1 stop",
-      "duration": "6 hr 22 min",
-      "classification": "BUG_FARE",
-      "scan_timestamp": "2026-03-17T16:44:26.597810"
-    },
-    {
-      "origin_city": "Kuala Lumpur",
-      "origin_code": "KUL",
-      "destination": "Charlotte",
-      "cabin": "First",
-      "cabin_num": 4,
-      "price_raw": 598.0,
-      "price_currency": "USD",
-      "price_usd": 598.0,
-      "dates": "May 2 – 9",
-      "stops": "Nonstop",
-      "duration": "2 hr 27 min",
-      "classification": "BUG_FARE",
       "scan_timestamp": "2026-03-17T16:44:26.597810"
     },
     {

@@ -38,8 +38,8 @@ def build_explore_url(origin_city_id, dest_city_id='/m/09c7w0', date=None, cabin
 
 # --- Data ---
 ORIGINS = {
-    'Jakarta': '/m/044rv', 'Kuala Lumpur': '/m/04f_d', 'Bangkok': '/m/0fngf',
-    'Singapore': '/m/06t2t', 'Manila': '/m/0195fg', 'Ho Chi Minh City': '/m/0hnp7',
+    'Jakarta': '/m/044rv', 'Kuala Lumpur': '/m/049d1', 'Bangkok': '/m/0fn2g',
+    'Singapore': '/m/06t2t', 'Manila': '/m/0195pd', 'Ho Chi Minh City': '/m/0hn4h',
     'Hong Kong': '/m/03h64', 'Seoul': '/m/0hsqf', 'Tokyo': '/m/07dfk', 'Taipei': '/m/0ftkx',
 }
 CODES = {
@@ -52,7 +52,7 @@ US_CITY_ID = '/m/09c7w0'
 GERMANY_ID = '/m/0d060g'
 UK_ID = '/m/07ssc'
 
-with open('D:/claude/flights/scanner_results.json') as f:
+with open('D:/claude/flights/scanner_results.json', encoding='utf-8') as f:
     data = json.load(f)
 
 bugs = [d for d in data['destinations'] if d['classification'] in ('BUG_FARE', 'CHEAP')]
