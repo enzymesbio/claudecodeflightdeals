@@ -390,7 +390,7 @@ try:
     with open('D:/claude/flights/deep_verify_hk_results.json', encoding='utf-8') as f:
         hk_data = json.load(f)
     for r in hk_data.get('results', []):
-        if r.get('booking_url') and r.get('status') == 'BOOKABLE':
+        if r.get('booking_url') and r.get('status') in ('BOOKABLE', 'SEARCH_CONFIRMED'):
             dest = r.get('city', '')
             airline = r.get('airline') or 'Unknown'
             if dest in EXCLUDE_DESTINATIONS:

@@ -1,0 +1,108 @@
+{
+  "verification_time": "2026-03-18T14:00:10.165955+08:00",
+  "origin": "Hong Kong (HKG)",
+  "cities_verified": 5,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 723,
+      "dates": "Jun 26 - Jul 5",
+      "route": "Hong Kong → San Francisco",
+      "status": "SEARCH_CONFIRMED",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA2LTI2agwIAxIIL20vMDNoNjRyDAgCEggvbS8wZDZscBooEgoyMDI2LTA3LTA1agwIAhIIL20vMGQ2bHByDAgDEggvbS8wM2g2NEABSAFSA1VTRHABemxDalJJZVc1cFRERlpYemxHTVdOQlFrdFhTVUZDUnkwdExTMHRMUzB0TFhkaWRtd3lPRUZCUVVGQlIyMDJVRmQzUTNoQ1YwbEJFZ1ZWUVRnMk1ob0xDTVMwQkJBQ0dnTlZVMFE0SEhERXRBUT2YAQGyARIYASABKgwIAhIIL20vMGQ2bHA&tfu=GgA&hl=en&gl=hk&curr=USD",
+      "airline": "United",
+      "price": 723,
+      "screenshots": [
+        "D:/claude/flights\\verify_hk_San Francisco_search.png",
+        "D:/claude/flights\\verify_hk_San Francisco_after_click.png",
+        "D:/claude/flights\\verify_hk_San Francisco_final.png"
+      ],
+      "has_booking_page": true,
+      "stops": "Nonstop",
+      "duration": "13hr 5min"
+    },
+    {
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 729,
+      "dates": "Jun 26 - Jul 5",
+      "route": "Hong Kong → Los Angeles",
+      "status": "SEARCH_CONFIRMED",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA2LTI2agwIAxIIL20vMDNoNjRyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDctMDVqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDNoNjRAAUgBUgNVU0RwAXp0Q2pSSVNrZHllbUl0TkZreWFWVkJRa1pUTlhkQ1J5MHRMUzB0TFMwdGQySmlhSEV5TjBGQlFVRkJSMjAyVUZwelRqWnhkbmxCRWd0VlFUZzJNbnhWUVRJNU9Cb0xDUFc0QkJBQ0dnTlZVMFE0SEhEMXVBUT2YAQGyARQYASABKg4IAhIKL20vMDMwcWIzdA&tfu=GgA&hl=en&gl=hk&curr=USD",
+      "airline": "STARLUX Airlines",
+      "price": 729,
+      "screenshots": [
+        "D:/claude/flights\\verify_hk_Los Angeles_search.png",
+        "D:/claude/flights\\verify_hk_Los Angeles_after_click.png",
+        "D:/claude/flights\\verify_hk_Los Angeles_final.png"
+      ],
+      "has_booking_page": true,
+      "stops": "1 stop (TPE)",
+      "duration": "16hr"
+    },
+    {
+      "city": "Denver",
+      "cabin": "Economy",
+      "explore_price": 729,
+      "dates": "Jun 12 - 21",
+      "route": "Hong Kong → Denver",
+      "status": "SEARCH_CONFIRMED",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA2LTEyagwIAxIIL20vMDNoNjRyDAgCEggvbS8wMmNsMRooEgoyMDI2LTA2LTIxagwIAhIIL20vMDJjbDFyDAgDEggvbS8wM2g2NEABSAFSA1VTRHABenRDalJJYkhOYU9YQnBjV05sTVdkQlFsZzJhMmRDUnkwdExTMHRMUzB0TFMxM1ptdHRNMEZCUVVGQlIyMDJVR05WU2prM1RtRkJFZ3RWUVRFMU0zeFZRVE0yTUJvTENQVzRCQkFDR2dOVlUwUTRISEQxdUFRPZgBAbIBEhgBIAEqDAgCEggvbS8wMmNsMQ&tfu=GgA&hl=en&gl=hk&curr=USD",
+      "airline": "United",
+      "price": 729,
+      "screenshots": [
+        "D:/claude/flights\\verify_hk_Denver_search.png",
+        "D:/claude/flights\\verify_hk_Denver_after_click.png",
+        "D:/claude/flights\\verify_hk_Denver_final.png"
+      ],
+      "has_booking_page": true,
+      "stops": "1 stop (LAX)",
+      "duration": "17hr 36min"
+    },
+    {
+      "city": "Seattle",
+      "cabin": "Economy",
+      "explore_price": 810,
+      "dates": "May 7 - 14",
+      "route": "Hong Kong → Seattle",
+      "status": "SEARCH_CONFIRMED",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA1LTA3agwIAxIIL20vMDNoNjRyDAgCEggvbS8wZDlqchooEgoyMDI2LTA1LTE0agwIAhIIL20vMGQ5anJyDAgDEggvbS8wM2g2NEABSAFSA1VTRHABenRDalJJUldOS2IyWnRhVGxrTmsxQlFuTTJia0ZDUnkwdExTMHRMUzB0TFMwdGQyWnJNVUZCUVVGQlIyMDJVR1puU0VGVFREUkJFZ3BCUXpoOFFVTTROems0R2dzSW1vOEdFQUlhQTFWVFJEZ2NjS2Y0QkE9PZgBAbIBEhgBIAEqDAgCEggvbS8wZDlqcg&tfu=GgA&hl=en&gl=hk&curr=USD",
+      "airline": "Air Canada",
+      "price": 810,
+      "screenshots": [
+        "D:/claude/flights\\verify_hk_Seattle_search.png",
+        "D:/claude/flights\\verify_hk_Seattle_after_click.png",
+        "D:/claude/flights\\verify_hk_Seattle_final.png"
+      ],
+      "has_booking_page": true,
+      "stops": "1 stop",
+      "duration": "15hr 5min"
+    },
+    {
+      "city": "New York",
+      "cabin": "Economy",
+      "explore_price": 1003,
+      "dates": "May 1 - 7",
+      "route": "Hong Kong → New York",
+      "status": "SEARCH_CONFIRMED",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA1LTAxagwIAxIIL20vMDNoNjRyDQgCEgkvbS8wMl8yODYaKRIKMjAyNi0wNS0wN2oNCAISCS9tLzAyXzI4NnIMCAMSCC9tLzAzaDY0QAFIAVIDVVNEcAF6gAFDalJJWm1oaldYcERRVTF3WDI5QlEwSm1VMEZDUnkwdExTMHRMUzB0TFMwdGQyWnJNVUZCUVVGQlIyMDJVR2xKUVdoS2FGZEJFaE5WUVRnMk1ueFZRVFE0TURWOFZVRXhNRFE1R2dzSW1vOEdFQUlhQTFWVFJEZ2NjSnFQQmc9PZgBAbIBExgBIAEqDQgCEgkvbS8wMl8yODY&tfu=GgA&hl=en&gl=hk&curr=USD",
+      "airline": "United",
+      "price": 1003,
+      "screenshots": [
+        "D:/claude/flights\\verify_hk_New York_search.png",
+        "D:/claude/flights\\verify_hk_New York_after_click.png",
+        "D:/claude/flights\\verify_hk_New York_final.png"
+      ],
+      "has_booking_page": true,
+      "stops": "1 stop (SFO)",
+      "duration": "22hr 7min"
+    }
+  ]
+}
