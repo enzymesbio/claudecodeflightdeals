@@ -835,13 +835,34 @@ html += """
 </div>
 """
 
-# Footer
+# Footer with archive navigation
+archive_dir = 'D:/claude/flights/archive'
+archive_links = ''
+try:
+    import os as _os
+    runs = sorted([d for d in _os.listdir(archive_dir)
+                   if _os.path.isdir(_os.path.join(archive_dir, d))], reverse=True)
+    if runs:
+        link_items = []
+        for slug in runs:
+            # Format slug "20260319_0104" -> "2026-03-19 01:04"
+            try:
+                label = f"{slug[:4]}-{slug[4:6]}-{slug[6:8]} {slug[9:11]}:{slug[11:13]}"
+            except:
+                label = slug
+            link_items.append(f'<a href="archive/{slug}/bug_fare_verify.html">{label}</a>')
+        archive_links = ' &nbsp;|&nbsp; '.join(link_items)
+except Exception:
+    pass
+
 html += f"""
 <p class="timestamp">
 Scanner: bug_fare_scanner.py | Data: scanner_results.json | Generated: {timestamp}<br>
 Normal price ranges (RT): Economy $800-2000 | Premium Eco $1200-3000 | Business $3000-8000 | First $8000-20000<br>
 Bug fare threshold: below 60% of normal minimum
 </p>
+
+{f'<div style="margin-top:16px;padding:12px 0;border-top:1px solid #2d3748;font-size:12px;color:#718096"><strong style="color:#a0aec0">Previous runs:</strong> &nbsp; {archive_links} &nbsp;|&nbsp; <a href="index.html" style="color:#68d391">Archive Index</a></div>' if archive_links else ''}
 
 </div>
 </div>
