@@ -571,19 +571,14 @@ def render_fare_row(fare, origin_cid, cabin_num):
     explore_url_dated = build_explore_url(origin_cid, US_CITY_ID, date=depart, cabin=cabin_num)
     verify_links += f'<a href="{explore_url_dated}" target="_blank" rel="noopener" class="verify-btn explore-btn">Explore</a> '
 
-    # Trip.com, Expedia, and airline links (only for BUG/CHEAP fares with parseable dates)
-    dest_iata = US_DEST_IATA.get(dest, '')
-    if depart and ret and origin_code and dest_iata and cls in ('BUG_FARE', 'CHEAP'):
-        trip_url = build_trip_url(origin_code, dest_iata, depart, ret, cabin_num)
-        expedia_url = build_expedia_url(origin_code, dest_iata, depart, ret, cabin_num)
-        verify_links += f'<a href="{trip_url}" target="_blank" rel="noopener" class="verify-btn trip-btn">Trip.com</a> '
-        verify_links += f'<a href="{expedia_url}" target="_blank" rel="noopener" class="verify-btn expedia-btn">Expedia</a> '
+    # Trip.com and Expedia removed — both block automated access (CAPTCHA/redirect)
+    # Only verified Google Flights links are shown
 
     # Row text style for NORMAL fares
     row_style = ' style="color:#a0aec0"' if cls == 'NORMAL' else ''
 
     return f"""<tr{row_style}>
-<td><strong>{origin_code}</strong></td>
+<td><strong>{origin_city}</strong></td>
 <td>{dest}</td>
 <td>{cabin_label}</td>
 <td class="price {price_class}">${price:.0f}</td>
