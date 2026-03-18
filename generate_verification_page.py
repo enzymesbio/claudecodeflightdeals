@@ -316,12 +316,69 @@ html += """
 </div>
 """
 
-# --- Per-origin sections with fare tables ---
+FAMILY_BUDGET = 3000  # USD total for 2A+1C
+PP_BUDGET = FAMILY_BUDGET / 2.75  # ~$1091 per person
+
+def render_fare_row(fare, origin_cid, cabin_num):
+    """Render a single fare table row."""
+    dest = fare['destination']
+    price = fare['price_usd']
+    family_price = price * 2.75
+    dates = fare.get('dates', '')
+    stops = fare.get('stops', '')
+    cls = fare['classification']
+    origin_code = fare.get('origin_code', '')
+
+    price_class = 'price-bug' if cls == 'BUG_FARE' else 'price-cheap'
+    type_label = 'BUG' if cls == 'BUG_FARE' else 'CHEAP'
+
+    # Build verify links
+    verify_links = ''
+    depart, ret = parse_dates(dates)
+
+    # Only use scanner detail_urls for Jakarta (CGK) — KUL ones have broken city mapping
+    v = fare.get('verification', {})
+    detail_url = v.get('detail_url', '')
+    if detail_url and detail_url != 'none' and origin_code == 'CGK':
+        verify_links += f'<a href="{detail_url}" target="_blank" rel="noopener" class="verify-btn search-btn">View Flights</a> '
+
+    # Explore URL with departure date (always works for all cities)
+    if depart:
+        explore_url_dated = build_explore_url(origin_cid, US_CITY_ID, date=depart, cabin=cabin_num)
+        verify_links += f'<a href="{explore_url_dated}" target="_blank" rel="noopener" class="verify-btn explore-btn">Explore</a>'
+
+    return f"""<tr>
+<td><strong>{dest}</strong></td>
+<td class="price {price_class}">${price:.0f}</td>
+<td style="color:#718096">${family_price:.0f}</td>
+<td>{dates}</td>
+<td>{stops}</td>
+<td><span style="color:{'#b91c1c' if cls=='BUG_FARE' else '#92400e'};font-weight:600">{type_label}</span></td>
+<td>{verify_links}</td>
+</tr>
+"""
+
+def render_fare_table_header():
+    return """<table class="fare-table">
+<tr>
+<th>Destination</th>
+<th>Price (USD)</th>
+<th>2A+1C Est.</th>
+<th>Dates</th>
+<th>Stops</th>
+<th>Type</th>
+<th>Verify</th>
+</tr>
+"""
+
+# --- Per-origin sections with fare tables (under $3000 family budget) ---
 section_order = [
     ('Kuala Lumpur', 4), ('Kuala Lumpur', 3), ('Kuala Lumpur', 2),
     ('Jakarta', 3), ('Jakarta', 2), ('Jakarta', 4),
     ('Bangkok', 4), ('Singapore', 4),
 ]
+
+over_budget_fares = []  # collect fares over $3000 family total
 
 for origin, cabin_num in section_order:
     key = (origin, cabin_num)
@@ -334,68 +391,45 @@ for origin, cabin_num in section_order:
     origin_code = origin_info.get('code', '???')
     origin_cid = origin_info.get('city_id', '')
 
-    # Determine if this is a top deal section
+    affordable = [f for f in fares if f['price_usd'] * 2.75 <= FAMILY_BUDGET]
+    expensive = [f for f in fares if f['price_usd'] * 2.75 > FAMILY_BUDGET]
+    for f in expensive:
+        over_budget_fares.append((f, origin_cid, cabin_num))
+
+    if not affordable:
+        continue
+
     is_top = origin in ('Kuala Lumpur',) and cabin_num in (3, 4)
     section_class = 'section top-deal' if is_top else 'section'
-
     explore_url = build_explore_url(origin_cid, US_CITY_ID, cabin=cabin_num)
 
     html += f"""
 <div class="{section_class}">
 <div class="section-header">
 <h2>{origin} ({origin_code}) &mdash; {cabin_label} to USA</h2>
-<span class="badge" style="background:{cabin_color}15;color:{cabin_color};border:1px solid {cabin_color}33">{len(fares)} fares</span>
+<span class="badge" style="background:{cabin_color}15;color:{cabin_color};border:1px solid {cabin_color}33">{len(affordable)} fares under $3k</span>
 <a href="{explore_url}" target="_blank" rel="noopener" class="verify-btn explore-btn">Open Explore Map</a>
 </div>
-<table class="fare-table">
-<tr>
-<th>Destination</th>
-<th>Price (USD)</th>
-<th>2A+1C Est.</th>
-<th>Dates</th>
-<th>Stops</th>
-<th>Type</th>
-<th>Verify</th>
-</tr>
+"""
+    html += render_fare_table_header()
+    for fare in affordable:
+        html += render_fare_row(fare, origin_cid, cabin_num)
+    html += """</table>
+</div>
 """
 
-    for fare in fares:
-        dest = fare['destination']
-        price = fare['price_usd']
-        family_price = price * 2.75
-        dates = fare.get('dates', '')
-        stops = fare.get('stops', '')
-        cls = fare['classification']
-
-        price_class = 'price-bug' if cls == 'BUG_FARE' else 'price-cheap'
-        type_label = 'BUG' if cls == 'BUG_FARE' else 'CHEAP'
-
-        # Build verify links — only use verified detail URLs from scanner
-        verify_links = ''
-        depart, ret = parse_dates(dates)
-
-        # Verified "View flights" URL from the scanner (confirmed working)
-        v = fare.get('verification', {})
-        detail_url = v.get('detail_url', '')
-        if detail_url and detail_url != 'none':
-            verify_links += f'<a href="{detail_url}" target="_blank" rel="noopener" class="verify-btn search-btn">View Flights</a> '
-
-        # Explore URL with departure date (always works — opens map)
-        if depart:
-            explore_url_dated = build_explore_url(origin_cid, US_CITY_ID, date=depart, cabin=cabin_num)
-            verify_links += f'<a href="{explore_url_dated}" target="_blank" rel="noopener" class="verify-btn explore-btn">Explore</a>'
-
-        html += f"""<tr>
-<td><strong>{dest}</strong></td>
-<td class="price {price_class}">${price:.0f}</td>
-<td style="color:#718096">${family_price:.0f}</td>
-<td>{dates}</td>
-<td>{stops}</td>
-<td><span style="color:{'#b91c1c' if cls=='BUG_FARE' else '#92400e'};font-weight:600">{type_label}</span></td>
-<td>{verify_links}</td>
-</tr>
+# --- Over-budget fares section ---
+if over_budget_fares:
+    html += f"""
+<div class="section" style="opacity:0.7">
+<div class="section-header" style="background:#fff5f5">
+<h2 style="color:#718096">Over $3,000 Family Total ({len(over_budget_fares)} fares)</h2>
+<span class="badge" style="background:#fed7d7;color:#9b2c2c;border:1px solid #feb2b2">Unlikely to book</span>
+</div>
 """
-
+    html += render_fare_table_header()
+    for fare, cid, cab in over_budget_fares:
+        html += render_fare_row(fare, cid, cab)
     html += """</table>
 </div>
 """
