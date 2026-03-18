@@ -105,22 +105,23 @@ US_DEST = {
     'Tampa': '/m/0hyxv',
     'Austin': '/m/0vzm',
     'Dallas': '/m/0f2rq',
-    'Portland': '/m/0fwwg',
-    'San Diego': '/m/0d6lp',
-    'Philadelphia': '/m/0k_q',
-    'Orlando': '/m/0fhp9',
+    'Portland': '/m/02frhbc',
+    'San Diego': '/m/071vr',
+    'Philadelphia': '/m/0dclg',
+    'Orlando': '/m/0ply0',
     'Fort Lauderdale': '/m/0fvyg',
     'Charlotte': '/m/0fttg',
     'Nashville': '/m/05jbn',
-    'Phoenix': '/m/0dc_v',
+    'Phoenix': '/m/0d35y',
     'Minneapolis': '/m/0fpzwf',
     'Detroit': '/m/02dtg',
-    'Baltimore': '/m/0k_p0',
+    'Baltimore': '/m/094jv',
     'Pittsburgh': '/m/068p2',
     'New Orleans': '/m/0f8l9c',
-    'Salt Lake City': '/m/0f2nf',
+    'Salt Lake City': '/m/0f2r6',
     'Honolulu': '/m/02hrh0_',
     'San Antonio': '/m/0f2v0',
+    'Savannah': '/m/0lhn5',
 }
 
 US_CITY_ID = '/m/09c7w0'
@@ -426,6 +427,13 @@ try:
             continue
         if any(excl.lower() in airline.lower() for excl in EXCLUDE_AIRLINES):
             continue
+        # Skip fares where booking price is >40% higher than explore price (wrong city ID)
+        explore_price = r.get('explore_price', 0)
+        if price and explore_price and price > explore_price * 1.4:
+            continue
+        # Skip fares with no price (couldn't extract from booking page)
+        if not price:
+            continue
         # Add to lookup for fare table
         deep_verify_lookup[(origin, dest, dates)] = r
         # Add to verified deals if not already present (avoid duplicates with Tokyo/Seoul/HK)
@@ -435,7 +443,7 @@ try:
                 'origin': origin,
                 'dest': dest,
                 'cabin': r.get('cabin', 'Economy'),
-                'price': price or r.get('explore_price', 0),
+                'price': price,
                 'airline': airline or 'Unknown',
                 'booking_url': r['booking_url'],
                 'has_booking': True,
