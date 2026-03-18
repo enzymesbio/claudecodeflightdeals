@@ -6,103 +6,109 @@
 <title>Bug Fare Scanner - Live Verification Links</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #c9d1d9; padding: 20px; }
-h1 { color: #58a6ff; margin-bottom: 5px; font-size: 1.8em; }
-.subtitle { color: #8b949e; margin-bottom: 20px; font-size: 0.9em; }
-.alert { background: #1a0a0a; border: 1px solid #f85149; border-radius: 8px; padding: 15px; margin-bottom: 20px; }
-.alert h3 { color: #f85149; margin-bottom: 8px; }
-.alert p { color: #f0aaaa; font-size: 0.9em; }
-.section { background: #161b22; border: 1px solid #30363d; border-radius: 8px; margin-bottom: 20px; overflow: hidden; }
-.section-header { padding: 15px 20px; border-bottom: 1px solid #30363d; display: flex; align-items: center; gap: 12px; cursor: pointer; }
-.section-header h2 { font-size: 1.2em; }
-.section-header .badge { padding: 2px 10px; border-radius: 12px; font-size: 0.8em; font-weight: 600; }
-.explore-links { padding: 15px 20px; border-bottom: 1px solid #21262d; background: #0d1117; }
-.explore-links a { display: inline-block; padding: 6px 14px; margin: 4px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 0.85em; transition: opacity 0.2s; }
-.explore-links a:hover { opacity: 0.8; }
+body { font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; background: #fff; color: #2d3748; font-size: 16px; line-height: 1.7; }
+.container { max-width: 1100px; margin: 0 auto; padding: 24px 28px; }
+h1 { color: #1a202c; font-size: 26px; font-weight: 600; margin-bottom: 4px; }
+.subtitle { color: #718096; margin-bottom: 20px; font-size: 14px; }
+.alert { background: #fff5f5; border: 1px solid #feb2b2; border-radius: 6px; padding: 14px 18px; margin-bottom: 20px; }
+.alert h3 { color: #c53030; margin-bottom: 6px; font-size: 15px; font-weight: 600; }
+.alert p { color: #742a2a; font-size: 14px; }
+.section { border: 1px solid #d0d5dd; border-radius: 6px; margin-bottom: 20px; overflow: hidden; }
+.section-header { padding: 14px 20px; border-bottom: 1px solid #e2e6ea; display: flex; align-items: center; gap: 12px; background: #f7fafc; }
+.section-header h2 { font-size: 17px; font-weight: 600; color: #1a202c; }
+.section-header .badge { padding: 2px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+.explore-links { padding: 14px 20px; border-bottom: 1px solid #e2e6ea; background: #f7fafc; }
+.explore-links a { display: inline-block; padding: 5px 12px; margin: 3px; border-radius: 4px; text-decoration: none; font-weight: 500; font-size: 13px; transition: opacity 0.2s; }
+.explore-links a:hover { opacity: 0.75; }
 .fare-table { width: 100%; border-collapse: collapse; }
-.fare-table th { text-align: left; padding: 10px 15px; background: #0d1117; color: #8b949e; font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid #30363d; }
-.fare-table td { padding: 10px 15px; border-bottom: 1px solid #21262d; font-size: 0.9em; }
-.fare-table tr:hover { background: #1c2128; }
-.price { font-weight: 700; font-size: 1.1em; }
-.price-bug { color: #f85149; }
-.price-cheap { color: #d29922; }
-.cabin-eco { color: #4CAF50; }
-.cabin-premeco { color: #2196F3; }
-.cabin-biz { color: #9C27B0; }
-.cabin-first { color: #FF9800; }
-a.verify-btn { display: inline-block; padding: 4px 12px; border-radius: 4px; text-decoration: none; font-size: 0.8em; font-weight: 600; }
-a.explore-btn { background: #1f6feb33; color: #58a6ff; border: 1px solid #1f6feb; }
-a.search-btn { background: #23862633; color: #3fb950; border: 1px solid #238636; }
-a.verify-btn:hover { opacity: 0.85; }
-.instructions { background: #0d1117; border: 1px solid #30363d; border-radius: 8px; padding: 15px 20px; margin-bottom: 20px; }
-.instructions h3 { color: #58a6ff; margin-bottom: 10px; }
+.fare-table th { text-align: left; padding: 10px 14px; color: #4a5568; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid #d0d5dd; font-weight: 600; }
+.fare-table td { padding: 10px 14px; border-bottom: 1px solid #e2e6ea; font-size: 14px; color: #2d3748; }
+.fare-table tr:hover { background: #f7fafc; }
+.price { font-weight: 700; font-size: 15px; }
+.price-bug { color: #b91c1c; }
+.price-cheap { color: #92400e; }
+a.verify-btn { display: inline-block; padding: 3px 10px; border-radius: 4px; text-decoration: none; font-size: 12px; font-weight: 600; }
+a.explore-btn { background: #ebf8ff; color: #2b6cb0; border: 1px solid #90cdf4; }
+a.search-btn { background: #f0fff4; color: #276749; border: 1px solid #9ae6b4; }
+a.verify-btn:hover { opacity: 0.75; }
+.instructions { border: 1px solid #d0d5dd; border-radius: 6px; padding: 14px 20px; margin-bottom: 20px; }
+.instructions h3 { color: #2b6cb0; margin-bottom: 8px; font-size: 15px; font-weight: 600; }
 .instructions ol { padding-left: 20px; }
-.instructions li { margin-bottom: 6px; color: #8b949e; font-size: 0.9em; }
-.instructions li strong { color: #c9d1d9; }
-.stats { display: flex; gap: 15px; margin-bottom: 20px; flex-wrap: wrap; }
-.stat-card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 15px 20px; flex: 1; min-width: 150px; }
-.stat-card .num { font-size: 2em; font-weight: 700; }
-.stat-card .label { color: #8b949e; font-size: 0.85em; }
-.top-deal { background: #1a0a2e; border: 2px solid #9C27B0; }
-.timestamp { color: #484f58; font-size: 0.8em; text-align: right; margin-top: 20px; }
+.instructions li { margin-bottom: 5px; color: #4a5568; font-size: 14px; }
+.instructions li strong { color: #1a202c; }
+.stats { display: flex; gap: 14px; margin-bottom: 20px; flex-wrap: wrap; }
+.stat-card { border: 1px solid #d0d5dd; border-radius: 6px; padding: 18px 20px; flex: 1; min-width: 150px; }
+.stat-card .num { font-size: 26px; font-weight: 700; }
+.stat-card .label { color: #718096; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.top-deal { border: 2px solid #805ad5; background: #faf5ff; }
+.timestamp { color: #718096; font-size: 13px; text-align: right; margin-top: 20px; padding-top: 16px; border-top: 1px solid #e2e6ea; }
+@media (max-width: 640px) {
+  .container { padding: 12px 10px; }
+  .stats { gap: 8px; }
+  .stat-card { min-width: 120px; padding: 12px; }
+  .stat-card .num { font-size: 22px; }
+  .fare-table th, .fare-table td { padding: 8px 8px; font-size: 13px; }
+  .section-header { flex-wrap: wrap; }
+}
 </style>
 </head>
 <body>
+<div class="container">
 
-<h1>Bug Fare Scanner - Verification Dashboard</h1>
-<p class="subtitle">Scan timestamp: 2026-03-17T16:44:26 | Generated: 2026-03-17 19:15 UTC+8 | All prices USD, round-trip, per person</p>
+<h1>Bug Fare Scanner</h1>
+<p class="subtitle">Scan: 2026-03-17T16:44:26 | Updated: 2026-03-17 19:24 UTC+8 | All prices USD, round-trip, per person</p>
 
 <div class="alert">
-<h3>IMPORTANT: How to verify these fares are LIVE</h3>
-<p>The Explore overview prices may be cached. To get <strong>real-time prices</strong>:</p>
+<h3>How to verify fares are LIVE</h3>
+<p>Explore overview prices may be cached. Click a city tab on the map to trigger a <strong>fresh real-time search</strong>, wait 3-5s, then click "View flights" to confirm.</p>
 </div>
 
 <div class="instructions">
 <h3>Verification Steps</h3>
 <ol>
-<li><strong>Click an "Explore" link below</strong> to open Google Flights Explore map</li>
-<li><strong>Click a city name tab</strong> on the map -- this triggers a FRESH real-time search</li>
-<li><strong>Wait 3-5 seconds</strong> for the price panel to reload with live data</li>
-<li><strong>Click "View flights"</strong> to go to the actual booking page with specific itineraries</li>
-<li>If the price persists on the booking page, <strong>the fare is confirmed live</strong></li>
-<li>For 2A+1C pricing, multiply the 1-adult price by 2.75</li>
+<li><strong>Click an Explore link</strong> below to open Google Flights Explore map</li>
+<li><strong>Click a city name tab</strong> on the map &mdash; triggers a fresh search</li>
+<li><strong>Wait 3-5 seconds</strong> for the price panel to reload</li>
+<li><strong>Click "View flights"</strong> to see the actual booking page</li>
+<li>If the price persists on booking page, <strong>fare is confirmed live</strong></li>
+<li>For 2A+1C pricing, multiply 1-adult price by <strong>2.75</strong></li>
 </ol>
 </div>
 
 <div class="stats">
-<div class="stat-card"><div class="num" style="color:#f85149">154</div><div class="label">Bug Fares Found</div></div>
-<div class="stat-card"><div class="num" style="color:#d29922">22</div><div class="label">Cheap Fares</div></div>
-<div class="stat-card"><div class="num" style="color:#9C27B0">$306</div><div class="label">Lowest Business RT</div></div>
-<div class="stat-card"><div class="num" style="color:#FF9800">$423</div><div class="label">Lowest First RT</div></div>
-<div class="stat-card"><div class="num" style="color:#58a6ff">2</div><div class="label">Origin Cities w/ Bugs</div></div>
+<div class="stat-card"><div class="num" style="color:#b91c1c">154</div><div class="label">Bug Fares Found</div></div>
+<div class="stat-card"><div class="num" style="color:#92400e">22</div><div class="label">Cheap Fares</div></div>
+<div class="stat-card"><div class="num" style="color:#6b21a8">$306</div><div class="label">Lowest Business RT</div></div>
+<div class="stat-card"><div class="num" style="color:#c2410c">$423</div><div class="label">Lowest First RT</div></div>
+<div class="stat-card"><div class="num" style="color:#2b6cb0">2</div><div class="label">Origin Cities w/ Bugs</div></div>
 </div>
 
 <div class="section">
 <div class="section-header"><h2>Quick Explore Links (Overview Maps)</h2></div>
 <div class="explore-links">
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDQ0cnZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA0NHJ2QAFIAnACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#2196F322;color:#2196F3;border:1px solid #2196F3">Jakarta Premium Economy</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDQ0cnZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA0NHJ2QAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B022;color:#9C27B0;border:1px solid #9C27B0">Jakarta Business</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDQ0cnZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA0NHJ2QAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#FF980022;color:#FF9800;border:1px solid #FF9800">Jakarta First</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDRmX2RyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA0Zl9kQAFIAnACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#2196F322;color:#2196F3;border:1px solid #2196F3">Kuala Lumpur Premium Economy</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDRmX2RyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA0Zl9kQAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B022;color:#9C27B0;border:1px solid #9C27B0">Kuala Lumpur Business</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDRmX2RyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA0Zl9kQAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#FF980022;color:#FF9800;border:1px solid #FF9800">Kuala Lumpur First</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGZuZ2ZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBmbmdmQAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B022;color:#9C27B0;border:1px solid #9C27B0">Bangkok Business</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGZuZ2ZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBmbmdmQAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#FF980022;color:#FF9800;border:1px solid #FF9800">Bangkok First</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDZ0MnRyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA2dDJ0QAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B022;color:#9C27B0;border:1px solid #9C27B0">Singapore Business</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDZ0MnRyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA2dDJ0QAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#FF980022;color:#FF9800;border:1px solid #FF9800">Singapore First</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxoqEgoyMDI2LTA3LTE1ag0IAxIJL20vMDE5NWZncg0IBBIJL20vMDljN3cwGh5qDQgEEgkvbS8wOWM3dzByDQgDEgkvbS8wMTk1ZmdAAUgDcAKCAQsI____________AZgBAbIBBBgBIAE&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B022;color:#9C27B0;border:1px solid #9C27B0">Manila Business</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGhucDdyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBobnA3QAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B022;color:#9C27B0;border:1px solid #9C27B0">Ho Chi Minh City Business</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDNoNjRyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzAzaDY0QAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B022;color:#9C27B0;border:1px solid #9C27B0">Hong Kong Business</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGhzcWZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBoc3FmQAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B022;color:#9C27B0;border:1px solid #9C27B0">Seoul Business</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDdkZmtyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA3ZGZrQAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B022;color:#9C27B0;border:1px solid #9C27B0">Tokyo Business</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDQ0cnZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA0NHJ2QAFIAnACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#2196F311;color:#2196F3;border:1px solid #2196F344">Jakarta Premium Economy</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDQ0cnZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA0NHJ2QAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B011;color:#9C27B0;border:1px solid #9C27B044">Jakarta Business</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDQ0cnZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA0NHJ2QAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#FF980011;color:#FF9800;border:1px solid #FF980044">Jakarta First</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDRmX2RyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA0Zl9kQAFIAnACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#2196F311;color:#2196F3;border:1px solid #2196F344">Kuala Lumpur Premium Economy</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDRmX2RyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA0Zl9kQAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B011;color:#9C27B0;border:1px solid #9C27B044">Kuala Lumpur Business</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDRmX2RyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA0Zl9kQAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#FF980011;color:#FF9800;border:1px solid #FF980044">Kuala Lumpur First</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGZuZ2ZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBmbmdmQAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B011;color:#9C27B0;border:1px solid #9C27B044">Bangkok Business</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGZuZ2ZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBmbmdmQAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#FF980011;color:#FF9800;border:1px solid #FF980044">Bangkok First</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDZ0MnRyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA2dDJ0QAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B011;color:#9C27B0;border:1px solid #9C27B044">Singapore Business</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDZ0MnRyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA2dDJ0QAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#FF980011;color:#FF9800;border:1px solid #FF980044">Singapore First</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxoqEgoyMDI2LTA3LTE1ag0IAxIJL20vMDE5NWZncg0IBBIJL20vMDljN3cwGh5qDQgEEgkvbS8wOWM3dzByDQgDEgkvbS8wMTk1ZmdAAUgDcAKCAQsI____________AZgBAbIBBBgBIAE&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B011;color:#9C27B0;border:1px solid #9C27B044">Manila Business</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGhucDdyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBobnA3QAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B011;color:#9C27B0;border:1px solid #9C27B044">Ho Chi Minh City Business</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDNoNjRyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzAzaDY0QAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B011;color:#9C27B0;border:1px solid #9C27B044">Hong Kong Business</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGhzcWZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBoc3FmQAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B011;color:#9C27B0;border:1px solid #9C27B044">Seoul Business</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDdkZmtyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA3ZGZrQAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B011;color:#9C27B0;border:1px solid #9C27B044">Tokyo Business</a>
 
 </div>
 </div>
 
 <div class="section top-deal">
 <div class="section-header">
-<h2 style="color:#FF9800">Kuala Lumpur (KUL) - First to USA</h2>
-<span class="badge" style="background:#FF980033;color:#FF9800">40 fares</span>
+<h2>Kuala Lumpur (KUL) &mdash; First to USA</h2>
+<span class="badge" style="background:#c2410c15;color:#c2410c;border:1px solid #c2410c33">40 fares</span>
 <a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDRmX2RyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA0Zl9kQAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" class="verify-btn explore-btn">Open Explore Map</a>
 </div>
 <table class="fare-table">
@@ -118,361 +124,361 @@ a.verify-btn:hover { opacity: 0.85; }
 <tr>
 <td><strong>Chicago</strong></td>
 <td class="price price-bug">$423</td>
-<td style="color:#8b949e">$1163</td>
+<td style="color:#718096">$1163</td>
 <td>Apr 9â€‰â€“â€‰15</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Austin</strong></td>
 <td class="price price-bug">$427</td>
-<td style="color:#8b949e">$1174</td>
+<td style="color:#718096">$1174</td>
 <td>Jun 11â€‰â€“â€‰17</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Denver</strong></td>
 <td class="price price-bug">$467</td>
-<td style="color:#8b949e">$1284</td>
+<td style="color:#718096">$1284</td>
 <td>May 2â€‰â€“â€‰9</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td><a href="https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA1LTAyagwIAxIIL20vMDRmX2RyDAgCEggvbS8wMmNsMRooEgoyMDI2LTA1LTA5agwIAhIIL20vMDJjbDFyDAgDEggvbS8wNGZfZEABSARSA1VTRHABemxDalJJTTA1blkxZFpXRlpoTjBsQlFrOW1jM2RDUnkwdExTMHRMUzB0TFhkbVkyc3lNRUZCUVVGQlIyMDFObHBCUkVoRFdqQkJFZ1ZWUVRNMU5Sb0xDTmpzQWhBQ0dnTlZVMFE0SEhEWTdBST2YAQGyARIYASABKgwIAhIIL20vMDJjbDE&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCKiGp96QqJMDFQAAAAAdAAAAABBx" target="_blank" class="verify-btn search-btn">Flights</a> </td>
 </tr>
 <tr>
 <td><strong>Nashville</strong></td>
 <td class="price price-bug">$492</td>
-<td style="color:#8b949e">$1353</td>
+<td style="color:#718096">$1353</td>
 <td>Apr 20â€‰â€“â€‰28</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Washington, D.C.</strong></td>
 <td class="price price-bug">$494</td>
-<td style="color:#8b949e">$1358</td>
+<td style="color:#718096">$1358</td>
 <td>Apr 25â€‰â€“â€‰May 2</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Baltimore</strong></td>
 <td class="price price-bug">$494</td>
-<td style="color:#8b949e">$1358</td>
+<td style="color:#718096">$1358</td>
 <td>Apr 25â€‰â€“â€‰May 2</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Dallas</strong></td>
 <td class="price price-bug">$499</td>
-<td style="color:#8b949e">$1372</td>
+<td style="color:#718096">$1372</td>
 <td>May 11â€‰â€“â€‰19</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Pittsburgh</strong></td>
 <td class="price price-bug">$510</td>
-<td style="color:#8b949e">$1402</td>
+<td style="color:#718096">$1402</td>
 <td>Apr 25â€‰â€“â€‰May 2</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>1h drive from Miami</strong></td>
 <td class="price price-bug">$528</td>
-<td style="color:#8b949e">$1452</td>
+<td style="color:#718096">$1452</td>
 <td>Apr 18â€‰â€“â€‰25</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Minneapolis</strong></td>
 <td class="price price-bug">$535</td>
-<td style="color:#8b949e">$1471</td>
+<td style="color:#718096">$1471</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Houston</strong></td>
 <td class="price price-bug">$544</td>
-<td style="color:#8b949e">$1496</td>
+<td style="color:#718096">$1496</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Portland</strong></td>
 <td class="price price-bug">$597</td>
-<td style="color:#8b949e">$1642</td>
+<td style="color:#718096">$1642</td>
 <td>Apr 25â€‰â€“â€‰May 2</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>New York</strong></td>
 <td class="price price-bug">$598</td>
-<td style="color:#8b949e">$1644</td>
+<td style="color:#718096">$1644</td>
 <td>Aug 13â€‰â€“â€‰19</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Charlotte</strong></td>
 <td class="price price-bug">$598</td>
-<td style="color:#8b949e">$1644</td>
+<td style="color:#718096">$1644</td>
 <td>May 2â€‰â€“â€‰9</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Atlanta</strong></td>
 <td class="price price-bug">$607</td>
-<td style="color:#8b949e">$1669</td>
+<td style="color:#718096">$1669</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Asheville</strong></td>
 <td class="price price-bug">$616</td>
-<td style="color:#8b949e">$1694</td>
+<td style="color:#718096">$1694</td>
 <td>May 2â€‰â€“â€‰8</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Detroit</strong></td>
 <td class="price price-bug">$616</td>
-<td style="color:#8b949e">$1694</td>
+<td style="color:#718096">$1694</td>
 <td>Apr 16â€‰â€“â€‰22</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>San Antonio</strong></td>
 <td class="price price-bug">$629</td>
-<td style="color:#8b949e">$1730</td>
+<td style="color:#718096">$1730</td>
 <td>May 9â€‰â€“â€‰16</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>New Orleans</strong></td>
 <td class="price price-bug">$637</td>
-<td style="color:#8b949e">$1752</td>
+<td style="color:#718096">$1752</td>
 <td>Aug 6â€‰â€“â€‰12</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Savannah</strong></td>
 <td class="price price-bug">$641</td>
-<td style="color:#8b949e">$1763</td>
+<td style="color:#718096">$1763</td>
 <td>May 9â€‰â€“â€‰16</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Santa Fe</strong></td>
 <td class="price price-bug">$642</td>
-<td style="color:#8b949e">$1766</td>
+<td style="color:#718096">$1766</td>
 <td>May 7â€‰â€“â€‰13</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Charleston</strong></td>
 <td class="price price-bug">$659</td>
-<td style="color:#8b949e">$1812</td>
+<td style="color:#718096">$1812</td>
 <td>Sep 14â€‰â€“â€‰22</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Seattle</strong></td>
 <td class="price price-bug">$668</td>
-<td style="color:#8b949e">$1837</td>
+<td style="color:#718096">$1837</td>
 <td>Apr 3â€‰â€“â€‰11</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Philadelphia</strong></td>
 <td class="price price-bug">$676</td>
-<td style="color:#8b949e">$1859</td>
+<td style="color:#718096">$1859</td>
 <td>Apr 18â€‰â€“â€‰25</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Boston</strong></td>
 <td class="price price-bug">$682</td>
-<td style="color:#8b949e">$1876</td>
+<td style="color:#718096">$1876</td>
 <td>Apr 16â€‰â€“â€‰22</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Orlando</strong></td>
 <td class="price price-bug">$737</td>
-<td style="color:#8b949e">$2027</td>
+<td style="color:#718096">$2027</td>
 <td>May 7â€‰â€“â€‰13</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Tampa</strong></td>
 <td class="price price-bug">$747</td>
-<td style="color:#8b949e">$2054</td>
+<td style="color:#718096">$2054</td>
 <td>Jul 23â€‰â€“â€‰29</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Phoenix</strong></td>
 <td class="price price-bug">$756</td>
-<td style="color:#8b949e">$2079</td>
+<td style="color:#718096">$2079</td>
 <td>May 4â€‰â€“â€‰12</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Las Vegas</strong></td>
 <td class="price price-bug">$771</td>
-<td style="color:#8b949e">$2120</td>
+<td style="color:#718096">$2120</td>
 <td>May 1â€‰â€“â€‰7</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td><a href="https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA1LTAxagwIAxIIL20vMDRmX2RyDAgCEggvbS8wY3YzdxooEgoyMDI2LTA1LTA3agwIAhIIL20vMGN2M3dyDAgDEggvbS8wNGZfZEABSARSA1VTRHABenhDalJJWDNGUFozWnNabEJKUjBWQlFWZFhRV2RDUnkwdExTMHRMUzB0TFhkaWRtSXhNVUZCUVVGQlIyMDFObGxCU1ZoUVptdEJFZzFFVERJNU1ETjhSRXd4TmpZeUdnc0k3OWtFRUFJYUExVlRSRGdjY08vWkJBPT2YAQGyARIYASABKgwIAhIIL20vMGN2M3c&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCJDupdSQqJMDFQAAAAAdAAAAABBx" target="_blank" class="verify-btn search-btn">Flights</a> </td>
 </tr>
 <tr>
 <td><strong>Salt Lake City</strong></td>
 <td class="price price-bug">$778</td>
-<td style="color:#8b949e">$2140</td>
+<td style="color:#718096">$2140</td>
 <td>Apr 17â€‰â€“â€‰24</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>San Diego</strong></td>
 <td class="price price-bug">$797</td>
-<td style="color:#8b949e">$2192</td>
+<td style="color:#718096">$2192</td>
 <td>Aug 13â€‰â€“â€‰19</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Santa Barbara</strong></td>
 <td class="price price-bug">$821</td>
-<td style="color:#8b949e">$2258</td>
+<td style="color:#718096">$2258</td>
 <td>May 9â€‰â€“â€‰16</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Los Angeles</strong></td>
 <td class="price price-bug">$837</td>
-<td style="color:#8b949e">$2302</td>
+<td style="color:#718096">$2302</td>
 <td>Apr 30â€‰â€“â€‰May 9</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td><a href="https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA0LTMwagwIAxIIL20vMDRmX2RyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDUtMDlqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDRmX2RAAUgEUgNVU0RwAXpsQ2pSSWNVdGhkVGRIUlRWUE5YZEJRVlpTVEhkQ1J5MHRMUzB0TFMwdExTMHRkMkp4T1VGQlFVRkJSMjAxTmxvNFMwSmFOMVZCRWdaVlFUVXlNak1hQ3dqZmpRVVFBaG9EVlZORU9CeHczNDBGmAEBsgEUGAEgASoOCAISCi9tLzAzMHFiM3Q&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCPjA1-WQqJMDFQAAAAAdAAAAABBx" target="_blank" class="verify-btn search-btn">Flights</a> </td>
 </tr>
 <tr>
 <td><strong>San Francisco</strong></td>
 <td class="price price-bug">$899</td>
-<td style="color:#8b949e">$2472</td>
+<td style="color:#718096">$2472</td>
 <td>Aug 15â€‰â€“â€‰22</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Key West</strong></td>
 <td class="price price-bug">$951</td>
-<td style="color:#8b949e">$2615</td>
+<td style="color:#718096">$2615</td>
 <td>Aug 13â€‰â€“â€‰19</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Palm Springs</strong></td>
 <td class="price price-bug">$966</td>
-<td style="color:#8b949e">$2656</td>
+<td style="color:#718096">$2656</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Miami</strong></td>
 <td class="price price-bug">$985</td>
-<td style="color:#8b949e">$2709</td>
+<td style="color:#718096">$2709</td>
 <td>Aug 6â€‰â€“â€‰12</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Fort Lauderdale</strong></td>
 <td class="price price-bug">$985</td>
-<td style="color:#8b949e">$2709</td>
+<td style="color:#718096">$2709</td>
 <td>Aug 6â€‰â€“â€‰12</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Kauai</strong></td>
 <td class="price price-bug">$1739</td>
-<td style="color:#8b949e">$4782</td>
+<td style="color:#718096">$4782</td>
 <td>Aug 24â€‰â€“â€‰31</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Honolulu</strong></td>
 <td class="price price-bug">$1873</td>
-<td style="color:#8b949e">$5151</td>
+<td style="color:#718096">$5151</td>
 <td>Aug 24â€‰â€“â€‰31</td>
 <td>2 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 </table>
@@ -480,8 +486,8 @@ a.verify-btn:hover { opacity: 0.85; }
 
 <div class="section top-deal">
 <div class="section-header">
-<h2 style="color:#9C27B0">Kuala Lumpur (KUL) - Business to USA</h2>
-<span class="badge" style="background:#9C27B033;color:#9C27B0">40 fares</span>
+<h2>Kuala Lumpur (KUL) &mdash; Business to USA</h2>
+<span class="badge" style="background:#6b21a815;color:#6b21a8;border:1px solid #6b21a833">40 fares</span>
 <a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDRmX2RyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA0Zl9kQAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" class="verify-btn explore-btn">Open Explore Map</a>
 </div>
 <table class="fare-table">
@@ -497,361 +503,361 @@ a.verify-btn:hover { opacity: 0.85; }
 <tr>
 <td><strong>Denver</strong></td>
 <td class="price price-bug">$306</td>
-<td style="color:#8b949e">$842</td>
+<td style="color:#718096">$842</td>
 <td>May 2â€‰â€“â€‰9</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td><a href="https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA1LTAyagwIAxIIL20vMDRmX2RyDAgCEggvbS8wMmNsMRooEgoyMDI2LTA1LTA5agwIAhIIL20vMDJjbDFyDAgDEggvbS8wNGZfZEABSANSA1VTRHABemxDalJJVEhORmJ6UXdTSFZ6WkhkQlFUZG1SMmRDUnkwdExTMHRMUzB0ZDJaalpHOHhNa0ZCUVVGQlIyMDFObFpGUjA5TFJHdEJFZ1pHT1RNek56VWFDd2lFN3dFUUFob0RWVk5FT0J4d2hPOEKYAQGyARIYASABKgwIAhIIL20vMDJjbDE&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCPi__L2QqJMDFQAAAAAdAAAAABBx" target="_blank" class="verify-btn search-btn">Flights</a> </td>
 </tr>
 <tr>
 <td><strong>Atlanta</strong></td>
 <td class="price price-bug">$416</td>
-<td style="color:#8b949e">$1144</td>
+<td style="color:#718096">$1144</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Dallas</strong></td>
 <td class="price price-bug">$418</td>
-<td style="color:#8b949e">$1150</td>
+<td style="color:#718096">$1150</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Austin</strong></td>
 <td class="price price-bug">$427</td>
-<td style="color:#8b949e">$1174</td>
+<td style="color:#718096">$1174</td>
 <td>Jun 11â€‰â€“â€‰17</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Houston</strong></td>
 <td class="price price-bug">$428</td>
-<td style="color:#8b949e">$1177</td>
+<td style="color:#718096">$1177</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Chicago</strong></td>
 <td class="price price-bug">$438</td>
-<td style="color:#8b949e">$1204</td>
+<td style="color:#718096">$1204</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Washington, D.C.</strong></td>
 <td class="price price-bug">$438</td>
-<td style="color:#8b949e">$1204</td>
+<td style="color:#718096">$1204</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Philadelphia</strong></td>
 <td class="price price-bug">$438</td>
-<td style="color:#8b949e">$1204</td>
+<td style="color:#718096">$1204</td>
 <td>Apr 25â€‰â€“â€‰May 3</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Baltimore</strong></td>
 <td class="price price-bug">$438</td>
-<td style="color:#8b949e">$1204</td>
+<td style="color:#718096">$1204</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>San Antonio</strong></td>
 <td class="price price-bug">$439</td>
-<td style="color:#8b949e">$1207</td>
+<td style="color:#718096">$1207</td>
 <td>May 2â€‰â€“â€‰11</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>1.5h drive from Washington</strong></td>
 <td class="price price-bug">$439</td>
-<td style="color:#8b949e">$1207</td>
+<td style="color:#718096">$1207</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Detroit</strong></td>
 <td class="price price-bug">$439</td>
-<td style="color:#8b949e">$1207</td>
+<td style="color:#718096">$1207</td>
 <td>May 2â€‰â€“â€‰11</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Los Angeles</strong></td>
 <td class="price price-bug">$448</td>
-<td style="color:#8b949e">$1232</td>
+<td style="color:#718096">$1232</td>
 <td>Apr 25â€‰â€“â€‰May 2</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td><a href="https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA0LTI1agwIAxIIL20vMDRmX2RyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDUtMDJqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDRmX2RAAUgDUgNVU0RwAXp4Q2pSSVlUQXhjMjgxTWtFeVZqQkJRVk5GUlVGQ1J5MHRMUzB0TFMwdExTMTNZblp1TVVGQlFVRkJSMjAxTmxkQlIxWndha1ZCRWcxR09UTXpOelY4Umprek1UVTFHZ3NJL04wQ0VBSWFBMVZUUkRnY2NQemRBZz09mAEBsgEUGAEgASoOCAISCi9tLzAzMHFiM3Q&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCMigxMeQqJMDFQAAAAAdAAAAABBx" target="_blank" class="verify-btn search-btn">Flights</a> </td>
 </tr>
 <tr>
 <td><strong>Miami</strong></td>
 <td class="price price-bug">$448</td>
-<td style="color:#8b949e">$1232</td>
+<td style="color:#718096">$1232</td>
 <td>May 11â€‰â€“â€‰20</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Phoenix</strong></td>
 <td class="price price-bug">$448</td>
-<td style="color:#8b949e">$1232</td>
+<td style="color:#718096">$1232</td>
 <td>Apr 25â€‰â€“â€‰May 1</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Tampa</strong></td>
 <td class="price price-bug">$448</td>
-<td style="color:#8b949e">$1232</td>
+<td style="color:#718096">$1232</td>
 <td>May 2â€‰â€“â€‰8</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Fort Lauderdale</strong></td>
 <td class="price price-bug">$448</td>
-<td style="color:#8b949e">$1232</td>
+<td style="color:#718096">$1232</td>
 <td>May 11â€‰â€“â€‰20</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>New Orleans</strong></td>
 <td class="price price-bug">$449</td>
-<td style="color:#8b949e">$1235</td>
+<td style="color:#718096">$1235</td>
 <td>May 2â€‰â€“â€‰8</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Minneapolis</strong></td>
 <td class="price price-bug">$451</td>
-<td style="color:#8b949e">$1240</td>
+<td style="color:#718096">$1240</td>
 <td>May 4â€‰â€“â€‰12</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Boston</strong></td>
 <td class="price price-bug">$458</td>
-<td style="color:#8b949e">$1260</td>
+<td style="color:#718096">$1260</td>
 <td>May 11â€‰â€“â€‰20</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Las Vegas</strong></td>
 <td class="price price-bug">$459</td>
-<td style="color:#8b949e">$1262</td>
+<td style="color:#718096">$1262</td>
 <td>May 2â€‰â€“â€‰9</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td><a href="https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA1LTAyagwIAxIIL20vMDRmX2RyDAgCEggvbS8wY3YzdxooEgoyMDI2LTA1LTA5agwIAhIIL20vMGN2M3dyDAgDEggvbS8wNGZfZEABSANSA1VTRHABenhDalJJTldoTVVVUlZkbTFxVTAxQlFWWmlTMEZDUnkwdExTMHRMUzB0TFMxM1ltOXZPRUZCUVVGQlIyMDFObFIzVEUxaWEwRkJFZzFHT1RNek56VjhSamt4TnpZMUdnc0l5T1lDRUFJYUExVlRSRGdjY01qbUFnPT2YAQGyARIYASABKgwIAhIIL20vMGN2M3c&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCNCY-6yQqJMDFQAAAAAdAAAAABBw" target="_blank" class="verify-btn search-btn">Flights</a> </td>
 </tr>
 <tr>
 <td><strong>Seattle</strong></td>
 <td class="price price-bug">$468</td>
-<td style="color:#8b949e">$1287</td>
+<td style="color:#718096">$1287</td>
 <td>May 4â€‰â€“â€‰12</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>San Diego</strong></td>
 <td class="price price-bug">$468</td>
-<td style="color:#8b949e">$1287</td>
+<td style="color:#718096">$1287</td>
 <td>Apr 30â€‰â€“â€‰May 9</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>San Francisco</strong></td>
 <td class="price price-bug">$468</td>
-<td style="color:#8b949e">$1287</td>
+<td style="color:#718096">$1287</td>
 <td>May 2â€‰â€“â€‰9</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Orlando</strong></td>
 <td class="price price-bug">$469</td>
-<td style="color:#8b949e">$1290</td>
+<td style="color:#718096">$1290</td>
 <td>Apr 27â€‰â€“â€‰May 5</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>1h drive from Miami</strong></td>
 <td class="price price-bug">$489</td>
-<td style="color:#8b949e">$1345</td>
+<td style="color:#718096">$1345</td>
 <td>Apr 30â€‰â€“â€‰May 8</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Nashville</strong></td>
 <td class="price price-bug">$492</td>
-<td style="color:#8b949e">$1353</td>
+<td style="color:#718096">$1353</td>
 <td>Apr 20â€‰â€“â€‰28</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Charlotte</strong></td>
 <td class="price price-bug">$504</td>
-<td style="color:#8b949e">$1386</td>
+<td style="color:#718096">$1386</td>
 <td>Apr 30â€‰â€“â€‰May 7</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Portland</strong></td>
 <td class="price price-bug">$508</td>
-<td style="color:#8b949e">$1397</td>
+<td style="color:#718096">$1397</td>
 <td>Apr 20â€‰â€“â€‰29</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Pittsburgh</strong></td>
 <td class="price price-bug">$510</td>
-<td style="color:#8b949e">$1402</td>
+<td style="color:#718096">$1402</td>
 <td>Apr 25â€‰â€“â€‰May 2</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>New York</strong></td>
 <td class="price price-bug">$598</td>
-<td style="color:#8b949e">$1644</td>
+<td style="color:#718096">$1644</td>
 <td>Aug 13â€‰â€“â€‰19</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Asheville</strong></td>
 <td class="price price-bug">$616</td>
-<td style="color:#8b949e">$1694</td>
+<td style="color:#718096">$1694</td>
 <td>May 2â€‰â€“â€‰8</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Savannah</strong></td>
 <td class="price price-bug">$641</td>
-<td style="color:#8b949e">$1763</td>
+<td style="color:#718096">$1763</td>
 <td>May 9â€‰â€“â€‰16</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Santa Fe</strong></td>
 <td class="price price-bug">$642</td>
-<td style="color:#8b949e">$1766</td>
+<td style="color:#718096">$1766</td>
 <td>May 7â€‰â€“â€‰13</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Charleston</strong></td>
 <td class="price price-bug">$659</td>
-<td style="color:#8b949e">$1812</td>
+<td style="color:#718096">$1812</td>
 <td>Sep 14â€‰â€“â€‰22</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Santa Barbara</strong></td>
 <td class="price price-bug">$821</td>
-<td style="color:#8b949e">$2258</td>
+<td style="color:#718096">$2258</td>
 <td>May 9â€‰â€“â€‰16</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Key West</strong></td>
 <td class="price price-bug">$951</td>
-<td style="color:#8b949e">$2615</td>
+<td style="color:#718096">$2615</td>
 <td>Aug 13â€‰â€“â€‰19</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Palm Springs</strong></td>
 <td class="price price-bug">$966</td>
-<td style="color:#8b949e">$2656</td>
+<td style="color:#718096">$2656</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Kauai</strong></td>
 <td class="price price-bug">$1739</td>
-<td style="color:#8b949e">$4782</td>
+<td style="color:#718096">$4782</td>
 <td>Aug 24â€‰â€“â€‰31</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Honolulu</strong></td>
 <td class="price price-cheap">$1873</td>
-<td style="color:#8b949e">$5151</td>
+<td style="color:#718096">$5151</td>
 <td>Aug 24â€‰â€“â€‰31</td>
 <td>2 stops</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 </table>
@@ -859,8 +865,8 @@ a.verify-btn:hover { opacity: 0.85; }
 
 <div class="section">
 <div class="section-header">
-<h2 style="color:#2196F3">Kuala Lumpur (KUL) - Premium Economy to USA</h2>
-<span class="badge" style="background:#2196F333;color:#2196F3">39 fares</span>
+<h2>Kuala Lumpur (KUL) &mdash; Premium Economy to USA</h2>
+<span class="badge" style="background:#2b6cb015;color:#2b6cb0;border:1px solid #2b6cb033">39 fares</span>
 <a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDRmX2RyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA0Zl9kQAFIAnACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" class="verify-btn explore-btn">Open Explore Map</a>
 </div>
 <table class="fare-table">
@@ -876,352 +882,352 @@ a.verify-btn:hover { opacity: 0.85; }
 <tr>
 <td><strong>Denver</strong></td>
 <td class="price price-bug">$226</td>
-<td style="color:#8b949e">$622</td>
+<td style="color:#718096">$622</td>
 <td>May 2â€‰â€“â€‰9</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td><a href="https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA1LTAyagwIAxIIL20vMDRmX2RyDAgCEggvbS8wMmNsMRooEgoyMDI2LTA1LTA5agwIAhIIL20vMDJjbDFyDAgDEggvbS8wNGZfZEABSAJSA1VTRHABemxDalJJTFVoclEweEtabGhMYUZsQlFVODROMUZDUnkwdExTMHRMUzB0TFhkaVltWm9OVUZCUVVGQlIyMDFOazl6UzJ4TWJWbEJFZ1pHT1RNek56VWFDd2pFc0FFUUFob0RWVk5FT0J4d3hMQUKYAQGyARIYASABKgwIAhIIL20vMDJjbDE&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAIQtY0DKABqFwoTCNju74-QqJMDFQAAAAAdAAAAABBr" target="_blank" class="verify-btn search-btn">Flights</a> </td>
 </tr>
 <tr>
 <td><strong>Atlanta</strong></td>
 <td class="price price-bug">$318</td>
-<td style="color:#8b949e">$874</td>
+<td style="color:#718096">$874</td>
 <td>May 2â€‰â€“â€‰8</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Chicago</strong></td>
 <td class="price price-bug">$318</td>
-<td style="color:#8b949e">$874</td>
+<td style="color:#718096">$874</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Washington, D.C.</strong></td>
 <td class="price price-bug">$318</td>
-<td style="color:#8b949e">$874</td>
+<td style="color:#718096">$874</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Houston</strong></td>
 <td class="price price-bug">$318</td>
-<td style="color:#8b949e">$874</td>
+<td style="color:#718096">$874</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Dallas</strong></td>
 <td class="price price-bug">$318</td>
-<td style="color:#8b949e">$874</td>
+<td style="color:#718096">$874</td>
 <td>Apr 23â€‰â€“â€‰30</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Baltimore</strong></td>
 <td class="price price-bug">$318</td>
-<td style="color:#8b949e">$874</td>
+<td style="color:#718096">$874</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Austin</strong></td>
 <td class="price price-bug">$337</td>
-<td style="color:#8b949e">$927</td>
+<td style="color:#718096">$927</td>
 <td>Jun 11â€‰â€“â€‰17</td>
 <td>Nonstop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>New York</strong></td>
 <td class="price price-bug">$338</td>
-<td style="color:#8b949e">$930</td>
+<td style="color:#718096">$930</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Philadelphia</strong></td>
 <td class="price price-bug">$338</td>
-<td style="color:#8b949e">$930</td>
+<td style="color:#718096">$930</td>
 <td>Apr 25â€‰â€“â€‰May 3</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Phoenix</strong></td>
 <td class="price price-bug">$338</td>
-<td style="color:#8b949e">$930</td>
+<td style="color:#718096">$930</td>
 <td>Apr 24â€‰â€“â€‰May 1</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Tampa</strong></td>
 <td class="price price-bug">$338</td>
-<td style="color:#8b949e">$930</td>
+<td style="color:#718096">$930</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Orlando</strong></td>
 <td class="price price-bug">$344</td>
-<td style="color:#8b949e">$946</td>
+<td style="color:#718096">$946</td>
 <td>Apr 25â€‰â€“â€‰May 1</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Los Angeles</strong></td>
 <td class="price price-bug">$348</td>
-<td style="color:#8b949e">$957</td>
+<td style="color:#718096">$957</td>
 <td>Apr 24â€‰â€“â€‰May 2</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td><a href="https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA0LTI0agwIAxIIL20vMDRmX2RyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDUtMDJqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDRmX2RAAUgCUgNVU0RwAXp4Q2pSSWJHUTBOMk00ZDA1dGRIZEJRa0kyUm1kQ1J5MHRMUzB0TFMwdExYZG1ZMlJqTjBGQlFVRkJSMjAxTmxCdlJubG9YMVZCRWcxR09UTTFNREI4Umprek1qRTFHZ3NJN0k4Q0VBSWFBMVZUUkRnY2NPeVBBZz09mAEBsgEUGAEgASoOCAISCi9tLzAzMHFiM3Q&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAIQtY0DKABqFwoTCLDj8JaQqJMDFQAAAAAdAAAAABBr" target="_blank" class="verify-btn search-btn">Flights</a> </td>
 </tr>
 <tr>
 <td><strong>Miami</strong></td>
 <td class="price price-bug">$348</td>
-<td style="color:#8b949e">$957</td>
+<td style="color:#718096">$957</td>
 <td>Apr 23â€‰â€“â€‰30</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Fort Lauderdale</strong></td>
 <td class="price price-bug">$348</td>
-<td style="color:#8b949e">$957</td>
+<td style="color:#718096">$957</td>
 <td>Apr 23â€‰â€“â€‰30</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>New Orleans</strong></td>
 <td class="price price-bug">$349</td>
-<td style="color:#8b949e">$960</td>
+<td style="color:#718096">$960</td>
 <td>May 2â€‰â€“â€‰8</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Nashville</strong></td>
 <td class="price price-bug">$349</td>
-<td style="color:#8b949e">$960</td>
+<td style="color:#718096">$960</td>
 <td>May 2â€‰â€“â€‰8</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>San Antonio</strong></td>
 <td class="price price-bug">$349</td>
-<td style="color:#8b949e">$960</td>
+<td style="color:#718096">$960</td>
 <td>Apr 30â€‰â€“â€‰May 8</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>1.5h drive from Washington</strong></td>
 <td class="price price-bug">$349</td>
-<td style="color:#8b949e">$960</td>
+<td style="color:#718096">$960</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Detroit</strong></td>
 <td class="price price-bug">$349</td>
-<td style="color:#8b949e">$960</td>
+<td style="color:#718096">$960</td>
 <td>Apr 30â€‰â€“â€‰May 6</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Minneapolis</strong></td>
 <td class="price price-bug">$361</td>
-<td style="color:#8b949e">$993</td>
+<td style="color:#718096">$993</td>
 <td>Apr 30â€‰â€“â€‰May 8</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Las Vegas</strong></td>
 <td class="price price-bug">$369</td>
-<td style="color:#8b949e">$1015</td>
+<td style="color:#718096">$1015</td>
 <td>May 2â€‰â€“â€‰8</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td><a href="https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA1LTAyagwIAxIIL20vMDRmX2RyDAgCEggvbS8wY3YzdxooEgoyMDI2LTA1LTA4agwIAhIIL20vMGN2M3dyDAgDEggvbS8wNGZfZEABSAJSA1VTRHABenhDalJJYm5CNFpubFJTRGxQYkc5QlFWVkxPRkZDUnkwdExTMHRMUzB0TFhkaVltRjZPRUZCUVVGQlIyMDFOazUzUm5OSlkxbEJFZzFHT1RNek56VjhSamt4TnpZMUdnc0lvS0FDRUFJYUExVlRSRGdjY0tDZ0FnPT2YAQGyARIYASABKgwIAhIIL20vMGN2M3c&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAIQtY0DKABqFwoTCIDvyIiQqJMDFQAAAAAdAAAAABBr" target="_blank" class="verify-btn search-btn">Flights</a> </td>
 </tr>
 <tr>
 <td><strong>Seattle</strong></td>
 <td class="price price-bug">$378</td>
-<td style="color:#8b949e">$1040</td>
+<td style="color:#718096">$1040</td>
 <td>Apr 30â€‰â€“â€‰May 8</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>San Diego</strong></td>
 <td class="price price-bug">$378</td>
-<td style="color:#8b949e">$1040</td>
+<td style="color:#718096">$1040</td>
 <td>Apr 30â€‰â€“â€‰May 9</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>San Francisco</strong></td>
 <td class="price price-bug">$378</td>
-<td style="color:#8b949e">$1040</td>
+<td style="color:#718096">$1040</td>
 <td>May 2â€‰â€“â€‰9</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>St. Louis</strong></td>
 <td class="price price-bug">$379</td>
-<td style="color:#8b949e">$1042</td>
+<td style="color:#718096">$1042</td>
 <td>Apr 30â€‰â€“â€‰May 8</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Boston</strong></td>
 <td class="price price-bug">$398</td>
-<td style="color:#8b949e">$1094</td>
+<td style="color:#718096">$1094</td>
 <td>May 29â€‰â€“â€‰Jun 6</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Charlotte</strong></td>
 <td class="price price-bug">$403</td>
-<td style="color:#8b949e">$1108</td>
+<td style="color:#718096">$1108</td>
 <td>Apr 17â€‰â€“â€‰25</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Portland</strong></td>
 <td class="price price-bug">$428</td>
-<td style="color:#8b949e">$1177</td>
+<td style="color:#718096">$1177</td>
 <td>Apr 17â€‰â€“â€‰24</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Asheville</strong></td>
 <td class="price price-bug">$429</td>
-<td style="color:#8b949e">$1180</td>
+<td style="color:#718096">$1180</td>
 <td>Aug 3â€‰â€“â€‰11</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Pittsburgh</strong></td>
 <td class="price price-bug">$472</td>
-<td style="color:#8b949e">$1298</td>
+<td style="color:#718096">$1298</td>
 <td>May 4â€‰â€“â€‰12</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Palm Springs</strong></td>
 <td class="price price-bug">$535</td>
-<td style="color:#8b949e">$1471</td>
+<td style="color:#718096">$1471</td>
 <td>May 9â€‰â€“â€‰16</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Savannah</strong></td>
 <td class="price price-bug">$565</td>
-<td style="color:#8b949e">$1554</td>
+<td style="color:#718096">$1554</td>
 <td>May 2â€‰â€“â€‰9</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Key West</strong></td>
 <td class="price price-bug">$571</td>
-<td style="color:#8b949e">$1570</td>
+<td style="color:#718096">$1570</td>
 <td>Aug 13â€‰â€“â€‰19</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Santa Barbara</strong></td>
 <td class="price price-bug">$581</td>
-<td style="color:#8b949e">$1598</td>
+<td style="color:#718096">$1598</td>
 <td>Jul 23â€‰â€“â€‰29</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Charleston</strong></td>
 <td class="price price-bug">$623</td>
-<td style="color:#8b949e">$1713</td>
+<td style="color:#718096">$1713</td>
 <td>Jul 16â€‰â€“â€‰22</td>
 <td>1 stop</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Honolulu</strong></td>
 <td class="price price-cheap">$942</td>
-<td style="color:#8b949e">$2590</td>
+<td style="color:#718096">$2590</td>
 <td>Apr 20â€‰â€“â€‰29</td>
 <td>1 stop</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Kauai</strong></td>
 <td class="price price-cheap">$1122</td>
-<td style="color:#8b949e">$3086</td>
+<td style="color:#718096">$3086</td>
 <td>Sep 18â€‰â€“â€‰24</td>
 <td>2 stops</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 </table>
@@ -1229,8 +1235,8 @@ a.verify-btn:hover { opacity: 0.85; }
 
 <div class="section">
 <div class="section-header">
-<h2 style="color:#9C27B0">Jakarta (CGK) - Business to USA</h2>
-<span class="badge" style="background:#9C27B033;color:#9C27B0">20 fares</span>
+<h2>Jakarta (CGK) &mdash; Business to USA</h2>
+<span class="badge" style="background:#6b21a815;color:#6b21a8;border:1px solid #6b21a833">20 fares</span>
 <a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDQ0cnZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA0NHJ2QAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" class="verify-btn explore-btn">Open Explore Map</a>
 </div>
 <table class="fare-table">
@@ -1246,181 +1252,181 @@ a.verify-btn:hover { opacity: 0.85; }
 <tr>
 <td><strong>Houston</strong></td>
 <td class="price price-bug">$839</td>
-<td style="color:#8b949e">$2307</td>
+<td style="color:#718096">$2307</td>
 <td>Jun 18â€‰â€“â€‰24</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Washington, D.C.</strong></td>
 <td class="price price-bug">$861</td>
-<td style="color:#8b949e">$2368</td>
+<td style="color:#718096">$2368</td>
 <td>Jul 24â€‰â€“â€‰Aug 1</td>
 <td>2 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Boston</strong></td>
 <td class="price price-bug">$861</td>
-<td style="color:#8b949e">$2368</td>
+<td style="color:#718096">$2368</td>
 <td>Jul 16â€‰â€“â€‰23</td>
 <td>2 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Baltimore</strong></td>
 <td class="price price-bug">$861</td>
-<td style="color:#8b949e">$2368</td>
+<td style="color:#718096">$2368</td>
 <td>Jul 24â€‰â€“â€‰Aug 1</td>
 <td>2 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Miami</strong></td>
 <td class="price price-bug">$884</td>
-<td style="color:#8b949e">$2431</td>
+<td style="color:#718096">$2431</td>
 <td>May 24â€‰â€“â€‰30</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Atlanta</strong></td>
 <td class="price price-bug">$884</td>
-<td style="color:#8b949e">$2431</td>
+<td style="color:#718096">$2431</td>
 <td>May 29â€‰â€“â€‰Jun 6</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Tampa</strong></td>
 <td class="price price-bug">$884</td>
-<td style="color:#8b949e">$2431</td>
+<td style="color:#718096">$2431</td>
 <td>Apr 3â€‰â€“â€‰9</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Fort Lauderdale</strong></td>
 <td class="price price-bug">$884</td>
-<td style="color:#8b949e">$2431</td>
+<td style="color:#718096">$2431</td>
 <td>May 24â€‰â€“â€‰30</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Pittsburgh</strong></td>
 <td class="price price-bug">$884</td>
-<td style="color:#8b949e">$2431</td>
+<td style="color:#718096">$2431</td>
 <td>May 8â€‰â€“â€‰15</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Detroit</strong></td>
 <td class="price price-bug">$884</td>
-<td style="color:#8b949e">$2431</td>
+<td style="color:#718096">$2431</td>
 <td>May 15â€‰â€“â€‰23</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Los Angeles</strong></td>
 <td class="price price-bug">$889</td>
-<td style="color:#8b949e">$2445</td>
+<td style="color:#718096">$2445</td>
 <td>Jul 16â€‰â€“â€‰22</td>
 <td>2 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td><a href="https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA3LTE2agwIAxIIL20vMDQ0cnZyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDctMjJqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDQ0cnZAAUgDUgNVU0RwAXp4Q2pSSVdUbFZVVFkzWVVkeFZEaEJRVk5mUkhkQ1J5MHRMUzB0TFMwdExYZGlZbUppT1VGQlFVRkJSMjAxTlRrd1EyWXRPQzFCRWc1VVJ6UXpObnhQVXpoOFQxTTFNUm9MQ1BLMUJSQUNHZ05WVTBRNEhIRHl0UVU9mAEBsgEUGAEgASoOCAISCi9tLzAzMHFiM3Q&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCIjc_I6PqJMDFQAAAAAdAAAAABBq" target="_blank" class="verify-btn search-btn">Flights</a> </td>
 </tr>
 <tr>
 <td><strong>New York</strong></td>
 <td class="price price-bug">$893</td>
-<td style="color:#8b949e">$2456</td>
+<td style="color:#718096">$2456</td>
 <td>Apr 4â€‰â€“â€‰11</td>
 <td>2 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td><a href="https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA0LTA0agwIAxIIL20vMDQ0cnZyDQgCEgkvbS8wMl8yODYaKRIKMjAyNi0wNC0xMWoNCAISCS9tLzAyXzI4NnIMCAMSCC9tLzA0NHJ2QAFIA1IDVVNEcAF6eENqUklMVTE2UWtoNlZUaDBhR2RCUVdzeE5VRkNSeTB0TFMwdExTMHRMWGRtWVhneE5VRkJRVUZCUjIwMU5TMDBUSFpDZVRoQkVnNVVSelF6Tm54UFV6aDhUMU16TnhvTENKQzVCUkFDR2dOVlUwUTRISENRdVFVPZgBAbIBExgBIAEqDQgCEgkvbS8wMl8yODY&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCLD0nZePqJMDFQAAAAAdAAAAABBn" target="_blank" class="verify-btn search-btn">Flights</a> </td>
 </tr>
 <tr>
 <td><strong>Chicago</strong></td>
 <td class="price price-bug">$893</td>
-<td style="color:#8b949e">$2456</td>
+<td style="color:#718096">$2456</td>
 <td>Apr 4â€‰â€“â€‰11</td>
 <td>2 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Seattle</strong></td>
 <td class="price price-bug">$894</td>
-<td style="color:#8b949e">$2458</td>
+<td style="color:#718096">$2458</td>
 <td>Jul 4â€‰â€“â€‰10</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>San Francisco</strong></td>
 <td class="price price-bug">$897</td>
-<td style="color:#8b949e">$2467</td>
+<td style="color:#718096">$2467</td>
 <td>Jun 4â€‰â€“â€‰10</td>
 <td>2 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td><a href="https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA2LTA0agwIAxIIL20vMDQ0cnZyDAgCEggvbS8wZDZscBooEgoyMDI2LTA2LTEwagwIAhIIL20vMGQ2bHByDAgDEggvbS8wNDRydkABSANSA1VTRHABenxDalJJZVdrMVZWTlJSRWxRV2tGQlFrZEJYM2RDUnkwdExTMHRMUzB0ZDJaaWMyRXhNa0ZCUVVGQlIyMDFOVjh3VFRsWVYwbEJFaEJUVVRrMk5YeE1XREUzTjN4TVdETTRHZ3NJcGJ3RkVBSWFBMVZUUkRnY2NLVzhCUT09mAEBsgESGAEgASoMCAISCC9tLzBkNmxw&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAQQtY0DKABqFwoTCOjvu56PqJMDFQAAAAAdAAAAABBq" target="_blank" class="verify-btn search-btn">Flights</a> </td>
 </tr>
 <tr>
 <td><strong>San Diego</strong></td>
 <td class="price price-bug">$898</td>
-<td style="color:#8b949e">$2470</td>
+<td style="color:#718096">$2470</td>
 <td>May 9â€‰â€“â€‰15</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Charlotte</strong></td>
 <td class="price price-bug">$898</td>
-<td style="color:#8b949e">$2470</td>
+<td style="color:#718096">$2470</td>
 <td>Apr 27â€‰â€“â€‰May 3</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Portland</strong></td>
 <td class="price price-bug">$902</td>
-<td style="color:#8b949e">$2480</td>
+<td style="color:#718096">$2480</td>
 <td>Apr 3â€‰â€“â€‰9</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Philadelphia</strong></td>
 <td class="price price-bug">$903</td>
-<td style="color:#8b949e">$2483</td>
+<td style="color:#718096">$2483</td>
 <td>May 15â€‰â€“â€‰21</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Las Vegas</strong></td>
 <td class="price price-bug">$946</td>
-<td style="color:#8b949e">$2602</td>
+<td style="color:#718096">$2602</td>
 <td>Jun 8â€‰â€“â€‰16</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 </table>
@@ -1428,8 +1434,8 @@ a.verify-btn:hover { opacity: 0.85; }
 
 <div class="section">
 <div class="section-header">
-<h2 style="color:#2196F3">Jakarta (CGK) - Premium Economy to USA</h2>
-<span class="badge" style="background:#2196F333;color:#2196F3">18 fares</span>
+<h2>Jakarta (CGK) &mdash; Premium Economy to USA</h2>
+<span class="badge" style="background:#2b6cb015;color:#2b6cb0;border:1px solid #2b6cb033">18 fares</span>
 <a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDQ0cnZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA0NHJ2QAFIAnACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" class="verify-btn explore-btn">Open Explore Map</a>
 </div>
 <table class="fare-table">
@@ -1445,163 +1451,163 @@ a.verify-btn:hover { opacity: 0.85; }
 <tr>
 <td><strong>Houston</strong></td>
 <td class="price price-bug">$651</td>
-<td style="color:#8b949e">$1790</td>
+<td style="color:#718096">$1790</td>
 <td>Jun 18â€‰â€“â€‰24</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Boston</strong></td>
 <td class="price price-bug">$666</td>
-<td style="color:#8b949e">$1832</td>
+<td style="color:#718096">$1832</td>
 <td>Jul 16â€‰â€“â€‰23</td>
 <td>2 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Los Angeles</strong></td>
 <td class="price price-bug">$675</td>
-<td style="color:#8b949e">$1856</td>
+<td style="color:#718096">$1856</td>
 <td>Jul 16â€‰â€“â€‰22</td>
 <td>2 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td><a href="https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA3LTE2agwIAxIIL20vMDQ0cnZyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDctMjJqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDQ0cnZAAUgCUgNVU0RwAXp4Q2pSSWIxTTJRa2N0VVRCMFVGbEJRa1F4TTJkQ1J5MHRMUzB0TFMwdExTMTNabWRuTTBGQlFVRkJSMjAxTlROVlIxWXljVFpCRWc1VVJ6UXpObnhQVXpoOFQxTTFNUm9MQ095T0JCQUNHZ05WVTBRNEhIRHNqZ1E9mAEBsgEUGAEgASoOCAISCi9tLzAzMHFiM3Q&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAIQtY0DKABqFwoTCJDBq92OqJMDFQAAAAAdAAAAABBm" target="_blank" class="verify-btn search-btn">Flights</a> </td>
 </tr>
 <tr>
 <td><strong>Washington, D.C.</strong></td>
 <td class="price price-bug">$675</td>
-<td style="color:#8b949e">$1856</td>
+<td style="color:#718096">$1856</td>
 <td>May 23â€‰â€“â€‰Jun 1</td>
 <td>2 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td><a href="https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA1LTIzagwIAxIIL20vMDQ0cnZyDAgCEggvbS8wcmg2axooEgoyMDI2LTA2LTAxagwIAhIIL20vMHJoNmtyDAgDEggvbS8wNDRydkABSAJSA1VTRHABenhDalJJTFUxNlFraDZWVGgwYUdkQlFXdHVVMUZDUnkwdExTMHRMUzB0TFhkbVlYZ3hOVUZCUVVGQlIyMDFOVGRqUjJ0clVXOUJFZzVVUnpRek5ueFBVemg4VDFNME1Sb0xDT3lPQkJBQ0dnTlZVMFE0SEhEc2pnUT2YAQGyARIYASABKgwIAhIIL20vMHJoNms&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAIQtY0DKABqFwoTCLiXo_qOqJMDFQAAAAAdAAAAABBm" target="_blank" class="verify-btn search-btn">Flights</a> </td>
 </tr>
 <tr>
 <td><strong>1h drive from Miami</strong></td>
 <td class="price price-bug">$675</td>
-<td style="color:#8b949e">$1856</td>
+<td style="color:#718096">$1856</td>
 <td>May 23â€‰â€“â€‰Jun 1</td>
 <td>2 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>New York</strong></td>
 <td class="price price-bug">$678</td>
-<td style="color:#8b949e">$1864</td>
+<td style="color:#718096">$1864</td>
 <td>Jun 11â€‰â€“â€‰20</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td><a href="https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA2LTExagwIAxIIL20vMDQ0cnZyDQgCEgkvbS8wMl8yODYaKRIKMjAyNi0wNi0yMGoNCAISCS9tLzAyXzI4NnIMCAMSCC9tLzA0NHJ2QAFIAlIDVVNEcAF6hAFDalJJVVhkVFlrSTRVRXAzVHpSQlFWUnRTbmRDUnkwdExTMHRMUzB0TFhkaVltSm1PVUZCUVVGQlIyMDFOVFF3UVVaeGRUSkJFaFpUVVRrMk5YeE1XREUzTjN4TVdEZ3dmRUZETnpFMkdnc0lpSkVFRUFJYUExVlRSRGdjY0lpUkJBPT2YAQGyARMYASABKg0IAhIJL20vMDJfMjg2&tfu=GgA&hl=en&gl=hk&curr=USD&sa=X&ved=0CAIQtY0DKABqFwoTCJjljueOqJMDFQAAAAAdAAAAABBj" target="_blank" class="verify-btn search-btn">Flights</a> </td>
 </tr>
 <tr>
 <td><strong>Las Vegas</strong></td>
 <td class="price price-bug">$678</td>
-<td style="color:#8b949e">$1864</td>
+<td style="color:#718096">$1864</td>
 <td>Jun 14â€‰â€“â€‰20</td>
 <td>2 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Seattle</strong></td>
 <td class="price price-bug">$678</td>
-<td style="color:#8b949e">$1864</td>
+<td style="color:#718096">$1864</td>
 <td>Jul 3â€‰â€“â€‰12</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>San Diego</strong></td>
 <td class="price price-bug">$680</td>
-<td style="color:#8b949e">$1870</td>
+<td style="color:#718096">$1870</td>
 <td>May 9â€‰â€“â€‰16</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Miami</strong></td>
 <td class="price price-bug">$683</td>
-<td style="color:#8b949e">$1878</td>
+<td style="color:#718096">$1878</td>
 <td>May 25â€‰â€“â€‰31</td>
 <td>2 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Fort Lauderdale</strong></td>
 <td class="price price-bug">$683</td>
-<td style="color:#8b949e">$1878</td>
+<td style="color:#718096">$1878</td>
 <td>May 25â€‰â€“â€‰31</td>
 <td>2 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Portland</strong></td>
 <td class="price price-bug">$685</td>
-<td style="color:#8b949e">$1884</td>
+<td style="color:#718096">$1884</td>
 <td>May 3â€‰â€“â€‰9</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Pittsburgh</strong></td>
 <td class="price price-bug">$685</td>
-<td style="color:#8b949e">$1884</td>
+<td style="color:#718096">$1884</td>
 <td>May 7â€‰â€“â€‰14</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Charlotte</strong></td>
 <td class="price price-bug">$685</td>
-<td style="color:#8b949e">$1884</td>
+<td style="color:#718096">$1884</td>
 <td>Apr 27â€‰â€“â€‰May 3</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Atlanta</strong></td>
 <td class="price price-bug">$689</td>
-<td style="color:#8b949e">$1895</td>
+<td style="color:#718096">$1895</td>
 <td>Jul 16â€‰â€“â€‰22</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Detroit</strong></td>
 <td class="price price-bug">$689</td>
-<td style="color:#8b949e">$1895</td>
+<td style="color:#718096">$1895</td>
 <td>May 16â€‰â€“â€‰22</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Philadelphia</strong></td>
 <td class="price price-bug">$707</td>
-<td style="color:#8b949e">$1944</td>
+<td style="color:#718096">$1944</td>
 <td>May 15â€‰â€“â€‰21</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Tampa</strong></td>
 <td class="price price-bug">$712</td>
-<td style="color:#8b949e">$1958</td>
+<td style="color:#718096">$1958</td>
 <td>May 2â€‰â€“â€‰8</td>
 <td>3 stops</td>
-<td><span style="color:#f85149;font-weight:600">BUG</span></td>
+<td><span style="color:#b91c1c;font-weight:600">BUG</span></td>
 <td></td>
 </tr>
 </table>
@@ -1609,8 +1615,8 @@ a.verify-btn:hover { opacity: 0.85; }
 
 <div class="section">
 <div class="section-header">
-<h2 style="color:#FF9800">Jakarta (CGK) - First to USA</h2>
-<span class="badge" style="background:#FF980033;color:#FF9800">11 fares</span>
+<h2>Jakarta (CGK) &mdash; First to USA</h2>
+<span class="badge" style="background:#c2410c15;color:#c2410c;border:1px solid #c2410c33">11 fares</span>
 <a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDQ0cnZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA0NHJ2QAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" class="verify-btn explore-btn">Open Explore Map</a>
 </div>
 <table class="fare-table">
@@ -1626,100 +1632,100 @@ a.verify-btn:hover { opacity: 0.85; }
 <tr>
 <td><strong>New York</strong></td>
 <td class="price price-cheap">$6434</td>
-<td style="color:#8b949e">$17694</td>
+<td style="color:#718096">$17694</td>
 <td>Aug 27â€‰â€“â€‰Sep 2</td>
 <td>2 stops</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Boston</strong></td>
 <td class="price price-cheap">$6555</td>
-<td style="color:#8b949e">$18026</td>
+<td style="color:#718096">$18026</td>
 <td>Sep 3â€‰â€“â€‰12</td>
 <td>1 stop</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Washington, D.C.</strong></td>
 <td class="price price-cheap">$6678</td>
-<td style="color:#8b949e">$18364</td>
+<td style="color:#718096">$18364</td>
 <td>May 28â€‰â€“â€‰Jun 3</td>
 <td>1 stop</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Baltimore</strong></td>
 <td class="price price-cheap">$6678</td>
-<td style="color:#8b949e">$18364</td>
+<td style="color:#718096">$18364</td>
 <td>May 28â€‰â€“â€‰Jun 3</td>
 <td>1 stop</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Chicago</strong></td>
 <td class="price price-cheap">$6713</td>
-<td style="color:#8b949e">$18461</td>
+<td style="color:#718096">$18461</td>
 <td>Jun 11â€‰â€“â€‰17</td>
 <td>1 stop</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Houston</strong></td>
 <td class="price price-cheap">$6713</td>
-<td style="color:#8b949e">$18461</td>
+<td style="color:#718096">$18461</td>
 <td>May 7â€‰â€“â€‰16</td>
 <td>1 stop</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>San Francisco</strong></td>
 <td class="price price-cheap">$6853</td>
-<td style="color:#8b949e">$18846</td>
+<td style="color:#718096">$18846</td>
 <td>Aug 28â€‰â€“â€‰Sep 3</td>
 <td>1 stop</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Los Angeles</strong></td>
 <td class="price price-cheap">$7061</td>
-<td style="color:#8b949e">$19418</td>
+<td style="color:#718096">$19418</td>
 <td>Sep 3â€‰â€“â€‰9</td>
 <td>1 stop</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Orlando</strong></td>
 <td class="price price-cheap">$7257</td>
-<td style="color:#8b949e">$19957</td>
+<td style="color:#718096">$19957</td>
 <td>May 14â€‰â€“â€‰20</td>
 <td>1 stop</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Dallas</strong></td>
 <td class="price price-cheap">$7619</td>
-<td style="color:#8b949e">$20952</td>
+<td style="color:#718096">$20952</td>
 <td>May 22â€‰â€“â€‰28</td>
 <td>1 stop</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Portland</strong></td>
 <td class="price price-cheap">$7685</td>
-<td style="color:#8b949e">$21134</td>
+<td style="color:#718096">$21134</td>
 <td>Apr 23â€‰â€“â€‰29</td>
 <td>2 stops</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 </table>
@@ -1727,8 +1733,8 @@ a.verify-btn:hover { opacity: 0.85; }
 
 <div class="section">
 <div class="section-header">
-<h2 style="color:#FF9800">Bangkok (BKK) - First to USA</h2>
-<span class="badge" style="background:#FF980033;color:#FF9800">6 fares</span>
+<h2>Bangkok (BKK) &mdash; First to USA</h2>
+<span class="badge" style="background:#c2410c15;color:#c2410c;border:1px solid #c2410c33">6 fares</span>
 <a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGZuZ2ZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBmbmdmQAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" class="verify-btn explore-btn">Open Explore Map</a>
 </div>
 <table class="fare-table">
@@ -1744,55 +1750,55 @@ a.verify-btn:hover { opacity: 0.85; }
 <tr>
 <td><strong>Washington, D.C.</strong></td>
 <td class="price price-cheap">$6671</td>
-<td style="color:#8b949e">$18345</td>
+<td style="color:#718096">$18345</td>
 <td>Apr 2â€‰â€“â€‰9</td>
 <td>2 stops</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Key West</strong></td>
 <td class="price price-cheap">$6671</td>
-<td style="color:#8b949e">$18345</td>
+<td style="color:#718096">$18345</td>
 <td>Mar 19â€‰â€“â€‰25</td>
 <td>2 stops</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Boston</strong></td>
 <td class="price price-cheap">$6798</td>
-<td style="color:#8b949e">$18694</td>
+<td style="color:#718096">$18694</td>
 <td>Apr 2â€‰â€“â€‰8</td>
 <td>2 stops</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>New York</strong></td>
 <td class="price price-cheap">$7190</td>
-<td style="color:#8b949e">$19772</td>
+<td style="color:#718096">$19772</td>
 <td>Apr 4â€‰â€“â€‰10</td>
 <td>2 stops</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Dallas</strong></td>
 <td class="price price-cheap">$7798</td>
-<td style="color:#8b949e">$21444</td>
+<td style="color:#718096">$21444</td>
 <td>Apr 5â€‰â€“â€‰12</td>
 <td>2 stops</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Nashville</strong></td>
 <td class="price price-cheap">$7843</td>
-<td style="color:#8b949e">$21568</td>
+<td style="color:#718096">$21568</td>
 <td>Apr 9â€‰â€“â€‰15</td>
 <td>2 stops</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 </table>
@@ -1800,8 +1806,8 @@ a.verify-btn:hover { opacity: 0.85; }
 
 <div class="section">
 <div class="section-header">
-<h2 style="color:#FF9800">Singapore (SIN) - First to USA</h2>
-<span class="badge" style="background:#FF980033;color:#FF9800">1 fares</span>
+<h2>Singapore (SIN) &mdash; First to USA</h2>
+<span class="badge" style="background:#c2410c15;color:#c2410c;border:1px solid #c2410c33">1 fares</span>
 <a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDZ0MnRyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA2dDJ0QAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" class="verify-btn explore-btn">Open Explore Map</a>
 </div>
 <table class="fare-table">
@@ -1817,10 +1823,10 @@ a.verify-btn:hover { opacity: 0.85; }
 <tr>
 <td><strong>Chicago</strong></td>
 <td class="price price-cheap">$7769</td>
-<td style="color:#8b949e">$21365</td>
+<td style="color:#718096">$21365</td>
 <td>Apr 2â€‰â€“â€‰8</td>
 <td>2 stops</td>
-<td><span style="color:#d29922;font-weight:600">CHEAP</span></td>
+<td><span style="color:#92400e;font-weight:600">CHEAP</span></td>
 <td></td>
 </tr>
 </table>
@@ -1829,37 +1835,38 @@ a.verify-btn:hover { opacity: 0.85; }
 <div class="section">
 <div class="section-header"><h2>Scan More Cities (Not Yet Scanned or Partial)</h2></div>
 <div class="explore-links">
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGZ0a3hyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBmdGt4QAFIAnACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#2196F322;color:#2196F3;border:1px solid #2196F3">Taipei Premium Economy</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGZ0a3hyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBmdGt4QAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B022;color:#9C27B0;border:1px solid #9C27B0">Taipei Business</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGZ0a3hyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBmdGt4QAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#FF980022;color:#FF9800;border:1px solid #FF9800">Taipei First</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGhzcWZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBoc3FmQAFIAnACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#2196F322;color:#2196F3;border:1px solid #2196F3">Seoul Premium Economy</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGhzcWZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBoc3FmQAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B022;color:#9C27B0;border:1px solid #9C27B0">Seoul Business</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGhzcWZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBoc3FmQAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#FF980022;color:#FF9800;border:1px solid #FF9800">Seoul First</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDdkZmtyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA3ZGZrQAFIAnACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#2196F322;color:#2196F3;border:1px solid #2196F3">Tokyo Premium Economy</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDdkZmtyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA3ZGZrQAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B022;color:#9C27B0;border:1px solid #9C27B0">Tokyo Business</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDdkZmtyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA3ZGZrQAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#FF980022;color:#FF9800;border:1px solid #FF9800">Tokyo First</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGhucDdyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBobnA3QAFIAnACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#2196F322;color:#2196F3;border:1px solid #2196F3">Ho Chi Minh City Premium Economy</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGhucDdyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBobnA3QAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B022;color:#9C27B0;border:1px solid #9C27B0">Ho Chi Minh City Business</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGhucDdyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBobnA3QAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#FF980022;color:#FF9800;border:1px solid #FF9800">Ho Chi Minh City First</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGZ0a3hyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBmdGt4QAFIAnACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#2b6cb011;color:#2b6cb0;border:1px solid #2b6cb044">Taipei Premium Economy</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGZ0a3hyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBmdGt4QAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#6b21a811;color:#6b21a8;border:1px solid #6b21a844">Taipei Business</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGZ0a3hyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBmdGt4QAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#c2410c11;color:#c2410c;border:1px solid #c2410c44">Taipei First</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGhzcWZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBoc3FmQAFIAnACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#2b6cb011;color:#2b6cb0;border:1px solid #2b6cb044">Seoul Premium Economy</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGhzcWZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBoc3FmQAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#6b21a811;color:#6b21a8;border:1px solid #6b21a844">Seoul Business</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGhzcWZyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBoc3FmQAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#c2410c11;color:#c2410c;border:1px solid #c2410c44">Seoul First</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDdkZmtyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA3ZGZrQAFIAnACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#2b6cb011;color:#2b6cb0;border:1px solid #2b6cb044">Tokyo Premium Economy</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDdkZmtyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA3ZGZrQAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#6b21a811;color:#6b21a8;border:1px solid #6b21a844">Tokyo Business</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDdkZmtyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzA3ZGZrQAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#c2410c11;color:#c2410c;border:1px solid #c2410c44">Tokyo First</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGhucDdyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBobnA3QAFIAnACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#2b6cb011;color:#2b6cb0;border:1px solid #2b6cb044">Ho Chi Minh City Premium Economy</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGhucDdyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBobnA3QAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#6b21a811;color:#6b21a8;border:1px solid #6b21a844">Ho Chi Minh City Business</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMGhucDdyDQgEEgkvbS8wOWM3dzAaHWoNCAQSCS9tLzA5Yzd3MHIMCAMSCC9tLzBobnA3QAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#c2410c11;color:#c2410c;border:1px solid #c2410c44">Ho Chi Minh City First</a>
 
-<br><br><strong style="color:#8b949e;font-size:0.85em">Europe destinations (for Trip 3 planning):</strong><br>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDQ0cnZyDQgEEgkvbS8wZDA2MGcaHWoNCAQSCS9tLzBkMDYwZ3IMCAMSCC9tLzA0NHJ2QAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B022;color:#9C27B0;border:1px solid #9C27B0">Jakarta > Germany Business</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDQ0cnZyDQgEEgkvbS8wZDA2MGcaHWoNCAQSCS9tLzBkMDYwZ3IMCAMSCC9tLzA0NHJ2QAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#FF980022;color:#FF9800;border:1px solid #FF9800">Jakarta > Germany First</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxooEgoyMDI2LTA3LTE1agwIAxIIL20vMDQ0cnZyDAgEEggvbS8wN3NzYxocagwIBBIIL20vMDdzc2NyDAgDEggvbS8wNDRydkABSANwAoIBCwj___________8BmAEBsgEEGAEgAQ&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B022;color:#9C27B0;border:1px solid #9C27B0">Jakarta > UK Business</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxooEgoyMDI2LTA3LTE1agwIAxIIL20vMDQ0cnZyDAgEEggvbS8wN3NzYxocagwIBBIIL20vMDdzc2NyDAgDEggvbS8wNDRydkABSARwAoIBCwj___________8BmAEBsgEEGAEgAQ&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#FF980022;color:#FF9800;border:1px solid #FF9800">Jakarta > UK First</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDRmX2RyDQgEEgkvbS8wZDA2MGcaHWoNCAQSCS9tLzBkMDYwZ3IMCAMSCC9tLzA0Zl9kQAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B022;color:#9C27B0;border:1px solid #9C27B0">Kuala Lumpur > Germany Business</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDRmX2RyDQgEEgkvbS8wZDA2MGcaHWoNCAQSCS9tLzBkMDYwZ3IMCAMSCC9tLzA0Zl9kQAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#FF980022;color:#FF9800;border:1px solid #FF9800">Kuala Lumpur > Germany First</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxooEgoyMDI2LTA3LTE1agwIAxIIL20vMDRmX2RyDAgEEggvbS8wN3NzYxocagwIBBIIL20vMDdzc2NyDAgDEggvbS8wNGZfZEABSANwAoIBCwj___________8BmAEBsgEEGAEgAQ&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#9C27B022;color:#9C27B0;border:1px solid #9C27B0">Kuala Lumpur > UK Business</a>
-<a href="https://www.google.com/travel/explore?tfs=CBwQAxooEgoyMDI2LTA3LTE1agwIAxIIL20vMDRmX2RyDAgEEggvbS8wN3NzYxocagwIBBIIL20vMDdzc2NyDAgDEggvbS8wNGZfZEABSARwAoIBCwj___________8BmAEBsgEEGAEgAQ&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#FF980022;color:#FF9800;border:1px solid #FF9800">Kuala Lumpur > UK First</a>
+<br><br><strong style="color:#718096;font-size:13px">Europe destinations (for Trip 3 planning):</strong><br>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDQ0cnZyDQgEEgkvbS8wZDA2MGcaHWoNCAQSCS9tLzBkMDYwZ3IMCAMSCC9tLzA0NHJ2QAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#6b21a811;color:#6b21a8;border:1px solid #6b21a844">Jakarta > Germany Business</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDQ0cnZyDQgEEgkvbS8wZDA2MGcaHWoNCAQSCS9tLzBkMDYwZ3IMCAMSCC9tLzA0NHJ2QAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#c2410c11;color:#c2410c;border:1px solid #c2410c44">Jakarta > Germany First</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxooEgoyMDI2LTA3LTE1agwIAxIIL20vMDQ0cnZyDAgEEggvbS8wN3NzYxocagwIBBIIL20vMDdzc2NyDAgDEggvbS8wNDRydkABSANwAoIBCwj___________8BmAEBsgEEGAEgAQ&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#6b21a811;color:#6b21a8;border:1px solid #6b21a844">Jakarta > UK Business</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxooEgoyMDI2LTA3LTE1agwIAxIIL20vMDQ0cnZyDAgEEggvbS8wN3NzYxocagwIBBIIL20vMDdzc2NyDAgDEggvbS8wNDRydkABSARwAoIBCwj___________8BmAEBsgEEGAEgAQ&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#c2410c11;color:#c2410c;border:1px solid #c2410c44">Jakarta > UK First</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDRmX2RyDQgEEgkvbS8wZDA2MGcaHWoNCAQSCS9tLzBkMDYwZ3IMCAMSCC9tLzA0Zl9kQAFIA3ACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#6b21a811;color:#6b21a8;border:1px solid #6b21a844">Kuala Lumpur > Germany Business</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxopEgoyMDI2LTA3LTE1agwIAxIIL20vMDRmX2RyDQgEEgkvbS8wZDA2MGcaHWoNCAQSCS9tLzBkMDYwZ3IMCAMSCC9tLzA0Zl9kQAFIBHACggELCP___________wGYAQGyAQQYASAB&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#c2410c11;color:#c2410c;border:1px solid #c2410c44">Kuala Lumpur > Germany First</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxooEgoyMDI2LTA3LTE1agwIAxIIL20vMDRmX2RyDAgEEggvbS8wN3NzYxocagwIBBIIL20vMDdzc2NyDAgDEggvbS8wNGZfZEABSANwAoIBCwj___________8BmAEBsgEEGAEgAQ&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#6b21a811;color:#6b21a8;border:1px solid #6b21a844">Kuala Lumpur > UK Business</a>
+<a href="https://www.google.com/travel/explore?tfs=CBwQAxooEgoyMDI2LTA3LTE1agwIAxIIL20vMDRmX2RyDAgEEggvbS8wN3NzYxocagwIBBIIL20vMDdzc2NyDAgDEggvbS8wNGZfZEABSARwAoIBCwj___________8BmAEBsgEEGAEgAQ&tfu=GgA&hl=en&gl=hk&curr=USD" target="_blank" style="background:#c2410c11;color:#c2410c;border:1px solid #c2410c44">Kuala Lumpur > UK First</a>
 
 </div>
 </div>
 
 <p class="timestamp">
-Scanner: bug_fare_scanner.py | Data: scanner_results.json | Generated: 2026-03-17 19:15 UTC+8<br>
+Scanner: bug_fare_scanner.py | Data: scanner_results.json | Generated: 2026-03-17 19:24 UTC+8<br>
 Normal price ranges (RT): Economy $800-2000 | Premium Eco $1200-3000 | Business $3000-8000 | First $8000-20000<br>
 Bug fare threshold: below 60% of normal minimum
 </p>
 
+</div>
 </body>
 </html>

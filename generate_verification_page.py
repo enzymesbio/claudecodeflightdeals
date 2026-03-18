@@ -113,7 +113,7 @@ US_DEST = {
 US_CITY_ID = '/m/09c7w0'
 
 CABIN_LABELS = {1: 'Economy', 2: 'Premium Economy', 3: 'Business', 4: 'First'}
-CABIN_COLORS = {1: '#4CAF50', 2: '#2196F3', 3: '#9C27B0', 4: '#FF9800'}
+CABIN_COLORS = {1: '#276749', 2: '#2b6cb0', 3: '#6b21a8', 4: '#c2410c'}
 CABIN_EMOJI = {1: '', 2: '', 3: '', 4: ''}
 
 # --- Load scan results ---
@@ -173,66 +173,72 @@ html = f"""<!DOCTYPE html>
 <title>Bug Fare Scanner - Live Verification Links</title>
 <style>
 * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d1117; color: #c9d1d9; padding: 20px; }}
-h1 {{ color: #58a6ff; margin-bottom: 5px; font-size: 1.8em; }}
-.subtitle {{ color: #8b949e; margin-bottom: 20px; font-size: 0.9em; }}
-.alert {{ background: #1a0a0a; border: 1px solid #f85149; border-radius: 8px; padding: 15px; margin-bottom: 20px; }}
-.alert h3 {{ color: #f85149; margin-bottom: 8px; }}
-.alert p {{ color: #f0aaaa; font-size: 0.9em; }}
-.section {{ background: #161b22; border: 1px solid #30363d; border-radius: 8px; margin-bottom: 20px; overflow: hidden; }}
-.section-header {{ padding: 15px 20px; border-bottom: 1px solid #30363d; display: flex; align-items: center; gap: 12px; cursor: pointer; }}
-.section-header h2 {{ font-size: 1.2em; }}
-.section-header .badge {{ padding: 2px 10px; border-radius: 12px; font-size: 0.8em; font-weight: 600; }}
-.explore-links {{ padding: 15px 20px; border-bottom: 1px solid #21262d; background: #0d1117; }}
-.explore-links a {{ display: inline-block; padding: 6px 14px; margin: 4px; border-radius: 6px; text-decoration: none; font-weight: 500; font-size: 0.85em; transition: opacity 0.2s; }}
-.explore-links a:hover {{ opacity: 0.8; }}
+body {{ font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; background: #fff; color: #2d3748; font-size: 16px; line-height: 1.7; }}
+.container {{ max-width: 1100px; margin: 0 auto; padding: 24px 28px; }}
+h1 {{ color: #1a202c; font-size: 26px; font-weight: 600; margin-bottom: 4px; }}
+.subtitle {{ color: #718096; margin-bottom: 20px; font-size: 14px; }}
+.alert {{ background: #fff5f5; border: 1px solid #feb2b2; border-radius: 6px; padding: 14px 18px; margin-bottom: 20px; }}
+.alert h3 {{ color: #c53030; margin-bottom: 6px; font-size: 15px; font-weight: 600; }}
+.alert p {{ color: #742a2a; font-size: 14px; }}
+.section {{ border: 1px solid #d0d5dd; border-radius: 6px; margin-bottom: 20px; overflow: hidden; }}
+.section-header {{ padding: 14px 20px; border-bottom: 1px solid #e2e6ea; display: flex; align-items: center; gap: 12px; background: #f7fafc; }}
+.section-header h2 {{ font-size: 17px; font-weight: 600; color: #1a202c; }}
+.section-header .badge {{ padding: 2px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; }}
+.explore-links {{ padding: 14px 20px; border-bottom: 1px solid #e2e6ea; background: #f7fafc; }}
+.explore-links a {{ display: inline-block; padding: 5px 12px; margin: 3px; border-radius: 4px; text-decoration: none; font-weight: 500; font-size: 13px; transition: opacity 0.2s; }}
+.explore-links a:hover {{ opacity: 0.75; }}
 .fare-table {{ width: 100%; border-collapse: collapse; }}
-.fare-table th {{ text-align: left; padding: 10px 15px; background: #0d1117; color: #8b949e; font-size: 0.8em; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 1px solid #30363d; }}
-.fare-table td {{ padding: 10px 15px; border-bottom: 1px solid #21262d; font-size: 0.9em; }}
-.fare-table tr:hover {{ background: #1c2128; }}
-.price {{ font-weight: 700; font-size: 1.1em; }}
-.price-bug {{ color: #f85149; }}
-.price-cheap {{ color: #d29922; }}
-.cabin-eco {{ color: #4CAF50; }}
-.cabin-premeco {{ color: #2196F3; }}
-.cabin-biz {{ color: #9C27B0; }}
-.cabin-first {{ color: #FF9800; }}
-a.verify-btn {{ display: inline-block; padding: 4px 12px; border-radius: 4px; text-decoration: none; font-size: 0.8em; font-weight: 600; }}
-a.explore-btn {{ background: #1f6feb33; color: #58a6ff; border: 1px solid #1f6feb; }}
-a.search-btn {{ background: #23862633; color: #3fb950; border: 1px solid #238636; }}
-a.verify-btn:hover {{ opacity: 0.85; }}
-.instructions {{ background: #0d1117; border: 1px solid #30363d; border-radius: 8px; padding: 15px 20px; margin-bottom: 20px; }}
-.instructions h3 {{ color: #58a6ff; margin-bottom: 10px; }}
+.fare-table th {{ text-align: left; padding: 10px 14px; color: #4a5568; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; border-bottom: 2px solid #d0d5dd; font-weight: 600; }}
+.fare-table td {{ padding: 10px 14px; border-bottom: 1px solid #e2e6ea; font-size: 14px; color: #2d3748; }}
+.fare-table tr:hover {{ background: #f7fafc; }}
+.price {{ font-weight: 700; font-size: 15px; }}
+.price-bug {{ color: #b91c1c; }}
+.price-cheap {{ color: #92400e; }}
+a.verify-btn {{ display: inline-block; padding: 3px 10px; border-radius: 4px; text-decoration: none; font-size: 12px; font-weight: 600; }}
+a.explore-btn {{ background: #ebf8ff; color: #2b6cb0; border: 1px solid #90cdf4; }}
+a.search-btn {{ background: #f0fff4; color: #276749; border: 1px solid #9ae6b4; }}
+a.verify-btn:hover {{ opacity: 0.75; }}
+.instructions {{ border: 1px solid #d0d5dd; border-radius: 6px; padding: 14px 20px; margin-bottom: 20px; }}
+.instructions h3 {{ color: #2b6cb0; margin-bottom: 8px; font-size: 15px; font-weight: 600; }}
 .instructions ol {{ padding-left: 20px; }}
-.instructions li {{ margin-bottom: 6px; color: #8b949e; font-size: 0.9em; }}
-.instructions li strong {{ color: #c9d1d9; }}
-.stats {{ display: flex; gap: 15px; margin-bottom: 20px; flex-wrap: wrap; }}
-.stat-card {{ background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 15px 20px; flex: 1; min-width: 150px; }}
-.stat-card .num {{ font-size: 2em; font-weight: 700; }}
-.stat-card .label {{ color: #8b949e; font-size: 0.85em; }}
-.top-deal {{ background: #1a0a2e; border: 2px solid #9C27B0; }}
-.timestamp {{ color: #484f58; font-size: 0.8em; text-align: right; margin-top: 20px; }}
+.instructions li {{ margin-bottom: 5px; color: #4a5568; font-size: 14px; }}
+.instructions li strong {{ color: #1a202c; }}
+.stats {{ display: flex; gap: 14px; margin-bottom: 20px; flex-wrap: wrap; }}
+.stat-card {{ border: 1px solid #d0d5dd; border-radius: 6px; padding: 18px 20px; flex: 1; min-width: 150px; }}
+.stat-card .num {{ font-size: 26px; font-weight: 700; }}
+.stat-card .label {{ color: #718096; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }}
+.top-deal {{ border: 2px solid #805ad5; background: #faf5ff; }}
+.timestamp {{ color: #718096; font-size: 13px; text-align: right; margin-top: 20px; padding-top: 16px; border-top: 1px solid #e2e6ea; }}
+@media (max-width: 640px) {{
+  .container {{ padding: 12px 10px; }}
+  .stats {{ gap: 8px; }}
+  .stat-card {{ min-width: 120px; padding: 12px; }}
+  .stat-card .num {{ font-size: 22px; }}
+  .fare-table th, .fare-table td {{ padding: 8px 8px; font-size: 13px; }}
+  .section-header {{ flex-wrap: wrap; }}
+}}
 </style>
 </head>
 <body>
+<div class="container">
 
-<h1>Bug Fare Scanner - Verification Dashboard</h1>
-<p class="subtitle">Scan timestamp: {data['scan_timestamp'][:19]} | Generated: {timestamp} | All prices USD, round-trip, per person</p>
+<h1>Bug Fare Scanner</h1>
+<p class="subtitle">Scan: {data['scan_timestamp'][:19]} | Updated: {timestamp} | All prices USD, round-trip, per person</p>
 
 <div class="alert">
-<h3>IMPORTANT: How to verify these fares are LIVE</h3>
-<p>The Explore overview prices may be cached. To get <strong>real-time prices</strong>:</p>
+<h3>How to verify fares are LIVE</h3>
+<p>Explore overview prices may be cached. Click a city tab on the map to trigger a <strong>fresh real-time search</strong>, wait 3-5s, then click "View flights" to confirm.</p>
 </div>
 
 <div class="instructions">
 <h3>Verification Steps</h3>
 <ol>
-<li><strong>Click an "Explore" link below</strong> to open Google Flights Explore map</li>
-<li><strong>Click a city name tab</strong> on the map -- this triggers a FRESH real-time search</li>
-<li><strong>Wait 3-5 seconds</strong> for the price panel to reload with live data</li>
-<li><strong>Click "View flights"</strong> to go to the actual booking page with specific itineraries</li>
-<li>If the price persists on the booking page, <strong>the fare is confirmed live</strong></li>
-<li>For 2A+1C pricing, multiply the 1-adult price by 2.75</li>
+<li><strong>Click an Explore link</strong> below to open Google Flights Explore map</li>
+<li><strong>Click a city name tab</strong> on the map &mdash; triggers a fresh search</li>
+<li><strong>Wait 3-5 seconds</strong> for the price panel to reload</li>
+<li><strong>Click "View flights"</strong> to see the actual booking page</li>
+<li>If the price persists on booking page, <strong>fare is confirmed live</strong></li>
+<li>For 2A+1C pricing, multiply 1-adult price by <strong>2.75</strong></li>
 </ol>
 </div>
 """
@@ -246,11 +252,11 @@ lowest_first = min((b['price_usd'] for b in bugs if b['cabin_num'] == 4), defaul
 
 html += f"""
 <div class="stats">
-<div class="stat-card"><div class="num" style="color:#f85149">{bug_count}</div><div class="label">Bug Fares Found</div></div>
-<div class="stat-card"><div class="num" style="color:#d29922">{cheap_count}</div><div class="label">Cheap Fares</div></div>
-<div class="stat-card"><div class="num" style="color:#9C27B0">${lowest_biz:.0f}</div><div class="label">Lowest Business RT</div></div>
-<div class="stat-card"><div class="num" style="color:#FF9800">${lowest_first:.0f}</div><div class="label">Lowest First RT</div></div>
-<div class="stat-card"><div class="num" style="color:#58a6ff">{origins_with_bugs}</div><div class="label">Origin Cities w/ Bugs</div></div>
+<div class="stat-card"><div class="num" style="color:#b91c1c">{bug_count}</div><div class="label">Bug Fares Found</div></div>
+<div class="stat-card"><div class="num" style="color:#92400e">{cheap_count}</div><div class="label">Cheap Fares</div></div>
+<div class="stat-card"><div class="num" style="color:#6b21a8">${lowest_biz:.0f}</div><div class="label">Lowest Business RT</div></div>
+<div class="stat-card"><div class="num" style="color:#c2410c">${lowest_first:.0f}</div><div class="label">Lowest First RT</div></div>
+<div class="stat-card"><div class="num" style="color:#2b6cb0">{origins_with_bugs}</div><div class="label">Origin Cities w/ Bugs</div></div>
 </div>
 """
 
@@ -283,7 +289,7 @@ explore_combos = [
 for city, cid, cabin, color in explore_combos:
     url = build_explore_url(cid, US_CITY_ID, cabin=cabin)
     label = f'{city} {CABIN_LABELS[cabin]}'
-    html += f'<a href="{url}" target="_blank" style="background:{color}22;color:{color};border:1px solid {color}">{label}</a>\n'
+    html += f'<a href="{url}" target="_blank" style="background:{color}11;color:{color};border:1px solid {color}44">{label}</a>\n'
 
 html += """
 </div>
@@ -317,8 +323,8 @@ for origin, cabin_num in section_order:
     html += f"""
 <div class="{section_class}">
 <div class="section-header">
-<h2 style="color:{cabin_color}">{origin} ({origin_code}) - {cabin_label} to USA</h2>
-<span class="badge" style="background:{cabin_color}33;color:{cabin_color}">{len(fares)} fares</span>
+<h2>{origin} ({origin_code}) &mdash; {cabin_label} to USA</h2>
+<span class="badge" style="background:{cabin_color}15;color:{cabin_color};border:1px solid {cabin_color}33">{len(fares)} fares</span>
 <a href="{explore_url}" target="_blank" class="verify-btn explore-btn">Open Explore Map</a>
 </div>
 <table class="fare-table">
@@ -367,10 +373,10 @@ for origin, cabin_num in section_order:
         html += f"""<tr>
 <td><strong>{dest}</strong></td>
 <td class="price {price_class}">${price:.0f}</td>
-<td style="color:#8b949e">${family_price:.0f}</td>
+<td style="color:#718096">${family_price:.0f}</td>
 <td>{dates}</td>
 <td>{stops}</td>
-<td><span style="color:{'#f85149' if cls=='BUG_FARE' else '#d29922'};font-weight:600">{type_label}</span></td>
+<td><span style="color:{'#b91c1c' if cls=='BUG_FARE' else '#92400e'};font-weight:600">{type_label}</span></td>
 <td>{verify_links}</td>
 </tr>
 """
@@ -398,11 +404,11 @@ for city, cid in extra_cities:
         url = build_explore_url(cid, US_CITY_ID, cabin=cabin)
         color = CABIN_COLORS[cabin]
         label = f'{city} {CABIN_LABELS[cabin]}'
-        html += f'<a href="{url}" target="_blank" style="background:{color}22;color:{color};border:1px solid {color}">{label}</a>\n'
+        html += f'<a href="{url}" target="_blank" style="background:{color}11;color:{color};border:1px solid {color}44">{label}</a>\n'
 
 # Also add Europe destinations
 html += """
-<br><br><strong style="color:#8b949e;font-size:0.85em">Europe destinations (for Trip 3 planning):</strong><br>
+<br><br><strong style="color:#718096;font-size:13px">Europe destinations (for Trip 3 planning):</strong><br>
 """
 GERMANY_ID = '/m/0d060g'
 UK_ID = '/m/07ssc'
@@ -412,7 +418,7 @@ for city, cid in [('Jakarta', '/m/044rv'), ('Kuala Lumpur', '/m/04f_d')]:
             url = build_explore_url(cid, dest_id, cabin=cabin)
             color = CABIN_COLORS[cabin]
             label = f'{city} > {dest_name} {CABIN_LABELS[cabin]}'
-            html += f'<a href="{url}" target="_blank" style="background:{color}22;color:{color};border:1px solid {color}">{label}</a>\n'
+            html += f'<a href="{url}" target="_blank" style="background:{color}11;color:{color};border:1px solid {color}44">{label}</a>\n'
 
 html += """
 </div>
@@ -427,6 +433,7 @@ Normal price ranges (RT): Economy $800-2000 | Premium Eco $1200-3000 | Business 
 Bug fare threshold: below 60% of normal minimum
 </p>
 
+</div>
 </body>
 </html>
 """
