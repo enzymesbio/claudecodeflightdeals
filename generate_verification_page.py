@@ -508,19 +508,77 @@ if over_budget_fares:
 </div>
 """
 
-# --- Scanned cities with no bug fares (summary) ---
+# --- All cities cheapest fares overview ---
 scanned_cities = sorted(set(d['origin_city'] for d in data['destinations']))
-cities_with_fares = sorted(set(b['origin_city'] for b in bugs))
-no_bugs = [c for c in scanned_cities if c not in cities_with_fares]
+all_dests = data['destinations']
+
+# Build cheapest-per-city-per-cabin table
+city_cabin_cheapest = {}
+for d in all_dests:
+    key = (d['origin_city'], d['cabin_num'])
+    price = d['price_usd']
+    if key not in city_cabin_cheapest or price < city_cabin_cheapest[key]['price_usd']:
+        city_cabin_cheapest[key] = d
 
 html += f"""
-<div class="section" style="opacity:0.6">
-<div class="section-header" style="background:#f7fafc">
-<h2 style="color:#a0aec0">Scanned &mdash; No Bug Fares ({len(no_bugs)} cities)</h2>
+<div class="section">
+<div class="section-header">
+<h2>All {len(scanned_cities)} Cities Scanned &mdash; Cheapest Fares Found</h2>
 </div>
-<div style="padding:14px 20px;color:#718096;font-size:13px">
-{', '.join(no_bugs)}. All showed normal market pricing.
-</div>
+<table class="fare-table">
+<tr>
+<th>Origin</th>
+<th>Premium Eco</th>
+<th>Business</th>
+<th>First</th>
+<th>Status</th>
+</tr>
+"""
+
+for city in scanned_cities:
+    origin_info = ORIGINS.get(city, {})
+    code = origin_info.get('code', '???')
+    cid = origin_info.get('city_id', '')
+
+    cells = []
+    has_bug = False
+    for cab in [2, 3, 4]:
+        key = (city, cab)
+        if key in city_cabin_cheapest:
+            d = city_cabin_cheapest[key]
+            p = d['price_usd']
+            fam = p * 2.75
+            cls = d.get('classification', 'NORMAL')
+            dest = d['destination']
+            dates = clean_dates(d.get('dates', ''))
+            if cls == 'BUG_FARE':
+                color = '#b91c1c'
+                weight = '700'
+                has_bug = True
+            elif cls == 'CHEAP':
+                color = '#92400e'
+                weight = '600'
+            else:
+                color = '#718096'
+                weight = '400'
+            # Build explore link for this city+cabin
+            explore_url = build_explore_url(cid, US_CITY_ID, cabin=cab) if cid else ''
+            link_open = f'<a href="{explore_url}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">' if explore_url else ''
+            link_close = '</a>' if explore_url else ''
+            cells.append(f'<td>{link_open}<span style="color:{color};font-weight:{weight}">${p:,.0f}</span><br><span style="color:#a0aec0;font-size:11px">{dest}</span>{link_close}</td>')
+        else:
+            cells.append('<td style="color:#cbd5e0">--</td>')
+
+    if has_bug:
+        status = '<span style="color:#b91c1c;font-weight:700">BUG FARES</span>'
+    elif any(city_cabin_cheapest.get((city, c), {}).get('classification') == 'CHEAP' for c in [2,3,4]):
+        status = '<span style="color:#92400e;font-weight:600">Cheap</span>'
+    else:
+        status = '<span style="color:#a0aec0">Normal</span>'
+
+    html += f'<tr><td><strong>{city} ({code})</strong></td>{"".join(cells)}<td>{status}</td></tr>\n'
+
+html += """</table>
 </div>
 """
 
