@@ -62,6 +62,15 @@ def build_search_url(origin_city_id, dest_airport_id, depart_date, return_date, 
     tfs = build_search_tfs(origin_city_id, dest_airport_id, depart_date, return_date, cabin)
     return f'https://www.google.com/travel/flights?tfs={tfs}&tfu=GgA&hl=en&gl=hk&curr=USD'
 
+def build_oneway_search_url(origin_city_id, dest_city_id, depart_date, cabin=3):
+    """Build one-way Google Flights search URL (no return leg)."""
+    o = field_varint(1, 3) + field_bytes(2, origin_city_id)
+    d = field_varint(1, 2) + field_bytes(2, dest_city_id)
+    l1 = field_bytes(2, depart_date) + field_bytes(13, o) + field_bytes(14, d)
+    msg = field_varint(1, 27) + field_varint(2, 1) + field_bytes(3, l1)
+    tfs = base64.urlsafe_b64encode(msg).rstrip(b'=').decode('ascii')
+    return f'https://www.google.com/travel/flights?tfs={tfs}&hl=en&gl=hk&curr=USD'
+
 # --- City data ---
 ORIGINS = {
     'Jakarta': {'city_id': '/m/044rv', 'code': 'CGK'},
@@ -405,6 +414,16 @@ try:
 except Exception as e:
     pass  # drill_results.json is optional — only exists after drill_promising.py runs
 
+# Load one-way results (for dedicated one-way fares section)
+oneway_fares = []
+try:
+    with open('D:/claude/flights/oneway_results.json', encoding='utf-8') as f:
+        ow = json.load(f)
+    oneway_fares = ow.get('fares', [])[:40]
+    print(f"Loaded {len(oneway_fares)} one-way fares for display")
+except Exception:
+    pass
+
 # Sort by price
 verified_deals.sort(key=lambda x: x['price'])
 
@@ -681,6 +700,120 @@ def render_fare_table_header():
 <th>Classification</th>
 <th>Verify</th>
 </tr>
+"""
+
+# --- One-Way Outbound Fares Section ---
+if oneway_fares:
+    ow_rows = ''
+    for ow_fare in oneway_fares:
+        ow_origin = ow_fare.get('origin_city', '')
+        ow_dest   = ow_fare.get('destination', '')
+        ow_price  = ow_fare.get('price_usd', 0)
+        ow_cabin  = ow_fare.get('cabin_num', 1)
+        ow_dates  = clean_dates(ow_fare.get('dates', ''))
+        ow_stops  = ow_fare.get('stops', '')
+        ow_airline = ow_fare.get('airline', '')
+        ow_fam    = ow_price * 2.75
+        ow_cabin_label = CABIN_LABELS.get(ow_cabin, 'Economy')
+        origin_info = ORIGINS.get(ow_origin, {})
+        ow_cid = origin_info.get('city_id', '')
+        depart_ow, _ = parse_dates(ow_dates)
+        dest_cid_ow = US_DEST.get(ow_dest, US_CITY_ID)
+        explore_ow = build_explore_url(ow_cid, US_CITY_ID, date=depart_ow, cabin=ow_cabin) if ow_cid else ''
+        links_ow = ''
+        if ow_cid and depart_ow:
+            ow_search_url = build_oneway_search_url(ow_cid, dest_cid_ow, depart_ow, cabin=ow_cabin)
+            links_ow += f'<a href="{ow_search_url}" target="_blank" class="verify-btn search-btn">Search 1-way</a> '
+        if explore_ow:
+            links_ow += f'<a href="{explore_ow}" target="_blank" class="verify-btn explore-btn">Explore</a>'
+        ow_rows += f"""<tr>
+<td><strong>{ow_origin}</strong></td><td>{ow_dest}</td><td>{ow_cabin_label}</td>
+<td class="price" style="color:#276749">${ow_price:.0f}/pp</td>
+<td>${ow_fam:.0f}</td><td>{ow_dates}</td><td>{ow_stops}</td>
+<td style="color:#718096">{ow_airline}</td><td>{links_ow}</td>
+</tr>
+"""
+    html += f"""
+<div class="section" id="oneway-section">
+<div class="section-header">
+<h2>Cheapest One-Way Outbound Fares ({len(oneway_fares)} shown)</h2>
+<span class="badge" style="background:#ebf8ff;color:#2b6cb0;border:1px solid #90cdf4">Book return separately</span>
+</div>
+<div style="padding:10px 20px;background:#f7fafc;border-bottom:1px solid #e2e6ea;color:#718096;font-size:13px">
+Cheapest one-way outbound legs from Asian hubs to the US. Pair with an open-jaw return to Shanghai or Hangzhou,
+or find your own cheap return. Sorted by price per person.
+</div>
+<table class="fare-table">
+<tr><th>Origin</th><th>Destination</th><th>Cabin</th><th>One-Way/pp</th><th>Family ×2.75</th>
+<th>Dates</th><th>Stops</th><th>Airline</th><th>Search</th></tr>
+{ow_rows}
+</table>
+</div>
+"""
+
+# --- Combo Fares Section (Feeder + Bug Fare + Open-Jaw Returns) ---
+combo_rows = ''
+for (dr_origin, dr_dest), dr in sorted(drill_lookup.items(), key=lambda x: x[1].get('oneway_price', 999)):
+    feeder   = dr.get('feeder', {})
+    oj_sh    = dr.get('open_jaw_price')
+    oj_hz    = dr.get('open_jaw_hangzhou_price')
+    if not feeder and not oj_sh and not oj_hz:
+        continue
+    bug_price  = dr.get('oneway_price', 0)
+    oj_sh_url  = dr.get('open_jaw_url', '')
+    oj_hz_url  = dr.get('open_jaw_hangzhou_url', '')
+    sh_feeder  = feeder.get('Shanghai')
+    hz_feeder  = feeder.get('Hangzhou')
+    sh_total   = (sh_feeder + bug_price) if sh_feeder else None
+    hz_total   = (hz_feeder + bug_price) if hz_feeder else None
+    sh_feeder_cell = f'${sh_feeder}' if sh_feeder else '&mdash;'
+    hz_feeder_cell = f'${hz_feeder}' if hz_feeder else '&mdash;'
+    sh_total_cell  = f'<strong style="color:#2b6cb0">${sh_total}/pp</strong>' if sh_total else '&mdash;'
+    hz_total_cell  = f'<strong style="color:#553c9a">${hz_total}/pp</strong>' if hz_total else '&mdash;'
+    if oj_sh and oj_sh_url:
+        oj_sh_cell = f'<a href="{oj_sh_url}" target="_blank" class="verify-btn" style="background:#744210;color:#fef3c7;border:none;font-size:11px">↩SH ${oj_sh}</a>'
+    elif oj_sh:
+        oj_sh_cell = f'${oj_sh}'
+    else:
+        oj_sh_cell = '&mdash;'
+    if oj_hz and oj_hz_url:
+        oj_hz_cell = f'<a href="{oj_hz_url}" target="_blank" class="verify-btn" style="background:#44337a;color:#e9d8fd;border:none;font-size:11px">↩HZ ${oj_hz}</a>'
+    elif oj_hz:
+        oj_hz_cell = f'${oj_hz}'
+    else:
+        oj_hz_cell = '&mdash;'
+    actual_stop = dr.get('actual_stopover_city', '')
+    via_cell = f'<span style="background:#2d3748;color:#e2e8f0;border-radius:3px;padding:1px 5px;font-size:11px">via {actual_stop}</span>' if actual_stop else ''
+    combo_rows += f"""<tr>
+<td><strong>{dr_origin} &rarr; {dr_dest}</strong> {via_cell}</td>
+<td style="color:#276749;font-weight:700">${bug_price}/pp</td>
+<td>{sh_feeder_cell}</td><td>{hz_feeder_cell}</td>
+<td>{sh_total_cell}</td><td>{hz_total_cell}</td>
+<td>{oj_sh_cell}</td><td>{oj_hz_cell}</td>
+</tr>
+"""
+
+if combo_rows:
+    html += f"""
+<div class="section" id="combo-fares">
+<div class="section-header">
+<h2>Combo Fares: Feeder + Bug Fare, Open-Jaw Returns</h2>
+<span class="badge" style="background:#faf5ff;color:#6b21a8;border:1px solid #d8b4fe">Total outbound cost from home airports</span>
+</div>
+<div style="padding:10px 20px;background:#f7fafc;border-bottom:1px solid #e2e6ea;color:#718096;font-size:13px">
+<strong>Feeder</strong> = one-way from Shanghai (SH) or Hangzhou (HZ) to bug fare origin.
+<strong>Total OW</strong> = feeder + bug fare price per person, full journey from home.
+<strong>Open-jaw return</strong> = fly out on bug fare, return directly to SH or HZ from US destination.
+</div>
+<table class="fare-table">
+<tr><th>Bug Fare Route</th><th>Bug Price/pp</th>
+<th>Feeder from SH</th><th>Feeder from HZ</th>
+<th>Total OW from SH</th><th>Total OW from HZ</th>
+<th>↩ Return to SH</th><th>↩ Return to HZ</th>
+</tr>
+{combo_rows}
+</table>
+</div>
 """
 
 # --- Global fare tables sorted by price ---

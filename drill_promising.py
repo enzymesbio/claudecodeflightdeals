@@ -35,12 +35,19 @@ STOPOVER_MAX_NIGHTS = 5
 
 # Shanghai Freebase ID (for open-jaw return)
 SHANGHAI_CID = '/m/06wjf'
+# Hangzhou Freebase ID (for feeder flight / open-jaw return)
+HANGZHOU_CID = '/m/014vm4'
 
-# Hub cities for stopover testing
+# Hub cities for stopover testing and feeder detection
 HUB_CITIES = {
     'Seoul':       '/m/0hsqf',   # ICN — Korean Air, Asiana, Chinese airlines
     'Tokyo':       '/m/07dfk',   # NRT/HND — ANA, JAL
     'Hong Kong':   '/m/03h64',   # HKG — SIA, Cathay
+    'Singapore':   '/m/06t2t',   # SIN — Singapore Airlines
+    'Taipei':      '/m/0ftkx',   # TPE — EVA Air, China Airlines
+    'Beijing':     '/m/01914',   # PEK — Air China
+    'Doha':        '/m/04ddr',   # DOH — Qatar Airways
+    'Dubai':       '/m/01f08y',  # DXB — Emirates
 }
 
 # Airlines that commonly route through hubs and allow stopovers
@@ -159,6 +166,26 @@ async def get_price_from_url(context, url, label=''):
         await page.close()
 
 
+async def get_page_text(context, url, wait_secs=12):
+    """Load a URL and return body text (for stopover city detection)."""
+    page = await context.new_page()
+    try:
+        await page.goto(url, timeout=30000)
+        await page.wait_for_load_state('domcontentloaded')
+        try:
+            btn = page.get_by_role('button', name='Reject all')
+            if await btn.count() > 0:
+                await btn.first.click()
+                await asyncio.sleep(2)
+        except: pass
+        await asyncio.sleep(wait_secs)
+        return await page.inner_text('body')
+    except:
+        return ''
+    finally:
+        await page.close()
+
+
 # ---------------------------------------------------------------------------
 # Drill single fare
 # ---------------------------------------------------------------------------
@@ -188,12 +215,17 @@ async def drill_fare(context, fare, idx, total, sem):
             'depart': depart,
             'oneway_price': pp_price,
             'airline': fare.get('airline', ''),
+            'stops': fare.get('stops', 0),
             'duration_results': {},
             'valid_duration_min': None,
             'valid_duration_max': None,
             'open_jaw_price': None,
             'open_jaw_url': None,
+            'open_jaw_hangzhou_price': None,
+            'open_jaw_hangzhou_url': None,
             'stopover': {},
+            'feeder': {},
+            'actual_stopover_city': None,
         }
 
         dt = datetime.strptime(depart, '%Y-%m-%d')
@@ -218,9 +250,9 @@ async def drill_fare(context, fare, idx, total, sem):
                 result['valid_duration_min'] = min(valid)
                 result['valid_duration_max'] = max(valid)
 
-        # --- 5b: Open-jaw return to Shanghai ---
+        # --- 5b: Open-jaw returns (Shanghai and Hangzhou) ---
+        ret_date_14 = (dt + timedelta(days=14)).strftime('%Y-%m-%d')
         if origin != 'Shanghai':
-            ret_date_14 = (dt + timedelta(days=14)).strftime('%Y-%m-%d')
             oj_url = build_rt_url(origin_cid, dest_cid, depart, ret_date_14,
                                   return_to_cid=SHANGHAI_CID)
             oj_price = await get_price_from_url(context, oj_url, 'openjaw')
@@ -229,67 +261,138 @@ async def drill_fare(context, fare, idx, total, sem):
                 result['open_jaw_url'] = oj_url
                 print(f"      open-jaw→Shanghai: ${oj_price}/pp")
             await asyncio.sleep(1)
+        if origin not in ('Shanghai', 'Hangzhou'):
+            oj_hz_url = build_rt_url(origin_cid, dest_cid, depart, ret_date_14,
+                                     return_to_cid=HANGZHOU_CID)
+            oj_hz_price = await get_price_from_url(context, oj_hz_url, 'openjaw-hz')
+            if oj_hz_price:
+                result['open_jaw_hangzhou_price'] = oj_hz_price
+                result['open_jaw_hangzhou_url'] = oj_hz_url
+                print(f"      open-jaw→Hangzhou: ${oj_hz_price}/pp")
+            await asyncio.sleep(1)
 
-        # --- 5c: Stopover testing ---
-        airline = fare.get('airline', '')
-        should_test_stopover = any(a.lower() in airline.lower() for a in STOPOVER_AIRLINES)
+        # --- 5c: Non-stop → feeder; 1-stop → detect actual stopover city ---
+        stops_raw = fare.get('stops', 0)
+        if isinstance(stops_raw, str):
+            s = stops_raw.lower()
+            if 'nonstop' in s or 'non-stop' in s or s.strip() == '0':
+                stops_val = 0
+            else:
+                m_s = re.search(r'(\d+)', s)
+                stops_val = int(m_s.group(1)) if m_s else 1
+        else:
+            stops_val = int(stops_raw) if stops_raw else 0
 
-        if should_test_stopover or not airline:
-            # Determine hub based on origin geography
-            origin_hub = None
-            chinese_cities = {'Shanghai', 'Beijing', 'Guangzhou', 'Chengdu', 'Chongqing',
-                               'Shenzhen', 'Nanjing', 'Hangzhou', 'Ningbo', 'Qingdao',
-                               'Dalian', 'Wuhan', 'Xiamen', 'Tianjin', 'Fuzhou'}
-            if origin in chinese_cities:
-                # Chinese cities most commonly route through Seoul or Tokyo
-                origin_hub = 'Seoul'  # test ICN first (Korean Air, Asiana common)
-            elif origin in ('Seoul',):
-                origin_hub = 'Seoul'
-            elif origin in ('Tokyo',):
-                origin_hub = 'Tokyo'
-            elif origin in ('Hong Kong', 'Singapore', 'Bangkok', 'Manila',
-                            'Kuala Lumpur', 'Ho Chi Minh City', 'Jakarta'):
-                origin_hub = 'Hong Kong'
+        if stops_val == 0:
+            # Non-stop: test feeder flights from Shanghai and Hangzhou to reach this origin
+            if origin not in ('Shanghai', 'Hangzhou'):
+                feeder_results = {}
+                for home, home_cid in [('Shanghai', SHANGHAI_CID), ('Hangzhou', HANGZHOU_CID)]:
+                    url = build_oneway_url(home_cid, origin_cid, depart)
+                    price = await get_price_from_url(context, url, f'feeder-{home}')
+                    if price:
+                        feeder_results[home] = price
+                        total_combo = price + pp_price
+                        print(f"      feeder from {home}: ${price} + bug ${pp_price} = ${total_combo}/pp OW total")
+                    await asyncio.sleep(1)
+                if feeder_results:
+                    result['feeder'] = feeder_results
+        else:
+            # Has stops: try to detect actual stopover city then test extended stay
+            KNOWN_STOPS = {
+                'Seoul': ['Seoul', 'ICN', 'Incheon'],
+                'Tokyo': ['Tokyo', 'NRT', 'HND', 'Narita', 'Haneda'],
+                'Hong Kong': ['Hong Kong', 'HKG'],
+                'Singapore': ['Singapore', 'SIN'],
+                'Taipei': ['Taipei', 'TPE'],
+                'Beijing': ['Beijing', 'PEK'],
+                'Doha': ['Doha', 'DOH'],
+                'Dubai': ['Dubai', 'DXB'],
+            }
+            actual_stop = None
+            if idx < 5:
+                # Top 5 only: load page to detect actual stopover city
+                page_text = await get_page_text(context,
+                                build_oneway_url(origin_cid, dest_cid, depart))
+                for city_name, keywords in KNOWN_STOPS.items():
+                    if any(kw in page_text[:6000] for kw in keywords):
+                        actual_stop = city_name
+                        result['actual_stopover_city'] = city_name
+                        print(f"      detected stopover: {city_name}")
+                        break
 
-            if origin_hub and origin != origin_hub:
-                hub_cid = HUB_CITIES[origin_hub]
+            if actual_stop and actual_stop in HUB_CITIES and actual_stop != origin:
+                hub_cid = HUB_CITIES[actual_stop]
                 stopover_results = {}
-
-                for nights in range(STOPOVER_MIN_NIGHTS, STOPOVER_MAX_NIGHTS + 1):
+                for nights in range(1, 4):  # 1, 2, 3 bonus nights
                     hub_depart = (dt + timedelta(days=nights)).strftime('%Y-%m-%d')
-                    ret_date_stop = (dt + timedelta(days=nights + 14)).strftime('%Y-%m-%d')
-
-                    # Leg 1: Origin → Hub (one-way)
-                    p1 = await get_price_from_url(
-                        context,
-                        build_oneway_url(origin_cid, hub_cid, depart),
-                        f'stop-leg1'
-                    )
+                    p1 = await get_price_from_url(context,
+                             build_oneway_url(origin_cid, hub_cid, depart), 'stop-leg1')
                     await asyncio.sleep(1)
-
-                    # Leg 2: Hub → US (one-way, depart after stopover nights)
-                    p2 = await get_price_from_url(
-                        context,
-                        build_oneway_url(hub_cid, dest_cid, hub_depart),
-                        f'stop-leg2'
-                    )
+                    p2 = await get_price_from_url(context,
+                             build_oneway_url(hub_cid, dest_cid, hub_depart), 'stop-leg2')
                     await asyncio.sleep(1)
-
                     if p1 and p2:
-                        total_pp = p1 + p2
                         stopover_results[f'{nights}n'] = {
-                            'hub': origin_hub,
+                            'hub': actual_stop,
                             'leg1_price': p1,
                             'leg2_price': p2,
-                            'total_outbound_pp': total_pp,
+                            'total_outbound_pp': p1 + p2,
                         }
-                        print(f"      stopover {origin_hub} {nights}n: "
-                              f"leg1=${p1} + leg2=${p2} = ${total_pp}/pp outbound")
-                    else:
-                        break  # if can't get price, stop testing more nights
-
+                        print(f"      extended stay {actual_stop} {nights}n: "
+                              f"leg1=${p1} + leg2=${p2} = ${p1+p2}/pp outbound")
                 if stopover_results:
                     result['stopover'] = stopover_results
+            else:
+                # Fallback: geography-based hub test
+                airline = fare.get('airline', '')
+                should_test_stopover = any(a.lower() in airline.lower() for a in STOPOVER_AIRLINES)
+                if should_test_stopover or not airline:
+                    origin_hub = None
+                    chinese_cities = {'Shanghai', 'Beijing', 'Guangzhou', 'Chengdu', 'Chongqing',
+                                       'Shenzhen', 'Nanjing', 'Hangzhou', 'Ningbo', 'Qingdao',
+                                       'Dalian', 'Wuhan', 'Xiamen', 'Tianjin', 'Fuzhou'}
+                    if origin in chinese_cities:
+                        origin_hub = 'Seoul'
+                    elif origin == 'Seoul':
+                        origin_hub = 'Seoul'
+                    elif origin == 'Tokyo':
+                        origin_hub = 'Tokyo'
+                    elif origin in ('Hong Kong', 'Singapore', 'Bangkok', 'Manila',
+                                    'Kuala Lumpur', 'Ho Chi Minh City', 'Jakarta'):
+                        origin_hub = 'Hong Kong'
+
+                    if origin_hub and origin != origin_hub:
+                        hub_cid = HUB_CITIES[origin_hub]
+                        stopover_results = {}
+                        for nights in range(STOPOVER_MIN_NIGHTS, STOPOVER_MAX_NIGHTS + 1):
+                            hub_depart = (dt + timedelta(days=nights)).strftime('%Y-%m-%d')
+                            p1 = await get_price_from_url(
+                                context,
+                                build_oneway_url(origin_cid, hub_cid, depart),
+                                'stop-leg1'
+                            )
+                            await asyncio.sleep(1)
+                            p2 = await get_price_from_url(
+                                context,
+                                build_oneway_url(hub_cid, dest_cid, hub_depart),
+                                'stop-leg2'
+                            )
+                            await asyncio.sleep(1)
+                            if p1 and p2:
+                                total_pp_s = p1 + p2
+                                stopover_results[f'{nights}n'] = {
+                                    'hub': origin_hub,
+                                    'leg1_price': p1,
+                                    'leg2_price': p2,
+                                    'total_outbound_pp': total_pp_s,
+                                }
+                                print(f"      stopover {origin_hub} {nights}n: "
+                                      f"leg1=${p1} + leg2=${p2} = ${total_pp_s}/pp outbound")
+                            else:
+                                break
+                        if stopover_results:
+                            result['stopover'] = stopover_results
 
         return result
 
@@ -371,12 +474,16 @@ async def main():
         dur_range = ''
         if r['valid_duration_min']:
             dur_range = f"stay {r['valid_duration_min']}-{r['valid_duration_max']}d"
-        oj = f" | open-jaw ${r['open_jaw_price']}" if r.get('open_jaw_price') else ''
+        oj = f" | ↩SH ${r['open_jaw_price']}" if r.get('open_jaw_price') else ''
+        oj_hz = f" | ↩HZ ${r['open_jaw_hangzhou_price']}" if r.get('open_jaw_hangzhou_price') else ''
+        feeder = r.get('feeder', {})
+        feeder_str = (' | feeder: ' + ', '.join(f"{h}→${p}" for h, p in feeder.items())) if feeder else ''
         stop = ''
         if r.get('stopover'):
             best_stop = min(r['stopover'].items(), key=lambda x: x[1]['total_outbound_pp'])
             stop = f" | stopover {best_stop[1]['hub']} {best_stop[0]} ${best_stop[1]['total_outbound_pp']}"
-        print(f"  {r['origin']:15s}→{r['dest']:20s} ${r['oneway_price']:>4}/pp | {dur_range}{oj}{stop}")
+        actual = f" | via {r['actual_stopover_city']}" if r.get('actual_stopover_city') else ''
+        print(f"  {r['origin']:15s}→{r['dest']:20s} ${r['oneway_price']:>4}/pp | {dur_range}{oj}{oj_hz}{feeder_str}{stop}{actual}")
     print(f"\nSaved: {RESULTS_FILE}")
 
 
