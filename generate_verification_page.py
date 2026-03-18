@@ -307,84 +307,8 @@ all_count = len(data['destinations'])
 # --- VERIFIED BOOKABLE DEALS (from deep verification JSON files) ---
 # Load real booking URLs from deep verify results
 verified_deals = []
-EXCLUDE_DESTINATIONS = ['Honolulu', 'Kauai']  # Not practical (need another flight to mainland)
+EXCLUDE_DESTINATIONS = ['Honolulu', 'Kauai', '1.5h drive from Washington', '1h drive from Miami', '1h drive from Washington']
 EXCLUDE_AIRLINES = ['ZIPAIR', 'Philippine Airlines', 'Malaysia Airlines', 'Cebu Pacific']
-
-# Tokyo results
-try:
-    with open('D:/claude/flights/deep_verify_tokyo_results.json', encoding='utf-8') as f:
-        tokyo_data = json.load(f)
-    for r in tokyo_data.get('results', []):
-        if r.get('booking_url') and r.get('status') in ('BOOKABLE', 'BOOKABLE_NO_PRICE'):
-            btext = r.get('booking_section_text', '')
-            airline = ''
-            if 'Book with ' in btext:
-                airline = btext.split('Book with ')[1].split('Airline')[0].strip()
-            cabin = 'Business' if 'Business' in r.get('route', '') else 'Economy'
-            if 'Economy' in r.get('route', ''):
-                cabin = 'Economy'
-            booking_price = None
-            if btext and 'Book with' in btext:
-                price_match = re.search(r'\$([\d,]+)', btext.split('Book with')[1])
-                if price_match:
-                    booking_price = int(price_match.group(1).replace(',', ''))
-            # Detect origin from route field (Seoul fares may be in Tokyo file)
-            route = r.get('route', '')
-            origin = 'Seoul' if 'Seoul' in route else 'Tokyo'
-            dest = r['city']
-            # Skip excluded destinations
-            if dest in EXCLUDE_DESTINATIONS:
-                continue
-            # Flag excluded airlines
-            is_excluded = any(excl.lower() in (airline or '').lower() for excl in EXCLUDE_AIRLINES)
-            if is_excluded:
-                continue
-            verified_deals.append({
-                'origin': origin,
-                'dest': dest,
-                'cabin': cabin,
-                'price': booking_price or r.get('search_price', 0),
-                'airline': airline or 'Unknown',
-                'booking_url': r['booking_url'],
-                'has_booking': r.get('has_book_with_links', False),
-            })
-except Exception as e:
-    print(f"Warning: could not load Tokyo verify results: {e}")
-
-# Seoul results
-try:
-    with open('D:/claude/flights/deep_verify_seoul_results.json', encoding='utf-8') as f:
-        seoul_data = json.load(f)
-    for r in seoul_data.get('results', []):
-        if r.get('booking_url') and r.get('has_booking_page'):
-            btext = r.get('booking_text', '')
-            airline = ''
-            if 'Book with ' in btext:
-                airline = btext.split('Book with ')[1].split('Airline')[0].strip()
-            booking_price = None
-            if btext and 'Book with' in btext:
-                price_match = re.search(r'\$([\d,]+)', btext.split('Book with')[1])
-                if price_match:
-                    booking_price = int(price_match.group(1).replace(',', ''))
-            cabin_raw = r.get('cabin', 'BIZ')
-            cabin = {'PE': 'Premium Eco', 'BIZ': 'Business', 'ECO': 'Economy'}.get(cabin_raw, cabin_raw)
-            dest = r['city']
-            if dest in EXCLUDE_DESTINATIONS:
-                continue
-            is_excluded = any(excl.lower() in (airline or '').lower() for excl in EXCLUDE_AIRLINES)
-            if is_excluded:
-                continue
-            verified_deals.append({
-                'origin': 'Seoul',
-                'dest': dest,
-                'cabin': cabin,
-                'price': booking_price or r.get('search_price', 0),
-                'airline': airline or 'Unknown',
-                'booking_url': r['booking_url'],
-                'has_booking': 'Book with' in btext,
-            })
-except Exception as e:
-    print(f"Warning: could not load Seoul verify results: {e}")
 
 # HK results
 try:

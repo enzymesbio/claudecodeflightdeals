@@ -10,7 +10,7 @@ from playwright.async_api import async_playwright
 BASE_DIR = 'D:/claude/flights'
 SHANGHAI_TZ = timezone(timedelta(hours=8))
 EXCLUDE_AIRLINES = ['ZIPAIR', 'Philippine Airlines', 'Malaysia Airlines', 'Cebu Pacific']
-EXCLUDE_DESTS = ['Honolulu', 'Kauai']
+EXCLUDE_DESTS = ['Honolulu', 'Kauai', '1.5h drive from Washington', '1h drive from Miami', '1h drive from Washington']
 FAMILY_BUDGET = 2000
 PP_BUDGET = FAMILY_BUDGET / 2.75
 MAX_WORKERS = 5
