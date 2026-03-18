@@ -1,7 +1,7 @@
 """Generate an HTML page with clickable Google Flights verification links for all bug fares found."""
 import json
 import base64
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 # --- Protobuf encoding (same as bug_fare_scanner.py) ---
 def encode_varint(value):
@@ -128,13 +128,31 @@ CABIN_LABELS = {1: 'Economy', 2: 'Premium Economy', 3: 'Business', 4: 'First'}
 CABIN_COLORS = {1: '#276749', 2: '#2b6cb0', 3: '#6b21a8', 4: '#c2410c'}
 CABIN_EMOJI = {1: '', 2: '', 3: '', 4: ''}
 
+US_DEST_IATA = {
+    'Los Angeles': 'LAX', 'Houston': 'IAH', 'New York': 'JFK',
+    'San Francisco': 'SFO', 'Chicago': 'ORD', 'Washington, D.C.': 'IAD',
+    'Denver': 'DEN', 'Las Vegas': 'LAS', 'Seattle': 'SEA',
+    'Boston': 'BOS', 'Miami': 'MIA', 'Atlanta': 'ATL',
+    'Tampa': 'TPA', 'Austin': 'AUS', 'Dallas': 'DFW',
+    'Portland': 'PDX', 'San Diego': 'SAN', 'Philadelphia': 'PHL',
+    'Orlando': 'MCO', 'Fort Lauderdale': 'FLL', 'Charlotte': 'CLT',
+    'Nashville': 'BNA', 'Phoenix': 'PHX', 'Minneapolis': 'MSP',
+    'Detroit': 'DTW', 'Baltimore': 'BWI', 'Pittsburgh': 'PIT',
+    'New Orleans': 'MSY', 'Salt Lake City': 'SLC', 'Honolulu': 'HNL',
+    'San Antonio': 'SAT', 'Kauai': 'LIH',
+}
+
+TRIPCABIN = {1: 'Y', 2: 'S', 3: 'C', 4: 'F'}
+EXPEDIA_CABIN = {1: 'economy', 2: 'premium', 3: 'business', 4: 'first'}
+
 # --- Load scan results ---
 with open('D:/claude/flights/scanner_results.json', encoding='utf-8') as f:
     data = json.load(f)
 
 bugs = [d for d in data['destinations'] if d['classification'] in ('BUG_FARE', 'CHEAP')]
+all_fares = data['destinations']
 
-# Group by origin + cabin
+# Group by origin + cabin (for legacy highlight summary)
 from collections import defaultdict
 grouped = defaultdict(list)
 for b in bugs:
@@ -176,7 +194,8 @@ def parse_dates(date_str):
         return None, None
 
 # --- Generate HTML ---
-timestamp = datetime.now().strftime('%Y-%m-%d %H:%M UTC+8')
+shanghai_tz = timezone(timedelta(hours=8))
+timestamp = datetime.now(shanghai_tz).strftime('%Y-%m-%d %H:%M Shanghai time')
 
 html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -187,7 +206,7 @@ html = f"""<!DOCTYPE html>
 <style>
 * {{ margin: 0; padding: 0; box-sizing: border-box; }}
 body {{ font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif; background: #fff; color: #2d3748; font-size: 16px; line-height: 1.7; }}
-.container {{ max-width: 1100px; margin: 0 auto; padding: 24px 28px; }}
+.container {{ max-width: 1400px; margin: 0 auto; padding: 24px 28px; }}
 h1 {{ color: #1a202c; font-size: 26px; font-weight: 600; margin-bottom: 4px; }}
 .subtitle {{ color: #718096; margin-bottom: 20px; font-size: 14px; }}
 .alert {{ background: #fff5f5; border: 1px solid #feb2b2; border-radius: 6px; padding: 14px 18px; margin-bottom: 20px; }}
@@ -210,6 +229,8 @@ h1 {{ color: #1a202c; font-size: 26px; font-weight: 600; margin-bottom: 4px; }}
 a.verify-btn {{ display: inline-block; padding: 3px 10px; border-radius: 4px; text-decoration: none; font-size: 12px; font-weight: 600; }}
 a.explore-btn {{ background: #ebf8ff; color: #2b6cb0; border: 1px solid #90cdf4; }}
 a.search-btn {{ background: #f0fff4; color: #276749; border: 1px solid #9ae6b4; }}
+a.trip-btn {{ background: #e6f3ff; color: #0066cc; border: 1px solid #99ccff; }}
+a.expedia-btn {{ background: #fff8e6; color: #cc8800; border: 1px solid #ffcc66; }}
 a.verify-btn:hover {{ opacity: 0.75; }}
 .instructions {{ border: 1px solid #d0d5dd; border-radius: 6px; padding: 14px 20px; margin-bottom: 20px; }}
 .instructions h3 {{ color: #2b6cb0; margin-bottom: 8px; font-size: 15px; font-weight: 600; }}
@@ -388,6 +409,54 @@ def clean_dates(s):
     """Replace thin spaces (U+2009) and en-dashes (U+2013) with plain ASCII."""
     return s.replace('\u2009', ' ').replace('\u2013', '-').replace('\u200a', ' ')
 
+def build_trip_url(origin_iata, dest_iata, depart_date, return_date, cabin_num):
+    """Build Trip.com search URL."""
+    cabin_code = TRIPCABIN.get(cabin_num, 'Y')
+    o = origin_iata.lower()
+    d = dest_iata.lower()
+    dep = depart_date.replace('-', '')
+    ret = return_date.replace('-', '')
+    return f'https://www.trip.com/flights/list/roundtrip-{o}-{d}-{dep}-{ret}/?cabin={cabin_code}&adult=1'
+
+def build_expedia_url(origin_iata, dest_iata, depart_date, return_date, cabin_num):
+    """Build Expedia search URL."""
+    cabin_name = EXPEDIA_CABIN.get(cabin_num, 'economy')
+    return f'https://www.expedia.com/Flights-search/{origin_iata}-{dest_iata}/{depart_date}/{return_date}/?cabinclass={cabin_name}'
+
+# Airline direct booking URL builders
+AIRLINE_CABIN = {
+    'united': {1: '7', 2: '7', 3: '7', 4: '7'},  # United uses sc=7 for all, cabin selected on page
+    'singapore': {1: 'Y', 2: 'W', 3: 'J', 4: 'F'},
+    'ana': {1: 'Economy', 2: 'PremiumEconomy', 3: 'Business', 4: 'First'},
+    'thai': {1: 'Economy', 2: 'PremiumEconomy', 3: 'Business', 4: 'First'},
+}
+
+def build_airline_urls(origin_iata, dest_iata, depart_date, return_date, cabin_num, airlines=None):
+    """Build direct airline booking URLs. Returns list of (name, url) tuples."""
+    urls = []
+    dep = depart_date.replace('-', '')  # YYYYMMDD
+    dep_d = depart_date  # YYYY-MM-DD
+    ret_d = return_date
+    ret = return_date.replace('-', '')
+
+    # Google Flights search (most reliable)
+    urls.append(('Google', f'https://www.google.com/travel/flights?q=Flights+from+{origin_iata}+to+{dest_iata}+on+{dep_d}+return+{ret_d}&curr=USD&hl=en'))
+
+    # United Airlines
+    urls.append(('United', f'https://www.united.com/ual/en/us/flight-search/book-a-flight/results/rev?f={origin_iata}&t={dest_iata}&d={dep_d}&r={ret_d}&sc=7&px=1&taxng=1&newHP=True&clm=7'))
+
+    # Singapore Airlines
+    sq_cabin = AIRLINE_CABIN['singapore'].get(cabin_num, 'J')
+    dep_dmy = dep[6:8] + dep[4:6] + dep[:4]  # DDMMYYYY
+    ret_dmy = ret[6:8] + ret[4:6] + ret[:4]
+    urls.append(('SQ', f'https://www.singaporeair.com/en_UK/plan-and-book/book-flight/?cabinClass={sq_cabin}&origin={origin_iata}&destination={dest_iata}&departDate={dep_dmy}&returnDate={ret_dmy}&tripType=R&adults=1'))
+
+    # ANA
+    ana_cabin = AIRLINE_CABIN['ana'].get(cabin_num, 'Business')
+    urls.append(('ANA', f'https://www.ana.co.jp/en/us/book-plan/reservation/international/search/?itineryType=round_trip&adultNum=1&departureAirportCode={origin_iata}&arrivalAirportCode={dest_iata}&departureDate={dep}&returnDate={ret}&cabinType={ana_cabin}'))
+
+    return urls
+
 def render_fare_row(fare, origin_cid, cabin_num):
     """Render a single fare table row."""
     dest = fare['destination']
@@ -397,9 +466,21 @@ def render_fare_row(fare, origin_cid, cabin_num):
     stops = fare.get('stops', '')
     cls = fare['classification']
     origin_code = fare.get('origin_code', '')
+    origin_city = fare.get('origin_city', '')
+    cabin_label = CABIN_LABELS.get(cabin_num, '?')
 
-    price_class = 'price-bug' if cls == 'BUG_FARE' else 'price-cheap'
-    type_label = 'BUG' if cls == 'BUG_FARE' else 'CHEAP'
+    if cls == 'BUG_FARE':
+        price_class = 'price-bug'
+        type_style = 'color:#b91c1c;font-weight:700'
+        type_label = 'BUG'
+    elif cls == 'CHEAP':
+        price_class = 'price-cheap'
+        type_style = 'color:#92400e;font-weight:700'
+        type_label = 'CHEAP'
+    else:
+        price_class = ''
+        type_style = 'color:#a0aec0;font-weight:400'
+        type_label = 'NORMAL'
 
     # Build verify links
     verify_links = ''
@@ -411,17 +492,34 @@ def render_fare_row(fare, origin_cid, cabin_num):
     if detail_url and detail_url != 'none':
         verify_links += f'<a href="{detail_url}" target="_blank" rel="noopener" class="verify-btn search-btn">View Flights</a> '
 
-    # Explore URL — always generate one (use departure date if available, else default)
+    # Explore URL -- always generate one (use departure date if available, else default)
     explore_url_dated = build_explore_url(origin_cid, US_CITY_ID, date=depart, cabin=cabin_num)
-    verify_links += f'<a href="{explore_url_dated}" target="_blank" rel="noopener" class="verify-btn explore-btn">Explore</a>'
+    verify_links += f'<a href="{explore_url_dated}" target="_blank" rel="noopener" class="verify-btn explore-btn">Explore</a> '
 
-    return f"""<tr>
-<td><strong>{dest}</strong></td>
+    # Trip.com, Expedia, and airline links (only for BUG/CHEAP fares with parseable dates)
+    dest_iata = US_DEST_IATA.get(dest, '')
+    if depart and ret and origin_code and dest_iata and cls in ('BUG_FARE', 'CHEAP'):
+        trip_url = build_trip_url(origin_code, dest_iata, depart, ret, cabin_num)
+        expedia_url = build_expedia_url(origin_code, dest_iata, depart, ret, cabin_num)
+        verify_links += f'<a href="{trip_url}" target="_blank" rel="noopener" class="verify-btn trip-btn">Trip.com</a> '
+        verify_links += f'<a href="{expedia_url}" target="_blank" rel="noopener" class="verify-btn expedia-btn">Expedia</a> '
+        # Airline direct booking links
+        airline_urls = build_airline_urls(origin_code, dest_iata, depart, ret, cabin_num)
+        for name, url in airline_urls:
+            verify_links += f'<a href="{url}" target="_blank" rel="noopener" class="verify-btn" style="background:#f0f0f0;color:#333;border:1px solid #ccc">{name}</a> '
+
+    # Row text style for NORMAL fares
+    row_style = ' style="color:#a0aec0"' if cls == 'NORMAL' else ''
+
+    return f"""<tr{row_style}>
+<td><strong>{origin_code}</strong></td>
+<td>{dest}</td>
+<td>{cabin_label}</td>
 <td class="price {price_class}">${price:.0f}</td>
 <td style="color:#718096">${family_price:.0f}</td>
 <td>{dates}</td>
 <td>{stops}</td>
-<td><span style="color:{'#b91c1c' if cls=='BUG_FARE' else '#92400e'};font-weight:600">{type_label}</span></td>
+<td><span style="{type_style}">{type_label}</span></td>
 <td>{verify_links}</td>
 </tr>
 """
@@ -429,81 +527,65 @@ def render_fare_row(fare, origin_cid, cabin_num):
 def render_fare_table_header():
     return """<table class="fare-table">
 <tr>
+<th>Origin</th>
 <th>Destination</th>
+<th>Cabin</th>
 <th>Price (USD)</th>
-<th>2A+1C Est.</th>
+<th>Family (2A+1C)</th>
 <th>Dates</th>
 <th>Stops</th>
-<th>Type</th>
+<th>Classification</th>
 <th>Verify</th>
 </tr>
 """
 
-# --- Per-origin sections with fare tables (under $3000 family budget) ---
-section_order = [
-    ('Jakarta', 2), ('Jakarta', 3), ('Jakarta', 4),
-    ('Tokyo', 3), ('Tokyo', 4),
-    ('Manila', 4),
-    ('Seoul', 2), ('Seoul', 3), ('Seoul', 4),
-    ('Kuala Lumpur', 2), ('Kuala Lumpur', 3), ('Kuala Lumpur', 4),
-    ('Bangkok', 3), ('Bangkok', 4),
-    ('Singapore', 3), ('Singapore', 4),
-    ('Taipei', 3), ('Taipei', 4),
-    ('Hong Kong', 3), ('Hong Kong', 4),
-]
+# --- Global fare tables sorted by price ---
+# Split all fares into affordable (family <= $3000) and expensive (family > $3000)
+all_fares_sorted = sorted(all_fares, key=lambda x: x['price_usd'])
+affordable_fares = [f for f in all_fares_sorted if f['price_usd'] * 2.75 <= FAMILY_BUDGET]
+expensive_fares = [f for f in all_fares_sorted if f['price_usd'] * 2.75 > FAMILY_BUDGET]
 
-over_budget_fares = []  # collect fares over $3000 family total
-
-for origin, cabin_num in section_order:
-    key = (origin, cabin_num)
-    if key not in grouped:
-        continue
-    fares = grouped[key]
-    cabin_label = CABIN_LABELS[cabin_num]
-    cabin_color = CABIN_COLORS[cabin_num]
-    origin_info = ORIGINS.get(origin, {})
-    origin_code = origin_info.get('code', '???')
-    origin_cid = origin_info.get('city_id', '')
-
-    affordable = [f for f in fares if f['price_usd'] * 2.75 <= FAMILY_BUDGET]
-    expensive = [f for f in fares if f['price_usd'] * 2.75 > FAMILY_BUDGET]
-    for f in expensive:
-        over_budget_fares.append((f, origin_cid, cabin_num))
-
-    if not affordable:
-        continue
-
-    is_top = origin in ('Kuala Lumpur',) and cabin_num in (3, 4)
-    section_class = 'section top-deal' if is_top else 'section'
-    explore_url = build_explore_url(origin_cid, US_CITY_ID, cabin=cabin_num)
-
-    html += f"""
-<div class="{section_class}">
+# --- Affordable fares table ---
+html += f"""
+<div class="section">
 <div class="section-header">
-<h2>{origin} ({origin_code}) &mdash; {cabin_label} to USA</h2>
-<span class="badge" style="background:{cabin_color}15;color:{cabin_color};border:1px solid {cabin_color}33">{len(affordable)} fares under $3k</span>
-<a href="{explore_url}" target="_blank" rel="noopener" class="verify-btn explore-btn">Open Explore Map</a>
+<h2>All Fares Under $3,000 Family Total ({len(affordable_fares)} fares)</h2>
+<span class="badge" style="background:#f0fff4;color:#276749;border:1px solid #9ae6b4">Sorted by price</span>
 </div>
 """
-    html += render_fare_table_header()
-    for fare in affordable:
-        html += render_fare_row(fare, origin_cid, cabin_num)
-    html += """</table>
+html += render_fare_table_header()
+for fare in affordable_fares:
+    origin_info = ORIGINS.get(fare['origin_city'], {})
+    origin_cid = origin_info.get('city_id', '')
+    html += render_fare_row(fare, origin_cid, fare['cabin_num'])
+html += """</table>
 </div>
 """
 
-# --- Over-budget fares section ---
-if over_budget_fares:
+# --- Over-budget fares section (show only cheapest per origin+cabin, capped) ---
+if expensive_fares:
+    # Deduplicate: keep only cheapest per origin+cabin+destination
+    seen_exp = set()
+    deduped_expensive = []
+    for fare in expensive_fares:
+        key = (fare['origin_city'], fare['cabin_num'], fare['destination'])
+        if key not in seen_exp:
+            seen_exp.add(key)
+            deduped_expensive.append(fare)
+    # Cap at 80 to keep file size reasonable
+    capped = deduped_expensive[:80]
     html += f"""
 <div class="section" style="opacity:0.7">
 <div class="section-header" style="background:#fff5f5">
-<h2 style="color:#718096">Over $3,000 Family Total ({len(over_budget_fares)} fares)</h2>
+<h2 style="color:#718096">Over $3,000 Family Total (showing {len(capped)} of {len(deduped_expensive)} fares)</h2>
 <span class="badge" style="background:#fed7d7;color:#9b2c2c;border:1px solid #feb2b2">Unlikely to book</span>
 </div>
 """
     html += render_fare_table_header()
-    for fare, cid, cab in over_budget_fares:
-        html += render_fare_row(fare, cid, cab)
+    for fare in capped:
+        origin_info = ORIGINS.get(fare['origin_city'], {})
+        origin_cid = origin_info.get('city_id', '')
+        html += render_fare_row(fare, origin_cid, fare['cabin_num'])
     html += """</table>
 </div>
 """
@@ -528,6 +610,7 @@ html += f"""
 <table class="fare-table">
 <tr>
 <th>Origin</th>
+<th>Economy</th>
 <th>Premium Eco</th>
 <th>Business</th>
 <th>First</th>
@@ -542,7 +625,7 @@ for city in scanned_cities:
 
     cells = []
     has_bug = False
-    for cab in [2, 3, 4]:
+    for cab in [1, 2, 3, 4]:
         key = (city, cab)
         if key in city_cabin_cheapest:
             d = city_cabin_cheapest[key]
@@ -571,7 +654,7 @@ for city in scanned_cities:
 
     if has_bug:
         status = '<span style="color:#b91c1c;font-weight:700">BUG FARES</span>'
-    elif any(city_cabin_cheapest.get((city, c), {}).get('classification') == 'CHEAP' for c in [2,3,4]):
+    elif any(city_cabin_cheapest.get((city, c), {}).get('classification') == 'CHEAP' for c in [1,2,3,4]):
         status = '<span style="color:#92400e;font-weight:600">Cheap</span>'
     else:
         status = '<span style="color:#a0aec0">Normal</span>'
@@ -640,5 +723,5 @@ with open('D:/claude/flights/bug_fare_verify.html', 'w', encoding='utf-8') as f:
     f.write(html)
 
 print(f"Generated bug_fare_verify.html ({len(html)} bytes)")
-print(f"Sections: {len(section_order)} origin+cabin groups")
-print(f"Total fares listed: {len(bugs)}")
+print(f"Total fares: {len(all_fares)} ({len(affordable_fares)} under $3k family, {len(expensive_fares)} over)")
+print(f"Bug fares: {bug_count}, Cheap fares: {cheap_count}")
