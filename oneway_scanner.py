@@ -18,6 +18,10 @@ sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 sys.stderr.reconfigure(encoding='utf-8', errors='replace')
 
 from playwright.sync_api import sync_playwright
+from money import parse_price_line
+from entities import (
+    ORIGINS, US_EXPLORE_ID, is_excluded_dest,
+)
 
 BASE_DIR = 'D:/claude/flights'
 SHANGHAI_TZ = timezone(timedelta(hours=8))
@@ -29,40 +33,18 @@ ONEWAY_FAMILY_BUDGET = int(ONEWAY_PP_BUDGET * 2.75)
 RESULTS_FILE = os.path.join(BASE_DIR, 'oneway_results.json')
 
 # ---------------------------------------------------------------------------
-# Origin cities — same as bug_fare_scanner.py (no Taipei)
+# Origin cities — derived from entities.py (single source of truth)
 # ---------------------------------------------------------------------------
 ORIGIN_CITIES = {
-    'jakarta':      {'code': 'CGK', 'city_id': '/m/044rv',  'name': 'Jakarta'},
-    'bangkok':      {'code': 'BKK', 'city_id': '/m/0fn2g',  'name': 'Bangkok'},
-    'singapore':    {'code': 'SIN', 'city_id': '/m/06t2t',  'name': 'Singapore'},
-    'manila':       {'code': 'MNL', 'city_id': '/m/0195pd', 'name': 'Manila'},
-    'kuala_lumpur': {'code': 'KUL', 'city_id': '/m/049d1',  'name': 'Kuala Lumpur'},
-    'ho_chi_minh':  {'code': 'SGN', 'city_id': '/m/0hn4h',  'name': 'Ho Chi Minh City'},
-    'hong_kong':    {'code': 'HKG', 'city_id': '/m/03h64',  'name': 'Hong Kong'},
-    'seoul':        {'code': 'ICN', 'city_id': '/m/0hsqf',  'name': 'Seoul'},
-    'tokyo':        {'code': 'TYO', 'city_id': '/m/07dfk',  'name': 'Tokyo'},
-    'shanghai':     {'code': 'PVG', 'city_id': '/m/06wjf',  'name': 'Shanghai'},
-    'hangzhou':     {'code': 'HGH', 'city_id': '/m/014vm4', 'name': 'Hangzhou'},
-    'ningbo':       {'code': 'NGB', 'city_id': '/m/01l33l', 'name': 'Ningbo'},
-    'qingdao':      {'code': 'TAO', 'city_id': '/m/01l3s0', 'name': 'Qingdao'},
-    'dalian':       {'code': 'DLC', 'city_id': '/m/01l3k6', 'name': 'Dalian'},
-    'beijing':      {'code': 'PEK', 'city_id': '/m/01914',  'name': 'Beijing'},
-    'wuhan':        {'code': 'WUH', 'city_id': '/m/0l3cy',  'name': 'Wuhan'},
-    'guangzhou':    {'code': 'CAN', 'city_id': '/m/0393g',  'name': 'Guangzhou'},
-    'chongqing':    {'code': 'CKG', 'city_id': '/m/017236', 'name': 'Chongqing'},
-    'chengdu':      {'code': 'CTU', 'city_id': '/m/016v46', 'name': 'Chengdu'},
-    'shenzhen':     {'code': 'SZX', 'city_id': '/m/0lbmv',  'name': 'Shenzhen'},
-    'nanjing':      {'code': 'NKG', 'city_id': '/m/05gqy',  'name': 'Nanjing'},
-    'xiamen':       {'code': 'XMN', 'city_id': '/m/0126c3', 'name': 'Xiamen'},
-    'tianjin':      {'code': 'TSN', 'city_id': '/m/0df4y',  'name': 'Tianjin'},
-    'fuzhou':       {'code': 'FOC', 'city_id': '/m/01jzm9', 'name': 'Fuzhou'},
+    v['city'].lower().replace(' ', '_'): {
+        'code': k,
+        'city_id': v['google_id'],
+        'name': v['city'],
+    }
+    for k, v in ORIGINS.items()
 }
 
-US_CITY_ID = '/m/09c7w0'
-
 EXCLUDE_AIRLINES = ['ZIPAIR', 'Philippine Airlines', 'Malaysia Airlines', 'Cebu Pacific']
-EXCLUDE_DESTS = ['Honolulu', 'Kauai', '1.5h drive from Washington',
-                 '1h drive from Miami', '1h drive from Washington']
 
 # ---------------------------------------------------------------------------
 # Protobuf helpers
@@ -112,14 +94,12 @@ def build_oneway_explore_url(origin_city_id, dest_city_id, date, cabin=1):
 # Page parsing (same format as bug_fare_scanner.py)
 # ---------------------------------------------------------------------------
 def parse_explore_results(body_text):
+    """Parse Explore page text. Uses money.parse_price_line() for all price extraction."""
     lines = [l.strip() for l in body_text.split('\n') if l.strip()]
     results = []
-    hkd_re    = re.compile(r'^HK\s?\$(\d[\d,]*)$')           # HKD — needs conversion
-    usd_re    = re.compile(r'^(?:US\$|\$)(\d[\d,]*)$')        # already USD
-    price_re2 = re.compile(r'^([A-Z]{2,3})?\$(\d[\d,]*)$')
-    date_re   = re.compile(r'^(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d+')
-    stops_re  = re.compile(r'^(\d+)\s+stops?$|^Nonstop$', re.I)
-    dur_re    = re.compile(r'^\d+\s*hr')
+    date_re  = re.compile(r'^(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d+')
+    stops_re = re.compile(r'^(\d+)\s+stops?$|^Nonstop$', re.I)
+    dur_re   = re.compile(r'^\d+\s*hr')
 
     i = 0
     while i < len(lines):
@@ -127,7 +107,7 @@ def parse_explore_results(body_text):
         if not line or len(line) > 60 or line.startswith('http') or 'Google' in line:
             i += 1; continue
 
-        # Check if this looks like a city name (next lines have date, stops, duration, price)
+        # City candidate: next lines have date, stops, duration, price
         if (i + 4 < len(lines)
                 and date_re.match(lines[i + 1])
                 and (stops_re.match(lines[i + 2]) or stops_re.match(lines[i + 3]))
@@ -140,26 +120,16 @@ def parse_explore_results(body_text):
             dur_str   = lines[j]; j += 1
             price_str = lines[j] if j < len(lines) else ''
 
-            price_usd = None
-            m_hkd = hkd_re.match(price_str)
-            m_usd = usd_re.match(price_str)
-            if m_hkd:
-                price_usd = round(int(m_hkd.group(1).replace(',', '')) * 0.128)  # HKD → USD
-            elif m_usd:
-                price_usd = int(m_usd.group(1).replace(',', ''))  # already USD
-            else:
-                m2 = price_re2.match(price_str)
-                if m2:
-                    price_usd = int(m2.group(2).replace(',', ''))
+            price_usd = parse_price_line(price_str)
 
-            if city not in EXCLUDE_DESTS and price_usd is not None:
+            if not is_excluded_dest(city) and price_usd is not None:
                 stops = 0 if 'nonstop' in stops_str.lower() else int(re.search(r'\d+', stops_str).group(0))
                 results.append({
                     'destination': city,
                     'dates': dates,
                     'stops': stops,
                     'duration': dur_str,
-                    'price_usd': price_usd,
+                    'price_usd': round(price_usd),
                     'price_raw': price_str,
                 })
             i = j + 1
@@ -176,7 +146,7 @@ def scan_origin(page, city_key, city_info, date, cabin=1, cookies_dismissed=Fals
     """Scan one origin city for one-way fares. Returns list of fare dicts."""
     origin_cid = city_info['city_id']
     origin_name = city_info['name']
-    url = build_oneway_explore_url(origin_cid, US_CITY_ID, date, cabin)
+    url = build_oneway_explore_url(origin_cid, US_EXPLORE_ID, date, cabin)
 
     try:
         page.goto(url, timeout=30000)

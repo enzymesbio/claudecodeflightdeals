@@ -525,11 +525,17 @@ def estimate_family_price(pp_price_usd):
 # ---------------------------------------------------------------------------
 # Result card matching — don't blindly click first result
 # ---------------------------------------------------------------------------
-def find_matching_result_card(page, expected_price_usd, tolerance=0.15):
+def find_matching_result_card(page, expected_price_usd,
+                              expected_dest='', expected_stops=-1, tolerance=0.15):
     """
-    Find the result card whose displayed price is closest to expected_price_usd.
-    Falls back to first card when no price match is found.
-    Returns (locator, price_matched: bool).
+    Find the result card best matching destination text, stop count, and price.
+
+    Scoring per candidate card (max 5 points):
+      dest match    — 2 pts (card text contains expected_dest)
+      stops match   — 1 pt  (nonstop/N stop count matches)
+      price match   — 2 pts (within tolerance of expected_price_usd)
+
+    Falls back to first card if no strong match. Returns (locator, matched: bool).
     """
     cards = page.locator('li').filter(has_text=re.compile(r'nonstop|\d+ stop', re.I))
     if cards.count() == 0:
@@ -538,23 +544,40 @@ def find_matching_result_card(page, expected_price_usd, tolerance=0.15):
     if count == 0:
         return None, False
 
-    best_card = cards.first
-    best_delta = float('inf')
-
+    candidates = []
     for idx in range(min(count, 8)):
         try:
             card = cards.nth(idx)
             text = card.inner_text(timeout=2000)
+            text_lower = text.lower()
+
+            dest_ok = not expected_dest or expected_dest.lower() in text_lower
+
+            if expected_stops == 0:
+                stops_ok = 'nonstop' in text_lower
+            elif expected_stops > 0:
+                stops_ok = f'{expected_stops} stop' in text_lower
+            else:
+                stops_ok = True
+
             price = parse_price_line(text)
+            price_delta = float('inf')
+            price_ok = False
             if price and expected_price_usd > 0:
-                delta = abs(price - expected_price_usd) / expected_price_usd
-                if delta < best_delta:
-                    best_delta = delta
-                    best_card = card
+                price_delta = abs(price - expected_price_usd) / expected_price_usd
+                price_ok = price_delta <= tolerance
+
+            score = (2 if dest_ok else 0) + (1 if stops_ok else 0) + (2 if price_ok else 0)
+            candidates.append((score, price_delta, idx, card))
         except Exception:
             pass
 
-    matched = best_delta <= tolerance
+    if not candidates:
+        return cards.first, False
+
+    candidates.sort(key=lambda x: (-x[0], x[1]))
+    best_score, _, _, best_card = candidates[0]
+    matched = best_score >= 3  # at least dest+price or stops+price+dest
     return best_card, matched
 
 
@@ -562,7 +585,7 @@ def find_matching_result_card(page, expected_price_usd, tolerance=0.15):
 # 4-state verification: MAP_ONLY → SEARCH_LOADED → BOOK_PANEL_VISIBLE → PARTNER_LINK_FOUND
 # ---------------------------------------------------------------------------
 def verify_exact_route(page, explore_url, dest_city, route_key,
-                       expected_price_usd=0, proof_dir=None):
+                       expected_price_usd=0, expected_stops=-1, proof_dir=None):
     """
     Navigate from Explore map → click dest → search page → booking panel.
     Returns dict with status and evidence. Only BOOK_PANEL_VISIBLE+ is truly verified.
@@ -598,14 +621,18 @@ def verify_exact_route(page, explore_url, dest_city, route_key,
     page.goto(search_url, wait_until='domcontentloaded', timeout=45000)
     wait_for_flight_ui(page)
 
-    # Click the result card that best matches the expected price
+    # Click the result card that best matches dest + stops + price
     try:
-        card, price_matched = find_matching_result_card(page, expected_price_usd)
+        card, matched = find_matching_result_card(
+            page, expected_price_usd,
+            expected_dest=dest_city,
+            expected_stops=expected_stops,
+        )
         if card:
             card.click(timeout=8000)
             time.sleep(3)
-            if not price_matched and expected_price_usd > 0:
-                print(f"      [warn] no exact price match — clicked best available card")
+            if not matched:
+                print(f"      [warn] no strong route match — clicked best available card")
     except Exception:
         pass
 
@@ -828,9 +855,17 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
                             pp_price = float(bf.get('price_numeric', 0))
                             print(f"      Family est: ${estimate_family_price(pp_price)} (2A+1C)")
 
+                            # Parse stop count for route-aware card matching
+                            _s = bf.get('stops', '').lower()
+                            if 'nonstop' in _s:
+                                _bf_stops = 0
+                            else:
+                                _sm = re.search(r'(\d+)', _s)
+                                _bf_stops = int(_sm.group(1)) if _sm else -1
                             verification = verify_exact_route(
                                 page, url, bf['city'], route_key,
                                 expected_price_usd=pp_price,
+                                expected_stops=_bf_stops,
                                 proof_dir=PROOF_DIR,
                             )
                             status = verification.get('status', 'unknown')

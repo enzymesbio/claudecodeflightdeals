@@ -3,6 +3,10 @@ import json
 import re
 import base64
 from datetime import datetime, timedelta, timezone
+from entities import (
+    ORIGINS as ENTITY_ORIGINS, US_EXPLORE_ID,
+    get_dest_freebase_id, is_excluded_dest,
+)
 
 # --- Protobuf encoding (same as bug_fare_scanner.py) ---
 def encode_varint(value):
@@ -37,7 +41,9 @@ def build_explore_tfs(origin_city_id, dest_city_id, date=None, cabin=3):
            field_bytes(22, field22))
     return base64.urlsafe_b64encode(msg).rstrip(b'=').decode('ascii')
 
-def build_explore_url(origin_city_id, dest_city_id='/m/09c7w0', date=None, cabin=3):
+def build_explore_url(origin_city_id, dest_city_id=None, date=None, cabin=3):
+    if dest_city_id is None:
+        dest_city_id = US_EXPLORE_ID
     if not date:
         default_date = datetime.now() + timedelta(days=120)
         date = default_date.strftime('%Y-%m-%d')
@@ -71,90 +77,16 @@ def build_oneway_search_url(origin_city_id, dest_city_id, depart_date, cabin=3):
     tfs = base64.urlsafe_b64encode(msg).rstrip(b'=').decode('ascii')
     return f'https://www.google.com/travel/flights?tfs={tfs}&hl=en&gl=hk&curr=USD'
 
-# --- City data ---
+# --- City data: derived from entities.py (single source of truth) ---
+# city name → {city_id: freebase_id, code: IATA}
 ORIGINS = {
-    'Jakarta': {'city_id': '/m/044rv', 'code': 'CGK'},
-    'Kuala Lumpur': {'city_id': '/m/049d1', 'code': 'KUL'},
-    'Bangkok': {'city_id': '/m/0fn2g', 'code': 'BKK'},
-    'Singapore': {'city_id': '/m/06t2t', 'code': 'SIN'},
-    'Manila': {'city_id': '/m/0195pd', 'code': 'MNL'},
-    'Ho Chi Minh City': {'city_id': '/m/0hn4h', 'code': 'SGN'},
-    'Hong Kong': {'city_id': '/m/03h64', 'code': 'HKG'},
-    'Seoul': {'city_id': '/m/0hsqf', 'code': 'ICN'},
-    'Tokyo': {'city_id': '/m/07dfk', 'code': 'TYO'},
-    'Taipei': {'city_id': '/m/0ftkx', 'code': 'TPE'},
-    'Shanghai': {'city_id': '/m/06wjf', 'code': 'PVG'},
-    'Hangzhou': {'city_id': '/m/014vm4', 'code': 'HGH'},
-    'Ningbo': {'city_id': '/m/01l33l', 'code': 'NGB'},
-    'Beijing': {'city_id': '/m/01914', 'code': 'PEK'},
-    'Guangzhou': {'city_id': '/m/0393g', 'code': 'CAN'},
-    'Chengdu': {'city_id': '/m/016v46', 'code': 'CTU'},
-    'Chongqing': {'city_id': '/m/017236', 'code': 'CKG'},
-    'Shenzhen': {'city_id': '/m/0lbmv', 'code': 'SZX'},
-    'Nanjing': {'city_id': '/m/05gqy', 'code': 'NKG'},
-    'Qingdao': {'city_id': '/m/01l3s0', 'code': 'TAO'},
-    'Dalian': {'city_id': '/m/01l3k6', 'code': 'DLC'},
-    'Wuhan': {'city_id': '/m/0l3cy', 'code': 'WUH'},
-    'Xiamen': {'city_id': '/m/0126c3', 'code': 'XMN'},
-    'Tianjin': {'city_id': '/m/0df4y', 'code': 'TSN'},
-    'Fuzhou': {'city_id': '/m/01jzm9', 'code': 'FOC'},
+    v['city']: {'city_id': v['google_id'], 'code': k}
+    for k, v in ENTITY_ORIGINS.items()
 }
-
-# Airport IDs for direct search URLs (Freebase format)
-US_DEST = {
-    'Los Angeles': '/m/030qb3t',
-    'Houston': '/m/04lh6',
-    'New York': '/m/02_286',
-    'San Francisco': '/m/0d6lp',
-    'Chicago': '/m/01_d4',
-    'Washington, D.C.': '/m/0rh6k',
-    'Denver': '/m/02cl1',
-    'Las Vegas': '/m/0cv3w',
-    'Seattle': '/m/0d9jr',
-    'Boston': '/m/01cx_',
-    'Miami': '/m/0f2v0',
-    'Atlanta': '/m/013yq',
-    'Tampa': '/m/0hyxv',
-    'Austin': '/m/0vzm',
-    'Dallas': '/m/0f2rq',
-    'Portland': '/m/02frhbc',
-    'San Diego': '/m/071vr',
-    'Philadelphia': '/m/0dclg',
-    'Orlando': '/m/0ply0',
-    'Fort Lauderdale': '/m/0fvyg',
-    'Charlotte': '/m/0fttg',
-    'Nashville': '/m/05jbn',
-    'Phoenix': '/m/0d35y',
-    'Minneapolis': '/m/0fpzwf',
-    'Detroit': '/m/02dtg',
-    'Baltimore': '/m/094jv',
-    'Pittsburgh': '/m/068p2',
-    'New Orleans': '/m/0f8l9c',
-    'Salt Lake City': '/m/0f2r6',
-    'Honolulu': '/m/02hrh0_',
-    'San Antonio': '/m/0f2v0',
-    'Savannah': '/m/0lhn5',
-}
-
-US_CITY_ID = '/m/09c7w0'
 
 CABIN_LABELS = {1: 'Economy', 2: 'Premium Economy', 3: 'Business', 4: 'First'}
 CABIN_COLORS = {1: '#276749', 2: '#2b6cb0', 3: '#6b21a8', 4: '#c2410c'}
 CABIN_EMOJI = {1: '', 2: '', 3: '', 4: ''}
-
-US_DEST_IATA = {
-    'Los Angeles': 'LAX', 'Houston': 'IAH', 'New York': 'JFK',
-    'San Francisco': 'SFO', 'Chicago': 'ORD', 'Washington, D.C.': 'IAD',
-    'Denver': 'DEN', 'Las Vegas': 'LAS', 'Seattle': 'SEA',
-    'Boston': 'BOS', 'Miami': 'MIA', 'Atlanta': 'ATL',
-    'Tampa': 'TPA', 'Austin': 'AUS', 'Dallas': 'DFW',
-    'Portland': 'PDX', 'San Diego': 'SAN', 'Philadelphia': 'PHL',
-    'Orlando': 'MCO', 'Fort Lauderdale': 'FLL', 'Charlotte': 'CLT',
-    'Nashville': 'BNA', 'Phoenix': 'PHX', 'Minneapolis': 'MSP',
-    'Detroit': 'DTW', 'Baltimore': 'BWI', 'Pittsburgh': 'PIT',
-    'New Orleans': 'MSY', 'Salt Lake City': 'SLC', 'Honolulu': 'HNL',
-    'San Antonio': 'SAT', 'Kauai': 'LIH',
-}
 
 TRIPCABIN = {1: 'Y', 2: 'S', 3: 'C', 4: 'F'}
 EXPEDIA_CABIN = {1: 'economy', 2: 'premium', 3: 'business', 4: 'first'}
@@ -532,7 +464,7 @@ explore_combos = [
 ]
 
 for city, cid, cabin, color in explore_combos:
-    url = build_explore_url(cid, US_CITY_ID, cabin=cabin)
+    url = build_explore_url(cid, US_EXPLORE_ID, cabin=cabin)
     label = f'{city} {CABIN_LABELS[cabin]}'
     html += f'<a href="{url}" target="_blank" style="background:{color}11;color:{color};border:1px solid {color}44">{label}</a>\n'
 
@@ -626,7 +558,7 @@ def render_fare_row(fare, origin_cid, cabin_num, deep_lookup=None, drill_lookup=
         verify_links += f'<a href="{detail_url}" target="_blank" rel="noopener" class="verify-btn search-btn">View Flights</a> '
 
     # Explore URL -- always generate one (use departure date if available, else default)
-    explore_url_dated = build_explore_url(origin_cid, US_CITY_ID, date=depart, cabin=cabin_num)
+    explore_url_dated = build_explore_url(origin_cid, US_EXPLORE_ID, date=depart, cabin=cabin_num)
     verify_links += f'<a href="{explore_url_dated}" target="_blank" rel="noopener" class="verify-btn explore-btn">Explore</a> '
 
     # Deep verified booking link (under $2000 family)
@@ -718,8 +650,8 @@ if oneway_fares:
         origin_info = ORIGINS.get(ow_origin, {})
         ow_cid = origin_info.get('city_id', '')
         depart_ow, _ = parse_dates(ow_dates)
-        dest_cid_ow = US_DEST.get(ow_dest, US_CITY_ID)
-        explore_ow = build_explore_url(ow_cid, US_CITY_ID, date=depart_ow, cabin=ow_cabin) if ow_cid else ''
+        dest_cid_ow = get_dest_freebase_id(ow_dest)
+        explore_ow = build_explore_url(ow_cid, US_EXPLORE_ID, date=depart_ow, cabin=ow_cabin) if ow_cid else ''
         links_ow = ''
         if ow_cid and depart_ow:
             ow_search_url = build_oneway_search_url(ow_cid, dest_cid_ow, depart_ow, cabin=ow_cabin)
@@ -950,7 +882,7 @@ for city in scanned_cities:
                 color = '#718096'
                 weight = '400'
             # Build explore link for this city+cabin
-            explore_url = build_explore_url(cid, US_CITY_ID, cabin=cab) if cid else ''
+            explore_url = build_explore_url(cid, US_EXPLORE_ID, cabin=cab) if cid else ''
             link_open = f'<a href="{explore_url}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit">' if explore_url else ''
             link_close = '</a>' if explore_url else ''
             cells.append(f'<td>{link_open}<span style="color:{color};font-weight:{weight}">${p:,.0f}</span><br><span style="color:#a0aec0;font-size:11px">{dest}</span>{link_close}</td>')

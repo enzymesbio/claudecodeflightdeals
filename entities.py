@@ -196,6 +196,16 @@ DESTS_US_FREEBASE = {
     "San Diego":     "/m/071vr",
     "Orlando":       "/m/0ply0",
     "Savannah":      "/m/0lhn5",
+    # Additional cities seen in scan results
+    "Tampa":         "/m/0hyxv",
+    "Fort Lauderdale": "/m/0fvyg",
+    "Charlotte":     "/m/0fttg",
+    "New Orleans":   "/m/0f8l9c",
+    "Pittsburgh":    "/m/068p2",
+    "San Antonio":   "/m/06mxs",
+    "San Jose":      "/m/0d5jd",
+    "Detroit":       "/m/02dtg",
+    "St. Louis":     "/m/0rh62",
 }
 
 # Hub cities: IATA → Freebase ID (convenient for building stopover URLs)
