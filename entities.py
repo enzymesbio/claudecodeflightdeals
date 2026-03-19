@@ -163,3 +163,53 @@ def detect_stopover_iata(text: str, origin_iata: str, dest_iata: str) -> str | N
             return code
 
     return None
+
+
+# ---------------------------------------------------------------------------
+# US destination Freebase city IDs (for point-to-point search URL building)
+# Distinct from airport IATA codes — these are Google/Freebase metro IDs
+# ---------------------------------------------------------------------------
+DESTS_US_FREEBASE = {
+    "Los Angeles":   "/m/030qb3t",
+    "San Francisco": "/m/0d6lp",
+    "New York":      "/m/02_286",
+    "Newark":        "/m/02_286",   # same metro as NYC
+    "Chicago":       "/m/01_d4",
+    "Houston":       "/m/03l2n",
+    "Dallas":        "/m/0f2rq",
+    "Seattle":       "/m/0d9jr",
+    "Boston":        "/m/01cx_",
+    "Miami":         "/m/02_3yh",
+    "Atlanta":       "/m/013yq",
+    "Las Vegas":     "/m/0cv3w",
+    "Denver":        "/m/02cl1",
+    "Portland":      "/m/02frhbc",
+    "Minneapolis":   "/m/0fpzwf",
+    "Baltimore":     "/m/094jv",
+    "Washington DC": "/m/0rh6k",
+    "Salt Lake City": "/m/0f2r6",
+    # Additional cities from drill results
+    "Austin":        "/m/0vzm",
+    "Nashville":     "/m/05jbn",
+    "Philadelphia":  "/m/0dclg",
+    "Phoenix":       "/m/0d35y",
+    "San Diego":     "/m/071vr",
+    "Orlando":       "/m/0ply0",
+    "Savannah":      "/m/0lhn5",
+}
+
+# Hub cities: IATA → Freebase ID (convenient for building stopover URLs)
+HUB_CITIES_FREEBASE = {v["city"]: v["google_id"] for v in HUB_AIRPORTS.values()}
+
+
+def get_dest_freebase_id(city_name: str) -> str:
+    """Return Freebase city ID for a US destination, or US_EXPLORE_ID as fallback."""
+    return DESTS_US_FREEBASE.get(city_name, US_EXPLORE_ID)
+
+
+def get_origin_cid_by_city(city_name: str) -> str | None:
+    """Return Google Freebase ID for an origin city (looked up by city name)."""
+    iata = ORIGINS_BY_CITY.get(city_name)
+    if iata:
+        return ORIGINS[iata]["google_id"]
+    return None

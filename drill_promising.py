@@ -18,6 +18,11 @@ os.environ["PYTHONIOENCODING"] = "utf-8"
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 from playwright.async_api import async_playwright
+from entities import (
+    ORIGINS as ENTITY_ORIGINS, ORIGINS_BY_CITY,
+    HUB_AIRPORTS, HUB_KEYWORDS, HUB_CITIES_FREEBASE,
+    US_EXPLORE_ID, get_origin_cid_by_city, get_dest_freebase_id,
+)
 
 BASE_DIR = 'D:/claude/flights'
 SHANGHAI_TZ = timezone(timedelta(hours=8))
@@ -33,22 +38,12 @@ DURATION_VARIANTS = [7, 10, 14, 21, 28]
 STOPOVER_MIN_NIGHTS = 3
 STOPOVER_MAX_NIGHTS = 5
 
-# Shanghai Freebase ID (for open-jaw return)
-SHANGHAI_CID = '/m/06wjf'
-# Hangzhou Freebase ID (for feeder flight / open-jaw return)
-HANGZHOU_CID = '/m/014vm4'
+# Shanghai / Hangzhou Freebase IDs (home base cities for feeder + open-jaw)
+SHANGHAI_CID = ENTITY_ORIGINS['PVG']['google_id']   # '/m/06wjf'
+HANGZHOU_CID = ENTITY_ORIGINS['HGH']['google_id']   # '/m/014vm4'
 
-# Hub cities for stopover testing and feeder detection
-HUB_CITIES = {
-    'Seoul':       '/m/0hsqf',   # ICN — Korean Air, Asiana, Chinese airlines
-    'Tokyo':       '/m/07dfk',   # NRT/HND — ANA, JAL
-    'Hong Kong':   '/m/03h64',   # HKG — SIA, Cathay
-    'Singapore':   '/m/06t2t',   # SIN — Singapore Airlines
-    'Taipei':      '/m/0ftkx',   # TPE — EVA Air, China Airlines
-    'Beijing':     '/m/01914',   # PEK — Air China
-    'Doha':        '/m/04ddr',   # DOH — Qatar Airways
-    'Dubai':       '/m/01f08y',  # DXB — Emirates
-}
+# Hub cities: city name → Freebase ID (derived from entities — no duplication)
+HUB_CITIES = HUB_CITIES_FREEBASE
 
 # Airlines that commonly route through hubs and allow stopovers
 STOPOVER_AIRLINES = [
@@ -56,31 +51,6 @@ STOPOVER_AIRLINES = [
     'Singapore Airlines', 'Air China', 'China Eastern', 'China Southern',
     'Hainan', 'Sichuan', 'Xiamen Air', 'Shenzhen Airlines', 'Cathay',
 ]
-
-# US city Freebase IDs (needed for stopover leg builds)
-US_DEST = {
-    'Los Angeles': '/m/030qb3t', 'Houston': '/m/03l2n', 'New York': '/m/02_286',
-    'San Francisco': '/m/0d6lp', 'Chicago': '/m/01_d4', 'Washington, D.C.': '/m/0rh6k',
-    'Denver': '/m/02cl1', 'Las Vegas': '/m/0cv3w', 'Seattle': '/m/0d9jr',
-    'Boston': '/m/01cx_', 'Atlanta': '/m/013yq',
-    'Austin': '/m/0vzm', 'Nashville': '/m/05jbn', 'Minneapolis': '/m/0fpzwf',
-    'Dallas': '/m/0f2rq',
-    'Phoenix': '/m/0d35y', 'Baltimore': '/m/094jv', 'Philadelphia': '/m/0dclg',
-    'Portland': '/m/02frhbc', 'Salt Lake City': '/m/0f2r6', 'San Diego': '/m/071vr',
-    'Orlando': '/m/0ply0', 'Savannah': '/m/0lhn5',
-}
-US_CITY_ID = '/m/09c7w0'
-
-ORIGINS = {
-    'Jakarta': '/m/044rv', 'Kuala Lumpur': '/m/049d1', 'Bangkok': '/m/0fn2g',
-    'Singapore': '/m/06t2t', 'Manila': '/m/0195pd', 'Ho Chi Minh City': '/m/0hn4h',
-    'Hong Kong': '/m/03h64', 'Seoul': '/m/0hsqf', 'Tokyo': '/m/07dfk',
-    'Shanghai': '/m/06wjf', 'Hangzhou': '/m/014vm4',
-    'Ningbo': '/m/01l33l', 'Beijing': '/m/01914', 'Guangzhou': '/m/0393g',
-    'Chengdu': '/m/016v46', 'Chongqing': '/m/017236', 'Shenzhen': '/m/0lbmv',
-    'Nanjing': '/m/05gqy', 'Qingdao': '/m/01l3s0', 'Dalian': '/m/01l3k6', 'Wuhan': '/m/0l3cy',
-    'Xiamen': '/m/0126c3', 'Tianjin': '/m/0df4y', 'Fuzhou': '/m/01jzm9',
-}
 
 # ---------------------------------------------------------------------------
 # Protobuf helpers
@@ -201,8 +171,8 @@ async def drill_fare(context, fare, idx, total, sem):
             print(f"  {tag} SKIP {origin}→{dest}: no depart date")
             return None
 
-        origin_cid = ORIGINS.get(origin)
-        dest_cid   = US_DEST.get(dest, US_CITY_ID)
+        origin_cid = get_origin_cid_by_city(origin)
+        dest_cid   = get_dest_freebase_id(dest)
         if not origin_cid:
             print(f"  {tag} SKIP {origin}→{dest}: unknown origin ID")
             return None
@@ -300,21 +270,13 @@ async def drill_fare(context, fare, idx, total, sem):
                     result['feeder'] = feeder_results
         else:
             # Has stops: try to detect actual stopover city then test extended stay
-            KNOWN_STOPS = {
-                'Seoul': ['Seoul', 'ICN', 'Incheon'],
-                'Tokyo': ['Tokyo', 'NRT', 'HND', 'Narita', 'Haneda'],
-                'Hong Kong': ['Hong Kong', 'HKG'],
-                'Singapore': ['Singapore', 'SIN'],
-                'Taipei': ['Taipei', 'TPE'],
-                'Beijing': ['Beijing', 'PEK'],
-                'Doha': ['Doha', 'DOH'],
-                'Dubai': ['Dubai', 'DXB'],
-            }
             # Detect actual stopover for ALL 1-stop fares (not just top 5)
             actual_stop = None
             page_text = await get_page_text(context,
                             build_oneway_url(origin_cid, dest_cid, depart))
-            for city_name, keywords in KNOWN_STOPS.items():
+            # Use HUB_KEYWORDS from entities (IATA → keywords), map to city names
+            for iata, keywords in HUB_KEYWORDS.items():
+                city_name = HUB_AIRPORTS[iata]['city']
                 if any(kw in page_text[:6000] for kw in keywords):
                     actual_stop = city_name
                     result['actual_stopover_city'] = city_name

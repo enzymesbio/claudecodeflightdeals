@@ -33,43 +33,15 @@ from entities import (
 )
 
 # ---------------------------------------------------------------------------
-# Origin cities with Google Freebase city IDs (/m/xxxxx format)
+# Origin cities — derived from entities.py (single source of truth)
 # ---------------------------------------------------------------------------
 ORIGIN_CITIES = {
-    'jakarta':       {'code': 'CGK', 'city_id': '/m/044rv',  'name': 'Jakarta'},
-    'bangkok':       {'code': 'BKK', 'city_id': '/m/0fn2g',  'name': 'Bangkok'},
-    'singapore':     {'code': 'SIN', 'city_id': '/m/06t2t',  'name': 'Singapore'},
-    'manila':        {'code': 'MNL', 'city_id': '/m/0195pd',  'name': 'Manila'},
-    'kuala_lumpur':  {'code': 'KUL', 'city_id': '/m/049d1',  'name': 'Kuala Lumpur'},
-    'ho_chi_minh':   {'code': 'SGN', 'city_id': '/m/0hn4h',  'name': 'Ho Chi Minh City'},
-    'hong_kong':     {'code': 'HKG', 'city_id': '/m/03h64',  'name': 'Hong Kong'},
-    'seoul':         {'code': 'ICN', 'city_id': '/m/0hsqf',  'name': 'Seoul'},
-    'tokyo':         {'code': 'TYO', 'city_id': '/m/07dfk',  'name': 'Tokyo'},
-    # Chinese cities
-    'shanghai':      {'code': 'PVG', 'city_id': '/m/06wjf',  'name': 'Shanghai'},
-    'hangzhou':      {'code': 'HGH', 'city_id': '/m/014vm4', 'name': 'Hangzhou'},
-    'ningbo':        {'code': 'NGB', 'city_id': '/m/01l33l', 'name': 'Ningbo'},
-    'qingdao':       {'code': 'TAO', 'city_id': '/m/01l3s0', 'name': 'Qingdao'},
-    'dalian':        {'code': 'DLC', 'city_id': '/m/01l3k6', 'name': 'Dalian'},
-    'beijing':       {'code': 'PEK', 'city_id': '/m/01914',  'name': 'Beijing'},
-    'wuhan':         {'code': 'WUH', 'city_id': '/m/0l3cy',  'name': 'Wuhan'},
-    'guangzhou':     {'code': 'CAN', 'city_id': '/m/0393g',  'name': 'Guangzhou'},
-    'chongqing':     {'code': 'CKG', 'city_id': '/m/017236', 'name': 'Chongqing'},
-    'chengdu':       {'code': 'CTU', 'city_id': '/m/016v46', 'name': 'Chengdu'},
-    'shenzhen':      {'code': 'SZX', 'city_id': '/m/0lbmv',  'name': 'Shenzhen'},
-    'nanjing':       {'code': 'NKG', 'city_id': '/m/05gqy',  'name': 'Nanjing'},
-    'xiamen':        {'code': 'XMN', 'city_id': '/m/0126c3', 'name': 'Xiamen'},
-    'tianjin':       {'code': 'TSN', 'city_id': '/m/0df4y',  'name': 'Tianjin'},
-    'fuzhou':        {'code': 'FOC', 'city_id': '/m/01jzm9', 'name': 'Fuzhou'},
-}
-
-# United States destination city ID
-US_CITY_ID = '/m/09c7w0'
-
-# Destinations to exclude (Hawaii requires a connecting mainland US flight — not practical)
-EXCLUDE_DESTINATIONS = {
-    'Honolulu', 'Kauai', 'Maui', 'Hilo',
-    '1.5h drive from Washington', '1h drive from Miami', '1h drive from Washington',
+    v['city'].lower().replace(' ', '_'): {
+        'code': k,
+        'city_id': v['google_id'],
+        'name': v['city'],
+    }
+    for k, v in ORIGINS.items()
 }
 
 # Cabin class labels and normal price ranges (RT, in HKD roughly)
@@ -185,119 +157,92 @@ def build_explore_url(origin_city_id, dest_city_id, date=None, cabin=3, currency
 # ---------------------------------------------------------------------------
 # Page parsing
 # ---------------------------------------------------------------------------
-def parse_explore_results(body_text, currency_symbol='HK$'):
+def parse_explore_results(body_text):
     """Parse destination + price groups from Google Flights Explore page text.
+
+    Uses money.parse_price_line() for currency-agnostic, multi-format price parsing.
 
     The Explore page inner_text() format:
         Los Angeles
         Jul 16 - 22
         2 stops
         32 hr 5 min
-        HK$6,961
+        $1,234
         New York
         ...
 
     Returns list of dicts with keys: city, dates, stops, duration, price_raw, price_numeric
+    price_numeric is always USD (money.py handles all currency conversions).
     """
     lines = [l.strip() for l in body_text.split('\n') if l.strip()]
     results = []
 
-    # Build a regex for the price line
-    # Support HK$, US$, $, etc.
-    price_re = re.compile(
-        r'^(?:HK\$|US\$|\$|EUR|€|£|¥|MYR|SGD|THB|PHP|VND|TWD|KRW|JPY\s?)[\s]?(\d[\d,]*(?:\.\d+)?)$'
-    )
-    # Also match plain currency codes like "HK$6,961" or "$1,234"
-    price_re2 = re.compile(r'^([A-Z]{2,3})?\$(\d[\d,]*(?:\.\d+)?)$')
-
-    # Month names for date detection
-    date_re = re.compile(
-        r'^(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d+'
-    )
-    # Stops pattern
+    date_re  = re.compile(r'^(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d+')
     stops_re = re.compile(r'^(?:Nonstop|\d+\s+stops?)$', re.IGNORECASE)
-    # Duration pattern
-    dur_re = re.compile(r'^\d+\s*hr', re.IGNORECASE)
+    dur_re   = re.compile(r'^\d+\s*hr', re.IGNORECASE)
+
+    skip_prefixes = (
+        'http', 'Explore', 'Where', 'Bags', 'Check', 'Carry', 'Price',
+        'Filter', 'Sort', 'Google', 'Travel', 'Flights', 'More',
+        'All filters', 'Stops', 'Airlines', 'Times', 'Duration',
+        'Connecting', 'Emissions', 'Search', 'Sign in', 'Feedback',
+        'About these', 'Learn more', 'View', 'Show', 'Hide', 'Close',
+        'Round trip', 'One way', 'Multi-city', 'Passengers',
+        'Tracked prices', 'Interests', 'Change', 'Showing', 'Based on',
+    )
+    skip_exact = {'bags', 'price', 'times', 'stops', 'duration', 'airlines',
+                  'emissions', 'connecting airports', 'about these results',
+                  'tracked prices', 'interests', 'popular destinations'}
 
     i = 0
     while i < len(lines):
         line = lines[i]
 
-        # Skip obviously non-city lines
-        if price_re.match(line) or price_re2.match(line) or date_re.match(line) or stops_re.match(line) or dur_re.match(line):
+        # Skip lines that are clearly non-city (price/date/stops/duration/UI)
+        if (parse_price_line(line) or date_re.match(line) or
+                stops_re.match(line) or dur_re.match(line)):
             i += 1
             continue
-
-        # Skip very short lines, special chars, or known non-city strings
-        skip_prefixes = (
-            'http', 'Explore', 'Where', 'Bags', 'Check', 'Carry', 'Price',
-            'Filter', 'Sort', 'Google', 'Travel', 'Flights', 'More',
-            'All filters', 'Stops', 'Airlines', 'Times', 'Duration',
-            'Connecting', 'Emissions', 'Search', 'Sign in', 'Feedback',
-            'About these', 'Learn more', 'View', 'Show', 'Hide', 'Close',
-            'Round trip', 'One way', 'Multi-city', 'Passengers',
-            'Tracked prices', 'Interests', 'Change', 'Showing', 'Based on',
-        )
         if len(line) < 3 or any(line.startswith(p) for p in skip_prefixes):
             i += 1
             continue
-        # Also skip lines that are clearly UI elements
-        if line.lower() in ('bags', 'price', 'times', 'stops', 'duration',
-                            'airlines', 'emissions', 'connecting airports',
-                            'about these results', 'tracked prices',
-                            'interests', 'popular destinations'):
+        if line.lower() in skip_exact:
             i += 1
             continue
 
-        # Potential city name -- look ahead for the date/stops/duration/price pattern
-        # We expect: city, date, stops, duration, price  (5 lines)
-        # But some may be missing stops/duration, so be flexible
+        # Potential city name — look ahead for date/stops/duration/price
         candidate_city = line
-        found_price = None
+        found_price_usd = None
         found_dates = None
         found_stops = None
         found_duration = None
 
-        # Look at the next 1-6 lines for the pattern
         for j in range(1, min(7, len(lines) - i)):
             check = lines[i + j]
-
             if date_re.match(check) and not found_dates:
                 found_dates = check
             elif stops_re.match(check) and not found_stops:
                 found_stops = check
             elif dur_re.match(check) and not found_duration:
                 found_duration = check
-            elif not found_price:
-                pm = price_re.match(check)
-                if pm:
-                    found_price = pm.group(1).replace(',', '')
-                    # We consumed up to this line
-                    i = i + j + 1
-                    break
-                pm2 = price_re2.match(check)
-                if pm2:
-                    found_price = pm2.group(2).replace(',', '')
+            elif not found_price_usd:
+                price_usd = parse_price_line(check)
+                if price_usd:
+                    found_price_usd = price_usd
                     i = i + j + 1
                     break
 
-        if found_price and found_dates:
-            try:
-                price_numeric = float(found_price)
-            except ValueError:
-                price_numeric = 0
-
+        if found_price_usd and found_dates:
             results.append({
                 'city': candidate_city,
                 'dates': found_dates,
                 'stops': found_stops or '',
                 'duration': found_duration or '',
-                'price_raw': found_price,
-                'price_numeric': price_numeric,
+                'price_raw': found_price_usd,    # USD float (converted by money.py)
+                'price_numeric': found_price_usd,
             })
         else:
             i += 1
-            continue
 
     return results
 
@@ -510,15 +455,40 @@ def fare_hash(origin_code, dest_city, cabin_num, dates):
     """Stable hash for a fare — used to track ghost failures."""
     return f"{origin_code}:{dest_city}:{cabin_num}:{dates}"
 
-def record_ghost_failure(ghosts, origin_code, dest_city, cabin_num, dates):
+def record_ghost_failure(ghosts, origin_code, dest_city, cabin_num, dates,
+                         status='unknown', reason=''):
+    """Record a verification failure. Stores structured data (count + last status/reason)."""
     key = fare_hash(origin_code, dest_city, cabin_num, dates)
-    ghosts[key] = ghosts.get(key, 0) + 1
-    return ghosts[key]
+    entry = ghosts.get(key)
+    if entry is None:
+        entry = {'count': 0, 'last_status': None, 'last_reason': '', 'last_seen': ''}
+    elif isinstance(entry, int):
+        # Migrate from old plain-int format
+        entry = {'count': entry, 'last_status': None, 'last_reason': '', 'last_seen': ''}
+    entry['count'] += 1
+    entry['last_status'] = status
+    entry['last_reason'] = reason
+    entry['last_seen'] = datetime.utcnow().isoformat() + 'Z'
+    ghosts[key] = entry
+    return entry['count']
+
 
 def is_likely_ghost(ghosts, origin_code, dest_city, cabin_num, dates, threshold=2):
-    """Return True if this fare has failed verification ≥ threshold times."""
+    """
+    Return True if this fare has failed meaningful verification ≥ threshold times.
+    MAP_ONLY failures alone don't suppress — they may just be a UI load issue.
+    """
     key = fare_hash(origin_code, dest_city, cabin_num, dates)
-    return ghosts.get(key, 0) >= threshold
+    entry = ghosts.get(key)
+    if not entry:
+        return False
+    if isinstance(entry, int):
+        return entry >= threshold
+    count = entry.get('count', 0)
+    # Don't suppress if the only recorded failures were MAP_ONLY (possible load issue)
+    if entry.get('last_status') == 'MAP_ONLY' and count < threshold + 1:
+        return False
+    return count >= threshold
 
 
 # ---------------------------------------------------------------------------
@@ -553,9 +523,46 @@ def estimate_family_price(pp_price_usd):
 
 
 # ---------------------------------------------------------------------------
+# Result card matching — don't blindly click first result
+# ---------------------------------------------------------------------------
+def find_matching_result_card(page, expected_price_usd, tolerance=0.15):
+    """
+    Find the result card whose displayed price is closest to expected_price_usd.
+    Falls back to first card when no price match is found.
+    Returns (locator, price_matched: bool).
+    """
+    cards = page.locator('li').filter(has_text=re.compile(r'nonstop|\d+ stop', re.I))
+    if cards.count() == 0:
+        cards = page.locator('li')
+    count = cards.count()
+    if count == 0:
+        return None, False
+
+    best_card = cards.first
+    best_delta = float('inf')
+
+    for idx in range(min(count, 8)):
+        try:
+            card = cards.nth(idx)
+            text = card.inner_text(timeout=2000)
+            price = parse_price_line(text)
+            if price and expected_price_usd > 0:
+                delta = abs(price - expected_price_usd) / expected_price_usd
+                if delta < best_delta:
+                    best_delta = delta
+                    best_card = card
+        except Exception:
+            pass
+
+    matched = best_delta <= tolerance
+    return best_card, matched
+
+
+# ---------------------------------------------------------------------------
 # 4-state verification: MAP_ONLY → SEARCH_LOADED → BOOK_PANEL_VISIBLE → PARTNER_LINK_FOUND
 # ---------------------------------------------------------------------------
-def verify_exact_route(page, explore_url, dest_city, route_key, proof_dir=None):
+def verify_exact_route(page, explore_url, dest_city, route_key,
+                       expected_price_usd=0, proof_dir=None):
     """
     Navigate from Explore map → click dest → search page → booking panel.
     Returns dict with status and evidence. Only BOOK_PANEL_VISIBLE+ is truly verified.
@@ -591,14 +598,14 @@ def verify_exact_route(page, explore_url, dest_city, route_key, proof_dir=None):
     page.goto(search_url, wait_until='domcontentloaded', timeout=45000)
     wait_for_flight_ui(page)
 
-    # Click first result card
+    # Click the result card that best matches the expected price
     try:
-        cards = page.locator('li').filter(has_text=re.compile(r'nonstop|\d+ stop', re.I))
-        if cards.count() == 0:
-            cards = page.locator('li')
-        if cards.count() > 0:
-            cards.first.click(timeout=8000)
+        card, price_matched = find_matching_result_card(page, expected_price_usd)
+        if card:
+            card.click(timeout=8000)
             time.sleep(3)
+            if not price_matched and expected_price_usd > 0:
+                print(f"      [warn] no exact price match — clicked best available card")
     except Exception:
         pass
 
@@ -696,7 +703,7 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
         # First load: accept cookie consent
         print("\nInitializing: loading Google Flights Explore...")
         first_url = build_explore_url(
-            cities_to_scan[0]['city_id'], US_CITY_ID,
+            cities_to_scan[0]['city_id'], US_EXPLORE_ID,
             date=departure_date, cabin=cabins_to_scan[0]
         )
         page.goto(first_url, wait_until='domcontentloaded', timeout=45000)
@@ -722,7 +729,7 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
                 print(f"  [{scan_num}/{total_scans}] {city_key} ({city_code}) -> USA | {cabin_label}")
                 print(f"{'─' * 70}")
 
-                url = build_explore_url(city_id, US_CITY_ID, date=departure_date, cabin=cabin)
+                url = build_explore_url(city_id, US_EXPLORE_ID, date=departure_date, cabin=cabin)
                 print(f"  URL: {url[:120]}...")
 
                 try:
@@ -770,8 +777,13 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
                               f"| {dest['dates']} | {dest['stops']}{marker}")
 
                         family_price = estimate_family_price(price_usd)
-                        ghost_count = ghosts.get(
-                            fare_hash(city_code, dest['city'], cabin, dest['dates']), 0)
+                        _ghost_entry = ghosts.get(
+                            fare_hash(city_code, dest['city'], cabin, dest['dates']))
+                        # Support both old int format and new structured dict format
+                        if isinstance(_ghost_entry, dict):
+                            ghost_count = _ghost_entry.get('count', 0)
+                        else:
+                            ghost_count = _ghost_entry or 0
 
                         result_entry = {
                             'origin_city': city_key,
@@ -817,7 +829,9 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
                             print(f"      Family est: ${estimate_family_price(pp_price)} (2A+1C)")
 
                             verification = verify_exact_route(
-                                page, url, bf['city'], route_key, proof_dir=PROOF_DIR
+                                page, url, bf['city'], route_key,
+                                expected_price_usd=pp_price,
+                                proof_dir=PROOF_DIR,
                             )
                             status = verification.get('status', 'unknown')
                             print(f"      {bf['city']}: {status}")
@@ -825,10 +839,11 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
                             if status in ('BOOK_PANEL_VISIBLE', 'PARTNER_LINK_FOUND'):
                                 print(f"      *** CONFIRMED BOOKABLE *** partners: {verification.get('partner_domains')}")
                             else:
-                                # Record ghost failure
+                                # Record ghost failure with status + reason for smarter suppression
                                 count = record_ghost_failure(
-                                    ghosts, city_code, bf['city'], cabin, bf.get('dates', ''))
-                                print(f"      Ghost failure #{count} recorded")
+                                    ghosts, city_code, bf['city'], cabin, bf.get('dates', ''),
+                                    status=status, reason=verification.get('reason', ''))
+                                print(f"      Ghost failure #{count} ({status}) recorded")
 
                             # Update result entry
                             for entry in all_results['bug_fares']:
@@ -913,9 +928,8 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
     if all_results['cheap_fares']:
         print(f"\n  Cheap fares (below normal range but not bug-fare level):")
         for cf in all_results['cheap_fares']:
-            sym = 'HK$' if cf.get('price_currency') == 'HKD' else '$'
             print(f"    {cf['origin_code']:>3} -> {cf['destination']:<20} | {cf['cabin']:<18} | "
-                  f"{sym}{cf['price_raw']:>8,.0f} (~US${cf['price_usd']:>6,.0f}) | {cf['dates']}")
+                  f"${cf['price_usd']:>6,.0f} | {cf['dates']}")
 
     if not all_results['bug_fares'] and not all_results['cheap_fares']:
         print("\n  No anomalous fares detected in this scan. All prices within normal range.")
