@@ -105,23 +105,18 @@ async def get_price_from_url(context, url, label=''):
                 await btn.first.click()
                 await asyncio.sleep(2)
         except: pass
-        await asyncio.sleep(14)
+        # Semantic wait: wait for flight result cards to render
+        try:
+            await page.wait_for_selector(
+                'li:has-text("stop"), li:has-text("Nonstop")',
+                timeout=14000,
+            )
+        except Exception:
+            await asyncio.sleep(5)  # fallback: brief wait if no cards appear
         text = await page.inner_text('body')
-        # Primary: "From $X" pattern shown in search page header (most reliable)
         price = parse_money_usd(text[:2000])
         if price and 50 <= price <= 15000:
             return round(price)
-        # Secondary: click first result and re-check
-        try:
-            first_li = page.locator('li').first
-            if await first_li.count() > 0:
-                await first_li.click()
-                await asyncio.sleep(4)
-                text2 = (await page.inner_text('body'))[:5000]
-                price2 = parse_money_usd(text2)
-                if price2 and 50 <= price2 <= 15000:
-                    return round(price2)
-        except: pass
         return None
     except Exception:
         return None

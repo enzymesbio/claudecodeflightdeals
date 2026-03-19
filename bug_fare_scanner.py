@@ -30,6 +30,7 @@ from money import parse_money_usd, parse_price_line
 from entities import (
     ORIGINS, ORIGINS_BY_CITY, DESTS_US_BY_CITY, US_EXPLORE_ID,
     is_excluded_dest, detect_stopover_iata, get_origin_google_id,
+    get_dest_freebase_id,
 )
 
 # ---------------------------------------------------------------------------
@@ -492,48 +493,111 @@ def is_likely_ghost(ghosts, origin_code, dest_city, cabin_num, dates, threshold=
 
 
 # ---------------------------------------------------------------------------
-# Family pricing verification (2 adults + 1 child) — builds a family search URL
+# Family verification (2 adults + 1 child) — real second-pass booking check
 # ---------------------------------------------------------------------------
-def build_family_explore_tfs(origin_city_id, dest_city_id, date, cabin=1):
-    """Build TFS for 2 adults + 1 child (age 8) Explore search."""
-    origin_msg = field_bytes(1, field_varint(1, 3) + field_bytes(2, origin_city_id))
-    dest_msg   = field_bytes(2, field_varint(1, 4) + field_bytes(2, dest_city_id))
-
-    # Passenger config: 2 adults + 1 child age 8
-    # Field 16 pax sub-message encoding for 2A+1C
-    pax_config = (
-        b'\x08\x02'          # adults = 2
-        b'\x22\x02\x08\x08'  # child age bucket 8
-    )
-    field22 = field_varint(3, 1) + field_varint(4, 1)
-    leg1 = field_bytes(2, date) + field_bytes(13, origin_msg.replace(field_bytes(1, field_varint(1, 3) + field_bytes(2, origin_city_id)), b'')) + field_bytes(13, field_varint(1, 3) + field_bytes(2, origin_city_id)) + field_bytes(14, field_varint(1, 4) + field_bytes(2, dest_city_id))
-
-    # Simpler: use same TFS as single adult but swap pax_config to 2A+1C
-    # The explore URL with 1 adult is scan-only; for family check we just
-    # multiply the 1-adult price by 2.75 as estimate, OR build proper URL
-    # Return None — family estimate is done via price multiplication for now
-    return None
-
 def estimate_family_price(pp_price_usd):
-    """
-    Estimate total family price (2 adults + 1 child).
-    Child typically pays 75% of adult fare, so: 2 + 0.75 = 2.75× adult.
-    """
+    """Estimate total family price (2A+1C). Child ~75% adult, so 2.75× adult."""
     return round(pp_price_usd * 2.75)
+
+
+def build_family_search_url(origin_cid, dest_cid, depart_date, return_date, cabin=3):
+    """
+    Build Google Flights search URL for 2 adults + 1 child (age 8).
+    TFS: field 8 = 2 adults, field 7 = child age 8 (best-effort protobuf encoding).
+    """
+    o = field_varint(1, 3) + field_bytes(2, origin_cid)
+    d = field_varint(1, 2) + field_bytes(2, dest_cid)
+    l1 = field_bytes(2, depart_date) + field_bytes(13, o) + field_bytes(14, d)
+    l2 = field_bytes(2, return_date) + field_bytes(13, d) + field_bytes(14, o)
+    pax_config = b'\x08\xff\xff\xff\xff\xff\xff\xff\xff\xff\x01'
+    field22 = field_varint(3, 1) + field_varint(4, 1)
+    msg = (
+        field_varint(1, 27) +
+        field_varint(2, 2) +    # round-trip
+        field_bytes(3, l1) +
+        field_bytes(3, l2) +
+        field_varint(8, 2) +    # 2 adults
+        field_varint(7, 8) +    # 1 child age 8
+        field_varint(9, cabin) +
+        field_varint(14, 2) +
+        field_bytes(16, pax_config) +
+        field_varint(19, 1) +
+        field_bytes(22, field22)
+    )
+    tfs = base64.urlsafe_b64encode(msg).rstrip(b'=').decode('ascii')
+    return f'https://www.google.com/travel/flights?tfs={tfs}&hl=en&gl=hk&curr=USD'
+
+
+def verify_family_booking(page_ctx, origin_cid, dest_cid, depart_date, return_date,
+                          cabin, expected_pp_usd):
+    """
+    Second-pass verification: check if 2A+1C booking panel is available.
+    Returns dict with family_price_verified, family_booking_status, family_inventory_ok,
+    family_reprice_delta_pct (vs 2.75× single-adult estimate).
+    """
+    url = build_family_search_url(origin_cid, dest_cid, depart_date, return_date, cabin)
+    result = {
+        'family_search_url': url,
+        'family_price_verified': None,
+        'family_booking_status': None,
+        'family_inventory_ok': False,
+        'family_reprice_delta_pct': None,
+    }
+    family_page = page_ctx.new_page()
+    try:
+        family_page.goto(url, wait_until='domcontentloaded', timeout=45000)
+        wait_for_flight_ui(family_page)
+
+        text = family_page.inner_text('body')[:3000]
+        family_price = parse_price_line(text)
+        result['family_price_verified'] = round(family_price) if family_price else None
+
+        card, _ = find_matching_result_card(family_page, expected_pp_usd * 2.75)
+        if card:
+            card.click(timeout=8000)
+            time.sleep(3)
+
+        book_visible = False
+        for getter in [
+            lambda: family_page.get_by_role('link', name=BOOK_RE),
+            lambda: family_page.get_by_role('button', name=BOOK_RE),
+            lambda: family_page.get_by_text(re.compile(r'book with', re.I)),
+        ]:
+            try:
+                loc = getter()
+                if loc.count() > 0 and loc.first.is_visible():
+                    book_visible = True
+                    break
+            except Exception:
+                pass
+
+        result['family_booking_status'] = 'BOOK_PANEL_VISIBLE' if book_visible else 'SEARCH_LOADED'
+        result['family_inventory_ok'] = book_visible
+        if family_price and expected_pp_usd > 0:
+            expected_family = expected_pp_usd * 2.75
+            result['family_reprice_delta_pct'] = round(
+                (family_price / expected_family - 1) * 100, 1)
+    except Exception as e:
+        result['family_booking_status'] = f'ERROR: {str(e)[:60]}'
+    finally:
+        family_page.close()
+    return result
 
 
 # ---------------------------------------------------------------------------
 # Result card matching — don't blindly click first result
 # ---------------------------------------------------------------------------
 def find_matching_result_card(page, expected_price_usd,
-                              expected_dest='', expected_stops=-1, tolerance=0.15):
+                              expected_dest='', expected_stops=-1,
+                              expected_date_text='', tolerance=0.15):
     """
-    Find the result card best matching destination text, stop count, and price.
+    Find the result card best matching dest, stops, outbound date month, and price.
 
-    Scoring per candidate card (max 5 points):
+    Scoring per candidate card (max 6 points):
       dest match    — 2 pts (card text contains expected_dest)
       stops match   — 1 pt  (nonstop/N stop count matches)
-      price match   — 2 pts (within tolerance of expected_price_usd)
+      date month    — 1 pt  (outbound month appears in card text)
+      price match   — 2 pts (within ±tolerance of expected_price_usd)
 
     Falls back to first card if no strong match. Returns (locator, matched: bool).
     """
@@ -543,6 +607,14 @@ def find_matching_result_card(page, expected_price_usd,
     count = cards.count()
     if count == 0:
         return None, False
+
+    # Extract expected month abbreviation for date matching
+    expected_month = ''
+    if expected_date_text:
+        m = re.search(r'(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)',
+                      expected_date_text, re.I)
+        if m:
+            expected_month = m.group(1).lower()
 
     candidates = []
     for idx in range(min(count, 8)):
@@ -560,6 +632,8 @@ def find_matching_result_card(page, expected_price_usd,
             else:
                 stops_ok = True
 
+            date_ok = not expected_month or expected_month in text_lower
+
             price = parse_price_line(text)
             price_delta = float('inf')
             price_ok = False
@@ -567,7 +641,8 @@ def find_matching_result_card(page, expected_price_usd,
                 price_delta = abs(price - expected_price_usd) / expected_price_usd
                 price_ok = price_delta <= tolerance
 
-            score = (2 if dest_ok else 0) + (1 if stops_ok else 0) + (2 if price_ok else 0)
+            score = ((2 if dest_ok else 0) + (1 if stops_ok else 0) +
+                     (1 if date_ok else 0) + (2 if price_ok else 0))
             candidates.append((score, price_delta, idx, card))
         except Exception:
             pass
@@ -577,18 +652,74 @@ def find_matching_result_card(page, expected_price_usd,
 
     candidates.sort(key=lambda x: (-x[0], x[1]))
     best_score, _, _, best_card = candidates[0]
-    matched = best_score >= 3  # at least dest+price or stops+price+dest
+    matched = best_score >= 3  # dest+price, or stops+price+date, etc.
     return best_card, matched
+
+
+# ---------------------------------------------------------------------------
+# Partner link quality scoring (A/B/C/D)
+# ---------------------------------------------------------------------------
+def score_partner_links(page_ctx, partner_links):
+    """
+    Visit each partner link and assess booking quality.
+    Grade A: matching route/price/CTA all visible
+    Grade B: price+CTA or CTA+route visible
+    Grade C: price or CTA only
+    Grade D: no meaningful booking signal
+    Returns partner_links list with 'grade' added.
+    """
+    if not partner_links:
+        return []
+    scored = []
+    for link in partner_links[:2]:   # max 2 to keep runtime bounded
+        href = link.get('href', '')
+        if not href:
+            scored.append({**link, 'grade': 'D'})
+            continue
+        pg = page_ctx.new_page()
+        try:
+            pg.goto(href, wait_until='domcontentloaded', timeout=20000)
+            time.sleep(4)
+            text = pg.inner_text('body')[:5000]
+            text_lower = text.lower()
+
+            has_price = parse_price_line(text[:3000]) is not None
+            cta_words = ['book now', 'buy now', 'checkout', 'confirm booking',
+                         'continue to book', 'select fare', 'reserve']
+            has_cta = any(w in text_lower for w in cta_words)
+            route_words = ['departure', 'arrival', 'itinerary', 'outbound flight', 'passenger']
+            has_route = any(w in text_lower for w in route_words)
+
+            if has_price and has_cta and has_route:
+                grade = 'A'
+            elif (has_price and has_cta) or (has_cta and has_route):
+                grade = 'B'
+            elif has_cta or has_price:
+                grade = 'C'
+            else:
+                grade = 'D'
+            scored.append({**link, 'grade': grade})
+        except Exception:
+            scored.append({**link, 'grade': 'D'})
+        finally:
+            pg.close()
+    # Append unscored links without opening new pages
+    for link in partner_links[2:]:
+        scored.append({**link, 'grade': '?'})
+    return scored
 
 
 # ---------------------------------------------------------------------------
 # 4-state verification: MAP_ONLY → SEARCH_LOADED → BOOK_PANEL_VISIBLE → PARTNER_LINK_FOUND
 # ---------------------------------------------------------------------------
 def verify_exact_route(page, explore_url, dest_city, route_key,
-                       expected_price_usd=0, expected_stops=-1, proof_dir=None):
+                       expected_price_usd=0, expected_stops=-1,
+                       expected_date_text='', origin_cid=None, dest_cid=None,
+                       depart_date=None, cabin=3, proof_dir=None):
     """
     Navigate from Explore map → click dest → search page → booking panel.
-    Returns dict with status and evidence. Only BOOK_PANEL_VISIBLE+ is truly verified.
+    When BOOK_PANEL_VISIBLE: also runs partner link scoring and 2A+1C family check.
+    Returns dict with status, evidence, partner grades, and family verification.
     """
     print(f"      Verifying: {dest_city} ({route_key})")
 
@@ -621,12 +752,13 @@ def verify_exact_route(page, explore_url, dest_city, route_key,
     page.goto(search_url, wait_until='domcontentloaded', timeout=45000)
     wait_for_flight_ui(page)
 
-    # Click the result card that best matches dest + stops + price
+    # Click the result card that best matches dest + stops + date + price
     try:
         card, matched = find_matching_result_card(
             page, expected_price_usd,
             expected_dest=dest_city,
             expected_stops=expected_stops,
+            expected_date_text=expected_date_text,
         )
         if card:
             card.click(timeout=8000)
@@ -669,6 +801,36 @@ def verify_exact_route(page, explore_url, dest_city, route_key,
         result['status'] = 'BOOK_PANEL_VISIBLE'
     if partner_links:
         result['status'] = 'PARTNER_LINK_FOUND'
+
+    # Partner link quality scoring (top 2 only, avoid excessive page loads)
+    if result['status'] in ('BOOK_PANEL_VISIBLE', 'PARTNER_LINK_FOUND') and partner_links:
+        try:
+            scored = score_partner_links(page.context, partner_links)
+            result['partner_links'] = scored[:5]
+            result['partner_grades'] = {
+                s['href']: s['grade'] for s in scored if s.get('href')
+            }
+            print(f"      Partner grades: "
+                  f"{[s.get('grade') for s in scored[:3]]}")
+        except Exception as _e:
+            print(f"      Partner scoring error: {_e}")
+
+    # Family booking verification (2A+1C) — only when we have the needed params
+    if (result['status'] in ('BOOK_PANEL_VISIBLE', 'PARTNER_LINK_FOUND')
+            and origin_cid and dest_cid and depart_date):
+        try:
+            _dt = datetime.strptime(depart_date, '%Y-%m-%d')
+            ret_date = (_dt + timedelta(days=14)).strftime('%Y-%m-%d')
+            fam = verify_family_booking(
+                page.context, origin_cid, dest_cid,
+                depart_date, ret_date, cabin, expected_price_usd,
+            )
+            result['family'] = fam
+            print(f"      Family 2A+1C: {fam.get('family_booking_status')} "
+                  f"price={fam.get('family_price_verified')} "
+                  f"Δ={fam.get('family_reprice_delta_pct')}%")
+        except Exception as _e:
+            print(f"      Family verification error: {_e}")
 
     # Capture proof bundle
     if proof_dir:
@@ -866,6 +1028,11 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
                                 page, url, bf['city'], route_key,
                                 expected_price_usd=pp_price,
                                 expected_stops=_bf_stops,
+                                expected_date_text=bf.get('dates', ''),
+                                origin_cid=city_id,
+                                dest_cid=get_dest_freebase_id(bf['city']),
+                                depart_date=departure_date,
+                                cabin=cabin,
                                 proof_dir=PROOF_DIR,
                             )
                             status = verification.get('status', 'unknown')
