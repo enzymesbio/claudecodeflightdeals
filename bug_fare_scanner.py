@@ -19,12 +19,14 @@ import json
 import re
 import time
 from datetime import datetime, timedelta
+from urllib.parse import urlparse
 
 os.environ["PYTHONIOENCODING"] = "utf-8"
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 sys.stderr.reconfigure(encoding='utf-8', errors='replace')
 
 from playwright.sync_api import sync_playwright
+from money import parse_money_usd, parse_price_line
 
 # ---------------------------------------------------------------------------
 # Origin cities with Google Freebase city IDs (/m/xxxxx format)
@@ -74,13 +76,17 @@ CABIN_INFO = {
     4: {'label': 'First',           'normal_min_usd': 8000,  'normal_max_usd': 20000},
 }
 
-# Approximate HKD-to-USD conversion (prices on en-HK locale show in HK$)
-HKD_TO_USD = 0.128
+# Bug fare threshold: flag if price is below this fraction of normal_min (static fallback)
+BUG_FARE_THRESHOLD = 0.60  # 60% of normal minimum
 
-# Bug fare threshold: flag if price is below this fraction of normal_min
-BUG_FARE_THRESHOLD = 0.60  # 60% of normal minimum = likely a bug fare
+# Proof screenshots directory
+PROOF_DIR = 'D:/claude/flights/proof'
 
 RESULTS_FILE = 'D:/claude/flights/scanner_results.json'
+
+# Regex for booking CTAs
+BOOK_RE = re.compile(r'book|book with|select', re.I)
+PRICE_NARROW_RE = re.compile(r'(?:US\$|\$)\s?\d[\d,]*(?:\.\d{1,2})?')
 
 
 # ---------------------------------------------------------------------------
@@ -292,38 +298,56 @@ def parse_explore_results(body_text, currency_symbol='HK$'):
     return results
 
 
-def convert_price_to_usd(price_numeric, currency='HKD'):
-    """Convert price to USD for threshold comparison."""
-    rates = {
-        'HKD': 0.128,
-        'USD': 1.0,
-        'SGD': 0.75,
-        'THB': 0.029,
-        'MYR': 0.23,
-        'PHP': 0.018,
-        'VND': 0.000041,
-        'TWD': 0.031,
-        'KRW': 0.00075,
-        'JPY': 0.0067,
-    }
-    return price_numeric * rates.get(currency, 0.128)
-
-
-def classify_fare(price_usd, cabin):
-    """Classify a fare as normal, cheap, or potential bug fare."""
-    info = CABIN_INFO[cabin]
-    bug_threshold = info['normal_min_usd'] * BUG_FARE_THRESHOLD
-
+def classify_fare(price_usd, cabin, baseline_median=None):
+    """
+    Classify fare using anomaly scoring against baseline when available,
+    falling back to static cabin thresholds.
+    Returns (label, ratio_to_normal).
+    Labels: BUG_CANDIDATE, SALE_CANDIDATE, CHEAP, NORMAL, EXPENSIVE
+    """
     if price_usd <= 0:
-        return 'unknown', 0
-    elif price_usd < bug_threshold:
-        return 'BUG_FARE', round(bug_threshold, 0)
-    elif price_usd < info['normal_min_usd']:
-        return 'CHEAP', round(info['normal_min_usd'], 0)
-    elif price_usd <= info['normal_max_usd']:
-        return 'NORMAL', 0
+        return 'unknown', 0.0
+
+    info = CABIN_INFO[cabin]
+    static_min = info['normal_min_usd']
+
+    if baseline_median and baseline_median > 0:
+        ratio = price_usd / baseline_median
+        if price_usd <= min(baseline_median * 0.55, static_min * 0.48):
+            return 'BUG_CANDIDATE', ratio
+        if price_usd <= baseline_median * 0.75:
+            return 'SALE_CANDIDATE', ratio
+        if price_usd < static_min:
+            return 'CHEAP', ratio
+        return 'NORMAL', ratio
     else:
-        return 'EXPENSIVE', 0
+        # Static fallback — no baseline data yet
+        ratio = price_usd / static_min
+        bug_threshold = static_min * BUG_FARE_THRESHOLD
+        if price_usd < bug_threshold:
+            return 'BUG_CANDIDATE', ratio
+        if price_usd < static_min * 0.80:
+            return 'SALE_CANDIDATE', ratio
+        if price_usd < static_min:
+            return 'CHEAP', ratio
+        if price_usd <= info['normal_max_usd']:
+            return 'NORMAL', ratio
+        return 'EXPENSIVE', ratio
+
+
+def cross_cabin_signals(econ_usd, prem_usd, biz_usd):
+    """
+    Detect cross-cabin price inversions — strong real bug fare signals.
+    e.g. Business priced near/below Economy is almost always a pricing error.
+    """
+    signals = []
+    if biz_usd and econ_usd and biz_usd <= econ_usd * 1.15:
+        signals.append('BIZ_NEAR_ECON')
+    if prem_usd and econ_usd and prem_usd < econ_usd:
+        signals.append('PREM_BELOW_ECON')
+    if biz_usd and prem_usd and biz_usd < prem_usd:
+        signals.append('BIZ_BELOW_PREM')
+    return signals
 
 
 # ---------------------------------------------------------------------------
@@ -377,80 +401,192 @@ def handle_dialogs(page):
 
 
 # ---------------------------------------------------------------------------
-# Bug fare verification
+# Semantic wait — replaces bare time.sleep() for Google Flights SPA
 # ---------------------------------------------------------------------------
-def verify_bug_fare(page, dest_city, origin_info, cabin):
-    """Click through to verify a potential bug fare by finding the flight detail link."""
-    print(f"      Verifying bug fare to {dest_city}...")
+def wait_for_flight_ui(page, timeout=25000):
+    """Wait for Google Flights UI to render useful content."""
+    candidates = [
+        lambda: page.get_by_text(re.compile(r'Best flights|Cheapest', re.I)).first,
+        lambda: page.get_by_text(re.compile(r'(?:US\$|\$)\d', re.I)).first,
+        lambda: page.locator('li').first,
+    ]
+    for getter in candidates:
+        try:
+            loc = getter()
+            loc.wait_for(state='visible', timeout=timeout)
+            return True
+        except Exception:
+            pass
+    return False
+
+
+# ---------------------------------------------------------------------------
+# Partner link + price extraction (scoped, not body-wide)
+# ---------------------------------------------------------------------------
+def find_partner_links(page):
+    """Find external booking links (non-Google) visible on the current page."""
+    links = page.evaluate("""() => {
+        const out = [];
+        for (const a of document.querySelectorAll('a[href]')) {
+            const txt = (a.innerText || a.textContent || '').trim();
+            const href = a.href || '';
+            if (!href || !/^https?:/i.test(href)) continue;
+            try { if (/google\\./.test(new URL(href).hostname)) continue; }
+            catch(e) { continue; }
+            if (/book|book with|select|continue/i.test(txt)) {
+                out.push({text: txt.substring(0, 100), href});
+            }
+        }
+        return out;
+    }""")
+    seen = set()
+    uniq = []
+    for x in links:
+        key = (x['text'], x['href'])
+        if key not in seen:
+            uniq.append(x)
+            seen.add(key)
+    return uniq
+
+
+def capture_visible_prices(page):
+    """Extract all visible price strings — scoped to first 20k chars of body."""
+    text = page.inner_text('body')[:20000]
+    return sorted(set(m.group(0) for m in PRICE_NARROW_RE.finditer(text)))[:20]
+
+
+# ---------------------------------------------------------------------------
+# Proof screenshot bundle
+# ---------------------------------------------------------------------------
+def capture_proof(page, route_key, out_dir):
+    """
+    Save full-page screenshot + tight book-button crop + meta JSON.
+    Returns True if book button was found.
+    """
+    os.makedirs(out_dir, exist_ok=True)
+    # Full page
+    page.screenshot(path=os.path.join(out_dir, f'{route_key}_full.png'), full_page=True)
+    # Tight crop of book button
+    found_button = False
+    for getter in [
+        lambda: page.get_by_role('link', name=BOOK_RE).first,
+        lambda: page.get_by_role('button', name=BOOK_RE).first,
+        lambda: page.get_by_text(re.compile(r'book with', re.I)).first,
+    ]:
+        try:
+            loc = getter()
+            if loc.is_visible(timeout=3000):
+                loc.scroll_into_view_if_needed(timeout=3000)
+                loc.screenshot(path=os.path.join(out_dir, f'{route_key}_book_button.png'))
+                found_button = True
+                break
+        except Exception:
+            pass
+    return found_button
+
+
+# ---------------------------------------------------------------------------
+# 4-state verification: MAP_ONLY → SEARCH_LOADED → BOOK_PANEL_VISIBLE → PARTNER_LINK_FOUND
+# ---------------------------------------------------------------------------
+def verify_exact_route(page, explore_url, dest_city, route_key, proof_dir=None):
+    """
+    Navigate from Explore map → click dest → search page → booking panel.
+    Returns dict with status and evidence. Only BOOK_PANEL_VISIBLE+ is truly verified.
+    """
+    print(f"      Verifying: {dest_city} ({route_key})")
+
+    # Go to Explore, click destination
+    page.goto(explore_url, wait_until='domcontentloaded', timeout=45000)
+    wait_for_flight_ui(page)
+
     try:
-        # Look for clickable elements containing the city name
-        # Try clicking on the destination card first
-        city_el = page.locator(f'text="{dest_city}"').first
-        if city_el.is_visible(timeout=3000):
-            city_el.click()
-            time.sleep(3)
-
-            # Now look for "View flights" links or similar
-            flight_links = page.evaluate("""() => {
-                const links = [];
-                document.querySelectorAll('a[href*="travel/flights"]').forEach(a => {
-                    links.push({href: a.href, text: a.innerText.substring(0, 100)});
-                });
-                return links;
-            }""")
-
-            if flight_links:
-                print(f"      Found {len(flight_links)} flight link(s)")
-                # Navigate to the first one
-                link = flight_links[0]['href']
-                page.goto(link, wait_until='networkidle', timeout=30000)
-                time.sleep(4)
-
-                # Get page text to extract flight details
-                detail_text = page.inner_text('body')
-                detail_lines = [l.strip() for l in detail_text.split('\n') if l.strip()]
-
-                # Extract key info: airlines, times, prices
-                airlines = []
-                prices = []
-                for dl in detail_lines:
-                    # Airlines
-                    for airline in ['Garuda', 'Singapore Airlines', 'Cathay Pacific', 'ANA',
-                                    'Japan Airlines', 'Korean Air', 'Thai', 'EVA Air',
-                                    'China Airlines', 'Philippine Airlines', 'Vietnam Airlines',
-                                    'Malaysia Airlines', 'AirAsia', 'Cebu Pacific',
-                                    'United', 'Delta', 'American', 'JetBlue',
-                                    'Qatar', 'Emirates', 'Turkish', 'Etihad',
-                                    'China Eastern', 'China Southern', 'Air China',
-                                    'Asiana', 'Scoot', 'Zipair', 'Starlux']:
-                        if airline.lower() in dl.lower() and airline not in airlines:
-                            airlines.append(airline)
-                    # Prices
-                    pm = re.search(r'(?:HK\$|US\$|\$)(\d[\d,]*)', dl)
-                    if pm:
-                        p = int(pm.group(1).replace(',', ''))
-                        if p > 50:
-                            prices.append(p)
-
-                return {
-                    'verified': True,
-                    'airlines': airlines[:5],
-                    'prices_found': sorted(set(prices))[:10],
-                    'detail_url': link,
-                    'sample_lines': [l for l in detail_lines if any(
-                        kw in l.lower() for kw in ['hr', 'stop', 'nonstop', '$', 'airlines', 'depart', 'arrive']
-                    )][:15],
-                }
-            else:
-                print("      No flight links found on detail page")
-                return {'verified': False, 'reason': 'no_flight_links'}
-        else:
-            print(f"      Could not find clickable element for {dest_city}")
-            return {'verified': False, 'reason': 'city_not_clickable'}
-
+        city_el = page.get_by_text(dest_city, exact=False).first
+        city_el.wait_for(state='visible', timeout=5000)
+        city_el.click()
+        time.sleep(2)
     except Exception as e:
-        print(f"      Verification error: {e}")
-        return {'verified': False, 'reason': str(e)}
+        return {'status': 'MAP_ONLY', 'reason': f'dest_not_clickable: {e}', 'google_url': explore_url}
+
+    # Find flights search link
+    flight_links = page.evaluate("""() => {
+        const links = [];
+        document.querySelectorAll('a[href*="travel/flights"]').forEach(a => {
+            links.push({href: a.href, text: (a.innerText || '').substring(0, 60)});
+        });
+        return links;
+    }""")
+
+    if not flight_links:
+        return {'status': 'MAP_ONLY', 'reason': 'no_flight_links', 'google_url': page.url}
+
+    # Navigate to search page
+    search_url = flight_links[0]['href']
+    page.goto(search_url, wait_until='domcontentloaded', timeout=45000)
+    wait_for_flight_ui(page)
+
+    # Click first result card
+    try:
+        cards = page.locator('li').filter(has_text=re.compile(r'nonstop|\d+ stop', re.I))
+        if cards.count() == 0:
+            cards = page.locator('li')
+        if cards.count() > 0:
+            cards.first.click(timeout=8000)
+            time.sleep(3)
+    except Exception:
+        pass
+
+    # Check for booking panel
+    book_visible = False
+    for getter in [
+        lambda: page.get_by_role('link', name=BOOK_RE),
+        lambda: page.get_by_role('button', name=BOOK_RE),
+        lambda: page.get_by_text(re.compile(r'book with', re.I)),
+    ]:
+        try:
+            loc = getter()
+            if loc.count() > 0 and loc.first.is_visible():
+                book_visible = True
+                break
+        except Exception:
+            pass
+
+    partner_links = find_partner_links(page)
+    visible_prices = capture_visible_prices(page)
+
+    result = {
+        'status': 'SEARCH_LOADED',
+        'google_booking_url': page.url,
+        'visible_prices': visible_prices,
+        'partner_links': partner_links[:5],
+        'partner_domains': sorted({
+            urlparse(x['href']).netloc.lower()
+            for x in partner_links if x.get('href')
+        }),
+    }
+
+    if book_visible:
+        result['status'] = 'BOOK_PANEL_VISIBLE'
+    if partner_links:
+        result['status'] = 'PARTNER_LINK_FOUND'
+
+    # Capture proof bundle
+    if proof_dir:
+        has_button = capture_proof(page, route_key, proof_dir)
+        meta = {
+            'route_key': route_key,
+            'verified_at': datetime.utcnow().isoformat() + 'Z',
+            'status': result['status'],
+            'google_booking_url': result['google_booking_url'],
+            'visible_prices': visible_prices,
+            'partner_domains': result['partner_domains'],
+            'book_button_screenshot': has_button,
+        }
+        with open(os.path.join(proof_dir, f'{route_key}_meta.json'), 'w', encoding='utf-8') as f:
+            json.dump(meta, f, ensure_ascii=False, indent=2)
+
+    print(f"      Status: {result['status']} | prices: {visible_prices[:3]} | "
+          f"partners: {result['partner_domains'][:3]}")
+    return result
 
 
 # ---------------------------------------------------------------------------
@@ -495,10 +631,10 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
             cities_to_scan[0]['city_id'], US_CITY_ID,
             date=departure_date, cabin=cabins_to_scan[0]
         )
-        page.goto(first_url, wait_until='networkidle', timeout=45000)
-        time.sleep(3)
+        page.goto(first_url, wait_until='domcontentloaded', timeout=45000)
+        wait_for_flight_ui(page)
         handle_dialogs(page)
-        time.sleep(2)
+        time.sleep(1)
 
         cookies_accepted = True
         total_scans = len(cities_to_scan) * len(cabins_to_scan)
@@ -522,18 +658,14 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
                 print(f"  URL: {url[:120]}...")
 
                 try:
-                    page.goto(url, wait_until='networkidle', timeout=45000)
-                    time.sleep(5)  # Allow dynamic content to load
+                    page.goto(url, wait_until='domcontentloaded', timeout=45000)
+                    wait_for_flight_ui(page)  # semantic wait — no bare sleep
 
                     # Get body text
                     body_text = page.inner_text('body')
 
-                    # Detect currency from page
-                    page_currency = 'USD'  # default since we use curr=USD
-                    if 'HK$' in body_text and 'HKD' in body_text:
-                        page_currency = 'HKD'
-                    elif 'US$' in body_text or 'USD' in body_text:
-                        page_currency = 'USD'
+                    # Currency is always USD since curr=USD in URL
+                    page_currency = 'USD'
 
                     # Parse results
                     destinations = parse_explore_results(body_text)
@@ -554,18 +686,19 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
                     for dest in destinations:
                         if dest['city'] in EXCLUDE_DESTINATIONS:
                             continue
-                        price_raw = dest['price_numeric']
-                        price_usd = convert_price_to_usd(price_raw, page_currency)
-                        classification, threshold = classify_fare(price_usd, cabin)
+                        # price_numeric is already USD (curr=USD in URL)
+                        price_usd = float(dest['price_numeric'])
+                        classification, ratio = classify_fare(price_usd, cabin)
 
                         marker = ''
-                        if classification == 'BUG_FARE':
-                            marker = ' *** BUG FARE ***'
+                        if classification == 'BUG_CANDIDATE':
+                            marker = ' *** BUG CANDIDATE ***'
+                        elif classification == 'SALE_CANDIDATE':
+                            marker = ' (sale!)'
                         elif classification == 'CHEAP':
-                            marker = ' (cheap!)'
+                            marker = ' (cheap)'
 
-                        sym = 'HK$' if page_currency == 'HKD' else '$'
-                        print(f"    {sym}{price_raw:>8,.0f} (~US${price_usd:>6,.0f}) -> {dest['city']:<20} "
+                        print(f"    ${price_usd:>6,.0f} -> {dest['city']:<20} "
                               f"| {dest['dates']} | {dest['stops']}{marker}")
 
                         result_entry = {
@@ -574,45 +707,46 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
                             'destination': dest['city'],
                             'cabin': cabin_label,
                             'cabin_num': cabin,
-                            'price_raw': price_raw,
-                            'price_currency': page_currency,
                             'price_usd': round(price_usd, 2),
                             'dates': dest['dates'],
                             'stops': dest['stops'],
                             'duration': dest['duration'],
                             'classification': classification,
+                            'ratio': round(ratio, 3),
                             'scan_timestamp': scan_timestamp,
+                            'verification': None,
                         }
                         all_results['destinations'].append(result_entry)
 
-                        if classification == 'BUG_FARE':
+                        if classification in ('BUG_CANDIDATE',):
                             all_results['bug_fares'].append(result_entry)
-                        elif classification == 'CHEAP':
+                        elif classification in ('SALE_CANDIDATE', 'CHEAP'):
                             all_results['cheap_fares'].append(result_entry)
 
-                    # If we found bug fares, try to verify the first few
-                    bug_fares_this_scan = [d for d in destinations
-                                           if classify_fare(
-                                               convert_price_to_usd(d['price_numeric'], page_currency), cabin
-                                           )[0] == 'BUG_FARE']
+                    # Verify top bug candidates with 4-state verifier
+                    bug_candidates_this_scan = [
+                        d for d in destinations
+                        if classify_fare(float(d.get('price_numeric', 0)), cabin)[0] == 'BUG_CANDIDATE'
+                    ]
 
-                    if bug_fares_this_scan:
-                        print(f"\n  >> {len(bug_fares_this_scan)} potential bug fare(s) detected! Verifying...")
-                        for bf in bug_fares_this_scan[:3]:  # Verify up to 3
-                            # Need to go back to explore page first
-                            page.goto(url, wait_until='networkidle', timeout=45000)
-                            time.sleep(4)
-                            verification = verify_bug_fare(page, bf['city'], city_info, cabin)
-                            if verification.get('verified'):
-                                print(f"      VERIFIED: {bf['city']} - Airlines: {verification.get('airlines', [])}")
-                                print(f"      Prices seen: {verification.get('prices_found', [])}")
-                                # Update the result entry with verification data
-                                for entry in all_results['bug_fares']:
-                                    if (entry['destination'] == bf['city'] and
-                                            entry['origin_code'] == city_code and
-                                            entry['cabin_num'] == cabin):
-                                        entry['verification'] = verification
-                                        break
+                    if bug_candidates_this_scan:
+                        print(f"\n  >> {len(bug_candidates_this_scan)} bug candidate(s)! Running 4-state verification...")
+                        for bf in bug_candidates_this_scan[:3]:
+                            route_key = f"{city_code}_{bf['city'].replace(' ','_')}_{cabin_label}"
+                            verification = verify_exact_route(
+                                page, url, bf['city'], route_key, proof_dir=PROOF_DIR
+                            )
+                            status = verification.get('status', 'unknown')
+                            print(f"      {bf['city']}: {status}")
+                            if status in ('BOOK_PANEL_VISIBLE', 'PARTNER_LINK_FOUND'):
+                                print(f"      *** CONFIRMED BOOKABLE *** partners: {verification.get('partner_domains')}")
+                            # Update result entry
+                            for entry in all_results['bug_fares']:
+                                if (entry['destination'] == bf['city'] and
+                                        entry['origin_code'] == city_code and
+                                        entry['cabin_num'] == cabin):
+                                    entry['verification'] = verification
+                                    break
 
                 except Exception as e:
                     print(f"  ERROR loading page: {e}")
@@ -637,10 +771,10 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
             {
                 'route': f"{bf['origin_code']} -> {bf['destination']}",
                 'cabin': bf['cabin'],
-                'price_raw': bf['price_raw'],
-                'price_currency': bf['price_currency'],
                 'price_usd': bf['price_usd'],
                 'dates': bf['dates'],
+                'verification_status': (bf.get('verification') or {}).get('status'),
+                'partner_domains': (bf.get('verification') or {}).get('partner_domains', []),
             }
             for bf in all_results['bug_fares']
         ],
@@ -648,8 +782,6 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
             {
                 'route': f"{cf['origin_code']} -> {cf['destination']}",
                 'cabin': cf['cabin'],
-                'price_raw': cf['price_raw'],
-                'price_currency': cf['price_currency'],
                 'price_usd': cf['price_usd'],
                 'dates': cf['dates'],
             }
@@ -673,16 +805,18 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
 
     if all_results['bug_fares']:
         print(f"\n  {'='*60}")
-        print(f"  *** BUG FARES DETECTED ***")
+        print(f"  *** BUG CANDIDATES DETECTED ***")
         print(f"  {'='*60}")
         for bf in all_results['bug_fares']:
-            sym = 'HK$' if bf.get('price_currency') == 'HKD' else '$'
+            v = bf.get('verification') or {}
+            vstatus = v.get('status', 'unverified')
+            confirmed = '✓ CONFIRMED' if vstatus in ('BOOK_PANEL_VISIBLE', 'PARTNER_LINK_FOUND') else vstatus
             print(f"    {bf['origin_code']:>3} -> {bf['destination']:<20} | {bf['cabin']:<18} | "
-                  f"{sym}{bf['price_raw']:>8,.0f} (~US${bf['price_usd']:>6,.0f}) | {bf['dates']}")
-            if 'verification' in bf and bf['verification'].get('verified'):
-                v = bf['verification']
-                print(f"         Airlines: {', '.join(v.get('airlines', []))}")
-                print(f"         Detail URL: {v.get('detail_url', 'N/A')[:100]}")
+                  f"${bf['price_usd']:>6,.0f} | {bf['dates']} | {confirmed}")
+            if v.get('partner_domains'):
+                print(f"         Partners: {', '.join(v['partner_domains'][:3])}")
+            if v.get('google_booking_url'):
+                print(f"         URL: {v['google_booking_url'][:100]}")
 
     if all_results['cheap_fares']:
         print(f"\n  Cheap fares (below normal range but not bug-fare level):")

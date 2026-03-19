@@ -262,7 +262,7 @@ class FlightSearcher:
         for name, value in self.CONSENT_COOKIES.items():
             self.session.cookies.set(name, value, domain='.google.com')
 
-    def _build_search_url(self, legs: list, adults: int = 1, children: int = 0) -> str:
+    def _build_search_url(self, legs: list, adults: int = 1, children: int = 0, cabin: str = 'economy') -> str:
         """Build the Google Flights search URL using natural language query.
 
         Google Flights renders full flight results (with prices in ARIA labels)
@@ -277,7 +277,11 @@ class FlightSearcher:
         else:
             trip = "round trip"
 
-        parts = [f"flights from {leg['origin']} to {leg['destination']} on {date_str} {trip}"]
+        cabin_str = ""
+        if cabin and cabin.lower() != 'economy':
+            cabin_str = f" {cabin} class"
+
+        parts = [f"{cabin_str} flights from {leg['origin']} to {leg['destination']} on {date_str} {trip}".strip()]
 
         if adults > 1:
             parts.append(f"{adults} adults")
@@ -388,6 +392,7 @@ class FlightSearcher:
         adults: int = 1,
         children: int = 0,
         max_retries: int = 3,
+        cabin: str = 'economy',
     ) -> dict:
         """
         Search for flights.
@@ -409,7 +414,7 @@ class FlightSearcher:
             legs.append({'origin': destination.upper(), 'destination': origin.upper(), 'date': return_date})
 
         trip_type = "round_trip" if return_date else "one_way"
-        url = self._build_search_url(legs, adults, children)
+        url = self._build_search_url(legs, adults, children, cabin=cabin)
 
         for attempt in range(max_retries):
             try:

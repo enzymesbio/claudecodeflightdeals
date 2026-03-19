@@ -1,5 +1,5 @@
 {
-  "drill_time": "2026-03-19T15:29:06.933563+08:00",
+  "drill_time": "2026-03-19T15:28:39.520004+08:00",
   "total_drilled": 20,
   "duration_variants_tested": [
     7,
@@ -77,7 +77,7 @@
         "7d": 558,
         "10d": 591,
         "14d": 558,
-        "21d": 832,
+        "21d": 958,
         "28d": 711
       },
       "valid_duration_min": 7,
@@ -426,7 +426,7 @@
       "duration_results": {
         "7d": 635,
         "10d": 732,
-        "14d": 1119,
+        "14d": 1170,
         "28d": 997
       },
       "valid_duration_min": 7,
@@ -476,8 +476,8 @@
       "airline": "",
       "stops": 1,
       "duration_results": {
-        "7d": 715,
-        "10d": 665,
+        "7d": 716,
+        "10d": 666,
         "14d": 848,
         "21d": 1014
       },
@@ -557,9 +557,9 @@
         },
         "6n": {
           "hub": "Seoul",
-          "leg1_price": 489,
+          "leg1_price": 675,
           "leg2_price": 829,
-          "total_outbound_pp": 1318
+          "total_outbound_pp": 1504
         }
       },
       "stopover_return": {
@@ -660,7 +660,7 @@
       "stops": 0,
       "duration_results": {
         "7d": 683,
-        "10d": 969,
+        "10d": 884,
         "14d": 683,
         "21d": 878,
         "28d": 878
