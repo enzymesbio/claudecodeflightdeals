@@ -27,6 +27,10 @@ sys.stderr.reconfigure(encoding='utf-8', errors='replace')
 
 from playwright.sync_api import sync_playwright
 from money import parse_money_usd, parse_price_line
+from entities import (
+    ORIGINS, ORIGINS_BY_CITY, DESTS_US_BY_CITY, US_EXPLORE_ID,
+    is_excluded_dest, detect_stopover_iata, get_origin_google_id,
+)
 
 # ---------------------------------------------------------------------------
 # Origin cities with Google Freebase city IDs (/m/xxxxx format)
@@ -486,6 +490,69 @@ def capture_proof(page, route_key, out_dir):
 
 
 # ---------------------------------------------------------------------------
+# Ghost-fare tracking (persistent across scan runs)
+# ---------------------------------------------------------------------------
+GHOST_FILE = 'D:/claude/flights/ghost_fares.json'
+
+def load_ghost_fares():
+    """Load the ghost fare registry (route → failure count)."""
+    try:
+        with open(GHOST_FILE, encoding='utf-8') as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+def save_ghost_fares(ghosts):
+    with open(GHOST_FILE, 'w', encoding='utf-8') as f:
+        json.dump(ghosts, f, indent=2, ensure_ascii=False)
+
+def fare_hash(origin_code, dest_city, cabin_num, dates):
+    """Stable hash for a fare — used to track ghost failures."""
+    return f"{origin_code}:{dest_city}:{cabin_num}:{dates}"
+
+def record_ghost_failure(ghosts, origin_code, dest_city, cabin_num, dates):
+    key = fare_hash(origin_code, dest_city, cabin_num, dates)
+    ghosts[key] = ghosts.get(key, 0) + 1
+    return ghosts[key]
+
+def is_likely_ghost(ghosts, origin_code, dest_city, cabin_num, dates, threshold=2):
+    """Return True if this fare has failed verification ≥ threshold times."""
+    key = fare_hash(origin_code, dest_city, cabin_num, dates)
+    return ghosts.get(key, 0) >= threshold
+
+
+# ---------------------------------------------------------------------------
+# Family pricing verification (2 adults + 1 child) — builds a family search URL
+# ---------------------------------------------------------------------------
+def build_family_explore_tfs(origin_city_id, dest_city_id, date, cabin=1):
+    """Build TFS for 2 adults + 1 child (age 8) Explore search."""
+    origin_msg = field_bytes(1, field_varint(1, 3) + field_bytes(2, origin_city_id))
+    dest_msg   = field_bytes(2, field_varint(1, 4) + field_bytes(2, dest_city_id))
+
+    # Passenger config: 2 adults + 1 child age 8
+    # Field 16 pax sub-message encoding for 2A+1C
+    pax_config = (
+        b'\x08\x02'          # adults = 2
+        b'\x22\x02\x08\x08'  # child age bucket 8
+    )
+    field22 = field_varint(3, 1) + field_varint(4, 1)
+    leg1 = field_bytes(2, date) + field_bytes(13, origin_msg.replace(field_bytes(1, field_varint(1, 3) + field_bytes(2, origin_city_id)), b'')) + field_bytes(13, field_varint(1, 3) + field_bytes(2, origin_city_id)) + field_bytes(14, field_varint(1, 4) + field_bytes(2, dest_city_id))
+
+    # Simpler: use same TFS as single adult but swap pax_config to 2A+1C
+    # The explore URL with 1 adult is scan-only; for family check we just
+    # multiply the 1-adult price by 2.75 as estimate, OR build proper URL
+    # Return None — family estimate is done via price multiplication for now
+    return None
+
+def estimate_family_price(pp_price_usd):
+    """
+    Estimate total family price (2 adults + 1 child).
+    Child typically pays 75% of adult fare, so: 2 + 0.75 = 2.75× adult.
+    """
+    return round(pp_price_usd * 2.75)
+
+
+# ---------------------------------------------------------------------------
 # 4-state verification: MAP_ONLY → SEARCH_LOADED → BOOK_PANEL_VISIBLE → PARTNER_LINK_FOUND
 # ---------------------------------------------------------------------------
 def verify_exact_route(page, explore_url, dest_city, route_key, proof_dir=None):
@@ -606,6 +673,7 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
         'cheap_fares': [],
         'summary': {},
     }
+    ghosts = load_ghost_fares()
 
     print("=" * 80)
     print(f"  BUG FARE SCANNER - Google Flights Explore")
@@ -684,7 +752,7 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
                         print(f"  Found {len(destinations)} destinations (currency: {page_currency}):")
 
                     for dest in destinations:
-                        if dest['city'] in EXCLUDE_DESTINATIONS:
+                        if is_excluded_dest(dest['city']):
                             continue
                         # price_numeric is already USD (curr=USD in URL)
                         price_usd = float(dest['price_numeric'])
@@ -701,6 +769,10 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
                         print(f"    ${price_usd:>6,.0f} -> {dest['city']:<20} "
                               f"| {dest['dates']} | {dest['stops']}{marker}")
 
+                        family_price = estimate_family_price(price_usd)
+                        ghost_count = ghosts.get(
+                            fare_hash(city_code, dest['city'], cabin, dest['dates']), 0)
+
                         result_entry = {
                             'origin_city': city_key,
                             'origin_code': city_code,
@@ -708,11 +780,14 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
                             'cabin': cabin_label,
                             'cabin_num': cabin,
                             'price_usd': round(price_usd, 2),
+                            'family_price_est': family_price,
                             'dates': dest['dates'],
                             'stops': dest['stops'],
                             'duration': dest['duration'],
                             'classification': classification,
                             'ratio': round(ratio, 3),
+                            'ghost_failures': ghost_count,
+                            'is_ghost': ghost_count >= 2,
                             'scan_timestamp': scan_timestamp,
                             'verification': None,
                         }
@@ -732,14 +807,29 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
                     if bug_candidates_this_scan:
                         print(f"\n  >> {len(bug_candidates_this_scan)} bug candidate(s)! Running 4-state verification...")
                         for bf in bug_candidates_this_scan[:3]:
+                            # Skip known ghosts
+                            if is_likely_ghost(ghosts, city_code, bf['city'], cabin, bf.get('dates','')):
+                                print(f"      SKIP (ghost ×{ghosts.get(fare_hash(city_code, bf['city'], cabin, bf.get('dates','')),0)}): {bf['city']}")
+                                continue
+
                             route_key = f"{city_code}_{bf['city'].replace(' ','_')}_{cabin_label}"
+                            pp_price = float(bf.get('price_numeric', 0))
+                            print(f"      Family est: ${estimate_family_price(pp_price)} (2A+1C)")
+
                             verification = verify_exact_route(
                                 page, url, bf['city'], route_key, proof_dir=PROOF_DIR
                             )
                             status = verification.get('status', 'unknown')
                             print(f"      {bf['city']}: {status}")
+
                             if status in ('BOOK_PANEL_VISIBLE', 'PARTNER_LINK_FOUND'):
                                 print(f"      *** CONFIRMED BOOKABLE *** partners: {verification.get('partner_domains')}")
+                            else:
+                                # Record ghost failure
+                                count = record_ghost_failure(
+                                    ghosts, city_code, bf['city'], cabin, bf.get('dates', ''))
+                                print(f"      Ghost failure #{count} recorded")
+
                             # Update result entry
                             for entry in all_results['bug_fares']:
                                 if (entry['destination'] == bf['city'] and
@@ -747,6 +837,8 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
                                         entry['cabin_num'] == cabin):
                                     entry['verification'] = verification
                                     break
+
+                    save_ghost_fares(ghosts)  # persist after each city scan
 
                 except Exception as e:
                     print(f"  ERROR loading page: {e}")
