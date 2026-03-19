@@ -784,6 +784,24 @@ for (dr_origin, dr_dest), dr in sorted(drill_lookup.items(), key=lambda x: x[1].
         oj_hz_cell = '&mdash;'
     actual_stop = dr.get('actual_stopover_city', '')
     via_cell = f'<span style="background:#2d3748;color:#e2e8f0;border-radius:3px;padding:1px 5px;font-size:11px">via {actual_stop}</span>' if actual_stop else ''
+    # Stopover round-trip: best outbound stopover + return stopover
+    stop_cell = ''
+    if dr.get('stopover') and dr.get('stopover_return'):
+        best_ob = min(dr['stopover'].items(), key=lambda x: x[1]['total_outbound_pp'])
+        rs = dr['stopover_return']
+        ob_total = best_ob[1]['total_outbound_pp']
+        rt_total = rs['total_return_pp']
+        full_total = ob_total + rt_total
+        hub = best_ob[1]['hub']
+        stop_cell = (f'<span style="background:#1e3a5f;color:#bfdbfe;border-radius:3px;'
+                     f'padding:2px 5px;font-size:11px">'
+                     f'{hub} {best_ob[0]}OB+2nRT: ${ob_total}+${rt_total}=${full_total}/pp</span>')
+    elif dr.get('stopover'):
+        best_ob = min(dr['stopover'].items(), key=lambda x: x[1]['total_outbound_pp'])
+        hub = best_ob[1]['hub']
+        stop_cell = (f'<span style="background:#1e3a5f;color:#bfdbfe;border-radius:3px;'
+                     f'padding:2px 5px;font-size:11px">'
+                     f'{hub} {best_ob[0]} OB ${best_ob[1]["total_outbound_pp"]}/pp</span>')
     combo_rows += f"""<tr>
 <td><strong>{dr_origin} &rarr; {dr_dest}</strong> {via_cell}</td>
 <td style="color:#276749;font-weight:700">${bug_price}/pp</td>
@@ -791,7 +809,7 @@ for (dr_origin, dr_dest), dr in sorted(drill_lookup.items(), key=lambda x: x[1].
 <td>{sh_total_cell}</td><td>{hz_total_cell}</td>
 <td>{oj_sh_cell}</td><td>{oj_hz_cell}</td>
 </tr>
-"""
+{f'<tr><td colspan="8" style="padding:4px 14px 10px;background:#f0f4ff">{stop_cell}</td></tr>' if stop_cell else ''}"""
 
 if combo_rows:
     html += f"""
@@ -811,6 +829,9 @@ if combo_rows:
 <th>Total OW from SH</th><th>Total OW from HZ</th>
 <th>↩ Return to SH</th><th>↩ Return to HZ</th>
 </tr>
+<tr><th colspan="8" style="font-size:11px;color:#6b7280;font-weight:400;padding:4px 14px;background:#f9fafb">
+↓ Stopover round-trip row (when detected): hub + min 3 nights outbound + 2 nights return = total one-way each leg
+</th></tr>
 {combo_rows}
 </table>
 </div>

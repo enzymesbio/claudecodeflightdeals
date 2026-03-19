@@ -224,6 +224,7 @@ async def drill_fare(context, fare, idx, total, sem):
             'open_jaw_hangzhou_price': None,
             'open_jaw_hangzhou_url': None,
             'stopover': {},
+            'stopover_return': None,
             'feeder': {},
             'actual_stopover_city': None,
         }
@@ -309,22 +310,22 @@ async def drill_fare(context, fare, idx, total, sem):
                 'Doha': ['Doha', 'DOH'],
                 'Dubai': ['Dubai', 'DXB'],
             }
+            # Detect actual stopover for ALL 1-stop fares (not just top 5)
             actual_stop = None
-            if idx < 5:
-                # Top 5 only: load page to detect actual stopover city
-                page_text = await get_page_text(context,
-                                build_oneway_url(origin_cid, dest_cid, depart))
-                for city_name, keywords in KNOWN_STOPS.items():
-                    if any(kw in page_text[:6000] for kw in keywords):
-                        actual_stop = city_name
-                        result['actual_stopover_city'] = city_name
-                        print(f"      detected stopover: {city_name}")
-                        break
+            page_text = await get_page_text(context,
+                            build_oneway_url(origin_cid, dest_cid, depart))
+            for city_name, keywords in KNOWN_STOPS.items():
+                if any(kw in page_text[:6000] for kw in keywords):
+                    actual_stop = city_name
+                    result['actual_stopover_city'] = city_name
+                    print(f"      detected stopover: {city_name}")
+                    break
 
             if actual_stop and actual_stop in HUB_CITIES and actual_stop != origin:
                 hub_cid = HUB_CITIES[actual_stop]
                 stopover_results = {}
-                for nights in range(1, 4):  # 1, 2, 3 bonus nights
+                # Outbound: origin → hub → dest with 3-6 night extended stay at hub
+                for nights in range(3, 7):  # min 3 nights as requested
                     hub_depart = (dt + timedelta(days=nights)).strftime('%Y-%m-%d')
                     p1 = await get_price_from_url(context,
                              build_oneway_url(origin_cid, hub_cid, depart), 'stop-leg1')
@@ -339,10 +340,32 @@ async def drill_fare(context, fare, idx, total, sem):
                             'leg2_price': p2,
                             'total_outbound_pp': p1 + p2,
                         }
-                        print(f"      extended stay {actual_stop} {nights}n: "
-                              f"leg1=${p1} + leg2=${p2} = ${p1+p2}/pp outbound")
+                        print(f"      outbound stopover {actual_stop} {nights}n: "
+                              f"leg1=${p1} + leg2=${p2} = ${p1+p2}/pp")
+                    else:
+                        break  # prices stabilise — no need to test more nights
                 if stopover_results:
                     result['stopover'] = stopover_results
+
+                # Return stopover: dest → hub (2 nights) → origin
+                ret_base = dt + timedelta(days=14)  # 14 days US stay
+                ret_leg1_date = ret_base.strftime('%Y-%m-%d')
+                ret_leg2_date = (ret_base + timedelta(days=2)).strftime('%Y-%m-%d')
+                ret_p1 = await get_price_from_url(context,
+                         build_oneway_url(dest_cid, hub_cid, ret_leg1_date), 'ret-leg1')
+                await asyncio.sleep(1)
+                ret_p2 = await get_price_from_url(context,
+                         build_oneway_url(hub_cid, origin_cid, ret_leg2_date), 'ret-leg2')
+                await asyncio.sleep(1)
+                if ret_p1 and ret_p2:
+                    result['stopover_return'] = {
+                        'hub': actual_stop,
+                        'leg1_price': ret_p1,
+                        'leg2_price': ret_p2,
+                        'total_return_pp': ret_p1 + ret_p2,
+                    }
+                    print(f"      return stopover {actual_stop} 2n: "
+                          f"leg1=${ret_p1} + leg2=${ret_p2} = ${ret_p1+ret_p2}/pp")
             else:
                 # Fallback: geography-based hub test
                 airline = fare.get('airline', '')
@@ -481,9 +504,13 @@ async def main():
         stop = ''
         if r.get('stopover'):
             best_stop = min(r['stopover'].items(), key=lambda x: x[1]['total_outbound_pp'])
-            stop = f" | stopover {best_stop[1]['hub']} {best_stop[0]} ${best_stop[1]['total_outbound_pp']}"
+            stop = f" | OB-stop {best_stop[1]['hub']} {best_stop[0]} ${best_stop[1]['total_outbound_pp']}"
+        ret_stop = ''
+        if r.get('stopover_return'):
+            rs = r['stopover_return']
+            ret_stop = f" | RT-stop {rs['hub']} 2n ${rs['total_return_pp']}"
         actual = f" | via {r['actual_stopover_city']}" if r.get('actual_stopover_city') else ''
-        print(f"  {r['origin']:15s}→{r['dest']:20s} ${r['oneway_price']:>4}/pp | {dur_range}{oj}{oj_hz}{feeder_str}{stop}{actual}")
+        print(f"  {r['origin']:15s}→{r['dest']:20s} ${r['oneway_price']:>4}/pp | {dur_range}{oj}{oj_hz}{feeder_str}{stop}{ret_stop}{actual}")
     print(f"\nSaved: {RESULTS_FILE}")
 
 

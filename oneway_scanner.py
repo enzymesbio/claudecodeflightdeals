@@ -22,8 +22,8 @@ from playwright.sync_api import sync_playwright
 BASE_DIR = 'D:/claude/flights'
 SHANGHAI_TZ = timezone(timedelta(hours=8))
 
-# One-way budget: ≤ $450/pp (family of 3 × 2.75 = $1237, leaves room for return)
-ONEWAY_PP_BUDGET = 450
+# One-way budget: ≤ $700/pp (captures cheap/bug one-way fares; normal Economy OW is $600-900/pp)
+ONEWAY_PP_BUDGET = 700
 ONEWAY_FAMILY_BUDGET = int(ONEWAY_PP_BUDGET * 2.75)
 
 RESULTS_FILE = os.path.join(BASE_DIR, 'oneway_results.json')
@@ -114,7 +114,8 @@ def build_oneway_explore_url(origin_city_id, dest_city_id, date, cabin=1):
 def parse_explore_results(body_text):
     lines = [l.strip() for l in body_text.split('\n') if l.strip()]
     results = []
-    price_re  = re.compile(r'^(?:HK\$|US\$|\$|HK\s?\$)[\s]?(\d[\d,]*)$')
+    hkd_re    = re.compile(r'^HK\s?\$(\d[\d,]*)$')           # HKD — needs conversion
+    usd_re    = re.compile(r'^(?:US\$|\$)(\d[\d,]*)$')        # already USD
     price_re2 = re.compile(r'^([A-Z]{2,3})?\$(\d[\d,]*)$')
     date_re   = re.compile(r'^(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d+')
     stops_re  = re.compile(r'^(\d+)\s+stops?$|^Nonstop$', re.I)
@@ -140,10 +141,12 @@ def parse_explore_results(body_text):
             price_str = lines[j] if j < len(lines) else ''
 
             price_usd = None
-            m = price_re.match(price_str)
-            if m:
-                raw = int(m.group(1).replace(',', ''))
-                price_usd = round(raw * 0.128)  # HKD → USD
+            m_hkd = hkd_re.match(price_str)
+            m_usd = usd_re.match(price_str)
+            if m_hkd:
+                price_usd = round(int(m_hkd.group(1).replace(',', '')) * 0.128)  # HKD → USD
+            elif m_usd:
+                price_usd = int(m_usd.group(1).replace(',', ''))  # already USD
             else:
                 m2 = price_re2.match(price_str)
                 if m2:
