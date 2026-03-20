@@ -125,7 +125,7 @@ async def verify_one(context, fare, idx, total, sem):
         }
 
         # Build search URL
-        detail_url = fare.get('verification', {}).get('detail_url', '')
+        detail_url = (fare.get('verification') or {}).get('detail_url', '')
         if not detail_url or detail_url == 'none':
             depart, ret = parse_dates(dates_raw)
             ocid = ORIGINS.get(origin, '')
@@ -276,11 +276,11 @@ async def main():
 
         sem = asyncio.Semaphore(MAX_WORKERS)
         tasks = [verify_one(context, f, i, len(fares), sem) for i, f in enumerate(fares)]
-        results = await asyncio.gather(*tasks)
+        results = await asyncio.gather(*tasks, return_exceptions=True)
 
         await browser.close()
 
-    results = [r for r in results if r]
+    results = [r for r in results if r and not isinstance(r, Exception)]
 
     # Save
     output = {

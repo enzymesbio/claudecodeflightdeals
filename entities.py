@@ -39,7 +39,7 @@ ORIGINS = {
     "SIN": {"kind": "airport", "iata": "SIN", "google_id": "/m/06t2t",  "city": "Singapore",   "country": "SG"},
     "MNL": {"kind": "airport", "iata": "MNL", "google_id": "/m/0195pd", "city": "Manila",      "country": "PH"},
     "KUL": {"kind": "airport", "iata": "KUL", "google_id": "/m/049d1",  "city": "Kuala Lumpur","country": "MY"},
-    "SGN": {"kind": "airport", "iata": "SGN", "google_id": "/m/0hn4h",  "city": "Ho Chi Minh", "country": "VN"},
+    "SGN": {"kind": "airport", "iata": "SGN", "google_id": "/m/0hn4h",  "city": "Ho Chi Minh City", "country": "VN"},
     # NE Asia
     "HKG": {"kind": "airport", "iata": "HKG", "google_id": "/m/03h64",  "city": "Hong Kong",   "country": "HK"},
     "ICN": {"kind": "airport", "iata": "ICN", "google_id": "/m/0hsqf",  "city": "Seoul",       "country": "KR"},

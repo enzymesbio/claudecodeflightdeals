@@ -555,7 +555,7 @@ def render_fare_row(fare, origin_cid, cabin_num, deep_lookup=None, drill_lookup=
     depart, ret = parse_dates(dates)
 
     # Use scanner detail_urls when available (all city IDs now corrected)
-    v = fare.get('verification', {})
+    v = fare.get('verification') or {}
     detail_url = v.get('detail_url', '')
     if detail_url and detail_url != 'none':
         verify_links += f'<a href="{detail_url}" target="_blank" rel="noopener" class="verify-btn search-btn">View Flights</a> '
