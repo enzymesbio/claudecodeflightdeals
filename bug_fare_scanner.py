@@ -718,7 +718,7 @@ def score_partner_links(page_ctx, partner_links, expected_dest='', expected_pric
             has_route = any(w in text_lower for w in route_words)
 
             # Strict grading: destination presence is required for A/B
-            if dest_seen and (price_near or has_price) and has_cta:
+            if dest_seen and price_near and has_cta:
                 grade = 'A'
             elif dest_seen and (has_cta or has_price):
                 grade = 'B'
@@ -740,13 +740,65 @@ def score_partner_links(page_ctx, partner_links, expected_dest='', expected_pric
 # ---------------------------------------------------------------------------
 # 4-state verification: MAP_ONLY → SEARCH_LOADED → BOOK_PANEL_VISIBLE → PARTNER_LINK_FOUND
 # ---------------------------------------------------------------------------
+def _extract_return_date(date_text, base_date_iso, fallback_days=14):
+    """
+    Try to extract a return date from a fare date-range string.
+
+    Handles formats:
+      - "Jul 4 – Jul 18"  → '2026-07-18'
+      - "Jul 4 – 18"      → '2026-07-18'
+      - "Jul 4"           → base_date_iso + fallback_days (synthetic)
+
+    Adjusts year automatically when date range crosses Dec/Jan.
+    """
+    # "Month Day – Month Day"
+    m = re.search(
+        r'(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d+'
+        r'\s*[–\-]\s*'
+        r'((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d+)',
+        date_text, re.I)
+    if m:
+        try:
+            base_dt = datetime.strptime(base_date_iso, '%Y-%m-%d')
+            ret_dt = datetime.strptime(f"{m.group(1)} {base_dt.year}", '%b %d %Y')
+            if ret_dt < base_dt:
+                ret_dt = ret_dt.replace(year=base_dt.year + 1)
+            return ret_dt.strftime('%Y-%m-%d')
+        except Exception:
+            pass
+
+    # "Month Day – Day" (same month)
+    m2 = re.search(
+        r'((?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec))\s+\d+\s*[–\-]\s*(\d+)',
+        date_text, re.I)
+    if m2:
+        try:
+            base_dt = datetime.strptime(base_date_iso, '%Y-%m-%d')
+            ret_dt = datetime.strptime(f"{m2.group(1)} {m2.group(2)} {base_dt.year}",
+                                       '%b %d %Y')
+            if ret_dt < base_dt:
+                ret_dt = ret_dt.replace(year=base_dt.year + 1)
+            return ret_dt.strftime('%Y-%m-%d')
+        except Exception:
+            pass
+
+    # Fallback: synthetic default
+    try:
+        base_dt = datetime.strptime(base_date_iso, '%Y-%m-%d')
+        return (base_dt + timedelta(days=fallback_days)).strftime('%Y-%m-%d')
+    except Exception:
+        return None
+
+
 def verify_exact_route(page, explore_url, dest_city, route_key,
                        expected_price_usd=0, expected_stops=-1,
                        expected_date_text='', origin_cid=None, dest_cid=None,
-                       depart_date=None, cabin=3, proof_dir=None):
+                       depart_date=None, return_date=None, cabin=3, proof_dir=None):
     """
     Navigate from Explore map → click dest → search page → booking panel.
     When BOOK_PANEL_VISIBLE: also runs partner link scoring and 2A+1C family check.
+    return_date: actual return date if known; derived from expected_date_text range
+    if parseable; falls back to depart_date+14 otherwise.
     Returns dict with status, evidence, partner grades, and family verification.
     """
     print(f"      Verifying: {dest_city} ({route_key})")
@@ -789,10 +841,11 @@ def verify_exact_route(page, explore_url, dest_city, route_key,
             expected_date_text=expected_date_text,
         )
         if card:
-            card.click(timeout=8000)
-            time.sleep(3)
             if not matched:
-                print(f"      [warn] no strong route match — clicked best available card")
+                print(f"      [warn] no strong route match — skipping click to avoid false confirm")
+            else:
+                card.click(timeout=8000)
+                time.sleep(3)
     except Exception:
         pass
 
@@ -856,8 +909,13 @@ def verify_exact_route(page, explore_url, dest_city, route_key,
     if (result['status'] in ('BOOK_PANEL_VISIBLE', 'PARTNER_LINK_FOUND')
             and origin_cid and dest_cid and depart_date):
         try:
-            _dt = datetime.strptime(depart_date, '%Y-%m-%d')
-            ret_date = (_dt + timedelta(days=14)).strftime('%Y-%m-%d')
+            # Use passed return_date if provided; otherwise parse from date range string
+            # (e.g., "Jul 4 – Jul 18") or fall back to depart + 14 days
+            _ret = (return_date
+                    or _extract_return_date(expected_date_text, depart_date, fallback_days=14))
+            ret_date = _ret or (
+                (datetime.strptime(depart_date, '%Y-%m-%d') + timedelta(days=14))
+                .strftime('%Y-%m-%d'))
             fam = verify_family_booking(
                 page.context, origin_cid, dest_cid,
                 depart_date, ret_date, cabin, expected_price_usd,
