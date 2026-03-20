@@ -105,21 +105,22 @@ def push_to_github():
         subprocess.run(['git', 'clone', '--depth=1', repo_url, work_dir],
                        check=True, timeout=120)
 
-        # Copy updated files
+        # Copy updated files — always read from APP_DIR (pipeline writes there,
+        # symlinked to DATA_DIR when volume is mounted, or direct files when ephemeral)
         files_to_push = [
             ('bug_fare_verify.html', 'bug_fare_verify.html'),
             ('index.html',           'index.html'),
         ]
         changed = False
         for src_name, dst_name in files_to_push:
-            src = os.path.join(DATA_DIR, src_name)
+            src = os.path.join(APP_DIR, src_name)
             dst = os.path.join(work_dir, dst_name)
             if os.path.exists(src):
                 shutil.copy2(src, dst)
                 changed = True
 
         # Copy archive index
-        archive_src = os.path.join(DATA_DIR, 'archive')
+        archive_src = os.path.join(APP_DIR, 'archive')
         archive_dst = os.path.join(work_dir, 'archive')
         if os.path.exists(archive_src):
             if os.path.exists(archive_dst):
