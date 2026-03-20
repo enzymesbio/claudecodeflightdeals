@@ -7,7 +7,7 @@ sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
 from playwright.async_api import async_playwright
 
-BASE_DIR = 'D:/claude/flights'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 SHANGHAI_TZ = timezone(timedelta(hours=8))
 EXCLUDE_AIRLINES = ['ZIPAIR', 'Philippine Airlines', 'Malaysia Airlines', 'Cebu Pacific']
 EXCLUDE_DESTS = ['Honolulu', 'Kauai', '1.5h drive from Washington', '1h drive from Miami', '1h drive from Washington']
