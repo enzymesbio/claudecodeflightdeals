@@ -19,7 +19,7 @@ from collections import defaultdict
 os.environ["PYTHONIOENCODING"] = "utf-8"
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
-BASE_DIR    = 'D:/claude/flights'
+BASE_DIR    = os.path.dirname(os.path.abspath(__file__))
 PYTHON      = sys.executable
 SHANGHAI_TZ = timezone(timedelta(hours=8))
 
