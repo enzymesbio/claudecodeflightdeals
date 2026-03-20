@@ -46,6 +46,21 @@ HANGZHOU_CID = ENTITY_ORIGINS['HGH']['google_id']   # '/m/014vm4'
 # Hub cities: city name → Freebase ID (derived from entities — no duplication)
 HUB_CITIES = HUB_CITIES_FREEBASE
 
+# Stopover-stay feature: hubs eligible for extended stopover (Korea/Japan only)
+STOPOVER_STAY_HUBS = {
+    'ICN': {'city': 'Seoul',  'cid': '/m/0hsqf'},
+    'NRT': {'city': 'Tokyo',  'cid': '/m/07dfk'},
+}
+
+# China mainland origins that qualify for stopover-stay search
+CHINA_MAINLAND_CITIES = {
+    'Shanghai', 'Hangzhou', 'Beijing', 'Guangzhou', 'Shenzhen',
+    'Chengdu', 'Chongqing', 'Wuhan', 'Nanjing', 'Xiamen',
+    'Ningbo', 'Qingdao', 'Dalian', 'Tianjin', 'Fuzhou',
+}
+
+SCANNER_FILE = os.path.join(BASE_DIR, 'scanner_results.json')
+
 # Airlines that commonly route through hubs and allow stopovers
 STOPOVER_AIRLINES = [
     'Korean Air', 'Asiana', 'ANA', 'All Nippon', 'Japan Airlines', 'JAL',
@@ -86,6 +101,20 @@ def build_oneway_url(origin_cid, dest_cid, depart):
     d = _fv(1, 2) + _fb(2, dest_cid)
     l1 = _fb(2, depart) + _fb(13, o) + _fb(14, d)
     msg = _fv(1, 27) + _fv(2, 1) + _fb(3, l1)
+    tfs = base64.urlsafe_b64encode(msg).rstrip(b'=').decode('ascii')
+    return f'https://www.google.com/travel/flights?tfs={tfs}&hl=en&gl=hk&curr=USD'
+
+
+def build_multicity_url(segments):
+    """Build multi-city Google Flights URL (4-leg stopover itinerary).
+    segments: list of (origin_cid, dest_cid, date_str) tuples.
+    """
+    legs = []
+    for orig_cid, dst_cid, date in segments:
+        o = _fv(1, 3) + _fb(2, orig_cid)
+        d = _fv(1, 2) + _fb(2, dst_cid)
+        legs.append(_fb(2, date) + _fb(13, o) + _fb(14, d))
+    msg = _fv(1, 27) + _fv(2, 3) + b''.join(_fb(3, leg) for leg in legs)
     tfs = base64.urlsafe_b64encode(msg).rstrip(b'=').decode('ascii')
     return f'https://www.google.com/travel/flights?tfs={tfs}&hl=en&gl=hk&curr=USD'
 
@@ -371,6 +400,135 @@ async def drill_fare(context, fare, idx, total, sem):
 
 
 # ---------------------------------------------------------------------------
+# Stopover-stay drill (reads scanner_results.json, builds 4-leg multi-city URLs)
+# ---------------------------------------------------------------------------
+async def drill_stopover_stays(context, max_fares=15):
+    """Find stopover-stay opportunities from cheap 1-stop China RT fares via ICN/NRT."""
+    if not os.path.exists(SCANNER_FILE):
+        print("  Stopover stays: scanner_results.json not found, skipping")
+        return []
+
+    with open(SCANNER_FILE, encoding='utf-8') as f:
+        scanner_data = json.load(f)
+
+    months_map = {'Jan':1,'Feb':2,'Mar':3,'Apr':4,'May':5,'Jun':6,
+                  'Jul':7,'Aug':8,'Sep':9,'Oct':10,'Nov':11,'Dec':12}
+
+    def parse_date_pair(dates_raw):
+        if not dates_raw:
+            return None, None
+        dates_raw = dates_raw.replace('\u2009', ' ').replace('\u200a', ' ')
+        parts = re.split(r'[-–—\u2013\u2014]', dates_raw)
+        if len(parts) < 2:
+            return None, None
+        try:
+            sp = parts[0].strip().split()
+            sm, sd = months_map[sp[0]], int(sp[1])
+            ep = parts[1].strip().split()
+            if len(ep) == 1:
+                em, ed = sm, int(ep[0])
+            else:
+                em, ed = months_map[ep[0]], int(ep[1])
+            return f'2026-{sm:02d}-{sd:02d}', f'2026-{em:02d}-{ed:02d}'
+        except:
+            return None, None
+
+    # Filter: China mainland origin, exactly 1 stop, valid dates
+    eligible = []
+    for fare in scanner_data.get('destinations', []):
+        origin = fare.get('origin_city', '')
+        if origin not in CHINA_MAINLAND_CITIES:
+            continue
+        stops_raw = fare.get('stops', 0)
+        if isinstance(stops_raw, str):
+            s = stops_raw.lower()
+            if 'nonstop' in s or 'non-stop' in s:
+                continue
+            m = re.search(r'(\d+)', s)
+            stops_val = int(m.group(1)) if m else 1
+        else:
+            stops_val = int(stops_raw) if stops_raw else 0
+        if stops_val != 1:
+            continue
+        depart, ret = parse_date_pair(fare.get('dates', ''))
+        if not depart or not ret:
+            continue
+        eligible.append({**fare, 'depart_date': depart, 'return_date': ret})
+
+    eligible.sort(key=lambda x: x.get('price_usd', 9999))
+    eligible = eligible[:max_fares]
+
+    print(f"\n  Stopover stays: {len(eligible)} eligible 1-stop China RT fares (top {max_fares})")
+
+    results = []
+    for fare in eligible:
+        origin   = fare['origin_city']
+        dest     = fare['destination']
+        base_pp  = fare['price_usd']
+        depart   = fare['depart_date']
+        ret      = fare['return_date']
+
+        origin_cid = get_origin_cid_by_city(origin)
+        dest_cid   = get_dest_freebase_id(dest)
+        if not origin_cid:
+            continue
+
+        dt_dep = datetime.strptime(depart, '%Y-%m-%d')
+        dt_ret = datetime.strptime(ret,    '%Y-%m-%d')
+
+        print(f"    {origin}→{dest} ${base_pp} {depart}~{ret}")
+
+        for hub_iata, hub_info in STOPOVER_STAY_HUBS.items():
+            hub_cid = hub_info['cid']
+            hub_city = hub_info['city']
+
+            for out_nights in (2, 3):
+                # Mode A (extend trip): origin→hub, hub→dest, dest→hub, hub→origin
+                hub_out  = (dt_dep + timedelta(days=out_nights)).strftime('%Y-%m-%d')
+                hub_ret  = (dt_ret + timedelta(days=out_nights)).strftime('%Y-%m-%d')
+                back_home = (dt_ret + timedelta(days=out_nights + 2)).strftime('%Y-%m-%d')
+
+                segments = [
+                    (origin_cid, hub_cid,   depart),
+                    (hub_cid,    dest_cid,  hub_out),
+                    (dest_cid,   hub_cid,   hub_ret),
+                    (hub_cid,    origin_cid, back_home),
+                ]
+                url = build_multicity_url(segments)
+                price = await get_price_from_url(context, url, f'stay-{hub_iata}-{out_nights}n')
+
+                if price:
+                    delta    = price - base_pp
+                    delta_pct = delta / max(base_pp, 1)
+                    family   = round(price * 2.75)
+                    print(f"      {hub_iata} {out_nights}n out: ${price} delta +${delta} ({delta_pct:.0%}) fam ${family}")
+
+                    if delta <= 250 and delta_pct <= 0.35:
+                        results.append({
+                            'origin':         origin,
+                            'dest':           dest,
+                            'hub':            hub_city,
+                            'hub_iata':       hub_iata,
+                            'base_pp':        base_pp,
+                            'stopover_pp':    price,
+                            'delta_pp':       delta,
+                            'delta_pct':      round(delta_pct * 100, 1),
+                            'family_total':   family,
+                            'out_nights':     out_nights,
+                            'back_nights':    2,
+                            'depart':         depart,
+                            'return_base':    ret,
+                            'return_extended': back_home,
+                            'url':            url,
+                        })
+                await asyncio.sleep(1)
+
+    results.sort(key=lambda x: (x['delta_pct'], x['base_pp']))
+    print(f"  Stopover stays done: {len(results)} opportunities found")
+    return results
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 async def main():
@@ -426,6 +584,9 @@ async def main():
                  for i, f in enumerate(fares)]
         results = await asyncio.gather(*tasks)
 
+        # Stopover-stay drill (sequential — reads scanner_results.json)
+        stopover_stays = await drill_stopover_stays(context)
+
         await browser.close()
 
     results = [r for r in results if r]
@@ -436,6 +597,7 @@ async def main():
         'duration_variants_tested': DURATION_VARIANTS,
         'stopover_min_nights': STOPOVER_MIN_NIGHTS,
         'results': results,
+        'stopover_stays': stopover_stays,
     }
     with open(RESULTS_FILE, 'w', encoding='utf-8') as f:
         json.dump(output, f, indent=2, ensure_ascii=False)
@@ -461,6 +623,13 @@ async def main():
             ret_stop = f" | RT-stop {rs['hub']} 2n ${rs['total_return_pp']}"
         actual = f" | via {r['actual_stopover_city']}" if r.get('actual_stopover_city') else ''
         print(f"  {r['origin']:15s}→{r['dest']:20s} ${r['oneway_price']:>4}/pp | {dur_range}{oj}{oj_hz}{feeder_str}{stop}{ret_stop}{actual}")
+
+    if stopover_stays:
+        print(f'\n  STOPOVER STAYS: {len(stopover_stays)} opportunities')
+        for s in stopover_stays[:10]:
+            print(f"  {s['origin']:12s}→{s['dest']:15s} via {s['hub_iata']} {s['out_nights']}n | "
+                  f"${s['base_pp']}→${s['stopover_pp']} (+${s['delta_pp']}, {s['delta_pct']}%) fam ${s['family_total']}")
+
     print(f"\nSaved: {RESULTS_FILE}")
 
 

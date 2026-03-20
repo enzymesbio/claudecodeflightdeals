@@ -349,6 +349,17 @@ try:
 except Exception as e:
     pass  # drill_results.json is optional — only exists after drill_promising.py runs
 
+# Load stopover-stay opportunities (from drill_results.json stopover_stays key)
+stopover_stays = []
+try:
+    with open(os.path.join(BASE_DIR, 'drill_results.json'), encoding='utf-8') as f:
+        _dr = json.load(f)
+    stopover_stays = _dr.get('stopover_stays', [])
+    if stopover_stays:
+        print(f"Loaded {len(stopover_stays)} stopover-stay opportunities")
+except Exception:
+    pass
+
 # Load one-way results (for dedicated one-way fares section)
 oneway_fares = []
 try:
@@ -768,6 +779,50 @@ if combo_rows:
 ↓ Stopover round-trip row (when detected): hub + min 3 nights outbound + 2 nights return = total one-way each leg
 </th></tr>
 {combo_rows}
+</table>
+</div>
+"""
+
+# --- Stopover Stay Opportunities ---
+if stopover_stays:
+    stay_rows = ''
+    for i, s in enumerate(stopover_stays, 1):
+        delta    = s['delta_pp']
+        delta_pct = s['delta_pct']
+        delta_color = '#276749' if delta <= 100 else ('#b7791f' if delta <= 200 else '#c53030')
+        family   = s['family_total']
+        fam_color = ' style="background:#f0fff4"' if family <= 3000 else ''
+        nights_label = f"{s['out_nights']}n out / 2n back"
+        stay_rows += f"""<tr{fam_color}>
+<td style="font-weight:700">#{i}</td>
+<td><strong>{s['origin']}</strong></td>
+<td><span style="background:#1a365d;color:#bee3f8;border-radius:3px;padding:2px 6px;font-size:12px">{s['hub_iata']} {s['hub']}</span></td>
+<td><strong>{s['dest']}</strong></td>
+<td>${s['base_pp']}</td>
+<td style="color:{delta_color};font-weight:700">+${delta} ({delta_pct}%)</td>
+<td style="font-weight:700">${s['stopover_pp']}/pp</td>
+<td style="font-weight:700">${family}</td>
+<td>{nights_label}</td>
+<td style="font-size:11px;color:#718096">{s['depart']} → {s['return_extended']}</td>
+<td><a href="{s['url']}" target="_blank" rel="noopener" class="verify-btn" style="background:#1a365d;color:#bee3f8;border:none;font-size:11px;white-space:nowrap">4-leg search</a></td>
+</tr>"""
+    html += f"""
+<div class="section" id="stopover-stays" style="border:2px solid #1a365d;background:#ebf8ff">
+<div class="section-header" style="background:#1a365d">
+<h2 style="color:#fff">Stopover Stay Opportunities ({len(stopover_stays)} found)</h2>
+<span class="badge" style="background:#2c5282;color:#bee3f8;border:1px solid #4299e1">Seoul &amp; Tokyo hub stays via Korea/Japan airlines</span>
+</div>
+<div style="padding:10px 20px;background:#ebf8ff;border-bottom:1px solid #bee3f8;color:#2c5282;font-size:13px">
+Cheap 1-stop China&#x2192;US RT fares expanded into 4-leg multi-city itineraries with <strong>2–3 nights at the hub</strong> (Seoul ICN or Tokyo NRT).
+The delta shows extra cost vs the plain round-trip for turning the connection into a bonus city visit.
+</div>
+<table class="fare-table">
+<tr>
+<th>#</th><th>Origin</th><th>Hub</th><th>Dest</th>
+<th>Base RT/pp</th><th>Delta/pp</th><th>Stopover/pp</th>
+<th>Family ×2.75</th><th>Hub nights</th><th>Dates</th><th>Search</th>
+</tr>
+{stay_rows}
 </table>
 </div>
 """
