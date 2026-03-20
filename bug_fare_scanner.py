@@ -59,6 +59,9 @@ BUG_FARE_THRESHOLD = 0.60  # 60% of normal minimum
 # Proof screenshots directory
 PROOF_DIR = 'D:/claude/flights/proof'
 
+# Family composition: 2 adults + 1 child (child ~2y7m old → age bucket 3)
+CHILD_AGE = 3
+
 RESULTS_FILE = 'D:/claude/flights/scanner_results.json'
 
 # Regex for booking CTAs
@@ -500,10 +503,12 @@ def estimate_family_price(pp_price_usd):
     return round(pp_price_usd * 2.75)
 
 
-def build_family_search_url(origin_cid, dest_cid, depart_date, return_date, cabin=3):
+def build_family_search_url(origin_cid, dest_cid, depart_date, return_date,
+                            cabin=3, child_age=CHILD_AGE):
     """
-    Build Google Flights search URL for 2 adults + 1 child (age 8).
-    TFS: field 8 = 2 adults, field 7 = child age 8 (best-effort protobuf encoding).
+    Build Google Flights search URL for 2 adults + 1 child.
+    child_age: actual child age in years (CHILD_AGE constant = 3, reflecting ~2y7m).
+    TFS: field 8 = 2 adults, field 7 = child age (best-effort protobuf encoding).
     """
     o = field_varint(1, 3) + field_bytes(2, origin_cid)
     d = field_varint(1, 2) + field_bytes(2, dest_cid)
@@ -513,11 +518,11 @@ def build_family_search_url(origin_cid, dest_cid, depart_date, return_date, cabi
     field22 = field_varint(3, 1) + field_varint(4, 1)
     msg = (
         field_varint(1, 27) +
-        field_varint(2, 2) +    # round-trip
+        field_varint(2, 2) +         # round-trip
         field_bytes(3, l1) +
         field_bytes(3, l2) +
-        field_varint(8, 2) +    # 2 adults
-        field_varint(7, 8) +    # 1 child age 8
+        field_varint(8, 2) +         # 2 adults
+        field_varint(7, child_age) + # 1 child at actual age
         field_varint(9, cabin) +
         field_varint(14, 2) +
         field_bytes(16, pax_config) +
@@ -529,9 +534,11 @@ def build_family_search_url(origin_cid, dest_cid, depart_date, return_date, cabi
 
 
 def verify_family_booking(page_ctx, origin_cid, dest_cid, depart_date, return_date,
-                          cabin, expected_pp_usd):
+                          cabin, expected_pp_usd,
+                          expected_dest='', expected_stops=-1, expected_date_text=''):
     """
-    Second-pass verification: check if 2A+1C booking panel is available.
+    Second-pass verification: check if 2A+1C booking panel is available for exact itinerary.
+    Uses route-aware card matching (dest + stops + date + price) to avoid wrong-card clicks.
     Returns dict with family_price_verified, family_booking_status, family_inventory_ok,
     family_reprice_delta_pct (vs 2.75× single-adult estimate).
     """
@@ -552,10 +559,19 @@ def verify_family_booking(page_ctx, origin_cid, dest_cid, depart_date, return_da
         family_price = parse_price_line(text)
         result['family_price_verified'] = round(family_price) if family_price else None
 
-        card, _ = find_matching_result_card(family_page, expected_pp_usd * 2.75)
+        # Route-aware card click: pass all context so we don't confirm the wrong itinerary
+        card, matched = find_matching_result_card(
+            family_page, expected_pp_usd * 2.75,
+            expected_dest=expected_dest,
+            expected_stops=expected_stops,
+            expected_date_text=expected_date_text,
+        )
         if card:
-            card.click(timeout=8000)
-            time.sleep(3)
+            if not matched:
+                print(f"      [family] no strong route match — skipping card click to avoid false confirm")
+            else:
+                card.click(timeout=8000)
+                time.sleep(3)
 
         book_visible = False
         for getter in [
@@ -659,13 +675,16 @@ def find_matching_result_card(page, expected_price_usd,
 # ---------------------------------------------------------------------------
 # Partner link quality scoring (A/B/C/D)
 # ---------------------------------------------------------------------------
-def score_partner_links(page_ctx, partner_links):
+def score_partner_links(page_ctx, partner_links, expected_dest='', expected_price_usd=0):
     """
-    Visit each partner link and assess booking quality.
-    Grade A: matching route/price/CTA all visible
-    Grade B: price+CTA or CTA+route visible
-    Grade C: price or CTA only
-    Grade D: no meaningful booking signal
+    Visit each partner link and assess booking quality using strict itinerary matching.
+
+    Grade A: destination visible + price near expected + book CTA — confirmed same itinerary
+    Grade B: destination visible + (price or CTA) — likely correct itinerary
+    Grade C: generic booking signals (CTA or route words) but no destination confirmation
+    Grade D: no meaningful booking signal or error
+
+    Only A/B grades are used to confirm PARTNER_LINK_FOUND status.
     Returns partner_links list with 'grade' added.
     """
     if not partner_links:
@@ -683,18 +702,27 @@ def score_partner_links(page_ctx, partner_links):
             text = pg.inner_text('body')[:5000]
             text_lower = text.lower()
 
-            has_price = parse_price_line(text[:3000]) is not None
+            # Destination name check — key itinerary identity signal
+            dest_seen = bool(expected_dest and expected_dest.lower() in text_lower)
+
+            # Price check — within 25% of expected per-person price
+            found_price = parse_price_line(text[:3000])
+            has_price = found_price is not None
+            price_near = (has_price and expected_price_usd > 0
+                          and abs(found_price - expected_price_usd) / expected_price_usd <= 0.25)
+
             cta_words = ['book now', 'buy now', 'checkout', 'confirm booking',
                          'continue to book', 'select fare', 'reserve']
             has_cta = any(w in text_lower for w in cta_words)
             route_words = ['departure', 'arrival', 'itinerary', 'outbound flight', 'passenger']
             has_route = any(w in text_lower for w in route_words)
 
-            if has_price and has_cta and has_route:
+            # Strict grading: destination presence is required for A/B
+            if dest_seen and (price_near or has_price) and has_cta:
                 grade = 'A'
-            elif (has_price and has_cta) or (has_cta and has_route):
+            elif dest_seen and (has_cta or has_price):
                 grade = 'B'
-            elif has_cta or has_price:
+            elif has_cta or has_route:
                 grade = 'C'
             else:
                 grade = 'D'
@@ -799,23 +827,32 @@ def verify_exact_route(page, explore_url, dest_city, route_key,
 
     if book_visible:
         result['status'] = 'BOOK_PANEL_VISIBLE'
-    if partner_links:
-        result['status'] = 'PARTNER_LINK_FOUND'
+    # Don't auto-set PARTNER_LINK_FOUND yet — grade first; only A/B earns it
 
-    # Partner link quality scoring (top 2 only, avoid excessive page loads)
-    if result['status'] in ('BOOK_PANEL_VISIBLE', 'PARTNER_LINK_FOUND') and partner_links:
+    # Partner link quality scoring — gates PARTNER_LINK_FOUND on A/B grade
+    if partner_links:
         try:
-            scored = score_partner_links(page.context, partner_links)
+            scored = score_partner_links(
+                page.context, partner_links,
+                expected_dest=dest_city,
+                expected_price_usd=expected_price_usd,
+            )
             result['partner_links'] = scored[:5]
             result['partner_grades'] = {
                 s['href']: s['grade'] for s in scored if s.get('href')
             }
-            print(f"      Partner grades: "
-                  f"{[s.get('grade') for s in scored[:3]]}")
+            grades = [s.get('grade', 'D') for s in scored[:2]]
+            print(f"      Partner grades: {grades}")
+            best = min(grades, key=lambda g: 'ABCD?'.index(g) if g in 'ABCD?' else 99,
+                       default='D')
+            if best in ('A', 'B'):
+                result['status'] = 'PARTNER_LINK_FOUND'  # earned: same itinerary confirmed
+            elif best == 'C' and result['status'] == 'SEARCH_LOADED':
+                result['status'] = 'BOOK_PANEL_VISIBLE'  # C = booking page but not confirmed
         except Exception as _e:
             print(f"      Partner scoring error: {_e}")
 
-    # Family booking verification (2A+1C) — only when we have the needed params
+    # Family booking verification (2A+1C) — full route context, actual child age
     if (result['status'] in ('BOOK_PANEL_VISIBLE', 'PARTNER_LINK_FOUND')
             and origin_cid and dest_cid and depart_date):
         try:
@@ -824,6 +861,9 @@ def verify_exact_route(page, explore_url, dest_city, route_key,
             fam = verify_family_booking(
                 page.context, origin_cid, dest_cid,
                 depart_date, ret_date, cabin, expected_price_usd,
+                expected_dest=dest_city,
+                expected_stops=expected_stops,
+                expected_date_text=expected_date_text,
             )
             result['family'] = fam
             print(f"      Family 2A+1C: {fam.get('family_booking_status')} "
