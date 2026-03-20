@@ -23,7 +23,7 @@ from entities import (
     ORIGINS, US_EXPLORE_ID, is_excluded_dest,
 )
 
-BASE_DIR = 'D:/claude/flights'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 SHANGHAI_TZ = timezone(timedelta(hours=8))
 
 # One-way budget: ≤ $700/pp (captures cheap/bug one-way fares; normal Economy OW is $600-900/pp)

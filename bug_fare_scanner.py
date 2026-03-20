@@ -56,13 +56,16 @@ CABIN_INFO = {
 # Bug fare threshold: flag if price is below this fraction of normal_min (static fallback)
 BUG_FARE_THRESHOLD = 0.60  # 60% of normal minimum
 
+# Base directory — works on both Windows (D:/claude/flights) and Railway/Linux (/app)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # Proof screenshots directory
-PROOF_DIR = 'D:/claude/flights/proof'
+PROOF_DIR = os.path.join(BASE_DIR, 'proof')
 
 # Family composition: 2 adults + 1 child (child ~2y7m old → age bucket 3)
 CHILD_AGE = 3
 
-RESULTS_FILE = 'D:/claude/flights/scanner_results.json'
+RESULTS_FILE = os.path.join(BASE_DIR, 'scanner_results.json')
 
 # Regex for booking CTAs
 BOOK_RE = re.compile(r'book|book with|select', re.I)
@@ -441,7 +444,7 @@ def capture_proof(page, route_key, out_dir):
 # ---------------------------------------------------------------------------
 # Ghost-fare tracking (persistent across scan runs)
 # ---------------------------------------------------------------------------
-GHOST_FILE = 'D:/claude/flights/ghost_fares.json'
+GHOST_FILE = os.path.join(BASE_DIR, 'ghost_fares.json')
 
 def load_ghost_fares():
     """Load the ghost fare registry (route → failure count)."""
@@ -1038,7 +1041,7 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
                             line = line.strip()
                             if ('$' in line or 'HK$' in line) and len(line) < 50:
                                 print(f"    >> {line}")
-                        debug_path = f'D:/claude/flights/scanner_debug_{city_code}_{cabin}.txt'
+                        debug_path = os.path.join(BASE_DIR, f'scanner_debug_{city_code}_{cabin}.txt')
                         with open(debug_path, 'w', encoding='utf-8') as df:
                             df.write(body_text)
                         print(f"  Debug text saved to {debug_path}")
@@ -1158,7 +1161,7 @@ def run_scanner(cities_to_scan, cabins_to_scan, departure_date=None, output_file
                 except Exception as e:
                     print(f"  ERROR loading page: {e}")
                     try:
-                        err_path = f'D:/claude/flights/scanner_error_{city_code}_{cabin}.png'
+                        err_path = os.path.join(BASE_DIR, f'scanner_error_{city_code}_{cabin}.png')
                         page.screenshot(path=err_path)
                         print(f"  Error screenshot: {err_path}")
                     except Exception:

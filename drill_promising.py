@@ -25,7 +25,7 @@ from entities import (
     US_EXPLORE_ID, get_origin_cid_by_city, get_dest_freebase_id,
 )
 
-BASE_DIR = 'D:/claude/flights'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 SHANGHAI_TZ = timezone(timedelta(hours=8))
 MAX_WORKERS = 3   # conservative to avoid blocks
 

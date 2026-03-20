@@ -1,8 +1,11 @@
 """Generate an HTML page with clickable Google Flights verification links for all bug fares found."""
 import json
 import re
+import os
 import base64
 from datetime import datetime, timedelta, timezone
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 from entities import (
     ORIGINS as ENTITY_ORIGINS, US_EXPLORE_ID,
     get_dest_freebase_id, is_excluded_dest,
@@ -92,7 +95,7 @@ TRIPCABIN = {1: 'Y', 2: 'S', 3: 'C', 4: 'F'}
 EXPEDIA_CABIN = {1: 'economy', 2: 'premium', 3: 'business', 4: 'first'}
 
 # --- Load scan results ---
-with open('D:/claude/flights/scanner_results.json', encoding='utf-8') as f:
+with open(os.path.join(BASE_DIR, 'scanner_results.json'), encoding='utf-8') as f:
     data = json.load(f)
 
 bugs = [d for d in data['destinations'] if d['classification'] in ('BUG_FARE', 'CHEAP')]
@@ -257,7 +260,7 @@ EXCLUDE_AIRLINES = ['ZIPAIR', 'Philippine Airlines', 'Malaysia Airlines', 'Cebu 
 
 # HK results
 try:
-    with open('D:/claude/flights/deep_verify_hk_results.json', encoding='utf-8') as f:
+    with open(os.path.join(BASE_DIR, 'deep_verify_hk_results.json'), encoding='utf-8') as f:
         hk_data = json.load(f)
     for r in hk_data.get('results', []):
         if r.get('booking_url') and r.get('status') in ('BOOKABLE', 'SEARCH_CONFIRMED'):
@@ -282,7 +285,7 @@ except Exception as e:
 # Deep verify ALL results (50 fares under $2000 family)
 deep_verify_lookup = {}  # (origin, dest, dates) -> result, for fare table linking
 try:
-    with open('D:/claude/flights/deep_verify_all_results.json', encoding='utf-8') as f:
+    with open(os.path.join(BASE_DIR, 'deep_verify_all_results.json'), encoding='utf-8') as f:
         deep_all_data = json.load(f)
     for r in deep_all_data.get('results', []):
         if not r.get('booking_url') or not r.get('has_booking_page'):
@@ -324,7 +327,7 @@ except Exception as e:
 trend_lookup = {}  # fare_key_str → delta_pct or None (new) or 999 (gone)
 trend_prev_date = ''
 try:
-    with open('D:/claude/flights/trend_lookup.json', encoding='utf-8') as f:
+    with open(os.path.join(BASE_DIR, 'trend_lookup.json'), encoding='utf-8') as f:
         tl = json.load(f)
     trend_lookup = tl.get('lookup', {})
     trend_prev_date = tl.get('prev_date', '')
@@ -337,7 +340,7 @@ except Exception:
 # keyed by (origin, dest) -> drill result dict
 drill_lookup = {}
 try:
-    with open('D:/claude/flights/drill_results.json', encoding='utf-8') as f:
+    with open(os.path.join(BASE_DIR, 'drill_results.json'), encoding='utf-8') as f:
         drill_data = json.load(f)
     for r in drill_data.get('results', []):
         key = (r['origin'], r['dest'])
@@ -349,7 +352,7 @@ except Exception as e:
 # Load one-way results (for dedicated one-way fares section)
 oneway_fares = []
 try:
-    with open('D:/claude/flights/oneway_results.json', encoding='utf-8') as f:
+    with open(os.path.join(BASE_DIR, 'oneway_results.json'), encoding='utf-8') as f:
         ow = json.load(f)
     oneway_fares = ow.get('fares', [])[:40]
     print(f"Loaded {len(oneway_fares)} one-way fares for display")
@@ -924,7 +927,7 @@ html += """
 """
 
 # Footer with archive navigation
-archive_dir = 'D:/claude/flights/archive'
+archive_dir = os.path.join(BASE_DIR, 'archive')
 archive_links = ''
 try:
     import os as _os
@@ -977,7 +980,7 @@ if (sessionStorage.getItem('bf_auth') === '1') {{
 </html>
 """
 
-with open('D:/claude/flights/bug_fare_verify.html', 'w', encoding='utf-8') as f:
+with open(os.path.join(BASE_DIR, 'bug_fare_verify.html'), 'w', encoding='utf-8') as f:
     f.write(html)
 
 print(f"Generated bug_fare_verify.html ({len(html)} bytes)")
