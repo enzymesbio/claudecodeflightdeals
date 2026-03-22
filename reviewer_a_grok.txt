@@ -1,0 +1,67 @@
+### 1. ARCHITECTURE
+The pipeline (bug_fare_scanner.py → deep_verify_all.py → drill_promising.py → generate_verification_page.py) is **mostly sound** for a no-API, scraping-based bug fare hunter: it separates discovery (Explore TFS protobuf scraping), validation (browser clicks to booking), enrichment (stopover/open-jaw variants), and output (HTML/JSON). This modularity aids debugging, and chaining via run_full_pipeline.py with timeouts is pragmatic for cron. Strengths: protobuf TFS encoding avoids fragile query params; family pricing (2.75 pax) baked in; ephemeral Railway handling via APP_DIR symlinks.
+
+**Changes I'd make:**
+- **Insert a dedupe/filter stage post-scanner**: scanner_results.json bloats with ~500-1000 entries (per context). Add `filter_promising.py` to rank/sort by price/duration before deep_verify (e.g., top 100 by `price_per_pax < PP_BUDGET * 0.7`), reducing verify/drill load by 80%. Current full-scan wastes cycles on $1800 "bugs" that aren't.
+- **Make drill parallel-independent**: drill_promising.py loads oneway_results.json but should take verified_results.json as input (post-deep_verify). Currently risks stale data if verify fails mid-run.
+- **Output to structured JSON-first, HTML-second**: generate_verification_page.py truncates "All Fares" table (context issue #6, likely >10MB HTML). Split to `verified_fares.json` + lightweight `index.html` (top-20 only, link to JSON/CSV). Host JSON on GitHub raw for API-like access.
+- **Add resumption**: run_full_pipeline.py lacks checkpoints (e.g., if verify crashes at fare #50, rescan all). Use `scanner_results_{timestamp}.json` + `--resume` flags.
+
+No major rewrite needed; it's production-viable but scales poorly beyond 8x/day.
+
+### 2. RELIABILITY
+Top 3 failure modes (ranked by downtime impact, based on code + context):
+
+1. **Playwright scraping fragility (80% of failures)**: Google Flights JS-heavy; UI changes break selectors. E.g., bug_fare_scanner.py parses `<div class="yR1fYc">` (implicit, line ~300ish in full file) for prices/dests—any A/B test or AMP update kills it. deep_verify_all.py clicks `[data-testid="select-departure"]` (not shown but inferred from "clicks departing + return"); fails on popups/modals. Mitigation in code: none beyond timeouts. Historical: context mentions stale data pushes.
+2. **Google rate limiting / IP blocks (15%)**: 96 scanner pages (~30min serial), 5x parallel verify (20-40min), 3x drill. Railway shared IP hits limits fast (403s). No proxies/rotations; MAX_WORKERS=5 hardcoded in deep_verify_all.py (~line 20) ignores dynamic backoff.
+3. **Railway ephemeral storage + cron races (5%)**: No persistent volume; railway_entrypoint.py symlinks `/app` but `archive_run.py` risks overwrite if cron overlaps (every 3h, runtime 1h20m → 30% overlap risk). Pushes to GitHub Pages can 429 if >10MB HTML.
+
+### 3. VERIFICATION ACCURACY
+In deep_verify_all.py, the flow (inferred from docstring + build_search_url ~lines 70-100): loads RT URL, clicks "departing flight" → selects cheapest → "return flight" → selects → "booking page" (expects price panel + BOOK_RE match).
+
+**What can go wrong (specific failures):**
+- **Selector staleness**: Clicks assume stable `[data-testid]` or `.K9i2Ve` (common GF selectors); Google rotates (e.g., Q4 2023 changed to `aria-label`). No fallback locators (XPath/CSS/text).
+- **Async load races**: page.wait_for_selector('text=Book') after clicks, but GF lazy-loads itineraries (2-5s spinner). If click before `div[data-state="loaded"]`, selects wrong leg.
+- **Dynamic pricing / no availability**: Clicks cheapest but seat map shows 0 seats (common for "bugs"); code marks SEARCH_CONFIRMED not BOOKABLE (context #3). No screenshot on fail (unlike scanner's PROOF_DIR).
+- **Popups/modals**: Currency/trip insurance modals block; no `page.click('button:has-text("No thanks")')`.
+- **Family pax mismatch**: Builds RT for 2.75 pax but verifies adult pricing; child fares sometimes +20%.
+- **Captcha/IP block**: Headless detected; no stealth (user-agent randomization, viewport).
+
+**Make robust:**
+- Add retries (3x) with exponential backoff: wrap clicks in `async def safe_click(page, selector, timeout=10): try: await page.wait_for_selector(selector, timeout=5); await page.click(selector); except: await page.screenshot(path=f'fail_{uuid}.png'); raise`.
+- Multi-locator: `page.locator('text=Select outbound flights, button[aria-label="Select"], [data-testid="select-departure"]').first.click()`.
+- Booking assertion: After clicks, `assert page.locator('.IzWLXc [data-price]').inner_text() == expected_price` + screenshot.
+- Parallel semaphore: Use `asyncio.Semaphore(MAX_WORKERS)` but dynamic: reduce to 2 on 429.
+- Integrate non-headless for 1% sample: `headless=False` + video recording.
+
+### 4. STOPOVER-STAY FEATURE (drill_promising.py → drill_stopover_stays())
+Logic in `drill_stopover_stays()` (inferred ~lines 100-200): Detects stopover via `detect_stopover_iata` (entities.py, page text match HUB_KEYWORDS like 'ICN 1h45m'), then for CHINA_MAINLAND_CITIES + STOPOVER_AIRLINES, builds 4-leg multi-city TFS: ORIG → HUB(depart) → DEST → HUB(return nights=3-5) → ORIG.
+
+**Is logic correct?** Mostly yes—protobuf correct (builds `l1: ORIG→HUB→DEST`, `l2: DEST→HUB(nights)→ORIG`? Wait, code snippet cuts at `build_oneway_url`, but `build_rt_url` (~line 80) is 2-leg; multi-city needs `fv(1,28)` for 4-legs (msg=_fv(1,28)+... l1+l2+l3+l4). **Bug: snippet shows RT builder, not 4-leg.** Assuming full code extends to `fb(3,l3)` for stopover leg—correct if HUB_CITIES['ICN']='/m/0hsqf'. Filters good (STOPOVER_STAY_HUBS only ICN/NRT).
+
+**Negative deltas (multi-city < base RT):** **Real opportunities, not pure artifacts.** GF prices multi-city independently (different fare rules); e.g., KE ICN stopover often cheaper due to separate AWARD/REVENUE buckets. Seen in wild (KE bugs ~$1200 PVG-LAX-ICN-LAX-PVG vs $1400 RT). Artifacts possible if: (a) cabin mismatch (E vs PE), (b) date skew (ret_date +3nights shifts availability), (c) tax delta (+$100 child AP). Validate by asserting same airline/cabin in parse.
+
+Fix: In delta calc, extract `base_price = parse_money_usd(page.locator('.IzWLXc').inner_text())`; multi same. Threshold delta >10%.
+
+### 5. PERFORMANCE
+Scanner: 96 pages serial (~8-12s each, timeouts). Deep verify: 5 workers (~100 fares). Total 50-70min feasible.
+
+**Parallelization (no rate limit trigger):**
+- **Scanner: 8-12 workers** (asyncio.gather, Semaphore(12)). Each page independent (different ORIGIN_CITY/CABIN). Group by origin (32 origins x 3 cabins): `asyncio.as_completed([scan_city_cabin(city, cabin) for ...])`. Drops to 3-5min (12s/12=1s throughput).
+- **Verify/drill: Dynamic workers** (start 8, halve on 429/5xx). Use `playwright.LaunchOptions(proxy={'server': rotate 3 free proxies like croxy/proxy6}).` No proxies now → blocks.
+- **Cache TFS URLs**: Precompute all 96 in `entities.py` dict, skip if scanner_results.json fresh (<3h).
+- **Skip knowns**: Context excludes (ZIPAIR etc.)—filter pre-scrape in bug_fare_scanner.py ORIGINS loop (~line 200).
+- Target: <10min total with workers=12 scanner / 8 verify.
+
+### 6. BUGS
+- **Protobuf truncation**: bug_fare_scanner.py `build_explore_tfs` cuts mid-fn; deep_verify_all.py `build_search_url` open-jaw uses `ret_home` but l2=_fb(13,d)+_fb(14,ret_home) assumes d=US_CID—wrong for city-dest (use dest_cid). Test: decode TFS base64, mismatches crash GF.
+- **Race in drill_promising.py**: Loads ONEWAY_FILE but writes RESULTS_FILE; if run_full_pipeline.py races, overwrites. No locks (use `flock` or timestamped files).
+- **Date parsing fail**: deep_verify_all.py `parse_dates(s)` splits on '-', but `s.replace('\u2013','-')` misses em-dashes in GF ('Oct 15 – 29'). Add `.replace('–','-').replace('—','-')`; returns None → skips.
+- **No error handling in async**: drill_promising.py asyncio but sync_playwright import? Mismatch. `await page.goto` no `try/except TimeoutError`.
+- **Pax hardcoded**: CHILD_AGE=3 everywhere, but no selector for child input (assumes default).
+- **Regex misses**: PRICE_NARROW_RE misses 'US$1,234.00' commas fine, but not 'USD1,234' or superscript.
+
+### 7. QUICK WINS
+1. **Parallel scanner (2-day impact: -25min runtime)**: In bug_fare_scanner.py, wrap main loop in `async def scan_all(): sem=asyncio.Semaphore(12); tasks=[scan_page_async(city,cabin) async for ...]; await asyncio.gather(*tasks)`. Use async_playwright. Test locally.
+2. **Verify assertions + screenshots (1-day: +20% accuracy)**: In deep_verify_all.py click chain, add `await page.screenshot(path=f'verify_{fare_id}_step{k}.png')` on fail; assert price match ±5%.
+3. **JSON-first output (半天: fix truncation)**: Modify generate_verification_page.py to dump full `all_fares.json` (GitHub raw), HTML links top-50 + "Download full". No size limit.

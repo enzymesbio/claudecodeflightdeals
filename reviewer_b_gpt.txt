@@ -1,0 +1,52 @@
+{
+  "metadata": {},
+  "top_logprobs": 0,
+  "temperature": 1,
+  "top_p": 1,
+  "service_tier": "default",
+  "model": "gpt-5.1-codex-mini",
+  "reasoning": {
+    "effort": "medium"
+  },
+  "background": false,
+  "max_output_tokens": 8000,
+  "text": {
+    "format": {
+      "type": "text"
+    },
+    "verbosity": "medium"
+  },
+  "tools": [],
+  "tool_choice": "auto",
+  "truncation": "disabled",
+  "id": "resp_064382aa1e1d2b0d0069bf5173de308197bc2b99d1459acac6",
+  "object": "response",
+  "status": "incomplete",
+  "created_at": 1774145907,
+  "error": null,
+  "incomplete_details": {
+    "reason": "max_output_tokens"
+  },
+  "output": [
+    {
+      "type": "reasoning",
+      "id": "rs_064382aa1e1d2b0d0069bf51753434819792eb8b2a745cdb64",
+      "response_id": "resp_064382aa1e1d2b0d0069bf5173de308197bc2b99d1459acac6",
+      "summary": []
+    }
+  ],
+  "instructions": null,
+  "usage": {
+    "input_tokens": 17696,
+    "input_tokens_details": {
+      "cached_tokens": 0
+    },
+    "output_tokens": 8000,
+    "output_tokens_details": {
+      "reasoning_tokens": 8000
+    },
+    "total_tokens": 25696
+  },
+  "parallel_tool_calls": true,
+  "agent_reference": null
+}
