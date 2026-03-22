@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-03-22T08:32:28.809369+08:00",
+  "slug": "20260322_0832",
+  "affordable_count": 39,
+  "bookable_count": 22,
+  "oneway_count": 25,
+  "trend_text": "Comparing 2026-03-22 vs 2026-03-22:\n  +1 new affordable route:\n    NEW  Jakarta → San Francisco  $703.0/pp ($1933 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-03-22</p><div class=\"diff-section\"><h4>✦ New routes (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Jakarta</td><td>San Francisco</td><td>Economy</td><td><strong>$703.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1933 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Aug 28 – Sep 3</td></tr></tbody></table></div>"
+}
