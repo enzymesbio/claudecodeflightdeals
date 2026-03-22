@@ -1,0 +1,580 @@
+ChatGPT Response - Stopover Stay Feature Guidance
+============================================================
+Date: 2026-03-20 08:49:02
+============================================================
+
+This is a real feature, not a gimmick.
+
+Your screenshots show a strong pattern:
+
+Explore finds HGH → SFO round trip around $722 with 1 stop.
+
+The round-trip results show the cheap option is Asiana via ICN.
+
+A 4-leg multi-city version:
+
+HGH → ICN
+
+ICN → SFO
+
+SFO → ICN
+
+ICN → HGH
+
+comes out around $819, with a visible Book with Asiana Airlines option.
+
+So the scanner should treat this as a new class of opportunity:
+
+New opportunity type
+
+“Stopover stay candidate” = a cheap 1-stop round-trip fare that can be expanded into a 4-leg multi-city itinerary with 2–3 night stays at the hub for a small price premium.
+
+For your family use case, this is valuable because it turns a rushed connection into a rest break.
+
+What to implement
+1) Add a second-stage “stopover expander”
+
+Do not run this on every fare.
+Run it only on:
+
+already cheap fares
+
+already verified fares
+
+1-stop itineraries
+
+hubs you care about:
+
+ICN / SEL / Seoul
+
+NRT / HND / TYO / Tokyo
+
+optionally KIX / Osaka
+
+Good trigger rule:
+
+Python
+Run
+eligible_for_stopover = (
+    fare.status in {"BOOK_PANEL_VISIBLE", "PARTNER_LINK_FOUND"}
+    and fare.stops == 1
+    and fare.stopover_iata in {"ICN", "NRT", "HND", "KIX"}
+    and fare.price_usd <= baseline_median * 0.85
+)
+
+Only expand the top 10–20 eligible fares per run.
+
+2) Model two stopover modes
+Mode A — extend total trip length
+
+This matches your manual example.
+
+Example:
+
+original: May 4 → May 10
+
+stopover version:
+
+May 4 HGH→ICN
+
+May 7 ICN→SFO
+
+May 12 SFO→ICN
+
+May 14 ICN→HGH
+
+This is usually the easiest way to keep the fare low.
+
+Mode B — keep total trip length fixed
+
+This means the stopover nights come out of the U.S. stay.
+
+Example:
+
+original 6-night trip
+
+convert into:
+
+2 nights Seoul
+
+2 nights U.S.
+
+2 nights Seoul
+
+This may be useful when total vacation days are fixed.
+
+You should support both, but default to Mode A because it matches your family-friendly goal.
+
+3) Extract the hub from the actual itinerary, not from generic text
+
+You already improved stopover detection. Reuse it here, but make it stricter.
+
+For stopover expansion, only proceed if you can confidently extract the hub from the matched itinerary.
+
+Add a helper like:
+
+Python
+Run
+ALLOWED_STOPOVER_HUBS = {
+    "ICN": {"city": "Seoul", "country": "KR"},
+    "GMP": {"city": "Seoul", "country": "KR"},
+    "NRT": {"city": "Tokyo", "country": "JP"},
+    "HND": {"city": "Tokyo", "country": "JP"},
+    "KIX": {"city": "Osaka", "country": "JP"},
+}
+
+And:
+
+Python
+Run
+def get_stopover_hub_for_expander(itinerary_text: str) -> str | None:
+    hub = detect_stopover_iata(itinerary_text)  # your existing logic
+    if hub in ALLOWED_STOPOVER_HUBS:
+        return hub
+    return None
+
+Do not expand:
+
+airport-change itineraries
+
+separate-ticket base itineraries
+
+hubs outside your allowlist
+
+Core implementation plan
+4) Add a multi-city builder
+
+You already build round-trip and family URLs.
+Now add a 4-segment multi-city URL builder.
+
+Use a segment array rather than hardcoded round-trip assumptions.
+
+Python
+Run
+def build_multicity_search_url(segments, adults=1, child_age=None, cabin="ECONOMY"):
+    """
+    segments = [
+        {"origin": "HGH", "dest": "ICN", "date": "2026-05-04"},
+        {"origin": "ICN", "dest": "SFO", "date": "2026-05-07"},
+        {"origin": "SFO", "dest": "ICN", "date": "2026-05-12"},
+        {"origin": "ICN", "dest": "HGH", "date": "2026-05-14"},
+    ]
+    """
+    # Reuse your existing TFS field encoder style.
+    # Important: keep this generic so it can support 3-leg or 4-leg later.
+    ...
+
+Do not keep separate builders for:
+
+round trip
+
+family round trip
+
+multi-city
+
+Build one shared itinerary encoder.
+
+5) Generate stopover variants from a base fare
+
+Given a verified base fare:
+
+Python
+Run
+@dataclass
+class VerifiedFare:
+    origin: str
+    dest: str
+    depart_date: str
+    return_date: str
+    price_usd: float
+    stops: int
+    stopover_iata: str | None
+    airline: str | None
+    cabin: str
+    booking_status: str
+
+Generate variants like:
+
+Python
+Run
+def generate_stopover_variants(base_fare: VerifiedFare):
+    hub = base_fare.stopover_iata
+    if not hub:
+        return []
+
+    depart = parse_date(base_fare.depart_date)
+    ret = parse_date(base_fare.return_date)
+
+    variants = []
+
+    # Extend-trip mode
+    for out_nights in (2, 3):
+        for back_nights in (2, 3):
+            segments = [
+                {"origin": base_fare.origin, "dest": hub, "date": iso(depart)},
+                {"origin": hub, "dest": base_fare.dest, "date": iso(depart + days(out_nights))},
+                {"origin": base_fare.dest, "dest": hub, "date": iso(ret + days(out_nights))},
+                {"origin": hub, "dest": base_fare.origin, "date": iso(ret + days(out_nights + back_nights))},
+            ]
+            variants.append({
+                "mode": "extend_trip",
+                "out_nights": out_nights,
+                "back_nights": back_nights,
+                "segments": segments,
+            })
+
+    # Fixed-trip mode
+    trip_len = (ret - depart).days
+    for out_nights in (2, 3):
+        for back_nights in (2, 3):
+            if out_nights + back_nights >= trip_len - 1:
+                continue
+            us_arrive = depart + days(out_nights)
+            us_depart = ret - days(back_nights)
+            segments = [
+                {"origin": base_fare.origin, "dest": hub, "date": iso(depart)},
+                {"origin": hub, "dest": base_fare.dest, "date": iso(us_arrive)},
+                {"origin": base_fare.dest, "dest": hub, "date": iso(us_depart)},
+                {"origin": hub, "dest": base_fare.origin, "date": iso(ret)},
+            ]
+            variants.append({
+                "mode": "fixed_trip",
+                "out_nights": out_nights,
+                "back_nights": back_nights,
+                "segments": segments,
+            })
+
+    return variants
+6) Verify the multi-city version exactly like a real fare
+
+Do not trust the price on the first multi-city page.
+Run your same verification logic:
+
+matched itinerary
+
+booking panel visible
+
+partner grading
+
+family verification for top candidates
+
+Add a dedicated verifier:
+
+Python
+Run
+def verify_stopover_variant(page, variant, expected_total_price_usd=None):
+    url = build_multicity_search_url(variant["segments"], adults=1, cabin="ECONOMY")
+    result = verify_exact_route(
+        page=page,
+        search_url=url,
+        expected_price_usd=expected_total_price_usd,
+        expected_dest=variant["segments"][1]["dest"],   # final destination
+        expected_stops=None,  # multi-city will be nonstop per segment or direct legs
+        expected_date_text=None,
+        origin_cid=None,
+        dest_cid=None,
+        depart_date=variant["segments"][0]["date"],
+        return_date=variant["segments"][-1]["date"],
+        cabin="ECONOMY",
+    )
+    return result
+
+For multi-city verification, I would actually loosen stop-count matching and instead verify:
+
+final destination
+
+segment dates
+
+booking options
+
+same hub in segments 1/2 and 3/4
+
+Ranking logic
+7) Score the stopover opportunity, not just the fare
+
+A stopover fare is good if the price premium is small relative to the value of the stay.
+
+Add fields:
+
+Python
+Run
+stopover_total_usd
+stopover_delta_pp_usd
+stopover_delta_pct
+stopover_family_total_usd
+stopover_nights_total
+stopover_hub
+stopover_mode
+stopover_out_nights
+stopover_back_nights
+stopover_verified_status
+stopover_partner_best_grade
+stopover_single_ticket_ok
+Suggested scoring
+Python
+Run
+def score_stopover_opportunity(base_pp, stopover_pp, total_nights, verified_grade, single_ticket_ok):
+    delta = stopover_pp - base_pp
+    delta_pct = delta / max(base_pp, 1)
+
+    score = 0
+
+    # cheaper premium is better
+    if delta <= 80:
+        score += 40
+    elif delta <= 150:
+        score += 25
+    elif delta <= 250:
+        score += 10
+
+    if delta_pct <= 0.15:
+        score += 25
+    elif delta_pct <= 0.25:
+        score += 10
+
+    if total_nights >= 4:
+        score += 20
+    elif total_nights >= 2:
+        score += 10
+
+    if verified_grade == "A":
+        score += 15
+    elif verified_grade == "B":
+        score += 8
+
+    if single_ticket_ok:
+        score += 10
+    else:
+        score -= 20
+
+    return score
+Practical filters
+
+I would only show stopover opportunities if:
+
+delta ≤ $150/pp, or
+
+delta_pct ≤ 20%
+
+and:
+
+partner grade A/B
+
+not separate tickets
+
+hub is in Japan/Korea allowlist
+
+Your example:
+
+$722 → $819
+
+delta = $97
+
+delta_pct = 13.4%
+
+That is absolutely a strong stopover candidate.
+
+Important booking safety checks
+8) Reject stopover variants that are fake-good
+
+Your screenshot 1 shows a danger pattern:
+
+airline-direct booking at $819
+
+OTA at $1,083
+
+a ridiculous $8,020 separate-tickets option
+
+So your parser must not just say “partner links exist.”
+
+For stopover variants, add:
+
+Python
+Run
+def classify_booking_rows(rows):
+    """
+    rows from the booking-options area
+    """
+    best_airline_direct = None
+    has_separate_tickets_warning = False
+
+    for row in rows:
+        txt = row["text"].lower()
+        if "separate tickets" in txt or "booked individually" in txt:
+            has_separate_tickets_warning = True
+
+        if row["partner_type"] == "airline" and not ("separate tickets" in txt):
+            if best_airline_direct is None or row["price_usd"] < best_airline_direct["price_usd"]:
+                best_airline_direct = row
+
+    return {
+        "best_airline_direct": best_airline_direct,
+        "has_separate_tickets_warning": has_separate_tickets_warning,
+    }
+Rule
+
+Only mark a stopover fare as strong if:
+
+airline-direct row exists
+
+no warning that the chosen option is separate tickets
+
+partner grade A/B
+
+Best place in your current pipeline
+9) Put the stopover expander after exact-route verification
+
+Pipeline should become:
+
+Explore scan finds cheap round-trip candidates
+
+Exact-route verifier confirms real booking path
+
+Hub detector extracts ICN / NRT / HND / etc
+
+Stopover expander builds multi-city variants
+
+Variant verifier checks pricing + booking options
+
+Opportunity scorer ranks stopover deals
+
+Do not put stopover generation before verification.
+That will explode runtime and add junk.
+
+Output format to add
+10) Publish a separate “Stopover stay deals” table
+
+Do not mix these into your normal cheap-fare table.
+
+Use a dedicated section like:
+
+rank
+origin
+destination
+hub
+base_roundtrip_pp_usd
+stopover_pp_usd
+delta_pp_usd
+delta_pct
+family_total_usd
+mode
+out_nights
+back_nights
+total_extra_nights
+airline
+verified_status
+partner_best_grade
+single_ticket_ok
+google_multicity_url
+notes
+Example row from your screenshots
+
+origin: HGH
+
+destination: SFO
+
+hub: ICN
+
+base_roundtrip_pp_usd: 722
+
+stopover_pp_usd: 819
+
+delta_pp_usd: 97
+
+delta_pct: 13.4%
+
+mode: extend_trip
+
+out_nights: 3
+
+back_nights: 2
+
+partner_best_grade: A
+
+single_ticket_ok: true
+
+note: “Asiana-direct multi-city stopover; strong candidate”
+
+High-impact code changes by file
+entities.py
+
+Add:
+
+Python
+Run
+STOPOVER_HUBS = {
+    "ICN": {"city": "Seoul", "group": "KR"},
+    "GMP": {"city": "Seoul", "group": "KR"},
+    "NRT": {"city": "Tokyo", "group": "JP"},
+    "HND": {"city": "Tokyo", "group": "JP"},
+    "KIX": {"city": "Osaka", "group": "JP"},
+}
+
+and maybe:
+
+Python
+Run
+def is_stopover_hub(iata: str) -> bool:
+    return iata in STOPOVER_HUBS
+bug_fare_scanner.py
+
+Add:
+
+generate_stopover_variants()
+
+verify_stopover_variant()
+
+score_stopover_opportunity()
+
+stopover fields in result rows
+
+money.py
+
+No major change unless booking rows show mixed currencies.
+If so, keep parsing booking options row-by-row.
+
+generate_verification_page.py
+
+Add a new section:
+
+Stopover Stay Opportunities
+
+rank by delta + verification quality + family total
+
+My blunt recommendation
+
+Do not build this as a universal multi-city engine first.
+
+Build the narrow profitable version first:
+
+v1 stopover feature
+
+Only trigger when all are true:
+
+base fare is verified
+
+1 stop
+
+hub is ICN/NRT/HND/KIX
+
+airline is stable enough
+
+delta threshold is acceptable
+
+airline-direct booking exists
+
+That narrow version will already find the kind of opportunity you want.
+
+Then later you can expand to:
+
+outbound-only stopovers
+
+return-only stopovers
+
+Canada hubs
+
+business class stopover bargains
+
+The smartest next step is to implement this as a post-verification optimizer, not as part of the raw scan.
+
+If you upload the current code zip again, I can turn this into an exact file-by-file patch plan for your current scanner version.
