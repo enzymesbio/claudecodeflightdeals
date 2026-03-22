@@ -1,5 +1,5 @@
 """Deep verify all fares under $2000 family — parallel with Playwright native clicks."""
-import sys, os, json, time, re, base64, asyncio
+import sys, os, json, time, re, base64, asyncio, random
 from datetime import datetime, timedelta, timezone
 
 os.environ["PYTHONIOENCODING"] = "utf-8"
@@ -149,8 +149,8 @@ async def verify_one(context, fare, idx, total, sem):
                     await btn.first.click()
                     await asyncio.sleep(2)
             except: pass
-            # Wait for flight results to render (critical)
-            await asyncio.sleep(12)
+            # Wait for flight results to render (jitter reduces rate-limit risk)
+            await asyncio.sleep(random.uniform(10, 16))
 
             # Get cheapest price
             text = await page.inner_text('body')
@@ -184,6 +184,31 @@ async def verify_one(context, fare, idx, total, sem):
 
             await li.click(timeout=5000)
             await asyncio.sleep(5)
+
+            # Check for new tab opened by click (Google sometimes opens booking in new tab)
+            all_pages = context.pages
+            if len(all_pages) > 1:
+                new_tab = all_pages[-1]
+                try:
+                    await new_tab.wait_for_load_state('domcontentloaded', timeout=8000)
+                    new_tab_body = (await new_tab.inner_text('body'))[:3000]
+                    if 'Book with' in new_tab_body:
+                        bw = re.search(r'Book with\s+(.+?)(?:\n|Airline|$)', new_tab_body)
+                        if bw: result['airline'] = bw.group(1).strip()
+                        bp = re.search(r'\$([0-9,]+)', new_tab_body)
+                        if bp: result['price'] = int(bp.group(1).replace(',', ''))
+                        result['booking_url'] = new_tab.url
+                        result['has_booking_page'] = True
+                        result['status'] = 'BOOKABLE'
+                        print(f"  {tag} BOOKABLE(tab) {origin}→{dest} ${result.get('price','?')} {result.get('airline','?')}")
+                        await new_tab.close()
+                        return result
+                except Exception:
+                    pass
+                try:
+                    await new_tab.close()
+                except Exception:
+                    pass
 
             # Check URL — should have changed to /flights/search with return flights
             url2 = page.url

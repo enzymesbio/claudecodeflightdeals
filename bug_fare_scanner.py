@@ -61,6 +61,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 # Proof screenshots directory
 PROOF_DIR = os.path.join(BASE_DIR, 'proof')
+os.makedirs(PROOF_DIR, exist_ok=True)
 
 # Family composition: 2 adults + 1 child (child ~2y7m old → age bucket 3)
 CHILD_AGE = 3

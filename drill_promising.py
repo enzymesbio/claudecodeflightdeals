@@ -11,7 +11,7 @@ Usage:
     python drill_promising.py --top 30           # drill top 30
     python drill_promising.py --origin beijing   # drill only Beijing fares
 """
-import sys, os, json, re, base64, asyncio, argparse
+import sys, os, json, re, base64, asyncio, argparse, random
 from datetime import datetime, timedelta, timezone
 
 os.environ["PYTHONIOENCODING"] = "utf-8"
@@ -105,16 +105,23 @@ def build_oneway_url(origin_cid, dest_cid, depart):
     return f'https://www.google.com/travel/flights?tfs={tfs}&hl=en&gl=hk&curr=USD'
 
 
-def build_multicity_url(segments):
+def build_multicity_url(segments, adults=2, child_age=3, cabin=1):
     """Build multi-city Google Flights URL (4-leg stopover itinerary).
     segments: list of (origin_cid, dest_cid, date_str) tuples.
+    Defaults to family of 2 adults + 1 child (age 3), Economy — matches base scanner.
     """
     legs = []
     for orig_cid, dst_cid, date in segments:
         o = _fv(1, 3) + _fb(2, orig_cid)
         d = _fv(1, 2) + _fb(2, dst_cid)
         legs.append(_fb(2, date) + _fb(13, o) + _fb(14, d))
-    msg = _fv(1, 27) + _fv(2, 3) + b''.join(_fb(3, leg) for leg in legs)
+    msg = (
+        _fv(1, 27) + _fv(2, 3) +
+        b''.join(_fb(3, leg) for leg in legs) +
+        _fv(8, adults) +     # number of adults
+        _fv(7, child_age) +  # 1 child at given age
+        _fv(9, cabin)        # cabin class (1=Economy)
+    )
     tfs = base64.urlsafe_b64encode(msg).rstrip(b'=').decode('ascii')
     return f'https://www.google.com/travel/flights?tfs={tfs}&hl=en&gl=hk&curr=USD'
 
@@ -165,7 +172,7 @@ async def get_page_text(context, url, wait_secs=12):
                 await btn.first.click()
                 await asyncio.sleep(2)
         except: pass
-        await asyncio.sleep(wait_secs)
+        await asyncio.sleep(random.uniform(wait_secs * 0.9, wait_secs * 1.2))
         return await page.inner_text('body')
     except:
         return ''

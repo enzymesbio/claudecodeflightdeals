@@ -119,13 +119,26 @@ def push_to_github():
                 shutil.copy2(src, dst)
                 changed = True
 
-        # Copy archive index
+        # Copy archive index — last 10 runs only to prevent repo bloat
         archive_src = os.path.join(APP_DIR, 'archive')
         archive_dst = os.path.join(work_dir, 'archive')
         if os.path.exists(archive_src):
-            if os.path.exists(archive_dst):
-                shutil.rmtree(archive_dst)
-            shutil.copytree(archive_src, archive_dst)
+            os.makedirs(archive_dst, exist_ok=True)
+            # Copy only the 10 most recent run subdirectories (sorted by name = timestamp)
+            subdirs = sorted([
+                d for d in os.listdir(archive_src)
+                if os.path.isdir(os.path.join(archive_src, d))
+            ])[-10:]
+            for d in subdirs:
+                src_d = os.path.join(archive_src, d)
+                dst_d = os.path.join(archive_dst, d)
+                if os.path.exists(dst_d):
+                    shutil.rmtree(dst_d)
+                shutil.copytree(src_d, dst_d)
+            # Also copy archive's own index.html if present
+            arc_idx = os.path.join(archive_src, 'index.html')
+            if os.path.exists(arc_idx):
+                shutil.copy2(arc_idx, os.path.join(archive_dst, 'index.html'))
             changed = True
 
         if not changed:
