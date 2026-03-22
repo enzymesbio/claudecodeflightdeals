@@ -94,6 +94,7 @@ Reviewers: Grok 4.1 Fast Reasoning (A), GPT-5.1 Codex Mini (B), ChatGPT Web (C �
 2. **Cap archive push to last 10 runs** — in `railway_entrypoint.push_to_github()`, only copy 10 most recent archive subdirs.
 3. **Add jitter** — `await asyncio.sleep(random.uniform(1, 3))` between each page load in scanner and deep verify.
 4. **Add `PROOF_DIR` mkdir** — one-liner in `bug_fare_scanner.py`.
+5. **Handle new-tab booking pages** — Google sometimes opens booking in a new tab; add `context.wait_for_event("page")` after click in `deep_verify_all.py`. This likely explains many SEARCH_CONFIRMED fares that are actually bookable. (Source: GPT second run)
 
 ### Do Soon (medium impact, medium effort)
 5. **HTML truncation fix** — investigate file size limit on GitHub Pages; likely need to split large fare table into separate JS-loaded file or paginate.
