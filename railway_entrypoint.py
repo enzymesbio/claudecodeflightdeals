@@ -76,14 +76,14 @@ def symlink_data_paths():
     print(f"[{ts()}] Data paths linked to {DATA_DIR}")
 
 
-def run_pipeline():
-    """Run the full pipeline."""
-    print(f"[{ts()}] Starting full pipeline...")
-    result = subprocess.run(
-        [PYTHON, os.path.join(APP_DIR, 'run_full_pipeline.py')],
-        cwd=APP_DIR,
-        timeout=10800,  # 3 hour max
-    )
+def run_pipeline(from_stage=None):
+    """Run the full pipeline, optionally resuming from a given stage."""
+    label = f"(from stage {from_stage})" if from_stage else ""
+    print(f"[{ts()}] Starting full pipeline... {label}")
+    cmd = [PYTHON, os.path.join(APP_DIR, 'run_full_pipeline.py')]
+    if from_stage:
+        cmd += ['--from', str(from_stage)]
+    result = subprocess.run(cmd, cwd=APP_DIR, timeout=10800)
     return result.returncode == 0
 
 
@@ -177,13 +177,21 @@ def main():
     # 1. Link data paths to persistent volume
     symlink_data_paths()
 
-    # 2. Run full pipeline
+    # 2. Run full pipeline — auto-retry up to 2x on crash
     ok = run_pipeline()
+    if not ok:
+        print(f"[{ts()}] Pipeline failed — waiting 5 min then retrying from Stage 3 (verify)...")
+        time.sleep(300)
+        ok = run_pipeline(from_stage=3)
+    if not ok:
+        print(f"[{ts()}] Second attempt failed — waiting 5 min then final retry from Stage 3...")
+        time.sleep(300)
+        ok = run_pipeline(from_stage=3)
 
     # 3. Push results to GitHub regardless of pipeline success
     push_to_github()
 
-    print(f"\n[{ts()}] Done — {'SUCCESS' if ok else 'PIPELINE HAD ERRORS'}")
+    print(f"\n[{ts()}] Done — {'SUCCESS' if ok else 'PIPELINE HAD ERRORS (all retries exhausted)'}")
     sys.exit(0 if ok else 1)
 
 
