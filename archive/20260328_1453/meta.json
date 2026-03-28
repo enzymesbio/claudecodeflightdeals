@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-03-28T14:53:43.352381+08:00",
+  "slug": "20260328_1453",
+  "affordable_count": 22,
+  "bookable_count": 8,
+  "oneway_count": 17,
+  "trend_text": "Comparing 2026-03-28 vs 2026-03-28:\n  +1 new affordable route:\n    NEW  Bangkok → Seattle  $675.0/pp ($1856 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-03-28</p><div class=\"diff-section\"><h4>✦ New routes (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Bangkok</td><td>Seattle</td><td>Economy</td><td><strong>$675.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1856 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">May 18 – 26</td></tr></tbody></table></div>"
+}
