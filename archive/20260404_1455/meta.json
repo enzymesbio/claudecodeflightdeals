@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-04-04T14:55:27.222776+08:00",
+  "slug": "20260404_1455",
+  "affordable_count": 18,
+  "bookable_count": 8,
+  "oneway_count": 14,
+  "trend_text": "Comparing 2026-04-04 vs 2026-04-04:\n  +2 new affordable routes:\n    NEW  Singapore → Seattle  $633.0/pp ($1741 fam)\n    NEW  Tokyo → Portland  $680.0/pp ($1870 fam)\n  -1 route disappeared (above budget or gone):\n    GONE Singapore → Los Angeles  was $710.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-04-04</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Singapore</td><td>Seattle</td><td>Economy</td><td><strong>$633.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1741 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">May 3 – 9</td></tr><tr class=\"new-row\"><td>Tokyo</td><td>Portland</td><td>Economy</td><td><strong>$680.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1870 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 7 – 13</td></tr></tbody></table></div><div class=\"diff-section\"><h4>✕ Disappeared (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Singapore</td><td>Los Angeles</td><td>Economy</td><td><strong>$710.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1952 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">May 4 – 10</td></tr></tbody></table></div>"
+}
