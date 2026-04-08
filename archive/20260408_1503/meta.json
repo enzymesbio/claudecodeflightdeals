@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-04-08T15:03:11.287327+08:00",
+  "slug": "20260408_1503",
+  "affordable_count": 18,
+  "bookable_count": 4,
+  "oneway_count": 11,
+  "trend_text": "Comparing 2026-04-08 vs 2026-04-08:\n  +2 new affordable routes:\n    NEW  Bangkok → Palm Springs  $696.0/pp ($1914 fam)\n    NEW  Manila → Las Vegas  $722.0/pp ($1986 fam)\n  -1 route disappeared (above budget or gone):\n    GONE Hong Kong → Los Angeles  was $706.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-04-08</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Bangkok</td><td>Palm Springs</td><td>Economy</td><td><strong>$696.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1914 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Apr 9 – 15</td></tr><tr class=\"new-row\"><td>Manila</td><td>Las Vegas</td><td>Economy</td><td><strong>$722.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1986 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">May 8 – 14</td></tr></tbody></table></div><div class=\"diff-section\"><h4>✕ Disappeared (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Hong Kong</td><td>Los Angeles</td><td>Economy</td><td><strong>$706.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1942 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Jun 21 – 28</td></tr></tbody></table></div>"
+}
