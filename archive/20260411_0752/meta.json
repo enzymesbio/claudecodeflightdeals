@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-04-11T07:52:00.958597+08:00",
+  "slug": "20260411_0752",
+  "affordable_count": 19,
+  "bookable_count": 9,
+  "oneway_count": 12,
+  "trend_text": "Comparing 2026-04-11 vs 2026-04-10:\n  -2 routes disappeared (above budget or gone):\n    GONE Bangkok → San Francisco  was $631.0/pp\n    GONE Bangkok → Los Angeles  was $705.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-04-10</p><div class=\"diff-section\"><h4>✕ Disappeared (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Bangkok</td><td>San Francisco</td><td>Economy</td><td><strong>$631.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1735 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Aug 30 – Sep 5</td></tr><tr class=\"gone-row\"><td>Bangkok</td><td>Los Angeles</td><td>Economy</td><td><strong>$705.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1939 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Sep 14 – 20</td></tr></tbody></table></div>"
+}
