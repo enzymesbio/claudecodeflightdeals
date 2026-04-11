@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-04-11T22:57:10.168098+08:00",
+  "slug": "20260411_2257",
+  "affordable_count": 22,
+  "bookable_count": 8,
+  "oneway_count": 14,
+  "trend_text": "Comparing 2026-04-11 vs 2026-04-11:\n  +3 new affordable routes:\n    NEW  Bangkok → Seattle  $629.0/pp ($1730 fam)\n    NEW  Tokyo → San Diego  $665.0/pp ($1829 fam)\n    NEW  Bangkok → Palm Springs  $687.0/pp ($1889 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-04-11</p><div class=\"diff-section\"><h4>✦ New routes (3)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Bangkok</td><td>Seattle</td><td>Economy</td><td><strong>$629.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1730 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Jul 3 – 11</td></tr><tr class=\"new-row\"><td>Tokyo</td><td>San Diego</td><td>Economy</td><td><strong>$665.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1829 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 10 – 19</td></tr><tr class=\"new-row\"><td>Bangkok</td><td>Palm Springs</td><td>Economy</td><td><strong>$687.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1889 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Apr 16 – 22</td></tr></tbody></table></div>"
+}
