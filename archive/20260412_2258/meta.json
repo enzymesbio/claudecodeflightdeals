@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-04-12T22:58:03.181390+08:00",
+  "slug": "20260412_2258",
+  "affordable_count": 21,
+  "bookable_count": 7,
+  "oneway_count": 12,
+  "trend_text": "Comparing 2026-04-12 vs 2026-04-12:\n  ↑ 2 routes got more expensive:\n    ↑    Bangkok → Seattle  $635.0→$727.0/pp (+14%)\n    ↑    Bangkok → San Francisco  $629.0→$708.0/pp (+13%)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-04-12</p><div class=\"diff-section\"><h4>↑ Got more expensive (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"pricey-row\"><td>Bangkok</td><td>Seattle</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$635.0</span> → <strong>$727.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1999 fam)</span></td><td><span class=\"badge badge-rise\">↑↑ Big Rise</span></td><td style=\"color:#718096;font-size:11px\">Jun 22 – Jul 1</td></tr><tr class=\"pricey-row\"><td>Bangkok</td><td>San Francisco</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$629.0</span> → <strong>$708.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1947 fam)</span></td><td><span class=\"badge badge-rise\">↑↑ Big Rise</span></td><td style=\"color:#718096;font-size:11px\">Aug 24 – 30</td></tr></tbody></table></div>"
+}
