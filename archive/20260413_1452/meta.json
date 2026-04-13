@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-04-13T14:52:48.497186+08:00",
+  "slug": "20260413_1452",
+  "affordable_count": 22,
+  "bookable_count": 8,
+  "oneway_count": 12,
+  "trend_text": "Comparing 2026-04-13 vs 2026-04-13:\n  +2 new affordable routes:\n    NEW  Ho Chi Minh City → Los Angeles  $690.0/pp ($1898 fam)\n    NEW  Tokyo → San Antonio  $726.0/pp ($1996 fam)\n  ↑ 1 route got more expensive:\n    ↑    Bangkok → Seattle  $627.0→$726.0/pp (+16%)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-04-13</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Ho Chi Minh City</td><td>Los Angeles</td><td>Economy</td><td><strong>$690.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1898 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 14 – 23</td></tr><tr class=\"new-row\"><td>Tokyo</td><td>San Antonio</td><td>Economy</td><td><strong>$726.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1996 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Aug 21 – 27</td></tr></tbody></table></div><div class=\"diff-section\"><h4>↑ Got more expensive (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"pricey-row\"><td>Bangkok</td><td>Seattle</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$627.0</span> → <strong>$726.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1996 fam)</span></td><td><span class=\"badge badge-rise\">↑↑ Big Rise</span></td><td style=\"color:#718096;font-size:11px\">Aug 30 – Sep 7</td></tr></tbody></table></div>"
+}
