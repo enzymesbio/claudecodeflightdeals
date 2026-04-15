@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-04-15T14:55:50.558136+08:00",
+  "slug": "20260415_1455",
+  "affordable_count": 21,
+  "bookable_count": 7,
+  "oneway_count": 12,
+  "trend_text": "Comparing 2026-04-15 vs 2026-04-15:\n  +2 new affordable routes:\n    NEW  Bangkok → Los Angeles  $677.0/pp ($1862 fam)\n    NEW  Tokyo → St. Louis  $682.0/pp ($1876 fam)\n  ↓ 1 route got cheaper:\n    ↓    Bangkok → San Francisco  $708.0→$629.0/pp (-11%)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-04-15</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Bangkok</td><td>Los Angeles</td><td>Economy</td><td><strong>$677.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1862 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 14 – 20</td></tr><tr class=\"new-row\"><td>Tokyo</td><td>St. Louis</td><td>Economy</td><td><strong>$682.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1876 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Apr 27 – May 3</td></tr></tbody></table></div><div class=\"diff-section\"><h4>↓ Got cheaper (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"cheap-row\"><td>Bangkok</td><td>San Francisco</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$708.0</span> → <strong>$629.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1730 fam)</span></td><td><span class=\"badge badge-drop\">↓↓ BIG DROP</span></td><td style=\"color:#718096;font-size:11px\">Sep 11 – 19</td></tr></tbody></table></div>"
+}
