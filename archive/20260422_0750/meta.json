@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-04-22T07:50:30.735259+08:00",
+  "slug": "20260422_0750",
+  "affordable_count": 13,
+  "bookable_count": 4,
+  "oneway_count": 6,
+  "trend_text": "Comparing 2026-04-22 vs 2026-04-21:\n  ↑ 1 route got more expensive:\n    ↑    Bangkok → San Francisco  $626.0→$703.0/pp (+12%)\n  -2 routes disappeared (above budget or gone):\n    GONE Bangkok → Seattle  was $626.0/pp\n    GONE Tokyo → Nashville  was $681.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-04-21</p><div class=\"diff-section\"><h4>↑ Got more expensive (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"pricey-row\"><td>Bangkok</td><td>San Francisco</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$626.0</span> → <strong>$703.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1933 fam)</span></td><td><span class=\"badge badge-rise\">↑↑ Big Rise</span></td><td style=\"color:#718096;font-size:11px\">Sep 7 – 13</td></tr></tbody></table></div><div class=\"diff-section\"><h4>✕ Disappeared (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Bangkok</td><td>Seattle</td><td>Economy</td><td><strong>$626.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1722 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Aug 30 – Sep 7</td></tr><tr class=\"gone-row\"><td>Tokyo</td><td>Nashville</td><td>Economy</td><td><strong>$681.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1873 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Aug 17 – 25</td></tr></tbody></table></div>"
+}
