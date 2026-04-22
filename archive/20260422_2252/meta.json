@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-04-22T22:52:30.349190+08:00",
+  "slug": "20260422_2252",
+  "affordable_count": 10,
+  "bookable_count": 3,
+  "oneway_count": 6,
+  "trend_text": "Comparing 2026-04-22 vs 2026-04-22:\n  ↓ 1 route got cheaper:\n    ↓    Bangkok → San Francisco  $704.0→$629.0/pp (-11%)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-04-22</p><div class=\"diff-section\"><h4>↓ Got cheaper (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"cheap-row\"><td>Bangkok</td><td>San Francisco</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$704.0</span> → <strong>$629.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1730 fam)</span></td><td><span class=\"badge badge-drop\">↓↓ BIG DROP</span></td><td style=\"color:#718096;font-size:11px\">Aug 31 – Sep 7</td></tr></tbody></table></div>"
+}
