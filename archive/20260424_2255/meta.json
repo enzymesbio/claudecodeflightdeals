@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-04-24T22:55:17.531455+08:00",
+  "slug": "20260424_2255",
+  "affordable_count": 13,
+  "bookable_count": 3,
+  "oneway_count": 5,
+  "trend_text": "Comparing 2026-04-24 vs 2026-04-24:\n  -4 routes disappeared (above budget or gone):\n    GONE Bangkok → San Francisco  was $624.0/pp\n    GONE Seoul → San Francisco  was $689.0/pp\n    GONE Seoul → Los Angeles  was $706.0/pp\n    GONE Tokyo → Denver  was $726.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-04-24</p><div class=\"diff-section\"><h4>✕ Disappeared (4)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Bangkok</td><td>San Francisco</td><td>Economy</td><td><strong>$624.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1716 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Aug 22 – 28</td></tr><tr class=\"gone-row\"><td>Seoul</td><td>San Francisco</td><td>Economy</td><td><strong>$689.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1895 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Sep 20 – 29</td></tr><tr class=\"gone-row\"><td>Seoul</td><td>Los Angeles</td><td>Economy</td><td><strong>$706.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1942 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Sep 20 – 29</td></tr><tr class=\"gone-row\"><td>Tokyo</td><td>Denver</td><td>Economy</td><td><strong>$726.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1996 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Aug 20 – 26</td></tr></tbody></table></div>"
+}
