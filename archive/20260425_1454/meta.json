@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-04-25T14:54:53.422838+08:00",
+  "slug": "20260425_1454",
+  "affordable_count": 12,
+  "bookable_count": 5,
+  "oneway_count": 5,
+  "trend_text": "Comparing 2026-04-25 vs 2026-04-25:\n  +1 new affordable route:\n    NEW  Tokyo → Phoenix  $726.0/pp ($1996 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-04-25</p><div class=\"diff-section\"><h4>✦ New routes (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Tokyo</td><td>Phoenix</td><td>Economy</td><td><strong>$726.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1996 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Aug 20 – 27</td></tr></tbody></table></div>"
+}
