@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-04-26T07:51:39.972677+08:00",
+  "slug": "20260426_0751",
+  "affordable_count": 11,
+  "bookable_count": 4,
+  "oneway_count": 4,
+  "trend_text": "Comparing 2026-04-26 vs 2026-04-25:\n  +1 new affordable route:\n    NEW  Hong Kong → Denver  $711.0/pp ($1955 fam)\n  -2 routes disappeared (above budget or gone):\n    GONE Bangkok → San Francisco  was $706.0/pp\n    GONE Hong Kong → Los Angeles  was $706.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-04-25</p><div class=\"diff-section\"><h4>✦ New routes (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Hong Kong</td><td>Denver</td><td>Economy</td><td><strong>$711.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1955 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Jun 25 – Jul 3</td></tr></tbody></table></div><div class=\"diff-section\"><h4>✕ Disappeared (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Bangkok</td><td>San Francisco</td><td>Economy</td><td><strong>$706.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1942 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Aug 31 – Sep 6</td></tr><tr class=\"gone-row\"><td>Hong Kong</td><td>Los Angeles</td><td>Economy</td><td><strong>$706.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1942 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Jun 26 – Jul 5</td></tr></tbody></table></div>"
+}
