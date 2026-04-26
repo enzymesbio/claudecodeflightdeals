@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-04-26T22:56:23.844195+08:00",
+  "slug": "20260426_2256",
+  "affordable_count": 10,
+  "bookable_count": 4,
+  "oneway_count": 5,
+  "trend_text": "Comparing 2026-04-26 vs 2026-04-26:\n  -2 routes disappeared (above budget or gone):\n    GONE Bangkok → San Francisco  was $627.0/pp\n    GONE Tokyo → Phoenix  was $726.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-04-26</p><div class=\"diff-section\"><h4>✕ Disappeared (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Bangkok</td><td>San Francisco</td><td>Economy</td><td><strong>$627.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1724 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Aug 30 – Sep 7</td></tr><tr class=\"gone-row\"><td>Tokyo</td><td>Phoenix</td><td>Economy</td><td><strong>$726.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1996 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Jul 16 – 22</td></tr></tbody></table></div>"
+}
