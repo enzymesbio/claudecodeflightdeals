@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-04-28T22:54:09.123806+08:00",
+  "slug": "20260428_2254",
+  "affordable_count": 12,
+  "bookable_count": 3,
+  "oneway_count": 6,
+  "trend_text": "Comparing 2026-04-28 vs 2026-04-28:\n  +1 new affordable route:\n    NEW  Hong Kong → Los Angeles  $706.0/pp ($1942 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-04-28</p><div class=\"diff-section\"><h4>✦ New routes (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Hong Kong</td><td>Los Angeles</td><td>Economy</td><td><strong>$706.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1942 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Jun 27 – Jul 3</td></tr></tbody></table></div>"
+}
