@@ -1,0 +1,83 @@
+{
+  "scan_time": "2026-04-30T22:24:40.732926+08:00",
+  "budget_pp": 700,
+  "budget_family": 1925,
+  "total_fares": 5,
+  "scan_dates": [
+    "2026-07-29",
+    "2026-08-28",
+    "2026-09-27"
+  ],
+  "fares": [
+    {
+      "origin_city": "Tokyo",
+      "origin_code": "TYO",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 560,
+      "family_price": 1540,
+      "dates": "Sep 3 – 9",
+      "stops": 0,
+      "duration": "9 hr 45 min",
+      "scan_date": "2026-07-29",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Tokyo",
+      "origin_code": "TYO",
+      "destination": "Houston",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 653,
+      "family_price": 1796,
+      "dates": "Aug 24 – 31",
+      "stops": 0,
+      "duration": "12 hr 15 min",
+      "scan_date": "2026-07-29",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Tokyo",
+      "origin_code": "TYO",
+      "destination": "San Diego",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 673,
+      "family_price": 1851,
+      "dates": "Sep 10 – 19",
+      "stops": 2,
+      "duration": "16 hr 17 min",
+      "scan_date": "2026-07-29",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Bangkok",
+      "origin_code": "BKK",
+      "destination": "Seattle",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 681,
+      "family_price": 1873,
+      "dates": "Aug 31 – Sep 8",
+      "stops": 1,
+      "duration": "19 hr 55 min",
+      "scan_date": "2026-08-28",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Seoul",
+      "origin_code": "ICN",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 696,
+      "family_price": 1914,
+      "dates": "May 8 – 15",
+      "stops": 0,
+      "duration": "11 hr",
+      "scan_date": "2026-08-28",
+      "type": "oneway"
+    }
+  ]
+}
