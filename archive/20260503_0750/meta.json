@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-05-03T07:50:25.095947+08:00",
+  "slug": "20260503_0750",
+  "affordable_count": 9,
+  "bookable_count": 3,
+  "oneway_count": 5,
+  "trend_text": "Comparing 2026-05-03 vs 2026-05-02:\n  ↑ 1 route got more expensive:\n    ↑    Bangkok → Seattle  $548.0→$679.0/pp (+24%)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-05-02</p><div class=\"diff-section\"><h4>↑ Got more expensive (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"pricey-row\"><td>Bangkok</td><td>Seattle</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$548.0</span> → <strong>$679.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1867 fam)</span></td><td><span class=\"badge badge-rise\">↑↑ Big Rise</span></td><td style=\"color:#718096;font-size:11px\">Jul 5 – 13</td></tr></tbody></table></div>"
+}
