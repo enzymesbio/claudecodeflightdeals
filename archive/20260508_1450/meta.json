@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-05-08T14:50:55.615154+08:00",
+  "slug": "20260508_1450",
+  "affordable_count": 8,
+  "bookable_count": 2,
+  "oneway_count": 5,
+  "trend_text": "Comparing 2026-05-08 vs 2026-05-08:\n  +2 new affordable routes:\n    NEW  Bangkok → Seattle  $548.0/pp ($1507 fam)\n    NEW  Bangkok → Los Angeles  $626.0/pp ($1722 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-05-08</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Bangkok</td><td>Seattle</td><td>Economy</td><td><strong>$548.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1507 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Aug 31 – Sep 8</td></tr><tr class=\"new-row\"><td>Bangkok</td><td>Los Angeles</td><td>Economy</td><td><strong>$626.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1722 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 5 – 11</td></tr></tbody></table></div>"
+}
