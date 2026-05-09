@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-05-09T14:47:36.772129+08:00",
+  "slug": "20260509_1447",
+  "affordable_count": 7,
+  "bookable_count": 2,
+  "oneway_count": 4,
+  "trend_text": "Comparing 2026-05-09 vs 2026-05-09:\n  ↑ 1 route got more expensive:\n    ↑    Bangkok → Los Angeles  $626.0→$677.0/pp (+8%)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-05-09</p><div class=\"diff-section\"><h4>↑ Got more expensive (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"pricey-row\"><td>Bangkok</td><td>Los Angeles</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$626.0</span> → <strong>$677.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1862 fam)</span></td><td><span class=\"badge badge-rise\">↑ Pricier</span></td><td style=\"color:#718096;font-size:11px\">Aug 30 – Sep 8</td></tr></tbody></table></div>"
+}
