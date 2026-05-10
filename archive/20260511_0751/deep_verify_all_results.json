@@ -1,0 +1,111 @@
+{
+  "verification_time": "2026-05-11T07:28:20.690724+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 7,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Bangkok",
+      "city": "Seattle",
+      "cabin": "Economy",
+      "explore_price": 549.0,
+      "dates": "Sep 3 - 11",
+      "route": "Bangkok → Seattle",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA5LTAzagwIAxIIL20vMGZuMmdyDAgCEggvbS8wZDlqchooEgoyMDI2LTA5LTExagwIAhIIL20vMGQ5anJyDAgDEggvbS8wZm4yZw&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA5LTAzagwIAxIIL20vMGZuMmdyDAgCEggvbS8wZDlqchooEgoyMDI2LTA5LTExagwIAhIIL20vMGQ5anJyDAgDEggvbS8wZm4yZw&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 549,
+      "has_booking_page": true
+    },
+    {
+      "origin": "Tokyo",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 560.0,
+      "dates": "Sep 3 - 9",
+      "route": "Tokyo → San Francisco",
+      "status": "BOOKABLE",
+      "booking_url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhpIEgoyMDI2LTA5LTAzIh4KA05SVBIKMjAyNi0wOS0wMxoDU0ZPKgJaRzICMjZqDAgDEggvbS8wN2Rma3IMCAISCC9tLzBkNmxwGkgSCjIwMjYtMDktMDkiHgoDU0ZPEgoyMDI2LTA5LTA5GgNOUlQqAlpHMgIyNWoMCAISCC9tLzBkNmxwcgwIAxIIL20vMDdkZmtAAUgBcAGCAQsI____________AZgBAQ&tfu=CmxDalJJY2xCUWIyY3hSRmRTTVZsQlMwMXZkM2RDUnkwdExTMHRMUzB0Y0dwaVoyMHlORUZCUVVGQlIyOUNSa2hSUVVWQmJEUkJFZ1JhUnpJMUdnc0lxTFVERUFJYUExVlRSRGdjY0tpMUF3PT0SBggAIAIoASIGCgEwCgEx&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA5LTAzagwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTA5agwIAhIIL20vMGQ2bHByDAgDEggvbS8wN2Rmaw&hl=en&gl=hk&curr=USD",
+      "airline": "ZIPAIR Tokyo",
+      "price": 561,
+      "has_booking_page": true
+    },
+    {
+      "origin": "Bangkok",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 626.0,
+      "dates": "Sep 4 - 10",
+      "route": "Bangkok → Los Angeles",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA5LTA0agwIAxIIL20vMGZuMmdyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDktMTBqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMGZuMmc&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA5LTA0agwIAxIIL20vMGZuMmdyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDktMTBqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMGZuMmc&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 626,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Tokyo",
+      "city": "Houston",
+      "cabin": "Economy",
+      "explore_price": 651.0,
+      "dates": "Aug 29 - Sep 7",
+      "route": "Tokyo → Houston",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA4LTI5agwIAxIIL20vMDdkZmtyDAgCEggvbS8wM2wybhooEgoyMDI2LTA5LTA3agwIAhIIL20vMDNsMm5yDAgDEggvbS8wN2Rmaw&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA4LTI5agwIAxIIL20vMDdkZmtyDAgCEggvbS8wM2wybhooEgoyMDI2LTA5LTA3agwIAhIIL20vMDNsMm5yDAgDEggvbS8wN2Rmaw&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 652,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Hong Kong",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 706.0,
+      "dates": "Jun 25 - Jul 4",
+      "route": "Hong Kong → San Francisco",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA2LTI1agwIAxIIL20vMDNoNjRyDAgCEggvbS8wZDZscBooEgoyMDI2LTA3LTA0agwIAhIIL20vMGQ2bHByDAgDEggvbS8wM2g2NA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA2LTI1agwIAxIIL20vMDNoNjRyDAgCEggvbS8wZDZscBooEgoyMDI2LTA3LTA0agwIAhIIL20vMGQ2bHByDAgDEggvbS8wM2g2NA&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 706,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Hong Kong",
+      "city": "Denver",
+      "cabin": "Economy",
+      "explore_price": 712.0,
+      "dates": "Jun 18 - 27",
+      "route": "Hong Kong → Denver",
+      "status": "BOOKABLE",
+      "booking_url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhpqEgoyMDI2LTA2LTE4Ih8KA0hLRxIKMjAyNi0wNi0xOBoDU0ZPKgJVQTIDODYyIh8KA1NGTxIKMjAyNi0wNi0xOBoDREVOKgJVQTIDNTQwagwIAxIIL20vMDNoNjRyDAgCEggvbS8wMmNsMRpqEgoyMDI2LTA2LTI3Ih8KA0RFThIKMjAyNi0wNi0yNxoDTEFYKgJVQTIDNTMxIh8KA0xBWBIKMjAyNi0wNi0yOBoDSEtHKgJVQTIDMTUyagwIAhIIL20vMDJjbDFyDAgDEggvbS8wM2g2NEABSAFwAYIBCwj___________8BmAEB&tfu=CnRDalJJTlZoM01HNVBjMkozZDBGQlRVaGZRbmRDUnkwdExTMHRMUzB0TFhCbVlYa3pORUZCUVVGQlIyOUNSa2xuU1hvMk1HZEJFZ3RWUVRVek1YeFZRVEUxTWhvTENPcXJCQkFDR2dOVlUwUTRISERxcXdRPRIGCAAgAigBIgA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA2LTE4agwIAxIIL20vMDNoNjRyDAgCEggvbS8wMmNsMRooEgoyMDI2LTA2LTI3agwIAhIIL20vMDJjbDFyDAgDEggvbS8wM2g2NA&hl=en&gl=hk&curr=USD",
+      "airline": "United",
+      "price": 712,
+      "has_booking_page": true
+    },
+    {
+      "origin": "Bangkok",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 717.0,
+      "dates": "Aug 28 - Sep 5",
+      "route": "Bangkok → San Francisco",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA4LTI4agwIAxIIL20vMGZuMmdyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTA1agwIAhIIL20vMGQ2bHByDAgDEggvbS8wZm4yZw&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA4LTI4agwIAxIIL20vMGZuMmdyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTA1agwIAhIIL20vMGQ2bHByDAgDEggvbS8wZm4yZw&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 717,
+      "has_booking_page": false
+    }
+  ]
+}
