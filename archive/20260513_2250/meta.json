@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-05-13T22:50:27.191248+08:00",
+  "slug": "20260513_2250",
+  "affordable_count": 7,
+  "bookable_count": 3,
+  "oneway_count": 4,
+  "trend_text": "Comparing 2026-05-13 vs 2026-05-13:\n  ↓ 2 routes got cheaper:\n    ↓    Bangkok → Seattle  $694.0→$573.0/pp (-17%)\n    ↓    Bangkok → Los Angeles  $673.0→$621.0/pp (-8%)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-05-13</p><div class=\"diff-section\"><h4>↓ Got cheaper (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"cheap-row\"><td>Bangkok</td><td>Seattle</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$694.0</span> → <strong>$573.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1576 fam)</span></td><td><span class=\"badge badge-drop\">↓↓ BIG DROP</span></td><td style=\"color:#718096;font-size:11px\">Jul 5 – 11</td></tr><tr class=\"cheap-row\"><td>Bangkok</td><td>Los Angeles</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$673.0</span> → <strong>$621.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1708 fam)</span></td><td><span class=\"badge badge-drop\">↓ Cheaper</span></td><td style=\"color:#718096;font-size:11px\">Sep 4 – 10</td></tr></tbody></table></div>"
+}
