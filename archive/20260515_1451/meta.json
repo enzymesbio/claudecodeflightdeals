@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-05-15T14:51:19.239845+08:00",
+  "slug": "20260515_1451",
+  "affordable_count": 7,
+  "bookable_count": 2,
+  "oneway_count": 4,
+  "trend_text": "Comparing 2026-05-15 vs 2026-05-15:\n  -1 route disappeared (above budget or gone):\n    GONE Tokyo → San Francisco  was $640.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-05-15</p><div class=\"diff-section\"><h4>✕ Disappeared (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Tokyo</td><td>San Francisco</td><td>Economy</td><td><strong>$640.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1760 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Aug 31 – Sep 7</td></tr></tbody></table></div>"
+}
