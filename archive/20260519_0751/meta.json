@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-05-19T07:51:58.519393+08:00",
+  "slug": "20260519_0751",
+  "affordable_count": 8,
+  "bookable_count": 4,
+  "oneway_count": 4,
+  "trend_text": "Comparing 2026-05-19 vs 2026-05-18:\n  ↓ 1 route got cheaper:\n    ↓    Bangkok → Seattle  $701.0→$542.0/pp (-23%)\n  -2 routes disappeared (above budget or gone):\n    GONE Hong Kong → San Francisco  was $656.0/pp\n    GONE Hong Kong → Denver  was $661.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-05-18</p><div class=\"diff-section\"><h4>↓ Got cheaper (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"cheap-row\"><td>Bangkok</td><td>Seattle</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$701.0</span> → <strong>$542.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1490 fam)</span></td><td><span class=\"badge badge-drop\">↓↓ BIG DROP</span></td><td style=\"color:#718096;font-size:11px\">Jun 25 – Jul 1</td></tr></tbody></table></div><div class=\"diff-section\"><h4>✕ Disappeared (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Hong Kong</td><td>San Francisco</td><td>Economy</td><td><strong>$656.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1804 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Jun 25 – Jul 3</td></tr><tr class=\"gone-row\"><td>Hong Kong</td><td>Denver</td><td>Economy</td><td><strong>$661.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1818 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Jun 19 – 28</td></tr></tbody></table></div>"
+}
