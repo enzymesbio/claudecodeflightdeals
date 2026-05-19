@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-05-19T22:57:48.060851+08:00",
+  "slug": "20260519_2257",
+  "affordable_count": 11,
+  "bookable_count": 5,
+  "oneway_count": 5,
+  "trend_text": "Comparing 2026-05-19 vs 2026-05-19:\n  +1 new affordable route:\n    NEW  Hong Kong → Denver  $661.0/pp ($1818 fam)\n  ↑ 1 route got more expensive:\n    ↑    Bangkok → Seattle  $658.0→$703.0/pp (+7%)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-05-19</p><div class=\"diff-section\"><h4>✦ New routes (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Hong Kong</td><td>Denver</td><td>Economy</td><td><strong>$661.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1818 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Jun 19 – 28</td></tr></tbody></table></div><div class=\"diff-section\"><h4>↑ Got more expensive (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"pricey-row\"><td>Bangkok</td><td>Seattle</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$658.0</span> → <strong>$703.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1933 fam)</span></td><td><span class=\"badge badge-rise\">↑ Pricier</span></td><td style=\"color:#718096;font-size:11px\">Jun 18 – 24</td></tr></tbody></table></div>"
+}
