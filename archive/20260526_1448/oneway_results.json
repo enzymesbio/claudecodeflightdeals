@@ -1,0 +1,97 @@
+{
+  "scan_time": "2026-05-26T14:23:51.676964+08:00",
+  "budget_pp": 700,
+  "budget_family": 1925,
+  "total_fares": 6,
+  "scan_dates": [
+    "2026-08-24",
+    "2026-09-23",
+    "2026-10-23"
+  ],
+  "fares": [
+    {
+      "origin_city": "Hong Kong",
+      "origin_code": "HKG",
+      "destination": "Seattle",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 627,
+      "family_price": 1724,
+      "dates": "Sep 6 – 12",
+      "stops": 1,
+      "duration": "16 hr 17 min",
+      "scan_date": "2026-08-24",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Tokyo",
+      "origin_code": "TYO",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 639,
+      "family_price": 1757,
+      "dates": "Sep 3 – 9",
+      "stops": 0,
+      "duration": "9 hr 45 min",
+      "scan_date": "2026-08-24",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Tokyo",
+      "origin_code": "TYO",
+      "destination": "Houston",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 648,
+      "family_price": 1782,
+      "dates": "Sep 4 – 12",
+      "stops": 0,
+      "duration": "12 hr 15 min",
+      "scan_date": "2026-08-24",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Shanghai",
+      "origin_code": "PVG",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 683,
+      "family_price": 1878,
+      "dates": "Sep 10 – 18",
+      "stops": 1,
+      "duration": "17 hr 15 min",
+      "scan_date": "2026-08-24",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Xiamen",
+      "origin_code": "XMN",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 683,
+      "family_price": 1878,
+      "dates": "Sep 10 – 18",
+      "stops": 2,
+      "duration": "21 hr 10 min",
+      "scan_date": "2026-08-24",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Guangzhou",
+      "origin_code": "CAN",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 686,
+      "family_price": 1886,
+      "dates": "Oct 26 – Nov 2",
+      "stops": 1,
+      "duration": "16 hr 40 min",
+      "scan_date": "2026-08-24",
+      "type": "oneway"
+    }
+  ]
+}
