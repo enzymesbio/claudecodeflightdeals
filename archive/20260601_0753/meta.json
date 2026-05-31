@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-06-01T07:53:41.351092+08:00",
+  "slug": "20260601_0753",
+  "affordable_count": 9,
+  "bookable_count": 3,
+  "oneway_count": 6,
+  "trend_text": "Comparing 2026-06-01 vs 2026-05-31:\n  -3 routes disappeared (above budget or gone):\n    GONE Singapore → San Francisco  was $705.0/pp\n    GONE Manila → Los Angeles  was $714.0/pp\n    GONE Manila → San Francisco  was $714.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-05-31</p><div class=\"diff-section\"><h4>✕ Disappeared (3)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Singapore</td><td>San Francisco</td><td>Economy</td><td><strong>$705.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1939 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Jun 26 – Jul 4</td></tr><tr class=\"gone-row\"><td>Manila</td><td>Los Angeles</td><td>Economy</td><td><strong>$714.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1964 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Aug 24 – 30</td></tr><tr class=\"gone-row\"><td>Manila</td><td>San Francisco</td><td>Economy</td><td><strong>$714.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1964 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Aug 27 – Sep 2</td></tr></tbody></table></div>"
+}
