@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-06-03T07:57:43.900045+08:00",
+  "slug": "20260603_0757",
+  "affordable_count": 15,
+  "bookable_count": 7,
+  "oneway_count": 11,
+  "trend_text": "Comparing 2026-06-03 vs 2026-06-02:\n  -4 routes disappeared (above budget or gone):\n    GONE Singapore → Los Angeles  was $605.0/pp\n    GONE Hong Kong → Los Angeles  was $635.0/pp\n    GONE Hong Kong → San Francisco  was $705.0/pp\n    GONE Beijing → Charlotte  was $709.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-06-02</p><div class=\"diff-section\"><h4>✕ Disappeared (4)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Singapore</td><td>Los Angeles</td><td>Economy</td><td><strong>$605.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1664 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Jun 22 – 30</td></tr><tr class=\"gone-row\"><td>Hong Kong</td><td>Los Angeles</td><td>Economy</td><td><strong>$635.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1746 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Sep 3 – 9</td></tr><tr class=\"gone-row\"><td>Hong Kong</td><td>San Francisco</td><td>Economy</td><td><strong>$705.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1939 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Jun 25 – Jul 3</td></tr><tr class=\"gone-row\"><td>Beijing</td><td>Charlotte</td><td>Economy</td><td><strong>$709.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1950 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Jul 3 – 9</td></tr></tbody></table></div>"
+}
