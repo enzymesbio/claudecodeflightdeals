@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-06-02T23:02:19.208189+08:00",
+  "slug": "20260602_2302",
+  "affordable_count": 19,
+  "bookable_count": 8,
+  "oneway_count": 13,
+  "trend_text": "Comparing 2026-06-02 vs 2026-06-02:\n  +1 new affordable route:\n    NEW  Beijing → Charlotte  $709.0/pp ($1950 fam)\n  ↓ 1 route got cheaper:\n    ↓    Singapore → Los Angeles  $721.0→$605.0/pp (-16%)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-06-02</p><div class=\"diff-section\"><h4>✦ New routes (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Beijing</td><td>Charlotte</td><td>Economy</td><td><strong>$709.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1950 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Jul 3 – 9</td></tr></tbody></table></div><div class=\"diff-section\"><h4>↓ Got cheaper (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"cheap-row\"><td>Singapore</td><td>Los Angeles</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$721.0</span> → <strong>$605.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1664 fam)</span></td><td><span class=\"badge badge-drop\">↓↓ BIG DROP</span></td><td style=\"color:#718096;font-size:11px\">Jun 22 – 30</td></tr></tbody></table></div>"
+}
