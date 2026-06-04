@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-06-05T07:54:36.949725+08:00",
+  "slug": "20260605_0754",
+  "affordable_count": 10,
+  "bookable_count": 4,
+  "oneway_count": 5,
+  "trend_text": "Comparing 2026-06-05 vs 2026-06-04:\n  +2 new affordable routes:\n    NEW  Xiamen → Los Angeles  $726.0/pp ($1996 fam)\n    NEW  Fuzhou → Los Angeles  $726.0/pp ($1996 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-06-04</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Xiamen</td><td>Los Angeles</td><td>Economy</td><td><strong>$726.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1996 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 11 – 19</td></tr><tr class=\"new-row\"><td>Fuzhou</td><td>Los Angeles</td><td>Economy</td><td><strong>$726.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1996 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Jun 15 – 22</td></tr></tbody></table></div>"
+}
