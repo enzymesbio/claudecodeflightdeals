@@ -1,0 +1,111 @@
+{
+  "verification_time": "2026-06-05T22:27:40.469608+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 7,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Hong Kong",
+      "city": "Seattle",
+      "cabin": "Economy",
+      "explore_price": 628.0,
+      "dates": "Sep 14 - 21",
+      "route": "Hong Kong → Seattle",
+      "status": "BOOKABLE",
+      "booking_url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhprEgoyMDI2LTA5LTE0IiAKA0hLRxIKMjAyNi0wOS0xNBoDSUNOKgJLRTIEMjAwMiIfCgNJQ04SCjIwMjYtMDktMTQaA1NFQSoCREwyAzE5NmoMCAMSCC9tLzAzaDY0cgwIAhIIL20vMGQ5anIaahIKMjAyNi0wOS0yMSIgCgNTRUESCjIwMjYtMDktMjEaA0xBWCoCREwyBDI4NjEiHgoDTEFYEgoyMDI2LTA5LTIxGgNIS0cqAkRMMgI4OWoMCAISCC9tLzBkOWpycgwIAxIIL20vMDNoNjRAAUgBcAGCAQsI____________AZgBAQ&tfu=CnRDalJJWDNObVduTllibmMwUkVWQlEwVk5WRUZDUnkwdExTMHRMUzB0Y0dwaVpXa3lNVUZCUVVGQlIyOXBNMHhaUTJWcVRqUkJFZ3RFVERJNE5qRjhSRXc0T1JvTENPZnBBeEFDR2dOVlUwUTRISERuNlFNPRIGCAAgAigBIgMSATA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA5LTE0agwIAxIIL20vMDNoNjRyDAgCEggvbS8wZDlqchooEgoyMDI2LTA5LTIxagwIAhIIL20vMGQ5anJyDAgDEggvbS8wM2g2NA&hl=en&gl=hk&curr=USD",
+      "airline": "Delta",
+      "price": 627,
+      "has_booking_page": true
+    },
+    {
+      "origin": "Hong Kong",
+      "city": "Denver",
+      "cabin": "Economy",
+      "explore_price": 635.0,
+      "dates": "Jun 19 - 28",
+      "route": "Hong Kong → Denver",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA2LTE5agwIAxIIL20vMDNoNjRyDAgCEggvbS8wMmNsMRooEgoyMDI2LTA2LTI4agwIAhIIL20vMDJjbDFyDAgDEggvbS8wM2g2NA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA2LTE5agwIAxIIL20vMDNoNjRyDAgCEggvbS8wMmNsMRooEgoyMDI2LTA2LTI4agwIAhIIL20vMDJjbDFyDAgDEggvbS8wM2g2NA&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 635,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Tokyo",
+      "city": "Houston",
+      "cabin": "Economy",
+      "explore_price": 667.0,
+      "dates": "Oct 12 - 19",
+      "route": "Tokyo → Houston",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTEwLTEyagwIAxIIL20vMDdkZmtyDAgCEggvbS8wM2wybhooEgoyMDI2LTEwLTE5agwIAhIIL20vMDNsMm5yDAgDEggvbS8wN2Rmaw&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTEwLTEyagwIAxIIL20vMDdkZmtyDAgCEggvbS8wM2wybhooEgoyMDI2LTEwLTE5agwIAhIIL20vMDNsMm5yDAgDEggvbS8wN2Rmaw&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 666,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Guangzhou",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 688.0,
+      "dates": "Oct 26 - Nov 2",
+      "route": "Guangzhou → San Francisco",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTEwLTI2agwIAxIIL20vMDM5M2dyDAgCEggvbS8wZDZscBooEgoyMDI2LTExLTAyagwIAhIIL20vMGQ2bHByDAgDEggvbS8wMzkzZw&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTEwLTI2agwIAxIIL20vMDM5M2dyDAgCEggvbS8wZDZscBooEgoyMDI2LTExLTAyagwIAhIIL20vMGQ2bHByDAgDEggvbS8wMzkzZw&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 688,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Hong Kong",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 705.0,
+      "dates": "Sep 11 - 17",
+      "route": "Hong Kong → Los Angeles",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA5LTExagwIAxIIL20vMDNoNjRyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDktMTdqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDNoNjQ&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA5LTExagwIAxIIL20vMDNoNjRyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDktMTdqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDNoNjQ&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 705,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Hong Kong",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 705.0,
+      "dates": "Jun 25 - Jul 3",
+      "route": "Hong Kong → San Francisco",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA2LTI1agwIAxIIL20vMDNoNjRyDAgCEggvbS8wZDZscBooEgoyMDI2LTA3LTAzagwIAhIIL20vMGQ2bHByDAgDEggvbS8wM2g2NA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA2LTI1agwIAxIIL20vMDNoNjRyDAgCEggvbS8wZDZscBooEgoyMDI2LTA3LTAzagwIAhIIL20vMGQ2bHByDAgDEggvbS8wM2g2NA&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Xiamen",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 726.0,
+      "dates": "Sep 11 - 19",
+      "route": "Xiamen → Los Angeles",
+      "status": "BOOKABLE",
+      "booking_url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhpuEgoyMDI2LTA5LTExIiAKA1hNThIKMjAyNi0wOS0xMRoDQ0FOKgJDWjIEMzg4MCIfCgNDQU4SCjIwMjYtMDktMTEaA0xBWCoCQ1oyAzMyN2oNCAMSCS9tLzAxMjZjM3IOCAISCi9tLzAzMHFiM3QabhIKMjAyNi0wOS0xOSIfCgNMQVgSCjIwMjYtMDktMTkaA0NBTioCQ1oyAzMyOCIgCgNDQU4SCjIwMjYtMDktMjEaA1hNTioCQ1oyBDM3NDFqDggCEgovbS8wMzBxYjN0cg0IAxIJL20vMDEyNmMzQAFIAXABggELCP___________wGYAQE&tfu=CnRDalJJUWtkMWVtOUhhblZNV1RoQlEza3pkMmRDUnkwdExTMHRMUzB0Y0dwaWIyVXhOa0ZCUVVGQlIyOXBNMDVCUm0xT2JWTkJFZ3hEV2pNeU9IeERXak0zTkRFYUN3anV0Z1FRQWhvRFZWTkVPQnh3N3JZRRIGCAAgAigBIgA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhorEgoyMDI2LTA5LTExag0IAxIJL20vMDEyNmMzcg4IAhIKL20vMDMwcWIzdBorEgoyMDI2LTA5LTE5ag4IAhIKL20vMDMwcWIzdHINCAMSCS9tLzAxMjZjMw&hl=en&gl=hk&curr=USD",
+      "airline": "martiGO",
+      "price": 755,
+      "has_booking_page": true
+    }
+  ]
+}
