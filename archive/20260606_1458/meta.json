@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-06-06T14:58:03.661494+08:00",
+  "slug": "20260606_1458",
+  "affordable_count": 8,
+  "bookable_count": 3,
+  "oneway_count": 6,
+  "trend_text": "Comparing 2026-06-06 vs 2026-06-06:\n  ↓ 1 route got cheaper:\n    ↓    Hong Kong → Denver  $711.0→$635.0/pp (-11%)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-06-06</p><div class=\"diff-section\"><h4>↓ Got cheaper (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"cheap-row\"><td>Hong Kong</td><td>Denver</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$711.0</span> → <strong>$635.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1746 fam)</span></td><td><span class=\"badge badge-drop\">↓↓ BIG DROP</span></td><td style=\"color:#718096;font-size:11px\">Jun 21 – 29</td></tr></tbody></table></div>"
+}
