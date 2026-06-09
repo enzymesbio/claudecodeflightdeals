@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-06-09T22:57:05.464155+08:00",
+  "slug": "20260609_2257",
+  "affordable_count": 8,
+  "bookable_count": 2,
+  "oneway_count": 4,
+  "trend_text": "Comparing 2026-06-09 vs 2026-06-09:\n  ↓ 1 route got cheaper:\n    ↓    Hong Kong → Denver  $711.0→$635.0/pp (-11%)\n  ↑ 1 route got more expensive:\n    ↑    Hong Kong → Seattle  $627.0→$718.0/pp (+15%)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-06-09</p><div class=\"diff-section\"><h4>↓ Got cheaper (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"cheap-row\"><td>Hong Kong</td><td>Denver</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$711.0</span> → <strong>$635.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1746 fam)</span></td><td><span class=\"badge badge-drop\">↓↓ BIG DROP</span></td><td style=\"color:#718096;font-size:11px\">Jun 15 – 23</td></tr></tbody></table></div><div class=\"diff-section\"><h4>↑ Got more expensive (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"pricey-row\"><td>Hong Kong</td><td>Seattle</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$627.0</span> → <strong>$718.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1974 fam)</span></td><td><span class=\"badge badge-rise\">↑↑ Big Rise</span></td><td style=\"color:#718096;font-size:11px\">Jun 25 – Jul 4</td></tr></tbody></table></div>"
+}
