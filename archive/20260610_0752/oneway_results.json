@@ -1,0 +1,69 @@
+{
+  "scan_time": "2026-06-10T07:27:46.563889+08:00",
+  "budget_pp": 700,
+  "budget_family": 1925,
+  "total_fares": 4,
+  "scan_dates": [
+    "2026-09-07",
+    "2026-10-07",
+    "2026-11-06"
+  ],
+  "fares": [
+    {
+      "origin_city": "Hong Kong",
+      "origin_code": "HKG",
+      "destination": "Denver",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 635,
+      "family_price": 1746,
+      "dates": "Jun 21 – 30",
+      "stops": 2,
+      "duration": "25 hr 58 min",
+      "scan_date": "2026-09-07",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Tokyo",
+      "origin_code": "TYO",
+      "destination": "Houston",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 666,
+      "family_price": 1832,
+      "dates": "Oct 12 – 19",
+      "stops": 0,
+      "duration": "11 hr 55 min",
+      "scan_date": "2026-09-07",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Shanghai",
+      "origin_code": "PVG",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 682,
+      "family_price": 1876,
+      "dates": "Sep 14 – 22",
+      "stops": 1,
+      "duration": "18 hr 20 min",
+      "scan_date": "2026-09-07",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Xiamen",
+      "origin_code": "XMN",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 682,
+      "family_price": 1876,
+      "dates": "Sep 14 – 22",
+      "stops": 2,
+      "duration": "21 hr 10 min",
+      "scan_date": "2026-09-07",
+      "type": "oneway"
+    }
+  ]
+}

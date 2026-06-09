@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-06-10T07:52:04.585893+08:00",
+  "slug": "20260610_0752",
+  "affordable_count": 7,
+  "bookable_count": 1,
+  "oneway_count": 4,
+  "trend_text": "Comparing 2026-06-10 vs 2026-06-09:\n  -1 route disappeared (above budget or gone):\n    GONE Hong Kong → Los Angeles  was $705.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-06-09</p><div class=\"diff-section\"><h4>✕ Disappeared (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Hong Kong</td><td>Los Angeles</td><td>Economy</td><td><strong>$705.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1939 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Sep 3 – 9</td></tr></tbody></table></div>"
+}
