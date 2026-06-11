@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-06-11T23:23:02.520824+08:00",
+  "slug": "20260611_2323",
+  "affordable_count": 0,
+  "bookable_count": 0,
+  "oneway_count": 18,
+  "trend_text": "Comparing 2026-06-11 vs 2026-06-11:\n  -3 routes disappeared (above budget or gone):\n    GONE Hong Kong → Seattle  was $627.0/pp\n    GONE Hong Kong → Denver  was $635.0/pp\n    GONE Hong Kong → Los Angeles  was $711.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-06-11</p><div class=\"diff-section\"><h4>✕ Disappeared (3)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Hong Kong</td><td>Seattle</td><td>Economy</td><td><strong>$627.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1724 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Jun 25 – Jul 4</td></tr><tr class=\"gone-row\"><td>Hong Kong</td><td>Denver</td><td>Economy</td><td><strong>$635.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1746 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Jun 18 – 24</td></tr><tr class=\"gone-row\"><td>Hong Kong</td><td>Los Angeles</td><td>Economy</td><td><strong>$711.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1955 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Jun 25 – Jul 4</td></tr></tbody></table></div>"
+}
