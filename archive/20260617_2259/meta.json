@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-06-17T22:59:06.659257+08:00",
+  "slug": "20260617_2259",
+  "affordable_count": 7,
+  "bookable_count": 0,
+  "oneway_count": 4,
+  "trend_text": "Comparing 2026-06-17 vs 2026-06-17:\n  +4 new affordable routes:\n    NEW  Hong Kong → Seattle  $627.0/pp ($1724 fam)\n    NEW  Hong Kong → San Francisco  $630.0/pp ($1732 fam)\n    NEW  Hong Kong → Denver  $635.0/pp ($1746 fam)\n    NEW  Hong Kong → Los Angeles  $705.0/pp ($1939 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-06-17</p><div class=\"diff-section\"><h4>✦ New routes (4)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Hong Kong</td><td>Seattle</td><td>Economy</td><td><strong>$627.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1724 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Oct 10 – 18</td></tr><tr class=\"new-row\"><td>Hong Kong</td><td>San Francisco</td><td>Economy</td><td><strong>$630.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1732 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 3 – 9</td></tr><tr class=\"new-row\"><td>Hong Kong</td><td>Denver</td><td>Economy</td><td><strong>$635.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1746 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Jun 25 – Jul 3</td></tr><tr class=\"new-row\"><td>Hong Kong</td><td>Los Angeles</td><td>Economy</td><td><strong>$705.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1939 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Nov 19 – 27</td></tr></tbody></table></div>"
+}
