@@ -1,0 +1,55 @@
+{
+  "verification_time": "2026-06-17T07:49:20.750954+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 3,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Manila",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 710.0,
+      "dates": "Sep 28 - Oct 4",
+      "route": "Manila → Los Angeles",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhorEgoyMDI2LTA5LTI4ag0IAxIJL20vMDE5NXBkcg4IAhIKL20vMDMwcWIzdBorEgoyMDI2LTEwLTA0ag4IAhIKL20vMDMwcWIzdHINCAMSCS9tLzAxOTVwZA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhorEgoyMDI2LTA5LTI4ag0IAxIJL20vMDE5NXBkcg4IAhIKL20vMDMwcWIzdBorEgoyMDI2LTEwLTA0ag4IAhIKL20vMDMwcWIzdHINCAMSCS9tLzAxOTVwZA&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 710,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Manila",
+      "city": "Seattle",
+      "cabin": "Economy",
+      "explore_price": 710.0,
+      "dates": "Sep 10 - 16",
+      "route": "Manila → Seattle",
+      "status": "NO_FLIGHTS",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA5LTEwag0IAxIJL20vMDE5NXBkcgwIAhIIL20vMGQ5anIaKRIKMjAyNi0wOS0xNmoMCAISCC9tLzBkOWpycg0IAxIJL20vMDE5NXBk&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA5LTEwag0IAxIJL20vMDE5NXBkcgwIAhIIL20vMGQ5anIaKRIKMjAyNi0wOS0xNmoMCAISCC9tLzBkOWpycg0IAxIJL20vMDE5NXBk&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Manila",
+      "city": "Denver",
+      "cabin": "Economy",
+      "explore_price": 710.0,
+      "dates": "Aug 16 - 23",
+      "route": "Manila → Denver",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA4LTE2ag0IAxIJL20vMDE5NXBkcgwIAhIIL20vMDJjbDEaKRIKMjAyNi0wOC0yM2oMCAISCC9tLzAyY2wxcg0IAxIJL20vMDE5NXBk&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA4LTE2ag0IAxIJL20vMDE5NXBkcgwIAhIIL20vMDJjbDEaKRIKMjAyNi0wOC0yM2oMCAISCC9tLzAyY2wxcg0IAxIJL20vMDE5NXBk&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 710,
+      "has_booking_page": false
+    }
+  ]
+}
