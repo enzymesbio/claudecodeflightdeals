@@ -1,0 +1,14 @@
+{
+  "drill_time": "2026-06-24T22:52:14.866573+08:00",
+  "total_drilled": 0,
+  "duration_variants_tested": [
+    7,
+    10,
+    14,
+    21,
+    28
+  ],
+  "stopover_min_nights": 3,
+  "results": [],
+  "stopover_stays": []
+}
