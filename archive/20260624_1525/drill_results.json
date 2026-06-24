@@ -1,0 +1,521 @@
+{
+  "drill_time": "2026-06-24T15:25:12.988023+08:00",
+  "total_drilled": 18,
+  "duration_variants_tested": [
+    7,
+    10,
+    14,
+    21,
+    28
+  ],
+  "stopover_min_nights": 3,
+  "results": [
+    {
+      "origin": "Tokyo",
+      "dest": "Los Angeles",
+      "depart": "2026-08-27",
+      "oneway_price": 514,
+      "airline": "",
+      "stops": 0,
+      "duration_results": {},
+      "valid_duration_min": null,
+      "valid_duration_max": null,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {
+        "Shanghai": 324,
+        "Hangzhou": 423
+      },
+      "actual_stopover_city": null
+    },
+    {
+      "origin": "Tokyo",
+      "dest": "San Francisco",
+      "depart": "2026-08-20",
+      "oneway_price": 559,
+      "airline": "",
+      "stops": 0,
+      "duration_results": {
+        "21d": 1160,
+        "28d": 1160
+      },
+      "valid_duration_min": 21,
+      "valid_duration_max": 28,
+      "open_jaw_price": 1508,
+      "open_jaw_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA4LTIwagwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTAzagwIAhIIL20vMGQ2bHByDAgDEggvbS8wNndqZg&hl=en&gl=hk&curr=USD",
+      "open_jaw_hangzhou_price": 2209,
+      "open_jaw_hangzhou_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA4LTIwagwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDZscBopEgoyMDI2LTA5LTAzagwIAhIIL20vMGQ2bHByDQgDEgkvbS8wMTR2bTQ&hl=en&gl=hk&curr=USD",
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {
+        "Shanghai": 324,
+        "Hangzhou": 423
+      },
+      "actual_stopover_city": null
+    },
+    {
+      "origin": "Seoul",
+      "dest": "San Francisco",
+      "depart": "2026-05-08",
+      "oneway_price": 561,
+      "airline": "",
+      "stops": 0,
+      "duration_results": {},
+      "valid_duration_min": null,
+      "valid_duration_max": null,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {
+        "Shanghai": 220,
+        "Hangzhou": 246
+      },
+      "actual_stopover_city": null
+    },
+    {
+      "origin": "Seoul",
+      "dest": "Los Angeles",
+      "depart": "2026-08-27",
+      "oneway_price": 572,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {
+        "7d": 792,
+        "14d": 792,
+        "21d": 792,
+        "28d": 792
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 28,
+      "open_jaw_price": 886,
+      "open_jaw_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA4LTI3agwIAxIIL20vMGhzcWZyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDktMTBqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDZ3amY&hl=en&gl=hk&curr=USD",
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Singapore",
+      "dest": "San Francisco",
+      "depart": "2026-05-03",
+      "oneway_price": 586,
+      "airline": "",
+      "stops": 0,
+      "duration_results": {},
+      "valid_duration_min": null,
+      "valid_duration_max": null,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {
+        "Shanghai": 258,
+        "Hangzhou": 278
+      },
+      "actual_stopover_city": null
+    },
+    {
+      "origin": "Seoul",
+      "dest": "Seattle",
+      "depart": "2026-04-23",
+      "oneway_price": 596,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {},
+      "valid_duration_min": null,
+      "valid_duration_max": null,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Singapore",
+      "dest": "Los Angeles",
+      "depart": "2026-05-03",
+      "oneway_price": 606,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {},
+      "valid_duration_min": null,
+      "valid_duration_max": null,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 244,
+          "leg2_price": 792,
+          "total_outbound_pp": 1036
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 244,
+          "leg2_price": 792,
+          "total_outbound_pp": 1036
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 244,
+          "leg2_price": 792,
+          "total_outbound_pp": 1036
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 244,
+          "leg2_price": 792,
+          "total_outbound_pp": 1036
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 731,
+        "leg2_price": 240,
+        "total_return_pp": 971
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Seoul",
+      "dest": "Philadelphia",
+      "depart": "2026-04-23",
+      "oneway_price": 607,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {},
+      "valid_duration_min": null,
+      "valid_duration_max": null,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Singapore",
+      "dest": "Seattle",
+      "depart": "2026-05-03",
+      "oneway_price": 638,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {},
+      "valid_duration_min": null,
+      "valid_duration_max": null,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 243,
+          "leg2_price": 835,
+          "total_outbound_pp": 1078
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 243,
+          "leg2_price": 835,
+          "total_outbound_pp": 1078
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 243,
+          "leg2_price": 835,
+          "total_outbound_pp": 1078
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 243,
+          "leg2_price": 835,
+          "total_outbound_pp": 1078
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 857,
+        "leg2_price": 238,
+        "total_return_pp": 1095
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Seoul",
+      "dest": "Salt Lake City",
+      "depart": "2026-05-04",
+      "oneway_price": 639,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {},
+      "valid_duration_min": null,
+      "valid_duration_max": null,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Seoul",
+      "dest": "New York",
+      "depart": "2026-04-26",
+      "oneway_price": 640,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {},
+      "valid_duration_min": null,
+      "valid_duration_max": null,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Tokyo",
+      "dest": "Houston",
+      "depart": "2026-08-21",
+      "oneway_price": 650,
+      "airline": "",
+      "stops": 0,
+      "duration_results": {
+        "7d": 1089,
+        "28d": 2185
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 7,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {
+        "Shanghai": 324,
+        "Hangzhou": 423
+      },
+      "actual_stopover_city": null
+    },
+    {
+      "origin": "Bangkok",
+      "dest": "San Francisco",
+      "depart": "2026-08-22",
+      "oneway_price": 656,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {
+        "7d": 866,
+        "21d": 866
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 21,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 266,
+          "leg2_price": 805,
+          "total_outbound_pp": 1071
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 266,
+          "leg2_price": 805,
+          "total_outbound_pp": 1071
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 266,
+          "leg2_price": 805,
+          "total_outbound_pp": 1071
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 266,
+          "leg2_price": 805,
+          "total_outbound_pp": 1071
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 721,
+        "leg2_price": 269,
+        "total_return_pp": 990
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Seoul",
+      "dest": "Washington, D.C.",
+      "depart": "2026-04-23",
+      "oneway_price": 671,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {},
+      "valid_duration_min": null,
+      "valid_duration_max": null,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Seoul",
+      "dest": "Baltimore",
+      "depart": "2026-04-23",
+      "oneway_price": 671,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {},
+      "valid_duration_min": null,
+      "valid_duration_max": null,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Bangkok",
+      "dest": "Las Vegas",
+      "depart": "2026-08-27",
+      "oneway_price": 687,
+      "airline": "",
+      "stops": 2,
+      "duration_results": {
+        "7d": 781,
+        "10d": 781,
+        "14d": 781,
+        "21d": 1977,
+        "28d": 1978
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 14,
+      "open_jaw_price": 884,
+      "open_jaw_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA4LTI3agwIAxIIL20vMGZuMmdyDAgCEggvbS8wY3YzdxooEgoyMDI2LTA5LTEwagwIAhIIL20vMGN2M3dyDAgDEggvbS8wNndqZg&hl=en&gl=hk&curr=USD",
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 266,
+          "leg2_price": 1109,
+          "total_outbound_pp": 1375
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 266,
+          "leg2_price": 1109,
+          "total_outbound_pp": 1375
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 266,
+          "leg2_price": 1109,
+          "total_outbound_pp": 1375
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 266,
+          "leg2_price": 1109,
+          "total_outbound_pp": 1375
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 891,
+        "leg2_price": 269,
+        "total_return_pp": 1160
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Tokyo",
+      "dest": "Seattle",
+      "depart": "2026-08-27",
+      "oneway_price": 690,
+      "airline": "",
+      "stops": 0,
+      "duration_results": {
+        "7d": 982,
+        "10d": 982,
+        "14d": 982,
+        "21d": 982,
+        "28d": 1011
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 28,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {
+        "Shanghai": 324,
+        "Hangzhou": 423
+      },
+      "actual_stopover_city": null
+    },
+    {
+      "origin": "Seoul",
+      "dest": "Phoenix",
+      "depart": "2026-04-23",
+      "oneway_price": 691,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {},
+      "valid_duration_min": null,
+      "valid_duration_max": null,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    }
+  ],
+  "stopover_stays": []
+}
