@@ -1,0 +1,46 @@
+{
+  "scan_timestamp": "2026-06-25T22:34:49.912283+08:00",
+  "scan_date": "flexible",
+  "cities_scanned": [
+    "Shanghai",
+    "Shenzhen",
+    "Nanjing",
+    "Dalian",
+    "Bangkok",
+    "Ho Chi Minh City",
+    "Hangzhou",
+    "Chengdu",
+    "Xiamen",
+    "Tianjin",
+    "Singapore",
+    "Hong Kong",
+    "Beijing",
+    "Chongqing",
+    "Ningbo",
+    "Fuzhou",
+    "Manila",
+    "Seoul",
+    "Guangzhou",
+    "Wuhan",
+    "Qingdao",
+    "Jakarta",
+    "Kuala Lumpur",
+    "Tokyo"
+  ],
+  "cabins_scanned": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "destinations": [],
+  "bug_fares": [],
+  "cheap_fares": [],
+  "summary": {
+    "total_destinations": 0,
+    "bug_fares_found": 0,
+    "cheap_fares_found": 0,
+    "workers_succeeded": 4,
+    "workers_failed": 0
+  }
+}
