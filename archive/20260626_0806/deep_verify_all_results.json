@@ -1,0 +1,12 @@
+{
+  "verification_time": "2026-06-26T07:43:54.771147+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 0,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": []
+}
