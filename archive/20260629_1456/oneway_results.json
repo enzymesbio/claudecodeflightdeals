@@ -1,0 +1,55 @@
+{
+  "scan_time": "2026-06-29T14:32:56.938664+08:00",
+  "budget_pp": 700,
+  "budget_family": 1925,
+  "total_fares": 3,
+  "scan_dates": [
+    "2026-09-27",
+    "2026-10-27",
+    "2026-11-26"
+  ],
+  "fares": [
+    {
+      "origin_city": "Hong Kong",
+      "origin_code": "HKG",
+      "destination": "Seattle",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 627,
+      "family_price": 1724,
+      "dates": "Sep 5 – 11",
+      "stops": 1,
+      "duration": "16 hr 17 min",
+      "scan_date": "2026-09-27",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Hong Kong",
+      "origin_code": "HKG",
+      "destination": "Denver",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 635,
+      "family_price": 1746,
+      "dates": "Sep 3 – 9",
+      "stops": 2,
+      "duration": "18 hr 40 min",
+      "scan_date": "2026-09-27",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Tokyo",
+      "origin_code": "TYO",
+      "destination": "Houston",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 688,
+      "family_price": 1892,
+      "dates": "Oct 5 – 14",
+      "stops": 0,
+      "duration": "11 hr 55 min",
+      "scan_date": "2026-09-27",
+      "type": "oneway"
+    }
+  ]
+}
