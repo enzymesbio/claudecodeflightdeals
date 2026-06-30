@@ -1,0 +1,83 @@
+{
+  "verification_time": "2026-06-30T22:29:54.631405+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 5,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Hong Kong",
+      "city": "Seattle",
+      "cabin": "Economy",
+      "explore_price": 635.0,
+      "dates": "Sep 5 - 11",
+      "route": "Hong Kong → Seattle",
+      "status": "BOOKABLE",
+      "booking_url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhpqEgoyMDI2LTA5LTA1Ih4KA0hLRxIKMjAyNi0wOS0wNRoDTEFYKgJETDICODgiIAoDTEFYEgoyMDI2LTA5LTA1GgNTRUEqAkRMMgQyNjA2agwIAxIIL20vMDNoNjRyDAgCEggvbS8wZDlqchpqEgoyMDI2LTA5LTExIiAKA1NFQRIKMjAyNi0wOS0xMRoDTEFYKgJETDIEMjg2MSIeCgNMQVgSCjIwMjYtMDktMTEaA0hLRyoCREwyAjg5agwIAhIIL20vMGQ5anJyDAgDEggvbS8wM2g2NEABSAFwAYIBCwj___________8BmAEB&tfu=CnRDalJJVFRkd1IyWmlTalJGY0ZGQlJVUlZSMUZDUnkwdExTMHRMUzB0TFMxd1ptTnFNMEZCUVVGQlIzQkVNSFJaUVVWSFl6UkJFZ3RFVERJNE5qRjhSRXc0T1JvTENNL3ZBeEFDR2dOVlUwUTRISERQN3dNPRIGCAAgAigBIgA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA5LTA1agwIAxIIL20vMDNoNjRyDAgCEggvbS8wZDlqchooEgoyMDI2LTA5LTExagwIAhIIL20vMGQ5anJyDAgDEggvbS8wM2g2NA&hl=en&gl=hk&curr=USD",
+      "airline": "Delta",
+      "price": 635,
+      "has_booking_page": true
+    },
+    {
+      "origin": "Hong Kong",
+      "city": "Denver",
+      "cabin": "Economy",
+      "explore_price": 635.0,
+      "dates": "Sep 3 - 9",
+      "route": "Hong Kong → Denver",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA5LTAzagwIAxIIL20vMDNoNjRyDAgCEggvbS8wMmNsMRooEgoyMDI2LTA5LTA5agwIAhIIL20vMDJjbDFyDAgDEggvbS8wM2g2NA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA5LTAzagwIAxIIL20vMDNoNjRyDAgCEggvbS8wMmNsMRooEgoyMDI2LTA5LTA5agwIAhIIL20vMDJjbDFyDAgDEggvbS8wM2g2NA&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 635,
+      "has_booking_page": true
+    },
+    {
+      "origin": "Tokyo",
+      "city": "Houston",
+      "cabin": "Economy",
+      "explore_price": 687.0,
+      "dates": "Oct 5 - 14",
+      "route": "Tokyo → Houston",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTEwLTA1agwIAxIIL20vMDdkZmtyDAgCEggvbS8wM2wybhooEgoyMDI2LTEwLTE0agwIAhIIL20vMDNsMm5yDAgDEggvbS8wN2Rmaw&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTEwLTA1agwIAxIIL20vMDdkZmtyDAgCEggvbS8wM2wybhooEgoyMDI2LTEwLTE0agwIAhIIL20vMDNsMm5yDAgDEggvbS8wN2Rmaw&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 687,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Hong Kong",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 705.0,
+      "dates": "Sep 3 - 9",
+      "route": "Hong Kong → Los Angeles",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA5LTAzagwIAxIIL20vMDNoNjRyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDktMDlqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDNoNjQ&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA5LTAzagwIAxIIL20vMDNoNjRyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDktMDlqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDNoNjQ&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 705,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Hong Kong",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 705.0,
+      "dates": "Sep 3 - 9",
+      "route": "Hong Kong → San Francisco",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA5LTAzagwIAxIIL20vMDNoNjRyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTA5agwIAhIIL20vMGQ2bHByDAgDEggvbS8wM2g2NA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA5LTAzagwIAxIIL20vMDNoNjRyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTA5agwIAhIIL20vMGQ2bHByDAgDEggvbS8wM2g2NA&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 705,
+      "has_booking_page": false
+    }
+  ]
+}
