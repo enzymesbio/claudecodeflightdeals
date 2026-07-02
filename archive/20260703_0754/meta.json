@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-07-03T07:54:35.304457+08:00",
+  "slug": "20260703_0754",
+  "affordable_count": 13,
+  "bookable_count": 5,
+  "oneway_count": 11,
+  "trend_text": "Comparing 2026-07-03 vs 2026-07-02:\n  -4 routes disappeared (above budget or gone):\n    GONE Hong Kong → Denver  was $584.0/pp\n    GONE Manila → Phoenix  was $721.0/pp\n    GONE Manila → Washington, D.C.  was $722.0/pp\n    GONE Manila → Baltimore  was $722.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-07-02</p><div class=\"diff-section\"><h4>✕ Disappeared (4)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Hong Kong</td><td>Denver</td><td>Economy</td><td><strong>$584.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1606 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Sep 3 – 9</td></tr><tr class=\"gone-row\"><td>Manila</td><td>Phoenix</td><td>Economy</td><td><strong>$721.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1983 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Aug 27 – Sep 2</td></tr><tr class=\"gone-row\"><td>Manila</td><td>Washington, D.C.</td><td>Economy</td><td><strong>$722.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1986 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Sep 7 – 16</td></tr><tr class=\"gone-row\"><td>Manila</td><td>Baltimore</td><td>Economy</td><td><strong>$722.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1986 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Sep 7 – 16</td></tr></tbody></table></div>"
+}
