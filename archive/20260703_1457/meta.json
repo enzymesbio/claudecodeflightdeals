@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-07-03T14:57:51.969182+08:00",
+  "slug": "20260703_1457",
+  "affordable_count": 17,
+  "bookable_count": 4,
+  "oneway_count": 12,
+  "trend_text": "Comparing 2026-07-03 vs 2026-07-03:\n  +4 new affordable routes:\n    NEW  Hong Kong → Denver  $584.0/pp ($1606 fam)\n    NEW  Manila → Phoenix  $721.0/pp ($1983 fam)\n    NEW  Manila → Washington, D.C.  $726.0/pp ($1996 fam)\n    NEW  Manila → Baltimore  $726.0/pp ($1996 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-07-03</p><div class=\"diff-section\"><h4>✦ New routes (4)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Hong Kong</td><td>Denver</td><td>Economy</td><td><strong>$584.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1606 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 3 – 9</td></tr><tr class=\"new-row\"><td>Manila</td><td>Phoenix</td><td>Economy</td><td><strong>$721.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1983 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Aug 28 – Sep 5</td></tr><tr class=\"new-row\"><td>Manila</td><td>Washington, D.C.</td><td>Economy</td><td><strong>$726.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1996 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 14 – 22</td></tr><tr class=\"new-row\"><td>Manila</td><td>Baltimore</td><td>Economy</td><td><strong>$726.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1996 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 14 – 22</td></tr></tbody></table></div>"
+}
