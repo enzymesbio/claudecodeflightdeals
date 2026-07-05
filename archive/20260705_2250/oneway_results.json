@@ -1,0 +1,27 @@
+{
+  "scan_time": "2026-07-05T22:28:33.303964+08:00",
+  "budget_pp": 700,
+  "budget_family": 1925,
+  "total_fares": 1,
+  "scan_dates": [
+    "2026-10-03",
+    "2026-11-02",
+    "2026-12-02"
+  ],
+  "fares": [
+    {
+      "origin_city": "Seoul",
+      "origin_code": "ICN",
+      "destination": "Los Angeles",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 681,
+      "family_price": 1873,
+      "dates": "Aug 20 – 27",
+      "stops": 1,
+      "duration": "14 hr 45 min",
+      "scan_date": "2026-10-03",
+      "type": "oneway"
+    }
+  ]
+}
