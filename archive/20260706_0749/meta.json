@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-07-06T07:49:19.108820+08:00",
+  "slug": "20260706_0749",
+  "affordable_count": 5,
+  "bookable_count": 2,
+  "oneway_count": 1,
+  "trend_text": "Comparing 2026-07-06 vs 2026-07-05:\n  -1 route disappeared (above budget or gone):\n    GONE Manila → Phoenix  was $721.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-07-05</p><div class=\"diff-section\"><h4>✕ Disappeared (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Manila</td><td>Phoenix</td><td>Economy</td><td><strong>$721.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1983 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Aug 27 – Sep 2</td></tr></tbody></table></div>"
+}
