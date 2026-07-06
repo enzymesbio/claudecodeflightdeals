@@ -1,0 +1,41 @@
+{
+  "scan_time": "2026-07-06T22:29:55.746377+08:00",
+  "budget_pp": 700,
+  "budget_family": 1925,
+  "total_fares": 2,
+  "scan_dates": [
+    "2026-10-04",
+    "2026-11-03",
+    "2026-12-03"
+  ],
+  "fares": [
+    {
+      "origin_city": "Seoul",
+      "origin_code": "ICN",
+      "destination": "Los Angeles",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 679,
+      "family_price": 1867,
+      "dates": "Aug 17 – 23",
+      "stops": 1,
+      "duration": "20 hr 5 min",
+      "scan_date": "2026-10-04",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Tokyo",
+      "origin_code": "TYO",
+      "destination": "Houston",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 700,
+      "family_price": 1925,
+      "dates": "Oct 5 – 14",
+      "stops": 0,
+      "duration": "11 hr 55 min",
+      "scan_date": "2026-10-04",
+      "type": "oneway"
+    }
+  ]
+}

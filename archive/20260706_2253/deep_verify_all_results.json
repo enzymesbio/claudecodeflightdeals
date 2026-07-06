@@ -1,0 +1,55 @@
+{
+  "verification_time": "2026-07-06T22:30:28.900327+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 3,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Seoul",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 679.0,
+      "dates": "Aug 17 - 23",
+      "route": "Seoul → Los Angeles",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA4LTE3agwIAxIIL20vMGhzcWZyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDgtMjNqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMGhzcWY&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA4LTE3agwIAxIIL20vMGhzcWZyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDgtMjNqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMGhzcWY&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 679,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Tokyo",
+      "city": "Houston",
+      "cabin": "Economy",
+      "explore_price": 700.0,
+      "dates": "Oct 5 - 14",
+      "route": "Tokyo → Houston",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTEwLTA1agwIAxIIL20vMDdkZmtyDAgCEggvbS8wM2wybhooEgoyMDI2LTEwLTE0agwIAhIIL20vMDNsMm5yDAgDEggvbS8wN2Rmaw&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTEwLTA1agwIAxIIL20vMDdkZmtyDAgCEggvbS8wM2wybhooEgoyMDI2LTEwLTE0agwIAhIIL20vMDNsMm5yDAgDEggvbS8wN2Rmaw&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Seoul",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 706.0,
+      "dates": "Sep 7 - 16",
+      "route": "Seoul → San Francisco",
+      "status": "BOOKABLE",
+      "booking_url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhpJEgoyMDI2LTA5LTA3Ih8KA0lDThIKMjAyNi0wOS0wNxoDU0ZPKgJZUDIDMTExagwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDZscBpJEgoyMDI2LTA5LTE2Ih8KA1NGTxIKMjAyNi0wOS0xNhoDSUNOKgJZUDIDMTEyagwIAhIIL20vMGQ2bHByDAgDEggvbS8waHNxZkABSAFwAYIBCwj___________8BmAEB&tfu=CmxDalJJYVhJeVRFUklkMHB5WjI5QlJWVkVjRkZDUnkwdExTMHRMUzB0TFMxd2FuZDRPRUZCUVVGQlIzQk1kVjluVFZWVVYzVkJFZ1ZaVURFeE1ob0xDTzZtQkJBQ0dnTlZVMFE0SEhEdXBnUT0SBggAIAIoASIA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA5LTA3agwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTE2agwIAhIIL20vMGQ2bHByDAgDEggvbS8waHNxZg&hl=en&gl=hk&curr=USD",
+      "airline": "Air Premia",
+      "price": 706,
+      "has_booking_page": true
+    }
+  ]
+}
