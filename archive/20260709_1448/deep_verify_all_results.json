@@ -1,0 +1,97 @@
+{
+  "verification_time": "2026-07-09T14:26:45.136965+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 6,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Seoul",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 691.0,
+      "dates": "Aug 20 - 26",
+      "route": "Seoul → Los Angeles",
+      "status": "BOOKABLE",
+      "booking_url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhptEgoyMDI2LTA4LTIwIh8KA0lDThIKMjAyNi0wOC0yMBoDU0ZPKgJVQTIDODA2IiAKA1NGTxIKMjAyNi0wOC0yMBoDTEFYKgJVQTIEMTQ1N2oMCAMSCC9tLzBoc3Fmcg4IAhIKL20vMDMwcWIzdBptEgoyMDI2LTA4LTI2IiAKA0xBWBIKMjAyNi0wOC0yNhoDU0ZPKgJVQTIEMTM3MiIfCgNTRk8SCjIwMjYtMDgtMjYaA0lDTioCVUEyAzg5M2oOCAISCi9tLzAzMHFiM3RyDAgDEggvbS8waHNxZkABSAFwAYIBCwj___________8BmAEB&tfu=CnRDalJJUmt0R1VYUXllVFJLYjAxQlFtbHFUR2RDUnkwdExTMHRMUzB0TFhCcWMyUXlNVUZCUVVGQlIzQlFVSGhyUVZsaWFXRkJFZ3hWUVRFek56SjhWVUU0T1RNYUN3amNtZ1FRQWhvRFZWTkVPQnh3M0pvRRIGCAAgAigBIgMKATA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA4LTIwagwIAxIIL20vMGhzcWZyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDgtMjZqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMGhzcWY&hl=en&gl=hk&curr=USD",
+      "airline": "United",
+      "price": 686,
+      "has_booking_page": true
+    },
+    {
+      "origin": "Seoul",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 692.0,
+      "dates": "Sep 7 - 13",
+      "route": "Seoul → San Francisco",
+      "status": "BOOKABLE",
+      "booking_url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhpJEgoyMDI2LTA5LTA3Ih8KA0lDThIKMjAyNi0wOS0wNxoDU0ZPKgJZUDIDMTExagwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDZscBpJEgoyMDI2LTA5LTEzIh8KA1NGTxIKMjAyNi0wOS0xMxoDSUNOKgJZUDIDMTEyagwIAhIIL20vMGQ2bHByDAgDEggvbS8waHNxZkABSAFwAYIBCwj___________8BmAEB&tfu=CmxDalJJUmt0R1VYUXllVFJLYjAxQlFtbHFSSGRDUnkwdExTMHRMUzB0TFhCcWMyUXlNVUZCUVVGQlIzQlFVSGhuUkd0QmRHMUJFZ1ZaVURFeE1ob0xDSmViQkJBQ0dnTlZVMFE0SEhDWG13UT0SBggAIAIoASIA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA5LTA3agwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTEzagwIAhIIL20vMGQ2bHByDAgDEggvbS8waHNxZg&hl=en&gl=hk&curr=USD",
+      "airline": "Air Premia",
+      "price": 692,
+      "has_booking_page": true
+    },
+    {
+      "origin": "Tokyo",
+      "city": "Houston",
+      "cabin": "Economy",
+      "explore_price": 700.0,
+      "dates": "Oct 5 - 14",
+      "route": "Tokyo → Houston",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTEwLTA1agwIAxIIL20vMDdkZmtyDAgCEggvbS8wM2wybhooEgoyMDI2LTEwLTE0agwIAhIIL20vMDNsMm5yDAgDEggvbS8wN2Rmaw&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTEwLTA1agwIAxIIL20vMDdkZmtyDAgCEggvbS8wM2wybhooEgoyMDI2LTEwLTE0agwIAhIIL20vMDNsMm5yDAgDEggvbS8wN2Rmaw&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Manila",
+      "city": "Phoenix",
+      "cabin": "Economy",
+      "explore_price": 721.0,
+      "dates": "Aug 27 - Sep 2",
+      "route": "Manila → Phoenix",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA4LTI3ag0IAxIJL20vMDE5NXBkcgwIAhIIL20vMGQzNXkaKRIKMjAyNi0wOS0wMmoMCAISCC9tLzBkMzV5cg0IAxIJL20vMDE5NXBk&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA4LTI3ag0IAxIJL20vMDE5NXBkcgwIAhIIL20vMGQzNXkaKRIKMjAyNi0wOS0wMmoMCAISCC9tLzBkMzV5cg0IAxIJL20vMDE5NXBk&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 721,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Manila",
+      "city": "Washington, D.C.",
+      "cabin": "Economy",
+      "explore_price": 722.0,
+      "dates": "Sep 14 - 22",
+      "route": "Manila → Washington, D.C.",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA5LTE0ag0IAxIJL20vMDE5NXBkcgwIAhIIL20vMHJoNmsaKRIKMjAyNi0wOS0yMmoMCAISCC9tLzByaDZrcg0IAxIJL20vMDE5NXBk&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA5LTE0ag0IAxIJL20vMDE5NXBkcgwIAhIIL20vMHJoNmsaKRIKMjAyNi0wOS0yMmoMCAISCC9tLzByaDZrcg0IAxIJL20vMDE5NXBk&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Manila",
+      "city": "Baltimore",
+      "cabin": "Economy",
+      "explore_price": 722.0,
+      "dates": "Sep 14 - 22",
+      "route": "Manila → Baltimore",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA5LTE0ag0IAxIJL20vMDE5NXBkcgwIAhIIL20vMDk0anYaKRIKMjAyNi0wOS0yMmoMCAISCC9tLzA5NGp2cg0IAxIJL20vMDE5NXBk&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA5LTE0ag0IAxIJL20vMDE5NXBkcgwIAhIIL20vMDk0anYaKRIKMjAyNi0wOS0yMmoMCAISCC9tLzA5NGp2cg0IAxIJL20vMDE5NXBk&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    }
+  ]
+}
