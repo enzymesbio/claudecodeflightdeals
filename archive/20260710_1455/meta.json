@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-07-10T14:55:15.520040+08:00",
+  "slug": "20260710_1455",
+  "affordable_count": 10,
+  "bookable_count": 3,
+  "oneway_count": 7,
+  "trend_text": "Comparing 2026-07-10 vs 2026-07-10:\n  ↑ 1 route got more expensive:\n    ↑    Tokyo → Los Angeles  $580.0→$656.0/pp (+13%)\n  -1 route disappeared (above budget or gone):\n    GONE Seoul → Palm Springs  was $695.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-07-10</p><div class=\"diff-section\"><h4>↑ Got more expensive (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"pricey-row\"><td>Tokyo</td><td>Los Angeles</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$580.0</span> → <strong>$656.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1804 fam)</span></td><td><span class=\"badge badge-rise\">↑↑ Big Rise</span></td><td style=\"color:#718096;font-size:11px\">Aug 28 – Sep 3</td></tr></tbody></table></div><div class=\"diff-section\"><h4>✕ Disappeared (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Seoul</td><td>Palm Springs</td><td>Economy</td><td><strong>$695.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1911 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Jul 10 – 16</td></tr></tbody></table></div>"
+}
