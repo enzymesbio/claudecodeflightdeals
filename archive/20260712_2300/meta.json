@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-07-12T23:00:40.695132+08:00",
+  "slug": "20260712_2300",
+  "affordable_count": 11,
+  "bookable_count": 3,
+  "oneway_count": 9,
+  "trend_text": "Comparing 2026-07-12 vs 2026-07-12:\n  +2 new affordable routes:\n    NEW  Seoul → Palm Springs  $698.0/pp ($1920 fam)\n    NEW  Seoul → Santa Barbara  $698.0/pp ($1920 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-07-12</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Seoul</td><td>Palm Springs</td><td>Economy</td><td><strong>$698.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1920 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Jul 16 – 22</td></tr><tr class=\"new-row\"><td>Seoul</td><td>Santa Barbara</td><td>Economy</td><td><strong>$698.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1920 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Jul 16 – 22</td></tr></tbody></table></div>"
+}
