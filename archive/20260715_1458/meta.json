@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-07-15T14:58:47.859386+08:00",
+  "slug": "20260715_1458",
+  "affordable_count": 16,
+  "bookable_count": 8,
+  "oneway_count": 14,
+  "trend_text": "Comparing 2026-07-15 vs 2026-07-15:\n  -3 routes disappeared (above budget or gone):\n    GONE Seoul → Washington, D.C.  was $697.0/pp\n    GONE Seoul → Baltimore  was $697.0/pp\n    GONE Manila → Phoenix  was $722.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-07-15</p><div class=\"diff-section\"><h4>✕ Disappeared (3)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Seoul</td><td>Washington, D.C.</td><td>Economy</td><td><strong>$697.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1917 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Jul 20 – 26</td></tr><tr class=\"gone-row\"><td>Seoul</td><td>Baltimore</td><td>Economy</td><td><strong>$697.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1917 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Jul 20 – 26</td></tr><tr class=\"gone-row\"><td>Manila</td><td>Phoenix</td><td>Economy</td><td><strong>$722.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1986 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Aug 29 – Sep 5</td></tr></tbody></table></div>"
+}
