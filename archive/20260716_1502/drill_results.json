@@ -1,0 +1,1938 @@
+{
+  "drill_time": "2026-07-16T15:02:59.367951+08:00",
+  "total_drilled": 20,
+  "duration_variants_tested": [
+    7,
+    10,
+    14,
+    21,
+    28
+  ],
+  "stopover_min_nights": 3,
+  "results": [
+    {
+      "origin": "Hong Kong",
+      "dest": "Seattle",
+      "depart": "2026-09-10",
+      "oneway_price": 528,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {
+        "7d": 528,
+        "10d": 528,
+        "14d": 534,
+        "21d": 528,
+        "28d": 534
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 28,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 765,
+          "total_outbound_pp": 933
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 765,
+          "total_outbound_pp": 933
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 765,
+          "total_outbound_pp": 933
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 765,
+          "total_outbound_pp": 933
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 816,
+        "leg2_price": 178,
+        "total_return_pp": 994
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Hong Kong",
+      "dest": "Denver",
+      "depart": "2026-09-07",
+      "oneway_price": 534,
+      "airline": "",
+      "stops": 2,
+      "duration_results": {
+        "7d": 609,
+        "10d": 609,
+        "14d": 609,
+        "28d": 882
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 14,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1093,
+          "total_outbound_pp": 1261
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1093,
+          "total_outbound_pp": 1261
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1093,
+          "total_outbound_pp": 1261
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1093,
+          "total_outbound_pp": 1261
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 1152,
+        "leg2_price": 178,
+        "total_return_pp": 1330
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Seoul",
+      "dest": "San Francisco",
+      "depart": "2026-08-28",
+      "oneway_price": 559,
+      "airline": "",
+      "stops": 0,
+      "duration_results": {
+        "7d": 692,
+        "10d": 559,
+        "14d": 559,
+        "21d": 559,
+        "28d": 692
+      },
+      "valid_duration_min": 10,
+      "valid_duration_max": 21,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {
+        "Shanghai": 207,
+        "Hangzhou": 230
+      },
+      "actual_stopover_city": null
+    },
+    {
+      "origin": "Seoul",
+      "dest": "New York",
+      "depart": "2026-09-10",
+      "oneway_price": 592,
+      "airline": "",
+      "stops": 0,
+      "duration_results": {
+        "7d": 592,
+        "10d": 592,
+        "14d": 592,
+        "21d": 774,
+        "28d": 711
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 14,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {
+        "Shanghai": 207,
+        "Hangzhou": 230
+      },
+      "actual_stopover_city": null
+    },
+    {
+      "origin": "Manila",
+      "dest": "Houston",
+      "depart": "2026-10-05",
+      "oneway_price": 595,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {
+        "7d": 596,
+        "10d": 613,
+        "14d": 746
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 10,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 1164,
+          "total_outbound_pp": 1326
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 1164,
+          "total_outbound_pp": 1326
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 1164,
+          "total_outbound_pp": 1326
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 1164,
+          "total_outbound_pp": 1326
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 985,
+        "leg2_price": 162,
+        "total_return_pp": 1147
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Hong Kong",
+      "dest": "Los Angeles",
+      "depart": "2026-09-10",
+      "oneway_price": 603,
+      "airline": "",
+      "stops": 0,
+      "duration_results": {
+        "7d": 603,
+        "10d": 534,
+        "14d": 603,
+        "21d": 534,
+        "28d": 603
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 28,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": 2034,
+      "open_jaw_hangzhou_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA5LTEwagwIAxIIL20vMDNoNjRyDggCEgovbS8wMzBxYjN0GisSCjIwMjYtMDktMjRqDggCEgovbS8wMzBxYjN0cg0IAxIJL20vMDE0dm00&hl=en&gl=hk&curr=USD",
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {
+        "Shanghai": 187,
+        "Hangzhou": 211
+      },
+      "actual_stopover_city": null
+    },
+    {
+      "origin": "Hong Kong",
+      "dest": "San Francisco",
+      "depart": "2026-09-03",
+      "oneway_price": 603,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {
+        "7d": 603,
+        "10d": 603,
+        "14d": 603,
+        "28d": 603
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 28,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": 2011,
+      "open_jaw_hangzhou_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA5LTAzagwIAxIIL20vMDNoNjRyDAgCEggvbS8wZDZscBopEgoyMDI2LTA5LTE3agwIAhIIL20vMGQ2bHByDQgDEgkvbS8wMTR2bTQ&hl=en&gl=hk&curr=USD",
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 559,
+          "total_outbound_pp": 727
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 559,
+          "total_outbound_pp": 727
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 559,
+          "total_outbound_pp": 727
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 559,
+          "total_outbound_pp": 727
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 687,
+        "leg2_price": 178,
+        "total_return_pp": 865
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Seoul",
+      "dest": "Los Angeles",
+      "depart": "2026-08-20",
+      "oneway_price": 612,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {
+        "7d": 612,
+        "10d": 612,
+        "14d": 712,
+        "21d": 612,
+        "28d": 612
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 28,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": 2623,
+      "open_jaw_hangzhou_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA4LTIwagwIAxIIL20vMGhzcWZyDggCEgovbS8wMzBxYjN0GisSCjIwMjYtMDktMDNqDggCEgovbS8wMzBxYjN0cg0IAxIJL20vMDE0dm00&hl=en&gl=hk&curr=USD",
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Hong Kong",
+      "dest": "Washington, D.C.",
+      "depart": "2026-09-10",
+      "oneway_price": 641,
+      "airline": "",
+      "stops": 2,
+      "duration_results": {
+        "7d": 768,
+        "10d": 768,
+        "14d": 729,
+        "21d": 729,
+        "28d": 830
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 28,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {},
+      "stopover_return": null,
+      "feeder": {},
+      "actual_stopover_city": "Hong Kong"
+    },
+    {
+      "origin": "Hong Kong",
+      "dest": "Atlanta",
+      "depart": "2026-09-06",
+      "oneway_price": 641,
+      "airline": "",
+      "stops": 2,
+      "duration_results": {
+        "7d": 641,
+        "10d": 641,
+        "14d": 641
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 14,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": 1371,
+      "open_jaw_hangzhou_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA5LTA2agwIAxIIL20vMDNoNjRyDAgCEggvbS8wMTN5cRopEgoyMDI2LTA5LTIwagwIAhIIL20vMDEzeXFyDQgDEgkvbS8wMTR2bTQ&hl=en&gl=hk&curr=USD",
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1152,
+          "total_outbound_pp": 1320
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1152,
+          "total_outbound_pp": 1320
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1152,
+          "total_outbound_pp": 1320
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1152,
+          "total_outbound_pp": 1320
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 1111,
+        "leg2_price": 178,
+        "total_return_pp": 1289
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Hong Kong",
+      "dest": "Houston",
+      "depart": "2026-09-10",
+      "oneway_price": 641,
+      "airline": "",
+      "stops": 2,
+      "duration_results": {
+        "7d": 641,
+        "10d": 641,
+        "14d": 641,
+        "28d": 2138
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 14,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": 1477,
+      "open_jaw_hangzhou_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA5LTEwagwIAxIIL20vMDNoNjRyDAgCEggvbS8wM2wybhopEgoyMDI2LTA5LTI0agwIAhIIL20vMDNsMm5yDQgDEgkvbS8wMTR2bTQ&hl=en&gl=hk&curr=USD",
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1164,
+          "total_outbound_pp": 1332
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1164,
+          "total_outbound_pp": 1332
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1164,
+          "total_outbound_pp": 1332
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1164,
+          "total_outbound_pp": 1332
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 985,
+        "leg2_price": 178,
+        "total_return_pp": 1163
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Hong Kong",
+      "dest": "Salt Lake City",
+      "depart": "2026-09-03",
+      "oneway_price": 641,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {
+        "7d": 641,
+        "10d": 641,
+        "14d": 641
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 14,
+      "open_jaw_price": 802,
+      "open_jaw_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA5LTAzagwIAxIIL20vMDNoNjRyDAgCEggvbS8wZjJyNhooEgoyMDI2LTA5LTE3agwIAhIIL20vMGYycjZyDAgDEggvbS8wNndqZg&hl=en&gl=hk&curr=USD",
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 910,
+          "total_outbound_pp": 1078
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 910,
+          "total_outbound_pp": 1078
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 910,
+          "total_outbound_pp": 1078
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 910,
+          "total_outbound_pp": 1078
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 1235,
+        "leg2_price": 178,
+        "total_return_pp": 1413
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Hong Kong",
+      "dest": "Baltimore",
+      "depart": "2026-09-10",
+      "oneway_price": 641,
+      "airline": "",
+      "stops": 2,
+      "duration_results": {
+        "7d": 641,
+        "10d": 641,
+        "14d": 641
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 14,
+      "open_jaw_price": 2482,
+      "open_jaw_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTA5LTEwagwIAxIIL20vMDNoNjRyDAgCEggvbS8wOTRqdhooEgoyMDI2LTA5LTI0agwIAhIIL20vMDk0anZyDAgDEggvbS8wNndqZg&hl=en&gl=hk&curr=USD",
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 699,
+          "total_outbound_pp": 867
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 699,
+          "total_outbound_pp": 867
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 699,
+          "total_outbound_pp": 867
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 699,
+          "total_outbound_pp": 867
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 952,
+        "leg2_price": 178,
+        "total_return_pp": 1130
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Hong Kong",
+      "dest": "Minneapolis",
+      "depart": "2026-09-03",
+      "oneway_price": 641,
+      "airline": "",
+      "stops": 2,
+      "duration_results": {
+        "7d": 641,
+        "10d": 641,
+        "14d": 641
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 14,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1152,
+          "total_outbound_pp": 1320
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1152,
+          "total_outbound_pp": 1320
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1152,
+          "total_outbound_pp": 1320
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1152,
+          "total_outbound_pp": 1320
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 1120,
+        "leg2_price": 178,
+        "total_return_pp": 1298
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Hong Kong",
+      "dest": "Detroit",
+      "depart": "2026-09-03",
+      "oneway_price": 641,
+      "airline": "",
+      "stops": 2,
+      "duration_results": {
+        "7d": 641,
+        "10d": 641,
+        "14d": 641
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 14,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1112,
+          "total_outbound_pp": 1280
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1112,
+          "total_outbound_pp": 1280
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1112,
+          "total_outbound_pp": 1280
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 168,
+          "leg2_price": 1112,
+          "total_outbound_pp": 1280
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 936,
+        "leg2_price": 178,
+        "total_return_pp": 1114
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Manila",
+      "dest": "San Diego",
+      "depart": "2026-10-05",
+      "oneway_price": 658,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {
+        "7d": 1001,
+        "10d": 821,
+        "14d": 821,
+        "21d": 656
+      },
+      "valid_duration_min": 21,
+      "valid_duration_max": 21,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 836,
+          "total_outbound_pp": 998
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 836,
+          "total_outbound_pp": 998
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 836,
+          "total_outbound_pp": 998
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 836,
+          "total_outbound_pp": 998
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 894,
+        "leg2_price": 162,
+        "total_return_pp": 1056
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Manila",
+      "dest": "Chicago",
+      "depart": "2026-10-05",
+      "oneway_price": 672,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {
+        "7d": 947,
+        "10d": 691,
+        "14d": 748
+      },
+      "valid_duration_min": 10,
+      "valid_duration_max": 14,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 1153,
+          "total_outbound_pp": 1315
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 1153,
+          "total_outbound_pp": 1315
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 1153,
+          "total_outbound_pp": 1315
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 1153,
+          "total_outbound_pp": 1315
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 1104,
+        "leg2_price": 162,
+        "total_return_pp": 1266
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Manila",
+      "dest": "San Francisco",
+      "depart": "2026-10-05",
+      "oneway_price": 677,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {
+        "7d": 677,
+        "10d": 695,
+        "14d": 724,
+        "21d": 677,
+        "28d": 724
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 28,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 559,
+          "total_outbound_pp": 721
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 559,
+          "total_outbound_pp": 721
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 559,
+          "total_outbound_pp": 721
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 559,
+          "total_outbound_pp": 721
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 687,
+        "leg2_price": 162,
+        "total_return_pp": 849
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Manila",
+      "dest": "Denver",
+      "depart": "2026-10-05",
+      "oneway_price": 680,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {
+        "7d": 680,
+        "10d": 696,
+        "21d": 678
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 21,
+      "open_jaw_price": null,
+      "open_jaw_url": null,
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 1093,
+          "total_outbound_pp": 1255
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 1093,
+          "total_outbound_pp": 1255
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 1093,
+          "total_outbound_pp": 1255
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 1093,
+          "total_outbound_pp": 1255
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 1152,
+        "leg2_price": 162,
+        "total_return_pp": 1314
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    },
+    {
+      "origin": "Manila",
+      "dest": "Portland",
+      "depart": "2026-10-05",
+      "oneway_price": 690,
+      "airline": "",
+      "stops": 1,
+      "duration_results": {
+        "7d": 690,
+        "28d": 949
+      },
+      "valid_duration_min": 7,
+      "valid_duration_max": 7,
+      "open_jaw_price": 931,
+      "open_jaw_url": "https://www.google.com/travel/flights?tfs=CBsQAhorEgoyMDI2LTEwLTA1ag0IAxIJL20vMDE5NXBkcg4IAhIKL20vMDJmcmhiYxoqEgoyMDI2LTEwLTE5ag4IAhIKL20vMDJmcmhiY3IMCAMSCC9tLzA2d2pm&hl=en&gl=hk&curr=USD",
+      "open_jaw_hangzhou_price": null,
+      "open_jaw_hangzhou_url": null,
+      "stopover": {
+        "3n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 836,
+          "total_outbound_pp": 998
+        },
+        "4n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 836,
+          "total_outbound_pp": 998
+        },
+        "5n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 836,
+          "total_outbound_pp": 998
+        },
+        "6n": {
+          "hub": "Seoul",
+          "leg1_price": 162,
+          "leg2_price": 836,
+          "total_outbound_pp": 998
+        }
+      },
+      "stopover_return": {
+        "hub": "Seoul",
+        "leg1_price": 1007,
+        "leg2_price": 162,
+        "total_return_pp": 1169
+      },
+      "feeder": {},
+      "actual_stopover_city": "Seoul"
+    }
+  ],
+  "stopover_stays": [
+    {
+      "origin": "Beijing",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 748.0,
+      "stopover_pp": 134,
+      "delta_pp": -614.0,
+      "delta_pct": -82.1,
+      "family_total": 368,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-12",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTMxagwIAxIIL20vMDE5MTRyDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTAyagwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTEwagwIAxIIL20vMGQ2bHByDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTEyagwIAxIIL20vMGhzcWZyDAgCEggvbS8wMTkxNEACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Beijing",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 748.0,
+      "stopover_pp": 134,
+      "delta_pp": -614.0,
+      "delta_pct": -82.1,
+      "family_total": 368,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-13",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTMxagwIAxIIL20vMDE5MTRyDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTAzagwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTExagwIAxIIL20vMGQ2bHByDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTEzagwIAxIIL20vMGhzcWZyDAgCEggvbS8wMTkxNEACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Beijing",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 748.0,
+      "stopover_pp": 134,
+      "delta_pp": -614.0,
+      "delta_pct": -82.1,
+      "family_total": 368,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-12",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTMxagwIAxIIL20vMDE5MTRyDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTAyagwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTEwagwIAxIIL20vMGQ2bHByDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTEyagwIAxIIL20vMDdkZmtyDAgCEggvbS8wMTkxNEACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Beijing",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 748.0,
+      "stopover_pp": 134,
+      "delta_pp": -614.0,
+      "delta_pct": -82.1,
+      "family_total": 368,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-13",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTMxagwIAxIIL20vMDE5MTRyDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTAzagwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTExagwIAxIIL20vMGQ2bHByDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTEzagwIAxIIL20vMDdkZmtyDAgCEggvbS8wMTkxNEACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Beijing",
+      "dest": "Seattle",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 739.0,
+      "stopover_pp": 134,
+      "delta_pp": -605.0,
+      "delta_pct": -81.9,
+      "family_total": 368,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-09-06",
+      "return_base": "2026-09-12",
+      "return_extended": "2026-09-16",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA5LTA2agwIAxIIL20vMDE5MTRyDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTA4agwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDlqchooEgoyMDI2LTA5LTE0agwIAxIIL20vMGQ5anJyDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTE2agwIAxIIL20vMGhzcWZyDAgCEggvbS8wMTkxNEACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Beijing",
+      "dest": "Seattle",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 739.0,
+      "stopover_pp": 134,
+      "delta_pp": -605.0,
+      "delta_pct": -81.9,
+      "family_total": 368,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-09-06",
+      "return_base": "2026-09-12",
+      "return_extended": "2026-09-17",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA5LTA2agwIAxIIL20vMDE5MTRyDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTA5agwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDlqchooEgoyMDI2LTA5LTE1agwIAxIIL20vMGQ5anJyDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTE3agwIAxIIL20vMGhzcWZyDAgCEggvbS8wMTkxNEACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Beijing",
+      "dest": "Seattle",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 739.0,
+      "stopover_pp": 134,
+      "delta_pp": -605.0,
+      "delta_pct": -81.9,
+      "family_total": 368,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-09-06",
+      "return_base": "2026-09-12",
+      "return_extended": "2026-09-16",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA5LTA2agwIAxIIL20vMDE5MTRyDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTA4agwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDlqchooEgoyMDI2LTA5LTE0agwIAxIIL20vMGQ5anJyDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTE2agwIAxIIL20vMDdkZmtyDAgCEggvbS8wMTkxNEACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Beijing",
+      "dest": "Seattle",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 739.0,
+      "stopover_pp": 134,
+      "delta_pp": -605.0,
+      "delta_pct": -81.9,
+      "family_total": 368,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-09-06",
+      "return_base": "2026-09-12",
+      "return_extended": "2026-09-17",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA5LTA2agwIAxIIL20vMDE5MTRyDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTA5agwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDlqchooEgoyMDI2LTA5LTE1agwIAxIIL20vMGQ5anJyDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTE3agwIAxIIL20vMDdkZmtyDAgCEggvbS8wMTkxNEACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Shenzhen",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 821.0,
+      "stopover_pp": 232,
+      "delta_pp": -589.0,
+      "delta_pct": -71.7,
+      "family_total": 638,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-08-27",
+      "return_base": "2026-09-04",
+      "return_extended": "2026-09-09",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTI3agwIAxIIL20vMGxibXZyDAgCEggvbS8waHNxZhooEgoyMDI2LTA4LTMwagwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTA3agwIAxIIL20vMGQ2bHByDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTA5agwIAxIIL20vMGhzcWZyDAgCEggvbS8wbGJtdkACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Shenzhen",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 821.0,
+      "stopover_pp": 232,
+      "delta_pp": -589.0,
+      "delta_pct": -71.7,
+      "family_total": 638,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-08-27",
+      "return_base": "2026-09-04",
+      "return_extended": "2026-09-08",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTI3agwIAxIIL20vMGxibXZyDAgCEggvbS8wN2RmaxooEgoyMDI2LTA4LTI5agwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTA2agwIAxIIL20vMGQ2bHByDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTA4agwIAxIIL20vMDdkZmtyDAgCEggvbS8wbGJtdkACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Shenzhen",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 821.0,
+      "stopover_pp": 232,
+      "delta_pp": -589.0,
+      "delta_pct": -71.7,
+      "family_total": 638,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-08-27",
+      "return_base": "2026-09-04",
+      "return_extended": "2026-09-09",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTI3agwIAxIIL20vMGxibXZyDAgCEggvbS8wN2RmaxooEgoyMDI2LTA4LTMwagwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTA3agwIAxIIL20vMGQ2bHByDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTA5agwIAxIIL20vMDdkZmtyDAgCEggvbS8wbGJtdkACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Guangzhou",
+      "dest": "Seattle",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 782.0,
+      "stopover_pp": 223,
+      "delta_pp": -559.0,
+      "delta_pct": -71.5,
+      "family_total": 613,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-09-11",
+      "return_base": "2026-09-17",
+      "return_extended": "2026-09-21",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA5LTExagwIAxIIL20vMDM5M2dyDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTEzagwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDlqchooEgoyMDI2LTA5LTE5agwIAxIIL20vMGQ5anJyDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTIxagwIAxIIL20vMGhzcWZyDAgCEggvbS8wMzkzZ0ACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Guangzhou",
+      "dest": "Seattle",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 782.0,
+      "stopover_pp": 223,
+      "delta_pp": -559.0,
+      "delta_pct": -71.5,
+      "family_total": 613,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-09-11",
+      "return_base": "2026-09-17",
+      "return_extended": "2026-09-22",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA5LTExagwIAxIIL20vMDM5M2dyDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTE0agwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDlqchooEgoyMDI2LTA5LTIwagwIAxIIL20vMGQ5anJyDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTIyagwIAxIIL20vMGhzcWZyDAgCEggvbS8wMzkzZ0ACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Guangzhou",
+      "dest": "Seattle",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 782.0,
+      "stopover_pp": 223,
+      "delta_pp": -559.0,
+      "delta_pct": -71.5,
+      "family_total": 613,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-09-11",
+      "return_base": "2026-09-17",
+      "return_extended": "2026-09-21",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA5LTExagwIAxIIL20vMDM5M2dyDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTEzagwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDlqchooEgoyMDI2LTA5LTE5agwIAxIIL20vMGQ5anJyDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTIxagwIAxIIL20vMDdkZmtyDAgCEggvbS8wMzkzZ0ACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Guangzhou",
+      "dest": "Seattle",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 782.0,
+      "stopover_pp": 223,
+      "delta_pp": -559.0,
+      "delta_pct": -71.5,
+      "family_total": 613,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-09-11",
+      "return_base": "2026-09-17",
+      "return_extended": "2026-09-22",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA5LTExagwIAxIIL20vMDM5M2dyDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTE0agwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDlqchooEgoyMDI2LTA5LTIwagwIAxIIL20vMGQ5anJyDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTIyagwIAxIIL20vMDdkZmtyDAgCEggvbS8wMzkzZ0ACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Hangzhou",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 733.0,
+      "stopover_pp": 211,
+      "delta_pp": -522.0,
+      "delta_pct": -71.2,
+      "family_total": 580,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-12",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA4LTMxag0IAxIJL20vMDE0dm00cgwIAhIIL20vMGhzcWYaKBIKMjAyNi0wOS0wMmoMCAMSCC9tLzBoc3FmcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0xMGoMCAMSCC9tLzBkNmxwcgwIAhIIL20vMGhzcWYaKRIKMjAyNi0wOS0xMmoMCAMSCC9tLzBoc3Fmcg0IAhIJL20vMDE0dm00QAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Hangzhou",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 733.0,
+      "stopover_pp": 211,
+      "delta_pp": -522.0,
+      "delta_pct": -71.2,
+      "family_total": 580,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-13",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA4LTMxag0IAxIJL20vMDE0dm00cgwIAhIIL20vMGhzcWYaKBIKMjAyNi0wOS0wM2oMCAMSCC9tLzBoc3FmcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0xMWoMCAMSCC9tLzBkNmxwcgwIAhIIL20vMGhzcWYaKRIKMjAyNi0wOS0xM2oMCAMSCC9tLzBoc3Fmcg0IAhIJL20vMDE0dm00QAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Hangzhou",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 733.0,
+      "stopover_pp": 211,
+      "delta_pp": -522.0,
+      "delta_pct": -71.2,
+      "family_total": 580,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-12",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA4LTMxag0IAxIJL20vMDE0dm00cgwIAhIIL20vMDdkZmsaKBIKMjAyNi0wOS0wMmoMCAMSCC9tLzA3ZGZrcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0xMGoMCAMSCC9tLzBkNmxwcgwIAhIIL20vMDdkZmsaKRIKMjAyNi0wOS0xMmoMCAMSCC9tLzA3ZGZrcg0IAhIJL20vMDE0dm00QAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Hangzhou",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 733.0,
+      "stopover_pp": 211,
+      "delta_pp": -522.0,
+      "delta_pct": -71.2,
+      "family_total": 580,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-13",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA4LTMxag0IAxIJL20vMDE0dm00cgwIAhIIL20vMDdkZmsaKBIKMjAyNi0wOS0wM2oMCAMSCC9tLzA3ZGZrcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0xMWoMCAMSCC9tLzBkNmxwcgwIAhIIL20vMDdkZmsaKRIKMjAyNi0wOS0xM2oMCAMSCC9tLzA3ZGZrcg0IAhIJL20vMDE0dm00QAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Guangzhou",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 733.0,
+      "stopover_pp": 223,
+      "delta_pp": -510.0,
+      "delta_pct": -69.6,
+      "family_total": 613,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-12",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTMxagwIAxIIL20vMDM5M2dyDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTAyagwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTEwagwIAxIIL20vMGQ2bHByDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTEyagwIAxIIL20vMGhzcWZyDAgCEggvbS8wMzkzZ0ACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Guangzhou",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 733.0,
+      "stopover_pp": 223,
+      "delta_pp": -510.0,
+      "delta_pct": -69.6,
+      "family_total": 613,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-13",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTMxagwIAxIIL20vMDM5M2dyDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTAzagwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTExagwIAxIIL20vMGQ2bHByDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTEzagwIAxIIL20vMGhzcWZyDAgCEggvbS8wMzkzZ0ACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Guangzhou",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 733.0,
+      "stopover_pp": 223,
+      "delta_pp": -510.0,
+      "delta_pct": -69.6,
+      "family_total": 613,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-12",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTMxagwIAxIIL20vMDM5M2dyDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTAyagwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTEwagwIAxIIL20vMGQ2bHByDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTEyagwIAxIIL20vMDdkZmtyDAgCEggvbS8wMzkzZ0ACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Guangzhou",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 733.0,
+      "stopover_pp": 223,
+      "delta_pp": -510.0,
+      "delta_pct": -69.6,
+      "family_total": 613,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-13",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTMxagwIAxIIL20vMDM5M2dyDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTAzagwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTExagwIAxIIL20vMGQ2bHByDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTEzagwIAxIIL20vMDdkZmtyDAgCEggvbS8wMzkzZ0ACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Qingdao",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 733.0,
+      "stopover_pp": 223,
+      "delta_pp": -510.0,
+      "delta_pct": -69.6,
+      "family_total": 613,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-09-03",
+      "return_base": "2026-09-11",
+      "return_extended": "2026-09-15",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTAzag0IAxIJL20vMDFsM3MwcgwIAhIIL20vMGhzcWYaKBIKMjAyNi0wOS0wNWoMCAMSCC9tLzBoc3FmcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0xM2oMCAMSCC9tLzBkNmxwcgwIAhIIL20vMGhzcWYaKRIKMjAyNi0wOS0xNWoMCAMSCC9tLzBoc3Fmcg0IAhIJL20vMDFsM3MwQAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Qingdao",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 733.0,
+      "stopover_pp": 223,
+      "delta_pp": -510.0,
+      "delta_pct": -69.6,
+      "family_total": 613,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-09-03",
+      "return_base": "2026-09-11",
+      "return_extended": "2026-09-16",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTAzag0IAxIJL20vMDFsM3MwcgwIAhIIL20vMGhzcWYaKBIKMjAyNi0wOS0wNmoMCAMSCC9tLzBoc3FmcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0xNGoMCAMSCC9tLzBkNmxwcgwIAhIIL20vMGhzcWYaKRIKMjAyNi0wOS0xNmoMCAMSCC9tLzBoc3Fmcg0IAhIJL20vMDFsM3MwQAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Qingdao",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 733.0,
+      "stopover_pp": 223,
+      "delta_pp": -510.0,
+      "delta_pct": -69.6,
+      "family_total": 613,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-09-03",
+      "return_base": "2026-09-11",
+      "return_extended": "2026-09-15",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTAzag0IAxIJL20vMDFsM3MwcgwIAhIIL20vMDdkZmsaKBIKMjAyNi0wOS0wNWoMCAMSCC9tLzA3ZGZrcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0xM2oMCAMSCC9tLzBkNmxwcgwIAhIIL20vMDdkZmsaKRIKMjAyNi0wOS0xNWoMCAMSCC9tLzA3ZGZrcg0IAhIJL20vMDFsM3MwQAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Qingdao",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 733.0,
+      "stopover_pp": 223,
+      "delta_pp": -510.0,
+      "delta_pct": -69.6,
+      "family_total": 613,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-09-03",
+      "return_base": "2026-09-11",
+      "return_extended": "2026-09-16",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTAzag0IAxIJL20vMDFsM3MwcgwIAhIIL20vMDdkZmsaKBIKMjAyNi0wOS0wNmoMCAMSCC9tLzA3ZGZrcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0xNGoMCAMSCC9tLzBkNmxwcgwIAhIIL20vMDdkZmsaKRIKMjAyNi0wOS0xNmoMCAMSCC9tLzA3ZGZrcg0IAhIJL20vMDFsM3MwQAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Chengdu",
+      "dest": "Los Angeles",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 777.0,
+      "stopover_pp": 245,
+      "delta_pp": -532.0,
+      "delta_pct": -68.5,
+      "family_total": 674,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-09-04",
+      "return_base": "2026-09-11",
+      "return_extended": "2026-09-15",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTA0ag0IAxIJL20vMDE2djQ2cgwIAhIIL20vMGhzcWYaKhIKMjAyNi0wOS0wNmoMCAMSCC9tLzBoc3Fmcg4IAhIKL20vMDMwcWIzdBoqEgoyMDI2LTA5LTEzag4IAxIKL20vMDMwcWIzdHIMCAISCC9tLzBoc3FmGikSCjIwMjYtMDktMTVqDAgDEggvbS8waHNxZnINCAISCS9tLzAxNnY0NkACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Chengdu",
+      "dest": "Los Angeles",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 777.0,
+      "stopover_pp": 245,
+      "delta_pp": -532.0,
+      "delta_pct": -68.5,
+      "family_total": 674,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-09-04",
+      "return_base": "2026-09-11",
+      "return_extended": "2026-09-16",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTA0ag0IAxIJL20vMDE2djQ2cgwIAhIIL20vMGhzcWYaKhIKMjAyNi0wOS0wN2oMCAMSCC9tLzBoc3Fmcg4IAhIKL20vMDMwcWIzdBoqEgoyMDI2LTA5LTE0ag4IAxIKL20vMDMwcWIzdHIMCAISCC9tLzBoc3FmGikSCjIwMjYtMDktMTZqDAgDEggvbS8waHNxZnINCAISCS9tLzAxNnY0NkACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Chengdu",
+      "dest": "Los Angeles",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 777.0,
+      "stopover_pp": 245,
+      "delta_pp": -532.0,
+      "delta_pct": -68.5,
+      "family_total": 674,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-09-04",
+      "return_base": "2026-09-11",
+      "return_extended": "2026-09-16",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTA0ag0IAxIJL20vMDE2djQ2cgwIAhIIL20vMDdkZmsaKhIKMjAyNi0wOS0wN2oMCAMSCC9tLzA3ZGZrcg4IAhIKL20vMDMwcWIzdBoqEgoyMDI2LTA5LTE0ag4IAxIKL20vMDMwcWIzdHIMCAISCC9tLzA3ZGZrGikSCjIwMjYtMDktMTZqDAgDEggvbS8wN2Rma3INCAISCS9tLzAxNnY0NkACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Chengdu",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 733.0,
+      "stopover_pp": 245,
+      "delta_pp": -488.0,
+      "delta_pct": -66.6,
+      "family_total": 674,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-09-10",
+      "return_base": "2026-09-18",
+      "return_extended": "2026-09-22",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTEwag0IAxIJL20vMDE2djQ2cgwIAhIIL20vMGhzcWYaKBIKMjAyNi0wOS0xMmoMCAMSCC9tLzBoc3FmcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0yMGoMCAMSCC9tLzBkNmxwcgwIAhIIL20vMGhzcWYaKRIKMjAyNi0wOS0yMmoMCAMSCC9tLzBoc3Fmcg0IAhIJL20vMDE2djQ2QAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Chengdu",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 733.0,
+      "stopover_pp": 245,
+      "delta_pp": -488.0,
+      "delta_pct": -66.6,
+      "family_total": 674,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-09-10",
+      "return_base": "2026-09-18",
+      "return_extended": "2026-09-23",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTEwag0IAxIJL20vMDE2djQ2cgwIAhIIL20vMGhzcWYaKBIKMjAyNi0wOS0xM2oMCAMSCC9tLzBoc3FmcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0yMWoMCAMSCC9tLzBkNmxwcgwIAhIIL20vMGhzcWYaKRIKMjAyNi0wOS0yM2oMCAMSCC9tLzBoc3Fmcg0IAhIJL20vMDE2djQ2QAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Chengdu",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 733.0,
+      "stopover_pp": 245,
+      "delta_pp": -488.0,
+      "delta_pct": -66.6,
+      "family_total": 674,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-09-10",
+      "return_base": "2026-09-18",
+      "return_extended": "2026-09-22",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTEwag0IAxIJL20vMDE2djQ2cgwIAhIIL20vMDdkZmsaKBIKMjAyNi0wOS0xMmoMCAMSCC9tLzA3ZGZrcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0yMGoMCAMSCC9tLzBkNmxwcgwIAhIIL20vMDdkZmsaKRIKMjAyNi0wOS0yMmoMCAMSCC9tLzA3ZGZrcg0IAhIJL20vMDE2djQ2QAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Chengdu",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 733.0,
+      "stopover_pp": 245,
+      "delta_pp": -488.0,
+      "delta_pct": -66.6,
+      "family_total": 674,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-09-10",
+      "return_base": "2026-09-18",
+      "return_extended": "2026-09-23",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTEwag0IAxIJL20vMDE2djQ2cgwIAhIIL20vMDdkZmsaKBIKMjAyNi0wOS0xM2oMCAMSCC9tLzA3ZGZrcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0yMWoMCAMSCC9tLzBkNmxwcgwIAhIIL20vMDdkZmsaKRIKMjAyNi0wOS0yM2oMCAMSCC9tLzA3ZGZrcg0IAhIJL20vMDE2djQ2QAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Chongqing",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 733.0,
+      "stopover_pp": 260,
+      "delta_pp": -473.0,
+      "delta_pct": -64.5,
+      "family_total": 715,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-12",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA4LTMxag0IAxIJL20vMDE3MjM2cgwIAhIIL20vMGhzcWYaKBIKMjAyNi0wOS0wMmoMCAMSCC9tLzBoc3FmcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0xMGoMCAMSCC9tLzBkNmxwcgwIAhIIL20vMGhzcWYaKRIKMjAyNi0wOS0xMmoMCAMSCC9tLzBoc3Fmcg0IAhIJL20vMDE3MjM2QAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Chongqing",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 733.0,
+      "stopover_pp": 260,
+      "delta_pp": -473.0,
+      "delta_pct": -64.5,
+      "family_total": 715,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-13",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA4LTMxag0IAxIJL20vMDE3MjM2cgwIAhIIL20vMGhzcWYaKBIKMjAyNi0wOS0wM2oMCAMSCC9tLzBoc3FmcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0xMWoMCAMSCC9tLzBkNmxwcgwIAhIIL20vMGhzcWYaKRIKMjAyNi0wOS0xM2oMCAMSCC9tLzBoc3Fmcg0IAhIJL20vMDE3MjM2QAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Chongqing",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 733.0,
+      "stopover_pp": 260,
+      "delta_pp": -473.0,
+      "delta_pct": -64.5,
+      "family_total": 715,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-12",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA4LTMxag0IAxIJL20vMDE3MjM2cgwIAhIIL20vMDdkZmsaKBIKMjAyNi0wOS0wMmoMCAMSCC9tLzA3ZGZrcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0xMGoMCAMSCC9tLzBkNmxwcgwIAhIIL20vMDdkZmsaKRIKMjAyNi0wOS0xMmoMCAMSCC9tLzA3ZGZrcg0IAhIJL20vMDE3MjM2QAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Chongqing",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 733.0,
+      "stopover_pp": 260,
+      "delta_pp": -473.0,
+      "delta_pct": -64.5,
+      "family_total": 715,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-13",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA4LTMxag0IAxIJL20vMDE3MjM2cgwIAhIIL20vMDdkZmsaKBIKMjAyNi0wOS0wM2oMCAMSCC9tLzA3ZGZrcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0xMWoMCAMSCC9tLzBkNmxwcgwIAhIIL20vMDdkZmsaKRIKMjAyNi0wOS0xM2oMCAMSCC9tLzA3ZGZrcg0IAhIJL20vMDE3MjM2QAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Dalian",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 792.0,
+      "stopover_pp": 292,
+      "delta_pp": -500.0,
+      "delta_pct": -63.1,
+      "family_total": 803,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-09-07",
+      "return_base": "2026-09-15",
+      "return_extended": "2026-09-19",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTA3ag0IAxIJL20vMDFsM2s2cgwIAhIIL20vMGhzcWYaKBIKMjAyNi0wOS0wOWoMCAMSCC9tLzBoc3FmcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0xN2oMCAMSCC9tLzBkNmxwcgwIAhIIL20vMGhzcWYaKRIKMjAyNi0wOS0xOWoMCAMSCC9tLzBoc3Fmcg0IAhIJL20vMDFsM2s2QAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Dalian",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 792.0,
+      "stopover_pp": 292,
+      "delta_pp": -500.0,
+      "delta_pct": -63.1,
+      "family_total": 803,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-09-07",
+      "return_base": "2026-09-15",
+      "return_extended": "2026-09-20",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTA3ag0IAxIJL20vMDFsM2s2cgwIAhIIL20vMGhzcWYaKBIKMjAyNi0wOS0xMGoMCAMSCC9tLzBoc3FmcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0xOGoMCAMSCC9tLzBkNmxwcgwIAhIIL20vMGhzcWYaKRIKMjAyNi0wOS0yMGoMCAMSCC9tLzBoc3Fmcg0IAhIJL20vMDFsM2s2QAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Dalian",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 792.0,
+      "stopover_pp": 292,
+      "delta_pp": -500.0,
+      "delta_pct": -63.1,
+      "family_total": 803,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-09-07",
+      "return_base": "2026-09-15",
+      "return_extended": "2026-09-19",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTA3ag0IAxIJL20vMDFsM2s2cgwIAhIIL20vMDdkZmsaKBIKMjAyNi0wOS0wOWoMCAMSCC9tLzA3ZGZrcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0xN2oMCAMSCC9tLzBkNmxwcgwIAhIIL20vMDdkZmsaKRIKMjAyNi0wOS0xOWoMCAMSCC9tLzA3ZGZrcg0IAhIJL20vMDFsM2s2QAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Dalian",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 792.0,
+      "stopover_pp": 292,
+      "delta_pp": -500.0,
+      "delta_pct": -63.1,
+      "family_total": 803,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-09-07",
+      "return_base": "2026-09-15",
+      "return_extended": "2026-09-20",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTA3ag0IAxIJL20vMDFsM2s2cgwIAhIIL20vMDdkZmsaKBIKMjAyNi0wOS0xMGoMCAMSCC9tLzA3ZGZrcgwIAhIIL20vMGQ2bHAaKBIKMjAyNi0wOS0xOGoMCAMSCC9tLzBkNmxwcgwIAhIIL20vMDdkZmsaKRIKMjAyNi0wOS0yMGoMCAMSCC9tLzA3ZGZrcg0IAhIJL20vMDFsM2s2QAI4A0gB&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Dalian",
+      "dest": "Los Angeles",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 769.0,
+      "stopover_pp": 292,
+      "delta_pp": -477.0,
+      "delta_pct": -62.0,
+      "family_total": 803,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-09-10",
+      "return_base": "2026-09-16",
+      "return_extended": "2026-09-20",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTEwag0IAxIJL20vMDFsM2s2cgwIAhIIL20vMGhzcWYaKhIKMjAyNi0wOS0xMmoMCAMSCC9tLzBoc3Fmcg4IAhIKL20vMDMwcWIzdBoqEgoyMDI2LTA5LTE4ag4IAxIKL20vMDMwcWIzdHIMCAISCC9tLzBoc3FmGikSCjIwMjYtMDktMjBqDAgDEggvbS8waHNxZnINCAISCS9tLzAxbDNrNkACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Dalian",
+      "dest": "Los Angeles",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 769.0,
+      "stopover_pp": 292,
+      "delta_pp": -477.0,
+      "delta_pct": -62.0,
+      "family_total": 803,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-09-10",
+      "return_base": "2026-09-16",
+      "return_extended": "2026-09-21",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTEwag0IAxIJL20vMDFsM2s2cgwIAhIIL20vMGhzcWYaKhIKMjAyNi0wOS0xM2oMCAMSCC9tLzBoc3Fmcg4IAhIKL20vMDMwcWIzdBoqEgoyMDI2LTA5LTE5ag4IAxIKL20vMDMwcWIzdHIMCAISCC9tLzBoc3FmGikSCjIwMjYtMDktMjFqDAgDEggvbS8waHNxZnINCAISCS9tLzAxbDNrNkACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Dalian",
+      "dest": "Los Angeles",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 769.0,
+      "stopover_pp": 292,
+      "delta_pp": -477.0,
+      "delta_pct": -62.0,
+      "family_total": 803,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-09-10",
+      "return_base": "2026-09-16",
+      "return_extended": "2026-09-20",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTEwag0IAxIJL20vMDFsM2s2cgwIAhIIL20vMDdkZmsaKhIKMjAyNi0wOS0xMmoMCAMSCC9tLzA3ZGZrcg4IAhIKL20vMDMwcWIzdBoqEgoyMDI2LTA5LTE4ag4IAxIKL20vMDMwcWIzdHIMCAISCC9tLzA3ZGZrGikSCjIwMjYtMDktMjBqDAgDEggvbS8wN2Rma3INCAISCS9tLzAxbDNrNkACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Dalian",
+      "dest": "Los Angeles",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 769.0,
+      "stopover_pp": 292,
+      "delta_pp": -477.0,
+      "delta_pct": -62.0,
+      "family_total": 803,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-09-10",
+      "return_base": "2026-09-16",
+      "return_extended": "2026-09-21",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxopEgoyMDI2LTA5LTEwag0IAxIJL20vMDFsM2s2cgwIAhIIL20vMDdkZmsaKhIKMjAyNi0wOS0xM2oMCAMSCC9tLzA3ZGZrcg4IAhIKL20vMDMwcWIzdBoqEgoyMDI2LTA5LTE5ag4IAxIKL20vMDMwcWIzdHIMCAISCC9tLzA3ZGZrGikSCjIwMjYtMDktMjFqDAgDEggvbS8wN2Rma3INCAISCS9tLzAxbDNrNkACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Tianjin",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 733.0,
+      "stopover_pp": 395,
+      "delta_pp": -338.0,
+      "delta_pct": -46.1,
+      "family_total": 1086,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-08-27",
+      "return_base": "2026-09-04",
+      "return_extended": "2026-09-08",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTI3agwIAxIIL20vMGRmNHlyDAgCEggvbS8waHNxZhooEgoyMDI2LTA4LTI5agwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTA2agwIAxIIL20vMGQ2bHByDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTA4agwIAxIIL20vMGhzcWZyDAgCEggvbS8wZGY0eUACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Tianjin",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 733.0,
+      "stopover_pp": 395,
+      "delta_pp": -338.0,
+      "delta_pct": -46.1,
+      "family_total": 1086,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-08-27",
+      "return_base": "2026-09-04",
+      "return_extended": "2026-09-09",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTI3agwIAxIIL20vMGRmNHlyDAgCEggvbS8waHNxZhooEgoyMDI2LTA4LTMwagwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTA3agwIAxIIL20vMGQ2bHByDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTA5agwIAxIIL20vMGhzcWZyDAgCEggvbS8wZGY0eUACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Tianjin",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 733.0,
+      "stopover_pp": 395,
+      "delta_pp": -338.0,
+      "delta_pct": -46.1,
+      "family_total": 1086,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-08-27",
+      "return_base": "2026-09-04",
+      "return_extended": "2026-09-08",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTI3agwIAxIIL20vMGRmNHlyDAgCEggvbS8wN2RmaxooEgoyMDI2LTA4LTI5agwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTA2agwIAxIIL20vMGQ2bHByDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTA4agwIAxIIL20vMDdkZmtyDAgCEggvbS8wZGY0eUACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Tianjin",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 733.0,
+      "stopover_pp": 395,
+      "delta_pp": -338.0,
+      "delta_pct": -46.1,
+      "family_total": 1086,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-08-27",
+      "return_base": "2026-09-04",
+      "return_extended": "2026-09-09",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTI3agwIAxIIL20vMGRmNHlyDAgCEggvbS8wN2RmaxooEgoyMDI2LTA4LTMwagwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTA3agwIAxIIL20vMGQ2bHByDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTA5agwIAxIIL20vMDdkZmtyDAgCEggvbS8wZGY0eUACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Shanghai",
+      "dest": "Seattle",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 821.0,
+      "stopover_pp": 733,
+      "delta_pp": -88.0,
+      "delta_pct": -10.7,
+      "family_total": 2016,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-10-17",
+      "return_base": "2026-10-24",
+      "return_extended": "2026-10-28",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTEwLTE3agwIAxIIL20vMDZ3amZyDAgCEggvbS8waHNxZhooEgoyMDI2LTEwLTE5agwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDlqchooEgoyMDI2LTEwLTI2agwIAxIIL20vMGQ5anJyDAgCEggvbS8waHNxZhooEgoyMDI2LTEwLTI4agwIAxIIL20vMGhzcWZyDAgCEggvbS8wNndqZkACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Shanghai",
+      "dest": "Seattle",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 821.0,
+      "stopover_pp": 733,
+      "delta_pp": -88.0,
+      "delta_pct": -10.7,
+      "family_total": 2016,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-10-17",
+      "return_base": "2026-10-24",
+      "return_extended": "2026-10-29",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTEwLTE3agwIAxIIL20vMDZ3amZyDAgCEggvbS8waHNxZhooEgoyMDI2LTEwLTIwagwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDlqchooEgoyMDI2LTEwLTI3agwIAxIIL20vMGQ5anJyDAgCEggvbS8waHNxZhooEgoyMDI2LTEwLTI5agwIAxIIL20vMGhzcWZyDAgCEggvbS8wNndqZkACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Shanghai",
+      "dest": "Seattle",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 821.0,
+      "stopover_pp": 733,
+      "delta_pp": -88.0,
+      "delta_pct": -10.7,
+      "family_total": 2016,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-10-17",
+      "return_base": "2026-10-24",
+      "return_extended": "2026-10-28",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTEwLTE3agwIAxIIL20vMDZ3amZyDAgCEggvbS8wN2RmaxooEgoyMDI2LTEwLTE5agwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDlqchooEgoyMDI2LTEwLTI2agwIAxIIL20vMGQ5anJyDAgCEggvbS8wN2RmaxooEgoyMDI2LTEwLTI4agwIAxIIL20vMDdkZmtyDAgCEggvbS8wNndqZkACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Shanghai",
+      "dest": "Seattle",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 821.0,
+      "stopover_pp": 733,
+      "delta_pp": -88.0,
+      "delta_pct": -10.7,
+      "family_total": 2016,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-10-17",
+      "return_base": "2026-10-24",
+      "return_extended": "2026-10-29",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTEwLTE3agwIAxIIL20vMDZ3amZyDAgCEggvbS8wN2RmaxooEgoyMDI2LTEwLTIwagwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDlqchooEgoyMDI2LTEwLTI3agwIAxIIL20vMGQ5anJyDAgCEggvbS8wN2RmaxooEgoyMDI2LTEwLTI5agwIAxIIL20vMDdkZmtyDAgCEggvbS8wNndqZkACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Shanghai",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 733.0,
+      "stopover_pp": 733,
+      "delta_pp": 0.0,
+      "delta_pct": 0.0,
+      "family_total": 2016,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-12",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTMxagwIAxIIL20vMDZ3amZyDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTAyagwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTEwagwIAxIIL20vMGQ2bHByDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTEyagwIAxIIL20vMGhzcWZyDAgCEggvbS8wNndqZkACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Shanghai",
+      "dest": "San Francisco",
+      "hub": "Seoul",
+      "hub_iata": "ICN",
+      "base_pp": 733.0,
+      "stopover_pp": 733,
+      "delta_pp": 0.0,
+      "delta_pct": 0.0,
+      "family_total": 2016,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-13",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTMxagwIAxIIL20vMDZ3amZyDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTAzagwIAxIIL20vMGhzcWZyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTExagwIAxIIL20vMGQ2bHByDAgCEggvbS8waHNxZhooEgoyMDI2LTA5LTEzagwIAxIIL20vMGhzcWZyDAgCEggvbS8wNndqZkACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Shanghai",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 733.0,
+      "stopover_pp": 733,
+      "delta_pp": 0.0,
+      "delta_pct": 0.0,
+      "family_total": 2016,
+      "out_nights": 2,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-12",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTMxagwIAxIIL20vMDZ3amZyDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTAyagwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTEwagwIAxIIL20vMGQ2bHByDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTEyagwIAxIIL20vMDdkZmtyDAgCEggvbS8wNndqZkACOANIAQ&hl=en&gl=hk&curr=USD"
+    },
+    {
+      "origin": "Shanghai",
+      "dest": "San Francisco",
+      "hub": "Tokyo",
+      "hub_iata": "NRT",
+      "base_pp": 733.0,
+      "stopover_pp": 733,
+      "delta_pp": 0.0,
+      "delta_pct": 0.0,
+      "family_total": 2016,
+      "out_nights": 3,
+      "back_nights": 2,
+      "depart": "2026-08-31",
+      "return_base": "2026-09-08",
+      "return_extended": "2026-09-13",
+      "url": "https://www.google.com/travel/flights?tfs=CBsQAxooEgoyMDI2LTA4LTMxagwIAxIIL20vMDZ3amZyDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTAzagwIAxIIL20vMDdkZmtyDAgCEggvbS8wZDZscBooEgoyMDI2LTA5LTExagwIAxIIL20vMGQ2bHByDAgCEggvbS8wN2RmaxooEgoyMDI2LTA5LTEzagwIAxIIL20vMDdkZmtyDAgCEggvbS8wNndqZkACOANIAQ&hl=en&gl=hk&curr=USD"
+    }
+  ]
+}
