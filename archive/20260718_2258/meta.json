@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-07-18T22:58:27.878440+08:00",
+  "slug": "20260718_2258",
+  "affordable_count": 16,
+  "bookable_count": 6,
+  "oneway_count": 12,
+  "trend_text": "Comparing 2026-07-18 vs 2026-07-18:\n  -3 routes disappeared (above budget or gone):\n    GONE Seoul → Palm Springs  was $702.0/pp\n    GONE Seoul → Santa Barbara  was $702.0/pp\n    GONE Manila → Houston  was $712.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-07-18</p><div class=\"diff-section\"><h4>✕ Disappeared (3)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Seoul</td><td>Palm Springs</td><td>Economy</td><td><strong>$702.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1930 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Jul 18 – 24</td></tr><tr class=\"gone-row\"><td>Seoul</td><td>Santa Barbara</td><td>Economy</td><td><strong>$702.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1930 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Jul 18 – 24</td></tr><tr class=\"gone-row\"><td>Manila</td><td>Houston</td><td>Economy</td><td><strong>$712.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1958 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Oct 5 – 12</td></tr></tbody></table></div>"
+}
