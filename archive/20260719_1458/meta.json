@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-07-19T14:58:10.633089+08:00",
+  "slug": "20260719_1458",
+  "affordable_count": 18,
+  "bookable_count": 6,
+  "oneway_count": 12,
+  "trend_text": "Comparing 2026-07-19 vs 2026-07-19:\n  +2 new affordable routes:\n    NEW  Seoul → Palm Springs  $702.0/pp ($1930 fam)\n    NEW  Seoul → Santa Barbara  $702.0/pp ($1930 fam)\n  ↓ 1 route got cheaper:\n    ↓    Seoul → San Francisco  $704.0→$557.0/pp (-21%)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-07-19</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Seoul</td><td>Palm Springs</td><td>Economy</td><td><strong>$702.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1930 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Jul 19 – 25</td></tr><tr class=\"new-row\"><td>Seoul</td><td>Santa Barbara</td><td>Economy</td><td><strong>$702.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1930 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Jul 19 – 25</td></tr></tbody></table></div><div class=\"diff-section\"><h4>↓ Got cheaper (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"cheap-row\"><td>Seoul</td><td>San Francisco</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$704.0</span> → <strong>$557.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1532 fam)</span></td><td><span class=\"badge badge-drop\">↓↓ BIG DROP</span></td><td style=\"color:#718096;font-size:11px\">Aug 30 – Sep 6</td></tr></tbody></table></div>"
+}
