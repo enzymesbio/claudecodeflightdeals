@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-07-21T14:57:40.357641+08:00",
+  "slug": "20260721_1457",
+  "affordable_count": 13,
+  "bookable_count": 5,
+  "oneway_count": 8,
+  "trend_text": "Comparing 2026-07-21 vs 2026-07-21:\n  ↑ 1 route got more expensive:\n    ↑    Hong Kong → Seattle  $528.0→$634.0/pp (+20%)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-07-21</p><div class=\"diff-section\"><h4>↑ Got more expensive (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"pricey-row\"><td>Hong Kong</td><td>Seattle</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$528.0</span> → <strong>$634.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1744 fam)</span></td><td><span class=\"badge badge-rise\">↑↑ Big Rise</span></td><td style=\"color:#718096;font-size:11px\">Sep 10 – 16</td></tr></tbody></table></div>"
+}
