@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-07-22T14:56:22.108649+08:00",
+  "slug": "20260722_1456",
+  "affordable_count": 13,
+  "bookable_count": 5,
+  "oneway_count": 9,
+  "trend_text": "Comparing 2026-07-22 vs 2026-07-22:\n  -1 route disappeared (above budget or gone):\n    GONE Hong Kong → Portland  was $727.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-07-22</p><div class=\"diff-section\"><h4>✕ Disappeared (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Hong Kong</td><td>Portland</td><td>Economy</td><td><strong>$727.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1999 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Sep 3 – 9</td></tr></tbody></table></div>"
+}
