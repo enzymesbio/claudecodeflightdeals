@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-07-24T08:01:55.090274+08:00",
+  "slug": "20260724_0801",
+  "affordable_count": 12,
+  "bookable_count": 5,
+  "oneway_count": 9,
+  "trend_text": "Comparing 2026-07-24 vs 2026-07-23:\n  +1 new affordable route:\n    NEW  Hong Kong → Salt Lake City  $665.0/pp ($1829 fam)\n  -2 routes disappeared (above budget or gone):\n    GONE Seoul → San Francisco  was $656.0/pp\n    GONE Manila → San Francisco  was $724.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-07-23</p><div class=\"diff-section\"><h4>✦ New routes (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Hong Kong</td><td>Salt Lake City</td><td>Economy</td><td><strong>$665.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1829 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 3 – 10</td></tr></tbody></table></div><div class=\"diff-section\"><h4>✕ Disappeared (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Seoul</td><td>San Francisco</td><td>Economy</td><td><strong>$656.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1804 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Aug 28 – Sep 4</td></tr><tr class=\"gone-row\"><td>Manila</td><td>San Francisco</td><td>Economy</td><td><strong>$724.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1991 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Sep 3 – 12</td></tr></tbody></table></div>"
+}
