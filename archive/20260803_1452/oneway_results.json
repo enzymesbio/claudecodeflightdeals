@@ -1,0 +1,69 @@
+{
+  "scan_time": "2026-08-03T14:29:03.899354+08:00",
+  "budget_pp": 700,
+  "budget_family": 1925,
+  "total_fares": 4,
+  "scan_dates": [
+    "2026-11-01",
+    "2026-12-01",
+    "2026-12-31"
+  ],
+  "fares": [
+    {
+      "origin_city": "Seoul",
+      "origin_code": "ICN",
+      "destination": "Los Angeles",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 592,
+      "family_price": 1628,
+      "dates": "Sep 14 – 20",
+      "stops": 2,
+      "duration": "23 hr 50 min",
+      "scan_date": "2026-11-01",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Seoul",
+      "origin_code": "ICN",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 609,
+      "family_price": 1675,
+      "dates": "Sep 11 – 17",
+      "stops": 1,
+      "duration": "16 hr 46 min",
+      "scan_date": "2026-11-01",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Seoul",
+      "origin_code": "ICN",
+      "destination": "New York",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 616,
+      "family_price": 1694,
+      "dates": "Sep 13 – 21",
+      "stops": 1,
+      "duration": "26 hr 38 min",
+      "scan_date": "2026-11-01",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Manila",
+      "origin_code": "MNL",
+      "destination": "Phoenix",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 684,
+      "family_price": 1881,
+      "dates": "Aug 20 – 27",
+      "stops": 1,
+      "duration": "22 hr 25 min",
+      "scan_date": "2026-12-31",
+      "type": "oneway"
+    }
+  ]
+}
