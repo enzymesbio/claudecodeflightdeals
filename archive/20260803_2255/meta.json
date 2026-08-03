@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-08-03T22:55:52.402764+08:00",
+  "slug": "20260803_2255",
+  "affordable_count": 12,
+  "bookable_count": 4,
+  "oneway_count": 4,
+  "trend_text": "Comparing 2026-08-03 vs 2026-08-03:\n  +2 new affordable routes:\n    NEW  Seoul → Washington, D.C.  $718.0/pp ($1974 fam)\n    NEW  Seoul → Baltimore  $718.0/pp ($1974 fam)\n  ↑ 1 route got more expensive:\n    ↑    Seoul → Los Angeles  $591.0→$624.0/pp (+6%)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-08-03</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Seoul</td><td>Washington, D.C.</td><td>Economy</td><td><strong>$718.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1974 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 27 – Oct 6</td></tr><tr class=\"new-row\"><td>Seoul</td><td>Baltimore</td><td>Economy</td><td><strong>$718.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1974 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 27 – Oct 6</td></tr></tbody></table></div><div class=\"diff-section\"><h4>↑ Got more expensive (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"pricey-row\"><td>Seoul</td><td>Los Angeles</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$591.0</span> → <strong>$624.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1716 fam)</span></td><td><span class=\"badge badge-rise\">↑ Pricier</span></td><td style=\"color:#718096;font-size:11px\">Sep 25 – Oct 1</td></tr></tbody></table></div>"
+}
