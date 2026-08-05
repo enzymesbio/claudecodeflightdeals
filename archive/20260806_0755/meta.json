@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-08-06T07:55:41.221263+08:00",
+  "slug": "20260806_0755",
+  "affordable_count": 15,
+  "bookable_count": 6,
+  "oneway_count": 5,
+  "trend_text": "Comparing 2026-08-06 vs 2026-08-05:\n  +1 new affordable route:\n    NEW  Tianjin → San Francisco  $725.0/pp ($1994 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-08-05</p><div class=\"diff-section\"><h4>✦ New routes (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Tianjin</td><td>San Francisco</td><td>Economy</td><td><strong>$725.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1994 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 14 – 22</td></tr></tbody></table></div>"
+}
