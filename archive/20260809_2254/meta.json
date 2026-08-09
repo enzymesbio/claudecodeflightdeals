@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-08-09T22:54:11.053652+08:00",
+  "slug": "20260809_2254",
+  "affordable_count": 13,
+  "bookable_count": 4,
+  "oneway_count": 4,
+  "trend_text": "Comparing 2026-08-09 vs 2026-08-09:\n  +2 new affordable routes:\n    NEW  Seoul → Washington, D.C.  $718.0/pp ($1974 fam)\n    NEW  Seoul → Baltimore  $718.0/pp ($1974 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-08-09</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Seoul</td><td>Washington, D.C.</td><td>Economy</td><td><strong>$718.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1974 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 14 – 21</td></tr><tr class=\"new-row\"><td>Seoul</td><td>Baltimore</td><td>Economy</td><td><strong>$718.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1974 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 14 – 21</td></tr></tbody></table></div>"
+}
