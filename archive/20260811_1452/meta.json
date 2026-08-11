@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-08-11T14:52:44.849808+08:00",
+  "slug": "20260811_1452",
+  "affordable_count": 6,
+  "bookable_count": 1,
+  "oneway_count": 4,
+  "trend_text": "Comparing 2026-08-11 vs 2026-08-11:\n  -3 routes disappeared (above budget or gone):\n    GONE Ho Chi Minh City → Los Angeles  was $725.0/pp\n    GONE Tianjin → San Francisco  was $726.0/pp\n    GONE Chongqing → San Francisco  was $726.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-08-11</p><div class=\"diff-section\"><h4>✕ Disappeared (3)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Ho Chi Minh City</td><td>Los Angeles</td><td>Economy</td><td><strong>$725.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1994 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Nov 16 – 23</td></tr><tr class=\"gone-row\"><td>Tianjin</td><td>San Francisco</td><td>Economy</td><td><strong>$726.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1996 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Sep 10 – 18</td></tr><tr class=\"gone-row\"><td>Chongqing</td><td>San Francisco</td><td>Economy</td><td><strong>$726.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1996 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Sep 10 – 18</td></tr></tbody></table></div>"
+}
