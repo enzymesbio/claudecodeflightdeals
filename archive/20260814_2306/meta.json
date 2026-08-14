@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-08-14T23:06:27.394723+08:00",
+  "slug": "20260814_2306",
+  "affordable_count": 25,
+  "bookable_count": 11,
+  "oneway_count": 21,
+  "trend_text": "Comparing 2026-08-14 vs 2026-08-14:\n  +2 new affordable routes:\n    NEW  Shanghai → Los Angeles  $682.0/pp ($1876 fam)\n    NEW  Hong Kong → Los Angeles  $716.0/pp ($1969 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-08-14</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Shanghai</td><td>Los Angeles</td><td>Economy</td><td><strong>$682.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1876 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Nov 8 – 15</td></tr><tr class=\"new-row\"><td>Hong Kong</td><td>Los Angeles</td><td>Economy</td><td><strong>$716.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1969 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 3 – 9</td></tr></tbody></table></div>"
+}
