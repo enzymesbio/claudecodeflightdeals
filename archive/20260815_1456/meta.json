@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-08-15T14:56:06.962354+08:00",
+  "slug": "20260815_1456",
+  "affordable_count": 26,
+  "bookable_count": 11,
+  "oneway_count": 21,
+  "trend_text": "Comparing 2026-08-15 vs 2026-08-15:\n  +2 new affordable routes:\n    NEW  Tianjin → San Francisco  $645.0/pp ($1774 fam)\n    NEW  Nanjing → Los Angeles  $682.0/pp ($1876 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-08-15</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Tianjin</td><td>San Francisco</td><td>Economy</td><td><strong>$645.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1774 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Nov 9 – 16</td></tr><tr class=\"new-row\"><td>Nanjing</td><td>Los Angeles</td><td>Economy</td><td><strong>$682.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1876 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Oct 23 – Nov 1</td></tr></tbody></table></div>"
+}
