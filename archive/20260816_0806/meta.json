@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-08-16T08:06:14.825719+08:00",
+  "slug": "20260816_0806",
+  "affordable_count": 24,
+  "bookable_count": 7,
+  "oneway_count": 21,
+  "trend_text": "Comparing 2026-08-16 vs 2026-08-15:\n  -2 routes disappeared (above budget or gone):\n    GONE Shanghai → Los Angeles  was $682.0/pp\n    GONE Beijing → Los Angeles  was $682.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-08-15</p><div class=\"diff-section\"><h4>✕ Disappeared (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Shanghai</td><td>Los Angeles</td><td>Economy</td><td><strong>$682.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1876 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Nov 8 – 15</td></tr><tr class=\"gone-row\"><td>Beijing</td><td>Los Angeles</td><td>Economy</td><td><strong>$682.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1876 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Nov 8 – 15</td></tr></tbody></table></div>"
+}
