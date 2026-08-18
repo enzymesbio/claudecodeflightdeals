@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-08-19T07:51:45.495882+08:00",
+  "slug": "20260819_0751",
+  "affordable_count": 22,
+  "bookable_count": 9,
+  "oneway_count": 12,
+  "trend_text": "Comparing 2026-08-19 vs 2026-08-18:\n  ↑ 1 route got more expensive:\n    ↑    Seoul → San Francisco  $632.0→$727.0/pp (+15%)\n  -1 route disappeared (above budget or gone):\n    GONE Guangzhou → San Francisco  was $713.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-08-18</p><div class=\"diff-section\"><h4>↑ Got more expensive (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"pricey-row\"><td>Seoul</td><td>San Francisco</td><td>Economy</td><td><span style=\"color:#718096;text-decoration:line-through\">$632.0</span> → <strong>$727.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1999 fam)</span></td><td><span class=\"badge badge-rise\">↑↑ Big Rise</span></td><td style=\"color:#718096;font-size:11px\">Sep 11 – 17</td></tr></tbody></table></div><div class=\"diff-section\"><h4>✕ Disappeared (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Guangzhou</td><td>San Francisco</td><td>Economy</td><td><strong>$713.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1961 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Jan 28 – Feb 6, 2027</td></tr></tbody></table></div>"
+}
