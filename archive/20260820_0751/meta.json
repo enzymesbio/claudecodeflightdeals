@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-08-20T07:51:01.716975+08:00",
+  "slug": "20260820_0751",
+  "affordable_count": 16,
+  "bookable_count": 6,
+  "oneway_count": 6,
+  "trend_text": "Comparing 2026-08-20 vs 2026-08-19:\n  +1 new affordable route:\n    NEW  Hong Kong → Denver  $720.0/pp ($1980 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-08-19</p><div class=\"diff-section\"><h4>✦ New routes (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Hong Kong</td><td>Denver</td><td>Economy</td><td><strong>$720.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1980 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 3 – 9</td></tr></tbody></table></div>"
+}

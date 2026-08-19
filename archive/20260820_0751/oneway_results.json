@@ -1,0 +1,97 @@
+{
+  "scan_time": "2026-08-20T07:26:14.744740+08:00",
+  "budget_pp": 700,
+  "budget_family": 1925,
+  "total_fares": 6,
+  "scan_dates": [
+    "2026-11-17",
+    "2026-12-17",
+    "2027-01-16"
+  ],
+  "fares": [
+    {
+      "origin_city": "Seoul",
+      "origin_code": "ICN",
+      "destination": "Los Angeles",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 619,
+      "family_price": 1702,
+      "dates": "Aug 31 – Sep 7",
+      "stops": 0,
+      "duration": "11 hr 15 min",
+      "scan_date": "2026-12-17",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Jakarta",
+      "origin_code": "CGK",
+      "destination": "Los Angeles",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 625,
+      "family_price": 1719,
+      "dates": "Aug 24 – 30",
+      "stops": 1,
+      "duration": "24 hr 15 min",
+      "scan_date": "2026-11-17",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Xiamen",
+      "origin_code": "XMN",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 644,
+      "family_price": 1771,
+      "dates": "Nov 9 – 16",
+      "stops": 2,
+      "duration": "21 hr 10 min",
+      "scan_date": "2026-11-17",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Xiamen",
+      "origin_code": "XMN",
+      "destination": "Los Angeles",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 674,
+      "family_price": 1854,
+      "dates": "Oct 23 – Nov 1",
+      "stops": 1,
+      "duration": "18 hr 30 min",
+      "scan_date": "2026-11-17",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Seoul",
+      "origin_code": "ICN",
+      "destination": "New York",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 681,
+      "family_price": 1873,
+      "dates": "Sep 11 – 17",
+      "stops": 2,
+      "duration": "27 hr 52 min",
+      "scan_date": "2026-12-17",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Hangzhou",
+      "origin_code": "HGH",
+      "destination": "Los Angeles",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 683,
+      "family_price": 1878,
+      "dates": "Nov 7 – 15",
+      "stops": 1,
+      "duration": "25 hr 55 min",
+      "scan_date": "2026-11-17",
+      "type": "oneway"
+    }
+  ]
+}
