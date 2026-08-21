@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-08-21T14:54:03.264317+08:00",
+  "slug": "20260821_1454",
+  "affordable_count": 23,
+  "bookable_count": 7,
+  "oneway_count": 15,
+  "trend_text": "Comparing 2026-08-21 vs 2026-08-21:\n  -3 routes disappeared (above budget or gone):\n    GONE Seoul → Portland  was $699.0/pp\n    GONE Seoul → Palm Springs  was $710.0/pp\n    GONE Seoul → Santa Barbara  was $710.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-08-21</p><div class=\"diff-section\"><h4>✕ Disappeared (3)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Seoul</td><td>Portland</td><td>Economy</td><td><strong>$699.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1922 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Sep 14 – 21</td></tr><tr class=\"gone-row\"><td>Seoul</td><td>Palm Springs</td><td>Economy</td><td><strong>$710.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1952 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Aug 21 – 27</td></tr><tr class=\"gone-row\"><td>Seoul</td><td>Santa Barbara</td><td>Economy</td><td><strong>$710.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1952 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Aug 21 – 27</td></tr></tbody></table></div>"
+}
