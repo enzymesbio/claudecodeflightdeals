@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-08-27T14:59:24.206586+08:00",
+  "slug": "20260827_1459",
+  "affordable_count": 25,
+  "bookable_count": 8,
+  "oneway_count": 15,
+  "trend_text": "Comparing 2026-08-27 vs 2026-08-27:\n  +2 new affordable routes:\n    NEW  Chongqing → Los Angeles  $684.0/pp ($1881 fam)\n    NEW  Manila → San Francisco  $716.0/pp ($1969 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-08-27</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Chongqing</td><td>Los Angeles</td><td>Economy</td><td><strong>$684.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1881 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Nov 9 – 16</td></tr><tr class=\"new-row\"><td>Manila</td><td>San Francisco</td><td>Economy</td><td><strong>$716.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1969 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 3 – 9</td></tr></tbody></table></div>"
+}
