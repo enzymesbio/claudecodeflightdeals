@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-09-05T07:55:55.966137+08:00",
+  "slug": "20260905_0755",
+  "affordable_count": 7,
+  "bookable_count": 3,
+  "oneway_count": 3,
+  "trend_text": "Comparing 2026-09-05 vs 2026-09-04:\n  -2 routes disappeared (above budget or gone):\n    GONE Tokyo → Houston  was $687.0/pp\n    GONE Tokyo → Los Angeles  was $708.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-09-04</p><div class=\"diff-section\"><h4>✕ Disappeared (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Tokyo</td><td>Houston</td><td>Economy</td><td><strong>$687.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1889 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Nov 9 – 16</td></tr><tr class=\"gone-row\"><td>Tokyo</td><td>Los Angeles</td><td>Economy</td><td><strong>$708.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1947 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Sep 10 – 16</td></tr></tbody></table></div>"
+}
