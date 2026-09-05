@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-09-05T14:53:52.238428+08:00",
+  "slug": "20260905_1453",
+  "affordable_count": 9,
+  "bookable_count": 4,
+  "oneway_count": 3,
+  "trend_text": "Comparing 2026-09-05 vs 2026-09-05:\n  +2 new affordable routes:\n    NEW  Tokyo → Houston  $686.0/pp ($1886 fam)\n    NEW  Tokyo → Los Angeles  $706.0/pp ($1942 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-09-05</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Tokyo</td><td>Houston</td><td>Economy</td><td><strong>$686.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1886 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Nov 9 – 16</td></tr><tr class=\"new-row\"><td>Tokyo</td><td>Los Angeles</td><td>Economy</td><td><strong>$706.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1942 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 11 – 17</td></tr></tbody></table></div>"
+}
