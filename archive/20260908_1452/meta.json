@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-09-08T14:52:47.933317+08:00",
+  "slug": "20260908_1452",
+  "affordable_count": 8,
+  "bookable_count": 2,
+  "oneway_count": 2,
+  "trend_text": "Comparing 2026-09-08 vs 2026-09-08:\n  -1 route disappeared (above budget or gone):\n    GONE Jakarta → Los Angeles  was $630.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-09-08</p><div class=\"diff-section\"><h4>✕ Disappeared (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Jakarta</td><td>Los Angeles</td><td>Economy</td><td><strong>$630.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1732 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Sep 17 – 23</td></tr></tbody></table></div>"
+}
