@@ -1,0 +1,41 @@
+{
+  "scan_time": "2026-09-12T22:30:04.502731+08:00",
+  "budget_pp": 700,
+  "budget_family": 1925,
+  "total_fares": 2,
+  "scan_dates": [
+    "2026-12-11",
+    "2027-01-10",
+    "2027-02-09"
+  ],
+  "fares": [
+    {
+      "origin_city": "Jakarta",
+      "origin_code": "CGK",
+      "destination": "Los Angeles",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 630,
+      "family_price": 1732,
+      "dates": "Sep 21 – 27",
+      "stops": 1,
+      "duration": "24 hr 20 min",
+      "scan_date": "2026-12-11",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Tokyo",
+      "origin_code": "TYO",
+      "destination": "Houston",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 674,
+      "family_price": 1854,
+      "dates": "Nov 9 – 16",
+      "stops": 0,
+      "duration": "11 hr 45 min",
+      "scan_date": "2026-12-11",
+      "type": "oneway"
+    }
+  ]
+}
