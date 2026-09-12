@@ -1,0 +1,69 @@
+{
+  "verification_time": "2026-09-12T14:30:01.456554+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 4,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Jakarta",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 630.0,
+      "dates": "Sep 21 - 29",
+      "route": "Jakarta → Los Angeles",
+      "status": "BOOKABLE",
+      "booking_url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhpsEgoyMDI2LTA5LTIxIh8KA0NHSxIKMjAyNi0wOS0yMRoDSUNOKgJPWjIDNzYyIh8KA0lDThIKMjAyNi0wOS0yMhoDTEFYKgJPWjIDMjAyagwIAxIIL20vMDQ0cnZyDggCEgovbS8wMzBxYjN0GmwSCjIwMjYtMDktMjkiHwoDTEFYEgoyMDI2LTA5LTI5GgNJQ04qAk9aMgMyMDMiHwoDSUNOEgoyMDI2LTEwLTAxGgNDR0sqAk9aMgM3NjFqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDQ0cnZAAUgBcAGCAQsI____________AZgBAQ&tfu=CnRDalJJY1dWU1QzQm9jRlI2WVRCQlJYQTBNMEZDUnkwdExTMHRMUzB0Y0dwaVpuUXhPVUZCUVVGQlIzRnJPRll3Umtsb09FdEJFZ3RQV2pJd00zeFBXamMyTVJvTENKVHNBeEFDR2dOVlUwUTRISENVN0FNPRIGCAAgAigBIgA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTA5LTIxagwIAxIIL20vMDQ0cnZyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMDktMjlqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDQ0cnY&hl=en&gl=hk&curr=USD",
+      "airline": "Asiana",
+      "price": 630,
+      "has_booking_page": true
+    },
+    {
+      "origin": "Tokyo",
+      "city": "Houston",
+      "cabin": "Economy",
+      "explore_price": 671.0,
+      "dates": "Nov 19 - 26",
+      "route": "Tokyo → Houston",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTExLTE5agwIAxIIL20vMDdkZmtyDAgCEggvbS8wM2wybhooEgoyMDI2LTExLTI2agwIAhIIL20vMDNsMm5yDAgDEggvbS8wN2Rmaw&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTExLTE5agwIAxIIL20vMDdkZmtyDAgCEggvbS8wM2wybhooEgoyMDI2LTExLTI2agwIAhIIL20vMDNsMm5yDAgDEggvbS8wN2Rmaw&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Manila",
+      "city": "Las Vegas",
+      "cabin": "Economy",
+      "explore_price": 705.0,
+      "dates": "Sep 17 - 26",
+      "route": "Manila → Las Vegas",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA5LTE3ag0IAxIJL20vMDE5NXBkcgwIAhIIL20vMGN2M3caKRIKMjAyNi0wOS0yNmoMCAISCC9tLzBjdjN3cg0IAxIJL20vMDE5NXBk&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTA5LTE3ag0IAxIJL20vMDE5NXBkcgwIAhIIL20vMGN2M3caKRIKMjAyNi0wOS0yNmoMCAISCC9tLzBjdjN3cg0IAxIJL20vMDE5NXBk&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 705,
+      "has_booking_page": true
+    },
+    {
+      "origin": "Hong Kong",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 716.0,
+      "dates": "Oct 26 - Nov 2",
+      "route": "Hong Kong → Los Angeles",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTEwLTI2agwIAxIIL20vMDNoNjRyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMTEtMDJqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDNoNjQ&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTEwLTI2agwIAxIIL20vMDNoNjRyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMTEtMDJqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDNoNjQ&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 716,
+      "has_booking_page": false
+    }
+  ]
+}
