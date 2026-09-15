@@ -1,0 +1,27 @@
+{
+  "scan_time": "2026-09-15T14:27:47.076553+08:00",
+  "budget_pp": 700,
+  "budget_family": 1925,
+  "total_fares": 1,
+  "scan_dates": [
+    "2026-12-14",
+    "2027-01-13",
+    "2027-02-12"
+  ],
+  "fares": [
+    {
+      "origin_city": "Tokyo",
+      "origin_code": "TYO",
+      "destination": "Houston",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 668,
+      "family_price": 1837,
+      "dates": "Nov 9 – 16",
+      "stops": 0,
+      "duration": "11 hr 45 min",
+      "scan_date": "2027-01-13",
+      "type": "oneway"
+    }
+  ]
+}
