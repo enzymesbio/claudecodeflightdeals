@@ -1,0 +1,111 @@
+{
+  "scan_time": "2026-09-16T14:30:33.591116+08:00",
+  "budget_pp": 700,
+  "budget_family": 1925,
+  "total_fares": 7,
+  "scan_dates": [
+    "2026-12-15",
+    "2027-01-14",
+    "2027-02-13"
+  ],
+  "fares": [
+    {
+      "origin_city": "Jakarta",
+      "origin_code": "CGK",
+      "destination": "Los Angeles",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 628,
+      "family_price": 1727,
+      "dates": "Sep 24 – 30",
+      "stops": 1,
+      "duration": "24 hr 20 min",
+      "scan_date": "2026-12-15",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Tokyo",
+      "origin_code": "TYO",
+      "destination": "Houston",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 668,
+      "family_price": 1837,
+      "dates": "Nov 9 – 16",
+      "stops": 0,
+      "duration": "11 hr 45 min",
+      "scan_date": "2026-12-15",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Jakarta",
+      "origin_code": "CGK",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 670,
+      "family_price": 1842,
+      "dates": "Oct 18 – 26",
+      "stops": 1,
+      "duration": "32 hr",
+      "scan_date": "2026-12-15",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Hong Kong",
+      "origin_code": "HKG",
+      "destination": "Los Angeles",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 684,
+      "family_price": 1881,
+      "dates": "Sep 21 – 29",
+      "stops": 2,
+      "duration": "13 hr 25 min",
+      "scan_date": "2026-12-15",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Hong Kong",
+      "origin_code": "HKG",
+      "destination": "Denver",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 688,
+      "family_price": 1892,
+      "dates": "Nov 19 – 26",
+      "stops": 2,
+      "duration": "19 hr 35 min",
+      "scan_date": "2026-12-15",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Hong Kong",
+      "origin_code": "HKG",
+      "destination": "Washington, D.C.",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 690,
+      "family_price": 1898,
+      "dates": "Sep 21 – 28",
+      "stops": 2,
+      "duration": "22 hr 25 min",
+      "scan_date": "2026-12-15",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Hong Kong",
+      "origin_code": "HKG",
+      "destination": "Baltimore",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 690,
+      "family_price": 1898,
+      "dates": "Sep 21 – 28",
+      "stops": 2,
+      "duration": "22 hr 25 min",
+      "scan_date": "2026-12-15",
+      "type": "oneway"
+    }
+  ]
+}
