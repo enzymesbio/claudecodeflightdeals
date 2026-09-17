@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-09-17T22:58:09.376089+08:00",
+  "slug": "20260917_2258",
+  "affordable_count": 11,
+  "bookable_count": 3,
+  "oneway_count": 6,
+  "trend_text": "Comparing 2026-09-17 vs 2026-09-17:\n  +1 new affordable route:\n    NEW  Hong Kong → Houston  $689.0/pp ($1895 fam)\n  -1 route disappeared (above budget or gone):\n    GONE Jakarta → San Francisco  was $669.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-09-17</p><div class=\"diff-section\"><h4>✦ New routes (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Hong Kong</td><td>Houston</td><td>Economy</td><td><strong>$689.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1895 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Sep 24 – Oct 1</td></tr></tbody></table></div><div class=\"diff-section\"><h4>✕ Disappeared (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Jakarta</td><td>San Francisco</td><td>Economy</td><td><strong>$669.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1840 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Oct 18 – 25</td></tr></tbody></table></div>"
+}
