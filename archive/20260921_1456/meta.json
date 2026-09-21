@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-09-21T14:56:28.834277+08:00",
+  "slug": "20260921_1456",
+  "affordable_count": 15,
+  "bookable_count": 4,
+  "oneway_count": 8,
+  "trend_text": "Comparing 2026-09-21 vs 2026-09-21:\n  +2 new affordable routes:\n    NEW  Xiamen → San Francisco  $647.0/pp ($1779 fam)\n    NEW  Qingdao → Los Angeles  $718.0/pp ($1974 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-09-21</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Xiamen</td><td>San Francisco</td><td>Economy</td><td><strong>$647.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1779 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Nov 9 – 16</td></tr><tr class=\"new-row\"><td>Qingdao</td><td>Los Angeles</td><td>Economy</td><td><strong>$718.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1974 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Nov 22 – Dec 1</td></tr></tbody></table></div>"
+}
