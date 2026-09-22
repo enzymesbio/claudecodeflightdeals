@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-09-22T14:57:53.442462+08:00",
+  "slug": "20260922_1457",
+  "affordable_count": 20,
+  "bookable_count": 8,
+  "oneway_count": 12,
+  "trend_text": "Comparing 2026-09-22 vs 2026-09-22:\n  +1 new affordable route:\n    NEW  Shenzhen → Los Angeles  $710.0/pp ($1952 fam)\n  -1 route disappeared (above budget or gone):\n    GONE Chengdu → Charlotte  was $719.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-09-22</p><div class=\"diff-section\"><h4>✦ New routes (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Shenzhen</td><td>Los Angeles</td><td>Economy</td><td><strong>$710.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1952 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Nov 5 – 14</td></tr></tbody></table></div><div class=\"diff-section\"><h4>✕ Disappeared (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Chengdu</td><td>Charlotte</td><td>Economy</td><td><strong>$719.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1977 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Sep 24 – 30</td></tr></tbody></table></div>"
+}
