@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-09-22T22:58:50.736439+08:00",
+  "slug": "20260922_2258",
+  "affordable_count": 17,
+  "bookable_count": 7,
+  "oneway_count": 13,
+  "trend_text": "Comparing 2026-09-22 vs 2026-09-22:\n  -3 routes disappeared (above budget or gone):\n    GONE Shenzhen → Los Angeles  was $710.0/pp\n    GONE Hong Kong → San Francisco  was $715.0/pp\n    GONE Manila → Las Vegas  was $721.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-09-22</p><div class=\"diff-section\"><h4>✕ Disappeared (3)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Shenzhen</td><td>Los Angeles</td><td>Economy</td><td><strong>$710.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1952 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Nov 5 – 14</td></tr><tr class=\"gone-row\"><td>Hong Kong</td><td>San Francisco</td><td>Economy</td><td><strong>$715.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1966 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Oct 8 – 15</td></tr><tr class=\"gone-row\"><td>Manila</td><td>Las Vegas</td><td>Economy</td><td><strong>$721.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1983 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Sep 27 – Oct 3</td></tr></tbody></table></div>"
+}
