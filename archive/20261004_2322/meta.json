@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-10-04T23:22:32.708097+08:00",
+  "slug": "20261004_2322",
+  "affordable_count": 24,
+  "bookable_count": 8,
+  "oneway_count": 21,
+  "trend_text": "Comparing 2026-10-04 vs 2026-10-04:\n  +2 new affordable routes:\n    NEW  Tokyo → Los Angeles  $658.0/pp ($1810 fam)\n    NEW  Hong Kong → Houston  $690.0/pp ($1898 fam)\n  -1 route disappeared (above budget or gone):\n    GONE Shanghai → Los Angeles  was $685.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-10-04</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Tokyo</td><td>Los Angeles</td><td>Economy</td><td><strong>$658.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1810 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Jan 22 – 28, 2027</td></tr><tr class=\"new-row\"><td>Hong Kong</td><td>Houston</td><td>Economy</td><td><strong>$690.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1898 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Oct 12 – 19</td></tr></tbody></table></div><div class=\"diff-section\"><h4>✕ Disappeared (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Shanghai</td><td>Los Angeles</td><td>Economy</td><td><strong>$685.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1884 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Oct 18 – 26</td></tr></tbody></table></div>"
+}
