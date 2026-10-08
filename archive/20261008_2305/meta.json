@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-10-08T23:05:56.587233+08:00",
+  "slug": "20261008_2305",
+  "affordable_count": 15,
+  "bookable_count": 7,
+  "oneway_count": 13,
+  "trend_text": "Comparing 2026-10-08 vs 2026-10-08:\n  +2 new affordable routes:\n    NEW  Chongqing → San Francisco  $641.0/pp ($1763 fam)\n    NEW  Tianjin → San Francisco  $656.0/pp ($1804 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-10-08</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Chongqing</td><td>San Francisco</td><td>Economy</td><td><strong>$641.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1763 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Nov 19 – 26</td></tr><tr class=\"new-row\"><td>Tianjin</td><td>San Francisco</td><td>Economy</td><td><strong>$656.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1804 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Nov 19 – 26</td></tr></tbody></table></div>"
+}
