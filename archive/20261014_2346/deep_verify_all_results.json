@@ -1,0 +1,41 @@
+{
+  "verification_time": "2026-10-14T23:08:16.748143+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 2,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Hangzhou",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 693.0,
+      "dates": "Nov 6 - 14",
+      "route": "Hangzhou → Los Angeles",
+      "status": "BOOKABLE",
+      "booking_url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhpuEgoyMDI2LTExLTA2IiAKA0hHSBIKMjAyNi0xMS0wNhoDQ0FOKgJDWjIEMzUxMiIfCgNDQU4SCjIwMjYtMTEtMDYaA0xBWCoCQ1oyAzMyN2oNCAMSCS9tLzAxNHZtNHIOCAISCi9tLzAzMHFiM3QabhIKMjAyNi0xMS0xNCIfCgNMQVgSCjIwMjYtMTEtMTQaA0NBTioCQ1oyAzMyOCIgCgNDQU4SCjIwMjYtMTEtMTYaA0hHSCoCQ1oyBDM1MjFqDggCEgovbS8wMzBxYjN0cg0IAxIJL20vMDE0dm00QAFIAXABggELCP___________wGYAQE&tfu=CnRDalJJV1c0MlZtVnBORE55VGxGQlJsZDBiV2RDUnkwdExTMHRMUzB0TFhCbWFXc3hOa0ZCUVVGQlIzSlFiWFJSU1haVFpuRkJFZ3hEV2pNeU9IeERXak0xTWpFYUN3amduQVFRQWhvRFZWTkVPQnh3NEp3RRIGCAAgAigBIgA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhorEgoyMDI2LTExLTA2ag0IAxIJL20vMDE0dm00cg4IAhIKL20vMDMwcWIzdBorEgoyMDI2LTExLTE0ag4IAhIKL20vMDMwcWIzdHINCAMSCS9tLzAxNHZtNA&hl=en&gl=hk&curr=USD",
+      "airline": "China Southern",
+      "price": 693,
+      "has_booking_page": true
+    },
+    {
+      "origin": "Ho Chi Minh City",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 727.0,
+      "dates": "Nov 6 - 15",
+      "route": "Ho Chi Minh City → Los Angeles",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTExLTA2agwIAxIIL20vMGhuNGhyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMTEtMTVqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMGhuNGg&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTExLTA2agwIAxIIL20vMGhuNGhyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMTEtMTVqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMGhuNGg&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 727,
+      "has_booking_page": false
+    }
+  ]
+}
