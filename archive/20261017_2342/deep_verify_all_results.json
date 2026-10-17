@@ -1,0 +1,97 @@
+{
+  "verification_time": "2026-10-17T23:03:03.428499+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 6,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Shanghai",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 651.0,
+      "dates": "Mar 29 - Apr 6, 2027",
+      "route": "Shanghai → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Xiamen",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 651.0,
+      "dates": "Dec 24 - 31",
+      "route": "Xiamen → San Francisco",
+      "status": "BOOKING_PAGE",
+      "booking_url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhqNARIKMjAyNi0xMi0yNCIgCgNYTU4SCjIwMjYtMTItMjQaA0NBTioCQ1oyBDM3NDIiHwoDQ0FOEgoyMDI2LTEyLTI0GgNXVUgqAkNaMgM2NTkiHwoDV1VIEgoyMDI2LTEyLTI0GgNTRk8qAkNaMgM2NTlqDQgDEgkvbS8wMTI2YzNyDAgCEggvbS8wZDZscBqNARIKMjAyNi0xMi0zMSIfCgNTRk8SCjIwMjYtMTItMzEaA1dVSCoCQ1oyAzY2MCIfCgNXVUgSCjIwMjctMDEtMDIaA0NBTioCQ1oyAzY2MCIgCgNDQU4SCjIwMjctMDEtMDIaA1hNTioCQ1oyBDM3NDFqDAgCEggvbS8wZDZscHINCAMSCS9tLzAxMjZjM0ABSAFwAYIBCwj___________8BmAEB&tfu=CnxDalJJVWpWc1kzcDFVMlp5VmpSQlNVRlpOMEZDUnkwdExTMHRMUzB0TFMxd1ptNXlPVUZCUVVGQlIzSlVhbWh6UlZWeVpGZEJFaEpEV2pZMk1IeERXalkyTUh4RFdqTTNOREVhQ3dpUi9BTVFBaG9EVlZORU9CeHdrZndEEgYIACACKAEiAA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTEyLTI0ag0IAxIJL20vMDEyNmMzcgwIAhIIL20vMGQ2bHAaKRIKMjAyNi0xMi0zMWoMCAISCC9tLzBkNmxwcg0IAxIJL20vMDEyNmMz&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 651,
+      "has_booking_page": true
+    },
+    {
+      "origin": "Guangzhou",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 651.0,
+      "dates": "Mar 25 - Apr 2, 2027",
+      "route": "Guangzhou → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Xiamen",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 681.0,
+      "dates": "Nov 6 - 15",
+      "route": "Xiamen → Los Angeles",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhorEgoyMDI2LTExLTA2ag0IAxIJL20vMDEyNmMzcg4IAhIKL20vMDMwcWIzdBorEgoyMDI2LTExLTE1ag4IAhIKL20vMDMwcWIzdHINCAMSCS9tLzAxMjZjMw&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhorEgoyMDI2LTExLTA2ag0IAxIJL20vMDEyNmMzcg4IAhIKL20vMDMwcWIzdBorEgoyMDI2LTExLTE1ag4IAhIKL20vMDMwcWIzdHINCAMSCS9tLzAxMjZjMw&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 681,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Shanghai",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 693.0,
+      "dates": "Nov 6 - 15",
+      "route": "Shanghai → Los Angeles",
+      "status": "NO_FLIGHTS",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTExLTA2agwIAxIIL20vMDZ3amZyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMTEtMTVqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDZ3amY&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTExLTA2agwIAxIIL20vMDZ3amZyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMTEtMTVqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDZ3amY&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 693,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Tianjin",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 693.0,
+      "dates": "Nov 6 - 15",
+      "route": "Tianjin → Los Angeles",
+      "status": "NO_FLIGHTS",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTExLTA2agwIAxIIL20vMGRmNHlyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMTEtMTVqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMGRmNHk&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTExLTA2agwIAxIIL20vMGRmNHlyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMTEtMTVqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMGRmNHk&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    }
+  ]
+}
