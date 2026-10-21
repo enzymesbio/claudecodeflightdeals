@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-10-21T15:17:23.819402+08:00",
+  "slug": "20261021_1517",
+  "affordable_count": 28,
+  "bookable_count": 10,
+  "oneway_count": 18,
+  "trend_text": "Comparing 2026-10-21 vs 2026-10-21:\n  -2 routes disappeared (above budget or gone):\n    GONE Chengdu → Los Angeles  was $694.0/pp\n    GONE Ho Chi Minh City → Los Angeles  was $726.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-10-21</p><div class=\"diff-section\"><h4>✕ Disappeared (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Chengdu</td><td>Los Angeles</td><td>Economy</td><td><strong>$694.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1908 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Feb 18 – 26, 2027</td></tr><tr class=\"gone-row\"><td>Ho Chi Minh City</td><td>Los Angeles</td><td>Economy</td><td><strong>$726.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1996 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Nov 8 – 16</td></tr></tbody></table></div>"
+}
