@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-10-21T08:08:11.644577+08:00",
+  "slug": "20261021_0808",
+  "affordable_count": 30,
+  "bookable_count": 8,
+  "oneway_count": 19,
+  "trend_text": "Comparing 2026-10-21 vs 2026-10-20:\n  +1 new affordable route:\n    NEW  Hong Kong → Minneapolis  $727.0/pp ($1999 fam)\n  -1 route disappeared (above budget or gone):\n    GONE Nanjing → San Francisco  was $664.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-10-20</p><div class=\"diff-section\"><h4>✦ New routes (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Hong Kong</td><td>Minneapolis</td><td>Economy</td><td><strong>$727.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1999 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Oct 26 – Nov 4</td></tr></tbody></table></div><div class=\"diff-section\"><h4>✕ Disappeared (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Nanjing</td><td>San Francisco</td><td>Economy</td><td><strong>$664.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1826 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Mar 29 – Apr 6, 2027</td></tr></tbody></table></div>"
+}
