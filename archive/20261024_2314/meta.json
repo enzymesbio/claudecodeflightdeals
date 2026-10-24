@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-10-24T23:14:19.753756+08:00",
+  "slug": "20261024_2314",
+  "affordable_count": 25,
+  "bookable_count": 10,
+  "oneway_count": 17,
+  "trend_text": "Comparing 2026-10-24 vs 2026-10-24:\n  +1 new affordable route:\n    NEW  Chengdu → Charlotte  $694.0/pp ($1908 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-10-24</p><div class=\"diff-section\"><h4>✦ New routes (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Chengdu</td><td>Charlotte</td><td>Economy</td><td><strong>$694.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1908 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Oct 29 – Nov 4</td></tr></tbody></table></div>"
+}
