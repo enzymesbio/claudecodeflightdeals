@@ -1,0 +1,69 @@
+{
+  "scan_time": "2026-11-02T14:28:34.246471+08:00",
+  "budget_pp": 700,
+  "budget_family": 1925,
+  "total_fares": 4,
+  "scan_dates": [
+    "2027-01-31",
+    "2027-03-02",
+    "2027-04-01"
+  ],
+  "fares": [
+    {
+      "origin_city": "Jakarta",
+      "origin_code": "CGK",
+      "destination": "Los Angeles",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 615,
+      "family_price": 1691,
+      "dates": "Nov 19 – 28",
+      "stops": 1,
+      "duration": "23 hr 10 min",
+      "scan_date": "2027-01-31",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Jakarta",
+      "origin_code": "CGK",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 657,
+      "family_price": 1807,
+      "dates": "Nov 19 – 28",
+      "stops": 1,
+      "duration": "31 hr",
+      "scan_date": "2027-01-31",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Wuhan",
+      "origin_code": "WUH",
+      "destination": "Los Angeles",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 688,
+      "family_price": 1892,
+      "dates": "Nov 22 – 29",
+      "stops": 1,
+      "duration": "22 hr 30 min",
+      "scan_date": "2027-01-31",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Chengdu",
+      "origin_code": "CTU",
+      "destination": "Los Angeles",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 695,
+      "family_price": 1911,
+      "dates": "Nov 19 – 28",
+      "stops": 1,
+      "duration": "36 hr",
+      "scan_date": "2027-01-31",
+      "type": "oneway"
+    }
+  ]
+}
