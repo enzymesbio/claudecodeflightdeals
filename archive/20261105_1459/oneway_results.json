@@ -1,0 +1,27 @@
+{
+  "scan_time": "2026-11-05T14:36:20.446463+08:00",
+  "budget_pp": 700,
+  "budget_family": 1925,
+  "total_fares": 1,
+  "scan_dates": [
+    "2027-02-03",
+    "2027-03-05",
+    "2027-04-04"
+  ],
+  "fares": [
+    {
+      "origin_city": "Jakarta",
+      "origin_code": "CGK",
+      "destination": "Los Angeles",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 617,
+      "family_price": 1697,
+      "dates": "Nov 19 – 28",
+      "stops": 1,
+      "duration": "23 hr 10 min",
+      "scan_date": "2027-02-03",
+      "type": "oneway"
+    }
+  ]
+}
