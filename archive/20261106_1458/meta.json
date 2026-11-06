@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-11-06T14:58:35.421882+08:00",
+  "slug": "20261106_1458",
+  "affordable_count": 4,
+  "bookable_count": 1,
+  "oneway_count": 2,
+  "trend_text": "Comparing 2026-11-06 vs 2026-11-06:\n  -2 routes disappeared (above budget or gone):\n    GONE Jakarta → Los Angeles  was $618.0/pp\n    GONE Jakarta → San Francisco  was $659.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-11-06</p><div class=\"diff-section\"><h4>✕ Disappeared (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Jakarta</td><td>Los Angeles</td><td>Economy</td><td><strong>$618.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1700 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Nov 19 – 28</td></tr><tr class=\"gone-row\"><td>Jakarta</td><td>San Francisco</td><td>Economy</td><td><strong>$659.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1812 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Nov 16 – 24</td></tr></tbody></table></div>"
+}
