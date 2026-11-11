@@ -1,0 +1,97 @@
+{
+  "scan_time": "2026-11-11T14:49:34.986764+08:00",
+  "budget_pp": 700,
+  "budget_family": 1925,
+  "total_fares": 6,
+  "scan_dates": [
+    "2027-02-09",
+    "2027-03-11",
+    "2027-04-10"
+  ],
+  "fares": [
+    {
+      "origin_city": "Guangzhou",
+      "origin_code": "CAN",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 653,
+      "family_price": 1796,
+      "dates": "Mar 1 – 8, 2027",
+      "stops": 1,
+      "duration": "16 hr 40 min",
+      "scan_date": "2027-03-11",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Shanghai",
+      "origin_code": "PVG",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 662,
+      "family_price": 1820,
+      "dates": "Mar 1 – 8, 2027",
+      "stops": 1,
+      "duration": "16 hr 55 min",
+      "scan_date": "2027-02-09",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Chongqing",
+      "origin_code": "CKG",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 665,
+      "family_price": 1829,
+      "dates": "Mar 1 – 8, 2027",
+      "stops": 1,
+      "duration": "23 hr 55 min",
+      "scan_date": "2027-02-09",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Chengdu",
+      "origin_code": "CTU",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 665,
+      "family_price": 1829,
+      "dates": "Mar 25 – Apr 2, 2027",
+      "stops": 1,
+      "duration": "18 hr 10 min",
+      "scan_date": "2027-03-11",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Xiamen",
+      "origin_code": "XMN",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 671,
+      "family_price": 1845,
+      "dates": "Feb 18 – 25, 2027",
+      "stops": 2,
+      "duration": "18 hr 55 min",
+      "scan_date": "2027-03-11",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Beijing",
+      "origin_code": "PEK",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 680,
+      "family_price": 1870,
+      "dates": "Mar 1 – 8, 2027",
+      "stops": 1,
+      "duration": "16 hr 10 min",
+      "scan_date": "2027-03-11",
+      "type": "oneway"
+    }
+  ]
+}
