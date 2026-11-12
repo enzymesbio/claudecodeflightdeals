@@ -1,0 +1,69 @@
+{
+  "verification_time": "2026-11-12T14:39:14.878675+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 4,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Jakarta",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 612.0,
+      "dates": "Nov 19 - 27",
+      "route": "Jakarta → Los Angeles",
+      "status": "BOOKABLE",
+      "booking_url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhpsEgoyMDI2LTExLTE5Ih8KA0NHSxIKMjAyNi0xMS0xORoDSUNOKgJPWjIDNzYyIh8KA0lDThIKMjAyNi0xMS0yMBoDTEFYKgJPWjIDMjAyagwIAxIIL20vMDQ0cnZyDggCEgovbS8wMzBxYjN0GmwSCjIwMjYtMTEtMjciHwoDTEFYEgoyMDI2LTExLTI3GgNJQ04qAk9aMgMyMDMiHwoDSUNOEgoyMDI2LTExLTI5GgNDR0sqAk9aMgM3NjFqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDQ0cnZAAUgBcAGCAQsI____________AZgBAQ&tfu=CnRDalJJYUZOM1dFczNjV1ZPWm05QlEyRmpjV2RDUnkwdExTMHRMUzB0Y0dwaWFXVXhOMEZCUVVGQlIzSXhXSGRaU0dkeFVrdEJFZ3RQV2pJd00zeFBXamMyTVJvTENQL2NBeEFDR2dOVlUwUTRISEQvM0FNPRIGCAAgAigBIgA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTExLTE5agwIAxIIL20vMDQ0cnZyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMTEtMjdqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDQ0cnY&hl=en&gl=hk&curr=USD",
+      "airline": "Asiana",
+      "price": 611,
+      "has_booking_page": true
+    },
+    {
+      "origin": "Guangzhou",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 653.0,
+      "dates": "Mar 1 - 8, 2027",
+      "route": "Guangzhou → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Xiamen",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 662.0,
+      "dates": "Mar 1 - 8, 2027",
+      "route": "Xiamen → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Chengdu",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 665.0,
+      "dates": "Mar 28 - Apr 6, 2027",
+      "route": "Chengdu → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    }
+  ]
+}
