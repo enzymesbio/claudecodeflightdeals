@@ -1,0 +1,83 @@
+{
+  "scan_time": "2026-11-13T22:32:03.803191+08:00",
+  "budget_pp": 700,
+  "budget_family": 1925,
+  "total_fares": 5,
+  "scan_dates": [
+    "2027-02-11",
+    "2027-03-13",
+    "2027-04-12"
+  ],
+  "fares": [
+    {
+      "origin_city": "Jakarta",
+      "origin_code": "CGK",
+      "destination": "Los Angeles",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 612,
+      "family_price": 1683,
+      "dates": "Nov 19 – 27",
+      "stops": 1,
+      "duration": "23 hr 10 min",
+      "scan_date": "2027-03-13",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Guangzhou",
+      "origin_code": "CAN",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 653,
+      "family_price": 1796,
+      "dates": "Mar 1 – 8, 2027",
+      "stops": 1,
+      "duration": "16 hr 40 min",
+      "scan_date": "2027-02-11",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Xiamen",
+      "origin_code": "XMN",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 662,
+      "family_price": 1820,
+      "dates": "Feb 22 – Mar 1, 2027",
+      "stops": 2,
+      "duration": "21 hr 10 min",
+      "scan_date": "2027-03-13",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Chengdu",
+      "origin_code": "CTU",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 665,
+      "family_price": 1829,
+      "dates": "Mar 28 – Apr 6, 2027",
+      "stops": 1,
+      "duration": "37 hr 50 min",
+      "scan_date": "2027-02-11",
+      "type": "oneway"
+    },
+    {
+      "origin_city": "Shanghai",
+      "origin_code": "PVG",
+      "destination": "San Francisco",
+      "cabin": "Economy",
+      "cabin_num": 1,
+      "price_usd": 671,
+      "family_price": 1845,
+      "dates": "Mar 29 – Apr 6, 2027",
+      "stops": 2,
+      "duration": "28 hr 45 min",
+      "scan_date": "2027-02-11",
+      "type": "oneway"
+    }
+  ]
+}
