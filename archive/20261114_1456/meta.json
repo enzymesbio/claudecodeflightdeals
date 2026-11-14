@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-11-14T14:56:08.679334+08:00",
+  "slug": "20261114_1456",
+  "affordable_count": 10,
+  "bookable_count": 1,
+  "oneway_count": 6,
+  "trend_text": "Comparing 2026-11-14 vs 2026-11-14:\n  +2 new affordable routes:\n    NEW  Guangzhou → San Francisco  $653.0/pp ($1796 fam)\n    NEW  Beijing → San Francisco  $680.0/pp ($1870 fam)",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-11-14</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Guangzhou</td><td>San Francisco</td><td>Economy</td><td><strong>$653.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1796 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Mar 1 – 8, 2027</td></tr><tr class=\"new-row\"><td>Beijing</td><td>San Francisco</td><td>Economy</td><td><strong>$680.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1870 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Mar 29 – Apr 6, 2027</td></tr></tbody></table></div>"
+}
