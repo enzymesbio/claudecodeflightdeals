@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-11-16T07:55:52.949760+08:00",
+  "slug": "20261116_0755",
+  "affordable_count": 9,
+  "bookable_count": 3,
+  "oneway_count": 6,
+  "trend_text": "Comparing 2026-11-16 vs 2026-11-15:\n  +2 new affordable routes:\n    NEW  Jakarta → Los Angeles  $613.0/pp ($1686 fam)\n    NEW  Jakarta → San Francisco  $654.0/pp ($1798 fam)\n  -1 route disappeared (above budget or gone):\n    GONE Xiamen → San Francisco  was $662.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-11-15</p><div class=\"diff-section\"><h4>✦ New routes (2)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"new-row\"><td>Jakarta</td><td>Los Angeles</td><td>Economy</td><td><strong>$613.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1686 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Nov 23 – Dec 1</td></tr><tr class=\"new-row\"><td>Jakarta</td><td>San Francisco</td><td>Economy</td><td><strong>$654.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1798 fam)</span></td><td><span class=\"badge badge-new\">NEW</span></td><td style=\"color:#718096;font-size:11px\">Feb 1 – 7, 2027</td></tr></tbody></table></div><div class=\"diff-section\"><h4>✕ Disappeared (1)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Xiamen</td><td>San Francisco</td><td>Economy</td><td><strong>$662.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1820 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Feb 22 – Mar 1, 2027</td></tr></tbody></table></div>"
+}
