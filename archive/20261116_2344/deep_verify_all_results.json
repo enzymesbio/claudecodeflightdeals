@@ -1,0 +1,55 @@
+{
+  "verification_time": "2026-11-16T23:06:09.963797+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 3,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Hong Kong",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 715.0,
+      "dates": "Nov 23 - 30",
+      "route": "Hong Kong → Los Angeles",
+      "status": "BOOKABLE",
+      "booking_url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhpLEgoyMDI2LTExLTIzIh8KA0hLRxIKMjAyNi0xMS0yMxoDTEFYKgJVQTIDMTUzagwIAxIIL20vMDNoNjRyDggCEgovbS8wMzBxYjN0GksSCjIwMjYtMTEtMzAiHwoDTEFYEgoyMDI2LTExLTMwGgNIS0cqAlVBMgMxNTJqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDNoNjRAAUgBcAGCAQsI____________AZgBAQ&tfu=CmxDalJJWVVoclRXWktNRzlMVVVGQlVUWk5ZVUZDUnkwdExTMHRMUzB0Y0daaWEyMHlOa0ZCUVVGQlIzSTNSemxWVFhCME1YRkJFZ1ZWUVRFMU1ob0xDUDZ0QkJBQ0dnTlZVMFE0SEhEK3JRUT0SBggAIAIoASIDEgEx&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTExLTIzagwIAxIIL20vMDNoNjRyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMTEtMzBqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDNoNjQ&hl=en&gl=hk&curr=USD",
+      "airline": "United",
+      "price": 715,
+      "has_booking_page": true
+    },
+    {
+      "origin": "Hong Kong",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 715.0,
+      "dates": "Nov 23 - 29",
+      "route": "Hong Kong → San Francisco",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTExLTIzagwIAxIIL20vMDNoNjRyDAgCEggvbS8wZDZscBooEgoyMDI2LTExLTI5agwIAhIIL20vMGQ2bHByDAgDEggvbS8wM2g2NA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTExLTIzagwIAxIIL20vMDNoNjRyDAgCEggvbS8wZDZscBooEgoyMDI2LTExLTI5agwIAhIIL20vMGQ2bHByDAgDEggvbS8wM2g2NA&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 715,
+      "has_booking_page": true
+    },
+    {
+      "origin": "Hong Kong",
+      "city": "Denver",
+      "cabin": "Economy",
+      "explore_price": 720.0,
+      "dates": "Nov 23 - 29",
+      "route": "Hong Kong → Denver",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTExLTIzagwIAxIIL20vMDNoNjRyDAgCEggvbS8wMmNsMRooEgoyMDI2LTExLTI5agwIAhIIL20vMDJjbDFyDAgDEggvbS8wM2g2NA&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTExLTIzagwIAxIIL20vMDNoNjRyDAgCEggvbS8wMmNsMRooEgoyMDI2LTExLTI5agwIAhIIL20vMDJjbDFyDAgDEggvbS8wM2g2NA&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 720,
+      "has_booking_page": false
+    }
+  ]
+}
