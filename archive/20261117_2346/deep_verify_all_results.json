@@ -1,0 +1,69 @@
+{
+  "verification_time": "2026-11-17T23:06:06.666194+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 4,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Jakarta",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 612.0,
+      "dates": "Nov 23 - Dec 2",
+      "route": "Jakarta → Los Angeles",
+      "status": "BOOKABLE",
+      "booking_url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhpsEgoyMDI2LTExLTIzIh8KA0NHSxIKMjAyNi0xMS0yMxoDSUNOKgJPWjIDNzYyIh8KA0lDThIKMjAyNi0xMS0yNBoDTEFYKgJPWjIDMjAyagwIAxIIL20vMDQ0cnZyDggCEgovbS8wMzBxYjN0GmwSCjIwMjYtMTItMDIiHwoDTEFYEgoyMDI2LTEyLTAyGgNJQ04qAk9aMgMyMDMiHwoDSUNOEgoyMDI2LTEyLTA0GgNDR0sqAk9aMgM3NjFqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDQ0cnZAAUgBcAGCAQsI____________AZgBAQ&tfu=CnRDalJJZW10MGRISjZlREZXTmxWQlJGaHZZWGRDUnkwdExTMHRMWEJtWW0xNU9TMXVNa0ZCUVVGQlIzSTRZbFpKUjFSR2FTMUJFZ3RQV2pJd00zeFBXamMyTVJvTENKZmRBeEFDR2dOVlUwUTRISENYM1FNPRIGCAAgAigBIgMKATE&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTExLTIzagwIAxIIL20vMDQ0cnZyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMTItMDJqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDQ0cnY&hl=en&gl=hk&curr=USD",
+      "airline": "Asiana",
+      "price": 602,
+      "has_booking_page": true
+    },
+    {
+      "origin": "Jakarta",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 653.0,
+      "dates": "Feb 1 - 7, 2027",
+      "route": "Jakarta → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Chongqing",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 665.0,
+      "dates": "Mar 1 - 8, 2027",
+      "route": "Chongqing → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Bangkok",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 726.0,
+      "dates": "Mar 15 - 22, 2027",
+      "route": "Bangkok → Los Angeles",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    }
+  ]
+}
