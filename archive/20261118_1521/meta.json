@@ -1,0 +1,9 @@
+{
+  "scan_time": "2026-11-18T15:21:13.563744+08:00",
+  "slug": "20261118_1521",
+  "affordable_count": 13,
+  "bookable_count": 3,
+  "oneway_count": 11,
+  "trend_text": "Comparing 2026-11-18 vs 2026-11-18:\n  -4 routes disappeared (above budget or gone):\n    GONE Guangzhou → San Francisco  was $653.0/pp\n    GONE Hangzhou → San Francisco  was $662.0/pp\n    GONE Beijing → San Francisco  was $680.0/pp\n    GONE Ho Chi Minh City → Los Angeles  was $727.0/pp",
+  "trend_html": "<p style=\"color:#718096;font-size:12px;margin:0 0 8px\">vs 2026-11-18</p><div class=\"diff-section\"><h4>✕ Disappeared (4)</h4><table class=\"diff-table\"><thead><tr><th>Origin</th><th>Dest</th><th>Cabin</th><th>Price</th><th>Trend</th><th>Dates</th></tr></thead><tbody><tr class=\"gone-row\"><td>Guangzhou</td><td>San Francisco</td><td>Economy</td><td><strong>$653.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1796 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Mar 1 – 8, 2027</td></tr><tr class=\"gone-row\"><td>Hangzhou</td><td>San Francisco</td><td>Economy</td><td><strong>$662.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1820 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Mar 1 – 8, 2027</td></tr><tr class=\"gone-row\"><td>Beijing</td><td>San Francisco</td><td>Economy</td><td><strong>$680.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1870 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Mar 22 – 30, 2027</td></tr><tr class=\"gone-row\"><td>Ho Chi Minh City</td><td>Los Angeles</td><td>Economy</td><td><strong>$727.0</strong>/pp&nbsp;<span style=\"color:#718096\">($1999 fam)</span></td><td><span class=\"badge badge-rise\">GONE</span></td><td style=\"color:#718096;font-size:11px\">Mar 5 – 13, 2027</td></tr></tbody></table></div>"
+}
