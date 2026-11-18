@@ -1,0 +1,27 @@
+{
+  "verification_time": "2026-11-18T23:07:34.037368+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 1,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Qingdao",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 672.0,
+      "dates": "Mar 1 - 8, 2027",
+      "route": "Qingdao → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    }
+  ]
+}
