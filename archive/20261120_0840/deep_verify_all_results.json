@@ -1,0 +1,69 @@
+{
+  "verification_time": "2026-11-20T08:05:39.847960+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 4,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Jakarta",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 623.0,
+      "dates": "Nov 26 - Dec 2",
+      "route": "Jakarta → Los Angeles",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTExLTI2agwIAxIIL20vMDQ0cnZyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMTItMDJqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDQ0cnY&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTExLTI2agwIAxIIL20vMDQ0cnZyDggCEgovbS8wMzBxYjN0GioSCjIwMjYtMTItMDJqDggCEgovbS8wMzBxYjN0cgwIAxIIL20vMDQ0cnY&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 625,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Xiamen",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 662.0,
+      "dates": "Dec 24 - 31",
+      "route": "Xiamen → San Francisco",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTEyLTI0ag0IAxIJL20vMDEyNmMzcgwIAhIIL20vMGQ2bHAaKRIKMjAyNi0xMi0zMWoMCAISCC9tLzBkNmxwcg0IAxIJL20vMDEyNmMz&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTEyLTI0ag0IAxIJL20vMDEyNmMzcgwIAhIIL20vMGQ2bHAaKRIKMjAyNi0xMi0zMWoMCAISCC9tLzBkNmxwcg0IAxIJL20vMDEyNmMz&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 662,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Hangzhou",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 671.0,
+      "dates": "Mar 1 - 8, 2027",
+      "route": "Hangzhou → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Jakarta",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 721.0,
+      "dates": "Apr 3 - 11, 2027",
+      "route": "Jakarta → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    }
+  ]
+}
