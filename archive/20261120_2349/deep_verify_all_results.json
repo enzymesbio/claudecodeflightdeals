@@ -1,0 +1,55 @@
+{
+  "verification_time": "2026-11-20T23:10:15.417755+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 3,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Guangzhou",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 653.0,
+      "dates": "Mar 1 - 8, 2027",
+      "route": "Guangzhou → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Tokyo",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 662.0,
+      "dates": "Feb 4 - 10, 2027",
+      "route": "Tokyo → Los Angeles",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Tokyo",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 707.0,
+      "dates": "Feb 11 - 17, 2027",
+      "route": "Tokyo → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    }
+  ]
+}
