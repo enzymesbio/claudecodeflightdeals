@@ -1,0 +1,83 @@
+{
+  "verification_time": "2026-11-21T15:00:45.468829+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 5,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Guangzhou",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 652.0,
+      "dates": "Mar 22 - 30, 2027",
+      "route": "Guangzhou → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Shanghai",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 661.0,
+      "dates": "Mar 22 - 30, 2027",
+      "route": "Shanghai → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Beijing",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 679.0,
+      "dates": "Mar 22 - 30, 2027",
+      "route": "Beijing → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Shenzhen",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 679.0,
+      "dates": "Dec 24 - 31",
+      "route": "Shenzhen → San Francisco",
+      "status": "BOOKING_PAGE",
+      "booking_url": "https://www.google.com/travel/flights/booking?tfs=CBwQAhprEgoyMDI2LTEyLTI0IiAKA1NaWBIKMjAyNi0xMi0yNBoDV1VIKgJDWjIENTY1MiIfCgNXVUgSCjIwMjYtMTItMjQaA1NGTyoCQ1oyAzY1OWoMCAMSCC9tLzBsYm12cgwIAhIIL20vMGQ2bHAaaxIKMjAyNi0xMi0zMSIfCgNTRk8SCjIwMjYtMTItMzEaA1dVSCoCQ1oyAzY2MCIgCgNXVUgSCjIwMjctMDEtMDIaA1NaWCoCQ1oyBDMzNTdqDAgCEggvbS8wZDZscHIMCAMSCC9tLzBsYm12QAFIAXABggELCP___________wGYAQE&tfu=CnRDalJJTUdFeWJuRjJkSEJKUkdOQlIzZFJWbEZDUnkwdExTMHRMUzB0Y0daaVptZ3lPRUZCUVVGQlIzTkNVVnBGUlZrMWNWVkJFZ3hEV2pZMk1IeERXak16TlRjYUN3aU1rZ1FRQWhvRFZWTkVPQnh3akpJRRIGCAAgAigBIgMKATE&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTEyLTI0agwIAxIIL20vMGxibXZyDAgCEggvbS8wZDZscBooEgoyMDI2LTEyLTMxagwIAhIIL20vMGQ2bHByDAgDEggvbS8wbGJtdg&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 679,
+      "has_booking_page": true
+    },
+    {
+      "origin": "Bangkok",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 722.0,
+      "dates": "Mar 5 - 14, 2027",
+      "route": "Bangkok → Los Angeles",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    }
+  ]
+}
