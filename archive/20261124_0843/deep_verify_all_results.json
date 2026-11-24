@@ -1,0 +1,97 @@
+{
+  "verification_time": "2026-11-24T08:03:25.369195+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 6,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Guangzhou",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 653.0,
+      "dates": "Dec 24 - 31",
+      "route": "Guangzhou → San Francisco",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTEyLTI0agwIAxIIL20vMDM5M2dyDAgCEggvbS8wZDZscBooEgoyMDI2LTEyLTMxagwIAhIIL20vMGQ2bHByDAgDEggvbS8wMzkzZw&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTEyLTI0agwIAxIIL20vMDM5M2dyDAgCEggvbS8wZDZscBooEgoyMDI2LTEyLTMxagwIAhIIL20vMGQ2bHByDAgDEggvbS8wMzkzZw&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 653,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Hangzhou",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 662.0,
+      "dates": "Dec 24 - 31",
+      "route": "Hangzhou → San Francisco",
+      "status": "NO_FLIGHTS",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTEyLTI0ag0IAxIJL20vMDE0dm00cgwIAhIIL20vMGQ2bHAaKRIKMjAyNi0xMi0zMWoMCAISCC9tLzBkNmxwcg0IAxIJL20vMDE0dm00&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTEyLTI0ag0IAxIJL20vMDE0dm00cgwIAhIIL20vMGQ2bHAaKRIKMjAyNi0xMi0zMWoMCAISCC9tLzBkNmxwcg0IAxIJL20vMDE0dm00&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 662,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Ningbo",
+      "city": "New York",
+      "cabin": "Economy",
+      "explore_price": 662.0,
+      "dates": "Nov 26 - Dec 2",
+      "route": "Ningbo → New York",
+      "status": "NO_FLIGHTS",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTExLTI2ag0IAxIJL20vMDFsMzNscg0IAhIJL20vMDJfMjg2GioSCjIwMjYtMTItMDJqDQgCEgkvbS8wMl8yODZyDQgDEgkvbS8wMWwzM2w&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhoqEgoyMDI2LTExLTI2ag0IAxIJL20vMDFsMzNscg0IAhIJL20vMDJfMjg2GioSCjIwMjYtMTItMDJqDQgCEgkvbS8wMl8yODZyDQgDEgkvbS8wMWwzM2w&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Chongqing",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 665.0,
+      "dates": "Dec 24 - 31",
+      "route": "Chongqing → San Francisco",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTEyLTI0ag0IAxIJL20vMDE3MjM2cgwIAhIIL20vMGQ2bHAaKRIKMjAyNi0xMi0zMWoMCAISCC9tLzBkNmxwcg0IAxIJL20vMDE3MjM2&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTEyLTI0ag0IAxIJL20vMDE3MjM2cgwIAhIIL20vMGQ2bHAaKRIKMjAyNi0xMi0zMWoMCAISCC9tLzBkNmxwcg0IAxIJL20vMDE3MjM2&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 665,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Qingdao",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 673.0,
+      "dates": "Mar 25 - Apr 2, 2027",
+      "route": "Qingdao → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Shenzhen",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 680.0,
+      "dates": "Dec 24 - 31",
+      "route": "Shenzhen → San Francisco",
+      "status": "SEARCH_CONFIRMED",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTEyLTI0agwIAxIIL20vMGxibXZyDAgCEggvbS8wZDZscBooEgoyMDI2LTEyLTMxagwIAhIIL20vMGQ2bHByDAgDEggvbS8wbGJtdg&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTEyLTI0agwIAxIIL20vMGxibXZyDAgCEggvbS8wZDZscBooEgoyMDI2LTEyLTMxagwIAhIIL20vMGQ2bHByDAgDEggvbS8wbGJtdg&hl=en&gl=hk&curr=USD",
+      "airline": "United",
+      "price": 680,
+      "has_booking_page": false
+    }
+  ]
+}
