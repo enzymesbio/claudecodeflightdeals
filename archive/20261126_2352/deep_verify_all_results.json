@@ -1,0 +1,27 @@
+{
+  "verification_time": "2026-11-26T23:11:31.255902+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 1,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Nanjing",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 680.0,
+      "dates": "Mar 22 - 30, 2027",
+      "route": "Nanjing → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    }
+  ]
+}
