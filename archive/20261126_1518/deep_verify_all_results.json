@@ -1,0 +1,111 @@
+{
+  "verification_time": "2026-11-26T14:38:44.485753+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 7,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Guangzhou",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 653.0,
+      "dates": "Mar 22 - 30, 2027",
+      "route": "Guangzhou → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Tokyo",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 661.0,
+      "dates": "Jan 28 - Feb 3, 2027",
+      "route": "Tokyo → Los Angeles",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Shanghai",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 662.0,
+      "dates": "Mar 22 - 30, 2027",
+      "route": "Shanghai → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Xiamen",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 662.0,
+      "dates": "Dec 24 - 31",
+      "route": "Xiamen → San Francisco",
+      "status": "SEARCH_CONFIRMED",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTEyLTI0ag0IAxIJL20vMDEyNmMzcgwIAhIIL20vMGQ2bHAaKRIKMjAyNi0xMi0zMWoMCAISCC9tLzBkNmxwcg0IAxIJL20vMDEyNmMz&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTEyLTI0ag0IAxIJL20vMDEyNmMzcgwIAhIIL20vMGQ2bHAaKRIKMjAyNi0xMi0zMWoMCAISCC9tLzBkNmxwcg0IAxIJL20vMDEyNmMz&hl=en&gl=hk&curr=USD",
+      "airline": "United",
+      "price": 662,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Beijing",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 680.0,
+      "dates": "Mar 22 - 30, 2027",
+      "route": "Beijing → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Tokyo",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 706.0,
+      "dates": "Jan 21 - 27, 2027",
+      "route": "Tokyo → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Ho Chi Minh City",
+      "city": "Los Angeles",
+      "cabin": "Economy",
+      "explore_price": 724.0,
+      "dates": "Mar 6 - 14, 2027",
+      "route": "Ho Chi Minh City → Los Angeles",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    }
+  ]
+}
