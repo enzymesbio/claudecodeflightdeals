@@ -1,0 +1,83 @@
+{
+  "verification_time": "2026-11-27T07:45:08.891685+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 5,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Guangzhou",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 653.0,
+      "dates": "Mar 22 - 30, 2027",
+      "route": "Guangzhou → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Shanghai",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 662.0,
+      "dates": "Mar 22 - 30, 2027",
+      "route": "Shanghai → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Xiamen",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 662.0,
+      "dates": "Dec 24 - 31",
+      "route": "Xiamen → San Francisco",
+      "status": "NO_FLIGHTS",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTEyLTI0ag0IAxIJL20vMDEyNmMzcgwIAhIIL20vMGQ2bHAaKRIKMjAyNi0xMi0zMWoMCAISCC9tLzBkNmxwcg0IAxIJL20vMDEyNmMz&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhopEgoyMDI2LTEyLTI0ag0IAxIJL20vMDEyNmMzcgwIAhIIL20vMGQ2bHAaKRIKMjAyNi0xMi0zMWoMCAISCC9tLzBkNmxwcg0IAxIJL20vMDEyNmMz&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 662,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Chengdu",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 665.0,
+      "dates": "Apr 18 - 27, 2027",
+      "route": "Chengdu → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Qingdao",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 665.0,
+      "dates": "Apr 1 - 9, 2027",
+      "route": "Qingdao → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    }
+  ]
+}
