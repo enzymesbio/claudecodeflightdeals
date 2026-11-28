@@ -1,0 +1,41 @@
+{
+  "verification_time": "2026-11-28T15:11:33.644743+08:00",
+  "budget": "$2000 family ($727/pp)",
+  "total_verified": 2,
+  "excluded_airlines": [
+    "ZIPAIR",
+    "Philippine Airlines",
+    "Malaysia Airlines",
+    "Cebu Pacific"
+  ],
+  "results": [
+    {
+      "origin": "Chongqing",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 665.0,
+      "dates": "Mar 22 - 30, 2027",
+      "route": "Chongqing → San Francisco",
+      "status": "NO_URL",
+      "booking_url": null,
+      "search_url": null,
+      "airline": null,
+      "price": null,
+      "has_booking_page": false
+    },
+    {
+      "origin": "Shenzhen",
+      "city": "San Francisco",
+      "cabin": "Economy",
+      "explore_price": 680.0,
+      "dates": "Dec 24 - 31",
+      "route": "Shenzhen → San Francisco",
+      "status": "ERROR",
+      "booking_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTEyLTI0agwIAxIIL20vMGxibXZyDAgCEggvbS8wZDZscBooEgoyMDI2LTEyLTMxagwIAhIIL20vMGQ2bHByDAgDEggvbS8wbGJtdg&hl=en&gl=hk&curr=USD",
+      "search_url": "https://www.google.com/travel/flights?tfs=CBsQAhooEgoyMDI2LTEyLTI0agwIAxIIL20vMGxibXZyDAgCEggvbS8wZDZscBooEgoyMDI2LTEyLTMxagwIAhIIL20vMGQ2bHByDAgDEggvbS8wbGJtdg&hl=en&gl=hk&curr=USD",
+      "airline": null,
+      "price": 680,
+      "has_booking_page": false
+    }
+  ]
+}
